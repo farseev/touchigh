@@ -10,7 +10,7 @@
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/?lang=zh"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/"/>
     <image:image xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
-      <image:loc>https://touchigh.ai/assets/og-cover.jpg</image:loc>
+      <image:loc>https://touchigh.ai/og-cover.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
