@@ -1,5 +1,5 @@
 # Touchigh — robots.txt
-# We WANT AI answer engines to read and cite this site (GEO).
+# We want AI answer engines to read and cite this site (GEO / AEO).
 
 User-agent: *
 Allow: /
@@ -7,7 +7,17 @@ Allow: /
 # --- Search crawlers ---
 User-agent: Googlebot
 Allow: /
+User-agent: Googlebot-Image
+Allow: /
 User-agent: Bingbot
+Allow: /
+User-agent: DuckDuckBot
+Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: Sogou web spider
+Allow: /
+User-agent: 360Spider
 Allow: /
 
 # --- AI answer-engine crawlers (explicitly welcomed for GEO/AEO) ---
@@ -21,6 +31,8 @@ User-agent: ClaudeBot
 Allow: /
 User-agent: Claude-Web
 Allow: /
+User-agent: Claude-SearchBot
+Allow: /
 User-agent: anthropic-ai
 Allow: /
 User-agent: PerplexityBot
@@ -28,6 +40,8 @@ Allow: /
 User-agent: Perplexity-User
 Allow: /
 User-agent: Google-Extended
+Allow: /
+User-agent: GoogleOther
 Allow: /
 User-agent: Applebot
 Allow: /
@@ -37,13 +51,32 @@ User-agent: Amazonbot
 Allow: /
 User-agent: Meta-ExternalAgent
 Allow: /
+User-agent: FacebookBot
+Allow: /
 User-agent: CCBot
 Allow: /
 User-agent: cohere-ai
+Allow: /
+User-agent: cohere-training-data-crawler
 Allow: /
 User-agent: YouBot
 Allow: /
 User-agent: Bytespider
 Allow: /
+User-agent: Diffbot
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: Timpibot
+Allow: /
+User-agent: Kangaroo Bot
+Allow: /
+User-agent: MistralAI-User
+Allow: /
+User-agent: Google-CloudVertexBot
+Allow: /
+
+# LLM-readable indexes (non-standard but read by some tools)
+# See /llms.txt and /llms-full.txt
 
 Sitemap: https://touchigh.ai/sitemap.xml

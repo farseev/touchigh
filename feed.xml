@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Touchigh</title>
+    <link>https://touchigh.ai/</link>
+    <atom:link href="https://touchigh.ai/feed.xml" rel="self" type="application/rss+xml"/>
+    <description>AI search visibility and social autopilot for Chinese cross-border sellers entering the US. GEO, US social, articles and ads on autopilot, scored before they ship.</description>
+    <language>en</language>
+    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <image>
+      <url>https://touchigh.ai/apple-touch-icon.png</url>
+      <title>Touchigh</title>
+      <link>https://touchigh.ai/</link>
+    </image>
+    <item>
+      <title>Get found in US AI search. Run US social on autopilot.</title>
+      <link>https://touchigh.ai/</link>
+      <guid isPermaLink="true">https://touchigh.ai/#home</guid>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Touchigh gets Chinese cross-border stores cited by ChatGPT, Perplexity and Google AI answers, then writes and ships the US social, articles and ads that keep them there. Every concept is scored for predicted performance before it publishes. From under USD 500 a month.</description>
+    </item>
+    <item>
+      <title>GEO Autopilot — get quoted where AI answers</title>
+      <link>https://touchigh.ai/#geo</link>
+      <guid isPermaLink="true">https://touchigh.ai/#geo</guid>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Audit where your store is invisible across ChatGPT, Perplexity and Google AI Overviews, ship AI-written fixes and programmatic GEO articles, and track your AI-citation share.</description>
+    </item>
+    <item>
+      <title>Social Media Manager Autopilot — US social, checked before it posts</title>
+      <link>https://touchigh.ai/#social</link>
+      <guid isPermaLink="true">https://touchigh.ai/#social</guid>
+      <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
+      <description>Native US-English posts, thought-leadership and organic content, each scored for predicted engagement before it is scheduled.</description>
+    </item>
+  </channel>
+</rss>

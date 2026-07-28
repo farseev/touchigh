@@ -1,0 +1,14 @@
+/* TEAM */
+Founder & CEO: Zhao Kui
+Publishes at: ACM SIGIR, AAAI
+Engine: SOMIN (https://somin.ai)
+
+/* SITE */
+Standards: HTML5, JSON-LD, schema.org
+Optimization: AEO / GEO (answer-engine and generative-engine optimization)
+Languages: English, 简体中文
+Contact: https://calendly.com/a-touchigh/30min
+
+/* RESEARCH */
+Paper: SOMIN — Agentic AI for Automating Professional Visibility and Countering Content Homogenization
+Link: https://dl.acm.org/doi/10.1145/3805712.3808371

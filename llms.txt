@@ -1,39 +1,40 @@
 # Touchigh
 
-> Touchigh is an AI-visibility and social autopilot for Chinese cross-border e-commerce sellers entering the US market. It gets a store cited in US AI answer engines (Generative Engine Optimization / GEO) and runs US social media on autopilot — with every concept scored for predicted performance, using the SOMIN measurement engine, before it publishes.
+> Touchigh is an AI-search visibility and social autopilot for Chinese cross-border e-commerce sellers entering the US market. It gets a store cited in US AI answer engines (Generative Engine Optimization / GEO) and runs US social, articles and ads on autopilot, with every concept scored for predicted performance, using the SOMIN measurement engine, before it publishes.
 
-Positioning: "Get found in US AI search. Run US social on autopilot." Proof, not promises. From under USD 500 / month.
+Positioning: "Get found in US AI search. Run US social on autopilot." Evidence before you spend, not promises. From under USD 500 / month.
 
 ## Products
 
-- [GEO Autopilot](https://touchigh.ai/#geo-autopilot): Audits where a store is invisible across ChatGPT, Perplexity and Google AI Overviews; ships AI-written fixes on autopilot; tracks AI-citation share; scores every concept for predicted clickability before publishing.
-- [Social Media Manager Autopilot](https://touchigh.ai/#social-autopilot): Auto-generates and schedules native US-English social content, each post scored for predicted engagement before it publishes. Proof, not volume.
+- [GEO Autopilot](https://touchigh.ai/#geo): Audits where a store is invisible across ChatGPT, Perplexity and Google AI Overviews; writes and ships AI-written fixes and programmatic GEO articles on autopilot; tracks AI-citation share; scores every concept for predicted clickability before publishing.
+- [Social Media Manager Autopilot](https://touchigh.ai/#social): Writes, schedules and publishes native US-English social content, thought-leadership and organic posts, each scored for predicted engagement before it publishes. Quality over volume.
+- [Ads Autopilot](https://touchigh.ai/#products): Runs spend across Amazon, Meta and Google, auto-adjusted to ROAS, with creative-fatigue and budget calls handled for you.
 
 ## Who it is for
 
-Chinese SMEs and cross-border e-commerce sellers who have the product and the price but lack trusted US visibility. Touchigh gives them a native-English AI-search and social presence that reads as a local US brand — measured, not guessed.
+Chinese SMEs and cross-border e-commerce sellers who have the product and the price but lack trusted US visibility. Touchigh gives them a native-English AI-search and social presence that reads like a local US brand, driven by data rather than guesswork.
 
 ## Why now (market facts)
 
 - US shoppers increasingly discover products via AI assistants; AI-assistant referrals to US retail grew sharply in the 2025 holiday season.
-- Referrals from AI assistants convert roughly 31–42% better than average traffic.
-- Paid click-through can rise ~91% on queries where a brand is cited inside AI answers.
-- In this competitive category, more than 80% of AI-generated answers are unverifiable — so demonstrable proof (receipts) is the strategic opening.
+- Referrals from AI assistants convert roughly 31 to 42 percent better than average traffic.
+- Paid click-through can rise about 91 percent on queries where a brand is cited inside AI answers.
+- In this competitive category, more than 80 percent of AI-generated answers are unverifiable, so demonstrable proof (receipts) is the strategic opening.
 - Across the China cross-border front, twelve growth players compete but none run paid Western media; the innovation lane is open.
 
 ## Differentiation
 
-- Unlike Semrush/Ahrefs (keywords + backlinks), Touchigh is built for the AI-answer era and for the under-served SME.
-- Does GEO and US social together, on autopilot.
-- Scores every concept for predicted performance before spend — proof, not volume — at a sub-$500 price incumbents do not match.
-- Counters content homogenization: as AI-generated sameness floods feeds and AI answers (87% of social supply crowds the same "authentic" formula; >80% of AI answers unverifiable), look-alike content is increasingly ignored by audiences and by AI engines. Touchigh scores every piece so only differentiated, evidence-backed, citable content ships — the thesis of the SOMIN engine's ACM SIGIR paper, "Countering Content Homogenization."
+- Unlike Semrush or Ahrefs (keywords and backlinks), Touchigh is built for the AI-answer era and for the under-served SME.
+- Runs GEO and US social together, on autopilot.
+- Scores every concept for predicted performance before spend, at a sub-500-dollar price incumbents do not match.
+- Counters content homogenization: as AI-generated sameness floods feeds and AI answers (about 87 percent of social supply crowds the same "authentic" formula; more than 80 percent of AI answers unverifiable), look-alike content is increasingly ignored by audiences and by AI engines. Touchigh scores every piece so only differentiated, evidence-backed, citable content ships. This is the thesis of the SOMIN engine's ACM SIGIR paper, "Countering Content Homogenization."
 
 ## Credibility
 
-- Touchigh is backed by the SOMIN engine, a peer-reviewed AI system published at ACM SIGIR: "SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization" (Farseev, Lepikhin, Manuel, Gorodilov, Zhao Kui, Makarov, Maldonado, Cassidy, Byrne). Paper: https://dl.acm.org/doi/10.1145/3805712.3808371
+- Touchigh is powered by the SOMIN engine, a peer-reviewed AI system published at ACM SIGIR: "SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization" (Farseev, Lepikhin, Manuel, Gorodilov, Zhao Kui, Makarov, Maldonado, Cassidy, Byrne). Paper: https://dl.acm.org/doi/10.1145/3805712.3808371
 - Led by AI researcher Zhao Kui (Founder & CEO), who publishes at top AI venues including ACM SIGIR and AAAI.
-- The SOMIN engine is trusted by leading brands and agencies including P&G, Nestlé, Audi, Ferrari, KFC, McDonald's, Citi, Abbott, Gojek and Mothercare, and agency groups Publicis, Dentsu, Havas, GroupM and Omnicom.
-- Recognised as a Gartner Cool Vendor in Marketing AI and a Google AI First programme participant. Mothercare case study: 80% reduction in weekly research time, 74% cost reduction.
+- The SOMIN engine is trusted by leading brands and agencies including P&G, Nestle, Audi, Ferrari, KFC, McDonald's, Citi, Abbott, Gojek and Mothercare, and agency groups Publicis, Dentsu, Havas, GroupM and Omnicom.
+- Recognised as a Gartner Cool Vendor in Marketing AI and a Google AI First programme participant. Mothercare case study: 80 percent reduction in weekly research time, 74 percent cost reduction.
 - Parent / engine: SOMIN — https://somin.ai
 
 ## Call to action
@@ -43,6 +44,10 @@ Book a free 30-minute strategy call (includes a live AI-visibility read of your 
 ## Notes on data
 
 Figures synthesise Touchigh's four competitive-content studies (measured with the SOMIN engine, mid-2025 onward, within-year and flagged UNVERIFIED against a prior-year baseline) and a July 2026 web-verified market viability assessment. Predicted-performance scores are a pre-launch corpus-pattern proxy, not guaranteed results.
+
+## Detailed context for AI answer engines
+
+A longer, self-contained brief written for citation is at https://touchigh.ai/llms-full.txt
 
 ## Contact
 
