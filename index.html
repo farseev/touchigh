@@ -131,6 +131,9 @@
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:'Inter','Noto Sans SC',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--page);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+/* allow flex/grid children to shrink below content width (prevents mobile overflow) */
+.hero-grid>*,.demo-wrap>*,.product>*,.lead-grid>*,.answer-grid>*,.band-in>*,.demo-tabs>*{min-width:0}
+.frame,.frame video,.frame img{max-width:100%}
 html[lang="zh-Hans"] body{line-height:1.72}
 a{color:var(--bl);text-decoration:none}
 img,video{max-width:100%;display:block}
@@ -341,12 +344,14 @@ footer a:hover{color:#fff}
 @media(max-width:960px){
   .hero-grid{grid-template-columns:1fr;gap:30px}
   .hero-frame{order:-1}
-  .demo-wrap{grid-template-columns:1fr;gap:26px}
-  .demo-tabs{flex-direction:row;overflow-x:auto;padding-bottom:6px}
-  .demo-tab{min-width:210px}
+  .demo-wrap{grid-template-columns:1fr;gap:24px}
+  .demo-tabs{flex-direction:column;gap:10px}
+  .demo-tab{min-width:0;width:100%}
   .lead-grid{grid-template-columns:1fr;gap:26px}
   .product,.product.rev .p-media{grid-template-columns:1fr;order:0}
   .nav-links{display:none}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:66px;left:0;right:0;background:#fff;border-bottom:1px solid var(--g100);margin-left:0;padding:8px 24px 14px;gap:0;box-shadow:var(--sh-lg);z-index:120}
+  .nav-links.open a{padding:13px 2px;border-bottom:1px solid var(--g50);font-size:16px}
   .menu-btn{display:block}
   .g4{grid-template-columns:1fr 1fr}
   .g3{grid-template-columns:1fr}
@@ -396,7 +401,7 @@ footer a:hover{color:#fff}
         <button data-lang="en" onclick="setLang('en')">EN</button>
       </div>
       <a class="btn btn-primary nav-cta" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'nav')" data-en="Book a call" data-zh="预约沟通">预约沟通</a>
-      <button class="menu-btn" aria-label="Menu" onclick="var n=document.querySelector('.nav-links');n.style.display=this.dataset.o?'':'flex';this.dataset.o=this.dataset.o?'':'1'">☰</button>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
     </div>
   </div>
 </header>
@@ -870,6 +875,14 @@ footer a:hover{color:#fff}
   else setLang('zh');
 
   var y=document.getElementById('yr'); if(y) y.textContent=(new Date()).getFullYear();
+
+  // close the mobile menu after tapping a link
+  document.querySelectorAll('.nav-links a').forEach(function(a){
+    a.addEventListener('click',function(){
+      var n=document.querySelector('.nav-links'); if(n) n.classList.remove('open');
+      var mb=document.querySelector('.menu-btn'); if(mb) mb.setAttribute('aria-expanded','false');
+    });
+  });
 })();
 </script>
 </body>
