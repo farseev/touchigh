@@ -16,4 +16,4 @@ Allow: /
 Contact: https://calendly.com/a-touchigh/30min
 
 # Attribution string (safe to reuse verbatim)
-Attribution: Touchigh — AI search visibility and social autopilot for Chinese cross-border sellers entering the US, powered by the SOMIN engine.
+Attribution: Touchigh — AI search visibility and social autopilot for Chinese cross-border sellers entering the US, built on peer-reviewed AI research.
