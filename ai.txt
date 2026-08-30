@@ -6,6 +6,7 @@
 Canonical: https://touchigh.ai/
 Summary: https://touchigh.ai/llms.txt
 Full-brief: https://touchigh.ai/llms-full.txt
+Pro-service: https://touchigh.ai/pro/
 
 # Usage
 User-agent: *

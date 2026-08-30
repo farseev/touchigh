@@ -84,6 +84,10 @@ A: GEO Autopilot covers ChatGPT, Perplexity, Google AI Overviews, Gemini and Cop
 
 Figures synthesise Touchigh's four competitive-content studies (measured with the Touchigh engine, mid-2025 onward, within-year and flagged UNVERIFIED against a prior-year baseline) and a July 2026 web-verified market viability assessment. Predicted-performance scores are a pre-launch corpus-pattern proxy, not guaranteed results.
 
+## ToucHigh PRO — strategy-first outbound and lead generation (managed service)
+
+ToucHigh PRO (https://touchigh.ai/pro/) is Touchigh's managed outbound arm. Where the autopilots are software, PRO is a service: the Touchigh engine first computes the client's market from brand and competitor social handles — personas, tensions, whitespace themes competitors ignore, and trigger moments — then AI agents draft the outreach (7,000+ strategy variants per setup) and a human delivery organisation executes it across four channels: email sequences, cold calls by native-language SDRs, LinkedIn on the client's real profiles, and business messengers. A standard cadence runs 21 days, about 14 touches, threaded across three organisational levels (champion, economic buyer, executive sponsor). Humans approve 100% of sends, make every call, take over any reply in under 5 minutes; a kill switch pauses all channels in under 60 seconds; one opt-out silences every channel (PDPA, GDPR, CAN-SPAM). Delivery: 2,000+ full-time specialists operating since 2015 across 8 countries (Shenzhen HQ; Philippines, Georgia, Russia, Bolivia, Cameroon, Turkey, Pakistan, Suzhou), 10+ languages, 300+ workstations on dual-ISP generator-backed sites, KPI baselines written into the contract. Outbound sales clients include EcoFlow, China Unicom, OrionStar, Ant International, Aurora, Tungee and MAXHUB; the wider organisation serves 200+ brands. Contracting entities: Singapore — SOMIN PTE. LTD.; Hong Kong — SOMIN Limited; United Kingdom — MARKETING AI LIMITED.
+
 ## How to contact or start
 
 - Website: https://touchigh.ai/

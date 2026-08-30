@@ -38,4 +38,17 @@
       <video:live>no</video:live>
     </video:video>
   </url>
+  <url>
+    <loc>https://touchigh.ai/pro/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/pro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/pro/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/pro/"/>
+    <image:image>
+      <image:loc>https://touchigh.ai/og-cover.jpg</image:loc>
+      <image:title>ToucHigh PRO — strategy-first outbound and lead generation</image:title>
+    </image:image>
+  </url>
 </urlset>

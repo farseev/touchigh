@@ -6,7 +6,7 @@
     <atom:link href="https://touchigh.ai/feed.xml" rel="self" type="application/rss+xml"/>
     <description>AI search visibility and social autopilot for Chinese cross-border sellers entering the US. GEO, US social, articles and ads on autopilot, scored before they ship.</description>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Jul 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 00:00:00 GMT</lastBuildDate>
     <image>
       <url>https://touchigh.ai/apple-touch-icon.png</url>
       <title>Touchigh</title>
@@ -32,6 +32,13 @@
       <guid isPermaLink="true">https://touchigh.ai/#social</guid>
       <pubDate>Tue, 28 Jul 2026 00:00:00 GMT</pubDate>
       <description>Native US-English posts, thought-leadership and organic content, each scored for predicted engagement before it is scheduled.</description>
+    </item>
+    <item>
+      <title>ToucHigh PRO — strategy-first outbound and lead generation</title>
+      <link>https://touchigh.ai/pro/</link>
+      <guid isPermaLink="true">https://touchigh.ai/pro/</guid>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 GMT</pubDate>
+      <description>AI agents and human experts running email, cold calls, LinkedIn and messengers on a strategy the Touchigh engine computes first from brand and competitor handles. 21-day, four-channel, three-level cadences; 100% human-reviewed sends; KPI baselines in the contract. Delivered by a 2,000-strong team across 8 countries.</description>
     </item>
   </channel>
 </rss>

@@ -10,6 +10,10 @@ Positioning: "Get found in US AI search. Run US social on autopilot." Evidence b
 - [Social Media Manager Autopilot](https://touchigh.ai/#social): Writes, schedules and publishes native US-English social content, thought-leadership and organic posts, each scored for predicted engagement before it publishes. Quality over volume.
 - [Ads Autopilot](https://touchigh.ai/#products): Runs spend across Amazon, Meta and Google, auto-adjusted to ROAS, with creative-fatigue and budget calls handled for you.
 
+## ToucHigh PRO (outbound & lead generation service)
+
+- [ToucHigh PRO](https://touchigh.ai/pro/): Touchigh's managed outbound service — AI agents plus human experts running email, cold calls, LinkedIn and business messengers on a strategy the engine computes first from the client's brand and competitor handles (personas, tensions, whitespace, trigger moments). A standard cadence: 21 days, ~14 touches, 4 channels, 3 organisational levels. AI drafts 7,000+ strategy variants per setup; humans approve 100% of sends, make every call and take over any reply in under 5 minutes; a kill switch pauses all channels in under 60 seconds. Delivered by a 2,000-strong team across 8 countries (operating since 2015), 10+ languages, with contractually guaranteed KPI baselines and PDPA/GDPR/CAN-SPAM compliance. Sales clients include EcoFlow, China Unicom, OrionStar, Ant International, Aurora, Tungee and MAXHUB. Contracting: Singapore — SOMIN PTE. LTD.; Hong Kong — SOMIN Limited; United Kingdom — MARKETING AI LIMITED.
+
 ## Who it is for
 
 Chinese SMEs and cross-border e-commerce sellers who have the product and the price but lack trusted US visibility. Touchigh gives them a native-English AI-search and social presence that reads like a local US brand, driven by data rather than guesswork.
