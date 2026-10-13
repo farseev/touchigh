@@ -17,5 +17,5 @@ Built to match the main site 1:1: same tokens, nav, `data-en`/`data-zh` language
 
 ## Notes
 - Language selector: identical to the main site (the earlier standalone HTML block had no selector because it shipped without the site's i18n runtime — this page is wired into it).
-- Naming: rendered as the "Touchigh" wordmark + orange **PRO** badge in the nav/footer lockup, and "ToucHigh PRO" (your spelling) in copy, titles and structured data. Say the word if you want a single casing everywhere.
+- Naming: rendered as the "ToucHigh" wordmark + orange **PRO** badge in the nav/footer lockup, and "ToucHigh PRO" (your spelling) in copy, titles and structured data. Say the word if you want a single casing everywhere.
 - `robots.txt`, icons, media: unchanged — the page reuses existing root assets via absolute paths.

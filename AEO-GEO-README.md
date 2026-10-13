@@ -1,6 +1,6 @@
-# Touchigh — AEO / GEO optimization bundle
+# ToucHigh — AEO / GEO optimization bundle
 
-This site ships with a full answer-engine (AEO) and generative-engine (GEO) optimization layer, so ChatGPT, Perplexity, Google AI Overviews, Gemini and Copilot can read, understand and cite Touchigh accurately. This file explains every part so you or your team can maintain it.
+This site ships with a full answer-engine (AEO) and generative-engine (GEO) optimization layer, so ChatGPT, Perplexity, Google AI Overviews, Gemini and Copilot can read, understand and cite ToucHigh accurately. This file explains every part so you or your team can maintain it.
 
 ## What is in the bundle
 
@@ -30,13 +30,13 @@ This site ships with a full answer-engine (AEO) and generative-engine (GEO) opti
 
 ## Why the answer box and llms files matter for GEO
 
-Answer engines quote short, factual, self-contained passages. The `#answer-box` section, the `FAQPage` schema, and `llms-full.txt` all give an engine a clean block it can lift verbatim, with a consistent one-line definition of Touchigh and a suggested citation. Keep those three in sync when the positioning changes.
+Answer engines quote short, factual, self-contained passages. The `#answer-box` section, the `FAQPage` schema, and `llms-full.txt` all give an engine a clean block it can lift verbatim, with a consistent one-line definition of ToucHigh and a suggested citation. Keep those three in sync when the positioning changes.
 
 ## Maintenance checklist
 
 When you update the site, keep these aligned:
 
-1. If the one-line definition of Touchigh changes, update it in: the meta description, the `Organization` JSON-LD `description`, the `#answer-box` lead, `llms.txt`, and the "Suggested citation" in `llms-full.txt`.
+1. If the one-line definition of ToucHigh changes, update it in: the meta description, the `Organization` JSON-LD `description`, the `#answer-box` lead, `llms.txt`, and the "Suggested citation" in `llms-full.txt`.
 2. If you add or rename a product, update: the `SoftwareApplication` blocks, the demo switcher, the products section, `llms.txt`, `llms-full.txt`, and `feed.xml`.
 3. If you add a page, add it to `sitemap.xml` and `feed.xml`.
 4. Change every `lastmod` / `lastBuildDate` / `pubDate` when content changes materially.
@@ -55,4 +55,4 @@ When you update the site, keep these aligned:
 - Rich results / schema: https://search.google.com/test/rich-results
 - Schema.org validator: https://validator.schema.org
 - Open Graph preview: https://www.opengraph.xyz
-- Ask the engines directly: "What is Touchigh?" in ChatGPT, Perplexity and Google AI Overviews, and check the answer matches `llms-full.txt`.
+- Ask the engines directly: "What is ToucHigh?" in ChatGPT, Perplexity and Google AI Overviews, and check the answer matches `llms-full.txt`.

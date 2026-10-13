@@ -1,6 +1,6 @@
-# Touchigh
+# ToucHigh
 
-> Touchigh is an AI-search visibility and social autopilot for Chinese cross-border e-commerce sellers entering the US market. It gets a store cited in US AI answer engines (Generative Engine Optimization / GEO) and runs US social, articles and ads on autopilot, with every concept scored for predicted performance, using the Touchigh engine, before it publishes.
+> ToucHigh is an AI-search visibility and social autopilot for Chinese cross-border e-commerce sellers entering the US market. It gets a store cited in US AI answer engines (Generative Engine Optimization / GEO) and runs US social, articles and ads on autopilot, with every concept scored for predicted performance, using the ToucHigh engine, before it publishes.
 
 Positioning: "Get found in US AI search. Run US social on autopilot." Evidence before you spend, not promises. From under USD 500 / month.
 
@@ -12,11 +12,11 @@ Positioning: "Get found in US AI search. Run US social on autopilot." Evidence b
 
 ## ToucHigh PRO (outbound & lead generation service)
 
-- [ToucHigh PRO](https://touchigh.ai/pro/): Touchigh's managed outbound service — AI agents plus human experts running email, cold calls, LinkedIn and business messengers on a strategy the engine computes first from the client's brand and competitor handles (personas, tensions, whitespace, trigger moments). A standard cadence: 21 days, ~14 touches, 4 channels, 3 organisational levels. AI drafts 7,000+ strategy variants per setup; humans approve 100% of sends, make every call and take over any reply in under 5 minutes; a kill switch pauses all channels in under 60 seconds. Delivered by a 2,000-strong team across 8 countries (operating since 2015), 10+ languages, with contractually guaranteed KPI baselines and PDPA/GDPR/CAN-SPAM compliance. Sales clients include EcoFlow, China Unicom, OrionStar, Ant International, Aurora, Tungee and MAXHUB. Contracting: Singapore — SOMIN PTE. LTD.; Hong Kong — SOMIN Limited; United Kingdom — MARKETING AI LIMITED.
+- [ToucHigh PRO](https://touchigh.ai/pro/): ToucHigh's managed outbound service — AI agents plus human experts running email, cold calls, LinkedIn and business messengers on a strategy the engine computes first from the client's brand and competitor handles (personas, tensions, whitespace, trigger moments). A standard cadence: 21 days, ~14 touches, 4 channels, 3 organisational levels. AI drafts 7,000+ strategy variants per setup; humans approve 100% of sends, make every call and take over any reply in under 5 minutes; a kill switch pauses all channels in under 60 seconds. Delivered by a 2,000-strong team across 8 countries (operating since 2015), 10+ languages, with contractually guaranteed KPI baselines and PDPA/GDPR/CAN-SPAM compliance. Sales clients include EcoFlow, China Unicom, OrionStar, Ant International, Aurora, Tungee and MAXHUB. Contracting: Singapore — SOMIN PTE. LTD.; Hong Kong — SOMIN Limited; United Kingdom — MARKETING AI LIMITED.
 
 ## Who it is for
 
-Chinese SMEs and cross-border e-commerce sellers who have the product and the price but lack trusted US visibility. Touchigh gives them a native-English AI-search and social presence that reads like a local US brand, driven by data rather than guesswork.
+Chinese SMEs and cross-border e-commerce sellers who have the product and the price but lack trusted US visibility. ToucHigh gives them a native-English AI-search and social presence that reads like a local US brand, driven by data rather than guesswork.
 
 ## Why now (market facts)
 
@@ -28,16 +28,16 @@ Chinese SMEs and cross-border e-commerce sellers who have the product and the pr
 
 ## Differentiation
 
-- Unlike Semrush or Ahrefs (keywords and backlinks), Touchigh is built for the AI-answer era and for the under-served SME.
+- Unlike Semrush or Ahrefs (keywords and backlinks), ToucHigh is built for the AI-answer era and for the under-served SME.
 - Runs GEO and US social together, on autopilot.
 - Scores every concept for predicted performance before spend, at a sub-500-dollar price incumbents do not match.
-- Counters content homogenization: as AI-generated sameness floods feeds and AI answers (about 87 percent of social supply crowds the same "authentic" formula; more than 80 percent of AI answers unverifiable), look-alike content is increasingly ignored by audiences and by AI engines. Touchigh scores every piece so only differentiated, evidence-backed, citable content ships. This is the thesis of the team's peer-reviewed ACM SIGIR paper on countering content homogenization.
+- Counters content homogenization: as AI-generated sameness floods feeds and AI answers (about 87 percent of social supply crowds the same "authentic" formula; more than 80 percent of AI answers unverifiable), look-alike content is increasingly ignored by audiences and by AI engines. ToucHigh scores every piece so only differentiated, evidence-backed, citable content ships. This is the thesis of the team's peer-reviewed ACM SIGIR paper on countering content homogenization.
 
 ## The team (world-leading AI team)
 
-- Zhao Kui — Founder & CEO. AI researcher who publishes at ACM SIGIR and AAAI; leads Touchigh's US push for Chinese cross-border sellers.
+- Zhao Kui — Founder & CEO. AI researcher who publishes at ACM SIGIR and AAAI; leads ToucHigh's US push for Chinese cross-border sellers.
 - Prof. Aleks Farseev — Chief Revenue Officer. PhD (National University of Singapore); professor at INSEAD and NUS; Forbes Technology Council columnist; Gartner Cool Vendor in Marketing AI; 30+ peer-reviewed AI papers at ACM SIGIR, AAAI and The Web Conference. Website: https://farseev.com
-- Kirill Lepikhin — Chief Technology Officer. Co-founder who has built AI advertising and content systems for over a decade; leads all engineering behind Touchigh's autopilots.
+- Kirill Lepikhin — Chief Technology Officer. Co-founder who has built AI advertising and content systems for over a decade; leads all engineering behind ToucHigh's autopilots.
 
 ## Credibility
 
@@ -51,7 +51,7 @@ Book a free 30-minute strategy call (includes a live AI-visibility read of your 
 
 ## Notes on data
 
-Figures synthesise Touchigh's four competitive-content studies (measured with the Touchigh engine, mid-2025 onward, within-year and flagged UNVERIFIED against a prior-year baseline) and a July 2026 web-verified market viability assessment. Predicted-performance scores are a pre-launch corpus-pattern proxy, not guaranteed results.
+Figures synthesise ToucHigh's four competitive-content studies (measured with the ToucHigh engine, mid-2025 onward, within-year and flagged UNVERIFIED against a prior-year baseline) and a July 2026 web-verified market viability assessment. Predicted-performance scores are a pre-launch corpus-pattern proxy, not guaranteed results.
 
 ## Detailed context for AI answer engines
 

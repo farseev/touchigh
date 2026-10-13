@@ -1,4 +1,4 @@
-# Touchigh — robots.txt
+# ToucHigh — robots.txt
 # We want AI answer engines to read and cite this site (GEO / AEO).
 
 User-agent: *
