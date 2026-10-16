@@ -3,6 +3,7 @@
 
 User-agent: *
 Allow: /
+Disallow: /login/
 
 # --- Search crawlers ---
 User-agent: Googlebot

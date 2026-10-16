@@ -5,7 +5,7 @@
         xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://touchigh.ai/</loc>
-    <lastmod>2026-07-28</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/"/>
@@ -40,7 +40,7 @@
   </url>
   <url>
     <loc>https://touchigh.ai/pro/</loc>
-    <lastmod>2026-08-30</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/pro/"/>
@@ -50,5 +50,492 @@
       <image:loc>https://touchigh.ai/og-cover.jpg</image:loc>
       <image:title>ToucHigh PRO — strategy-first outbound and lead generation</image:title>
     </image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/og/hub.jpg</image:loc><image:title>ToucHigh Blog</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/ai-overviews-branded-queries-seo-traffic/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-overviews-branded-queries-seo-traffic/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t01.jpg</image:loc><image:title>独立站SEO流量下降怎么办？AI概览已覆盖八成品牌词</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/seo-geo-dual-engine-independent-site/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/seo-geo-dual-engine-independent-site/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t02.jpg</image:loc><image:title>独立站SEO+GEO怎么做？一张表理清出海流量策略</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t03.jpg</image:loc><image:title>ChatGPT不再带UTM：AI带来的流量还怎么统计？</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/backlinks-vs-primary-sources-chatgpt-citations/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/backlinks-vs-primary-sources-chatgpt-citations/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t04.jpg</image:loc><image:title>外链还有用吗？ChatGPT正在偏爱一手信息源</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/google-spam-update-seo-trends-cross-border/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/google-spam-update-seo-trends-cross-border/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t05.jpg</image:loc><image:title>2026谷歌SEO趋势：垃圾内容更新后，卖家只需盯这5件事</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/affordable-social-media-management-ai/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/affordable-social-media-management-ai/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t06.jpg</image:loc><image:title>海外社媒运营工具太贵？中小卖家用AI托管的成本账</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/instagram-algorithm-posting-consistency/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/instagram-algorithm-posting-consistency/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t07.jpg</image:loc><image:title>Instagram 发帖频率怎么定？出海品牌稳定更新的简化法</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/tiktok-shop-us-small-creators-video/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/tiktok-shop-us-small-creators-video/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t08.jpg</image:loc><image:title>TikTok Shop 美区短视频：小达人+多视频怎么做起来</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/google-universal-cart-cart-abandonment/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/google-universal-cart-cart-abandonment/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t09.jpg</image:loc><image:title>独立站弃购率怎么降？谷歌 AI 购物车时代的结账优化</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/ai-mode-ads-chatgpt-ads-new-channels/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-mode-ads-chatgpt-ads-new-channels/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t10.jpg</image:loc><image:title>谷歌 AI Mode 广告来了：中小卖家该不该试新渠道？</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/meta-advantage-plus-targeting-smb/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/meta-advantage-plus-targeting-smb/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t11.jpg</image:loc><image:title>Meta Advantage+ 受众定向：中小卖家如何找准美国客户</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/localization-not-translation-brand-premium/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/localization-not-translation-brand-premium/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t12.jpg</image:loc><image:title>出海本土化营销不是翻译：普通产品如何卖出美国品牌感</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/de-minimis-end-brand-independent-site/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/de-minimis-end-brand-independent-site/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t13.jpg</image:loc><image:title>美国小额豁免取消后，跨境卖家如何走出平台依赖</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/ad-creatives-at-scale-prescore/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ad-creatives-at-scale-prescore/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t14.jpg</image:loc><image:title>AI生成广告素材：批量做不难，先打分再投放才省钱</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/ai-slop-brand-content-standout/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-slop-brand-content-standout/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t15.jpg</image:loc><image:title>AI生成社媒内容会被限流吗？出海品牌如何不被淹没</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/global-ecommerce-operations-less-is-more/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/global-ecommerce-operations-less-is-more/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t16.jpg</image:loc><image:title>跨境电商全球化运营：中小卖家为什么要学会做减法</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/us-shoppers-ai-shelf-discovery/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/us-shoppers-ai-shelf-discovery/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t17.jpg</image:loc><image:title>美国消费者购物习惯变了：不再从谷歌开始，卖家如何被找到</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/google-ads-channel-prioritization-budget/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/google-ads-channel-prioritization-budget/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t18.jpg</image:loc><image:title>跨平台广告预算怎么分配？谷歌渠道优先级上线后的新解法</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/ecommerce-video-production-ai-cost/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ecommerce-video-production-ai-cost/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t19.jpg</image:loc><image:title>电商视频制作成本太高？用AI把一次拍摄变成一套素材</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/amazon-ads-agent-sellers/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/amazon-ads-agent-sellers/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t20.jpg</image:loc><image:title>亚马逊AI广告智能体来了：不会投广告的卖家该交出什么</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/tiktok-shop-shein-channel-mix/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/tiktok-shop-shein-channel-mix/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t21.jpg</image:loc><image:title>TikTok Shop收紧、SHEIN加补贴：跨境电商渠道怎么选</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/holiday-2026-ai-shopping-agents/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/holiday-2026-ai-shopping-agents/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t22.jpg</image:loc><image:title>假日季AI购物助手流量预计涨130%：卖家该准备什么</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/facebook-algorithm-controls-small-business/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/facebook-algorithm-controls-small-business/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t23.jpg</image:loc><image:title>Facebook Algorithm Changes: Staying Visible When Users Can Talk to the Feed</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/social-posts-ai-citations-threads-seo/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/social-posts-ai-citations-threads-seo/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t24.jpg</image:loc><image:title>Threads SEO and AI Citations: Do Social Posts Help You Show Up in AI Answers?</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/linkedin-ai-slop-b2b-engagement/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/linkedin-ai-slop-b2b-engagement/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t25.jpg</image:loc><image:title>LinkedIn Engagement Strategy: How Small B2B Brands Win as AI Slop Gets Cut</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/social-media-metrics-that-matter-smes/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/social-media-metrics-that-matter-smes/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t26.jpg</image:loc><image:title>Social Media Metrics That Matter for Small Businesses, Beyond Followers</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/lean-marketing-stack-smes-under-500/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/lean-marketing-stack-smes-under-500/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t27.jpg</image:loc><image:title>Affordable Marketing for Small Business: A Lean Stack Under $500 a Month</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/landing-pages-ai-era-search-traffic/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/landing-pages-ai-era-search-traffic/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t28.jpg</image:loc><image:title>Longer Searches, Pickier Clicks: Raise Your Landing Page Conversion Rate</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/lead-generation-strategy-first-outbound/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/lead-generation-strategy-first-outbound/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t29.jpg</image:loc><image:title>Lead Generation Strategies for Small Business When Ad Costs Climb</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/seo-best-practices-ai-overviews-ai-mode/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/seo-best-practices-ai-overviews-ai-mode/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t30.jpg</image:loc><image:title>SEO Best Practices for AI Overviews and AI Mode (October 2026)</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/content-ai-engines-cite-workflow/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/content-ai-engines-cite-workflow/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t31.jpg</image:loc><image:title>Content Creation Tools for SEO: A Simple Workflow AI Engines Will Cite</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/ai-ad-tools-small-business-compared/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/ai-ad-tools-small-business-compared/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t32.jpg</image:loc><image:title>AI Ad Tools for Small Business: What Meta Muse and X Lift Really Do</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/best-time-to-post-2026/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/best-time-to-post-2026/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t33.jpg</image:loc><image:title>Best Time to Post on Social Media in 2026: Why Consistency Beats the Clock</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/predict-social-engagement-before-publishing/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/predict-social-engagement-before-publishing/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t34.jpg</image:loc><image:title>How to Increase Social Media Engagement: Predict It Before You Post</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/measure-influencer-roi-tiktok-shop/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/measure-influencer-roi-tiktok-shop/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t35.jpg</image:loc><image:title>How to Measure Influencer Marketing ROI on TikTok Shop as a Small Brand</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/social-media-system-for-busy-founders/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/social-media-system-for-busy-founders/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t36.jpg</image:loc><image:title>Social Media Management for Small Business: A 2-Hour-a-Week System</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/temu-fake-influencers-authentic-brand-voice/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/temu-fake-influencers-authentic-brand-voice/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t37.jpg</image:loc><image:title>Authentic Content Marketing: What Temu's Fake-Influencer Purge Teaches SMEs</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/tiktok-ads-playbook-small-advertisers/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/tiktok-ads-playbook-small-advertisers/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t38.jpg</image:loc><image:title>TikTok Ads for Small Business: A Focused 30-Day Test Plan</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/ai-shelf-small-brands-shopping-assistants/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/ai-shelf-small-brands-shopping-assistants/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t39.jpg</image:loc><image:title>AI Shopping Assistants: How Small Brands Get Recommended on the AI Shelf</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/digital-advertising-kpis-small-business/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/digital-advertising-kpis-small-business/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t40.jpg</image:loc><image:title>Digital Advertising KPIs for Small Business: The 3 Numbers That Matter</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/seo-tools-buying-guide-ai-search/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/seo-tools-buying-guide-ai-search/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t41.jpg</image:loc><image:title>SEO工具推薦怎麼選？AI搜尋時代中小企業的精簡清單</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/localized-social-content-frameworks/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/localized-social-content-frameworks/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t42.jpg</image:loc><image:title>在地化行銷怎麼做？港台品牌打進美國社群的5個內容框架</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/content-marketing-trends-2026-primary-sources/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/content-marketing-trends-2026-primary-sources/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t43.jpg</image:loc><image:title>2026內容行銷趨勢：AI為什麼越來越愛引用一手資料？</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/reduce-marketing-costs-ai-smes/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/reduce-marketing-costs-ai-smes/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t44.jpg</image:loc><image:title>降低行銷成本又不犧牲品質：中小企業的AI營運清單</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/social-algorithms-explained-facebook-instagram/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/social-algorithms-explained-facebook-instagram/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t45.jpg</image:loc><image:title>社群演算法怎麼變？Facebook新控制項與IG排序邏輯</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/visibilidad-marca-ia-pymes/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/visibilidad-marca-ia-pymes/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t46.jpg</image:loc><image:title>Visibilidad de marca en IA: cómo saber si ChatGPT y Google recomiendan tu pyme</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/geo-pymes-que-funciona/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/geo-pymes-que-funciona/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t47.jpg</image:loc><image:title>GEO para pymes: lo que funciona y lo que te están vendiendo</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/perfil-empresa-google-redes-pymes/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/perfil-empresa-google-redes-pymes/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t48.jpg</image:loc><image:title>Perfil de Empresa en Google y redes: kit de visibilidad local para pymes</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/publicidad-ia-pymes-meta-muse/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/publicidad-ia-pymes-meta-muse/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t49.jpg</image:loc><image:title>Publicidad con IA para pymes: Meta Muse y cuándo no automatizar</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/medir-campanas-redes-sociales-pymes/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/medir-campanas-redes-sociales-pymes/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t50.jpg</image:loc><image:title>Cómo medir campañas en redes sociales sin ser analista: 3 métricas</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/factory-founder-linkedin-thought-leadership/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/factory-founder-linkedin-thought-leadership/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t51.jpg</image:loc><image:title>工厂LinkedIn获客：老板为什么要做思想领导力</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/factory-website-geo-chatgpt-supplier/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/factory-website-geo-chatgpt-supplier/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t52.jpg</image:loc><image:title>让ChatGPT推荐你的工厂：工厂官网GEO入门</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/seo-aeo-geo-explained-chinese-exporters/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/seo-aeo-geo-explained-chinese-exporters/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t53.jpg</image:loc><image:title>SEO、AEO、GEO有什么区别？出海企业要三位一体</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/seo-aeo-geo-learning-path-exporters/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/seo-aeo-geo-learning-path-exporters/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t54.jpg</image:loc><image:title>出海SEO自学路线：AEO、GEO入门不花冤枉钱</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/overseas-social-algorithms-thought-leadership/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/overseas-social-algorithms-thought-leadership/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t55.jpg</image:loc><image:title>海外社媒算法偏爱什么？出海品牌思想领导力怎么写</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/made-in-china-story-localized-thought-leadership/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/made-in-china-story-localized-thought-leadership/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t56.jpg</image:loc><image:title>中国制造的故事怎么讲给美国人听？出海内容本土化指南</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/us-buyers-ai-research-citable-content/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/us-buyers-ai-research-citable-content/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t57.jpg</image:loc><image:title>美国买家用AI找供应商：出海企业要准备哪些可被引用的内容</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/trade-show-to-search-social-assets/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/trade-show-to-search-social-assets/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t58.jpg</image:loc><image:title>展会之后怎么办？把广交会和海外展曝光变成长期搜索资产</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/chinese-manufacturers-founder-thought-leadership/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/chinese-manufacturers-founder-thought-leadership/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t59.jpg</image:loc><image:title>Thought Leadership for Manufacturers: Why US Buyers Should See Your Founder</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/factory-to-brand-seo-aeo-geo-us/</loc>
+    <lastmod>2026-10-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/factory-to-brand-seo-aeo-geo-us/"/>
+    <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t60.jpg</image:loc><image:title>From Factory to Brand: SEO, AEO and GEO for Chinese Sellers in the US</image:title></image:image>
   </url>
 </urlset>

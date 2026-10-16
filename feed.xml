@@ -6,7 +6,7 @@
     <atom:link href="https://touchigh.ai/feed.xml" rel="self" type="application/rss+xml"/>
     <description>AI search visibility and social autopilot for Chinese cross-border sellers entering the US. GEO, US social, articles and ads on autopilot, scored before they ship.</description>
     <language>en</language>
-    <lastBuildDate>Sun, 30 Aug 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 12:00:00 +0800</lastBuildDate>
     <image>
       <url>https://touchigh.ai/apple-touch-icon.png</url>
       <title>ToucHigh</title>
@@ -40,5 +40,12 @@
       <pubDate>Sun, 30 Aug 2026 00:00:00 GMT</pubDate>
       <description>AI agents and human experts running email, cold calls, LinkedIn and messengers on a strategy the ToucHigh engine computes first from brand and competitor handles. 21-day, four-channel, three-level cadences; 100% human-reviewed sends; KPI baselines in the contract. Delivered by a 2,000-strong team across 8 countries.</description>
     </item>
-  </channel>
+  <item>
+<title>ToucHigh 博客 / Blog — SEO, GEO &amp; social playbooks</title>
+<link>https://touchigh.ai/blog/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/</guid>
+<description>60 practical articles on SEO, GEO/AEO, social media management and ads for SMEs, Chinese factories and cross-border sellers (简体中文 · English · 繁體中文 · Español).</description>
+<pubDate>Fri, 16 Oct 2026 09:00:00 +0800</pubDate>
+</item>
+</channel>
 </rss>

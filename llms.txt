@@ -37,7 +37,7 @@ Chinese SMEs and cross-border e-commerce sellers who have the product and the pr
 
 - Zhao Kui — Founder & CEO. AI researcher who publishes at ACM SIGIR and AAAI; leads ToucHigh's US push for Chinese cross-border sellers.
 - Prof. Aleks Farseev — Chief Revenue Officer. PhD (National University of Singapore); professor at INSEAD and NUS; Forbes Technology Council columnist; Gartner Cool Vendor in Marketing AI; 30+ peer-reviewed AI papers at ACM SIGIR, AAAI and The Web Conference. Website: https://farseev.com
-- Kirill Lepikhin — Chief Technology Officer. Co-founder who has built AI advertising and content systems for over a decade; leads all engineering behind ToucHigh's autopilots.
+- Kirill Lepikhin — co-founder & CTO; co-founder and CTO of SOMIN (2020 Gartner Cool Vendor) since 2017; co-author of six peer-reviewed ACM papers (ACM TOIS 2025, SIGIR 2026, WWW 2025, WSDM 2021/2023, ACM MM 2018).
 
 ## Credibility
 
@@ -62,3 +62,76 @@ A longer, self-contained brief written for citation is at https://touchigh.ai/ll
 - Website: https://touchigh.ai/
 - Book a call: https://calendly.com/a-touchigh/30min
 - Languages: English, 中文 (Simplified Chinese)
+
+## Blog (https://touchigh.ai/blog/)
+Practical articles on SEO, GEO/AEO, social media and ads for SMEs, Chinese factories and cross-border sellers. Languages: 简体中文, English, 繁體中文, Español.
+
+- [独立站SEO流量下降怎么办？AI概览已覆盖八成品牌词](https://touchigh.ai/blog/ai-overviews-branded-queries-seo-traffic/) (zh-Hans)
+- [独立站SEO+GEO怎么做？一张表理清出海流量策略](https://touchigh.ai/blog/seo-geo-dual-engine-independent-site/) (zh-Hans)
+- [ChatGPT不再带UTM：AI带来的流量还怎么统计？](https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/) (zh-Hans)
+- [外链还有用吗？ChatGPT正在偏爱一手信息源](https://touchigh.ai/blog/backlinks-vs-primary-sources-chatgpt-citations/) (zh-Hans)
+- [2026谷歌SEO趋势：垃圾内容更新后，卖家只需盯这5件事](https://touchigh.ai/blog/google-spam-update-seo-trends-cross-border/) (zh-Hans)
+- [海外社媒运营工具太贵？中小卖家用AI托管的成本账](https://touchigh.ai/blog/affordable-social-media-management-ai/) (zh-Hans)
+- [Instagram 发帖频率怎么定？出海品牌稳定更新的简化法](https://touchigh.ai/blog/instagram-algorithm-posting-consistency/) (zh-Hans)
+- [TikTok Shop 美区短视频：小达人+多视频怎么做起来](https://touchigh.ai/blog/tiktok-shop-us-small-creators-video/) (zh-Hans)
+- [独立站弃购率怎么降？谷歌 AI 购物车时代的结账优化](https://touchigh.ai/blog/google-universal-cart-cart-abandonment/) (zh-Hans)
+- [谷歌 AI Mode 广告来了：中小卖家该不该试新渠道？](https://touchigh.ai/blog/ai-mode-ads-chatgpt-ads-new-channels/) (zh-Hans)
+- [Meta Advantage+ 受众定向：中小卖家如何找准美国客户](https://touchigh.ai/blog/meta-advantage-plus-targeting-smb/) (zh-Hans)
+- [出海本土化营销不是翻译：普通产品如何卖出美国品牌感](https://touchigh.ai/blog/localization-not-translation-brand-premium/) (zh-Hans)
+- [美国小额豁免取消后，跨境卖家如何走出平台依赖](https://touchigh.ai/blog/de-minimis-end-brand-independent-site/) (zh-Hans)
+- [AI生成广告素材：批量做不难，先打分再投放才省钱](https://touchigh.ai/blog/ad-creatives-at-scale-prescore/) (zh-Hans)
+- [AI生成社媒内容会被限流吗？出海品牌如何不被淹没](https://touchigh.ai/blog/ai-slop-brand-content-standout/) (zh-Hans)
+- [跨境电商全球化运营：中小卖家为什么要学会做减法](https://touchigh.ai/blog/global-ecommerce-operations-less-is-more/) (zh-Hans)
+- [美国消费者购物习惯变了：不再从谷歌开始，卖家如何被找到](https://touchigh.ai/blog/us-shoppers-ai-shelf-discovery/) (zh-Hans)
+- [跨平台广告预算怎么分配？谷歌渠道优先级上线后的新解法](https://touchigh.ai/blog/google-ads-channel-prioritization-budget/) (zh-Hans)
+- [电商视频制作成本太高？用AI把一次拍摄变成一套素材](https://touchigh.ai/blog/ecommerce-video-production-ai-cost/) (zh-Hans)
+- [亚马逊AI广告智能体来了：不会投广告的卖家该交出什么](https://touchigh.ai/blog/amazon-ads-agent-sellers/) (zh-Hans)
+- [TikTok Shop收紧、SHEIN加补贴：跨境电商渠道怎么选](https://touchigh.ai/blog/tiktok-shop-shein-channel-mix/) (zh-Hans)
+- [假日季AI购物助手流量预计涨130%：卖家该准备什么](https://touchigh.ai/blog/holiday-2026-ai-shopping-agents/) (zh-Hans)
+- [Facebook Algorithm Changes: Staying Visible When Users Can Talk to the Feed](https://touchigh.ai/blog/facebook-algorithm-controls-small-business/) (en)
+- [Threads SEO and AI Citations: Do Social Posts Help You Show Up in AI Answers?](https://touchigh.ai/blog/social-posts-ai-citations-threads-seo/) (en)
+- [LinkedIn Engagement Strategy: How Small B2B Brands Win as AI Slop Gets Cut](https://touchigh.ai/blog/linkedin-ai-slop-b2b-engagement/) (en)
+- [Social Media Metrics That Matter for Small Businesses, Beyond Followers](https://touchigh.ai/blog/social-media-metrics-that-matter-smes/) (en)
+- [Affordable Marketing for Small Business: A Lean Stack Under $500 a Month](https://touchigh.ai/blog/lean-marketing-stack-smes-under-500/) (en)
+- [Longer Searches, Pickier Clicks: Raise Your Landing Page Conversion Rate](https://touchigh.ai/blog/landing-pages-ai-era-search-traffic/) (en)
+- [Lead Generation Strategies for Small Business When Ad Costs Climb](https://touchigh.ai/blog/lead-generation-strategy-first-outbound/) (en)
+- [SEO Best Practices for AI Overviews and AI Mode (October 2026)](https://touchigh.ai/blog/seo-best-practices-ai-overviews-ai-mode/) (en)
+- [Content Creation Tools for SEO: A Simple Workflow AI Engines Will Cite](https://touchigh.ai/blog/content-ai-engines-cite-workflow/) (en)
+- [AI Ad Tools for Small Business: What Meta Muse and X Lift Really Do](https://touchigh.ai/blog/ai-ad-tools-small-business-compared/) (en)
+- [Best Time to Post on Social Media in 2026: Why Consistency Beats the Clock](https://touchigh.ai/blog/best-time-to-post-2026/) (en)
+- [How to Increase Social Media Engagement: Predict It Before You Post](https://touchigh.ai/blog/predict-social-engagement-before-publishing/) (en)
+- [How to Measure Influencer Marketing ROI on TikTok Shop as a Small Brand](https://touchigh.ai/blog/measure-influencer-roi-tiktok-shop/) (en)
+- [Social Media Management for Small Business: A 2-Hour-a-Week System](https://touchigh.ai/blog/social-media-system-for-busy-founders/) (en)
+- [Authentic Content Marketing: What Temu's Fake-Influencer Purge Teaches SMEs](https://touchigh.ai/blog/temu-fake-influencers-authentic-brand-voice/) (en)
+- [TikTok Ads for Small Business: A Focused 30-Day Test Plan](https://touchigh.ai/blog/tiktok-ads-playbook-small-advertisers/) (en)
+- [AI Shopping Assistants: How Small Brands Get Recommended on the AI Shelf](https://touchigh.ai/blog/ai-shelf-small-brands-shopping-assistants/) (en)
+- [Digital Advertising KPIs for Small Business: The 3 Numbers That Matter](https://touchigh.ai/blog/digital-advertising-kpis-small-business/) (en)
+- [SEO工具推薦怎麼選？AI搜尋時代中小企業的精簡清單](https://touchigh.ai/blog/seo-tools-buying-guide-ai-search/) (zh-Hant)
+- [在地化行銷怎麼做？港台品牌打進美國社群的5個內容框架](https://touchigh.ai/blog/localized-social-content-frameworks/) (zh-Hant)
+- [2026內容行銷趨勢：AI為什麼越來越愛引用一手資料？](https://touchigh.ai/blog/content-marketing-trends-2026-primary-sources/) (zh-Hant)
+- [降低行銷成本又不犧牲品質：中小企業的AI營運清單](https://touchigh.ai/blog/reduce-marketing-costs-ai-smes/) (zh-Hant)
+- [社群演算法怎麼變？Facebook新控制項與IG排序邏輯](https://touchigh.ai/blog/social-algorithms-explained-facebook-instagram/) (zh-Hant)
+- [Visibilidad de marca en IA: cómo saber si ChatGPT y Google recomiendan tu pyme](https://touchigh.ai/blog/visibilidad-marca-ia-pymes/) (es)
+- [GEO para pymes: lo que funciona y lo que te están vendiendo](https://touchigh.ai/blog/geo-pymes-que-funciona/) (es)
+- [Perfil de Empresa en Google y redes: kit de visibilidad local para pymes](https://touchigh.ai/blog/perfil-empresa-google-redes-pymes/) (es)
+- [Publicidad con IA para pymes: Meta Muse y cuándo no automatizar](https://touchigh.ai/blog/publicidad-ia-pymes-meta-muse/) (es)
+- [Cómo medir campañas en redes sociales sin ser analista: 3 métricas](https://touchigh.ai/blog/medir-campanas-redes-sociales-pymes/) (es)
+- [工厂LinkedIn获客：老板为什么要做思想领导力](https://touchigh.ai/blog/factory-founder-linkedin-thought-leadership/) (zh-Hans)
+- [让ChatGPT推荐你的工厂：工厂官网GEO入门](https://touchigh.ai/blog/factory-website-geo-chatgpt-supplier/) (zh-Hans)
+- [SEO、AEO、GEO有什么区别？出海企业要三位一体](https://touchigh.ai/blog/seo-aeo-geo-explained-chinese-exporters/) (zh-Hans)
+- [出海SEO自学路线：AEO、GEO入门不花冤枉钱](https://touchigh.ai/blog/seo-aeo-geo-learning-path-exporters/) (zh-Hans)
+- [海外社媒算法偏爱什么？出海品牌思想领导力怎么写](https://touchigh.ai/blog/overseas-social-algorithms-thought-leadership/) (zh-Hans)
+- [中国制造的故事怎么讲给美国人听？出海内容本土化指南](https://touchigh.ai/blog/made-in-china-story-localized-thought-leadership/) (zh-Hans)
+- [美国买家用AI找供应商：出海企业要准备哪些可被引用的内容](https://touchigh.ai/blog/us-buyers-ai-research-citable-content/) (zh-Hans)
+- [展会之后怎么办？把广交会和海外展曝光变成长期搜索资产](https://touchigh.ai/blog/trade-show-to-search-social-assets/) (zh-Hans)
+- [Thought Leadership for Manufacturers: Why US Buyers Should See Your Founder](https://touchigh.ai/blog/chinese-manufacturers-founder-thought-leadership/) (en)
+- [From Factory to Brand: SEO, AEO and GEO for Chinese Sellers in the US](https://touchigh.ai/blog/factory-to-brand-seo-aeo-geo-us/) (en)
+
+## Research
+
+- SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization — Proceedings of the 49th International ACM SIGIR Conference on Research and Development in Information Retrieval (SIGIR '26), Melbourne, pp. 5146–5150 (2026): https://doi.org/10.1145/3805712.3808371
+- SOEX: Explainable AI for Competitor Communications Analytics — Companion Proceedings of the ACM Web Conference 2025 (WWW '25), Sydney, pp. 2823–2826 (2025): https://doi.org/10.1145/3701716.3715198
+- Fusing Predictive and Large Language Models for Actionable Recommendations in Creative Marketing — ACM Transactions on Information Systems (TOIS), vol. 43, no. 5, pp. 1–31 (2025): https://doi.org/10.1145/3725885
+- SoCraft: Advertiser-level Predictive Scoring for Creative Performance on Meta — Proceedings of the 16th ACM International Conference on Web Search and Data Mining (WSDM '23), Singapore, pp. 1132–1135 (2023): https://doi.org/10.1145/3539597.3573032
+- SoMin.ai: Personality-Driven Content Generation Platform — Proceedings of the 14th ACM International Conference on Web Search and Data Mining (WSDM '21), virtual, pp. 890–893 (2021): https://doi.org/10.1145/3437963.3441714
+- SoMin.ai: Social Multimedia Influencer Discovery Marketplace — Proceedings of the 26th ACM International Conference on Multimedia (ACM MM '18), Seoul, pp. 1234–1236 (2018): https://doi.org/10.1145/3240508.3241387

@@ -1,12 +1,12 @@
 /* TEAM */
 Founder & CEO: Zhao Kui — publishes at ACM SIGIR, AAAI
 Chief Revenue Officer: Prof. Aleks Farseev — PhD (NUS), professor at INSEAD & NUS, Forbes Technology Council — https://farseev.com
-Chief Technology Officer: Kirill Lepikhin
+Co-founder & Chief Technology Officer: Kirill Lepikhin — https://www.semanticscholar.org/author/81215966
 
 /* SITE */
 Standards: HTML5, JSON-LD, schema.org
 Optimization: AEO / GEO (answer-engine and generative-engine optimization)
-Languages: English, 简体中文
+Languages: 简体中文, English, 繁體中文, Español
 Contact: https://calendly.com/a-touchigh/30min
 
 /* RESEARCH */
