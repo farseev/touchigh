@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ChatGPT流量统计：UTM消失后怎么衡量 | ToucHigh</title>
+<meta name="description" content="ChatGPT外链疑似不再带UTM，AI访问被记成直接流量。教你用AI引用份额、直接流量和订单三层指标统计ChatGPT流量，算清GEO回报。">
+<link rel="canonical" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="ChatGPT流量统计, AI引荐流量怎么衡量, GA4统计ChatGPT流量, ChatGPT UTM, SEO投资回报率怎么算, AI引用份额">
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<meta property="og:title" content="ChatGPT不再带UTM：AI带来的流量还怎么统计？">
+<meta property="og:description" content="ChatGPT外链疑似不再带UTM，AI访问被记成直接流量。教你用AI引用份额、直接流量和订单三层指标统计ChatGPT流量，算清GEO回报。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t03.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ChatGPT不再带UTM：AI带来的流量还怎么统计？">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:section" content="效果衡量">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="AI引荐流量">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="GEO效果衡量">
+<meta property="article:tag" content="SEO投资回报">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChatGPT不再带UTM：AI带来的流量还怎么统计？">
+<meta name="twitter:description" content="ChatGPT外链疑似不再带UTM，AI访问被记成直接流量。教你用AI引用份额、直接流量和订单三层指标统计ChatGPT流量，算清GEO回报。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t03.jpg">
+<meta name="twitter:image:alt" content="ChatGPT不再带UTM：AI带来的流量还怎么统计？">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="ToucHigh Blog" href="/blog/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/#article","url":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/","mainEntityOfPage":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/","headline":"ChatGPT不再带UTM：AI带来的流量还怎么统计？","alternativeHeadline":"ChatGPT流量统计：UTM消失后怎么衡量","description":"ChatGPT外链疑似不再带UTM，AI访问被记成直接流量。教你用AI引用份额、直接流量和订单三层指标统计ChatGPT流量，算清GEO回报。","abstract":"别再只盯着GA4里的“chatgpt.com”来源。Search Engine Land报道，ChatGPT外链似乎已不再附带UTM参数，大量AI访问被记成直接流量。更稳妥的衡量方式分三层：看AI引用份额，即核心问题的AI答案里提到你的比例；看深层页面直接流量和品牌搜索的变化；看订单和购后问卷，用三组数据交叉判断AI渠道的真实贡献。","image":["https://touchigh.ai/assets/blog/og/t03.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-10-16T07:21:00+08:00","dateModified":"2026-10-16T07:21:00+08:00","inLanguage":"zh-Hans","author":{"@type":"Organization","name":"ToucHigh 研究团队","url":"https://touchigh.ai/blog/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"效果衡量","keywords":"ChatGPT流量统计, AI引荐流量怎么衡量, GA4统计ChatGPT流量, ChatGPT UTM, SEO投资回报率怎么算, AI引用份额","wordCount":1830,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/#blog","name":"ToucHigh Blog"},"about":[{"@type":"Thing","name":"ChatGPT"},{"@type":"Thing","name":"AI引荐流量"},{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"GEO效果衡量"},{"@type":"Thing","name":"SEO投资回报"}],"citation":[{"@type":"CreativeWork","name":"ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure","url":"https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Search Engine Land"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"直接流量突然上涨，一定是ChatGPT带来的吗？","acceptedAnswer":{"@type":"Answer","text":"不一定。Search Engine Land的报道也提醒，Huesler的分析不能证明每一次来源缺失都出于同一原因。判断时看三点：上涨是否从10月中旬开始；是否集中在产品页、文章页等深层页面；同期ChatGPT来源是否同步下降。三点都吻合，才比较可能是AI流量被重新归类。"}},{"@type":"Question","name":"除了ChatGPT，其他AI平台的流量要怎么看？","acceptedAnswer":{"@type":"Answer","text":"先在GA4的引荐报告里查看实际出现了哪些AI产品的来源域名，把它们归入同一个“AI助手”渠道组。但这次ChatGPT的变化说明，平台随时可能调整链接方式，所以引荐数据只能作为参考之一，还要结合AI引用份额和订单数据一起看。"}},{"@type":"Question","name":"AI引用份额怎么算？","acceptedAnswer":{"@type":"Answer","text":"先固定一组核心问题，比如40个美国买家最常问的品类问题，每月在几个主流AI平台上逐一提问，记录答案里提到或链接你品牌的次数，再除以总回答数。例如40个问题里有8个引用了你，份额就是20%。关键是问题清单保持不变，才能看出趋势。"}},{"@type":"Question","name":"小团队没有数据分析师，最少要看哪几个数？","acceptedAnswer":{"@type":"Answer","text":"三个就够：每月的AI引用份额、深层页面的直接流量、购后问卷里选择“AI助手”的新客比例。第一个反映曝光，第二个反映访问，第三个反映生意。每月花半天记在一张表里，连续三个月就能看出AI渠道是否在贡献增长。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://touchigh.ai/blog/"},{"@type":"ListItem","position":3,"name":"ChatGPT不再带UTM：AI带来的流量还怎么统计？","item":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/"}]}</script>
+
+</head>
+<body>
+<a class="skip" href="#main">本页目录</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">首页</a>
+      <a href="/#products">产品</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/pro/">ToucHigh PRO</a>
+      <a href="/blog/" class="on">博客</a>
+    </nav>
+    <div class="nav-right">
+      <span class="lang-badge" lang="zh-Hans">简体中文</span>
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登录</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">预约沟通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">首页</a><span>/</span><a href="/blog/">博客</a><span>/</span><span>效果衡量</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">效果衡量</div>
+    <h1>ChatGPT不再带UTM：AI带来的流量还怎么统计？</h1>
+    <p class="dek">ChatGPT疑似不再给外链加UTM，AI带来的访问混进了直接流量。SEO和GEO的回报，该换一套方法来算了。</p>
+    <div class="a-meta"><b>ToucHigh 研究团队</b><span>发布于 <time datetime="2026-10-16T07:21:00+08:00">2026年10月16日</time></span><span>5 分钟阅读</span><span class="lang-badge">简体中文</span></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="包裹从带紫色光晕的对话气泡隧道滑上传送带，落进一个没有标记的灰色箱子，橙色追踪标签散落在地上，旁边的放大镜、环形图、柱状图和购物袋准备交叉核对来源。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="这篇文章回答的问题"><span class="qm">“</span><div><div class="eyebrow">这篇文章回答的问题</div><p class="q">ChatGPT给我网站带来的访问现在都变成了“直接流量”，我还怎么算SEO和GEO的投入产出？</p><p class="ans"><b>一句话回答</b>别再只盯着GA4里的“chatgpt.com”来源。Search Engine Land报道，ChatGPT外链似乎已不再附带UTM参数，大量AI访问被记成直接流量。更稳妥的衡量方式分三层：看AI引用份额，即核心问题的AI答案里提到你的比例；看深层页面直接流量和品牌搜索的变化；看订单和购后问卷，用三组数据交叉判断AI渠道的真实贡献。</p></div></section>
+      <section class="kt takeaways"><h2>要点速览</h2><ul><li>据Search Engine Land报道，ChatGPT外链似乎已不再附带UTM参数，大量AI访问在分析工具里被记为“直接流量”。</li><li>Adobe的Cedric Huesler发现，在约500个页面上，ChatGPT来源每天少了约3.1万次访问，直接流量每天多了约2.6万次。</li><li>衡量AI渠道要用三层指标：AI引用份额，深层页面直接流量与品牌搜索，订单与购后问卷。</li><li>不要根据一两周的来源数据砍GEO预算，AI答案里的出现率才是不受追踪参数影响的核心指标。</li></ul></section>
+      <div class="prose"><p>ChatGPT带来的访问在后台突然变成了“直接流量”，SEO和GEO的投入还怎么算回报？结论先说：别再把GA4里的“chatgpt.com”来源当成唯一依据，而要用“AI引用份额 + 直接流量变化 + 订单数据”三层指标交叉判断。单看任何一个数，都可能让你做出错误的预算决定。</p>
+
+<p>起因是本周的一条新闻。据<a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">Search Engine Land</a>10月15日报道，ChatGPT的外链似乎不再附带OpenAI此前加上的“utm_source=chatgpt.com”参数，链接的打开方式也会隐藏来源信息。Adobe的Cedric Huesler分析了约500个ChatGPT访问占比至少5%的页面，对比10月9日至13日与前一周：ChatGPT来源的访问每天减少约3.1万次，同一批页面的直接流量每天增加约2.6万次。OpenAI尚未确认这一变化是否有意为之。</p>
+
+<h2 id="s1">为什么ChatGPT的流量突然“消失”了？</h2>
+
+<p>流量其实没有消失，只是换了标签。分析工具判断一次访问从哪里来，主要靠两样东西：链接里的UTM参数，以及浏览器传过来的来源网址。两样都没有时，这次访问就会被记成“直接流量”，看起来就像用户自己在地址栏里敲了网址。</p>
+
+<p>据报道，这一变化是在10月GPT-6发布之后被发现的。Huesler的数据还显示：失去ChatGPT引荐的页面中，有三分之二同时出现了直接流量上涨，而且这些新增“直接访问”的行为特征，和之前识别出的ChatGPT访问很相似。不过报道也提醒，这份分析并不能证明每一次来源缺失都出于同一个原因。</p>
+
+<p>对独立站卖家来说，如果你的店铺后台或GA4在10月中旬之后出现“ChatGPT来源骤降、直接流量骤升”，先别急着下结论，很可能就是标签变了，而不是AI不再推荐你。</p>
+
+<h2 id="s2">只盯点击数据，为什么算不清GEO的账？</h2>
+
+<p>管理学里的“绩效衡量理论”有个朴素的观点：你衡量什么，团队就会优化什么；指标选错了，决策也会跟着错。如果只看“ChatGPT来源访问”，这周的报表会告诉你GEO效果暴跌，你很可能因此砍掉预算，而真实情况是用户还在来，只是换了一个标签。</p>
+
+<p>更深一层，AI渠道的价值很多本来就不体现在点击上。用户在ChatGPT里看到你的品牌被推荐，记住了名字，三天后直接输入网址，或者去谷歌搜你的品牌词，这笔订单在任何归因模型里都不会算到AI头上。所以衡量AI渠道，要看的是用户心里有没有你，而不只是报表里的一行来源数据。</p>
+
+<h2 id="s3">衡量AI渠道的三层指标</h2>
+
+<p>把指标分成三层，每层回答一个问题：AI有没有提到你？用户有没有因此来访？来访有没有变成生意？</p>
+
+<div class="tw"><table>
+<thead><tr><th>层级</th><th>看什么</th><th>去哪看</th><th>说明</th></tr></thead>
+<tbody>
+<tr><td>曝光层</td><td>AI引用份额；AI对品牌的描述是否准确</td><td>固定一组问题，定期在ChatGPT、Perplexity、谷歌AI中检查</td><td>不依赖UTM，最直接反映GEO成果</td></tr>
+<tr><td>流量层</td><td>深层页面的直接流量；品牌词搜索量；仍可识别的AI来源</td><td>GA4落地页报告、谷歌搜索控制台</td><td>很少有人手动输入产品详情页的长网址，这类直接流量上涨值得留意</td></tr>
+<tr><td>生意层</td><td>新客订单、客单价、购后问卷里选“AI助手”的比例</td><td>店铺后台、结账后问卷</td><td>最终回答“值不值”这个问题</td></tr>
+</tbody>
+</table></div>
+
+<p>三层要放在一起读。曝光层上升、流量层不动，说明AI提到了你，却没给用户点进来的理由，可以在被引用的页面上补充价格区间、适用场景等购买信息；流量层上升、生意层不动，问题多半出在落地页和结账流程，而不是GEO本身。</p>
+
+<h2 id="s4">在GA4里怎么设置，才能少丢AI流量？</h2>
+
+<ol>
+<li><strong>建一个“AI助手”自定义渠道组。</strong>把chatgpt.com、perplexity.ai等AI产品的来源域名归到一起，具体域名以你后台实际出现的为准，避免它们散落在“引荐”里没人看。</li>
+<li><strong>拆分直接流量的落地页。</strong>重点看产品详情页、博客文章这些深层页面的直接流量，和首页的直接流量分开分析。首页直接流量多半来自老客，深层页面的异常上涨更可能来自AI。</li>
+<li><strong>在报表里标注时间点。</strong>把10月中旬这次变化记成一条注释，之后做同比、环比时，就不会误以为是GEO失效了。</li>
+<li><strong>在结账后加一道问卷。</strong>只问一句“你是从哪里知道我们的”，选项里加上“ChatGPT等AI助手”。样本不用多，趋势就很有价值。</li>
+<li><strong>每月固定抽查同一组问题。</strong>选30到50个核心买家问题，记录AI答案是否提到你、是否链接你，这就是AI引用份额的基础数据。</li>
+</ol>
+
+<h2 id="s5">老板问“SEO和GEO到底值不值”，怎么回答？</h2>
+
+<p>别承诺精确归因，用趋势和交叉验证说话。举个假设的例子：一家卖户外用品的独立站，过去三个月AI引用份额从十分之一升到四分之一，同期深层页面的直接流量和品牌词搜索都在涨，购后问卷里选“AI助手”的新客也在增加。三条线同向变化，比任何一个单独的来源数字都更有说服力。</p>
+
+<p>算账时可以用一个简化公式：SEO和GEO的投入产出比，约等于自然渠道新增的毛利，除以同期内容、工具和人力的总成本。分子用订单数据和问卷做保守估算，分母则要把团队花的时间也折算进去。</p>
+
+<p>再把这些自然渠道带来的订单，和同期广告的获客成本放在一起比，SEO和GEO的投入产出就有了一个老板看得懂的参照。哪怕算不到小数点后两位，方向和量级是清楚的，这已经足够支撑预算决策。</p>
+
+<h2 id="s6">接下来还要注意什么？</h2>
+
+<p>OpenAI可能恢复UTM，也可能继续调整链接方式；其他AI平台同样可能在不打招呼的情况下改变。所以不要因为一两周的数据波动做预算决定，也不要把整套衡量体系押在任何一个平台的追踪参数上。</p>
+
+<p>短期内，建议把10月中旬前后各四周的数据单独存档，作为日后判断的对照组。如果之后ChatGPT来源重新出现，你也能据此估算这段时间被“藏”起来的AI流量大概有多少。</p>
+
+<p>真正稳定的指标，是你在AI答案里的出现率。如果不想每月手动抽查，<a href="/#geo">ToucHigh的GEO Autopilot</a>会直接追踪AI引用份额，不受UTM存在与否的影响。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>要衡量人心，而不只是数字。</blockquote><p>绩效衡量理论提醒我们，选什么指标就会做出什么决策。AI渠道的价值常常体现在用户记住了你，而不是一次可追踪的点击，只看来源数据会严重低估它。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能帮您做什么">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh 能帮您做什么</h2></div>
+        <div class="pb prose"><p>UTM会变，来源信息会丢，但AI答案里有没有你，是可以直接测量的。ToucHigh的GEO Autopilot正是围绕这一点工作：</p><ul><li>审计你在ChatGPT、Perplexity、谷歌AI概览/AI模式和Gemini中，在哪些问题上“隐身”；</li><li>撰写并上线修复内容，包括页面、问答和品牌实体信息，并围绕正在升温的搜索问题生成GEO文章；</li><li>持续追踪AI引用份额，给你一条不依赖UTM的效果曲线。</li></ul><p>想先看看自己在美国AI搜索里的基线数据，可以预约一次30分钟的策略沟通。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T03')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T03'})}catch(e){}">登录 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常见问题"><h2>常见问题</h2><details open><summary>直接流量突然上涨，一定是ChatGPT带来的吗？</summary><p>不一定。Search Engine Land的报道也提醒，Huesler的分析不能证明每一次来源缺失都出于同一原因。判断时看三点：上涨是否从10月中旬开始；是否集中在产品页、文章页等深层页面；同期ChatGPT来源是否同步下降。三点都吻合，才比较可能是AI流量被重新归类。</p></details><details><summary>除了ChatGPT，其他AI平台的流量要怎么看？</summary><p>先在GA4的引荐报告里查看实际出现了哪些AI产品的来源域名，把它们归入同一个“AI助手”渠道组。但这次ChatGPT的变化说明，平台随时可能调整链接方式，所以引荐数据只能作为参考之一，还要结合AI引用份额和订单数据一起看。</p></details><details><summary>AI引用份额怎么算？</summary><p>先固定一组核心问题，比如40个美国买家最常问的品类问题，每月在几个主流AI平台上逐一提问，记录答案里提到或链接你品牌的次数，再除以总回答数。例如40个问题里有8个引用了你，份额就是20%。关键是问题清单保持不变，才能看出趋势。</p></details><details><summary>小团队没有数据分析师，最少要看哪几个数？</summary><p>三个就够：每月的AI引用份额、深层页面的直接流量、购后问卷里选择“AI助手”的新客比例。第一个反映曝光，第二个反映访问，第三个反映生意。每月花半天记在一张表里，连续三个月就能看出AI渠道是否在贡献增长。</p></details></section>
+      <section class="srcs"><h2>参考来源</h2><ol><li><a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure</a> — Search Engine Land, 2026-10-15</li></ol></section>
+      <p class="note"><b>我们为什么写这篇</b>我们写这篇，是因为“SEO和GEO的投入怎么算回报”是卖家决定预算前最常卡住的问题，而本周ChatGPT疑似取消UTM标记，让这道题变得更难。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本页目录"><h4>本页目录</h4><a href="#s1">为什么ChatGPT的流量突然“消失”了？</a><a href="#s2">只盯点击数据，为什么算不清GEO的账？</a><a href="#s3">衡量AI渠道的三层指标</a><a href="#s4">在GA4里怎么设置，才能少丢AI流量？</a><a href="#s5">老板问“SEO和GEO到底值不值”，怎么回答？</a><a href="#s6">接下来还要注意什么？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美国 AI 搜索中的曝光盲区</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">预约沟通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登录</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相关文章</h2>
+  <div class="grid"><a class="card" href="/blog/trade-show-to-search-social-assets/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t58-768.webp"><img src="/assets/blog/hero/t58.jpg" alt="一个配有摄像机和麦克风的橙色展位位于蜿蜒小路的起点，路旁的蓝灰色树木越长越高，结满视频、对话和文章图标，小路尽头是一个搜索框。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">跨境出海</div><h3>展会之后怎么办？把广交会和海外展曝光变成长期搜索资产</h3><p>展位、差旅、样品都花了钱，展会热度却只有几周。本文教出海工厂把一次展会拆成一整年的搜索和社媒内容，让曝光沉淀为长期询盘。</p><div class="meta"><span class="lg">简体中文</span><span>6 分钟阅读</span></div></div></a><a class="card" href="/blog/us-buyers-ai-research-citable-content/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t57-768.webp"><img src="/assets/blog/hero/t57.jpg" alt="一台小吊车把一排六块内容图块（身份卡、规格表、对话气泡、证书、天平和星星）吊向AI答案窗口，窗口里排在第一位的是橙色工厂徽章。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">GEO / AI 搜索</div><h3>美国买家用AI找供应商：出海企业要准备哪些可被引用的内容</h3><p>买家在AI里问“哪家中国工厂靠谱”，答案往往只有三五个名字。本文列出六类能被AI引用的内容，以及出海企业从零准备的六个步骤。</p><div class="meta"><span class="lg">简体中文</span><span>6 分钟阅读</span></div></div></a><a class="card" href="/blog/made-in-china-story-localized-thought-leadership/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t56-768.webp"><img src="/assets/blog/hero/t56.jpg" alt="一本打开的立体书，一页是工程师在工厂里用卡尺测量精密零件，另一页是美国家庭在厨房里使用这件产品，一条橙色丝带贯穿两页。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">海外社媒</div><h3>中国制造的故事怎么讲给美国人听？出海内容本土化指南</h3><p>“二十年经验、品质保证”打动不了美国买家。中国制造的故事要讲具体的人、工艺和问题，用美国人的语气，在LinkedIn、YouTube和独立站上持续讲。</p><div class="meta"><span class="lg">简体中文</span><span>7 分钟阅读</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/">← 返回博客</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美国 AI 搜索中的曝光盲区</h2>
+  <p>预约一次 30 分钟免费通话，我们在线为您的店铺做一次 AI 曝光检测。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登录 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.</p></div>
+      <div><h4>ToucHigh</h4><a href="/">首页</a><a href="/#geo">GEO Autopilot</a><a href="/#social">Social Autopilot</a><a href="/pro/">ToucHigh PRO</a></div>
+      <div><h4>博客</h4><a href="/blog/">博客</a><a href="/blog/feed.xml">RSS</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登录</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">预约沟通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
