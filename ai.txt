@@ -8,7 +8,9 @@ Summary: https://touchigh.ai/llms.txt
 Full-brief: https://touchigh.ai/llms-full.txt
 Pro-service: https://touchigh.ai/pro/
 Blog: https://touchigh.ai/blog/
+Blog-en: https://touchigh.ai/blog/en/
 Blog-feed: https://touchigh.ai/blog/feed.xml
+Blog-feed-en: https://touchigh.ai/blog/en/feed.xml
 Login: https://pro.touchigh.ai/
 
 # Usage

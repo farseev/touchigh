@@ -100,305 +100,607 @@ ToucHigh PRO (https://touchigh.ai/pro/) is ToucHigh's managed outbound arm. Wher
 
 ToucHigh (touchigh.ai) is an AI-search visibility and social autopilot for Chinese cross-border e-commerce sellers entering the US, built on peer-reviewed AI research and led by a world-leading AI team (CEO Zhao Kui, CRO Prof. Aleks Farseev, CTO Kirill Lepikhin — co-founder & CTO. Co-founder and CTO, leading all engineering behind ToucHigh's autopilots. A serial entrepreneur and co-author of six peer-reviewed ACM papers on AI marketing systems (ACM TOIS, SIGIR 2026, The Web Conference 2025, WSDM 2021 and 2023, ACM Multimedia 2018). Since 2017 he has been co-founder and CTO of SOMIN, a 2020 Gartner Cool Vendor, engineering the AI marketing platforms used by McDonald's, P&G and Puma.
 
-## Blog — questions answered
+## Blog — questions answered (English)
 
-### 独立站SEO流量下降怎么办？AI概览已覆盖八成品牌词
-URL: https://touchigh.ai/blog/ai-overviews-branded-queries-seo-traffic/ · Language: zh-Hans
-Q: 我的独立站SEO流量一直往下掉，文章也没少写，到底怎样才能把自然流量做回来？
-A: 先别急着加量。谷歌AI概览已出现在八成以上的品牌词搜索中，用户在结果页就拿到了答案，继续堆文章和外链的边际回报在变小。更有效的做法是：找出核心问题的AI答案里哪些没有你，把产品页、FAQ和对比内容改写成AI能直接引用的答案，再用AI引用份额而不只是点击量来评估效果。
+### Store SEO Traffic Dropping? AI Overviews Now Cover 80% of Branded Searches
+URL: https://touchigh.ai/blog/en/ai-overviews-branded-queries-seo-traffic/ · 中文版: https://touchigh.ai/blog/ai-overviews-branded-queries-seo-traffic/
+Q: My store's SEO traffic keeps falling even though I'm still publishing. How do I get my organic traffic back?
+A: Don't just publish more. Google AI Overviews now appear on more than 80% of branded searches, so shoppers get answers on the results page and extra posts and backlinks pay back less. Instead, find the AI answers to your core questions that leave you out, rewrite product pages, FAQs and comparisons into answers AI can quote, and measure AI citation share, not just clicks.
 
-### 独立站SEO+GEO怎么做？一张表理清出海流量策略
-URL: https://touchigh.ai/blog/seo-geo-dual-engine-independent-site/ · Language: zh-Hans
-Q: 预算和人手都有限，我的独立站SEO和GEO到底该怎么规划，才能和业务目标对得上？
-A: 先定业务目标，再选动作，而不是反过来。把SEO当基本盘：保证网站能被正常抓取，核心产品页和买家问题有清楚的答案；把GEO当增量：让ChatGPT、Perplexity和谷歌AI在回答品类问题时引用你。前90天只做三件事——技术体检、改写20个核心页面、每月检查AI引用情况，其余渠道先放一放。
+### SEO + GEO for Your DTC Store: One Table to Set Your Traffic Strategy
+URL: https://touchigh.ai/blog/en/seo-geo-dual-engine-independent-site/ · 中文版: https://touchigh.ai/blog/seo-geo-dual-engine-independent-site/
+Q: With a small budget and team, how should I plan SEO and GEO for my online store so it actually lines up with my business goals?
+A: Set the business goal first, then pick the actions. Treat SEO as your base: make sure your site can be crawled and your core product pages answer buyer questions clearly. Treat GEO as the upside: get ChatGPT, Perplexity and Google AI to cite you on category questions. For 90 days, do three things: a technical checkup, 20 rewritten core pages and a monthly AI-citation check. Park everything else.
 
-### ChatGPT不再带UTM：AI带来的流量还怎么统计？
-URL: https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/ · Language: zh-Hans
-Q: ChatGPT给我网站带来的访问现在都变成了“直接流量”，我还怎么算SEO和GEO的投入产出？
-A: 别再只盯着GA4里的“chatgpt.com”来源。Search Engine Land报道，ChatGPT外链似乎已不再附带UTM参数，大量AI访问被记成直接流量。更稳妥的衡量方式分三层：看AI引用份额，即核心问题的AI答案里提到你的比例；看深层页面直接流量和品牌搜索的变化；看订单和购后问卷，用三组数据交叉判断AI渠道的真实贡献。
+### ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now
+URL: https://touchigh.ai/blog/en/chatgpt-utm-ai-referral-measurement/ · 中文版: https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/
+Q: Visits from ChatGPT now show up as “direct” traffic in my analytics. How do I work out the return on what I spend on SEO and GEO?
+A: Stop relying only on the “chatgpt.com” source in GA4. Search Engine Land reports that ChatGPT links appear to no longer carry UTM parameters, so many AI visits get logged as direct traffic. Measure in three layers instead: AI citation share (how often AI answers to your core questions mention you), direct traffic to deep pages plus branded search, and orders plus post-purchase surveys. Cross-check all three.
 
-### 外链还有用吗？ChatGPT正在偏爱一手信息源
-URL: https://touchigh.ai/blog/backlinks-vs-primary-sources-chatgpt-citations/ · Language: zh-Hans
-Q: 外链建设又花时间又花钱，现在还值得做吗？有没有更省力的办法让网站被认可？
-A: 外链仍有作用，但边际回报在下降。据Search Engine Journal报道的Ahrefs数据，2026年3月到9月，ChatGPT美国答案最常引用的网站明显转向一手、权威信息源，Reddit的引用占比从19.1%跌到2.3%。与其花大量时间换外链，不如把一部分精力投到只有你能提供的内容上：实测数据、官方规格和原创调研，让自己成为被引用的源头。
+### Do Backlinks Still Matter? ChatGPT Now Favors Primary Sources
+URL: https://touchigh.ai/blog/en/backlinks-vs-primary-sources-chatgpt-citations/ · 中文版: https://touchigh.ai/blog/backlinks-vs-primary-sources-chatgpt-citations/
+Q: Link building takes so much time and money. Is it still worth doing, or is there an easier way to get my site taken seriously?
+A: Backlinks still work, but each new one pays back less. According to Ahrefs data reported by Search Engine Journal, from March to September 2026 the sites ChatGPT cited most in US answers shifted clearly toward primary, authoritative sources, and the share of answers citing Reddit fell from 19.1% to 2.3%. Rather than trading hours for links, invest in what only you can provide: test data, official specs and original research.
 
-### 2026谷歌SEO趋势：垃圾内容更新后，卖家只需盯这5件事
-URL: https://touchigh.ai/blog/google-spam-update-seo-trends-cross-border/ · Language: zh-Hans
-Q: 谷歌又更新了，SEO新词一个接一个，我作为跨境卖家到底该关注哪些趋势，才不会被同行甩开？
-A: 不用追每个新名词。结合谷歌刚结束的9月垃圾内容更新和AI模式的链接改版，2026年跨境卖家只需盯住五件事：内容质量过关，页面有AI能直接引用的答案，官方信息写全写准，持续积累回头读者，按AI引用份额和订单衡量效果。其余趋势先放进观察清单，每月看一次就够。
+### 2026 Google SEO Trends: 5 Things Sellers Should Watch After the Spam Update
+URL: https://touchigh.ai/blog/en/google-spam-update-seo-trends-cross-border/ · 中文版: https://touchigh.ai/blog/google-spam-update-seo-trends-cross-border/
+Q: Google updated again and the SEO buzzwords keep coming. As a cross-border seller, which trends should I actually focus on so I don't fall behind competitors?
+A: You don't need to chase every new buzzword. Based on Google's just-finished September spam update and the AI Mode link changes, cross-border sellers should watch five things in 2026: content that clears the quality bar, pages with answers AI can quote, complete and accurate official information, a growing base of returning readers, and results measured by AI citation share and orders. Park every other trend on a watch list and check it monthly.
 
-### 海外社媒运营工具太贵？中小卖家用AI托管的成本账
-URL: https://touchigh.ai/blog/affordable-social-media-management-ai/ · Language: zh-Hans
-Q: 我想把美国的Facebook、Instagram和TikTok账号运营起来，但请人、买工具都太贵，有没有省钱又不累的办法？
-A: 先算总账，而不只看工具月费。中小卖家运营美国社媒的真实成本包括工具费、内容制作、英文本地化和团队时间。多数社媒管理工具只解决排期和数据，不解决“写”；美国本地代运营又太贵。更划算的路径是只做一两个主平台，用AI托管完成写作、预估和排期，人只负责审核和回复关键互动。
+### Social Media Management Tools Too Expensive? The AI Cost Math for Sellers
+URL: https://touchigh.ai/blog/en/affordable-social-media-management-ai/ · 中文版: https://touchigh.ai/blog/affordable-social-media-management-ai/
+Q: I want to get my US Facebook, Instagram and TikTok accounts going, but hiring people and buying tools both cost too much. Is there a cheaper way that won't wear me out?
+A: Add up the full bill, not just the monthly tool fee. The real cost of running US social for a small seller includes tools, content production, English localization and team time. Most social media management tools handle scheduling and analytics, not writing, and local US agencies cost too much. The better-value path: focus on one or two main platforms, let an AI-managed service write, predict and schedule, and keep people on approvals and key replies.
 
-### Instagram 发帖频率怎么定？出海品牌稳定更新的简化法
-URL: https://touchigh.ai/blog/instagram-algorithm-posting-consistency/ · Language: zh-Hans
-Q: 我们的 Instagram 总是断更，发帖频率到底该怎么定，才能稳定更新又不牺牲内容质量？
-A: 与其追求日更，不如先按团队产能定一个能连续坚持 12 周的保底频率，比如每周 3–5 条主帖加 1–2 条试验 Reels，再用“每月集中策划、每周批量制作、按美国时间预约发布”的流程固定下来。Instagram 负责人 Mosseri 表示信息流大致按时间排序、新帖更占优势，所以稳定节奏比偶尔爆发更重要；衡量效果看互动率，而不是播放量。
+### How Often Should a Brand Post on Instagram? A Simple System to Stay Consistent
+URL: https://touchigh.ai/blog/en/instagram-algorithm-posting-consistency/ · 中文版: https://touchigh.ai/blog/instagram-algorithm-posting-consistency/
+Q: Our Instagram keeps going quiet. How do we decide how often to post so we stay consistent without sacrificing quality?
+A: Instead of chasing daily posts, set a baseline your team can sustain for 12 straight weeks, such as 3–5 main posts plus 1–2 trial Reels a week, then lock it in with a process: plan monthly, produce weekly in batches and schedule on US time. Instagram head Adam Mosseri says the feed is roughly chronological and newer posts have the edge, so a steady rhythm beats occasional bursts. Judge results by engagement rate, not views.
 
-### TikTok Shop 美区短视频：小达人+多视频怎么做起来
-URL: https://touchigh.ai/blog/tiktok-shop-us-small-creators-video/ · Language: zh-Hans
-Q: 我想在 TikTok Shop 美区做起来，怎样才能拍出让美国用户停下来、愿意下单的短视频？
-A: TikTok Shop 美区的增长主要靠持续多发视频和大量小达人，而不是一条精致大片。据 Marketplace Pulse 数据，发布超过 1,000 条视频的店铺占卖家 8%，却贡献 60% 的销售。做法是：先选能在 15 秒内演示效果的产品，用钩子模板批量拍摄、每天 2–3 条，同时广撒样品给小达人，并奖励持续多发的人。
+### TikTok Shop US Videos: How Small Creators Plus More Videos Drive Sales
+URL: https://touchigh.ai/blog/en/tiktok-shop-us-small-creators-video/ · 中文版: https://touchigh.ai/blog/tiktok-shop-us-small-creators-video/
+Q: I want to grow on TikTok Shop US. How do I make short videos that stop American shoppers scrolling and get them to buy?
+A: Growth on TikTok Shop US comes mainly from posting videos consistently and in volume, plus lots of small creators, not one polished hero video. According to Marketplace Pulse data, shops that posted more than 1,000 videos are 8% of sellers but drive 60% of sales. The playbook: pick products you can demo in 15 seconds, batch-shoot two to three videos a day from hook templates, send samples widely to small creators and reward those who keep posting.
 
-### 独立站弃购率怎么降？谷歌 AI 购物车时代的结账优化
-URL: https://touchigh.ai/blog/google-universal-cart-cart-abandonment/ · Language: zh-Hans
-Q: 我的独立站很多客人加了购物车却不付款，怎样优化结账流程，把弃购率降下来？
-A: 降低独立站弃购率，关键是减少结账路上的选择和意外：提前展示运费、税费和预计送达时间，配送方式最多保留两种，开放游客结账，补齐 PayPal、Apple Pay、Google Pay 等常用付款方式，并用地道美式英语写清退换政策。谷歌 Universal Cart 让美国用户更容易跨店比价、等降价，结账体验更要先做好。
+### How to Reduce Cart Abandonment as Google Rolls Out Universal Cart
+URL: https://touchigh.ai/blog/en/google-universal-cart-cart-abandonment/ · 中文版: https://touchigh.ai/blog/google-universal-cart-cart-abandonment/
+Q: Lots of shoppers add items to the cart on my store but never pay. How do I fix my checkout and bring cart abandonment down?
+A: To reduce cart abandonment, cut the choices and surprises on the way to paying: show shipping, taxes and estimated delivery early, keep two shipping options at most, allow guest checkout, offer PayPal, Apple Pay and Google Pay, and explain returns in natural US English. Google's Universal Cart makes it easier for US shoppers to compare stores and wait for price drops, so get checkout right first.
 
-### 谷歌 AI Mode 广告来了：中小卖家该不该试新渠道？
-URL: https://touchigh.ai/blog/ai-mode-ads-chatgpt-ads-new-channels/ · Language: zh-Hans
-Q: 谷歌 AI Mode 广告、ChatGPT 广告都来了，我们这种中小卖家该不该试这些新渠道，怎样才能不白花钱？
-A: 可以试，但只用输得起的预算。AI Mode 广告没有单独的广告系列，要通过 Performance Max、购物广告或广泛匹配搜索广告（含 AI Max）进入；先修好转化追踪、商品数据和落地页，再用小预算围绕一个商业问题做实验，按毛利而不是转化数评估。ChatGPT 视觉广告首批只对部分美国广告主开放，现阶段先观察。
+### Google AI Mode Ads Are Here: Should Small Sellers Test New Channels?
+URL: https://touchigh.ai/blog/en/ai-mode-ads-chatgpt-ads-new-channels/ · 中文版: https://touchigh.ai/blog/ai-mode-ads-chatgpt-ads-new-channels/
+Q: Google AI Mode ads and ChatGPT ads are both here. Should a small seller like us try these new channels, and how do we avoid wasting money?
+A: Yes, but only with budget you can afford to lose. AI Mode ads have no separate campaign type; they run through Performance Max, Shopping and broad-match Search campaigns, including AI Max. Fix conversion tracking, product data and landing pages first, then test one business question on a small budget and judge it on gross margin, not conversions. ChatGPT's visual ads open first to only some US advertisers, so watch for now.
 
-### Meta Advantage+ 受众定向：中小卖家如何找准美国客户
-URL: https://touchigh.ai/blog/meta-advantage-plus-targeting-smb/ · Language: zh-Hans
-Q: 美国市场人群这么多元，我在 Meta 投广告时，怎样针对不同文化背景的受众做定向和营销？
-A: 在 Meta Advantage+ 里，手动兴趣标签的作用在减弱，素材本身成了最重要的定向信号。中小卖家应先写 3–5 个美国人群假设，为每类人群做开头不同的素材；受众尽量放宽、预算集中，并确保 Pixel 和转化 API 回传准确；再按素材拆分数据，看算法实际找到了谁，然后加码赢家。
+### Meta Advantage+ Targeting: How Small Sellers Find the Right US Customers
+URL: https://touchigh.ai/blog/en/meta-advantage-plus-targeting-smb/ · 中文版: https://touchigh.ai/blog/meta-advantage-plus-targeting-smb/
+Q: The US market is so diverse. When I run Meta ads, how do I target and market to audiences from different cultural backgrounds?
+A: In Meta Advantage+, manual interest targeting matters less and your creative has become the strongest targeting signal. Write three to five US audience hypotheses and give each its own creatives with different opening hooks. Keep audiences broad and budgets concentrated, make sure your Pixel and Conversions API send accurate data, then break results out by creative to see who the algorithm actually found, and scale the winners.
 
-### 出海本土化营销不是翻译：普通产品如何卖出美国品牌感
-URL: https://touchigh.ai/blog/localization-not-translation-brand-premium/ · Language: zh-Hans
-Q: 我们准备在美国做本土化营销，品牌本土化通常会遇到哪些坑，怎样避开才能赢得美国消费者的信任？
-A: 本土化最大的坑是把它当成翻译。要赢得美国消费者信任，需要把产品放进他们熟悉的生活场景，用他们的说话方式讲他们的问题，统一各渠道的定位和话术，并写清退换政策和美国时区的客服时间。雨果跨境报道的加热睡袍能卖到 129.99 美元，靠的正是“场景决定溢价”。
+### Brand Localization Isn't Translation: How Ordinary Products Earn a US Premium
+URL: https://touchigh.ai/blog/en/localization-not-translation-brand-premium/ · 中文版: https://touchigh.ai/blog/localization-not-translation-brand-premium/
+Q: We're getting ready to localize our marketing for the US. What pitfalls do brands usually hit, and how do we avoid them and earn American shoppers' trust?
+A: The biggest localization trap is treating it as translation. To earn American shoppers' trust, put your product in everyday scenes they recognize, describe their problems the way they talk, keep positioning and messaging consistent across channels, and spell out returns and customer service hours in US time zones. The heated robe Cifnews reported selling at $129.99 shows the principle: the setting sets the premium.
 
-### 美国小额豁免取消后，跨境卖家如何走出平台依赖
-URL: https://touchigh.ai/blog/de-minimis-end-brand-independent-site/ · Language: zh-Hans
-Q: 美国取消小额豁免以后，我做跨境出海还会遇到哪些挑战？要不要从平台转向做品牌独立站？
-A: 美国取消小额豁免后，低货值小包直邮的价格优势被进口税费抹平，平台广告成本又在上涨，单靠平台流量和低价越来越难赚钱。更稳的做法不是撤出亚马逊，而是边卖边建：重算到岸成本、收缩亏损SKU，聚焦一两款有差异的主力款，搭建品牌独立站，并让品牌在美国AI搜索和社媒里被找到。
+### US De Minimis Is Gone: How Cross-Border Sellers Can Break Platform Dependence
+URL: https://touchigh.ai/blog/en/de-minimis-end-brand-independent-site/ · 中文版: https://touchigh.ai/blog/de-minimis-end-brand-independent-site/
+Q: Now that the US has ended the de minimis exemption, what challenges should I expect selling cross-border, and should I shift from marketplaces to my own brand site?
+A: With the US de minimis exemption gone, import fees wipe out the price edge of low-value parcels shipped direct, while marketplace ad costs keep climbing. The safer move isn't quitting Amazon; it's building while you sell: recalculate landed costs, cut money-losing SKUs, focus on one or two differentiated hero products, launch your own brand site, and make sure US shoppers can find you in AI search and on social.
 
-### AI生成广告素材：批量做不难，先打分再投放才省钱
-URL: https://touchigh.ai/blog/ad-creatives-at-scale-prescore/ · Language: zh-Hans
-Q: 有没有办法用AI自动化、简化广告素材制作，又能批量做出有吸引力的广告图和视频？
-A: 可以用AI自动化批量生成广告素材：先列出3到5个卖点、2到3类人群和场景，组合成素材矩阵，交给AI出图、出文案和短视频脚本。但别生成完就投：上线前先用预测评分或检查表筛掉后一半，再用小预算同条件测试，只放大跑赢的几条，并定期换新防止疲劳。
+### AI Ad Creatives: Making Them in Bulk Is Easy, Scoring Them First Saves Money
+URL: https://touchigh.ai/blog/en/ad-creatives-at-scale-prescore/ · 中文版: https://touchigh.ai/blog/ad-creatives-at-scale-prescore/
+Q: Is there a way to use AI to automate and simplify ad creative production, and still turn out lots of eye-catching ad images and videos?
+A: Yes. Use AI to produce ad creatives in bulk: list 3–5 selling points and 2–3 audiences and scenarios, combine them into a creative matrix, and have AI produce images, copy and short-video scripts. But don't launch everything. Use a predictive score or a checklist to cut the bottom half before going live, test the rest on small, equal budgets, scale only the winners, and refresh regularly to avoid fatigue.
 
-### AI生成社媒内容会被限流吗？出海品牌如何不被淹没
-URL: https://touchigh.ai/blog/ai-slop-brand-content-standout/ · Language: zh-Hans
-Q: 有哪些AI工具能帮我又快又好地生成社媒内容？用AI写的帖子会不会被平台限流？
-A: 能帮您快速产出高质量社媒内容的，不是某一个写作工具，而是一套分工：AI负责初稿、改写和多版本，品牌负责观点和独家素材，发布前再做去同质化检查和效果预估。LinkedIn已在识别并降权泛泛、重复、缺乏洞见的帖子，所以关键在于内容有没有信息量，而不是用没用AI。
+### Will AI Social Media Content Get Throttled? How Brands Avoid Getting Buried
+URL: https://touchigh.ai/blog/en/ai-slop-brand-content-standout/ · 中文版: https://touchigh.ai/blog/ai-slop-brand-content-standout/
+Q: Which AI tools can help me create social media content quickly and well? And will posts written with AI get throttled by the platforms?
+A: What helps you produce high-quality social content fast isn't one writing tool but a division of labor: AI handles first drafts, rewrites and variations; your brand supplies the point of view and exclusive material; and before publishing you check for sameness and estimate performance. LinkedIn already identifies and demotes generic, repetitive, insight-free posts, so what matters is whether content says something, not whether AI wrote it.
 
-### 跨境电商全球化运营：中小卖家为什么要学会做减法
-URL: https://touchigh.ai/blog/global-ecommerce-operations-less-is-more/ · Language: zh-Hans
-Q: 跨境电商做全球化运营，成功的关键要素到底是什么？中小卖家资源有限该怎么取舍？
-A: 跨境电商全球化运营的关键要素可以归结为五项：选准一个主攻市场、用少量主力SKU保持库存健康、两三个能互相导流的渠道、统一的数据，以及能被美国消费者和AI读懂的品牌内容。对预算有限的中小卖家，最有效的策略往往是做减法：把钱和人集中在少数环节，跑通之后再复制。
+### Global Ecommerce Strategy: Why Small Cross-Border Sellers Should Do Less
+URL: https://touchigh.ai/blog/en/global-ecommerce-operations-less-is-more/ · 中文版: https://touchigh.ai/blog/global-ecommerce-operations-less-is-more/
+Q: What are the key success factors for running global ecommerce operations, and with limited resources, how should a small seller decide what to focus on?
+A: The key success factors in global ecommerce come down to five: one primary market, a few hero SKUs that keep inventory healthy, two or three channels that send traffic to each other, unified data, and brand content that US shoppers and AI can understand. For small sellers on tight budgets, the most effective strategy is often subtraction: concentrate money and people on a few things, prove them out, then replicate.
 
-### 美国消费者购物习惯变了：不再从谷歌开始，卖家如何被找到
-URL: https://touchigh.ai/blog/us-shoppers-ai-shelf-discovery/ · Language: zh-Hans
-Q: 美国消费者现在是怎么找商品、做购买决策的？哪些因素会影响他们买不买我的产品？
-A: 影响美国消费者购买决策的已不只是Google排名。据Search Engine Land报道的一项美妆消费者调查，只有43%的人从Google开始找商品，其余从Instagram、YouTube、TikTok和AI工具开始；但在TikTok发现商品后，72%会再去Google核实。卖家需要同时出现在社媒、Google和AI答案里，并提供一致、可核实的信息。
+### US Shoppers No Longer Start on Google: How Sellers Get Found on the AI Shelf
+URL: https://touchigh.ai/blog/en/us-shoppers-ai-shelf-discovery/ · 中文版: https://touchigh.ai/blog/us-shoppers-ai-shelf-discovery/
+Q: How do US consumers find products and decide what to buy now, and what makes them buy (or skip) my product?
+A: Google rankings are no longer the whole story. In a beauty-shopper survey reported by Search Engine Land, only 43% of US consumers started product searches on Google; the rest began on Instagram, YouTube, TikTok or AI tools. Yet 72% of those who found a product on TikTok then searched Google to check it. Sellers need to show up on social, Google and AI answers with consistent, verifiable information.
 
-### 跨平台广告预算怎么分配？谷歌渠道优先级上线后的新解法
-URL: https://touchigh.ai/blog/google-ads-channel-prioritization-budget/ · Language: zh-Hans
-Q: 我预算有限，亚马逊、谷歌、Meta、TikTok 都想投，广告预算到底该怎么在各平台之间分配，才能拿到最好的回报？
-A: 先别平均分。把大部分预算放在已经能稳定出单的一个主阵地，直到继续加钱时每多花一美元换来的回报明显下降，再拿出小部分预算测试第二个渠道。谷歌新推出的“高/低渠道优先级”正是这个思路：先喂饱高优先级渠道，剩下的钱再按上限分给低优先级渠道。每两周按边际ROAS复盘一次，不及格的渠道果断砍掉。
+### How to Split Ad Budget Across Platforms Now That Google Has Channel Priorities
+URL: https://touchigh.ai/blog/en/google-ads-channel-prioritization-budget/ · 中文版: https://touchigh.ai/blog/google-ads-channel-prioritization-budget/
+Q: My budget is limited, and I want to advertise on Amazon, Google, Meta and TikTok. How should I split my ad budget across platforms to get the best return?
+A: Don't split it evenly. Put most of your budget on the one channel that already brings in steady orders, until each extra dollar clearly returns less; then test a second channel with a small slice. Google's new high/low channel priorities follow the same logic: fund high-priority channels first, then cap what's left for low-priority ones. Review marginal ROAS (return on ad spend) every two weeks and cut channels that miss.
 
-### 电商视频制作成本太高？用AI把一次拍摄变成一套素材
-URL: https://touchigh.ai/blog/ecommerce-video-production-ai-cost/ · Language: zh-Hans
-Q: 我想做能吸引美国消费者的电商视频，但请团队拍太贵了，有没有用AI低成本做视频的办法？
-A: 有，但别指望AI一键替代拍摄。更省钱的做法是“真人拍一次，AI做十版”：用一次真实拍摄留下产品使用、工厂和真人讲解的原始素材，再用AI完成剪辑、字幕、配音翻译和多版本改写，按平台裁成不同尺寸和时长。YouTube新推出的视频A/B测试，就是让你把一条视频做成三个版本，用数据决定哪一版值得放大。
+### Ecommerce Video Costs Too High? Turn One Shoot into Ten Versions with AI
+URL: https://touchigh.ai/blog/en/ecommerce-video-production-ai-cost/ · 中文版: https://touchigh.ai/blog/ecommerce-video-production-ai-cost/
+Q: I want to make ecommerce videos that appeal to US shoppers, but hiring a crew is too expensive. Is there a way to make videos cheaply with AI?
+A: Yes, but don't expect AI to replace filming with one click. The cheaper approach is "film real people once, let AI make ten versions": capture raw footage of the product in use, your factory and a real person explaining it, then use AI for editing, subtitles, voice translation and rewrites, cut to each platform's size and length. YouTube's new video A/B testing lets you turn one video into three versions and let data pick the winner.
 
-### 亚马逊AI广告智能体来了：不会投广告的卖家该交出什么
-URL: https://touchigh.ai/blog/amazon-ads-agent-sellers/ · Language: zh-Hans
-Q: 亚马逊推出了AI广告智能体，我自己不太会投广告，到底该不该用？把钱交给AI会不会失控？
-A: 值得试，但别一次全交出去。Amazon Ads Agent 把搜索、展示、视频和全漏斗广告整合进一个由智能体AI驱动的平台，能用自然语言给出投放建议。合理的做法是：目标、利润底线和预算上限由你来定，日常调价、选词和报告交给AI；先拿一小部分预算做四周对照测试，再用新客数和ACoS决定是否扩大。
+### Amazon's AI Ad Agent Is Here: What Sellers New to Ads Should Hand Over
+URL: https://touchigh.ai/blog/en/amazon-ads-agent-sellers/ · 中文版: https://touchigh.ai/blog/amazon-ads-agent-sellers/
+Q: Amazon launched an AI ad agent, and I'm not great at running ads myself. Should I use it? Will handing my money to AI get out of control?
+A: It's worth trying, but don't hand everything over at once. Amazon Ads Agent brings search, display, video and full-funnel ads into one platform powered by agentic AI and gives recommendations in plain language. Set goals, your profit floor and budget caps yourself; let AI handle daily bid changes, keyword picks and reports. Run a four-week controlled test with a small slice of budget, then use new-customer counts and ACoS to decide whether to expand.
 
-### TikTok Shop收紧、SHEIN加补贴：跨境电商渠道怎么选
-URL: https://touchigh.ai/blog/tiktok-shop-shein-channel-mix/ · Language: zh-Hans
-Q: TikTok Shop 在收紧规则，SHEIN 又在发补贴，我想打进美国市场，渠道到底该怎么选，才能让品牌被当地消费者记住？
-A: 先按产品和能力选，再按补贴选。需要演示讲解、能安排真人出镜的产品，适合TikTok Shop，但要提前备好CPC/GCC等合规文件；款式多、能小单快反的工厂型卖家，可以借SHEIN的大促补贴冲量；想沉淀品牌和复购，就要有自己的独立站和内容。多数卖家合理的组合是一个主渠道加一个辅助渠道，而不是全平台铺货。
+### TikTok Shop vs. SHEIN: How Cross-Border Sellers Should Pick Channels
+URL: https://touchigh.ai/blog/en/tiktok-shop-shein-channel-mix/ · 中文版: https://touchigh.ai/blog/tiktok-shop-shein-channel-mix/
+Q: TikTok Shop is tightening its rules and SHEIN is handing out subsidies. I want to break into the US market. How do I choose my sales channels so American shoppers actually remember my brand?
+A: Pick by product and capability first, subsidies second. Products that need a demo and a real person on camera suit TikTok Shop, if your CPC or GCC compliance certificates are ready. Factories with many styles that can restock fast in small batches can use SHEIN's holiday subsidies for volume. To build a brand and repeat buyers, you need your own DTC site and content. Most sellers do best with one main channel plus one supporting channel.
 
-### 假日季AI购物助手流量预计涨130%：卖家该准备什么
-URL: https://touchigh.ai/blog/holiday-2026-ai-shopping-agents/ · Language: zh-Hans
-Q: 今年黑五和圣诞旺季，听说很多美国人会用AI助手购物，我的店铺该怎么准备，才不会被AI漏掉？
-A: 先别被新渠道分散精力。Adobe预测今年美国假日季来自AI助手和购物智能体的零售网站流量将同比增长130%，但这类流量靠“被推荐”而不是“被投放”获得：把主推商品页的规格、价格和退换政策写清楚，补齐常见问题，英文社媒保持更新。ChatGPT广告目前成本高、增量存疑，小卖家可以先观望。
+### Holiday AI Shopping Traffic Could Jump 130%: What Sellers Should Prepare
+URL: https://touchigh.ai/blog/en/holiday-2026-ai-shopping-agents/ · 中文版: https://touchigh.ai/blog/holiday-2026-ai-shopping-agents/
+Q: I hear a lot of Americans will use AI assistants to shop this Black Friday and Christmas. How should I prepare my store so AI doesn't skip over me?
+A: Don't let new channels scatter your focus. Adobe expects US holiday traffic to retail sites from AI assistants and shopping agents to grow 130% year over year, but that traffic comes from being recommended, not from buying placements. Spell out specs, prices and return policies on your hero product pages, answer common questions, and keep your English social accounts active. ChatGPT ads are expensive and their incremental value is unclear, so small sellers can wait.
 
 ### Facebook Algorithm Changes: Staying Visible When Users Can Talk to the Feed
-URL: https://touchigh.ai/blog/facebook-algorithm-controls-small-business/ · Language: en
+URL: https://touchigh.ai/blog/facebook-algorithm-controls-small-business/ · 中文版: https://touchigh.ai/blog/zh/facebook-algorithm-controls-small-business/
 Q: How do I stay ahead of social media algorithm changes so my posts keep getting seen?
 A: Stop chasing each update and make every post easy to match to an interest your customers would name. Facebook now lets people tell its feed in plain language what they want more or less of, in Feed and Reels, and adapts within the same session. Pick two or three customer-worded topics, post original content on them, and judge posts by shares and comments, not reach alone.
 
 ### Threads SEO and AI Citations: Do Social Posts Help You Show Up in AI Answers?
-URL: https://touchigh.ai/blog/social-posts-ai-citations-threads-seo/ · Language: en
+URL: https://touchigh.ai/blog/social-posts-ai-citations-threads-seo/ · 中文版: https://touchigh.ai/blog/zh/social-posts-ai-citations-threads-seo/
 Q: Is Threads worth posting on for SEO, and do social posts actually help me get cited by AI search?
 A: For Google, yes; for ChatGPT, much less. Research covered by Social Media Today found social platform links in 67.66% of Google AI Overview responses but only 8.4% of ChatGPT answers. The study didn't measure Threads, so treat it as one public channel among several: post useful answers there, link them back to your own site, and check whether AI tools start citing you.
 
 ### LinkedIn Engagement Strategy: How Small B2B Brands Win as AI Slop Gets Cut
-URL: https://touchigh.ai/blog/linkedin-ai-slop-b2b-engagement/ · Language: en
+URL: https://touchigh.ai/blog/linkedin-ai-slop-b2b-engagement/ · 中文版: https://touchigh.ai/blog/zh/linkedin-ai-slop-b2b-engagement/
 Q: What are the best practices for getting real engagement on LinkedIn as a small B2B business?
 A: Post specific, first-hand expertise and spend as much time in other people's comments as on your own posts. LinkedIn now runs AI-slop classifiers on every post distributed beyond your immediate network, so generic, repetitive content risks losing reach. Small B2B brands win with founder and employee voices, real numbers and stories, and replies that start conversations with the right people.
 
 ### Social Media Metrics That Matter for Small Businesses, Beyond Followers
-URL: https://touchigh.ai/blog/social-media-metrics-that-matter-smes/ · Language: en
+URL: https://touchigh.ai/blog/social-media-metrics-that-matter-smes/ · 中文版: https://touchigh.ai/blog/zh/social-media-metrics-that-matter-smes/
 Q: What social media metrics should I focus on to actually measure my influence, if follower count isn't it?
 A: Track what people do, not how many follow you: engagement rate per reach, shares and saves, meaningful comments, profile and link clicks, inquiries, and sales you can trace to social. Add one newer metric: whether AI search tools cite your brand or posts. Research covered by Social Media Today found social links in 67.66% of Google AI Overview responses.
 
 ### Affordable Marketing for Small Business: A Lean Stack Under $500 a Month
-URL: https://touchigh.ai/blog/lean-marketing-stack-smes-under-500/ · Language: en
+URL: https://touchigh.ai/blog/lean-marketing-stack-smes-under-500/ · 中文版: https://touchigh.ai/blog/zh/lean-marketing-stack-smes-under-500/
 Q: How do I market my small business affordably without wasting money on campaigns that don't work?
 A: Build owned channels before you rent attention. Fix your website basics and Google Business Profile, publish answers to customer questions so search engines and AI tools can cite you, post consistently on one or two social platforms, then test small ads only behind messages that already work organically. Built in that order, a lean stack can run for under $500 a month.
 
 ### Longer Searches, Pickier Clicks: Raise Your Landing Page Conversion Rate
-URL: https://touchigh.ai/blog/landing-pages-ai-era-search-traffic/ · Language: en
+URL: https://touchigh.ai/blog/landing-pages-ai-era-search-traffic/ · 中文版: https://touchigh.ai/blog/zh/landing-pages-ai-era-search-traffic/
 Q: What changes can I make to my landing pages to improve conversion rates?
 A: Match each landing page to the specific question that brought the visitor. Since Google's AI Mode launched, searches have grown longer and more specific, so generic pages lose people. Mirror the searcher's wording in your headline, show price, proof and one clear next step in the first screen, remove competing links and pop-ups, and make sure the page loads fast on a phone.
 
 ### Lead Generation Strategies for Small Business When Ad Costs Climb
-URL: https://touchigh.ai/blog/lead-generation-strategy-first-outbound/ · Language: en
+URL: https://touchigh.ai/blog/lead-generation-strategy-first-outbound/ · 中文版: https://touchigh.ai/blog/zh/lead-generation-strategy-first-outbound/
 Q: How can I improve my lead conversion rates when ads keep getting more expensive?
 A: Stop chasing more leads and start earning better ones. Pick a short list of companies with a clear reason to buy now, research each one before contacting them, open with something useful rather than a pitch, and follow up across email, phone, LinkedIn and messaging over about three weeks. Measure positive replies, meetings and deals per account contacted, not email opens.
 
 ### SEO Best Practices for AI Overviews and AI Mode (October 2026)
-URL: https://touchigh.ai/blog/seo-best-practices-ai-overviews-ai-mode/ · Language: en
+URL: https://touchigh.ai/blog/seo-best-practices-ai-overviews-ai-mode/ · 中文版: https://touchigh.ai/blog/zh/seo-best-practices-ai-overviews-ai-mode/
 Q: Which SEO best practices actually matter now that Google shows AI Overviews and AI Mode?
 A: Do fewer things, better. Make sure Google's AI describes your brand correctly, since AI Overviews now appear on most branded searches. Publish answer-first pages built on facts only you have, keep your business details identical everywhere, and refresh your best pages instead of adding thin new ones. Then check monthly which sources AI answers cite for your top questions.
 
 ### Content Creation Tools for SEO: A Simple Workflow AI Engines Will Cite
-URL: https://touchigh.ai/blog/content-ai-engines-cite-workflow/ · Language: en
+URL: https://touchigh.ai/blog/content-ai-engines-cite-workflow/ · 中文版: https://touchigh.ai/blog/zh/content-ai-engines-cite-workflow/
 Q: How can I create high-quality SEO content faster without sacrificing quality?
 A: Use fewer tools and a tighter workflow. Start every piece from facts only you have, such as product specs, test results, pricing and real customer questions. Let AI handle outlines and first drafts inside one brief template, then spend your human time checking facts and adding first-hand detail. AI engines like ChatGPT increasingly cite original sources over summaries.
 
 ### AI Ad Tools for Small Business: What Meta Muse and X Lift Really Do
-URL: https://touchigh.ai/blog/ai-ad-tools-small-business-compared/ · Language: en
+URL: https://touchigh.ai/blog/ai-ad-tools-small-business-compared/ · 中文版: https://touchigh.ai/blog/zh/ai-ad-tools-small-business-compared/
 Q: Which AI marketing and ad tools will actually save me time without wasting my budget?
 A: Separate tools that make ads from tools that decide where your money goes. Generation tools, such as Meta's image-to-video ads or X Lift's URL-to-ad feature, can save hours on creative. Tools that set targeting and budget need guardrails: a loss cap, one test product, a comparison with your current results and your approval before anything runs. Test for 30 days before committing.
 
 ### Best Time to Post on Social Media in 2026: Why Consistency Beats the Clock
-URL: https://touchigh.ai/blog/best-time-to-post-2026/ · Language: en
+URL: https://touchigh.ai/blog/best-time-to-post-2026/ · 中文版: https://touchigh.ai/blog/zh/best-time-to-post-2026/
 Q: When is the best time to post on social media so more people actually see my content?
 A: There is no single best time to post on social media in 2026. Recency still helps, so post when your own followers are online, which your platform analytics will show. But ranking now leans on relevance, so a steady schedule on one or two channels you can sustain beats chasing the perfect hour across five.
 
 ### How to Increase Social Media Engagement: Predict It Before You Post
-URL: https://touchigh.ai/blog/predict-social-engagement-before-publishing/ · Language: en
+URL: https://touchigh.ai/blog/predict-social-engagement-before-publishing/ · 中文版: https://touchigh.ai/blog/zh/predict-social-engagement-before-publishing/
 Q: What can I do to make my social media posts more engaging and reach more people?
 A: To increase social media engagement, make each post useful enough that someone would save, share or act on it, and check that before you publish. Start from real customer questions, lead with a specific hook, show the product solving a problem, and end with one clear action. Then compare drafts before posting rather than guessing afterward.
 
 ### How to Measure Influencer Marketing ROI on TikTok Shop as a Small Brand
-URL: https://touchigh.ai/blog/measure-influencer-roi-tiktok-shop/ · Language: en
+URL: https://touchigh.ai/blog/measure-influencer-roi-tiktok-shop/ · 中文版: https://touchigh.ai/blog/zh/measure-influencer-roi-tiktok-shop/
 Q: How can I accurately measure whether my influencer collaborations on TikTok Shop are paying off?
 A: Measure influencer ROI on TikTok Shop per creator, not per campaign. Track how many seeded creators post, how many videos each makes, sales per video, and total cost including free product, shipping, commission and fees. ROI is attributed gross profit minus those costs, divided by the costs. Then add halo signals like Amazon or website sales lifts and buying questions in comments.
 
 ### Social Media Management for Small Business: A 2-Hour-a-Week System
-URL: https://touchigh.ai/blog/social-media-system-for-busy-founders/ · Language: en
+URL: https://touchigh.ai/blog/social-media-system-for-busy-founders/ · 中文版: https://touchigh.ai/blog/zh/social-media-system-for-busy-founders/
 Q: How can I manage my small business's social media when I barely have any time?
 A: Treat social media as one two-hour weekly block, not an all-day background task. Pick one or two platforms, plan and make three posts in one sitting, schedule them, and reply to comments in a short daily window. Cut tools and notifications to the minimum, review one set of numbers on Friday, and hand off drafting when you can.
 
 ### Authentic Content Marketing: What Temu's Fake-Influencer Purge Teaches SMEs
-URL: https://touchigh.ai/blog/temu-fake-influencers-authentic-brand-voice/ · Language: en
+URL: https://touchigh.ai/blog/temu-fake-influencers-authentic-brand-voice/ · 中文版: https://touchigh.ai/blog/zh/temu-fake-influencers-authentic-brand-voice/
 Q: How can I make sure my content reflects my brand's voice and connects with my audience authentically?
 A: Authentic content comes from what only your brand has: your customers' own words, a clear point of view and proof you can show. Write three voice rules, pick three topics you can back up, and filter every trend by whether it helps your customers. Temu's fake-influencer purge shows borrowed reach can vanish in weeks, while earned trust compounds.
 
 ### TikTok Ads for Small Business: A Focused 30-Day Test Plan
-URL: https://touchigh.ai/blog/tiktok-ads-playbook-small-advertisers/ · Language: en
+URL: https://touchigh.ai/blog/tiktok-ads-playbook-small-advertisers/ · 中文版: https://touchigh.ai/blog/zh/tiktok-ads-playbook-small-advertisers/
 Q: What mobile marketing trends do I need to know, and should my small business start advertising on TikTok?
 A: Start with one focused TikTok test: one product, one goal, a fixed budget based on your break-even cost per sale, and three to five native vertical videos. Run it for 30 days without constant edits, then keep, fix or stop based on that one number. Leave newer extras like the TikTok Ad Network until your in-feed ads are profitable.
 
 ### AI Shopping Assistants: How Small Brands Get Recommended on the AI Shelf
-URL: https://touchigh.ai/blog/ai-shelf-small-brands-shopping-assistants/ · Language: en
+URL: https://touchigh.ai/blog/ai-shelf-small-brands-shopping-assistants/ · 中文版: https://touchigh.ai/blog/zh/ai-shelf-small-brands-shopping-assistants/
 Q: How can I use AI to improve my marketing and get my products recommended by AI shopping assistants?
 A: Small brands get recommended by AI shopping assistants by making products easy to find, understand and verify: answer-style product pages, structured data, identical facts across every marketplace, honest comparison content and mentions on other sites. Then check monthly what ChatGPT, Perplexity, Gemini and Google's AI Mode say. Adobe expects AI-assisted holiday shopping traffic to rise 130%.
 
 ### Digital Advertising KPIs for Small Business: The 3 Numbers That Matter
-URL: https://touchigh.ai/blog/digital-advertising-kpis-small-business/ · Language: en
+URL: https://touchigh.ai/blog/digital-advertising-kpis-small-business/ · 中文版: https://touchigh.ai/blog/zh/digital-advertising-kpis-small-business/
 Q: What are the most important KPIs I should focus on for my digital advertising campaigns?
 A: Focus on three KPIs: cost per acquisition (what one customer costs), return on ad spend (revenue per ad dollar) and your repeat or qualified-lead rate (whether the right people came). Set break-even targets from your margin, review weekly, and use click-through rate, CPM and conversion rate only to diagnose why those three moved.
 
-### SEO工具推薦怎麼選？AI搜尋時代中小企業的精簡清單
-URL: https://touchigh.ai/blog/seo-tools-buying-guide-ai-search/ · Language: zh-Hant
-Q: 我是中小企業，預算有限，到底該買哪些SEO工具才最有回報？
-A: 先用免費的Google Search Console和GA4打底，再只補一個付費工具，去填你最大的缺口。2026年起，這個缺口往往是「AI搜尋能見度」：Google AI Overviews已出現在逾八成受追蹤的品牌搜尋中，工具若只追蹤排名、不看AI怎麼介紹你，就少了一半畫面。工具越少、用得越深，回報通常越高。
+### Best SEO Tools for Small Business: A Lean List for the AI Search Era
+URL: https://touchigh.ai/blog/en/seo-tools-buying-guide-ai-search/ · 中文版: https://touchigh.ai/blog/zh/seo-tools-buying-guide-ai-search/
+Q: I run a small business on a tight budget. Which SEO tools will actually pay off?
+A: Start with the free Google Search Console and GA4, then add just one paid tool to fill your biggest gap. In 2026, that gap is often AI search visibility: Google AI Overviews now appear on more than 80% of tracked branded searches, so a tool that only tracks rankings and ignores how AI describes you misses half the picture. Fewer tools, used deeply, usually pay back more.
 
-### 在地化行銷怎麼做？港台品牌打進美國社群的5個內容框架
-URL: https://touchigh.ai/blog/localized-social-content-frameworks/ · Language: zh-Hant
-Q: 我想經營美國社群，什麼樣的在地化內容才能真正打動當地受眾？
-A: 真正的在地化內容，是把產品放進美國人熟悉的生活場景，用他們的說法和文化梗來講，再加上只有你說得出的品牌細節。單純翻譯或照抄爆紅影片，只會淹沒在大同小異的貼文裡。先從一個具體使用場景、一個你獨有的證據開始，每則貼文只講一件事，比追求數量更有效。
+### Localized Marketing: 5 Social Content Frameworks to Win US Audiences
+URL: https://touchigh.ai/blog/en/localized-social-content-frameworks/ · 中文版: https://touchigh.ai/blog/zh/localized-social-content-frameworks/
+Q: I want to grow on US social media. What kind of localized content actually connects with American audiences?
+A: Truly localized content puts your product into everyday scenes Americans recognize, tells the story in their words and cultural references, and adds brand details only you can share. Straight translation or copying viral videos just gets lost among look-alike posts. Start with one specific use scene and one piece of proof unique to you, and keep each post to one idea. That works better than chasing volume.
 
-### 2026內容行銷趨勢：AI為什麼越來越愛引用一手資料？
-URL: https://touchigh.ai/blog/content-marketing-trends-2026-primary-sources/ · Language: zh-Hant
-Q: 2026年內容行銷有哪些最新趨勢，是我現在就該知道的？
-A: 2026年最重要的內容行銷趨勢，是AI答案引擎開始挑選來源。Ahrefs數據顯示，ChatGPT在美國最常引用的網站正轉向一手、權威來源；另一項研究則發現，67.66%的Google AI Overviews回答含有社群平台連結。中小企業的對策是：發布只有自己才有的資料，並保持社群活躍。
+### 2026 Content Marketing Trends: Why AI Now Prefers Primary Sources
+URL: https://touchigh.ai/blog/en/content-marketing-trends-2026-primary-sources/ · 中文版: https://touchigh.ai/blog/zh/content-marketing-trends-2026-primary-sources/
+Q: What are the latest content marketing trends for 2026 that I should know about right now?
+A: The biggest content marketing trend of 2026 is that AI answer engines have started choosing their sources. Ahrefs data shows the sites ChatGPT cites most in the US are shifting toward primary, authoritative sources, and another study found social links in 67.66% of Google AI Overviews answers. For small businesses, the fix: publish data only you have, and keep your social accounts active.
 
-### 降低行銷成本又不犧牲品質：中小企業的AI營運清單
-URL: https://touchigh.ai/blog/reduce-marketing-costs-ai-smes/ · Language: zh-Hant
-Q: 行銷預算越來越緊，有沒有既能降低成本、又不犧牲品質的做法？
-A: 有，關鍵是砍掉「重複」而不是「品質」。先記錄兩週行銷工時，把初稿、尺寸改版、排程和報表交給AI，人只負責品牌觀點、最終審核和回覆客人；再把部分廣告預算轉向會累積的自有管道，例如SEO、GEO和自然社群。省下的是重複勞動，品質把關仍然在人手上。
+### How to Reduce Marketing Costs Without Losing Quality: An AI Checklist
+URL: https://touchigh.ai/blog/en/reduce-marketing-costs-ai-smes/ · 中文版: https://touchigh.ai/blog/zh/reduce-marketing-costs-ai-smes/
+Q: My marketing budget keeps getting tighter. Is there a way to cut costs without sacrificing quality?
+A: Yes. Cut repetition, not quality. Log your marketing hours for two weeks, then hand first drafts, resizing, scheduling and reports to AI, while people handle brand voice, final review and customer replies. Shift part of your ad budget to owned channels that compound, like SEO, GEO and organic social. You save on repetitive labor, and quality control stays in human hands.
 
-### 社群演算法怎麼變？Facebook新控制項與IG排序邏輯
-URL: https://touchigh.ai/blog/social-algorithms-explained-facebook-instagram/ · Language: zh-Hant
-Q: 社群演算法一直變，我要怎麼調整經營策略，觸及率才會變好？
-A: 社群演算法的核心，是預測每位用戶對每則內容的興趣。Facebook最近讓用戶直接用日常語言告訴系統想多看或少看什麼，在動態消息和Reels立即生效。品牌的對策是：每則貼文都對準一個受眾說得出口的主題，開頭就講明，並追蹤分享、收藏與留言，而不只是按讚數。
+### Social Media Algorithms Explained: Facebook’s New Controls, Instagram Ranking
+URL: https://touchigh.ai/blog/en/social-algorithms-explained-facebook-instagram/ · 中文版: https://touchigh.ai/blog/zh/social-algorithms-explained-facebook-instagram/
+Q: Social media algorithms keep changing — how do I adjust my strategy so my reach actually improves?
+A: At its core, a social media algorithm predicts how interested each user will be in each post. Facebook now lets users tell it directly, in everyday language, what they want more or less of, and the change applies instantly in Feed and Reels. Brands should build every post around one topic the audience would name themselves, state it up front, and track shares, saves and comments, not just likes.
 
-### Visibilidad de marca en IA: cómo saber si ChatGPT y Google recomiendan tu pyme
-URL: https://touchigh.ai/blog/visibilidad-marca-ia-pymes/ · Language: es
-Q: ¿Cómo sé si ChatGPT, Perplexity o Google recomiendan mi empresa cuando un cliente pregunta por lo que vendo?
-A: Haz la prueba tú mismo: escribe entre 15 y 20 preguntas reales de compra de tu sector en ChatGPT, Perplexity, Gemini y Google (AI Overviews o Modo IA) y anota si apareces, en qué posición, con qué tono y qué webs se citan. Repite la misma lista cada mes. Si no sales, trabaja primero las fuentes de terceros que la IA ya consulta.
+### AI brand visibility: is ChatGPT recommending your small business?
+URL: https://touchigh.ai/blog/en/visibilidad-marca-ia-pymes/ · 中文版: https://touchigh.ai/blog/zh/visibilidad-marca-ia-pymes/
+Q: How do I know if ChatGPT, Perplexity or Google recommend my business when a customer asks about what I sell?
+A: Test it yourself: type 15 to 20 real buying questions from your industry into ChatGPT, Perplexity, Gemini and Google (AI Overviews or AI Mode), and note whether you appear, in what position, in what tone and which sites get cited. Repeat the same list every month. If you don't show up, work first on the third-party sources the AI already consults.
 
-### GEO para pymes: lo que funciona y lo que te están vendiendo
-URL: https://touchigh.ai/blog/geo-pymes-que-funciona/ · Language: es
-Q: ¿El GEO sirve de verdad para mi pyme o es otra moda que me quieren vender?
-A: El GEO sirve si se apoya en lo básico: contenido que se pueda rastrear, datos del negocio coherentes en Google y en otras fichas, respuestas claras a preguntas reales y medición repetida. Desconfía de quien garantice que ChatGPT te recomendará o venda el archivo llms.txt como atajo: según Google, no afecta a la visibilidad en su buscador ni en sus funciones de IA.
+### GEO for small businesses: what works and what you're being sold
+URL: https://touchigh.ai/blog/en/geo-pymes-que-funciona/ · 中文版: https://touchigh.ai/blog/zh/geo-pymes-que-funciona/
+Q: Does GEO actually work for my small business, or is it just another trend someone wants to sell me?
+A: GEO works if it rests on the basics: content that can be crawled, consistent business details on Google and other listings, clear answers to real questions, and repeated measurement. Be wary of anyone who guarantees ChatGPT will recommend you or sells an llms.txt file as a shortcut: according to Google, it doesn't affect visibility in its search engine or its AI features.
 
-### Perfil de Empresa en Google y redes: kit de visibilidad local para pymes
-URL: https://touchigh.ai/blog/perfil-empresa-google-redes-pymes/ · Language: es
-Q: ¿Cómo consigo que los clientes de mi zona me encuentren en Google e interactúen más conmigo en redes?
-A: Empieza por tu Perfil de Empresa en Google, la ficha que aparece cuando te buscan en Google y en Maps. Mantén nombre, horario, teléfono, web y categoría idénticos en tu sitio y en tus redes, revisa los cambios sugeridos (Google puede publicarlos si no respondes en cuatro días), contesta las reseñas y publica en redes lo que tus clientes preguntan.
+### Google Business Profile and social: a local visibility kit for small businesses
+URL: https://touchigh.ai/blog/en/perfil-empresa-google-redes-pymes/ · 中文版: https://touchigh.ai/blog/zh/perfil-empresa-google-redes-pymes/
+Q: How do I get customers in my area to find me on Google and engage with me more on social media?
+A: Start with your Google Business Profile, the listing that appears when people search for you on Google and Maps. Keep your name, hours, phone, website and category identical on your site and social accounts, review suggested edits (Google may publish them if you don't respond within four days), reply to reviews and post on social about what customers actually ask.
 
-### Publicidad con IA para pymes: Meta Muse y cuándo no automatizar
-URL: https://touchigh.ai/blog/publicidad-ia-pymes-meta-muse/ · Language: es
-Q: No sé hacer anuncios: ¿puedo dejar que la inteligencia artificial lleve la publicidad de mi pyme?
-A: Sí, pero por partes. Deja que la IA proponga textos, variantes de creatividades y ajustes de presupuesto, y reserva para ti tres decisiones: la oferta, el presupuesto máximo y la aprobación final. No automatices si aún no mides ventas o contactos, si tu página de destino falla o si nadie va a revisar lo que se publica.
+### AI advertising for small businesses: Meta Muse and when not to automate
+URL: https://touchigh.ai/blog/en/publicidad-ia-pymes-meta-muse/ · 中文版: https://touchigh.ai/blog/zh/publicidad-ia-pymes-meta-muse/
+Q: I don't know how to make ads: can I let artificial intelligence run my small business's advertising?
+A: Yes, but in pieces. Let AI propose copy, creative variations and budget adjustments, and keep three decisions for yourself: the offer, the maximum budget and final approval. Don't automate if you don't yet track sales or inquiries, if your landing page is broken, or if nobody is going to review what gets published.
 
-### Cómo medir campañas en redes sociales sin ser analista: 3 métricas
-URL: https://touchigh.ai/blog/medir-campanas-redes-sociales-pymes/ · Language: es
-Q: ¿Cómo sé si mis campañas en redes sociales están funcionando de verdad?
-A: Mide tres capas y nada más al principio: atención (cuánta gente vio el contenido y cuánto tiempo), conexión (guardados, compartidos, comentarios y mensajes por cada mil personas alcanzadas) y acción (clics, consultas o ventas, con su coste por resultado). Compara cada campaña con tu propia media de las últimas semanas, no con la de otras marcas.
+### How to Measure Social Media Campaigns Without Being an Analyst: 3 Metrics
+URL: https://touchigh.ai/blog/en/medir-campanas-redes-sociales-pymes/ · 中文版: https://touchigh.ai/blog/zh/medir-campanas-redes-sociales-pymes/
+Q: How do I know if my social media campaigns are actually working?
+A: Start by measuring three layers and nothing else: attention (how many people saw the content and for how long), connection (saves, shares, comments and messages per 1,000 people reached) and action (clicks, inquiries or sales, with their cost per result). Compare each campaign with your own average from recent weeks, not with other brands’.
 
-### 工厂LinkedIn获客：老板为什么要做思想领导力
-URL: https://touchigh.ai/blog/factory-founder-linkedin-thought-leadership/ · Language: zh-Hans
-Q: 我是做出口的工厂老板，客户主要靠展会和阿里国际站，听说要在LinkedIn上做个人IP，这对获客真的有用吗？该怎么开始？
-A: 有用，前提是发真正有观点的内容，而不是产品广告或AI套话。海外采购下单前会先查你是谁，老板在LinkedIn上持续分享工艺判断、交期成本和行业变化，能把一次性的展会接触变成长期信任。LinkedIn正用分类器压低泛泛的AI水帖，Google的AI概览又常引用社媒内容，真实的老板观点因此更值钱。建议每周发2到3条，坚持一个季度再评估。
+### LinkedIn Lead Generation for Factories: Why Owners Need Thought Leadership
+URL: https://touchigh.ai/blog/en/factory-founder-linkedin-thought-leadership/ · 中文版: https://touchigh.ai/blog/factory-founder-linkedin-thought-leadership/
+Q: I run an export factory, and most of our customers come from trade shows and Alibaba.com. People say I should build a personal brand on LinkedIn. Does that really help win buyers, and how do I start?
+A: Yes, if you post real opinions rather than product ads or AI boilerplate. Buyers check who you are before ordering, and an owner who regularly shares judgment on craft, lead times, costs and industry shifts turns one-off trade show contact into lasting trust. LinkedIn is using classifiers to demote generic AI slop, and Google's AI Overviews often cite social content, so authentic owner insight is worth more. Post 2 to 3 times a week and review after a quarter.
 
-### 让ChatGPT推荐你的工厂：工厂官网GEO入门
-URL: https://touchigh.ai/blog/factory-website-geo-chatgpt-supplier/ · Language: zh-Hans
-Q: 听说海外买家开始用ChatGPT找供应商了，我们工厂的英文官网要怎么改，才能被AI推荐？
-A: 把官网从“公司简介加产品图”改成买家能核实的一手信息源：用英文写清产能设备、认证编号、材料工艺、MOQ和交期，并把询盘里的高频问题写成一问一答。据Ahrefs数据，ChatGPT的引用正转向原始信息源；Google AI概览也已出现在八成以上的品牌词搜索中。官网信息越具体、越一致，越容易被AI引用和推荐。
+### Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites
+URL: https://touchigh.ai/blog/en/factory-website-geo-chatgpt-supplier/ · 中文版: https://touchigh.ai/blog/factory-website-geo-chatgpt-supplier/
+Q: I hear overseas buyers are starting to use ChatGPT to find suppliers. How should we change our factory's English website so AI recommends us?
+A: Turn your website from a company profile with product photos into a primary source buyers can verify. State capacity and equipment, certificate numbers, materials and processes, MOQ and lead times in English, and answer frequent inquiry questions as Q&A. Ahrefs data shows ChatGPT citations shifting toward original sources, and Google AI Overviews now appear on more than 80% of tracked branded searches. The more specific and consistent your site, the more likely AI is to cite and recommend you.
 
-### SEO、AEO、GEO有什么区别？出海企业要三位一体
-URL: https://touchigh.ai/blog/seo-aeo-geo-explained-chinese-exporters/ · Language: zh-Hans
-Q: SEO、AEO、GEO这几个词总是一起出现，它们到底有什么区别？我们做出海的企业是不是三个都要做？
-A: SEO（搜索引擎优化）让网页在Google链接结果里排名靠前；AEO（答案引擎优化）让内容被AI直接拿来作答；GEO（生成式引擎优化）让品牌在ChatGPT、Perplexity、Google AI概览等生成式答案里被引用和推荐。三者共享同一个底子：清楚、可信、一手的内容。出海企业不必分三支队伍，用一套内容流程同时满足即可。
+### SEO vs. AEO vs. GEO: What's the Difference, and Do Exporters Need All Three?
+URL: https://touchigh.ai/blog/en/seo-aeo-geo-explained-chinese-exporters/ · 中文版: https://touchigh.ai/blog/seo-aeo-geo-explained-chinese-exporters/
+Q: SEO, AEO and GEO always come up together. What's the actual difference, and does my export business need to do all three?
+A: SEO (search engine optimization) gets your pages ranked in Google's link results. AEO (answer engine optimization) gets your content used directly as the answer by AI. GEO (generative engine optimization) gets your brand cited and recommended in ChatGPT, Perplexity and Google AI Overviews. All three run on the same foundation: clear, credible, first-hand content. Exporters don't need three teams; one content workflow covers them all.
 
-### 出海SEO自学路线：AEO、GEO入门不花冤枉钱
-URL: https://touchigh.ai/blog/seo-aeo-geo-learning-path-exporters/ · Language: zh-Hans
-Q: 我们出海团队没预算请SEO公司，想自己学SEO，还要顾上AEO和GEO，怎样才能少走弯路、不花冤枉钱？
-A: 从免费的官方资料和自己的网站开始，按顺序学：先学SEO（搜索引擎优化）的收录、关键词和页面写作，再学AEO（答案引擎优化）的问答式写法，最后学GEO（生成式引擎优化）的实体一致和一手内容。每周产出一个页面，用Search Console和AI自测检验。别花钱学站群、批量洗稿这类捷径，谷歌9月的垃圾内容更新针对的正是违反政策的做法。
+### Learn SEO Yourself: A Free AEO and GEO Roadmap for Exporters on a Budget
+URL: https://touchigh.ai/blog/en/seo-aeo-geo-learning-path-exporters/ · 中文版: https://touchigh.ai/blog/seo-aeo-geo-learning-path-exporters/
+Q: Our export team has no budget for an SEO agency. We want to learn SEO ourselves and cover AEO and GEO too. How do we avoid detours and wasted money?
+A: Start with free official resources and your own website, in this order: SEO (search engine optimization) basics like indexing, keywords and page writing; then AEO (answer engine optimization) Q&A writing; then GEO (generative engine optimization) entity consistency and first-hand content. Ship one page a week and check it with Search Console and AI self-tests. Don't pay to learn shortcuts like site networks or mass-spun articles; Google's September spam update targets policy violations.
 
-### 海外社媒算法偏爱什么？出海品牌思想领导力怎么写
-URL: https://touchigh.ai/blog/overseas-social-algorithms-thought-leadership/ · Language: zh-Hans
-Q: Instagram、Facebook这些海外社媒的算法一直在变，我们出海品牌的内容总是没量，最新的算法变化我需要知道什么？
-A: 海外社媒算法奖励原创、时效和真实互动，而不是跟风。Instagram负责人Adam Mosseri表示，排序基于对用户反应的预测，原创内容优先于搬运，较新的帖子获得更多曝光；Facebook则允许用户用日常语言告诉算法想多看什么。出海品牌最稳的做法，是用专业观点做思想领导力内容，并用试验性Reels小步测试新方向。
+### What Social Media Algorithms Reward: Thought Leadership for Chinese Brands
+URL: https://touchigh.ai/blog/en/overseas-social-algorithms-thought-leadership/ · 中文版: https://touchigh.ai/blog/overseas-social-algorithms-thought-leadership/
+Q: Instagram and Facebook keep changing their algorithms, and our brand's posts in overseas markets barely get any reach. What do I need to know about the latest changes?
+A: Social media algorithms reward originality, freshness and real engagement, not copycat trends. Instagram head Adam Mosseri says ranking is based on predicting how people will react, original content ranks ahead of reposts, and newer posts get more exposure. Facebook now lets users tell its algorithm in plain language what they want to see more of. For Chinese brands going global, the safest play is expert thought leadership, tested in small steps with trial Reels.
 
-### 中国制造的故事怎么讲给美国人听？出海内容本土化指南
-URL: https://touchigh.ai/blog/made-in-china-story-localized-thought-leadership/ · Language: zh-Hans
-Q: 我们是做出口的工厂，想把“中国制造”的故事讲给美国客户听，本土化内容到底该怎么做？
-A: 别讲“中国最大的工厂”，讲只有你能讲的具体事实：谁在做、工艺怎么控、帮美国客户解决了什么问题。用美式英语重写而不是翻译，由创始人或工程师真人出镜，在LinkedIn、YouTube和独立站上持续发布，并写成AI能直接引用的问答。在同质化市场里，可核实的真实细节才是差异。
+### How to Tell Your Made-in-China Story to US Buyers: A Localization Guide
+URL: https://touchigh.ai/blog/en/made-in-china-story-localized-thought-leadership/ · 中文版: https://touchigh.ai/blog/made-in-china-story-localized-thought-leadership/
+Q: We're an export factory and want to tell our made-in-China story to US buyers. How do we actually localize our content?
+A: Skip "China's biggest factory" and tell the specific facts only you can tell: who makes it, how the process is controlled, and which problem you solved for a US customer. Rewrite in American English instead of translating, put a real founder or engineer on camera, post consistently on LinkedIn, YouTube and your own site, and write it as Q&A that AI can quote. In a crowded market, verifiable detail is the difference.
 
-### 美国买家用AI找供应商：出海企业要准备哪些可被引用的内容
-URL: https://touchigh.ai/blog/us-buyers-ai-research-citable-content/ · Language: zh-Hans
-Q: 听说美国买家开始用AI做采购调研了，我们出海企业要准备哪些内容，才能被ChatGPT这类AI引用和推荐？
-A: 优先准备六类内容：写清公司是谁的实体信息、文字版产品规格表、直接回答买家问题的FAQ、认证和测试等可核实的证明、选型与对比指南，以及社媒和第三方平台上一致的口碑。用短句和表格写在自己的独立站上，开头先给答案，并与Alibaba.com、LinkedIn等平台的信息保持一致。
+### US Buyers Now Ask AI to Find Suppliers: The Citable Content You Need
+URL: https://touchigh.ai/blog/en/us-buyers-ai-research-citable-content/ · 中文版: https://touchigh.ai/blog/us-buyers-ai-research-citable-content/
+Q: I hear US buyers have started using AI for sourcing research. What content does our export business need so ChatGPT and other AI tools cite and recommend us?
+A: Prepare six kinds of content first: entity information that says clearly who your company is, product spec sheets in text, FAQs that answer buyers' questions directly, verifiable proof such as certifications and test reports, selection and comparison guides, and a consistent reputation on social and third-party platforms. Publish them on your own site in short sentences and tables, lead with the answer, and keep details consistent with Alibaba.com and LinkedIn.
 
-### 展会之后怎么办？把广交会和海外展曝光变成长期搜索资产
-URL: https://touchigh.ai/blog/trade-show-to-search-social-assets/ · Language: zh-Hans
-Q: 每年花大钱参加广交会和海外展，展会一结束询盘就没了，怎样才能把展会曝光变成长期的获客资产？
-A: 把展会当成一年一次的“内容采集日”，而不只是收名片。展前发布预告并邀约，展中记录买家的真实提问、拍工艺讲解、和客户及合作方一起出镜，展后72小时内跟进，再用12个月把素材拆成独立站文章、FAQ和LinkedIn、YouTube内容。这样买家回去搜索或问AI时，仍然能找到你。
+### After the Trade Show: Turn Canton Fair Exposure Into Lasting Search Assets
+URL: https://touchigh.ai/blog/en/trade-show-to-search-social-assets/ · 中文版: https://touchigh.ai/blog/trade-show-to-search-social-assets/
+Q: We spend a lot every year on the Canton Fair and overseas trade shows, and inquiries dry up as soon as the show ends. How do we turn that exposure into a lasting source of leads?
+A: Treat each trade show as your annual "content-capture day," not just a business-card hunt. Before the show, announce it and book meetings. During it, record buyers' real questions, film process explainers and appear on camera with customers and partners. Follow up within 72 hours, then spend 12 months turning the footage into website articles, FAQs and LinkedIn and YouTube content, so buyers still find you when they search or ask AI.
 
 ### Thought Leadership for Manufacturers: Why US Buyers Should See Your Founder
-URL: https://touchigh.ai/blog/chinese-manufacturers-founder-thought-leadership/ · Language: en
+URL: https://touchigh.ai/blog/chinese-manufacturers-founder-thought-leadership/ · 中文版: https://touchigh.ai/blog/zh/chinese-manufacturers-founder-thought-leadership/
 Q: I run marketing for a Chinese manufacturer. Which AI tools should we use, and should our founder really be posting on LinkedIn for US buyers?
 A: Yes. US buyers can't easily verify an overseas factory, and a founder who explains how you actually work closes that gap. Use AI tools to transcribe, translate, draft, subtitle, schedule and score posts, but feed them your founder's real knowledge. LinkedIn now demotes generic AI posts, while active social profiles increasingly show up in Google's AI answers.
 
 ### From Factory to Brand: SEO, AEO and GEO for Chinese Sellers in the US
-URL: https://touchigh.ai/blog/factory-to-brand-seo-aeo-geo-us/ · Language: en
+URL: https://touchigh.ai/blog/factory-to-brand-seo-aeo-geo-us/ · 中文版: https://touchigh.ai/blog/zh/factory-to-brand-seo-aeo-geo-us/
 Q: Now that low prices and duty-free shipping aren't enough, how do I get US shoppers to find, trust and engage with my brand instead of just my marketplace listings?
 A: Build a brand US shoppers can find and verify on your terms. SEO gets your site ranked, AEO makes your content the direct answer, and GEO gets AI tools like ChatGPT and Google's AI Overviews to cite you. Start with a clear About page, honest FAQs on shipping and duties, and steady social content that answers real questions.
+
+## 博客——问题与解答（中文）
+
+### 独立站SEO流量下降怎么办？AI概览已覆盖八成品牌词
+URL: https://touchigh.ai/blog/ai-overviews-branded-queries-seo-traffic/
+问：我的独立站SEO流量一直往下掉，文章也没少写，到底怎样才能把自然流量做回来？
+答：先别急着加量。谷歌AI概览已出现在八成以上的品牌词搜索中，用户在结果页就拿到了答案，继续堆文章和外链的边际回报在变小。更有效的做法是：找出核心问题的AI答案里哪些没有你，把产品页、FAQ和对比内容改写成AI能直接引用的答案，再用AI引用份额而不只是点击量来评估效果。
+
+### 独立站SEO+GEO怎么做？一张表理清出海流量策略
+URL: https://touchigh.ai/blog/seo-geo-dual-engine-independent-site/
+问：预算和人手都有限，我的独立站SEO和GEO到底该怎么规划，才能和业务目标对得上？
+答：先定业务目标，再选动作，而不是反过来。把SEO当基本盘：保证网站能被正常抓取，核心产品页和买家问题有清楚的答案；把GEO当增量：让ChatGPT、Perplexity和谷歌AI在回答品类问题时引用你。前90天只做三件事——技术体检、改写20个核心页面、每月检查AI引用情况，其余渠道先放一放。
+
+### ChatGPT不再带UTM：AI带来的流量还怎么统计？
+URL: https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/
+问：ChatGPT给我网站带来的访问现在都变成了“直接流量”，我还怎么算SEO和GEO的投入产出？
+答：别再只盯着GA4里的“chatgpt.com”来源。Search Engine Land报道，ChatGPT外链似乎已不再附带UTM参数，大量AI访问被记成直接流量。更稳妥的衡量方式分三层：看AI引用份额，即核心问题的AI答案里提到你的比例；看深层页面直接流量和品牌搜索的变化；看订单和购后问卷，用三组数据交叉判断AI渠道的真实贡献。
+
+### 外链还有用吗？ChatGPT正在偏爱一手信息源
+URL: https://touchigh.ai/blog/backlinks-vs-primary-sources-chatgpt-citations/
+问：外链建设又花时间又花钱，现在还值得做吗？有没有更省力的办法让网站被认可？
+答：外链仍有作用，但边际回报在下降。据Search Engine Journal报道的Ahrefs数据，2026年3月到9月，ChatGPT美国答案最常引用的网站明显转向一手、权威信息源，Reddit的引用占比从19.1%跌到2.3%。与其花大量时间换外链，不如把一部分精力投到只有你能提供的内容上：实测数据、官方规格和原创调研，让自己成为被引用的源头。
+
+### 2026谷歌SEO趋势：垃圾内容更新后，卖家只需盯这5件事
+URL: https://touchigh.ai/blog/google-spam-update-seo-trends-cross-border/
+问：谷歌又更新了，SEO新词一个接一个，我作为跨境卖家到底该关注哪些趋势，才不会被同行甩开？
+答：不用追每个新名词。结合谷歌刚结束的9月垃圾内容更新和AI模式的链接改版，2026年跨境卖家只需盯住五件事：内容质量过关，页面有AI能直接引用的答案，官方信息写全写准，持续积累回头读者，按AI引用份额和订单衡量效果。其余趋势先放进观察清单，每月看一次就够。
+
+### 海外社媒运营工具太贵？中小卖家用AI托管的成本账
+URL: https://touchigh.ai/blog/affordable-social-media-management-ai/
+问：我想把美国的Facebook、Instagram和TikTok账号运营起来，但请人、买工具都太贵，有没有省钱又不累的办法？
+答：先算总账，而不只看工具月费。中小卖家运营美国社媒的真实成本包括工具费、内容制作、英文本地化和团队时间。多数社媒管理工具只解决排期和数据，不解决“写”；美国本地代运营又太贵。更划算的路径是只做一两个主平台，用AI托管完成写作、预估和排期，人只负责审核和回复关键互动。
+
+### Instagram 发帖频率怎么定？出海品牌稳定更新的简化法
+URL: https://touchigh.ai/blog/instagram-algorithm-posting-consistency/
+问：我们的 Instagram 总是断更，发帖频率到底该怎么定，才能稳定更新又不牺牲内容质量？
+答：与其追求日更，不如先按团队产能定一个能连续坚持 12 周的保底频率，比如每周 3–5 条主帖加 1–2 条试验 Reels，再用“每月集中策划、每周批量制作、按美国时间预约发布”的流程固定下来。Instagram 负责人 Mosseri 表示信息流大致按时间排序、新帖更占优势，所以稳定节奏比偶尔爆发更重要；衡量效果看互动率，而不是播放量。
+
+### TikTok Shop 美区短视频：小达人+多视频怎么做起来
+URL: https://touchigh.ai/blog/tiktok-shop-us-small-creators-video/
+问：我想在 TikTok Shop 美区做起来，怎样才能拍出让美国用户停下来、愿意下单的短视频？
+答：TikTok Shop 美区的增长主要靠持续多发视频和大量小达人，而不是一条精致大片。据 Marketplace Pulse 数据，发布超过 1,000 条视频的店铺占卖家 8%，却贡献 60% 的销售。做法是：先选能在 15 秒内演示效果的产品，用钩子模板批量拍摄、每天 2–3 条，同时广撒样品给小达人，并奖励持续多发的人。
+
+### 独立站弃购率怎么降？谷歌 AI 购物车时代的结账优化
+URL: https://touchigh.ai/blog/google-universal-cart-cart-abandonment/
+问：我的独立站很多客人加了购物车却不付款，怎样优化结账流程，把弃购率降下来？
+答：降低独立站弃购率，关键是减少结账路上的选择和意外：提前展示运费、税费和预计送达时间，配送方式最多保留两种，开放游客结账，补齐 PayPal、Apple Pay、Google Pay 等常用付款方式，并用地道美式英语写清退换政策。谷歌 Universal Cart 让美国用户更容易跨店比价、等降价，结账体验更要先做好。
+
+### 谷歌 AI Mode 广告来了：中小卖家该不该试新渠道？
+URL: https://touchigh.ai/blog/ai-mode-ads-chatgpt-ads-new-channels/
+问：谷歌 AI Mode 广告、ChatGPT 广告都来了，我们这种中小卖家该不该试这些新渠道，怎样才能不白花钱？
+答：可以试，但只用输得起的预算。AI Mode 广告没有单独的广告系列，要通过 Performance Max、购物广告或广泛匹配搜索广告（含 AI Max）进入；先修好转化追踪、商品数据和落地页，再用小预算围绕一个商业问题做实验，按毛利而不是转化数评估。ChatGPT 视觉广告首批只对部分美国广告主开放，现阶段先观察。
+
+### Meta Advantage+ 受众定向：中小卖家如何找准美国客户
+URL: https://touchigh.ai/blog/meta-advantage-plus-targeting-smb/
+问：美国市场人群这么多元，我在 Meta 投广告时，怎样针对不同文化背景的受众做定向和营销？
+答：在 Meta Advantage+ 里，手动兴趣标签的作用在减弱，素材本身成了最重要的定向信号。中小卖家应先写 3–5 个美国人群假设，为每类人群做开头不同的素材；受众尽量放宽、预算集中，并确保 Pixel 和转化 API 回传准确；再按素材拆分数据，看算法实际找到了谁，然后加码赢家。
+
+### 出海本土化营销不是翻译：普通产品如何卖出美国品牌感
+URL: https://touchigh.ai/blog/localization-not-translation-brand-premium/
+问：我们准备在美国做本土化营销，品牌本土化通常会遇到哪些坑，怎样避开才能赢得美国消费者的信任？
+答：本土化最大的坑是把它当成翻译。要赢得美国消费者信任，需要把产品放进他们熟悉的生活场景，用他们的说话方式讲他们的问题，统一各渠道的定位和话术，并写清退换政策和美国时区的客服时间。雨果跨境报道的加热睡袍能卖到 129.99 美元，靠的正是“场景决定溢价”。
+
+### 美国小额豁免取消后，跨境卖家如何走出平台依赖
+URL: https://touchigh.ai/blog/de-minimis-end-brand-independent-site/
+问：美国取消小额豁免以后，我做跨境出海还会遇到哪些挑战？要不要从平台转向做品牌独立站？
+答：美国取消小额豁免后，低货值小包直邮的价格优势被进口税费抹平，平台广告成本又在上涨，单靠平台流量和低价越来越难赚钱。更稳的做法不是撤出亚马逊，而是边卖边建：重算到岸成本、收缩亏损SKU，聚焦一两款有差异的主力款，搭建品牌独立站，并让品牌在美国AI搜索和社媒里被找到。
+
+### AI生成广告素材：批量做不难，先打分再投放才省钱
+URL: https://touchigh.ai/blog/ad-creatives-at-scale-prescore/
+问：有没有办法用AI自动化、简化广告素材制作，又能批量做出有吸引力的广告图和视频？
+答：可以用AI自动化批量生成广告素材：先列出3到5个卖点、2到3类人群和场景，组合成素材矩阵，交给AI出图、出文案和短视频脚本。但别生成完就投：上线前先用预测评分或检查表筛掉后一半，再用小预算同条件测试，只放大跑赢的几条，并定期换新防止疲劳。
+
+### AI生成社媒内容会被限流吗？出海品牌如何不被淹没
+URL: https://touchigh.ai/blog/ai-slop-brand-content-standout/
+问：有哪些AI工具能帮我又快又好地生成社媒内容？用AI写的帖子会不会被平台限流？
+答：能帮您快速产出高质量社媒内容的，不是某一个写作工具，而是一套分工：AI负责初稿、改写和多版本，品牌负责观点和独家素材，发布前再做去同质化检查和效果预估。LinkedIn已在识别并降权泛泛、重复、缺乏洞见的帖子，所以关键在于内容有没有信息量，而不是用没用AI。
+
+### 跨境电商全球化运营：中小卖家为什么要学会做减法
+URL: https://touchigh.ai/blog/global-ecommerce-operations-less-is-more/
+问：跨境电商做全球化运营，成功的关键要素到底是什么？中小卖家资源有限该怎么取舍？
+答：跨境电商全球化运营的关键要素可以归结为五项：选准一个主攻市场、用少量主力SKU保持库存健康、两三个能互相导流的渠道、统一的数据，以及能被美国消费者和AI读懂的品牌内容。对预算有限的中小卖家，最有效的策略往往是做减法：把钱和人集中在少数环节，跑通之后再复制。
+
+### 美国消费者购物习惯变了：不再从谷歌开始，卖家如何被找到
+URL: https://touchigh.ai/blog/us-shoppers-ai-shelf-discovery/
+问：美国消费者现在是怎么找商品、做购买决策的？哪些因素会影响他们买不买我的产品？
+答：影响美国消费者购买决策的已不只是Google排名。据Search Engine Land报道的一项美妆消费者调查，只有43%的人从Google开始找商品，其余从Instagram、YouTube、TikTok和AI工具开始；但在TikTok发现商品后，72%会再去Google核实。卖家需要同时出现在社媒、Google和AI答案里，并提供一致、可核实的信息。
+
+### 跨平台广告预算怎么分配？谷歌渠道优先级上线后的新解法
+URL: https://touchigh.ai/blog/google-ads-channel-prioritization-budget/
+问：我预算有限，亚马逊、谷歌、Meta、TikTok 都想投，广告预算到底该怎么在各平台之间分配，才能拿到最好的回报？
+答：先别平均分。把大部分预算放在已经能稳定出单的一个主阵地，直到继续加钱时每多花一美元换来的回报明显下降，再拿出小部分预算测试第二个渠道。谷歌新推出的“高/低渠道优先级”正是这个思路：先喂饱高优先级渠道，剩下的钱再按上限分给低优先级渠道。每两周按边际ROAS复盘一次，不及格的渠道果断砍掉。
+
+### 电商视频制作成本太高？用AI把一次拍摄变成一套素材
+URL: https://touchigh.ai/blog/ecommerce-video-production-ai-cost/
+问：我想做能吸引美国消费者的电商视频，但请团队拍太贵了，有没有用AI低成本做视频的办法？
+答：有，但别指望AI一键替代拍摄。更省钱的做法是“真人拍一次，AI做十版”：用一次真实拍摄留下产品使用、工厂和真人讲解的原始素材，再用AI完成剪辑、字幕、配音翻译和多版本改写，按平台裁成不同尺寸和时长。YouTube新推出的视频A/B测试，就是让你把一条视频做成三个版本，用数据决定哪一版值得放大。
+
+### 亚马逊AI广告智能体来了：不会投广告的卖家该交出什么
+URL: https://touchigh.ai/blog/amazon-ads-agent-sellers/
+问：亚马逊推出了AI广告智能体，我自己不太会投广告，到底该不该用？把钱交给AI会不会失控？
+答：值得试，但别一次全交出去。Amazon Ads Agent 把搜索、展示、视频和全漏斗广告整合进一个由智能体AI驱动的平台，能用自然语言给出投放建议。合理的做法是：目标、利润底线和预算上限由你来定，日常调价、选词和报告交给AI；先拿一小部分预算做四周对照测试，再用新客数和ACoS决定是否扩大。
+
+### TikTok Shop收紧、SHEIN加补贴：跨境电商渠道怎么选
+URL: https://touchigh.ai/blog/tiktok-shop-shein-channel-mix/
+问：TikTok Shop 在收紧规则，SHEIN 又在发补贴，我想打进美国市场，渠道到底该怎么选，才能让品牌被当地消费者记住？
+答：先按产品和能力选，再按补贴选。需要演示讲解、能安排真人出镜的产品，适合TikTok Shop，但要提前备好CPC/GCC等合规文件；款式多、能小单快反的工厂型卖家，可以借SHEIN的大促补贴冲量；想沉淀品牌和复购，就要有自己的独立站和内容。多数卖家合理的组合是一个主渠道加一个辅助渠道，而不是全平台铺货。
+
+### 假日季AI购物助手流量预计涨130%：卖家该准备什么
+URL: https://touchigh.ai/blog/holiday-2026-ai-shopping-agents/
+问：今年黑五和圣诞旺季，听说很多美国人会用AI助手购物，我的店铺该怎么准备，才不会被AI漏掉？
+答：先别被新渠道分散精力。Adobe预测今年美国假日季来自AI助手和购物智能体的零售网站流量将同比增长130%，但这类流量靠“被推荐”而不是“被投放”获得：把主推商品页的规格、价格和退换政策写清楚，补齐常见问题，英文社媒保持更新。ChatGPT广告目前成本高、增量存疑，小卖家可以先观望。
+
+### Facebook 算法变了：用户能直接“告诉”信息流后如何保持曝光
+URL: https://touchigh.ai/blog/zh/facebook-algorithm-controls-small-business/
+问：社交媒体算法老在变，我怎样才能让自己的帖子一直被看到？
+答：别再追着每次更新跑，而是让每条帖子都能清楚对应一个客户会说出口的兴趣。Facebook 现在允许用户用日常语言告诉信息流想多看或少看什么，覆盖 Feed 和 Reels，并在同一次使用中即时调整。选定两三个用客户语言表述的主题，围绕它们发原创内容，用分享和评论而不只是触达来评判每条帖子。
+
+### Threads SEO：社媒帖子能帮你被 AI 引用吗？
+URL: https://touchigh.ai/blog/zh/social-posts-ai-citations-threads-seo/
+问：为了 SEO 发 Threads 值得吗？社媒帖子真的能帮我被 AI 搜索引用吗？
+答：对 Google 来说，能；对 ChatGPT 来说，作用小得多。Social Media Today 报道的研究发现，67.66% 的 Google AI 概览回答含有社媒平台链接，而 ChatGPT 回答中只有 8.4%。该研究没有统计 Threads，所以把它当作众多公开渠道之一：在上面发布实用答案，链回你自己的网站，再检查 AI 工具是否开始引用你。
+
+### LinkedIn 互动策略：AI 垃圾帖被砍，小 B2B 品牌怎么赢
+URL: https://touchigh.ai/blog/zh/linkedin-ai-slop-b2b-engagement/
+问：作为一家小型 B2B 企业，怎样才能在 LinkedIn 上获得真实的互动？
+答：发布具体的一手专业经验，花在别人评论区的时间要和花在自己帖子上的一样多。LinkedIn 现在会对所有分发到直接人脉圈之外的帖子运行 AI 垃圾内容分类器，泛泛而谈、重复的内容有失去触达的风险。小型 B2B 品牌要赢，靠的是创始人和员工的真实声音、真实的数字和故事，以及能和对的人展开对话的回复。
+
+### 中小企业真正该看的社交媒体指标：别只盯粉丝数
+URL: https://touchigh.ai/blog/zh/social-media-metrics-that-matter-smes/
+问：如果粉丝数不算数，我应该重点看哪些社交媒体指标，才能真正衡量自己的影响力？
+答：追踪用户做了什么，而不是有多少人关注你：按触达计算的互动率、转发和收藏、有实质内容的评论、主页和链接点击、询盘，以及能追溯到社媒的销售。再加一个新指标：AI 搜索工具是否引用你的品牌或帖子。Social Media Today 报道的研究发现，67.66% 的 Google AI 概览回答中含有社媒链接。
+
+### 小企业低成本营销：每月 500 美元以内的精简营销体系
+URL: https://touchigh.ai/blog/zh/lean-marketing-stack-smes-under-500/
+问：我做小生意，怎样才能低成本做营销，不把钱浪费在没效果的投放上？
+答：先建自有渠道，再花钱买流量。先把网站基础和 Google 商家资料做好，发布回答客户问题的内容，让搜索引擎和 AI 工具能引用你；在一两个社媒平台上稳定更新；最后只给自然流量里已经跑通的内容投少量广告。按这个顺序搭建，一套精简的营销体系每月不到 500 美元就能跑起来。
+
+### 搜索词变长、点击更挑：落地页转化率怎么提升
+URL: https://touchigh.ai/blog/zh/landing-pages-ai-era-search-traffic/
+问：我的落地页该怎么改，才能提高转化率？
+答：让每个落地页对准把访客带来的那个具体问题。自 Google 推出 AI 模式（AI Mode）以来，搜索词变得更长、更具体，泛泛的页面留不住人。标题复用搜索者的原话，首屏展示价格、信任证明和一个明确的下一步，去掉干扰链接和弹窗，并确保手机端加载够快。
+
+### 广告越来越贵，小企业怎么获客：策略先行的主动开发
+URL: https://touchigh.ai/blog/zh/lead-generation-strategy-first-outbound/
+问：广告越来越贵，我该怎么提高线索转化率？
+答：别再追求更多线索，要争取更好的线索。挑出一小批“现在就有明确购买理由”的公司，联系前逐一做功课，开场先给对方有用的东西而不是推销，然后在大约三周内通过邮件、电话、LinkedIn 和即时消息持续跟进。衡量的是每个已联系客户带来的积极回复、会议和成交，而不是邮件打开率。
+
+### AI 概览与 AI 模式下的 SEO 最佳实践（2026年10月）
+URL: https://touchigh.ai/blog/zh/seo-best-practices-ai-overviews-ai-mode/
+问：Google 有了 AI 概览和 AI 模式之后，哪些 SEO 做法还真正有用？
+答：少做几件事，但要做好。先确保 Google 的 AI 对你品牌的描述准确，因为现在大多数品牌词搜索都会出现 AI 概览（AI Overviews）。发布开门见山、基于独家事实的页面，各处商家信息保持一致，优化已有的好页面，而不是新增单薄内容。然后每月检查一次：AI 回答你的核心问题时引用了哪些来源。
+
+### SEO内容创作工具怎么选？一套AI引擎愿意引用的流程
+URL: https://touchigh.ai/blog/zh/content-ai-engines-cite-workflow/
+问：怎么才能又快又好地做SEO内容，不因为求快把质量做砸？
+答：少用几个工具，把流程收紧。每篇内容都从只有你掌握的信息出发，比如产品规格、实测结果、价格和客户的真实问题。用同一个简报模板，让AI负责大纲和初稿，再把人的时间花在核对事实、补充一手细节上。ChatGPT等AI引擎正越来越多地引用原始信息源，而不是转述类内容。
+
+### 中小企业AI广告工具：Meta Muse和X Lift到底能做什么
+URL: https://touchigh.ai/blog/zh/ai-ad-tools-small-business-compared/
+问：哪些AI营销和广告工具真能帮我省时间，又不会白白烧掉预算？
+答：先把“做广告”的工具和“决定钱往哪花”的工具分开。生成类工具，比如Meta的图片转视频广告或X Lift根据网址生成广告的功能，能在素材上省下好几个小时。负责定向和预算的工具则需要护栏：设好亏损上限、只拿一个产品测试、和现有效果对比，并且任何广告上线前都要经过你批准。先测30天，再决定是否长期使用。
+
+### 2026年社媒最佳发帖时间：为什么持续稳定比掐准时间更重要
+URL: https://touchigh.ai/blog/zh/best-time-to-post-2026/
+问：社媒到底几点发帖最好，才能让更多人真正看到我的内容？
+答：2026年并不存在一个统一的社媒最佳发帖时间。时效性仍然有用，所以要在你自己的粉丝在线时发帖，平台后台数据会告诉你是什么时候。但现在的排序更看重相关性，所以在一两个你能长期坚持的渠道上稳定更新，胜过在五个平台上追逐完美的发帖时刻。
+
+### 如何提升社媒互动率：发帖前先预测效果
+URL: https://touchigh.ai/blog/zh/predict-social-engagement-before-publishing/
+问：怎么做才能让我的社媒帖子更有互动、触达更多人？
+答：想提升社媒互动率，就要让每条帖子有用到让人愿意收藏、分享或采取行动，并且在发布前就检查这一点。从客户的真实问题出发，用具体的开头钩子抓人，展示产品如何解决问题，最后只给一个明确的行动。然后在发帖前比较不同草稿，而不是发完再猜。
+
+### 小品牌如何衡量 TikTok Shop 达人营销 ROI
+URL: https://touchigh.ai/blog/zh/measure-influencer-roi-tiktok-shop/
+问：我在 TikTok Shop 上的达人合作到底有没有回本，怎样才能算准？
+答：TikTok Shop 达人 ROI 要按达人逐个衡量，而不是按活动整体算。追踪寄样的达人里有多少人发了视频、每人发了几条、每条视频卖了多少，以及包含免费样品、运费、佣金和其他费用在内的总成本。ROI 等于归因毛利减去这些成本，再除以这些成本。最后补上光环信号，比如亚马逊或独立站的销量提升，以及评论区里的购买咨询。
+
+### 小企业社媒运营：每周 2 小时的省时系统
+URL: https://touchigh.ai/blog/zh/social-media-system-for-busy-founders/
+问：我几乎没时间，小企业的社交媒体该怎么运营？
+答：把社媒当成每周一个两小时的固定时段，而不是全天挂在后台的任务。选一到两个平台，一次性策划并做好三条帖子，排期发布，每天留一小段固定时间回复评论。把工具和通知减到最少，周五只看一组数据，条件允许时把初稿撰写交出去。
+
+### 真实内容营销：Temu 清理假网红给中小企业的启示
+URL: https://touchigh.ai/blog/zh/temu-fake-influencers-authentic-brand-voice/
+问：怎样确保我的内容体现品牌调性，并真正打动受众？
+答：真实的内容来自只有你的品牌才有的东西：客户的原话、清晰的观点和拿得出手的证据。写下三条语气规则，选三个你能证明的话题，再用“对客户有没有帮助”来筛选每一个热点。Temu 清理假网红一事说明，借来的流量几周内就可能消失，而赢得的信任会持续累积。
+
+### 小商家 TikTok 广告怎么投：30 天聚焦测试计划
+URL: https://touchigh.ai/blog/zh/tiktok-ads-playbook-small-advertisers/
+问：现在有哪些移动营销趋势需要了解？我的小生意该不该开始投 TikTok 广告？
+答：先做一次聚焦的 TikTok 测试：一个产品、一个目标、按保本单笔成交成本设定的固定预算，再加三到五条原生竖版视频。跑满 30 天，期间不要频繁改动，然后只根据这一个数字决定保留、调整还是停掉。TikTok Ad Network 这类新功能，等信息流广告盈利之后再说。
+
+### AI 购物助手：小品牌如何被推荐、登上“AI 货架”
+URL: https://touchigh.ai/blog/zh/ai-shelf-small-brands-shopping-assistants/
+问：我该怎么用 AI 改进营销，让 AI 购物助手推荐我的产品？
+答：小品牌要被 AI 购物助手推荐，关键是让产品容易被找到、看懂和核实：把产品页写成答案，加上结构化数据，让每个电商平台上的产品信息完全一致，发布坦诚的对比内容，并争取其他网站的提及。然后每月检查 ChatGPT、Perplexity、Gemini 和 Google AI 模式怎么说。Adobe 预计，今年假日季 AI 辅助购物流量将增长 130%。
+
+### 小企业广告 KPI 怎么看？真正重要的只有 3 个数字
+URL: https://touchigh.ai/blog/zh/digital-advertising-kpis-small-business/
+问：我的数字广告投放，最应该关注哪些 KPI？
+答：盯住三个 KPI：单次获客成本（CPA，获得一个客户花多少钱）、广告支出回报率（ROAS，每一美元广告费带来多少收入），以及回购率或合格线索率（来的是不是对的人）。根据毛利率设定盈亏平衡目标，每周复盘；点击率、CPM 和转化率只用来诊断这三个数字为什么变化。
+
+### SEO工具推荐怎么选？AI搜索时代中小企业的精简清单
+URL: https://touchigh.ai/blog/zh/seo-tools-buying-guide-ai-search/
+问：我是中小企业，预算有限，到底该买哪些SEO工具才最有回报？
+答：先用免费的Google Search Console和GA4打底，再只补一个付费工具，去填你最大的缺口。2026年起，这个缺口往往是“AI搜索可见度”：Google AI Overviews已出现在超过八成受追踪的品牌搜索中，工具如果只追踪排名、不看AI怎么介绍你，就少了一半画面。工具越少、用得越深，回报通常越高。
+
+### 本地化营销怎么做？港台品牌打入美国社媒的5个内容框架
+URL: https://touchigh.ai/blog/zh/localized-social-content-frameworks/
+问：我想做美国社媒，什么样的本地化内容才能真正打动当地用户？
+答：真正的本地化内容，是把产品放进美国人熟悉的生活场景，用他们的说法和文化梗来讲，再加上只有你讲得出的品牌细节。单纯翻译或照搬爆款视频，只会淹没在千篇一律的帖子里。先从一个具体使用场景、一个你独有的证据开始，每条帖子只讲一件事，比追求数量更有效。
+
+### 2026内容营销趋势：AI为什么越来越爱引用一手资料？
+URL: https://touchigh.ai/blog/zh/content-marketing-trends-2026-primary-sources/
+问：2026年内容营销有哪些新趋势，是我现在就该知道的？
+答：2026年最重要的内容营销趋势，是AI答案引擎开始挑选来源。Ahrefs数据显示，ChatGPT在美国最常引用的网站正转向一手、权威来源；另一项研究则发现，67.66%的Google AI Overviews（AI概览）回答含有社交平台链接。中小企业的对策是：发布只有自己才有的资料，并保持社媒活跃。
+
+### 降低营销成本又不牺牲质量：中小企业的AI运营清单
+URL: https://touchigh.ai/blog/zh/reduce-marketing-costs-ai-smes/
+问：营销预算越来越紧，有没有既能降低成本、又不牺牲质量的做法？
+答：有，关键是砍掉“重复”，而不是砍“质量”。先记录两周的营销工时，把初稿、改尺寸、排期和报表交给AI，人只负责品牌观点、最终审核和回复客户；再把部分广告预算转向能积累的自有渠道，比如SEO、GEO和自然流量社媒。省下的是重复劳动，质量把关仍然在人手里。
+
+### 社媒算法怎么变？Facebook新控制项与IG排序逻辑
+URL: https://touchigh.ai/blog/zh/social-algorithms-explained-facebook-instagram/
+问：社媒算法一直在变，我该怎么调整运营策略，帖子的曝光才会变好？
+答：社媒算法的核心，是预测每位用户对每条内容的兴趣。Facebook最近让用户直接用日常语言告诉系统想多看或少看什么，在动态消息和Reels中立即生效。品牌的对策是：每条帖子都对准一个受众说得出口的主题，开头就讲明，并追踪分享、收藏和评论，而不只是点赞数。
+
+### AI 品牌可见度：ChatGPT 和谷歌会推荐你的企业吗？
+URL: https://touchigh.ai/blog/zh/visibilidad-marca-ia-pymes/
+问：客户问到我卖的东西时，ChatGPT、Perplexity 或谷歌会推荐我的企业吗？我怎么才能知道？
+答：自己动手测：把行业里 15 到 20 个真实的购买问题分别输入 ChatGPT、Perplexity、Gemini 和谷歌（AI 概览或 AI 模式），记录你有没有出现、排在什么位置、语气如何、引用了哪些网站。每月用同一份清单重复一次。如果没有出现，先去完善 AI 已经在参考的第三方来源。
+
+### 中小企业做 GEO：哪些真正有效，哪些只是噱头
+URL: https://touchigh.ai/blog/zh/geo-pymes-que-funciona/
+问：GEO 对我的小公司真的有用吗，还是又一个想卖给我的新概念？
+答：GEO 有用，前提是打好基础：内容能被抓取，谷歌和其他平台上的商家信息保持一致，清楚回答真实问题，并持续重复测量。对保证 ChatGPT 一定会推荐你、或把 llms.txt 文件当捷径来卖的人要保持警惕：据谷歌说明，它不会影响谷歌搜索及其 AI 功能中的可见度。
+
+### Google 商家资料与社媒：中小企业本地曝光工具包
+URL: https://touchigh.ai/blog/zh/perfil-empresa-google-redes-pymes/
+问：怎样才能让附近的客户在 Google 上找到我，并在社媒上跟我多互动？
+答：先从 Google 商家资料入手，也就是别人在 Google 搜索和地图上搜到你时出现的那张商家卡片。确保名称、营业时间、电话、网站和类别在官网和各社媒账号上完全一致；及时处理用户提交的修改建议（四天内不回应，Google 可能直接发布）；回复每一条评价；在社媒上发布客户真正关心的问题。
+
+### 中小企业 AI 广告投放：Meta Muse 来了，哪些不该自动化
+URL: https://touchigh.ai/blog/zh/publicidad-ia-pymes-meta-muse/
+问：我不会投广告，能不能把公司的广告交给 AI 来做？
+答：可以，但要分步来。让 AI 去提文案、做素材变体、调整预算，有三件事留给自己拍板：产品和优惠方案、预算上限、最终审批。如果你还没追踪销售或询盘、落地页有问题，或者没人检查上线的内容，就先别急着自动化。
+
+### 不是数据分析师，怎么衡量社媒营销效果？看3个指标
+URL: https://touchigh.ai/blog/zh/medir-campanas-redes-sociales-pymes/
+问：我怎么知道自己的社媒营销活动是不是真的有效果？
+答：一开始只看三层指标：注意力（多少人看到了内容、看了多久）、连接（每千次触达带来的收藏、分享、评论和私信）和行动（点击、询盘或销售，以及单次结果成本）。每次活动都和你自己最近几周的平均值比，而不是和别的品牌比。
+
+### 工厂LinkedIn获客：老板为什么要做思想领导力
+URL: https://touchigh.ai/blog/factory-founder-linkedin-thought-leadership/
+问：我是做出口的工厂老板，客户主要靠展会和阿里国际站，听说要在LinkedIn上做个人IP，这对获客真的有用吗？该怎么开始？
+答：有用，前提是发真正有观点的内容，而不是产品广告或AI套话。海外采购下单前会先查你是谁，老板在LinkedIn上持续分享工艺判断、交期成本和行业变化，能把一次性的展会接触变成长期信任。LinkedIn正用分类器压低泛泛的AI水帖，Google的AI概览又常引用社媒内容，真实的老板观点因此更值钱。建议每周发2到3条，坚持一个季度再评估。
+
+### 让ChatGPT推荐你的工厂：工厂官网GEO入门
+URL: https://touchigh.ai/blog/factory-website-geo-chatgpt-supplier/
+问：听说海外买家开始用ChatGPT找供应商了，我们工厂的英文官网要怎么改，才能被AI推荐？
+答：把官网从“公司简介加产品图”改成买家能核实的一手信息源：用英文写清产能设备、认证编号、材料工艺、MOQ和交期，并把询盘里的高频问题写成一问一答。据Ahrefs数据，ChatGPT的引用正转向原始信息源；Google AI概览也已出现在八成以上的品牌词搜索中。官网信息越具体、越一致，越容易被AI引用和推荐。
+
+### SEO、AEO、GEO有什么区别？出海企业要三位一体
+URL: https://touchigh.ai/blog/seo-aeo-geo-explained-chinese-exporters/
+问：SEO、AEO、GEO这几个词总是一起出现，它们到底有什么区别？我们做出海的企业是不是三个都要做？
+答：SEO（搜索引擎优化）让网页在Google链接结果里排名靠前；AEO（答案引擎优化）让内容被AI直接拿来作答；GEO（生成式引擎优化）让品牌在ChatGPT、Perplexity、Google AI概览等生成式答案里被引用和推荐。三者共享同一个底子：清楚、可信、一手的内容。出海企业不必分三支队伍，用一套内容流程同时满足即可。
+
+### 出海SEO自学路线：AEO、GEO入门不花冤枉钱
+URL: https://touchigh.ai/blog/seo-aeo-geo-learning-path-exporters/
+问：我们出海团队没预算请SEO公司，想自己学SEO，还要顾上AEO和GEO，怎样才能少走弯路、不花冤枉钱？
+答：从免费的官方资料和自己的网站开始，按顺序学：先学SEO（搜索引擎优化）的收录、关键词和页面写作，再学AEO（答案引擎优化）的问答式写法，最后学GEO（生成式引擎优化）的实体一致和一手内容。每周产出一个页面，用Search Console和AI自测检验。别花钱学站群、批量洗稿这类捷径，谷歌9月的垃圾内容更新针对的正是违反政策的做法。
+
+### 海外社媒算法偏爱什么？出海品牌思想领导力怎么写
+URL: https://touchigh.ai/blog/overseas-social-algorithms-thought-leadership/
+问：Instagram、Facebook这些海外社媒的算法一直在变，我们出海品牌的内容总是没量，最新的算法变化我需要知道什么？
+答：海外社媒算法奖励原创、时效和真实互动，而不是跟风。Instagram负责人Adam Mosseri表示，排序基于对用户反应的预测，原创内容优先于搬运，较新的帖子获得更多曝光；Facebook则允许用户用日常语言告诉算法想多看什么。出海品牌最稳的做法，是用专业观点做思想领导力内容，并用试验性Reels小步测试新方向。
+
+### 中国制造的故事怎么讲给美国人听？出海内容本土化指南
+URL: https://touchigh.ai/blog/made-in-china-story-localized-thought-leadership/
+问：我们是做出口的工厂，想把“中国制造”的故事讲给美国客户听，本土化内容到底该怎么做？
+答：别讲“中国最大的工厂”，讲只有你能讲的具体事实：谁在做、工艺怎么控、帮美国客户解决了什么问题。用美式英语重写而不是翻译，由创始人或工程师真人出镜，在LinkedIn、YouTube和独立站上持续发布，并写成AI能直接引用的问答。在同质化市场里，可核实的真实细节才是差异。
+
+### 美国买家用AI找供应商：出海企业要准备哪些可被引用的内容
+URL: https://touchigh.ai/blog/us-buyers-ai-research-citable-content/
+问：听说美国买家开始用AI做采购调研了，我们出海企业要准备哪些内容，才能被ChatGPT这类AI引用和推荐？
+答：优先准备六类内容：写清公司是谁的实体信息、文字版产品规格表、直接回答买家问题的FAQ、认证和测试等可核实的证明、选型与对比指南，以及社媒和第三方平台上一致的口碑。用短句和表格写在自己的独立站上，开头先给答案，并与Alibaba.com、LinkedIn等平台的信息保持一致。
+
+### 展会之后怎么办？把广交会和海外展曝光变成长期搜索资产
+URL: https://touchigh.ai/blog/trade-show-to-search-social-assets/
+问：每年花大钱参加广交会和海外展，展会一结束询盘就没了，怎样才能把展会曝光变成长期的获客资产？
+答：把展会当成一年一次的“内容采集日”，而不只是收名片。展前发布预告并邀约，展中记录买家的真实提问、拍工艺讲解、和客户及合作方一起出镜，展后72小时内跟进，再用12个月把素材拆成独立站文章、FAQ和LinkedIn、YouTube内容。这样买家回去搜索或问AI时，仍然能找到你。
+
+### 工厂出海做创始人 IP：为什么要让美国买家看到老板
+URL: https://touchigh.ai/blog/zh/chinese-manufacturers-founder-thought-leadership/
+问：我在一家中国工厂负责营销。我们该用哪些 AI 工具？老板真的有必要在 LinkedIn 上面向美国买家发内容吗？
+答：有必要。美国买家很难核实一家海外工厂，而一位讲清楚你们实际怎么做事的创始人，正好能补上这道缺口。可以用 AI 工具做转写、翻译、起草、字幕、排期和内容评分，但喂给它的必须是创始人的真实经验。LinkedIn 现在会压低泛泛的 AI 帖子，而活跃的社媒账号越来越多地出现在 Google 的 AI 答案中。
+
+### 从工厂到品牌：中国卖家在美国做 SEO、AEO 和 GEO
+URL: https://touchigh.ai/blog/zh/factory-to-brand-seo-aeo-geo-us/
+问：低价和免税直邮都不够用了，我怎样才能让美国消费者找到、信任并关注我的品牌，而不只是我在平台上的 listing？
+答：打造一个美国消费者能按你的方式找到并核实的品牌。SEO 让你的网站获得排名，AEO 让你的内容成为直接答案，GEO 让 ChatGPT、Google AI 概览等 AI 工具引用你。先从三件事做起：一个清晰的“关于我们”页面，一份坦诚说明配送和关税的 FAQ，以及持续回答真实问题的社媒内容。
 

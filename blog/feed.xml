@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-<title>ToucHigh Blog</title>
+<title>ToucHigh 博客</title>
 <link>https://touchigh.ai/blog/</link>
-<description>SEO, GEO/AEO, social media and ads playbooks for SMEs and cross-border sellers.</description>
+<description>出海卖家、工厂与中小企业的 SEO、GEO/AEO、海外社媒与广告投放实战。</description>
 <language>zh-Hans</language>
 <lastBuildDate>Fri, 16 Oct 2026 12:00:00 +0800</lastBuildDate>
 <atom:link href="https://touchigh.ai/blog/feed.xml" rel="self" type="application/rss+xml"/>
 <item>
-<title>From Factory to Brand: SEO, AEO and GEO for Chinese Sellers in the US</title>
-<link>https://touchigh.ai/blog/factory-to-brand-seo-aeo-geo-us/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/factory-to-brand-seo-aeo-geo-us/</guid>
-<description>De minimis is gone and Google's AI now answers branded searches. A plain-English guide to SEO, AEO and GEO for Chinese ecommerce brands, with a 6-step plan.</description>
+<title>从工厂到品牌：中国卖家在美国做 SEO、AEO 和 GEO</title>
+<link>https://touchigh.ai/blog/zh/factory-to-brand-seo-aeo-geo-us/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/factory-to-brand-seo-aeo-geo-us/</guid>
+<description>小额豁免取消，Google AI 已抢先回答品牌词搜索。一文讲清中国跨境电商品牌如何在美国做 SEO、AEO 和 GEO，附 6 步实操计划。</description>
 <category>SEO</category>
 <pubDate>Fri, 16 Oct 2026 14:00:00 +0800</pubDate>
 </item>
 <item>
-<title>Thought Leadership for Manufacturers: Why US Buyers Should See Your Founder</title>
-<link>https://touchigh.ai/blog/chinese-manufacturers-founder-thought-leadership/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/chinese-manufacturers-founder-thought-leadership/</guid>
-<description>Why Chinese manufacturers need founder-led thought leadership: how social posts feed AI answers, which AI tools help, and a 30-day plan US buyers will trust.</description>
-<category>Social media</category>
+<title>工厂出海做创始人 IP：为什么要让美国买家看到老板</title>
+<link>https://touchigh.ai/blog/zh/chinese-manufacturers-founder-thought-leadership/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/chinese-manufacturers-founder-thought-leadership/</guid>
+<description>中国工厂为什么需要创始人 IP？社媒帖子如何进入 AI 答案、哪些 AI 工具真正有用，以及一份让美国买家信任的 30 天启动计划。</description>
+<category>海外社媒</category>
 <pubDate>Fri, 16 Oct 2026 13:53:00 +0800</pubDate>
 </item>
 <item>
@@ -88,227 +88,227 @@
 <pubDate>Fri, 16 Oct 2026 12:57:00 +0800</pubDate>
 </item>
 <item>
-<title>Cómo medir campañas en redes sociales sin ser analista: 3 métricas</title>
-<link>https://touchigh.ai/blog/medir-campanas-redes-sociales-pymes/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/medir-campanas-redes-sociales-pymes/</guid>
-<description>Aprende a medir campañas en redes sociales con tres capas (atención, conexión y acción), una hoja semanal y una fórmula simple de ROI. Guía para pymes.</description>
-<category>Medición</category>
+<title>不是数据分析师，怎么衡量社媒营销效果？看3个指标</title>
+<link>https://touchigh.ai/blog/zh/medir-campanas-redes-sociales-pymes/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/medir-campanas-redes-sociales-pymes/</guid>
+<description>用注意力、连接、行动三层指标，加一张每周复盘表和一个简单的ROI公式，学会衡量社媒营销效果。写给不懂数据分析的中小企业和出海卖家。</description>
+<category>效果衡量</category>
 <pubDate>Fri, 16 Oct 2026 12:50:00 +0800</pubDate>
 </item>
 <item>
-<title>Publicidad con IA para pymes: Meta Muse y cuándo no automatizar</title>
-<link>https://touchigh.ai/blog/publicidad-ia-pymes-meta-muse/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/publicidad-ia-pymes-meta-muse/</guid>
-<description>Meta lanzó Muse, agentes de IA para pequeños negocios. Qué pueden hacer por tus anuncios, qué accesos no dar todavía y cuándo no conviene automatizar.</description>
-<category>Publicidad para pymes</category>
+<title>中小企业 AI 广告投放：Meta Muse 来了，哪些不该自动化</title>
+<link>https://touchigh.ai/blog/zh/publicidad-ia-pymes-meta-muse/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/publicidad-ia-pymes-meta-muse/</guid>
+<description>Meta 推出面向小企业的 AI 智能体 Muse。它能为你的广告做什么、哪些权限暂时别给、什么情况下不该自动化，这篇一次讲清楚。</description>
+<category>广告投放</category>
 <pubDate>Fri, 16 Oct 2026 12:43:00 +0800</pubDate>
 </item>
 <item>
-<title>Perfil de Empresa en Google y redes: kit de visibilidad local para pymes</title>
-<link>https://touchigh.ai/blog/perfil-empresa-google-redes-pymes/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/perfil-empresa-google-redes-pymes/</guid>
-<description>Google puede publicar cambios en tu Perfil de Empresa si no respondes en cuatro días. Kit para pymes: ficha al día, reseñas, redes y una rutina semanal.</description>
+<title>Google 商家资料与社媒：中小企业本地曝光工具包</title>
+<link>https://touchigh.ai/blog/zh/perfil-empresa-google-redes-pymes/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/perfil-empresa-google-redes-pymes/</guid>
+<description>用户提交的修改建议，四天内不处理，Google 就可能直接发布到你的商家资料上。这份工具包帮中小企业管好商家信息、评价、社媒和每周例行检查。</description>
 <category>SEO</category>
 <pubDate>Fri, 16 Oct 2026 12:36:00 +0800</pubDate>
 </item>
 <item>
-<title>GEO para pymes: lo que funciona y lo que te están vendiendo</title>
-<link>https://touchigh.ai/blog/geo-pymes-que-funciona/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/geo-pymes-que-funciona/</guid>
-<description>GEO para pymes sin humo: qué tiene respaldo, qué promesas evitar (como llms.txt o la aparición garantizada en ChatGPT) y seis preguntas antes de contratar.</description>
-<category>GEO y búsqueda con IA</category>
+<title>中小企业做 GEO：哪些真正有效，哪些只是噱头</title>
+<link>https://touchigh.ai/blog/zh/geo-pymes-que-funciona/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/geo-pymes-que-funciona/</guid>
+<description>中小企业做 GEO 不踩坑：哪些做法有依据，哪些承诺要警惕（如 llms.txt、保证上 ChatGPT），以及签约服务商前要问的六个问题。</description>
+<category>GEO / AI 搜索</category>
 <pubDate>Fri, 16 Oct 2026 12:29:00 +0800</pubDate>
 </item>
 <item>
-<title>Visibilidad de marca en IA: cómo saber si ChatGPT y Google recomiendan tu pyme</title>
-<link>https://touchigh.ai/blog/visibilidad-marca-ia-pymes/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/visibilidad-marca-ia-pymes/</guid>
-<description>Cómo medir la visibilidad de marca en IA de tu pyme: 20 preguntas, cuatro motores y cinco métricas para saber si ChatGPT y Google te recomiendan.</description>
-<category>GEO y búsqueda con IA</category>
+<title>AI 品牌可见度：ChatGPT 和谷歌会推荐你的企业吗？</title>
+<link>https://touchigh.ai/blog/zh/visibilidad-marca-ia-pymes/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/visibilidad-marca-ia-pymes/</guid>
+<description>如何衡量中小企业的 AI 品牌可见度：用 20 个问题、四个 AI 引擎和五项指标，判断 ChatGPT 和谷歌是否在推荐你。</description>
+<category>GEO / AI 搜索</category>
 <pubDate>Fri, 16 Oct 2026 12:22:00 +0800</pubDate>
 </item>
 <item>
-<title>社群演算法怎麼變？Facebook新控制項與IG排序邏輯</title>
-<link>https://touchigh.ai/blog/social-algorithms-explained-facebook-instagram/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/social-algorithms-explained-facebook-instagram/</guid>
-<description>Facebook讓用戶用日常語言調整演算法，社群演算法的規則變了。看懂FB與IG各版位的排序邏輯，用7個步驟調整內容，讓觸及不再只靠運氣。</description>
-<category>社群經營</category>
+<title>社媒算法怎么变？Facebook新控制项与IG排序逻辑</title>
+<link>https://touchigh.ai/blog/zh/social-algorithms-explained-facebook-instagram/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/social-algorithms-explained-facebook-instagram/</guid>
+<description>Facebook让用户用日常语言调整算法，社媒算法的规则变了。看懂FB和IG各版位的排序逻辑，用7个步骤调整内容，让曝光不再只靠运气。</description>
+<category>海外社媒</category>
 <pubDate>Fri, 16 Oct 2026 12:15:00 +0800</pubDate>
 </item>
 <item>
-<title>降低行銷成本又不犧牲品質：中小企業的AI營運清單</title>
-<link>https://touchigh.ai/blog/reduce-marketing-costs-ai-smes/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/reduce-marketing-costs-ai-smes/</guid>
-<description>廣告越來越貴，如何降低行銷成本又不犧牲品質？從全球廣告支出成長11.9%談起，教中小企業盤點5大成本，並用6個步驟讓AI接手重複工作。</description>
-<category>廣告投放</category>
+<title>降低营销成本又不牺牲质量：中小企业的AI运营清单</title>
+<link>https://touchigh.ai/blog/zh/reduce-marketing-costs-ai-smes/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/reduce-marketing-costs-ai-smes/</guid>
+<description>广告越来越贵，怎么降低营销成本又不牺牲质量？从全球广告支出增长11.9%说起，教中小企业盘点5大成本，并用6个步骤让AI接手重复工作。</description>
+<category>广告投放</category>
 <pubDate>Fri, 16 Oct 2026 12:08:00 +0800</pubDate>
 </item>
 <item>
-<title>2026內容行銷趨勢：AI為什麼越來越愛引用一手資料？</title>
-<link>https://touchigh.ai/blog/content-marketing-trends-2026-primary-sources/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/content-marketing-trends-2026-primary-sources/</guid>
-<description>2026內容行銷趨勢不在新格式。數據顯示ChatGPT引用轉向一手資料，Google AI答案則大量引用社群，中小企業該如何調整內容策略，6個步驟一次講清楚。</description>
-<category>GEO / AI 搜尋</category>
+<title>2026内容营销趋势：AI为什么越来越爱引用一手资料？</title>
+<link>https://touchigh.ai/blog/zh/content-marketing-trends-2026-primary-sources/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/content-marketing-trends-2026-primary-sources/</guid>
+<description>2026内容营销趋势不在新形式。数据显示ChatGPT引用转向一手来源，Google的AI答案则大量引用社媒内容。中小企业该怎么调整内容策略？6个步骤一次讲清楚。</description>
+<category>GEO / AI 搜索</category>
 <pubDate>Fri, 16 Oct 2026 12:01:00 +0800</pubDate>
 </item>
 <item>
-<title>在地化行銷怎麼做？港台品牌打進美國社群的5個內容框架</title>
-<link>https://touchigh.ai/blog/localized-social-content-frameworks/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/localized-social-content-frameworks/</guid>
-<description>在地化行銷不只是把貼文翻成英文。從一件賣129.99美元的加熱睡袍談起，拆解港台品牌打進美國社群的5個內容框架，附一週上手步驟與常見地雷。</description>
-<category>社群經營</category>
+<title>本地化营销怎么做？港台品牌打入美国社媒的5个内容框架</title>
+<link>https://touchigh.ai/blog/zh/localized-social-content-frameworks/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/localized-social-content-frameworks/</guid>
+<description>本地化营销不只是把帖子翻译成英文。从一件售价129.99美元的加热睡袍说起，拆解港台品牌打入美国社媒的5个内容框架，附一周上手步骤与常见雷区。</description>
+<category>海外社媒</category>
 <pubDate>Fri, 16 Oct 2026 11:54:00 +0800</pubDate>
 </item>
 <item>
-<title>SEO工具推薦怎麼選？AI搜尋時代中小企業的精簡清單</title>
-<link>https://touchigh.ai/blog/seo-tools-buying-guide-ai-search/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/seo-tools-buying-guide-ai-search/</guid>
-<description>SEO工具推薦不是越多越好。Google AI Overviews已出現在逾八成受追蹤的品牌搜尋中，用一張比較表和6個步驟，幫中小企業挑出真正有回報的工具組。</description>
+<title>SEO工具推荐怎么选？AI搜索时代中小企业的精简清单</title>
+<link>https://touchigh.ai/blog/zh/seo-tools-buying-guide-ai-search/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/seo-tools-buying-guide-ai-search/</guid>
+<description>SEO工具推荐不是越多越好。Google AI Overviews已出现在超过八成受追踪的品牌搜索中，用一张对比表和6个步骤，帮中小企业挑出真正有回报的工具组合。</description>
 <category>SEO</category>
 <pubDate>Fri, 16 Oct 2026 11:47:00 +0800</pubDate>
 </item>
 <item>
-<title>Digital Advertising KPIs for Small Business: The 3 Numbers That Matter</title>
-<link>https://touchigh.ai/blog/digital-advertising-kpis-small-business/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/digital-advertising-kpis-small-business/</guid>
-<description>Too many ad metrics? These digital advertising KPIs for small business cut it to three, with break-even formulas, a weekly routine and a Google Ads fix.</description>
-<category>Measurement</category>
+<title>小企业广告 KPI 怎么看？真正重要的只有 3 个数字</title>
+<link>https://touchigh.ai/blog/zh/digital-advertising-kpis-small-business/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/digital-advertising-kpis-small-business/</guid>
+<description>广告指标太多看不过来？这份小企业数字广告 KPI 指南只留 3 个核心数字，附盈亏平衡公式、每周复盘流程和 Google Ads 设置调整。</description>
+<category>效果衡量</category>
 <pubDate>Fri, 16 Oct 2026 11:40:00 +0800</pubDate>
 </item>
 <item>
-<title>AI Shopping Assistants: How Small Brands Get Recommended on the AI Shelf</title>
-<link>https://touchigh.ai/blog/ai-shelf-small-brands-shopping-assistants/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/ai-shelf-small-brands-shopping-assistants/</guid>
-<description>Adobe expects AI shopping traffic to jump 130% this holiday season. Learn how small brands get recommended by AI shopping assistants, with a 7-step plan.</description>
-<category>GEO &amp; AI search</category>
+<title>AI 购物助手：小品牌如何被推荐、登上“AI 货架”</title>
+<link>https://touchigh.ai/blog/zh/ai-shelf-small-brands-shopping-assistants/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/ai-shelf-small-brands-shopping-assistants/</guid>
+<description>Adobe 预计今年美国假日季 AI 辅助购物流量将增长 130%。小品牌如何被 AI 购物助手推荐、登上 AI 货架？附 7 步实操方法。</description>
+<category>GEO / AI 搜索</category>
 <pubDate>Fri, 16 Oct 2026 11:33:00 +0800</pubDate>
 </item>
 <item>
-<title>TikTok Ads for Small Business: A Focused 30-Day Test Plan</title>
-<link>https://touchigh.ai/blog/tiktok-ads-playbook-small-advertisers/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/tiktok-ads-playbook-small-advertisers/</guid>
-<description>TikTok just added AI shopping, Buy Direct and a US ad network. Here's a 30-day plan for TikTok ads for small business: one product, one goal, one number.</description>
-<category>Ads for SMEs</category>
+<title>小商家 TikTok 广告怎么投：30 天聚焦测试计划</title>
+<link>https://touchigh.ai/blog/zh/tiktok-ads-playbook-small-advertisers/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/tiktok-ads-playbook-small-advertisers/</guid>
+<description>TikTok 刚上线 AI 购物助手、Buy Direct 一键购买和美国广告联盟。小商家投 TikTok 广告，就用这套 30 天计划：一个产品、一个目标、一个数字。</description>
+<category>广告投放</category>
 <pubDate>Fri, 16 Oct 2026 11:26:00 +0800</pubDate>
 </item>
 <item>
-<title>Authentic Content Marketing: What Temu's Fake-Influencer Purge Teaches SMEs</title>
-<link>https://touchigh.ai/blog/temu-fake-influencers-authentic-brand-voice/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/temu-fake-influencers-authentic-brand-voice/</guid>
-<description>Temu cut a $1B fake-influencer ad network. Learn how small brands build authentic content marketing: a clear voice, real proof and creators you can trust.</description>
-<category>Social media</category>
+<title>真实内容营销：Temu 清理假网红给中小企业的启示</title>
+<link>https://touchigh.ai/blog/zh/temu-fake-influencers-authentic-brand-voice/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/temu-fake-influencers-authentic-brand-voice/</guid>
+<description>Temu 砍掉了近 10 亿美元的假网红广告网络。看小品牌如何做真实内容营销：清晰的品牌语气、真实的证据，以及值得信任的达人。</description>
+<category>海外社媒</category>
 <pubDate>Fri, 16 Oct 2026 11:19:00 +0800</pubDate>
 </item>
 <item>
-<title>Social Media Management for Small Business: A 2-Hour-a-Week System</title>
-<link>https://touchigh.ai/blog/social-media-system-for-busy-founders/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/social-media-system-for-busy-founders/</guid>
-<description>A social media management system for small business owners short on time: one two-hour weekly routine, fewer tools, and a setup you can start Monday.</description>
-<category>Social media</category>
+<title>小企业社媒运营：每周 2 小时的省时系统</title>
+<link>https://touchigh.ai/blog/zh/social-media-system-for-busy-founders/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/social-media-system-for-busy-founders/</guid>
+<description>没时间做社媒？这套专为时间紧张的老板设计的小企业社媒运营系统，每周只需两小时：一个固定流程、更少的工具，下周一就能照着搭起来。</description>
+<category>海外社媒</category>
 <pubDate>Fri, 16 Oct 2026 11:12:00 +0800</pubDate>
 </item>
 <item>
-<title>How to Measure Influencer Marketing ROI on TikTok Shop as a Small Brand</title>
-<link>https://touchigh.ai/blog/measure-influencer-roi-tiktok-shop/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/measure-influencer-roi-tiktok-shop/</guid>
-<description>How to measure influencer marketing ROI on TikTok Shop: the creator metrics that predict sales, a simple ROI formula, and how to spot the halo effect.</description>
-<category>Measurement</category>
+<title>小品牌如何衡量 TikTok Shop 达人营销 ROI</title>
+<link>https://touchigh.ai/blog/zh/measure-influencer-roi-tiktok-shop/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/measure-influencer-roi-tiktok-shop/</guid>
+<description>TikTok Shop 达人营销 ROI 怎么衡量？本文给出能预测销量的达人指标、一个简单的 ROI 公式，以及识别站外光环效应的方法。</description>
+<category>效果衡量</category>
 <pubDate>Fri, 16 Oct 2026 11:05:00 +0800</pubDate>
 </item>
 <item>
-<title>How to Increase Social Media Engagement: Predict It Before You Post</title>
-<link>https://touchigh.ai/blog/predict-social-engagement-before-publishing/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/predict-social-engagement-before-publishing/</guid>
-<description>Want to increase social media engagement? See why small-business posts get ignored, plus a pre-publish scorecard that flags weak posts before they go live.</description>
-<category>Social media</category>
+<title>如何提升社媒互动率：发帖前先预测效果</title>
+<link>https://touchigh.ai/blog/zh/predict-social-engagement-before-publishing/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/predict-social-engagement-before-publishing/</guid>
+<description>想提升社媒互动率？先看懂中小企业的社媒帖子为什么没人理，再用一份发布前评分表，在帖子上线之前揪出那些注定反响平平的弱帖。</description>
+<category>海外社媒</category>
 <pubDate>Fri, 16 Oct 2026 10:58:00 +0800</pubDate>
 </item>
 <item>
-<title>Best Time to Post on Social Media in 2026: Why Consistency Beats the Clock</title>
-<link>https://touchigh.ai/blog/best-time-to-post-2026/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/best-time-to-post-2026/</guid>
-<description>There's no universal best time to post on social media in 2026. Find your own window in two weeks, and learn why fewer, steadier posts win.</description>
-<category>Social media</category>
+<title>2026年社媒最佳发帖时间：为什么持续稳定比掐准时间更重要</title>
+<link>https://touchigh.ai/blog/zh/best-time-to-post-2026/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/best-time-to-post-2026/</guid>
+<description>2026年社媒并没有通用的最佳发帖时间。教你用两周找到自己粉丝的活跃时段，并弄明白为什么发得少一点、稳一点，效果反而更好。</description>
+<category>海外社媒</category>
 <pubDate>Fri, 16 Oct 2026 10:51:00 +0800</pubDate>
 </item>
 <item>
-<title>AI Ad Tools for Small Business: What Meta Muse and X Lift Really Do</title>
-<link>https://touchigh.ai/blog/ai-ad-tools-small-business-compared/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/ai-ad-tools-small-business-compared/</guid>
-<description>Meta and X just launched AI ad tools for small advertisers. See what each does, what you still control, and a 30-day test plan that caps your risk.</description>
-<category>Ads for SMEs</category>
+<title>中小企业AI广告工具：Meta Muse和X Lift到底能做什么</title>
+<link>https://touchigh.ai/blog/zh/ai-ad-tools-small-business-compared/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/ai-ad-tools-small-business-compared/</guid>
+<description>Meta和X刚为中小广告主推出AI广告工具。看懂每款工具做什么、哪些仍由你掌控，再用一套设好亏损上限的30天测试计划把风险控制住。</description>
+<category>广告投放</category>
 <pubDate>Fri, 16 Oct 2026 10:44:00 +0800</pubDate>
 </item>
 <item>
-<title>Content Creation Tools for SEO: A Simple Workflow AI Engines Will Cite</title>
-<link>https://touchigh.ai/blog/content-ai-engines-cite-workflow/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/content-ai-engines-cite-workflow/</guid>
-<description>ChatGPT now favors primary sources over summaries. Here's a lean content workflow and tool stack that helps small teams publish faster without losing quality.</description>
+<title>SEO内容创作工具怎么选？一套AI引擎愿意引用的流程</title>
+<link>https://touchigh.ai/blog/zh/content-ai-engines-cite-workflow/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/content-ai-engines-cite-workflow/</guid>
+<description>ChatGPT正从转述类网站转向引用一手信息源。这套精简的内容流程和工具组合，帮小团队更快产出SEO内容，质量不打折，也更容易被AI引用。</description>
 <category>SEO</category>
 <pubDate>Fri, 16 Oct 2026 10:37:00 +0800</pubDate>
 </item>
 <item>
-<title>SEO Best Practices for AI Overviews and AI Mode (October 2026)</title>
-<link>https://touchigh.ai/blog/seo-best-practices-ai-overviews-ai-mode/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/seo-best-practices-ai-overviews-ai-mode/</guid>
-<description>AI Overviews now appear on most branded searches, with more inline links. Here's the short SEO checklist that still pays off, and what you can stop doing.</description>
-<category>GEO &amp; AI search</category>
+<title>AI 概览与 AI 模式下的 SEO 最佳实践（2026年10月）</title>
+<link>https://touchigh.ai/blog/zh/seo-best-practices-ai-overviews-ai-mode/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/seo-best-practices-ai-overviews-ai-mode/</guid>
+<description>AI 概览已覆盖大多数品牌词搜索，内嵌链接也更多了。这份精简 SEO 清单告诉你哪些做法仍然有回报，哪些可以放心停掉。</description>
+<category>GEO / AI 搜索</category>
 <pubDate>Fri, 16 Oct 2026 10:30:00 +0800</pubDate>
 </item>
 <item>
-<title>Lead Generation Strategies for Small Business When Ad Costs Climb</title>
-<link>https://touchigh.ai/blog/lead-generation-strategy-first-outbound/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/lead-generation-strategy-first-outbound/</guid>
-<description>Ad auctions are getting crowded. Learn how small businesses can lift lead conversion rates with strategy-first outbound: who to contact, what to say, when.</description>
-<category>Ads for SMEs</category>
+<title>广告越来越贵，小企业怎么获客：策略先行的主动开发</title>
+<link>https://touchigh.ai/blog/zh/lead-generation-strategy-first-outbound/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/lead-generation-strategy-first-outbound/</guid>
+<description>广告竞价越来越拥挤，线索越来越贵。本文讲小企业如何用策略先行的主动开发提升线索转化率：该联系谁、说什么、何时跟进。</description>
+<category>广告投放</category>
 <pubDate>Fri, 16 Oct 2026 10:23:00 +0800</pubDate>
 </item>
 <item>
-<title>Longer Searches, Pickier Clicks: Raise Your Landing Page Conversion Rate</title>
-<link>https://touchigh.ai/blog/landing-pages-ai-era-search-traffic/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/landing-pages-ai-era-search-traffic/</guid>
-<description>Searchers now type longer, more specific queries. Here's how to rebuild your landing pages around that intent and lift your conversion rate, step by step.</description>
-<category>Ads for SMEs</category>
+<title>搜索词变长、点击更挑：落地页转化率怎么提升</title>
+<link>https://touchigh.ai/blog/zh/landing-pages-ai-era-search-traffic/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/landing-pages-ai-era-search-traffic/</guid>
+<description>用户的搜索词越来越长、越来越具体。本文一步步教你围绕搜索意图重做落地页，让首屏直接回答访客的问题，提升落地页转化率。</description>
+<category>广告投放</category>
 <pubDate>Fri, 16 Oct 2026 10:16:00 +0800</pubDate>
 </item>
 <item>
-<title>Affordable Marketing for Small Business: A Lean Stack Under $500 a Month</title>
-<link>https://touchigh.ai/blog/lean-marketing-stack-smes-under-500/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/lean-marketing-stack-smes-under-500/</guid>
-<description>Global ad spend is set to hit $1.34 trillion in 2026. An affordable marketing stack for small business under $500 a month, and the order to build it in.</description>
-<category>Ads for SMEs</category>
+<title>小企业低成本营销：每月 500 美元以内的精简营销体系</title>
+<link>https://touchigh.ai/blog/zh/lean-marketing-stack-smes-under-500/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/lean-marketing-stack-smes-under-500/</guid>
+<description>2026 年全球广告支出预计达 1.34 万亿美元。本文给出小企业每月 500 美元以内的低成本营销体系，以及正确的搭建顺序。</description>
+<category>广告投放</category>
 <pubDate>Fri, 16 Oct 2026 10:09:00 +0800</pubDate>
 </item>
 <item>
-<title>Social Media Metrics That Matter for Small Businesses, Beyond Followers</title>
-<link>https://touchigh.ai/blog/social-media-metrics-that-matter-smes/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/social-media-metrics-that-matter-smes/</guid>
-<description>Follower count won't pay the rent. The social media metrics that matter for small businesses, how to track them weekly, and a new one to add: AI citations.</description>
-<category>Measurement</category>
+<title>中小企业真正该看的社交媒体指标：别只盯粉丝数</title>
+<link>https://touchigh.ai/blog/zh/social-media-metrics-that-matter-smes/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/social-media-metrics-that-matter-smes/</guid>
+<description>粉丝数交不了房租。本文讲清中小企业真正该看的社交媒体指标、每周该如何追踪，以及一个值得新增的指标：AI 搜索引用。</description>
+<category>效果衡量</category>
 <pubDate>Fri, 16 Oct 2026 10:02:00 +0800</pubDate>
 </item>
 <item>
-<title>LinkedIn Engagement Strategy: How Small B2B Brands Win as AI Slop Gets Cut</title>
-<link>https://touchigh.ai/blog/linkedin-ai-slop-b2b-engagement/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/linkedin-ai-slop-b2b-engagement/</guid>
-<description>LinkedIn says it now spots generic AI posts with 94% precision. A LinkedIn engagement strategy small B2B brands can run in about 30 minutes a day.</description>
-<category>Social media</category>
+<title>LinkedIn 互动策略：AI 垃圾帖被砍，小 B2B 品牌怎么赢</title>
+<link>https://touchigh.ai/blog/zh/linkedin-ai-slop-b2b-engagement/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/linkedin-ai-slop-b2b-engagement/</guid>
+<description>LinkedIn 称其识别泛泛 AI 帖子的准确率已达 94%。这份 LinkedIn 互动策略专为小型 B2B 品牌设计，每天大约 30 分钟就能执行。</description>
+<category>海外社媒</category>
 <pubDate>Fri, 16 Oct 2026 09:55:00 +0800</pubDate>
 </item>
 <item>
-<title>Threads SEO and AI Citations: Do Social Posts Help You Show Up in AI Answers?</title>
-<link>https://touchigh.ai/blog/social-posts-ai-citations-threads-seo/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/social-posts-ai-citations-threads-seo/</guid>
-<description>Social links appear in most Google AI Overviews. What that means for Threads SEO, plus a weekly plan to turn social posts into AI citations for your brand.</description>
-<category>GEO &amp; AI search</category>
+<title>Threads SEO：社媒帖子能帮你被 AI 引用吗？</title>
+<link>https://touchigh.ai/blog/zh/social-posts-ai-citations-threads-seo/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/social-posts-ai-citations-threads-seo/</guid>
+<description>研究显示多数谷歌 AI 概览回答都引用了社媒链接。这对 Threads SEO 意味着什么？附一份每周执行计划，把社媒帖子变成品牌的 AI 引用。</description>
+<category>GEO / AI 搜索</category>
 <pubDate>Fri, 16 Oct 2026 09:48:00 +0800</pubDate>
 </item>
 <item>
-<title>Facebook Algorithm Changes: Staying Visible When Users Can Talk to the Feed</title>
-<link>https://touchigh.ai/blog/facebook-algorithm-controls-small-business/</link>
-<guid isPermaLink="true">https://touchigh.ai/blog/facebook-algorithm-controls-small-business/</guid>
-<description>Facebook now lets people tell its feed what they want in plain words. What this algorithm change means for small businesses, and what to change on Monday.</description>
-<category>Social media</category>
+<title>Facebook 算法变了：用户能直接“告诉”信息流后如何保持曝光</title>
+<link>https://touchigh.ai/blog/zh/facebook-algorithm-controls-small-business/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/zh/facebook-algorithm-controls-small-business/</guid>
+<description>Facebook 现在允许用户用大白话告诉信息流想看什么。这次社交媒体算法变化对小商家意味着什么？本文给出周一就能执行的调整清单。</description>
+<category>海外社媒</category>
 <pubDate>Fri, 16 Oct 2026 09:41:00 +0800</pubDate>
 </item>
 <item>
