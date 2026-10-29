@@ -1,7 +1,7 @@
 /* TEAM */
-Founder & CEO: Zhao Kui — publishes at ACM SIGIR, AAAI
-Chief Revenue Officer: Prof. Aleks Farseev — PhD (NUS), professor at INSEAD & NUS, Forbes Technology Council — https://farseev.com
-Co-founder & Chief Technology Officer: Kirill Lepikhin — https://www.semanticscholar.org/author/81215966
+Chief Executive Officer (CEO): Zhao Kui — AI researcher and serial entrepreneur; ACM SIGIR and ACM MM; invited industry speaker at ACM MM 2026
+Chief Research Officer (CRO): Prof. Aleks Farseev — PhD in AI (NUS), professor at INSEAD, Forbes Technology Council, Gartner Cool Vendor, 30+ papers — https://farseev.com
+Chief Technology Officer (CTO): Kirill Lepikhin — AI marketing technology; six papers at top AI marketing conferences; co-founder and CTO of SOMIN since 2017 — https://www.semanticscholar.org/author/81215966
 
 /* SITE */
 Standards: HTML5, JSON-LD, schema.org

@@ -35,9 +35,9 @@ Chinese SMEs and cross-border e-commerce sellers who have the product and the pr
 
 ## The team (world-leading AI team)
 
-- Zhao Kui — Founder & CEO. AI researcher who publishes at ACM SIGIR and AAAI; leads ToucHigh's US push for Chinese cross-border sellers.
-- Prof. Aleks Farseev — Chief Revenue Officer. PhD (National University of Singapore); professor at INSEAD and NUS; Forbes Technology Council columnist; Gartner Cool Vendor in Marketing AI; 30+ peer-reviewed AI papers at ACM SIGIR, AAAI and The Web Conference. Website: https://farseev.com
-- Kirill Lepikhin — co-founder & CTO; co-founder and CTO of SOMIN (2020 Gartner Cool Vendor) since 2017; co-author of six peer-reviewed ACM papers (ACM TOIS 2025, SIGIR 2026, WWW 2025, WSDM 2021/2023, ACM MM 2018).
+- Zhao Kui — Chief Executive Officer (CEO). AI researcher and serial entrepreneur, combining frontier AI research with experience leading multinational teams of more than a thousand people. His research is published at top international conferences including ACM SIGIR and ACM MM, and he is an invited industry speaker at ACM MM 2026.
+- Prof. Aleks Farseev — Chief Research Officer (CRO). PhD in AI from the National University of Singapore and professor at INSEAD. Forbes Technology Council columnist and a Gartner Cool Vendor. Deep research in AI, with 30+ papers in leading academic venues. Website: https://farseev.com
+- Kirill Lepikhin — Chief Technology Officer (CTO). AI marketing technology expert leading all of ToucHigh's automation engineering. He has published six papers at top AI marketing conferences. Since 2017 he has been co-founder and CTO of SOMIN, leading engineering of its AI marketing platforms for brands including McDonald's, P&G and Puma.
 
 ## Credibility
 
