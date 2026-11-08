@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>robots.txt für KI-Crawler: OAI-SearchBot, GPTBot, Google-Extended | ToucHigh</title>
+<meta name="description" content="Welche KI-Crawler eine B2B- oder Fabrik-Website zulassen sollte: OAI-SearchBot vs. GPTBot, PerplexityBot, Google-Extended und Firewall-Einstellungen, die sie still blockieren.">
+<link rel="canonical" href="https://touchigh.ai/blog/de/ai-crawlers-robots-txt-b2b-website/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="robots.txt KI-Crawler, OAI-SearchBot vs GPTBot, ChatGPT Crawler zulassen, Google-Extended robots.txt, PerplexityBot, KI-Training blockieren Suche erlauben">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/de/ai-crawlers-robots-txt-b2b-website/">
+<meta property="og:title" content="Blockiert Ihre Website ChatGPT? robots.txt für KI-Crawler auf B2B-Websites">
+<meta property="og:description" content="Welche KI-Crawler eine B2B- oder Fabrik-Website zulassen sollte: OAI-SearchBot vs. GPTBot, PerplexityBot, Google-Extended und Firewall-Einstellungen, die sie still blockieren.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t63-de.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Blockiert Ihre Website ChatGPT? robots.txt für KI-Crawler auf B2B-Websites">
+<meta property="og:locale" content="de_DE">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:section" content="GEO &amp; KI-Suche">
+<meta property="article:tag" content="robots.txt">
+<meta property="article:tag" content="KI-Crawler">
+<meta property="article:tag" content="OAI-SearchBot">
+<meta property="article:tag" content="Technisches GEO">
+<meta property="article:tag" content="B2B-Websites">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Blockiert Ihre Website ChatGPT? robots.txt für KI-Crawler auf B2B-Websites">
+<meta name="twitter:description" content="Welche KI-Crawler eine B2B- oder Fabrik-Website zulassen sollte: OAI-SearchBot vs. GPTBot, PerplexityBot, Google-Extended und Firewall-Einstellungen, die sie still blockieren.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t63-de.jpg">
+<meta name="twitter:image:alt" content="Blockiert Ihre Website ChatGPT? robots.txt für KI-Crawler auf B2B-Websites">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/de/ai-crawlers-robots-txt-b2b-website/#article","url":"https://touchigh.ai/blog/de/ai-crawlers-robots-txt-b2b-website/","mainEntityOfPage":"https://touchigh.ai/blog/de/ai-crawlers-robots-txt-b2b-website/","headline":"Blockiert Ihre Website ChatGPT? robots.txt für KI-Crawler auf B2B-Websites","alternativeHeadline":"robots.txt für KI-Crawler: OAI-SearchBot, GPTBot, Google-Extended","description":"Welche KI-Crawler eine B2B- oder Fabrik-Website zulassen sollte: OAI-SearchBot vs. GPTBot, PerplexityBot, Google-Extended und Firewall-Einstellungen, die sie still blockieren.","abstract":"Gut möglich. KI-Unternehmen betreiben getrennte Bots für die Suche und für das Modelltraining. Laut OpenAI werden Websites, die OAI-SearchBot ausschließen, nicht in Suchantworten von ChatGPT angezeigt, während GPTBot nur das Training regelt. Lassen Sie die Such-Crawler zu (OAI-SearchBot, PerplexityBot, Googlebot, Bingbot), entscheiden Sie separat über Trainings-Bots wie GPTBot und Google-Extended und prüfen Sie, ob Ihr CDN oder Ihre Firewall sie unabhängig von robots.txt blockiert.","image":["https://touchigh.ai/assets/blog/og/t63-de.jpg","https://touchigh.ai/assets/blog/hero/t04.jpg"],"datePublished":"2026-11-08T09:40:00+08:00","dateModified":"2026-11-08T09:40:00+08:00","inLanguage":"de","author":{"@type":"Organization","name":"ToucHigh Research-Team","url":"https://touchigh.ai/blog/de/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"GEO & KI-Suche","keywords":"robots.txt KI-Crawler, OAI-SearchBot vs GPTBot, ChatGPT Crawler zulassen, Google-Extended robots.txt, PerplexityBot, KI-Training blockieren Suche erlauben","wordCount":1206,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/de/#blog","name":"ToucHigh Blog"},"about":[{"@type":"Thing","name":"robots.txt"},{"@type":"Thing","name":"KI-Crawler"},{"@type":"Thing","name":"OAI-SearchBot"},{"@type":"Thing","name":"Technisches GEO"},{"@type":"Thing","name":"B2B-Websites"}],"citation":[{"@type":"CreativeWork","name":"Overview of OpenAI Crawlers","url":"https://platform.openai.com/docs/bots","publisher":{"@type":"Organization","name":"OpenAI"}},{"@type":"CreativeWork","name":"Perplexity Crawlers","url":"https://docs.perplexity.ai/guides/bots","publisher":{"@type":"Organization","name":"Perplexity"}},{"@type":"CreativeWork","name":"Google's common crawlers (Google-Extended)","url":"https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to robots.txt","url":"https://developers.google.com/search/docs/crawling-indexing/robots/intro","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"de","mainEntity":[{"@type":"Question","name":"Wenn wir GPTBot blockieren, zeigt ChatGPT unsere Website dann nicht mehr?","acceptedAnswer":{"@type":"Answer","text":"Laut OpenAI nicht. GPTBot regelt, ob Inhalte für das Modelltraining genutzt werden dürfen; OAI-SearchBot regelt die Anzeige in der ChatGPT-Suche. Die beiden Einstellungen sind unabhängig, Sie können also GPTBot ausschließen und OAI-SearchBot trotzdem zulassen."}},{"@type":"Question","name":"Entfernt uns das Blockieren von Google-Extended aus AI Overviews?","acceptedAnswer":{"@type":"Answer","text":"Nein. Laut Google beeinflusst Google-Extended nicht die Aufnahme in die Google-Suche, und AI Overviews und AI Mode sind Teil der Suche, gesteuert über Googlebot. Um einzuschränken, was in Snippets und KI-Funktionen erscheint, verweist Google auf nosnippet, data-nosnippet, max-snippet oder noindex."}},{"@type":"Question","name":"Brauchen wir eine llms.txt-Datei, um von KI gefunden zu werden?","acceptedAnswer":{"@type":"Answer","text":"Laut Google brauchen Sie keine neuen maschinenlesbaren Dateien oder KI-Textdateien, um in seinen KI-Funktionen zu erscheinen. Manche Websites veröffentlichen llms.txt als zusätzliche Zusammenfassung für KI-Tools, aber sie ersetzt keine crawlbaren Seiten."}},{"@type":"Question","name":"Wie lange dauert es nach der Korrektur der robots.txt, bis wir eine Veränderung sehen?","acceptedAnswer":{"@type":"Answer","text":"Laut OpenAI können seine Systeme etwa 24 Stunden brauchen, um sich für die Suche an eine aktualisierte robots.txt anzupassen. Ob Sie zitiert werden, hängt weiterhin von Ihren Inhalten ab; messen Sie also über die folgenden Wochen, nicht am nächsten Tag."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/de/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/de/"},{"@type":"ListItem","position":3,"name":"Blockiert Ihre Website ChatGPT? robots.txt für KI-Crawler auf B2B-Websites","item":"https://touchigh.ai/blog/de/ai-crawlers-robots-txt-b2b-website/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Auf dieser Seite</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/de/">Startseite</a>
+      <a href="/de/#products">Produkte</a>
+      <a href="/de/#faq">FAQ</a>
+      <a href="/de/pro/">ToucHigh PRO</a>
+      <a href="/blog/de/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Sprache: Deutsch"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">DE</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Sprache" hidden><li><a href="/blog/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ai-crawlers-robots-txt-b2b-website/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/id/ai-crawlers-robots-txt-b2b-website/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/es/ai-crawlers-robots-txt-b2b-website/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/ai-crawlers-robots-txt-b2b-website/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/ai-crawlers-robots-txt-b2b-website/" hreflang="de" lang="de" data-short="DE" aria-current="page">Deutsch</a></li><li><a href="/blog/pt/ai-crawlers-robots-txt-b2b-website/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ru/ai-crawlers-robots-txt-b2b-website/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Anmelden</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Gespräch buchen</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/de/">Startseite</a><span>/</span><a href="/blog/de/">Blog</a><span>/</span><span>GEO &amp; KI-Suche</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">GEO &amp; KI-Suche</div>
+    <h1>Blockiert Ihre Website ChatGPT? robots.txt für KI-Crawler auf B2B-Websites</h1>
+    <p class="dek">Vor dem Content kommt der Zugang. Viele Export-Websites blockieren KI-Such-Crawler versehentlich über robots.txt, ein CDN oder ein Sicherheits-Plugin. So unterscheiden Sie Such-Bots von Trainings-Bots und wissen, was Sie zulassen sollten.</p>
+    <div class="a-meta"><b>ToucHigh Research-Team</b><span>Veröffentlicht am <time datetime="2026-11-08T09:40:00+08:00">8. November 2026</time></span><span>6 Min. Lesezeit</span><span class="lang-badge">Deutsch</span></div>
+    <div class="a-langs">Auch verfügbar auf<a href="/blog/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/ai-crawlers-robots-txt-b2b-website/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/id/ai-crawlers-robots-txt-b2b-website/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/es/ai-crawlers-robots-txt-b2b-website/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/ai-crawlers-robots-txt-b2b-website/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/pt/ai-crawlers-robots-txt-b2b-website/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ru/ai-crawlers-robots-txt-b2b-website/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp 768w, /assets/blog/hero/t04-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t04.jpg" alt="Eine freundliche KI-Sprechblase mit violetten Augen lässt einen orangefarbenen Eimer in einen sauberen Steinbrunnen hinab, umgeben von einem Laborkolben, einem Lineal, einer Produktflasche und einem leeren Klemmbrett, während ein staubiger Haufen dunkler Kettenglieder unbeachtet daneben liegt." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Die Frage hinter diesem Artikel"><span class="qm">“</span><div><div class="eyebrow">Die Frage hinter diesem Artikel</div><p class="q">Unsere IT hat letztes Jahr „KI-Bots“ auf der Website blockiert. Könnte das der Grund sein, warum ChatGPT unsere Fabrik nie zeigt, und was sollten wir zulassen?</p><p class="ans"><b>Kurze Antwort</b>Gut möglich. KI-Unternehmen betreiben getrennte Bots für die Suche und für das Modelltraining. Laut OpenAI werden Websites, die OAI-SearchBot ausschließen, nicht in Suchantworten von ChatGPT angezeigt, während GPTBot nur das Training regelt. Lassen Sie die Such-Crawler zu (OAI-SearchBot, PerplexityBot, Googlebot, Bingbot), entscheiden Sie separat über Trainings-Bots wie GPTBot und Google-Extended und prüfen Sie, ob Ihr CDN oder Ihre Firewall sie unabhängig von robots.txt blockiert.</p></div></section>
+      <section class="kt takeaways"><h2>Das Wichtigste</h2><ul><li>OAI-SearchBot von OpenAI zeigt Websites in der ChatGPT-Suche an; GPTBot dient dem Training. Die Einstellungen sind unabhängig, Sie können also Suche zulassen und Training verweigern.</li><li>Laut OpenAI kann es etwa 24 Stunden dauern, bis Änderungen an robots.txt in der ChatGPT-Suche wirken.</li><li>PerplexityBot zeigt Websites in den Ergebnissen von Perplexity an und verlinkt sie; laut Perplexity wird er nicht zum Training von Foundation-Modellen genutzt.</li><li>Google-Extended steuert die Nutzung Ihrer Inhalte für Training und Grounding von Gemini; laut Google beeinflusst es weder Aufnahme noch Ranking in der Google-Suche.</li><li>Firewalls und CDNs können Crawler blockieren, selbst wenn robots.txt sie zulässt; Perplexity veröffentlicht aus diesem Grund IP-Bereiche und WAF-Anleitungen.</li></ul></section>
+      <div class="prose"><p>Erstaunlich viele Export-Websites sind aus einem banalen Grund für die KI-Suche unsichtbar: Die Crawler kommen nicht hinein. Irgendwann in den letzten zwei Jahren hat jemand eine Regel „KI-Bots blockieren“ hinzugefügt, den Bot-Schutz eines CDN eingeschaltet oder ein Sicherheits-Plugin installiert. Für Menschen funktioniert die Website weiter, also fällt es niemandem auf. Dann verbringt das Team Monate damit, Inhalte umzuschreiben, die KI-Suchmaschinen nie lesen durften.</p>
+
+<p>Dieser Leitfaden ist ein 30-minütiger technischer Check für Fabrik- und B2B-Websites. Er macht Sie nicht von allein sichtbar, aber wenn der Zugang kaputt ist, zählt nichts anderes, was Sie tun.</p>
+
+<h2 id="s1">Welche KI-Crawler sind für die Suche, welche für das Training?</h2>
+
+<p>Der Kerngedanke: KI-Unternehmen trennen den Bot, der Seiten für Antworten findet, von dem Bot, der Inhalte für das Modelltraining sammelt. Sie können für beide unterschiedlich entscheiden.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Unternehmen</th><th>User-Agent</th><th>Zweck (laut Dokumentation des Unternehmens)</th></tr></thead>
+<tbody>
+<tr><td>OpenAI</td><td>OAI-SearchBot</td><td>Zeigt Websites in den Suchfunktionen von ChatGPT an. Ausgeschlossene Websites werden nicht in Suchantworten von ChatGPT angezeigt, können aber weiterhin als Navigationslinks erscheinen.</td></tr>
+<tr><td>OpenAI</td><td>GPTBot</td><td>Crawlt Inhalte, die zum Training der Foundation-Modelle von OpenAI genutzt werden können. Ein Ausschluss signalisiert, dass Inhalte nicht für das Training verwendet werden sollen.</td></tr>
+<tr><td>OpenAI</td><td>ChatGPT-User</td><td>Besucht Seiten bei bestimmten Nutzeraktionen. Laut OpenAI gelten robots.txt-Regeln dafür möglicherweise nicht, und er wird nicht genutzt, um zu entscheiden, was in der Suche erscheint.</td></tr>
+<tr><td>Perplexity</td><td>PerplexityBot</td><td>Zeigt Websites in den Suchergebnissen von Perplexity an und verlinkt sie; wird nicht zum Crawlen von Inhalten für KI-Foundation-Modelle genutzt.</td></tr>
+<tr><td>Perplexity</td><td>Perplexity-User</td><td>Ruft Seiten ab, wenn ein Nutzer eine Frage stellt; ignoriert robots.txt in der Regel, weil ein Nutzer den Abruf angefordert hat.</td></tr>
+<tr><td>Google</td><td>Google-Extended</td><td>Ein robots.txt-Token, das steuert, ob von Google gecrawlte Inhalte für Training und Grounding von Gemini genutzt werden dürfen. Es beeinflusst weder Aufnahme noch Ranking in der Google-Suche.</td></tr>
+</tbody>
+</table></div>
+
+<p>Die eigenen KI-Funktionen von Google in der Suche funktionieren anders. Laut den Leitlinien von Google ist KI in die Suche eingebaut; die robots.txt-Regeln für Googlebot steuern also, wie eine Website für die Suche gecrawlt wird, einschließlich AI Overviews und AI Mode. Wer Googlebot blockiert, um „KI abzuwählen“, verschwindet auch aus den normalen Suchergebnissen.</p>
+
+<h2 id="s2">Was sollte in der robots.txt einer Fabrik-Website stehen?</h2>
+
+<p>Für die meisten exportierenden Hersteller ist das Ziel, gefunden zu werden; lassen Sie also die Such-Crawler zu. Ob Sie Trainings-Crawler zulassen, ist eine Geschäftsentscheidung; ein Ausschluss entfernt Sie nicht aus der KI-Suche. Ein einfacher Ausgangspunkt sieht so aus:</p>
+
+<div class="tw"><table>
+<thead><tr><th>robots.txt-Zeile</th><th>Wirkung</th></tr></thead>
+<tbody>
+<tr><td><code>User-agent: OAI-SearchBot</code> / <code>Allow: /</code></td><td>Berechtigt für Suchantworten von ChatGPT</td></tr>
+<tr><td><code>User-agent: PerplexityBot</code> / <code>Allow: /</code></td><td>Berechtigt für Ergebnisse von Perplexity</td></tr>
+<tr><td><code>User-agent: Googlebot</code> / <code>Allow: /</code></td><td>Google-Suche, einschließlich AI Overviews und AI Mode</td></tr>
+<tr><td><code>User-agent: Bingbot</code> / <code>Allow: /</code></td><td>Bing-Suche</td></tr>
+<tr><td><code>User-agent: GPTBot</code> / <code>Allow</code> oder <code>Disallow</code></td><td>Ihre Entscheidung zum Modelltraining von OpenAI</td></tr>
+<tr><td><code>User-agent: Google-Extended</code> / <code>Allow</code> oder <code>Disallow</code></td><td>Ihre Entscheidung zu Training und Grounding von Gemini</td></tr>
+<tr><td><code>Sitemap: https://www.example.com/sitemap.xml</code></td><td>Hilft Crawlern, jede Seite zu finden</td></tr>
+</tbody>
+</table></div>
+
+<p>Halten Sie private Bereiche wie ein Händlerportal oder Preislisten mit Login-Schutz von Crawlern fern, nicht nur mit robots.txt. Die robots.txt-Dokumentation von Google stellt klar, dass robots.txt kein Mechanismus ist, um eine Seite aus Google herauszuhalten; nutzen Sie dafür noindex oder Passwortschutz.</p>
+
+<h2 id="s3">Warum kann eine Firewall KI-Crawler blockieren, selbst wenn robots.txt sie zulässt?</h2>
+
+<p>robots.txt ist eine Bitte; Ihr CDN, Ihre Firewall oder Ihr Sicherheits-Plugin ist ein Tor. Viele Bot-Schutzfunktionen fordern unbekannte Crawler heraus oder blockieren sie, bevor diese überhaupt robots.txt lesen. Google nennt unter seinen Grundlagen für KI-Funktionen, „sicherzustellen, dass das Crawling in robots.txt und von jedem CDN oder jeder Hosting-Infrastruktur zugelassen ist“. Perplexity geht weiter und veröffentlicht IP-Adresslisten und Schritt-für-Schritt-Regeln für Web Application Firewalls, damit Website-Inhaber seine Bots zulassen können. Auch OpenAI veröffentlicht IP-Bereiche für seine Crawler.</p>
+
+<p>Stellen Sie der Person, die Ihr Hosting verwaltet, drei Fragen: Ist der Bot-Schutz aktiv, gibt es eine Zulassungsliste, und stehen die oben genannten Such-Crawler darauf? Prüfen Sie dann Ihre Server-Logs auf die User-Agents aus der Tabelle. Tauchen sie auf und erhalten Fehler, oder tauchen sie gar nicht auf, haben Sie das Problem gefunden.</p>
+
+<h2 id="s4">Wie prüfen Sie den Zugang in 30 Minuten?</h2>
+
+<ol>
+<li><strong>Öffnen Sie yoursite.com/robots.txt.</strong> Suchen Sie nach <code>Disallow: /</code> unter <code>User-agent: *</code> oder unter einem KI-User-Agent.</li>
+<li><strong>Prüfen Sie CDN oder Firewall</strong> auf Bot-Schutz, Länder-Sperren oder Schalter für „KI-Scraper“.</li>
+<li><strong>Durchsuchen Sie Ihre Server-Logs</strong> nach OAI-SearchBot, PerplexityBot und Googlebot und den Statuscodes, die sie erhalten.</li>
+<li><strong>Bestätigen Sie die Indexierung in der Google Search Console</strong> für Ihre wichtigsten Produkt- und Kompetenzseiten.</li>
+<li><strong>Testen Sie nach einem Tag erneut in ChatGPT.</strong> Laut OpenAI kann es etwa 24 Stunden dauern, bis Änderungen an robots.txt in der Suche sichtbar werden.</li>
+<li><strong>Halten Sie die Richtlinie schriftlich fest</strong>, damit das nächste Sicherheitsupdate sie nicht rückgängig macht.</li>
+</ol>
+
+<h2 id="s5">Bedeutet das Zulassen von Crawlern, dass KI Sie empfiehlt?</h2>
+
+<p>Nein. Zugang macht Sie berechtigt, nicht ausgewählt. Sobald Crawler Ihre Website lesen können, lauten die nächsten Fragen, ob Ihre Seiten die Fragen von Käufern mit konkreten Fakten beantworten und ob Ihre Unternehmensinformationen im Web konsistent sind. Aber der Zugang kommt zuerst. Er ist die günstigste Korrektur im GEO und die am häufigsten übersehene.</p></div>
+      <aside class="insight" aria-label="Die Erkenntnis"><div class="eyebrow">Die Erkenntnis</div><blockquote>Von einer Engine, die Sie ausgesperrt haben, können Sie nicht zitiert werden.</blockquote><p>Das Engpassdenken aus dem Operations Research besagt, dass die Leistung eines Systems von seiner engsten Stelle bestimmt wird. Für die KI-Sichtbarkeit ist der Crawler-Zugang oft diese Stelle: Keine noch so große Content-Arbeit verbessert das Ergebnis, bis das Tor offen ist.</p></aside>
+      <section class="prop" aria-label="Wie ToucHigh hilft">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Wie ToucHigh hilft</h2></div>
+        <div class="pb prose"><p>Der GEO Autopilot von ToucHigh beginnt jedes Projekt mit dieser Art von Check:</p><ul><li>einer Prüfung, wo Ihre Website in ChatGPT, Perplexity, Google AI und Gemini unsichtbar ist;</li><li>Korrekturen, die für Sie geschrieben und veröffentlicht werden, einschließlich Seiten, Antworten und Entitätsdaten;</li><li>anschließend verfolgtem KI-Zitationsanteil, damit Sie die Wirkung des geöffneten Tors sehen.</li></ul><p>Buchen Sie ein 30-minütiges Strategiegespräch, und wir sehen uns die KI-Sichtbarkeit Ihrer Website live an.</p><p class="uc">Fabriken und B2B-Lieferanten: So geht ToucHigh die <a href="/de/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T63'})}catch(e){}">Lieferanten-Sichtbarkeit in der KI-Suche</a> an. Soll aus Sichtbarkeit Pipeline werden? Lernen Sie <a href="/de/pro/" onclick="try{gtag('event','pro_click',{location:'article_T63'})}catch(e){}">ToucHigh PRO</a> kennen, unseren Outbound-Service mit Strategie zuerst.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T63')">30-minütiges Strategiegespräch buchen →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T63'})}catch(e){}">Bei ToucHigh anmelden</a></div>
+      </section>
+      <section class="faq" aria-label="Häufige Fragen"><h2>Häufige Fragen</h2><details open><summary>Wenn wir GPTBot blockieren, zeigt ChatGPT unsere Website dann nicht mehr?</summary><p>Laut OpenAI nicht. GPTBot regelt, ob Inhalte für das Modelltraining genutzt werden dürfen; OAI-SearchBot regelt die Anzeige in der ChatGPT-Suche. Die beiden Einstellungen sind unabhängig, Sie können also GPTBot ausschließen und OAI-SearchBot trotzdem zulassen.</p></details><details><summary>Entfernt uns das Blockieren von Google-Extended aus AI Overviews?</summary><p>Nein. Laut Google beeinflusst Google-Extended nicht die Aufnahme in die Google-Suche, und AI Overviews und AI Mode sind Teil der Suche, gesteuert über Googlebot. Um einzuschränken, was in Snippets und KI-Funktionen erscheint, verweist Google auf nosnippet, data-nosnippet, max-snippet oder noindex.</p></details><details><summary>Brauchen wir eine llms.txt-Datei, um von KI gefunden zu werden?</summary><p>Laut Google brauchen Sie keine neuen maschinenlesbaren Dateien oder KI-Textdateien, um in seinen KI-Funktionen zu erscheinen. Manche Websites veröffentlichen llms.txt als zusätzliche Zusammenfassung für KI-Tools, aber sie ersetzt keine crawlbaren Seiten.</p></details><details><summary>Wie lange dauert es nach der Korrektur der robots.txt, bis wir eine Veränderung sehen?</summary><p>Laut OpenAI können seine Systeme etwa 24 Stunden brauchen, um sich für die Suche an eine aktualisierte robots.txt anzupassen. Ob Sie zitiert werden, hängt weiterhin von Ihren Inhalten ab; messen Sie also über die folgenden Wochen, nicht am nächsten Tag.</p></details></section>
+      <section class="srcs"><h2>Quellen</h2><ol><li><a href="https://platform.openai.com/docs/bots" rel="noopener" target="_blank">Overview of OpenAI Crawlers</a> — OpenAI</li><li><a href="https://docs.perplexity.ai/guides/bots" rel="noopener" target="_blank">Perplexity Crawlers</a> — Perplexity</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers" rel="noopener" target="_blank">Google&#x27;s common crawlers (Google-Extended)</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro" rel="noopener" target="_blank">Introduction to robots.txt</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>Warum wir das geschrieben haben</b>Wir haben diesen Beitrag geschrieben, weil wir bei jeder neuen Fabrik-Website zuerst prüfen, ob KI-Crawler hineinkommen – und die Antwort öfter „nein“ lautet, als irgendjemand erwartet.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Auf dieser Seite"><h4>Auf dieser Seite</h4><a href="#s1">Welche KI-Crawler sind für die Suche, welche für das Training?</a><a href="#s2">Was sollte in der robots.txt einer Fabrik-Website stehen?</a><a href="#s3">Warum kann eine Firewall KI-Crawler blockieren, selbst wenn robots.txt sie zulässt?</a><a href="#s4">Wie prüfen Sie den Zugang in 30 Minuten?</a><a href="#s5">Bedeutet das Zulassen von Crawlern, dass KI Sie empfiehlt?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Sehen Sie, wo Sie in der US-KI-Suche unsichtbar sind</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Gespräch buchen</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Anmelden</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Verwandte Artikel</h2>
+  <div class="grid"><a class="card" href="/blog/de/chatgpt-supplier-shortlist-audit/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t46-768.webp"><img src="/assets/blog/hero/t46.jpg" alt="Eine riesige Lupe untersucht vier KI-Sprechblasen, die neben einem kleinen Laden mit orangefarbener Markise schweben; nur eine Blase zeigt die orangefarbene Kartennadel des Ladens, daneben ein Klemmbrett mit Häkchen." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="de"><div class="eyebrow">GEO &amp; KI-Suche</div><h3>Steht Ihre Fabrik auf der Lieferanten-Shortlist von ChatGPT? Ein Audit mit 30 Prompts</h3><p>Bevor Sie eine einzige Seite umschreiben, finden Sie heraus, wo Sie stehen. Hier sind ein Audit mit 30 Prompts, ein Bewertungsbogen und eine Methode zum Lesen der Ergebnisse, die jedes Exportteam an einem Nachmittag umsetzen kann.</p><div class="meta"><span class="lg">Deutsch</span><span>6 Min. Lesezeit</span></div></div></a><a class="card" href="/blog/en/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Among a row of identical grey factories, one white and orange factory is lit by a spotlight from an AI chat bubble, above a panel of icons for machinery, certification, materials, lead time and FAQs." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites</h3><p>Overseas buyers are starting to use AI to find suppliers. A factory site with only a company profile and product photos rarely gets recommended by ChatGPT. Here&#x27;s a checklist of citable pages and first GEO steps.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/en/backlinks-vs-primary-sources-chatgpt-citations/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp"><img src="/assets/blog/hero/t04.jpg" alt="A friendly AI chat bubble with violet eyes lowers an orange bucket into a clean stone well surrounded by a lab flask, a ruler, a product bottle and a blank clipboard, while a dusty heap of dark chain links lies ignored nearby." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Do Backlinks Still Matter? ChatGPT Now Favors Primary Sources</h3><p>ChatGPT increasingly favors primary sources, and each new backlink pays back less. Small sellers should shift time from buying links to publishing original data.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/de/">← Zurück zum Blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Sehen Sie, wo Sie in der US-KI-Suche unsichtbar sind</h2>
+  <p>Buchen Sie ein kostenloses 30-minütiges Gespräch, und wir analysieren live die KI-Sichtbarkeit Ihres Shops.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30-minütiges Strategiegespräch buchen →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Bei ToucHigh anmelden</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Sichtbarkeit in der KI-Suche, Social und Anzeigen auf Autopilot – für KMU und Cross-Border-Händler.</p></div>
+      <div><h4>ToucHigh</h4><a href="/de/">Startseite</a><a href="/de/#geo">GEO Autopilot</a><a href="/de/#social">Social Autopilot</a><a href="/de/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/de/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Anmelden</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Gespräch buchen</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
