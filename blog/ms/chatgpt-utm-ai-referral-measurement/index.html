@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Penjejakan Trafik ChatGPT Selepas Tag UTM Hilang | ToucHigh</title>
+<meta name="description" content="Pautan ChatGPT nampaknya menggugurkan tag UTM, jadi lawatan AI kelihatan seperti trafik langsung. Jejak trafik ChatGPT dalam tiga lapisan: bahagian petikan, trafik langsung, pesanan.">
+<link rel="canonical" href="https://touchigh.ai/blog/ms/chatgpt-utm-ai-referral-measurement/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="penjejakan trafik ChatGPT, cara menjejak trafik ChatGPT dalam GA4, cara mengukur trafik rujukan AI, parameter UTM ChatGPT, cara mengira ROI SEO, bahagian petikan AI">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="th" href="https://touchigh.ai/blog/th/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ms/chatgpt-utm-ai-referral-measurement/">
+<meta property="og:title" content="ChatGPT Nampaknya Menggugurkan Tag UTM: Cara Mengukur Trafik AI Sekarang">
+<meta property="og:description" content="Pautan ChatGPT nampaknya menggugurkan tag UTM, jadi lawatan AI kelihatan seperti trafik langsung. Jejak trafik ChatGPT dalam tiga lapisan: bahagian petikan, trafik langsung, pesanan.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t03-ms.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ChatGPT Nampaknya Menggugurkan Tag UTM: Cara Mengukur Trafik AI Sekarang">
+<meta property="og:locale" content="ms_MY">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="article:published_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:section" content="Pengukuran">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="Trafik rujukan AI">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="Pengukuran GEO">
+<meta property="article:tag" content="ROI SEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChatGPT Nampaknya Menggugurkan Tag UTM: Cara Mengukur Trafik AI Sekarang">
+<meta name="twitter:description" content="Pautan ChatGPT nampaknya menggugurkan tag UTM, jadi lawatan AI kelihatan seperti trafik langsung. Jejak trafik ChatGPT dalam tiga lapisan: bahagian petikan, trafik langsung, pesanan.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t03-ms.jpg">
+<meta name="twitter:image:alt" content="ChatGPT Nampaknya Menggugurkan Tag UTM: Cara Mengukur Trafik AI Sekarang">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ms/chatgpt-utm-ai-referral-measurement/#article","url":"https://touchigh.ai/blog/ms/chatgpt-utm-ai-referral-measurement/","mainEntityOfPage":"https://touchigh.ai/blog/ms/chatgpt-utm-ai-referral-measurement/","headline":"ChatGPT Nampaknya Menggugurkan Tag UTM: Cara Mengukur Trafik AI Sekarang","alternativeHeadline":"Penjejakan Trafik ChatGPT Selepas Tag UTM Hilang","description":"Pautan ChatGPT nampaknya menggugurkan tag UTM, jadi lawatan AI kelihatan seperti trafik langsung. Jejak trafik ChatGPT dalam tiga lapisan: bahagian petikan, trafik langsung, pesanan.","abstract":"Berhenti bergantung hanya pada sumber “chatgpt.com” dalam GA4. Search Engine Land melaporkan bahawa pautan ChatGPT nampaknya tidak lagi membawa parameter UTM, jadi banyak lawatan AI direkodkan sebagai trafik langsung. Sebaliknya, ukur dalam tiga lapisan: bahagian petikan AI (kekerapan jawapan AI bagi soalan teras anda menyebut anda), trafik langsung ke halaman dalam serta carian berjenama, dan pesanan serta tinjauan selepas pembelian. Semak silang ketiga-tiganya.","image":["https://touchigh.ai/assets/blog/og/t03-ms.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-10-16T07:21:00+08:00","dateModified":"2026-10-16T07:21:00+08:00","inLanguage":"ms","author":{"@type":"Organization","name":"Pasukan Penyelidikan ToucHigh","url":"https://touchigh.ai/blog/ms/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Pengukuran","keywords":"penjejakan trafik ChatGPT, cara menjejak trafik ChatGPT dalam GA4, cara mengukur trafik rujukan AI, parameter UTM ChatGPT, cara mengira ROI SEO, bahagian petikan AI","wordCount":1638,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ms/#blog","name":"Blog ToucHigh"},"about":[{"@type":"Thing","name":"ChatGPT"},{"@type":"Thing","name":"Trafik rujukan AI"},{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"Pengukuran GEO"},{"@type":"Thing","name":"ROI SEO"}],"citation":[{"@type":"CreativeWork","name":"ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure","url":"https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Search Engine Land"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ms","mainEntity":[{"@type":"Question","name":"Adakah lonjakan mendadak trafik langsung sentiasa bermakna ia datang daripada ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Tidak semestinya. Laporan Search Engine Land juga memberi amaran bahawa analisis Huesler tidak dapat membuktikan setiap perujuk yang hilang mempunyai punca yang sama. Semak tiga perkara: Adakah peningkatan bermula pada pertengahan Oktober? Adakah ia tertumpu pada halaman dalam seperti halaman produk dan artikel? Adakah rujukan ChatGPT jatuh pada masa yang sama? Hanya apabila ketiga-tiganya sepadan barulah ia berkemungkinan trafik AI yang telah dilabel semula."}},{"@type":"Question","name":"Bagaimana pula dengan trafik daripada platform AI selain ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Mula-mula semak laporan rujukan dalam GA4 untuk melihat domain produk AI mana yang benar-benar muncul, dan masukkan semuanya ke dalam satu kumpulan saluran “Pembantu AI”. Tetapi perubahan ChatGPT ini menunjukkan bahawa platform boleh mengubah cara pautannya berfungsi pada bila-bila masa, jadi anggap data rujukan hanya sebagai satu input, dibaca bersama bahagian petikan AI dan data pesanan."}},{"@type":"Question","name":"Bagaimanakah saya mengira bahagian petikan AI?","acceptedAnswer":{"@type":"Answer","text":"Tetapkan satu set soalan teras, katakan 40 soalan kategori yang paling kerap ditanya pembeli AS. Setiap bulan, tanya setiap satu pada beberapa platform AI utama, kira jawapan yang menyebut atau memautkan kepada jenama anda, dan bahagikan dengan jumlah jawapan. Jika 8 daripada 40 soalan memetik anda, bahagian anda ialah 20%. Kekalkan senarai soalan tanpa perubahan supaya trendnya benar."}},{"@type":"Question","name":"Kami pasukan kecil tanpa penganalisis data. Apakah yang minimum yang patut kami jejak?","acceptedAnswer":{"@type":"Answer","text":"Tiga angka sudah mencukupi: bahagian petikan AI bulanan, trafik langsung ke halaman dalam, dan bahagian pelanggan baharu yang memilih “pembantu AI” dalam tinjauan selepas pembelian. Yang pertama mencerminkan pendedahan, yang kedua lawatan dan yang ketiga jualan. Luangkan setengah hari sebulan untuk merekodkannya dalam satu hamparan, dan selepas tiga bulan anda akan melihat sama ada saluran AI memacu pertumbuhan."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ms/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/ms/"},{"@type":"ListItem","position":3,"name":"ChatGPT Nampaknya Menggugurkan Tag UTM: Cara Mengukur Trafik AI Sekarang","item":"https://touchigh.ai/blog/ms/chatgpt-utm-ai-referral-measurement/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Di halaman ini</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ms/">Laman utama</a>
+      <a href="/ms/#products">Produk</a>
+      <a href="/ms/#faq">Soalan lazim</a>
+      <a href="/ms/pro/">ToucHigh PRO</a>
+      <a href="/blog/ms/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Bahasa: Bahasa Melayu"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">MS</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Bahasa" hidden><li><a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/chatgpt-utm-ai-referral-measurement/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/th/chatgpt-utm-ai-referral-measurement/" hreflang="th" lang="th" data-short="ไทย">ไทย</a></li><li><a href="/blog/vi/chatgpt-utm-ai-referral-measurement/" hreflang="vi" lang="vi" data-short="VI">Tiếng Việt</a></li><li><a href="/blog/id/chatgpt-utm-ai-referral-measurement/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/chatgpt-utm-ai-referral-measurement/" hreflang="ms" lang="ms" data-short="MS" aria-current="page">Bahasa Melayu</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Log masuk</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Tempah panggilan</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ms/">Laman utama</a><span>/</span><a href="/blog/ms/">Blog</a><span>/</span><span>Pengukuran</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Pengukuran</div>
+    <h1>ChatGPT Nampaknya Menggugurkan Tag UTM: Cara Mengukur Trafik AI Sekarang</h1>
+    <p class="dek">ChatGPT nampaknya telah berhenti menambah tag UTM pada pautan keluarnya, jadi lawatan yang dipacu AI bercampur dengan trafik langsung. Tiba masanya untuk cara baharu mengukur pulangan SEO dan GEO anda.</p>
+    <div class="a-meta"><b>Pasukan Penyelidikan ToucHigh</b><span>Diterbitkan <time datetime="2026-10-16T07:21:00+08:00">16 Oktober 2026</time></span><span>5 minit bacaan</span><span class="lang-badge">Bahasa Melayu</span></div>
+    <div class="a-langs">Juga tersedia dalam<a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/chatgpt-utm-ai-referral-measurement/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/th/chatgpt-utm-ai-referral-measurement/" hreflang="th" lang="th" onclick="try{localStorage.setItem('tl','th')}catch(e){}">ไทย</a><a href="/blog/vi/chatgpt-utm-ai-referral-measurement/" hreflang="vi" lang="vi" onclick="try{localStorage.setItem('tl','vi')}catch(e){}">Tiếng Việt</a><a href="/blog/id/chatgpt-utm-ai-referral-measurement/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="Bungkusan meluncur keluar dari terowong gelembung sembang yang diterangi cahaya ungu ke atas penghantar dan jatuh ke dalam tong kelabu biasa, tag penjejakan oren mereka bertaburan di lantai, manakala kanta pembesar, carta cincin, carta bar dan beg beli-belah bersedia untuk menyemak silang." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Soalan di sebalik artikel ini"><span class="qm">“</span><div><div class="eyebrow">Soalan di sebalik artikel ini</div><p class="q">Lawatan daripada ChatGPT kini muncul sebagai trafik “langsung” dalam analitik saya. Bagaimanakah saya mengira pulangan atas apa yang saya belanjakan untuk SEO dan GEO?</p><p class="ans"><b>Jawapan ringkas</b>Berhenti bergantung hanya pada sumber “chatgpt.com” dalam GA4. Search Engine Land melaporkan bahawa pautan ChatGPT nampaknya tidak lagi membawa parameter UTM, jadi banyak lawatan AI direkodkan sebagai trafik langsung. Sebaliknya, ukur dalam tiga lapisan: bahagian petikan AI (kekerapan jawapan AI bagi soalan teras anda menyebut anda), trafik langsung ke halaman dalam serta carian berjenama, dan pesanan serta tinjauan selepas pembelian. Semak silang ketiga-tiganya.</p></div></section>
+      <section class="kt takeaways"><h2>Perkara utama</h2><ul><li>Menurut Search Engine Land, pautan ChatGPT nampaknya tidak lagi membawa parameter UTM, jadi banyak lawatan AI kini muncul sebagai trafik “langsung” dalam alat analitik.</li><li>Cedric Huesler dari Adobe mendapati bahawa merentas kira-kira 500 halaman, lawatan yang dirujuk ChatGPT jatuh kira-kira 31,000 sehari manakala trafik langsung meningkat kira-kira 26,000 sehari.</li><li>Ukur saluran AI dalam tiga lapisan: bahagian petikan AI; trafik langsung ke halaman dalam dan carian berjenama; serta pesanan dan tinjauan selepas pembelian.</li><li>Jangan potong bajet GEO anda berdasarkan data sumber seminggu dua; kekerapan anda muncul dalam jawapan AI ialah metrik teras yang tidak dapat diherotkan oleh parameter penjejakan.</li></ul></section>
+      <div class="prose"><p>Lawatan daripada ChatGPT tiba-tiba muncul sebagai trafik "langsung" dalam analitik anda. Jadi bagaimanakah anda mengira pulangan SEO dan GEO? Kesimpulannya: berhenti menganggap sumber "chatgpt.com" dalam GA4 (Google Analytics 4) sebagai satu-satunya bukti anda, dan semak silang tiga lapisan: bahagian petikan AI, perubahan trafik langsung dan data pesanan. Mana-mana satu angka secara bersendirian boleh mendorong anda membuat keputusan bajet yang salah.</p>
+
+<p>Semuanya bermula dengan berita minggu ini. <a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">Search Engine Land</a> melaporkan pada 15 Oktober bahawa pautan keluar ChatGPT nampaknya tidak lagi membawa parameter "utm_source=chatgpt.com" yang sebelum ini ditambah oleh OpenAI, dan cara pautan dibuka juga menyembunyikan maklumat perujuk. Cedric Huesler dari Adobe menganalisis kira-kira 500 halaman di mana ChatGPT menyumbang sekurang-kurangnya 5% lawatan, membandingkan 9–13 Oktober dengan minggu sebelumnya. Lawatan yang dirujuk ChatGPT jatuh kira-kira 31,000 sehari, manakala trafik langsung ke halaman yang sama meningkat kira-kira 26,000 sehari. OpenAI belum mengesahkan sama ada perubahan itu disengajakan.</p>
+
+<h2 id="why-did-my-chatgpt-traffic-suddenly-disappear">Mengapakah trafik ChatGPT saya tiba-tiba "hilang"?</h2>
+
+<p>Trafik itu tidak hilang. Ia mendapat label yang berbeza. Alat analitik menentukan dari mana lawatan datang terutamanya dengan melihat dua perkara: parameter UTM (tag penjejakan yang ditambah pada pautan) dan URL perujuk yang dihantar oleh pelayar. Apabila kedua-duanya tiada, lawatan direkodkan sebagai "langsung," seolah-olah pembeli menaip alamat anda ke dalam bar pelayar.</p>
+
+<p>Menurut laporan itu, perubahan itu dikesan selepas GPT-6 dilancarkan pada Oktober. Data Huesler juga menunjukkan dua pertiga halaman yang kehilangan rujukan ChatGPT menyaksikan trafik langsung meningkat pada masa yang sama, dan lawatan "langsung" baharu itu berkelakuan sangat serupa dengan lawatan ChatGPT yang dikenal pasti sebelum ini. Namun, laporan itu juga memberi amaran bahawa analisis tersebut tidak dapat membuktikan setiap perujuk yang hilang mempunyai punca yang sama.</p>
+
+<p>Jika anda mengendalikan kedai bebas dan papan pemuka kedai atau GA4 anda menunjukkan rujukan ChatGPT merudum dan trafik langsung melonjak selepas pertengahan Oktober, jangan cepat membuat kesimpulan. Kemungkinan besar labelnya yang berubah, bukan kesediaan AI untuk mengesyorkan anda.</p>
+
+<h2 id="why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">Mengapakah data klik sahaja tidak dapat memberitahu anda sama ada GEO berbaloi?</h2>
+
+<p>Teori pengukuran prestasi, daripada penyelidikan pengurusan, membuat satu perkara mudah: apa sahaja yang anda ukur ialah apa yang dioptimumkan oleh pasukan anda, dan metrik yang salah membawa kepada keputusan yang salah. Jika anda hanya memantau "lawatan daripada ChatGPT," laporan minggu ini akan mengatakan hasil GEO anda runtuh. Anda mungkin memotong bajet sedangkan sebenarnya pembeli masih datang, cuma di bawah label yang berbeza.</p>
+
+<p>Pergi satu tahap lebih dalam, dan sebahagian besar nilai saluran AI memang tidak pernah muncul sebagai klik. Seorang pembeli melihat ChatGPT mengesyorkan jenama anda, mengingati namanya, dan tiga hari kemudian menaip URL anda atau mencari jenama anda di Google. Tiada model atribusi yang akan mengkreditkan pesanan itu kepada AI. Jadi mengukur saluran AI bermakna bertanya sama ada anda telah meraih tempat dalam minda pembeli, bukan sekadar membaca satu baris sumber dalam laporan.</p>
+
+<h2 id="a-three-layer-framework-for-measuring-the-ai-channel">Rangka kerja tiga lapisan untuk mengukur saluran AI</h2>
+
+<p>Bahagikan metrik anda kepada tiga lapisan, setiap satu menjawab satu soalan. Adakah AI menyebut anda? Adakah pembeli melawat kerananya? Adakah lawatan itu bertukar menjadi jualan?</p>
+
+<div class="tw"><table>
+<thead><tr><th>Lapisan</th><th>Apa yang perlu dijejak</th><th>Di mana hendak melihat</th><th>Mengapa ia penting</th></tr></thead>
+<tbody>
+<tr><td>Pendedahan</td><td>Bahagian petikan AI; sama ada AI menggambarkan jenama anda dengan tepat</td><td>Satu set soalan tetap, disemak secara berkala dalam ChatGPT, Perplexity dan Google AI</td><td>Tidak bergantung pada tag UTM; bacaan paling langsung tentang hasil GEO</td></tr>
+<tr><td>Trafik</td><td>Trafik langsung ke halaman dalam; volum carian berjenama; rujukan AI yang masih boleh dikenal pasti</td><td>Laporan halaman pendaratan GA4, Google Search Console</td><td>Sedikit orang menaip URL halaman produk yang panjang secara manual, jadi peningkatan trafik langsung jenis ini wajar diberi perhatian</td></tr>
+<tr><td>Perniagaan</td><td>Pesanan pelanggan baharu, nilai purata pesanan, bahagian jawapan tinjauan selepas pembelian yang memilih "pembantu AI"</td><td>Papan pemuka kedai, tinjauan selepas checkout</td><td>Menjawab soalan terakhir: adakah ia berbaloi?</td></tr>
+</tbody>
+</table></div>
+
+<p>Baca ketiga-tiga lapisan bersama. Jika pendedahan meningkat tetapi trafik tidak berganjak, AI menyebut anda tanpa memberi pembeli sebab untuk mengklik, jadi tambahkan maklumat pembelian seperti julat harga dan kes penggunaan ke halaman yang dipetik. Jika trafik meningkat tetapi jualan tidak, masalahnya kemungkinan besar pada halaman pendaratan dan checkout anda, bukan GEO itu sendiri.</p>
+
+<h2 id="how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">Bagaimanakah saya patut menyediakan GA4 supaya kurang kehilangan trafik AI?</h2>
+
+<ol>
+<li><strong>Cipta kumpulan saluran tersuai "Pembantu AI".</strong> Kumpulkan domain rujukan produk AI seperti chatgpt.com dan perplexity.ai bersama-sama, menggunakan domain yang benar-benar muncul dalam akaun anda, supaya ia tidak bertaburan di bawah "Referral" yang tiada siapa lihat.</li>
+<li><strong>Pecahkan trafik langsung mengikut halaman pendaratan.</strong> Fokus pada trafik langsung ke halaman dalam seperti halaman butiran produk dan catatan blog, dan analisisnya secara berasingan daripada trafik langsung halaman utama. Lawatan langsung ke halaman utama anda kebanyakannya datang daripada pelanggan yang kembali; peningkatan luar biasa di halaman dalam lebih berkemungkinan daripada AI.</li>
+<li><strong>Anotasikan tarikh dalam laporan anda.</strong> Catatkan perubahan pertengahan Oktober sebagai nota, supaya perbandingan tahun ke tahun dan bulan ke bulan kemudian tidak memperdaya anda sehingga menyangka GEO berhenti berkesan.</li>
+<li><strong>Tambah tinjauan selepas checkout.</strong> Tanya hanya satu soalan, "Bagaimana anda mengetahui tentang kami?", dan sertakan "ChatGPT atau pembantu AI lain" sebagai pilihan. Anda tidak memerlukan sampel yang besar; trendnya sahaja sudah bernilai.</li>
+<li><strong>Semak rawak soalan yang sama setiap bulan.</strong> Pilih 30 hingga 50 soalan pembeli teras dan rekod sama ada jawapan AI menyebut anda dan memautkan kepada anda. Itulah data mentah di sebalik bahagian petikan AI anda.</li>
+</ol>
+
+<h2 id="when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">Apabila bos saya bertanya sama ada SEO dan GEO berbaloi, apa yang patut saya katakan?</h2>
+
+<p>Jangan janjikan atribusi yang tepat. Buktikan dengan trend dan semakan silang. Inilah contoh hipotesis: sebuah kedai bebas yang menjual peralatan luar melihat bahagian petikan AI-nya meningkat daripada satu dalam sepuluh kepada satu dalam empat dalam tempoh tiga bulan. Dalam tempoh yang sama, trafik langsung ke halaman dalam dan carian berjenama kedua-duanya meningkat, dan lebih ramai pelanggan baharu memilih "pembantu AI" dalam tinjauan selepas pembelian. Tiga garisan yang bergerak ke arah yang sama lebih meyakinkan daripada mana-mana satu angka sumber.</p>
+
+<p>Untuk pengiraan, gunakan formula ringkas: pulangan SEO dan GEO lebih kurang sama dengan untung kasar tambahan daripada saluran organik dibahagi dengan jumlah kos kandungan, alat dan tenaga kerja dalam tempoh yang sama. Anggarkan angka atas secara konservatif daripada data pesanan dan tinjauan, dan kira masa pasukan anda dalam angka bawah.</p>
+
+<p>Kemudian bandingkan pesanan organik itu dengan kos pemerolehan pelanggan anda daripada iklan dalam tempoh yang sama, dan anda mempunyai tanda aras yang boleh difahami bos anda. Walaupun anda tidak dapat mengiranya hingga dua titik perpuluhan, hala tuju dan skalanya jelas, dan itu sudah cukup untuk menyokong keputusan bajet.</p>
+
+<h2 id="what-should-i-watch-for-next">Apakah yang patut saya pantau seterusnya?</h2>
+
+<p>OpenAI mungkin mengembalikan tag UTM atau terus mengubah cara pautannya berfungsi, dan platform AI lain juga boleh membuat perubahan tanpa amaran. Jadi jangan buat keputusan bajet berdasarkan turun naik seminggu dua, dan jangan pertaruhkan keseluruhan sistem pengukuran anda pada parameter penjejakan mana-mana satu platform.</p>
+
+<p>Dalam jangka pendek, arkibkan data empat minggu sebelum dan selepas pertengahan Oktober sebagai set perbandingan. Jika rujukan ChatGPT kembali kemudian, anda boleh menggunakannya untuk menganggarkan secara kasar berapa banyak trafik AI yang "tersembunyi" dalam tempoh tersebut.</p>
+
+<p>Metrik yang benar-benar stabil ialah kekerapan anda muncul dalam jawapan AI. Jika anda tidak mahu menyemak rawak secara manual setiap bulan, <a href="/ms/#geo">GEO Autopilot ToucHigh</a> menjejak bahagian petikan AI secara langsung, sama ada tag UTM wujud atau tidak.</p></div>
+      <aside class="insight" aria-label="Wawasan"><div class="eyebrow">Wawasan</div><blockquote>Ukur apa yang ada dalam minda orang, bukan sekadar angka.</blockquote><p>Teori pengukuran prestasi mengingatkan kita bahawa metrik yang kita pilih memacu keputusan yang kita buat. Nilai saluran AI sering muncul sebagai pembeli mengingati anda dan bukannya sebagai klik yang boleh dijejak, jadi data sumber sahaja amat mengurangkan kiraannya.</p></aside>
+      <section class="prop" aria-label="Cara ToucHigh membantu">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Cara ToucHigh membantu</h2></div>
+        <div class="pb prose"><p>Tag UTM berubah dan data perujuk hilang, tetapi sama ada jawapan AI menyertakan anda ialah sesuatu yang boleh anda ukur secara langsung. GEO Autopilot ToucHigh dibina tepat berdasarkan perkara itu:</p><ul><li>Ia mengaudit soalan mana anda tidak kelihatan merentas ChatGPT, Perplexity, Google AI Overviews / AI Mode dan Gemini.</li><li>Ia menulis dan melaksanakan pembaikan, termasuk halaman, jawapan dan data entiti jenama, serta membina artikel GEO berdasarkan soalan carian ketika ia menjadi trend.</li><li>Ia menjejak bahagian petikan AI anda secara berterusan, memberikan anda keluk hasil yang tidak bergantung pada tag UTM.</li></ul><p>Jika anda ingin melihat garis dasar anda dalam carian AI di AS dahulu, tempah panggilan strategi 30 minit.</p><p class="uc">Kilang dan pembekal B2B: lihat cara ToucHigh mengendalikan <a href="/ms/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T03'})}catch(e){}">keterlihatan pembekal dalam carian AI</a>. Mahu keterlihatan menjadi saluran jualan? Kenali <a href="/ms/pro/" onclick="try{gtag('event','pro_click',{location:'article_T03'})}catch(e){}">ToucHigh PRO</a>, perkhidmatan outbound berasaskan strategi kami.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T03')">Tempah sesi strategi 30 minit →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T03'})}catch(e){}">Log masuk ke ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Soalan lazim"><h2>Soalan lazim</h2><details open><summary>Adakah lonjakan mendadak trafik langsung sentiasa bermakna ia datang daripada ChatGPT?</summary><p>Tidak semestinya. Laporan Search Engine Land juga memberi amaran bahawa analisis Huesler tidak dapat membuktikan setiap perujuk yang hilang mempunyai punca yang sama. Semak tiga perkara: Adakah peningkatan bermula pada pertengahan Oktober? Adakah ia tertumpu pada halaman dalam seperti halaman produk dan artikel? Adakah rujukan ChatGPT jatuh pada masa yang sama? Hanya apabila ketiga-tiganya sepadan barulah ia berkemungkinan trafik AI yang telah dilabel semula.</p></details><details><summary>Bagaimana pula dengan trafik daripada platform AI selain ChatGPT?</summary><p>Mula-mula semak laporan rujukan dalam GA4 untuk melihat domain produk AI mana yang benar-benar muncul, dan masukkan semuanya ke dalam satu kumpulan saluran “Pembantu AI”. Tetapi perubahan ChatGPT ini menunjukkan bahawa platform boleh mengubah cara pautannya berfungsi pada bila-bila masa, jadi anggap data rujukan hanya sebagai satu input, dibaca bersama bahagian petikan AI dan data pesanan.</p></details><details><summary>Bagaimanakah saya mengira bahagian petikan AI?</summary><p>Tetapkan satu set soalan teras, katakan 40 soalan kategori yang paling kerap ditanya pembeli AS. Setiap bulan, tanya setiap satu pada beberapa platform AI utama, kira jawapan yang menyebut atau memautkan kepada jenama anda, dan bahagikan dengan jumlah jawapan. Jika 8 daripada 40 soalan memetik anda, bahagian anda ialah 20%. Kekalkan senarai soalan tanpa perubahan supaya trendnya benar.</p></details><details><summary>Kami pasukan kecil tanpa penganalisis data. Apakah yang minimum yang patut kami jejak?</summary><p>Tiga angka sudah mencukupi: bahagian petikan AI bulanan, trafik langsung ke halaman dalam, dan bahagian pelanggan baharu yang memilih “pembantu AI” dalam tinjauan selepas pembelian. Yang pertama mencerminkan pendedahan, yang kedua lawatan dan yang ketiga jualan. Luangkan setengah hari sebulan untuk merekodkannya dalam satu hamparan, dan selepas tiga bulan anda akan melihat sama ada saluran AI memacu pertumbuhan.</p></details></section>
+      <section class="srcs"><h2>Sumber</h2><ol><li><a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure</a> — Search Engine Land, 2026-10-15</li></ol></section>
+      <p class="note"><b>Mengapa kami menulis ini</b>Kami menulis artikel ini kerana “Bagaimana saya mengira pulangan SEO dan GEO?” ialah tempat penjual paling kerap tersekat sebelum menetapkan bajet, dan laporan minggu ini bahawa ChatGPT mungkin telah menggugurkan tag UTM menjadikan soalan itu lebih sukar.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Di halaman ini"><h4>Di halaman ini</h4><a href="#why-did-my-chatgpt-traffic-suddenly-disappear">Mengapakah trafik ChatGPT saya tiba-tiba "hilang"?</a><a href="#why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">Mengapakah data klik sahaja tidak dapat memberitahu anda sama ada GEO berbaloi?</a><a href="#a-three-layer-framework-for-measuring-the-ai-channel">Rangka kerja tiga lapisan untuk mengukur saluran AI</a><a href="#how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">Bagaimanakah saya patut menyediakan GA4 supaya kurang kehilangan trafik AI?</a><a href="#when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">Apabila bos saya bertanya sama ada SEO dan GEO berbaloi, apa yang patut saya katakan?</a><a href="#what-should-i-watch-for-next">Apakah yang patut saya pantau seterusnya?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Lihat di mana anda tidak kelihatan dalam carian AI AS</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Tempah panggilan</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Log masuk</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Artikel berkaitan</h2>
+  <div class="grid"><a class="card" href="/blog/ms/medir-campanas-redes-sociales-pymes/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="Tiga balang kaca di atas rak putih diisi guli oren pada paras berbeza, ditandai dengan mata, hati dan penanda buku, serta kursor dengan troli beli-belah, setiap satu dengan garisan biru tua yang menunjukkan purata lampaunya sendiri." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ms"><div class="eyebrow">Pengukuran</div><h3>Cara Mengukur Kempen Media Sosial Tanpa Menjadi Penganalisis: 3 Metrik</h3><p>Anda tidak memerlukan papan pemuka penuh carta untuk tahu sama ada kempen berkesan. Tiga metrik, garis dasar dan lima belas minit setiap Isnin sudah cukup untuk membuat keputusan yang wajar.</p><div class="meta"><span class="lg">Bahasa Melayu</span><span>4 minit bacaan</span></div></div></a><a class="card" href="/blog/ms/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="Dilihat dari tempat duduk pemandu, tangan seorang pemilik kedai berehat pada stereng di hadapan papan pemuka dengan tepat tiga tolok berbingkai oren dan sebaris lampu amaran kecil." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ms"><div class="eyebrow">Pengukuran</div><h3>KPI Pengiklanan Digital untuk Perniagaan Kecil: 3 Angka yang Penting</h3><p>Tiada pembeli media? Fokus pada kos setiap pemerolehan, pulangan atas perbelanjaan iklan dan kualiti pembelian semula atau prospek. Inilah cara menetapkan sasaran pulang modal dan menyemaknya seminggu sekali.</p><div class="meta"><span class="lg">Bahasa Melayu</span><span>6 minit bacaan</span></div></div></a><a class="card" href="/blog/ms/measure-influencer-roi-tiktok-shop/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t35-768.webp"><img src="/assets/blog/hero/t35.jpg" alt="Tiga dirian telefon dengan lampu cincin terletak sebelah-menyebelah; yang mempunyai timbunan kad video yang tinggi disertai longgokan syiling oren dan beg beli-belah, manakala sebuah sempoa mengira sebuah kotak hadiah dan sebuah bungkusan sebagai kos." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ms"><div class="eyebrow">Pengukuran</div><h3>Cara Mengukur ROI Pemasaran Influencer di TikTok Shop untuk Jenama Kecil</h3><p>Kebanyakan pencipta yang menerima sampel percuma tidak pernah menyiarkan apa-apa, dan satu video jarang menghasilkan jualan. Ini kad skor ringkas untuk mengukur ROI pencipta di TikTok Shop tanpa menipu diri sendiri.</p><div class="meta"><span class="lg">Bahasa Melayu</span><span>6 minit bacaan</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ms/">← Kembali ke blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Lihat di mana anda tidak kelihatan dalam carian AI AS</h2>
+  <p>Tempah panggilan percuma 30 minit dan kami akan membaca keterlihatan AI kedai anda secara langsung.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Tempah sesi strategi 30 minit →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Log masuk ke ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Keterlihatan carian AI, media sosial dan iklan secara automatik untuk PKS dan penjual rentas sempadan.</p></div>
+      <div><h4>ToucHigh</h4><a href="/ms/">Laman utama</a><a href="/ms/#geo">GEO Autopilot</a><a href="/ms/#social">Social Autopilot</a><a href="/ms/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/ms/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Log masuk</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Tempah panggilan</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
