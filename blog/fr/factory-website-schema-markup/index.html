@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Balisage schema pour sites d&#x27;usines : quoi ajouter | ToucHigh</title>
+<meta name="description" content="Les données structurées utiles à un site d&#x27;usine B2B : Organization, extraits Product et Breadcrumb, pourquoi le balisage FAQ rapporte rarement, et ce que Google dit de l&#x27;IA.">
+<link rel="canonical" href="https://touchigh.ai/blog/fr/factory-website-schema-markup/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="balisage schema fabricants, données structurées site usine, schema Organization B2B, données structurées Product usine, schema FAQ 2026, JSON-LD exportateurs">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/factory-website-schema-markup/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/factory-website-schema-markup/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/factory-website-schema-markup/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/factory-website-schema-markup/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/factory-website-schema-markup/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/fr/factory-website-schema-markup/">
+<meta property="og:title" content="Balisage schema pour sites d&#x27;usines : Organization, Product et FAQ bien faits">
+<meta property="og:description" content="Les données structurées utiles à un site d&#x27;usine B2B : Organization, extraits Product et Breadcrumb, pourquoi le balisage FAQ rapporte rarement, et ce que Google dit de l&#x27;IA.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t62-fr.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Balisage schema pour sites d&#x27;usines : Organization, Product et FAQ bien faits">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:section" content="SEO">
+<meta property="article:tag" content="Données structurées">
+<meta property="article:tag" content="Schema.org">
+<meta property="article:tag" content="Sites d&#x27;usines">
+<meta property="article:tag" content="SEO B2B">
+<meta property="article:tag" content="Données d&#x27;entité">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Balisage schema pour sites d&#x27;usines : Organization, Product et FAQ bien faits">
+<meta name="twitter:description" content="Les données structurées utiles à un site d&#x27;usine B2B : Organization, extraits Product et Breadcrumb, pourquoi le balisage FAQ rapporte rarement, et ce que Google dit de l&#x27;IA.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t62-fr.jpg">
+<meta name="twitter:image:alt" content="Balisage schema pour sites d&#x27;usines : Organization, Product et FAQ bien faits">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/fr/factory-website-schema-markup/#article","url":"https://touchigh.ai/blog/fr/factory-website-schema-markup/","mainEntityOfPage":"https://touchigh.ai/blog/fr/factory-website-schema-markup/","headline":"Balisage schema pour sites d'usines : Organization, Product et FAQ bien faits","alternativeHeadline":"Balisage schema pour sites d'usines : quoi ajouter","description":"Les données structurées utiles à un site d'usine B2B : Organization, extraits Product et Breadcrumb, pourquoi le balisage FAQ rapporte rarement, et ce que Google dit de l'IA.","abstract":"Ajoutez trois types et gardez-les exacts : Organization sur la page d'accueil (nom, logo, adresse, contact et liens sameAs vers vos profils officiels), le balisage Product sur chaque page produit ou de capacités au format d'extrait de produit de Google, et BreadcrumbList sur tout le site. Le balisage FAQ est facultatif, car depuis 2023 Google n'affiche les résultats enrichis FAQ que pour des sites gouvernementaux et de santé reconnus. Google indique qu'aucun schema particulier n'est nécessaire pour apparaître dans AI Overviews ; le balisage doit simplement correspondre au texte visible.","image":["https://touchigh.ai/assets/blog/og/t62-fr.jpg","https://touchigh.ai/assets/blog/hero/t57.jpg"],"datePublished":"2026-11-08T09:20:00+08:00","dateModified":"2026-11-08T09:20:00+08:00","inLanguage":"fr","author":{"@type":"Organization","name":"Équipe de recherche ToucHigh","url":"https://touchigh.ai/blog/fr/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"SEO","keywords":"balisage schema fabricants, données structurées site usine, schema Organization B2B, données structurées Product usine, schema FAQ 2026, JSON-LD exportateurs","wordCount":1469,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/fr/#blog","name":"Blog ToucHigh"},"about":[{"@type":"Thing","name":"Données structurées"},{"@type":"Thing","name":"Schema.org"},{"@type":"Thing","name":"Sites d'usines"},{"@type":"Thing","name":"SEO B2B"},{"@type":"Thing","name":"Données d'entité"}],"citation":[{"@type":"CreativeWork","name":"Organization (Organization) structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/organization","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to Product structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/product","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Changes to HowTo and FAQ rich results","url":"https://developers.google.com/search/blog/2023/08/howto-faq-changes","datePublished":"2023-08-08","publisher":{"@type":"Organization","name":"Google Search Central Blog"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Rich Results Test","url":"https://search.google.com/test/rich-results","publisher":{"@type":"Organization","name":"Google"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/factory-website-schema-markup/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"fr","mainEntity":[{"@type":"Question","name":"Faut-il utiliser JSON-LD ou des microdonnées ?","acceptedAnswer":{"@type":"Answer","text":"Google accepte plusieurs formats, et JSON-LD est généralement le plus simple à maintenir, car il tient dans un seul bloc de script au lieu d'être mêlé au HTML. Quel que soit votre choix, gardez une seule source de référence pour que le balisage et le texte visible ne divergent jamais."}},{"@type":"Question","name":"Peut-on baliser des prix que nous ne donnons que dans les devis ?","acceptedAnswer":{"@type":"Answer","text":"Non. Les données structurées doivent décrire ce qui figure sur la page. Si la page n'affiche pas de prix, omettez-le et utilisez le format d'extrait de produit, que Google destine aux pages où l'on ne peut pas acheter directement."}},{"@type":"Question","name":"Faut-il un balisage LocalBusiness ?","acceptedAnswer":{"@type":"Answer","text":"Seulement si les acheteurs viennent vous voir sur place comme un commerce local, par exemple un showroom avec horaires d'ouverture. Pour un fabricant exportateur, Organization avec une adresse réelle est généralement le bon type."}},{"@type":"Question","name":"Le balisage schema nous fera-t-il entrer dans les réponses de ChatGPT ?","acceptedAnswer":{"@type":"Answer","text":"Pas à lui seul. Google indique qu'aucun schema particulier n'est nécessaire pour ses fonctionnalités d'IA, et les autres assistants s'appuient sur les pages qu'ils peuvent explorer et les informations qu'ils trouvent sur le Web. Le balisage aide en énonçant clairement les informations de votre entité ; le contenu doit toujours répondre aux questions des acheteurs."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/fr/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/fr/"},{"@type":"ListItem","position":3,"name":"Balisage schema pour sites d'usines : Organization, Product et FAQ bien faits","item":"https://touchigh.ai/blog/fr/factory-website-schema-markup/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Sur cette page</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/fr/">Accueil</a>
+      <a href="/fr/#products">Produits</a>
+      <a href="/fr/#faq">FAQ</a>
+      <a href="/fr/pro/">ToucHigh PRO</a>
+      <a href="/blog/fr/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Langue: Français"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">FR</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Langue" hidden><li><a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/factory-website-schema-markup/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/factory-website-schema-markup/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/es/factory-website-schema-markup/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/factory-website-schema-markup/" hreflang="fr" lang="fr" data-short="FR" aria-current="page">Français</a></li><li><a href="/blog/ru/factory-website-schema-markup/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Se connecter</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Réserver un appel</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/fr/">Accueil</a><span>/</span><a href="/blog/fr/">Blog</a><span>/</span><span>SEO</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">SEO</div>
+    <h1>Balisage schema pour sites d&#x27;usines : Organization, Product et FAQ bien faits</h1>
+    <p class="dek">Les données structurées ne feront pas à elles seules recommander votre usine par ChatGPT, mais elles lèvent le doute sur qui vous êtes et ce que vous fabriquez. Voici la courte liste dont a besoin un site d&#x27;usine, et ce qu&#x27;il faut laisser de côté.</p>
+    <div class="a-meta"><b>Équipe de recherche ToucHigh</b><span>Publié le <time datetime="2026-11-08T09:20:00+08:00">8 novembre 2026</time></span><span>6 min de lecture</span><span class="lang-badge">Français</span></div>
+    <div class="a-langs">Aussi disponible en<a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/factory-website-schema-markup/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/factory-website-schema-markup/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/es/factory-website-schema-markup/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/ru/factory-website-schema-markup/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t57-768.webp 768w, /assets/blog/hero/t57-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t57.jpg" alt="Une petite grue soulève un plateau de six tuiles de contenu, un badge d&#x27;identité, un tableau de spécifications, des bulles de discussion, un certificat, une balance et des étoiles, vers une fenêtre de réponse IA où un badge d&#x27;usine orange occupe la première place." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="La question derrière cet article"><span class="qm">“</span><div><div class="eyebrow">La question derrière cet article</div><p class="q">Notre développeur demande quel balisage schema ajouter au site anglais de l&#x27;usine. En avons-nous besoin pour Google et l&#x27;IA, et quels types comptent ?</p><p class="ans"><b>Réponse courte</b>Ajoutez trois types et gardez-les exacts : Organization sur la page d&#x27;accueil (nom, logo, adresse, contact et liens sameAs vers vos profils officiels), le balisage Product sur chaque page produit ou de capacités au format d&#x27;extrait de produit de Google, et BreadcrumbList sur tout le site. Le balisage FAQ est facultatif, car depuis 2023 Google n&#x27;affiche les résultats enrichis FAQ que pour des sites gouvernementaux et de santé reconnus. Google indique qu&#x27;aucun schema particulier n&#x27;est nécessaire pour apparaître dans AI Overviews ; le balisage doit simplement correspondre au texte visible.</p></div></section>
+      <section class="kt takeaways"><h2>À retenir</h2><ul><li>La documentation de Google indique qu'aucun balisage schema.org particulier n'est nécessaire pour apparaître dans AI Overviews ou AI Mode ; les données structurées doivent correspondre au texte visible de la page.</li><li>Le balisage Organization n'a aucune propriété obligatoire ; Google recommande le nom, une présence physique comme address ou telephone, et une présence en ligne comme url ou logo.</li><li>Les usines qui ne vendent pas en ligne doivent utiliser le format d'extrait de produit de Google, prévu pour les pages produit où l'on ne peut pas acheter directement.</li><li>Depuis août 2023, les résultats enrichis FAQ sont réservés à des sites gouvernementaux et de santé reconnus et faisant autorité : considérez donc le balisage FAQ comme facultatif.</li><li>Validez chaque modèle avec le test des résultats enrichis de Google et corrigez les erreurs avant de déployer le balisage sur toutes les pages.</li></ul></section>
+      <div class="prose"><p>Demandez à trois prestataires SEO quel schema il faut à un site d'usine et vous obtiendrez trois longues listes. La plupart en font trop. Un fabricant B2B qui vend à des acheteurs étrangers a besoin d'un petit volume de données structurées, tenues exactes, sur les pages que les acheteurs lisent vraiment. Ce guide couvre quoi ajouter, quoi laisser de côté et le lien avec la recherche IA.</p>
+
+<h2 id="s1">Les données structurées aident-elles une usine à être citée par l'IA ?</h2>
+
+<p>Commencez par ce que dit Google. Ses recommandations aux propriétaires de sites sur les fonctionnalités d'IA indiquent qu'il n'y a aucune exigence supplémentaire pour apparaître dans AI Overviews ou AI Mode, que vous n'avez besoin d'aucun nouveau fichier ou balisage lisible par machine, et qu'il n'existe aucune donnée structurée schema.org particulière à ajouter. La même page cite, comme bonne pratique SEO ordinaire, le fait de « s'assurer que vos données structurées correspondent au texte visible de la page ».</p>
+
+<p>Les données structurées ne sont donc pas un interrupteur qui active les citations IA. Ce qu'elles font, c'est lever l'ambiguïté. Elles disent, sous une forme lisible par machine, que cette page parle de cette entreprise, à cette adresse, qui fabrique ces produits, avec ces profils officiels. Pour une usine chinoise dont le nom anglais, le nom chinois et le nom de la société de négoce diffèrent souvent d'un site à l'autre, cette clarté vaut bien un après-midi de développement.</p>
+
+<h2 id="s2">Que doit contenir le balisage Organization sur la page d'accueil d'une usine ?</h2>
+
+<p>La documentation Organization de Google indique qu'aucune propriété n'est obligatoire ; elle recommande d'ajouter les propriétés pertinentes pour votre organisation, en privilégiant celles utiles aux utilisateurs, comme name ou alternateName, un signe de présence physique comme address ou telephone, et une présence en ligne comme url ou logo. Son exemple utilise aussi sameAs pour lister les profils officiels.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Propriété</th><th>Quoi indiquer pour une usine</th><th>Erreur fréquente</th></tr></thead>
+<tbody>
+<tr><td>name</td><td>La raison sociale anglaise enregistrée, exactement comme sur les factures</td><td>Utiliser un slogan marketing ou le nom d'une société de négoce</td></tr>
+<tr><td>alternateName</td><td>Nom de marque court, nom chinois en pinyin ou en caractères</td><td>L'omettre, si bien que l'IA ne peut pas relier les variantes</td></tr>
+<tr><td>url, logo</td><td>URL de la page d'accueil et URL stable de l'image du logo</td><td>Une URL de logo qui change à chaque refonte</td></tr>
+<tr><td>address, telephone, email</td><td>L'adresse réelle de l'usine et un contact commercial suivi</td><td>Une adresse différente de celle de votre boutique marketplace</td></tr>
+<tr><td>sameAs</td><td>Page entreprise LinkedIn, boutique marketplace, chaîne YouTube</td><td>Lier des profils inactifs ou appartenant à des agents</td></tr>
+<tr><td>foundingDate, numberOfEmployees</td><td>Des informations que vous indiqueriez aussi sur la page « À propos »</td><td>Des chiffres qui n'apparaissent nulle part de façon visible</td></tr>
+</tbody>
+</table></div>
+
+<p>Placez Organization sur la page d'accueil (et, si vous voulez, sur la page « À propos »), sans le répéter avec des valeurs différentes sur chaque page. Les informations doivent correspondre à ce que voient les visiteurs.</p>
+
+<h2 id="s3">Quel balisage Product convient à une usine qui ne vend pas en ligne ?</h2>
+
+<p>Google décrit deux catégories de données structurées de produit. Les extraits de produit concernent les pages produit où l'on ne peut pas acheter directement. Les fiches marchands concernent les pages où les clients peuvent vous acheter, avec plus d'options pour la livraison et les retours. La plupart des usines B2B établissent des devis sur demande : les extraits de produit sont donc le choix honnête.</p>
+
+<p>Sur chaque page produit ou de capacités, décrivez le produit avec name, description, image, brand (votre marque ou « OEM »), et la matière ou la catégorie le cas échéant. N'inventez pas de prix ni de notes d'avis pour décrocher des résultats enrichis ; si un prix n'existe que dans des devis, laissez-le de côté. Une page produit aux spécifications exactes et visibles sert mieux les acheteurs et l'IA qu'un balisage qui promet plus que la page ne montre.</p>
+
+<h2 id="s4">Le schema FAQ vaut-il encore la peine ?</h2>
+
+<p>En août 2023, Google a annoncé réduire la visibilité des résultats enrichis FAQ : les résultats enrichis FAQ issus des données structurées FAQPage ne seraient plus affichés que pour des sites gouvernementaux et de santé reconnus et faisant autorité. Pour un site d'usine, cela signifie que le balisage FAQ ne produira presque jamais le résultat dépliable que certaines agences vendent encore.</p>
+
+<p>La FAQ elle-même reste précieuse. Des questions et réponses visibles (« Quel est votre MOQ pour des couleurs personnalisées ? », « Quels tests de contact alimentaire réussissez-vous ? ») sont exactement les passages qu'une réponse IA peut reprendre. Gardez la FAQ visible, rédigez chaque réponse pour que sa première phrase tienne seule, et considérez le balisage FAQPage comme un rangement facultatif.</p>
+
+<h2 id="s5">Comment une usine doit-elle déployer les données structurées ?</h2>
+
+<ol>
+<li><strong>Fixez d'abord les informations.</strong> Décidez du nom d'entreprise anglais unique, de l'adresse et des catégories de produits que vous utiliserez partout.</li>
+<li><strong>Ajoutez Organization à la page d'accueil</strong> avec name, alternateName, url, logo, address, contact et sameAs.</li>
+<li><strong>Ajoutez Product à un modèle</strong> (une page produit ou de capacités) et BreadcrumbList sur tout le site.</li>
+<li><strong>Validez avec le test des résultats enrichis</strong> et corrigez les erreurs critiques avant de déployer le modèle.</li>
+<li><strong>Déployez page par page</strong>, en vérifiant que chaque valeur balisée apparaît dans le texte visible.</li>
+<li><strong>Revérifiez après chaque refonte.</strong> Les modèles perdent ou dupliquent souvent le JSON-LD quand les thèmes changent.</li>
+</ol>
+
+<h2 id="s6">Que ne règlent pas les données structurées ?</h2>
+
+<p>Le balisage ne peut pas rendre utiles des pages creuses. Si votre page de capacités parle d'« équipements de pointe et contrôle qualité rigoureux » sans aucun chiffre, ajouter un schema Product ne fait qu'étiqueter une boîte vide. L'ordre du travail GEO reste le même : d'abord un contenu précis et vérifiable sur la page ; ensuite des informations d'entité cohérentes sur tout le Web ; enfin des données structurées pour décrire proprement les deux.</p></div>
+      <aside class="insight" aria-label="L'idée clé"><div class="eyebrow">L'idée clé</div><blockquote>Le balisage étiquette la boîte. Il ne peut pas la remplir.</blockquote><p>La théorie du signal dit qu&#x27;un signal n&#x27;est crédible que s&#x27;il est coûteux à imiter. Un schema qui reflète des faits détaillés et visibles — numéros de certificats, capacité, adresse réelle — renforce la confiance ; un schema qui en dit plus que la page n&#x27;est que du bavardage que moteurs de recherche et acheteurs apprennent à ignorer.</p></aside>
+      <section class="prop" aria-label="Ce que fait ToucHigh">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Ce que fait ToucHigh</h2></div>
+        <div class="pb prose"><p>GEO Autopilot de ToucHigh traite les données structurées comme une partie du correctif, pas comme un projet à part :</p><ul><li>il audite où votre usine est invisible sur ChatGPT, Perplexity, Google AI et Gemini ;</li><li>il rédige et publie les correctifs, dont des pages, des réponses et des données d'entité, pour que les informations et le balisage concordent ;</li><li>il suit votre part de citations IA, pour que vous voyiez quelles pages commencent à être citées.</li></ul><p>Réservez un appel stratégique de 30 minutes et venez avec une page produit ; nous passerons en revue ce que dit la page, ce que dit le balisage et ce que l'IA dit de vous.</p><p class="uc">Usines et fournisseurs B2B : découvrez comment ToucHigh gère la <a href="/fr/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T62'})}catch(e){}">visibilité fournisseur dans la recherche IA</a>. Besoin de transformer la visibilité en pipeline ? Découvrez <a href="/fr/pro/" onclick="try{gtag('event','pro_click',{location:'article_T62'})}catch(e){}">ToucHigh PRO</a>, notre service de prospection où la stratégie passe d'abord.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T62')">Réserver un appel stratégique de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T62'})}catch(e){}">Se connecter à ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Questions fréquentes"><h2>Questions fréquentes</h2><details open><summary>Faut-il utiliser JSON-LD ou des microdonnées ?</summary><p>Google accepte plusieurs formats, et JSON-LD est généralement le plus simple à maintenir, car il tient dans un seul bloc de script au lieu d'être mêlé au HTML. Quel que soit votre choix, gardez une seule source de référence pour que le balisage et le texte visible ne divergent jamais.</p></details><details><summary>Peut-on baliser des prix que nous ne donnons que dans les devis ?</summary><p>Non. Les données structurées doivent décrire ce qui figure sur la page. Si la page n'affiche pas de prix, omettez-le et utilisez le format d'extrait de produit, que Google destine aux pages où l'on ne peut pas acheter directement.</p></details><details><summary>Faut-il un balisage LocalBusiness ?</summary><p>Seulement si les acheteurs viennent vous voir sur place comme un commerce local, par exemple un showroom avec horaires d'ouverture. Pour un fabricant exportateur, Organization avec une adresse réelle est généralement le bon type.</p></details><details><summary>Le balisage schema nous fera-t-il entrer dans les réponses de ChatGPT ?</summary><p>Pas à lui seul. Google indique qu'aucun schema particulier n'est nécessaire pour ses fonctionnalités d'IA, et les autres assistants s'appuient sur les pages qu'ils peuvent explorer et les informations qu'ils trouvent sur le Web. Le balisage aide en énonçant clairement les informations de votre entité ; le contenu doit toujours répondre aux questions des acheteurs.</p></details></section>
+      <section class="srcs"><h2>Sources</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/structured-data/organization" rel="noopener" target="_blank">Organization (Organization) structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener" target="_blank">Introduction to Product structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/blog/2023/08/howto-faq-changes" rel="noopener" target="_blank">Changes to HowTo and FAQ rich results</a> — Google Search Central Blog, 2023-08-08</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://search.google.com/test/rich-results" rel="noopener" target="_blank">Rich Results Test</a> — Google</li></ol></section>
+      <p class="note"><b>Pourquoi nous l'avons écrit</b>Nous avons écrit cet article parce que des usines reçoivent sans cesse des devis pour des « packs schema IA ». La documentation est suffisamment claire : une liste courte et exacte vaut mieux qu&#x27;une liste longue et gonflée.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Sur cette page"><h4>Sur cette page</h4><a href="#s1">Les données structurées aident-elles une usine à être citée par l'IA ?</a><a href="#s2">Que doit contenir le balisage Organization sur la page d'accueil d'une usine ?</a><a href="#s3">Quel balisage Product convient à une usine qui ne vend pas en ligne ?</a><a href="#s4">Le schema FAQ vaut-il encore la peine ?</a><a href="#s5">Comment une usine doit-elle déployer les données structurées ?</a><a href="#s6">Que ne règlent pas les données structurées ?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Voyez où vous êtes invisible dans la recherche IA américaine</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Réserver un appel</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Se connecter</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Articles liés</h2>
+  <div class="grid"><a class="card" href="/blog/en/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Among a row of identical grey factories, one white and orange factory is lit by a spotlight from an AI chat bubble, above a panel of icons for machinery, certification, materials, lead time and FAQs." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites</h3><p>Overseas buyers are starting to use AI to find suppliers. A factory site with only a company profile and product photos rarely gets recommended by ChatGPT. Here&#x27;s a checklist of citable pages and first GEO steps.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/fr/us-brand-entity-chinese-brands-google-ai/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t48-768.webp"><img src="/assets/blog/hero/t48.jpg" alt="Une petite boutique au store orange rayé, sous un grand repère de carte, est reliée par des pointillés à une fiche de carte, une fenêtre de site web et un profil sur téléphone qui affichent tous les mêmes icônes d&#x27;horloge, de téléphone, de globe et d&#x27;étoile, à côté d&#x27;un calendrier avec une case orange." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="fr"><div class="eyebrow">Transfrontalier</div><h3>Construire une entité de marque aux États-Unis : comment les marques chinoises se font reconnaître par Google et l&#x27;IA</h3><p>Beaucoup de marques chinoises existent en ligne sous la forme de trois demi-marques : un nom en pinyin sur la marketplace, un nom anglais sur le site et une raison sociale sur LinkedIn. Google et l&#x27;IA ne peuvent pas recommander ce qu&#x27;ils ne savent pas identifier. Voici comment devenir une seule entité.</p><div class="meta"><span class="lg">Français</span><span>7 min de lecture</span></div></div></a><a class="card" href="/blog/en/seo-aeo-geo-explained-chinese-exporters/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t53-768.webp"><img src="/assets/blog/hero/t53.jpg" alt="An orange block works like a fountain, sending three pipes to a search results list, a speech-bubble answer card and an AI chat bubble with a violet spark." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO vs. AEO vs. GEO: What&#x27;s the Difference, and Do Exporters Need All Three?</h3><p>SEO gets you found, AEO gets your answer quoted by AI, and GEO gets you recommended by generative AI. They share one foundation, so exporters can run all three with one workflow.</p><div class="meta"><span class="lg">English</span><span>8 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/fr/">← Retour au blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Voyez où vous êtes invisible dans la recherche IA américaine</h2>
+  <p>Réservez un appel gratuit de 30 minutes et nous ferons en direct une lecture de la visibilité IA de votre boutique.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Réserver un appel stratégique de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Se connecter à ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Visibilité dans la recherche IA, réseaux sociaux et publicité en pilote automatique, pour les PME et les vendeurs transfrontaliers.</p></div>
+      <div><h4>ToucHigh</h4><a href="/fr/">Accueil</a><a href="/fr/#geo">GEO Autopilot</a><a href="/fr/#social">Social Autopilot</a><a href="/fr/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/fr/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Se connecter</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Réserver un appel</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
