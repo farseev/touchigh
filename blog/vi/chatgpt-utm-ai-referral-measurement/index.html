@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theo dõi lưu lượng ChatGPT khi thẻ UTM biến mất | ToucHigh</title>
+<meta name="description" content="Liên kết ChatGPT dường như đã bỏ thẻ UTM, nên lượt truy cập AI trông như lưu lượng trực tiếp. Theo dõi theo ba tầng: tỷ lệ trích dẫn, lưu lượng trực tiếp, đơn hàng.">
+<link rel="canonical" href="https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="theo dõi lưu lượng ChatGPT, cách theo dõi lưu lượng ChatGPT trong GA4, cách đo lưu lượng giới thiệu từ AI, tham số UTM ChatGPT, cách tính ROI SEO, tỷ lệ được AI trích dẫn">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="th" href="https://touchigh.ai/blog/th/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/">
+<meta property="og:title" content="ChatGPT dường như đã bỏ thẻ UTM: cách đo lưu lượng AI bây giờ">
+<meta property="og:description" content="Liên kết ChatGPT dường như đã bỏ thẻ UTM, nên lượt truy cập AI trông như lưu lượng trực tiếp. Theo dõi theo ba tầng: tỷ lệ trích dẫn, lưu lượng trực tiếp, đơn hàng.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t03-vi.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ChatGPT dường như đã bỏ thẻ UTM: cách đo lưu lượng AI bây giờ">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:section" content="Đo lường">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="Lưu lượng giới thiệu từ AI">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="Đo lường GEO">
+<meta property="article:tag" content="ROI của SEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChatGPT dường như đã bỏ thẻ UTM: cách đo lưu lượng AI bây giờ">
+<meta name="twitter:description" content="Liên kết ChatGPT dường như đã bỏ thẻ UTM, nên lượt truy cập AI trông như lưu lượng trực tiếp. Theo dõi theo ba tầng: tỷ lệ trích dẫn, lưu lượng trực tiếp, đơn hàng.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t03-vi.jpg">
+<meta name="twitter:image:alt" content="ChatGPT dường như đã bỏ thẻ UTM: cách đo lưu lượng AI bây giờ">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/#article","url":"https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/","mainEntityOfPage":"https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/","headline":"ChatGPT dường như đã bỏ thẻ UTM: cách đo lưu lượng AI bây giờ","alternativeHeadline":"Theo dõi lưu lượng ChatGPT khi thẻ UTM biến mất","description":"Liên kết ChatGPT dường như đã bỏ thẻ UTM, nên lượt truy cập AI trông như lưu lượng trực tiếp. Theo dõi theo ba tầng: tỷ lệ trích dẫn, lưu lượng trực tiếp, đơn hàng.","abstract":"Đừng chỉ dựa vào nguồn \"chatgpt.com\" trong GA4. Search Engine Land đưa tin liên kết của ChatGPT dường như không còn mang tham số UTM, nên nhiều lượt truy cập từ AI bị ghi nhận là lưu lượng trực tiếp. Thay vào đó, hãy đo theo ba tầng: tỷ lệ được AI trích dẫn (tần suất câu trả lời AI cho các câu hỏi cốt lõi nhắc đến bạn), lưu lượng trực tiếp vào các trang sâu cộng tìm kiếm thương hiệu, và đơn hàng cộng khảo sát sau mua hàng. Đối chiếu chéo cả ba.","image":["https://touchigh.ai/assets/blog/og/t03-vi.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-10-16T07:21:00+08:00","dateModified":"2026-10-16T07:21:00+08:00","inLanguage":"vi","author":{"@type":"Organization","name":"Nhóm nghiên cứu ToucHigh","url":"https://touchigh.ai/blog/vi/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Đo lường","keywords":"theo dõi lưu lượng ChatGPT, cách theo dõi lưu lượng ChatGPT trong GA4, cách đo lưu lượng giới thiệu từ AI, tham số UTM ChatGPT, cách tính ROI SEO, tỷ lệ được AI trích dẫn","wordCount":2347,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/vi/#blog","name":"Blog ToucHigh"},"about":[{"@type":"Thing","name":"ChatGPT"},{"@type":"Thing","name":"Lưu lượng giới thiệu từ AI"},{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"Đo lường GEO"},{"@type":"Thing","name":"ROI của SEO"}],"citation":[{"@type":"CreativeWork","name":"ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure","url":"https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Search Engine Land"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"vi","mainEntity":[{"@type":"Question","name":"Lưu lượng trực tiếp tăng đột ngột có phải luôn đến từ ChatGPT không?","acceptedAnswer":{"@type":"Answer","text":"Không hẳn. Bài báo của Search Engine Land cũng lưu ý rằng phân tích của Huesler không thể chứng minh mọi trường hợp mất thông tin giới thiệu đều có cùng nguyên nhân. Hãy kiểm tra ba điều: mức tăng có bắt đầu từ giữa tháng 10 không? Có tập trung ở các trang sâu như trang sản phẩm và bài viết không? Lượt giới thiệu từ ChatGPT có giảm cùng lúc không? Chỉ khi cả ba đều khớp, nhiều khả năng đó mới là lưu lượng AI bị gắn nhãn lại."}},{"@type":"Question","name":"Còn lưu lượng từ các nền tảng AI khác ngoài ChatGPT thì sao?","acceptedAnswer":{"@type":"Answer","text":"Trước tiên, hãy xem báo cáo giới thiệu trong GA4 để biết tên miền của sản phẩm AI nào thực sự xuất hiện, và gộp chúng vào một nhóm kênh \"Trợ lý AI\". Nhưng thay đổi lần này của ChatGPT cho thấy các nền tảng có thể thay đổi cách liên kết hoạt động bất cứ lúc nào, nên hãy coi dữ liệu giới thiệu chỉ là một đầu vào, đọc cùng tỷ lệ được AI trích dẫn và dữ liệu đơn hàng."}},{"@type":"Question","name":"Tính tỷ lệ được AI trích dẫn thế nào?","acceptedAnswer":{"@type":"Answer","text":"Cố định một bộ câu hỏi cốt lõi, chẳng hạn 40 câu hỏi về ngành hàng mà người mua Mỹ hỏi nhiều nhất. Mỗi tháng, hỏi từng câu trên vài nền tảng AI lớn, đếm số câu trả lời nhắc đến hoặc liên kết tới thương hiệu của bạn, và chia cho tổng số câu trả lời. Nếu 8 trên 40 câu hỏi trích dẫn bạn, tỷ lệ của bạn là 20%. Giữ nguyên danh sách câu hỏi để xu hướng là thật."}},{"@type":"Question","name":"Chúng tôi là đội ngũ nhỏ không có chuyên viên phân tích dữ liệu. Tối thiểu nên theo dõi gì?","acceptedAnswer":{"@type":"Answer","text":"Ba con số là đủ: tỷ lệ được AI trích dẫn hằng tháng, lưu lượng trực tiếp vào trang sâu, và tỷ lệ khách hàng mới chọn \"trợ lý AI\" trong khảo sát sau mua hàng. Con số thứ nhất phản ánh mức độ hiện diện, thứ hai là lượt truy cập và thứ ba là doanh số. Dành nửa ngày mỗi tháng ghi chúng vào một bảng tính, và sau ba tháng bạn sẽ thấy kênh AI có đang thúc đẩy tăng trưởng không."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/vi/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/vi/"},{"@type":"ListItem","position":3,"name":"ChatGPT dường như đã bỏ thẻ UTM: cách đo lưu lượng AI bây giờ","item":"https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Trên trang này</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/vi/">Trang chủ</a>
+      <a href="/vi/#products">Sản phẩm</a>
+      <a href="/vi/#faq">Câu hỏi thường gặp</a>
+      <a href="/vi/pro/">ToucHigh PRO</a>
+      <a href="/blog/vi/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Ngôn ngữ: Tiếng Việt"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">VI</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Ngôn ngữ" hidden><li><a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/chatgpt-utm-ai-referral-measurement/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/th/chatgpt-utm-ai-referral-measurement/" hreflang="th" lang="th" data-short="ไทย">ไทย</a></li><li><a href="/blog/vi/chatgpt-utm-ai-referral-measurement/" hreflang="vi" lang="vi" data-short="VI" aria-current="page">Tiếng Việt</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Đăng nhập</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Đặt lịch gọi</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/vi/">Trang chủ</a><span>/</span><a href="/blog/vi/">Blog</a><span>/</span><span>Đo lường</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Đo lường</div>
+    <h1>ChatGPT dường như đã bỏ thẻ UTM: cách đo lưu lượng AI bây giờ</h1>
+    <p class="dek">ChatGPT dường như đã ngừng thêm thẻ UTM vào liên kết dẫn ra ngoài, nên lượt truy cập từ AI đang lẫn vào lưu lượng trực tiếp. Đã đến lúc cần một cách mới để đo lợi nhuận từ SEO và GEO.</p>
+    <div class="a-meta"><b>Nhóm nghiên cứu ToucHigh</b><span>Đăng ngày <time datetime="2026-10-16T07:21:00+08:00">16/10/2026</time></span><span>5 phút đọc</span><span class="lang-badge">Tiếng Việt</span></div>
+    <div class="a-langs">Cũng có bằng<a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/chatgpt-utm-ai-referral-measurement/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/th/chatgpt-utm-ai-referral-measurement/" hreflang="th" lang="th" onclick="try{localStorage.setItem('tl','th')}catch(e){}">ไทย</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="Những bưu kiện trượt ra từ một đường hầm hình bong bóng chat ánh tím lên băng chuyền và rơi vào một thùng xám trơn, các thẻ theo dõi màu cam nằm rơi vãi trên sàn, trong khi một kính lúp, biểu đồ vòng, biểu đồ cột và túi mua sắm đứng sẵn để đối chiếu." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Câu hỏi đằng sau bài viết này"><span class="qm">“</span><div><div class="eyebrow">Câu hỏi đằng sau bài viết này</div><p class="q">Lượt truy cập từ ChatGPT giờ hiển thị là lưu lượng &quot;trực tiếp&quot; trong số liệu phân tích của tôi. Làm sao tính lợi nhuận từ khoản chi cho SEO và GEO?</p><p class="ans"><b>Trả lời ngắn</b>Đừng chỉ dựa vào nguồn &quot;chatgpt.com&quot; trong GA4. Search Engine Land đưa tin liên kết của ChatGPT dường như không còn mang tham số UTM, nên nhiều lượt truy cập từ AI bị ghi nhận là lưu lượng trực tiếp. Thay vào đó, hãy đo theo ba tầng: tỷ lệ được AI trích dẫn (tần suất câu trả lời AI cho các câu hỏi cốt lõi nhắc đến bạn), lưu lượng trực tiếp vào các trang sâu cộng tìm kiếm thương hiệu, và đơn hàng cộng khảo sát sau mua hàng. Đối chiếu chéo cả ba.</p></div></section>
+      <section class="kt takeaways"><h2>Điểm chính</h2><ul><li>Theo Search Engine Land, liên kết của ChatGPT dường như không còn mang tham số UTM, nên nhiều lượt truy cập từ AI giờ hiển thị là lưu lượng "trực tiếp" trong công cụ phân tích.</li><li>Cedric Huesler của Adobe phát hiện rằng trên khoảng 500 trang, lượt truy cập từ ChatGPT giảm khoảng 31.000 mỗi ngày trong khi lưu lượng trực tiếp tăng khoảng 26.000 mỗi ngày.</li><li>Đo kênh AI theo ba tầng: tỷ lệ được AI trích dẫn; lưu lượng trực tiếp vào trang sâu và tìm kiếm thương hiệu; và đơn hàng cộng khảo sát sau mua hàng.</li><li>Đừng cắt ngân sách GEO chỉ dựa trên dữ liệu nguồn của một hai tuần; tần suất bạn xuất hiện trong câu trả lời AI là chỉ số cốt lõi mà tham số theo dõi không thể làm sai lệch.</li></ul></section>
+      <div class="prose"><p>Lượt truy cập từ ChatGPT bỗng hiển thị là lưu lượng "trực tiếp" trong số liệu phân tích của bạn. Vậy làm sao tính lợi nhuận từ SEO và GEO? Kết luận: đừng coi nguồn "chatgpt.com" trong GA4 (Google Analytics 4) là bằng chứng duy nhất, mà hãy đối chiếu chéo ba tầng: tỷ lệ được AI trích dẫn, thay đổi về lưu lượng trực tiếp và dữ liệu đơn hàng. Bất kỳ con số đơn lẻ nào cũng có thể đẩy bạn vào quyết định ngân sách sai.</p>
+
+<p>Mọi chuyện bắt đầu từ tin tức tuần này. Ngày 15 tháng 10, <a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">Search Engine Land</a> đưa tin liên kết dẫn ra ngoài của ChatGPT dường như không còn mang tham số "utm_source=chatgpt.com" mà OpenAI từng thêm vào, và cách liên kết được mở cũng ẩn thông tin trang giới thiệu. Cedric Huesler của Adobe đã phân tích khoảng 500 trang mà ChatGPT chiếm ít nhất 5% lượt truy cập, so sánh giai đoạn 9–13 tháng 10 với tuần trước đó. Lượt truy cập từ ChatGPT giảm khoảng 31.000 mỗi ngày, trong khi lưu lượng trực tiếp vào cùng các trang đó tăng khoảng 26.000 mỗi ngày. OpenAI chưa xác nhận thay đổi này có chủ đích hay không.</p>
+
+<h2 id="why-did-my-chatgpt-traffic-suddenly-disappear">Vì sao lưu lượng từ ChatGPT của tôi bỗng "biến mất"?</h2>
+
+<p>Lưu lượng không biến mất. Nó chỉ bị gắn nhãn khác. Công cụ phân tích xác định một lượt truy cập đến từ đâu chủ yếu dựa vào hai thứ: tham số UTM (thẻ theo dõi gắn vào liên kết) và URL giới thiệu mà trình duyệt chuyển tiếp. Khi thiếu cả hai, lượt truy cập được ghi nhận là "trực tiếp", như thể người mua tự gõ địa chỉ của bạn vào thanh trình duyệt.</p>
+
+<p>Theo bài báo, thay đổi được phát hiện sau khi GPT-6 ra mắt vào tháng 10. Dữ liệu của Huesler cũng cho thấy hai phần ba số trang mất lượt giới thiệu từ ChatGPT đồng thời ghi nhận lưu lượng trực tiếp tăng, và các lượt truy cập "trực tiếp" mới có hành vi rất giống những lượt truy cập từ ChatGPT đã được xác định trước đây. Tuy vậy, bài báo cũng lưu ý rằng phân tích không thể chứng minh mọi trường hợp mất thông tin giới thiệu đều có cùng nguyên nhân.</p>
+
+<p>Nếu bạn vận hành một cửa hàng độc lập và bảng điều khiển cửa hàng hoặc GA4 cho thấy lượt giới thiệu từ ChatGPT lao dốc còn lưu lượng trực tiếp tăng vọt sau giữa tháng 10, đừng vội kết luận. Nhiều khả năng là nhãn đã thay đổi, chứ không phải AI bớt sẵn lòng gợi ý bạn.</p>
+
+<h2 id="why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">Vì sao chỉ dữ liệu lượt nhấp không cho bạn biết GEO có hiệu quả không?</h2>
+
+<p>Lý thuyết đo lường hiệu quả trong nghiên cứu quản trị đưa ra một điểm đơn giản: bạn đo cái gì thì đội ngũ tối ưu cái đó, và chỉ số sai dẫn đến quyết định sai. Nếu bạn chỉ nhìn "lượt truy cập từ ChatGPT", bài báo tuần này sẽ cho thấy kết quả GEO của bạn sụp đổ. Bạn có thể cắt ngân sách trong khi thực tế người mua vẫn đến, chỉ là dưới một nhãn khác.</p>
+
+<p>Đi sâu thêm một tầng, phần lớn giá trị của kênh AI ngay từ đầu đã không hiện ra dưới dạng lượt nhấp. Một người mua thấy ChatGPT gợi ý thương hiệu của bạn, nhớ tên, và ba ngày sau gõ URL của bạn hoặc tìm thương hiệu của bạn trên Google. Không mô hình phân bổ nào ghi nhận đơn hàng đó cho AI. Vì vậy, đo kênh AI nghĩa là hỏi xem bạn đã giành được một chỗ trong tâm trí người mua chưa, chứ không chỉ đọc một dòng nguồn trong báo cáo.</p>
+
+<h2 id="a-three-layer-framework-for-measuring-the-ai-channel">Khung ba tầng để đo kênh AI</h2>
+
+<p>Chia chỉ số thành ba tầng, mỗi tầng trả lời một câu hỏi. AI có nhắc đến bạn không? Người mua có ghé thăm vì điều đó không? Những lượt ghé thăm đó có chuyển thành doanh số không?</p>
+
+<div class="tw"><table>
+<thead><tr><th>Lớp</th><th>Cần theo dõi gì</th><th>Xem ở đâu</th><th>Vì sao quan trọng</th></tr></thead>
+<tbody>
+<tr><td>Mức độ hiện diện</td><td>Tỷ lệ được AI trích dẫn; AI có mô tả thương hiệu của bạn chính xác không</td><td>Một bộ câu hỏi cố định, kiểm tra định kỳ trên ChatGPT, Perplexity và Google AI</td><td>Không phụ thuộc vào thẻ UTM; thước đo trực tiếp nhất về kết quả GEO</td></tr>
+<tr><td>Lưu lượng</td><td>Lưu lượng trực tiếp vào trang sâu; lượng tìm kiếm thương hiệu; lượt giới thiệu từ AI bạn vẫn nhận diện được</td><td>Báo cáo trang đích trong GA4, Google Search Console</td><td>Ít ai tự gõ tay một URL trang sản phẩm dài, nên lưu lượng trực tiếp kiểu này tăng lên là điều đáng chú ý</td></tr>
+<tr><td>Kinh doanh</td><td>Đơn hàng từ khách hàng mới, giá trị đơn hàng trung bình, tỷ lệ câu trả lời khảo sát sau mua hàng chọn "trợ lý AI"</td><td>Bảng điều khiển cửa hàng, khảo sát sau thanh toán</td><td>Trả lời câu hỏi cuối cùng: có đáng không?</td></tr>
+</tbody>
+</table></div>
+
+<p>Hãy đọc ba tầng cùng nhau. Nếu mức độ hiện diện tăng nhưng lưu lượng không nhúc nhích, AI đang nhắc đến bạn mà không cho người mua lý do để nhấp, nên hãy bổ sung thông tin mua hàng như khoảng giá và tình huống sử dụng vào các trang được trích dẫn. Nếu lưu lượng tăng nhưng doanh số không tăng, vấn đề nhiều khả năng nằm ở trang đích và quy trình thanh toán, chứ không phải ở bản thân GEO.</p>
+
+<h2 id="how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">Nên thiết lập GA4 thế nào để mất ít lưu lượng AI hơn?</h2>
+
+<ol>
+<li><strong>Tạo nhóm kênh tùy chỉnh "Trợ lý AI".</strong> Gộp các tên miền giới thiệu của sản phẩm AI như chatgpt.com và perplexity.ai lại với nhau, dùng những tên miền thực sự xuất hiện trong tài khoản của bạn, để chúng không nằm rải rác trong mục "Giới thiệu" nơi không ai để ý.</li>
+<li><strong>Tách lưu lượng trực tiếp theo trang đích.</strong> Tập trung vào lưu lượng trực tiếp vào các trang sâu như trang chi tiết sản phẩm và bài blog, và phân tích riêng với lưu lượng trực tiếp vào trang chủ. Lượt truy cập trực tiếp vào trang chủ phần lớn đến từ khách hàng cũ; mức tăng bất thường ở trang sâu nhiều khả năng là từ AI hơn.</li>
+<li><strong>Ghi chú mốc thời gian trong báo cáo.</strong> Ghi lại thay đổi giữa tháng 10 thành một chú thích, để các so sánh cùng kỳ năm trước và tháng trước sau này không khiến bạn lầm tưởng GEO đã ngừng hiệu quả.</li>
+<li><strong>Thêm khảo sát sau thanh toán.</strong> Chỉ hỏi một câu, "Bạn biết đến chúng tôi qua đâu?", và đưa "ChatGPT hoặc trợ lý AI khác" vào làm một lựa chọn. Bạn không cần mẫu lớn; chỉ riêng xu hướng đã có giá trị.</li>
+<li><strong>Kiểm tra mẫu cùng một bộ câu hỏi mỗi tháng.</strong> Chọn 30 đến 50 câu hỏi cốt lõi của người mua và ghi lại câu trả lời AI có nhắc đến và liên kết tới bạn không. Đó là dữ liệu thô đằng sau tỷ lệ được AI trích dẫn của bạn.</li>
+</ol>
+
+<h2 id="when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">Khi sếp hỏi SEO và GEO có đáng không, tôi nên trả lời thế nào?</h2>
+
+<p>Đừng hứa hẹn phân bổ chính xác. Hãy lập luận bằng xu hướng và đối chiếu chéo. Đây là một ví dụ giả định: một cửa hàng độc lập bán đồ dã ngoại thấy tỷ lệ được AI trích dẫn tăng từ một phần mười lên một phần tư trong ba tháng. Cùng giai đoạn đó, lưu lượng trực tiếp vào trang sâu và lượt tìm kiếm thương hiệu đều tăng, và nhiều khách hàng mới hơn chọn "trợ lý AI" trong khảo sát sau mua hàng. Ba đường cùng đi một hướng thuyết phục hơn bất kỳ con số nguồn đơn lẻ nào.</p>
+
+<p>Để tính toán, hãy dùng một công thức đơn giản hóa: lợi nhuận từ SEO và GEO xấp xỉ bằng phần lợi nhuận gộp tăng thêm từ các kênh tự nhiên chia cho tổng chi phí nội dung, công cụ và nhân sự trong cùng giai đoạn. Ước tính tử số một cách thận trọng từ dữ liệu đơn hàng và khảo sát, và tính cả thời gian của đội ngũ vào mẫu số.</p>
+
+<p>Sau đó, so sánh những đơn hàng tự nhiên này với chi phí thu hút khách hàng từ quảng cáo trong cùng giai đoạn, và bạn có một mốc tham chiếu sếp có thể theo dõi. Dù không tính được chính xác đến hai chữ số thập phân, hướng đi và quy mô đều rõ ràng, và như vậy là đủ để hỗ trợ một quyết định ngân sách.</p>
+
+<h2 id="what-should-i-watch-for-next">Tiếp theo tôi nên theo dõi điều gì?</h2>
+
+<p>OpenAI có thể đưa thẻ UTM trở lại hoặc tiếp tục thay đổi cách liên kết hoạt động, và các nền tảng AI khác cũng có thể thay đổi mà không báo trước. Vì vậy, đừng ra quyết định ngân sách dựa trên biến động của một hai tuần, và đừng đặt cược toàn bộ hệ thống đo lường vào tham số theo dõi của bất kỳ nền tảng nào.</p>
+
+<p>Trong ngắn hạn, hãy lưu trữ dữ liệu bốn tuần trước và sau giữa tháng 10 làm bộ so sánh. Nếu lượt giới thiệu từ ChatGPT quay trở lại sau này, bạn có thể dùng nó để ước tính đại khái lượng lưu lượng AI đã bị "ẩn" trong thời gian đó.</p>
+
+<p>Chỉ số thực sự ổn định là tần suất bạn xuất hiện trong câu trả lời AI. Nếu không muốn tự kiểm tra thủ công mỗi tháng, <a href="/vi/#geo">GEO Autopilot của ToucHigh</a> theo dõi trực tiếp tỷ lệ được AI trích dẫn, dù có thẻ UTM hay không.</p></div>
+      <aside class="insight" aria-label="Insight"><div class="eyebrow">Insight</div><blockquote>Hãy đo những gì nằm trong tâm trí con người, không chỉ những con số.</blockquote><p>Lý thuyết đo lường hiệu quả nhắc chúng ta rằng chỉ số ta chọn sẽ dẫn dắt quyết định ta đưa ra. Giá trị của kênh AI thường thể hiện qua việc người mua nhớ đến bạn hơn là qua một lượt nhấp theo dõi được, nên chỉ dữ liệu nguồn sẽ đánh giá thấp nghiêm trọng giá trị đó.</p></aside>
+      <section class="prop" aria-label="ToucHigh giúp gì">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh giúp gì</h2></div>
+        <div class="pb prose"><p>Thẻ UTM thay đổi và dữ liệu giới thiệu bị mất, nhưng câu trả lời AI có nhắc đến bạn hay không là điều bạn đo trực tiếp được. GEO Autopilot của ToucHigh được xây dựng chính xoay quanh điều đó:</p><ul><li>Nó kiểm tra bạn đang vô hình ở những câu hỏi nào trên ChatGPT, Perplexity, Google AI Overviews / AI Mode và Gemini.</li><li>Nó viết và triển khai các bản sửa, gồm trang, câu trả lời và dữ liệu thực thể thương hiệu, và xây dựng bài viết GEO quanh những câu hỏi tìm kiếm đang nổi.</li><li>Nó liên tục theo dõi tỷ lệ được AI trích dẫn, cho bạn một đường biểu diễn kết quả không phụ thuộc vào thẻ UTM.</li></ul><p>Nếu muốn xem trước mốc cơ sở của mình trong tìm kiếm AI tại Mỹ, hãy đặt lịch cuộc gọi chiến lược 30 phút.</p><p class="uc">Nhà máy và nhà cung cấp B2B: xem ToucHigh xử lý <a href="/vi/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T03'})}catch(e){}">khả năng hiển thị nhà cung cấp trên tìm kiếm AI</a> thế nào. Muốn biến khả năng hiển thị thành phễu bán hàng? Tìm hiểu <a href="/vi/pro/" onclick="try{gtag('event','pro_click',{location:'article_T03'})}catch(e){}">ToucHigh PRO</a>, dịch vụ tiếp cận khách hàng với chiến lược đi trước.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T03')">Đặt lịch tư vấn chiến lược 30 phút →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T03'})}catch(e){}">Đăng nhập ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Câu hỏi thường gặp"><h2>Câu hỏi thường gặp</h2><details open><summary>Lưu lượng trực tiếp tăng đột ngột có phải luôn đến từ ChatGPT không?</summary><p>Không hẳn. Bài báo của Search Engine Land cũng lưu ý rằng phân tích của Huesler không thể chứng minh mọi trường hợp mất thông tin giới thiệu đều có cùng nguyên nhân. Hãy kiểm tra ba điều: mức tăng có bắt đầu từ giữa tháng 10 không? Có tập trung ở các trang sâu như trang sản phẩm và bài viết không? Lượt giới thiệu từ ChatGPT có giảm cùng lúc không? Chỉ khi cả ba đều khớp, nhiều khả năng đó mới là lưu lượng AI bị gắn nhãn lại.</p></details><details><summary>Còn lưu lượng từ các nền tảng AI khác ngoài ChatGPT thì sao?</summary><p>Trước tiên, hãy xem báo cáo giới thiệu trong GA4 để biết tên miền của sản phẩm AI nào thực sự xuất hiện, và gộp chúng vào một nhóm kênh "Trợ lý AI". Nhưng thay đổi lần này của ChatGPT cho thấy các nền tảng có thể thay đổi cách liên kết hoạt động bất cứ lúc nào, nên hãy coi dữ liệu giới thiệu chỉ là một đầu vào, đọc cùng tỷ lệ được AI trích dẫn và dữ liệu đơn hàng.</p></details><details><summary>Tính tỷ lệ được AI trích dẫn thế nào?</summary><p>Cố định một bộ câu hỏi cốt lõi, chẳng hạn 40 câu hỏi về ngành hàng mà người mua Mỹ hỏi nhiều nhất. Mỗi tháng, hỏi từng câu trên vài nền tảng AI lớn, đếm số câu trả lời nhắc đến hoặc liên kết tới thương hiệu của bạn, và chia cho tổng số câu trả lời. Nếu 8 trên 40 câu hỏi trích dẫn bạn, tỷ lệ của bạn là 20%. Giữ nguyên danh sách câu hỏi để xu hướng là thật.</p></details><details><summary>Chúng tôi là đội ngũ nhỏ không có chuyên viên phân tích dữ liệu. Tối thiểu nên theo dõi gì?</summary><p>Ba con số là đủ: tỷ lệ được AI trích dẫn hằng tháng, lưu lượng trực tiếp vào trang sâu, và tỷ lệ khách hàng mới chọn "trợ lý AI" trong khảo sát sau mua hàng. Con số thứ nhất phản ánh mức độ hiện diện, thứ hai là lượt truy cập và thứ ba là doanh số. Dành nửa ngày mỗi tháng ghi chúng vào một bảng tính, và sau ba tháng bạn sẽ thấy kênh AI có đang thúc đẩy tăng trưởng không.</p></details></section>
+      <section class="srcs"><h2>Nguồn tham khảo</h2><ol><li><a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure</a> — Search Engine Land, 2026-10-15</li></ol></section>
+      <p class="note"><b>Vì sao chúng tôi viết bài này</b>Chúng tôi viết bài này vì &quot;Làm sao tính lợi nhuận từ SEO và GEO?&quot; là chỗ người bán hay bị mắc kẹt nhất trước khi đặt ngân sách, và bài báo tuần này cho biết ChatGPT có thể đã bỏ thẻ UTM khiến câu hỏi càng khó hơn.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Trên trang này"><h4>Trên trang này</h4><a href="#why-did-my-chatgpt-traffic-suddenly-disappear">Vì sao lưu lượng từ ChatGPT của tôi bỗng "biến mất"?</a><a href="#why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">Vì sao chỉ dữ liệu lượt nhấp không cho bạn biết GEO có hiệu quả không?</a><a href="#a-three-layer-framework-for-measuring-the-ai-channel">Khung ba tầng để đo kênh AI</a><a href="#how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">Nên thiết lập GA4 thế nào để mất ít lưu lượng AI hơn?</a><a href="#when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">Khi sếp hỏi SEO và GEO có đáng không, tôi nên trả lời thế nào?</a><a href="#what-should-i-watch-for-next">Tiếp theo tôi nên theo dõi điều gì?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Xem bạn đang vô hình ở đâu trên tìm kiếm AI tại Mỹ</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Đặt lịch gọi</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Đăng nhập</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Bài viết liên quan</h2>
+  <div class="grid"><a class="card" href="/blog/vi/medir-campanas-redes-sociales-pymes/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="Ba lọ thủy tinh trên một kệ trắng chứa bi màu cam đến các mức khác nhau, được đánh dấu bằng một con mắt, một trái tim và dấu trang, và một con trỏ có giỏ hàng, mỗi lọ có một vạch xanh đậm thể hiện mức trung bình trước đây của nó." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="vi"><div class="eyebrow">Đo lường</div><h3>Cách đo hiệu quả chiến dịch mạng xã hội khi không phải chuyên viên phân tích: 3 chỉ số</h3><p>Bạn không cần một bảng điều khiển đầy biểu đồ để biết chiến dịch có hiệu quả hay không. Ba chỉ số, một mức cơ sở và mười lăm phút mỗi sáng thứ Hai là đủ để ra quyết định đúng đắn.</p><div class="meta"><span class="lg">Tiếng Việt</span><span>4 phút đọc</span></div></div></a><a class="card" href="/blog/vi/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="Nhìn từ ghế lái, hai tay của một chủ cửa hàng đặt trên vô lăng trước một bảng đồng hồ có đúng ba đồng hồ viền cam và một hàng đèn cảnh báo nhỏ." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="vi"><div class="eyebrow">Đo lường</div><h3>KPI quảng cáo số cho doanh nghiệp nhỏ: 3 con số quan trọng</h3><p>Không có chuyên viên mua quảng cáo? Hãy tập trung vào chi phí trên mỗi chuyển đổi, lợi nhuận trên chi tiêu quảng cáo và tỷ lệ mua lại hoặc chất lượng khách tiềm năng. Đây là cách đặt mục tiêu hòa vốn và xem lại mỗi tuần một lần.</p><div class="meta"><span class="lg">Tiếng Việt</span><span>6 phút đọc</span></div></div></a><a class="card" href="/blog/vi/measure-influencer-roi-tiktok-shop/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t35-768.webp"><img src="/assets/blog/hero/t35.jpg" alt="Ba giá đỡ điện thoại có đèn vòng đặt cạnh nhau; chiếc có chồng thẻ video cao bên cạnh một đống đồng xu màu cam và túi mua sắm, trong khi một chiếc bàn tính cộng hộp quà và bưu kiện vào chi phí." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="vi"><div class="eyebrow">Đo lường</div><h3>Cách đo ROI influencer marketing trên TikTok Shop cho thương hiệu nhỏ</h3><p>Phần lớn nhà sáng tạo nhận mẫu miễn phí không bao giờ đăng bài, và một video hiếm khi bán được hàng. Đây là bảng điểm đơn giản để đo ROI nhà sáng tạo trên TikTok Shop mà không tự đánh lừa mình.</p><div class="meta"><span class="lg">Tiếng Việt</span><span>6 phút đọc</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/vi/">← Quay lại blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Xem bạn đang vô hình ở đâu trên tìm kiếm AI tại Mỹ</h2>
+  <p>Đặt lịch cuộc gọi miễn phí 30 phút và chúng tôi sẽ đánh giá trực tiếp khả năng hiển thị AI của cửa hàng bạn.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Đặt lịch tư vấn chiến lược 30 phút →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Đăng nhập ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Khả năng hiển thị trên tìm kiếm AI, mạng xã hội và quảng cáo tự động cho doanh nghiệp vừa và nhỏ và người bán xuyên biên giới.</p></div>
+      <div><h4>ToucHigh</h4><a href="/vi/">Trang chủ</a><a href="/vi/#geo">GEO Autopilot</a><a href="/vi/#social">Social Autopilot</a><a href="/vi/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/vi/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Đăng nhập</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Đặt lịch gọi</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cách giảm tỷ lệ bỏ giỏ hàng trong thời giỏ hàng AI | ToucHigh</title>
+<meta name="description" content="Tỷ lệ bỏ giỏ cao thường do quá nhiều lựa chọn khi thanh toán và phí phát sinh muộn. Khi Universal Cart của Google đã ra mắt, đây là cách chẩn đoán và kế hoạch sửa trong hai tuần.">
+<link rel="canonical" href="https://touchigh.ai/blog/vi/google-universal-cart-cart-abandonment/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="cách giảm tỷ lệ bỏ giỏ hàng, tỷ lệ bỏ giỏ hàng, tỷ lệ chuyển đổi thương mại điện tử, tối ưu thanh toán Shopify, email nhắc giỏ hàng bị bỏ, Google Universal Cart">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="th" href="https://touchigh.ai/blog/th/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/google-universal-cart-cart-abandonment/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/vi/google-universal-cart-cart-abandonment/">
+<meta property="og:title" content="Cách giảm tỷ lệ bỏ giỏ hàng khi Google triển khai Universal Cart">
+<meta property="og:description" content="Tỷ lệ bỏ giỏ cao thường do quá nhiều lựa chọn khi thanh toán và phí phát sinh muộn. Khi Universal Cart của Google đã ra mắt, đây là cách chẩn đoán và kế hoạch sửa trong hai tuần.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t09-vi.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cách giảm tỷ lệ bỏ giỏ hàng khi Google triển khai Universal Cart">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="article:published_time" content="2026-10-16T08:03:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T08:03:00+08:00">
+<meta property="article:section" content="GEO &amp; tìm kiếm AI">
+<meta property="article:tag" content="Bỏ giỏ hàng">
+<meta property="article:tag" content="Tối ưu thanh toán">
+<meta property="article:tag" content="Cửa hàng độc lập">
+<meta property="article:tag" content="Google Universal Cart">
+<meta property="article:tag" content="Mua sắm bằng AI">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cách giảm tỷ lệ bỏ giỏ hàng khi Google triển khai Universal Cart">
+<meta name="twitter:description" content="Tỷ lệ bỏ giỏ cao thường do quá nhiều lựa chọn khi thanh toán và phí phát sinh muộn. Khi Universal Cart của Google đã ra mắt, đây là cách chẩn đoán và kế hoạch sửa trong hai tuần.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t09-vi.jpg">
+<meta name="twitter:image:alt" content="Cách giảm tỷ lệ bỏ giỏ hàng khi Google triển khai Universal Cart">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/vi/google-universal-cart-cart-abandonment/#article","url":"https://touchigh.ai/blog/vi/google-universal-cart-cart-abandonment/","mainEntityOfPage":"https://touchigh.ai/blog/vi/google-universal-cart-cart-abandonment/","headline":"Cách giảm tỷ lệ bỏ giỏ hàng khi Google triển khai Universal Cart","alternativeHeadline":"Cách giảm tỷ lệ bỏ giỏ hàng trong thời giỏ hàng AI","description":"Tỷ lệ bỏ giỏ cao thường do quá nhiều lựa chọn khi thanh toán và phí phát sinh muộn. Khi Universal Cart của Google đã ra mắt, đây là cách chẩn đoán và kế hoạch sửa trong hai tuần.","abstract":"Để giảm tỷ lệ bỏ giỏ hàng, hãy cắt bớt lựa chọn và bất ngờ trên đường đến bước thanh toán: hiển thị sớm phí vận chuyển, thuế và thời gian giao hàng dự kiến, giữ tối đa hai phương thức vận chuyển, cho phép thanh toán không cần tài khoản, cung cấp PayPal, Apple Pay và Google Pay, và giải thích chính sách đổi trả bằng tiếng Anh Mỹ tự nhiên. Universal Cart của Google giúp người mua Mỹ dễ so sánh cửa hàng và chờ giảm giá hơn, nên hãy làm đúng khâu thanh toán trước.","image":["https://touchigh.ai/assets/blog/og/t09-vi.jpg","https://touchigh.ai/assets/blog/hero/t09.jpg"],"datePublished":"2026-10-16T08:03:00+08:00","dateModified":"2026-10-16T08:03:00+08:00","inLanguage":"vi","author":{"@type":"Organization","name":"Nhóm nghiên cứu ToucHigh","url":"https://touchigh.ai/blog/vi/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"GEO & tìm kiếm AI","keywords":"cách giảm tỷ lệ bỏ giỏ hàng, tỷ lệ bỏ giỏ hàng, tỷ lệ chuyển đổi thương mại điện tử, tối ưu thanh toán Shopify, email nhắc giỏ hàng bị bỏ, Google Universal Cart","wordCount":2453,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/vi/#blog","name":"Blog ToucHigh"},"about":[{"@type":"Thing","name":"Bỏ giỏ hàng"},{"@type":"Thing","name":"Tối ưu thanh toán"},{"@type":"Thing","name":"Cửa hàng độc lập"},{"@type":"Thing","name":"Google Universal Cart"},{"@type":"Thing","name":"Mua sắm bằng AI"}],"citation":[{"@type":"CreativeWork","name":"Google launches Universal Cart across Search and Gemini for easier shopping","url":"https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Search Engine Land"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/google-universal-cart-cart-abandonment/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"vi","mainEntity":[{"@type":"Question","name":"Cửa hàng độc lập của người bán Trung Quốc có vào được Universal Cart không?","acceptedAnswer":{"@type":"Answer","text":"Đến nay, bài báo chỉ cho biết Universal Cart đang được triển khai tại Mỹ. Bài báo nêu tên các nhà bán lẻ như Nike và Walmart, cùng nhiều người bán trên Shopify, là những bên hỗ trợ thanh toán đơn giản hóa, và cho biết các tùy chọn thanh toán tùy thuộc vào người bán tham gia, nhưng không mô tả cách tham gia. Hãy theo dõi hướng dẫn chính thức của Google, và trong lúc chờ, giữ dữ liệu sản phẩm chính xác và quy trình thanh toán của riêng bạn trơn tru."}},{"@type":"Question","name":"Tỷ lệ bỏ giỏ hàng bao nhiêu là bình thường?","acceptedAnswer":{"@type":"Answer","text":"Tỷ lệ này chênh lệch rất nhiều theo ngành hàng, giá trị đơn hàng và nguồn lưu lượng, nên so sánh với con số của người khác không nói lên nhiều điều. Cách hữu ích hơn là xây dựng mốc cơ sở của riêng bạn: theo dõi theo thiết bị, nguồn lưu lượng và khách hàng mới so với khách hàng quay lại, và đo mọi thay đổi theo cùng một cách. Nếu xu hướng tiếp tục giảm, bạn đang đi đúng hướng."}},{"@type":"Question","name":"Tôi nên gửi bao nhiêu email nhắc giỏ hàng bị bỏ?","acceptedAnswer":{"@type":"Answer","text":"Hai hoặc ba thường là đủ. Gửi email đầu tiên khoảng một giờ sau khi bỏ giỏ để nhắc người mua rằng sản phẩm vẫn trong giỏ, email thứ hai khoảng 24 giờ sau để giải đáp thắc mắc về vận chuyển, thời gian giao hàng và đổi trả, và email thứ ba khoảng 72 giờ sau kèm đánh giá hoặc nhắc tồn kho. Chỉ cân nhắc giảm giá ở email cuối, và chỉ cho người mua có ý định cao."}},{"@type":"Question","name":"Tôi có thực sự phải bỏ việc đăng ký tài khoản khi thanh toán không?","acceptedAnswer":{"@type":"Answer","text":"Chúng tôi khuyên nên cho phép thanh toán không cần tài khoản và chuyển việc đăng ký ra sau khi thanh toán, chẳng hạn mời người mua tạo tài khoản bằng một cú nhấp trên trang xác nhận đơn hàng. Bắt buộc đăng ký tạo thêm rào cản ngay trước bước thanh toán, đặc biệt gây khó chịu cho người mua xuyên biên giới lần đầu chưa tin cửa hàng của bạn."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/vi/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/vi/"},{"@type":"ListItem","position":3,"name":"Cách giảm tỷ lệ bỏ giỏ hàng khi Google triển khai Universal Cart","item":"https://touchigh.ai/blog/vi/google-universal-cart-cart-abandonment/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Trên trang này</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/vi/">Trang chủ</a>
+      <a href="/vi/#products">Sản phẩm</a>
+      <a href="/vi/#faq">Câu hỏi thường gặp</a>
+      <a href="/vi/pro/">ToucHigh PRO</a>
+      <a href="/blog/vi/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Ngôn ngữ: Tiếng Việt"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">VI</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Ngôn ngữ" hidden><li><a href="/blog/google-universal-cart-cart-abandonment/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/google-universal-cart-cart-abandonment/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/google-universal-cart-cart-abandonment/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/google-universal-cart-cart-abandonment/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/google-universal-cart-cart-abandonment/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/th/google-universal-cart-cart-abandonment/" hreflang="th" lang="th" data-short="ไทย">ไทย</a></li><li><a href="/blog/vi/google-universal-cart-cart-abandonment/" hreflang="vi" lang="vi" data-short="VI" aria-current="page">Tiếng Việt</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Đăng nhập</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Đặt lịch gọi</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/vi/">Trang chủ</a><span>/</span><a href="/blog/vi/">Blog</a><span>/</span><span>GEO &amp; tìm kiếm AI</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">GEO &amp; tìm kiếm AI</div>
+    <h1>Cách giảm tỷ lệ bỏ giỏ hàng khi Google triển khai Universal Cart</h1>
+    <p class="dek">Universal Cart của Google cho phép người mua Mỹ so sánh cửa hàng và chờ giảm giá. Chúng tôi dùng lý thuyết quá tải lựa chọn để giải thích vì sao giỏ hàng bị bỏ, kèm danh sách kiểm tra thanh toán bạn có thể áp dụng ngay.</p>
+    <div class="a-meta"><b>Nhóm nghiên cứu ToucHigh</b><span>Đăng ngày <time datetime="2026-10-16T08:03:00+08:00">16/10/2026</time></span><span>5 phút đọc</span><span class="lang-badge">Tiếng Việt</span></div>
+    <div class="a-langs">Cũng có bằng<a href="/blog/google-universal-cart-cart-abandonment/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/google-universal-cart-cart-abandonment/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/google-universal-cart-cart-abandonment/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/google-universal-cart-cart-abandonment/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/google-universal-cart-cart-abandonment/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/th/google-universal-cart-cart-abandonment/" hreflang="th" lang="th" onclick="try{localStorage.setItem('tl','th')}catch(e){}">ไทย</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t09-768.webp 768w, /assets/blog/hero/t09-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t09.jpg" alt="Những chiếc xe đẩy mua sắm nằm bỏ không bên trong một mê cung trắng đầy rào chắn và biển chỉ dẫn, trong khi một chiếc xe đẩy lăn trên con đường màu cam bằng phẳng thẳng tới quầy thanh toán có các thẻ thanh toán, và một chiếc xe đẩy lấp lánh sắc tím lơ lửng phía trên những cửa hàng thu nhỏ." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Câu hỏi đằng sau bài viết này"><span class="qm">“</span><div><div class="eyebrow">Câu hỏi đằng sau bài viết này</div><p class="q">Nhiều người mua thêm sản phẩm vào giỏ trên cửa hàng của tôi nhưng không bao giờ thanh toán. Làm sao sửa quy trình thanh toán và giảm tỷ lệ bỏ giỏ hàng?</p><p class="ans"><b>Trả lời ngắn</b>Để giảm tỷ lệ bỏ giỏ hàng, hãy cắt bớt lựa chọn và bất ngờ trên đường đến bước thanh toán: hiển thị sớm phí vận chuyển, thuế và thời gian giao hàng dự kiến, giữ tối đa hai phương thức vận chuyển, cho phép thanh toán không cần tài khoản, cung cấp PayPal, Apple Pay và Google Pay, và giải thích chính sách đổi trả bằng tiếng Anh Mỹ tự nhiên. Universal Cart của Google giúp người mua Mỹ dễ so sánh cửa hàng và chờ giảm giá hơn, nên hãy làm đúng khâu thanh toán trước.</p></div></section>
+      <section class="kt takeaways"><h2>Điểm chính</h2><ul><li>Phần lớn tình trạng bỏ giỏ hàng trên cửa hàng độc lập đến từ quá nhiều lựa chọn khi thanh toán và các khoản phí xuất hiện vào phút chót, nên bước đầu tiên là làm phép trừ.</li><li>Theo Search Engine Land, Universal Cart của Google cho phép người mua Mỹ lưu sản phẩm từ nhiều cửa hàng trong Search và Gemini, theo dõi giảm giá, và mua qua Google Pay hoặc website riêng của người bán.</li><li>Trong Universal Cart, nhà bán lẻ vẫn là bên bán chính thức (seller of record), nên xác nhận đơn hàng, chăm sóc khách hàng và trải nghiệm thanh toán cuối cùng vẫn là việc của người bán.</li><li>Dùng dữ liệu phễu để tìm bước thanh toán làm mất nhiều người mua nhất, mỗi lần chỉ thay đổi một thứ, và chờ trọn hai tuần trước khi đánh giá kết quả.</li><li>Việc khôi phục giỏ hàng nên tập trung vào giải đáp lo ngại của người mua; giảm giá thường xuyên dạy họ chờ giảm giá và làm suy yếu quyền định giá của bạn.</li></ul></section>
+      <div class="prose"><p>Làm sao giảm tỷ lệ bỏ giỏ hàng trên cửa hàng trực tuyến của bạn? Tất cả quy về một ý: cắt bớt số lựa chọn và bất ngờ mà người mua gặp trên đường đến bước thanh toán. Hiển thị sớm tổng giá, phí vận chuyển và thời gian giao hàng, bỏ những lựa chọn không ai cần, cung cấp các phương thức thanh toán người Mỹ mong đợi, và kết thúc bằng một cam kết đổi trả rõ ràng. Đó là điều thực sự giúp giảm tỷ lệ bỏ giỏ của bạn.</p>
+<p>Việc này càng cấp bách hơn trong tháng này. Ngày 15 tháng 10, <a href="https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573" rel="noopener" target="_blank">Search Engine Land</a> đưa tin Google đang triển khai Universal Cart tại Mỹ: người mua có thể bỏ sản phẩm từ nhiều nhà bán lẻ vào một giỏ hàng ngay trong Google Search và ứng dụng Gemini, theo dõi giá và hoàn tất giao dịch. Các mặt hàng đủ điều kiện có thể thanh toán trực tiếp bằng Google Pay; những mặt hàng khác sẽ chuyển người mua sang trang thanh toán riêng của người bán. Bài báo nhấn mạnh rằng "nhà bán lẻ vẫn là bên bán chính thức", chịu trách nhiệm xác nhận đơn hàng và hỗ trợ khách hàng.</p>
+<p>Nếu bạn bán qua cửa hàng độc lập (một website bán trực tiếp cho người tiêu dùng do bạn tự vận hành, thường trên Shopify, thay vì listing trên sàn), điều này có nghĩa là việc so sánh giá, chờ giảm giá và gom sản phẩm từ các cửa hàng khác nhau đều dễ dàng hơn. Sản phẩm của bạn có thể nằm cùng giỏ với hàng từ các nhà bán lẻ lớn, "thêm vào giỏ rồi tính sau" sẽ trở thành bình thường, và bước cuối cùng, thanh toán, vẫn là việc của bạn.</p>
+
+<h2 id="what-is-google-s-universal-cart-and-what-does-it-mean-for-in">Universal Cart của Google là gì, và có ý nghĩa gì với cửa hàng độc lập?</h2>
+<p>Dựa trên bài báo, đây là các tính năng chính:</p>
+<ul>
+<li><strong>Lưu sản phẩm từ nhiều cửa hàng:</strong> sản phẩm người mua thấy trong AI Mode và món họ lưu trong Gemini đều vào cùng một giỏ hàng.</li>
+<li><strong>Cảnh báo giá và hàng tồn:</strong> người mua được thông báo khi món đã lưu giảm giá hoặc có hàng trở lại.</li>
+<li><strong>Tự động tìm ưu đãi:</strong> Google hiển thị mã khuyến mãi và dùng thông tin Google Wallet để gợi ý các quyền lợi thẻ có thể có.</li>
+<li><strong>Hai cách thanh toán:</strong> các mặt hàng đủ điều kiện có thể mua bằng Google Pay; những mặt hàng khác chuyển hướng đến website của người bán.</li>
+<li><strong>Dữ liệu phía sau:</strong> Google theo dõi thay đổi giá và tồn kho bằng Shopping Graph, được cho là chứa hơn 60 tỷ listing sản phẩm được cập nhật liên tục.</li>
+</ul>
+<p>Bài báo nêu tên Nike, Sephora, Target, Ulta Beauty, Walmart, Wayfair và "nhiều người bán trên Shopify" là những bên hỗ trợ thanh toán đơn giản hóa. Bài báo không giải thích cách người bán tham gia hay đề cập yêu cầu cụ thể nào về Merchant Center. Cho đến khi Google công bố chi tiết chính thức, cách khôn ngoan là chỉnh chu dữ liệu sản phẩm và quy trình thanh toán của riêng bạn.</p>
+
+<h2 id="why-do-shoppers-add-to-cart-and-then-not-pay">Vì sao người mua thêm vào giỏ rồi không thanh toán?</h2>
+<p>Các nhà tâm lý học gọi đây là quá tải lựa chọn: càng đối mặt với nhiều lựa chọn, người ta càng dễ trì hoãn quyết định hoặc bỏ qua hoàn toàn. Và thanh toán là khoảnh khắc nhiều lựa chọn nhất trong toàn bộ hành trình mua sắm.</p>
+<p>Hãy hình dung một trang thanh toán điển hình của cửa hàng độc lập: ba bốn phương thức vận chuyển, một ô nhập mã khuyến mãi to, cửa sổ bật lên bán thêm liên tục xuất hiện, bắt buộc tạo tài khoản, vài phương thức thanh toán lạ, và phí vận chuyển cùng thuế chỉ hiện ra ở bước cuối. Mỗi lựa chọn thêm vào là thêm một lý do để dừng lại.</p>
+<p>Ô nhập mã khuyến mãi là ví dụ kinh điển. Nó nói với người mua rằng "có thể ở đâu đó có giá rẻ hơn", nên họ rời đi tìm mã, và nhiều người không bao giờ quay lại. Trong Universal Cart, Google chủ động tìm mã khuyến mãi cho người mua và đẩy thông báo giảm giá, nên tâm lý "để đó chờ sale" sẽ chỉ lan rộng hơn.</p>
+<p>Người bán cũng rơi vào cùng cái bẫy: thêm plugin, thêm cửa sổ bật lên, thêm công cụ khôi phục giỏ hàng, thêm kênh quảng cáo, cho đến khi không việc gì được làm tốt. Giảm tỷ lệ bỏ giỏ bắt đầu từ phép trừ.</p>
+
+<h2 id="where-exactly-are-your-shoppers-dropping-off">Chính xác thì người mua của bạn đang rời đi ở đâu?</h2>
+<p>Trong trang quản trị cửa hàng hoặc GA4 (Google Analytics 4), lấy phễu chuyển đổi cho bốn bước: thêm vào giỏ, bắt đầu thanh toán, nhập thông tin, hoàn tất thanh toán. Tìm bước có mức sụt giảm lớn nhất, rồi xử lý theo bảng này:</p>
+<div class="tw"><table>
+<thead><tr><th>Bước thanh toán</th><th>Lý do phổ biến khiến người mua rời đi</th><th>Ưu tiên sửa trước</th></tr></thead>
+<tbody>
+<tr><td>Trang giỏ hàng</td><td>Không thấy phí vận chuyển, thuế hay tổng tiền; quá nhiều gợi ý mua thêm</td><td>Hiển thị tổng tiền ước tính trên trang sản phẩm và trang giỏ hàng; tối đa một gợi ý</td></tr>
+<tr><td>Thông tin khách hàng</td><td>Bắt buộc đăng ký; quá nhiều trường trong biểu mẫu</td><td>Cho phép thanh toán không cần tài khoản, bật tự động điền địa chỉ, xóa các trường không bắt buộc</td></tr>
+<tr><td>Vận chuyển</td><td>Quá nhiều lựa chọn; thời gian giao hàng mơ hồ</td><td>Chỉ giữ "Tiêu chuẩn" và "Nhanh", và ghi rõ khoảng ngày giao hàng dự kiến</td></tr>
+<tr><td>Thanh toán</td><td>Không có phương thức thanh toán quen thuộc; trang trông không an toàn</td><td>Thêm PayPal, Apple Pay, Google Pay và các phương thức phổ biến khác; hiển thị huy hiệu bảo mật</td></tr>
+<tr><td>Xem lại lần cuối</td><td>Phí bất ngờ; khó tìm chính sách đổi trả</td><td>Hiển thị mọi khoản phí ngay từ đầu; đặt cam kết đổi trả một dòng cạnh nút thanh toán</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="how-do-you-fix-your-checkout-in-two-weeks">Làm sao sửa quy trình thanh toán trong hai tuần?</h2>
+<ol>
+<li><strong>Xác định mốc cơ sở.</strong> Ghi lại tỷ lệ bỏ giỏ hàng trong 30 ngày qua, tách theo thiết bị và nguồn lưu lượng. Lưu lượng từ di động và quảng cáo trả phí thường cần được chú ý trước.</li>
+<li><strong>Đưa những bất ngờ lên đầu.</strong> Đặt phí vận chuyển, thuế và ngày giao hàng dự kiến trên trang sản phẩm. Người bán xuyên biên giới đặc biệt nên ghi rõ đơn hàng được gửi từ đâu và giao trong bao lâu.</li>
+<li><strong>Cắt bớt lựa chọn thừa.</strong> Tối đa hai phương thức vận chuyển, thu gọn ô mã khuyến mãi hoặc tự động áp dụng giảm giá, và bỏ bắt buộc đăng ký.</li>
+<li><strong>Bổ sung phương thức thanh toán còn thiếu.</strong> Cung cấp các phương thức thanh toán người mua Mỹ dùng nhiều nhất. Giao dịch trong Universal Cart đi qua Google Pay, nên thêm nó ngay bây giờ cũng giúp bạn sẵn sàng cho mua sắm bằng AI.</li>
+<li><strong>Viết các chi tiết tạo niềm tin bằng tiếng Anh Mỹ tự nhiên.</strong> Chính sách đổi trả, giờ làm việc của bộ phận chăm sóc khách hàng theo múi giờ Mỹ và đánh giá thật của người mua đều nên hiển thị trước bước thanh toán, và không phần nào đọc lên như máy dịch.</li>
+<li><strong>Kiểm tra dữ liệu sản phẩm.</strong> Bảo đảm tiêu đề, giá, tồn kho và hình ảnh khớp nhau giữa website và nguồn cấp dữ liệu sản phẩm. Google theo dõi giá và tồn kho qua Shopping Graph, và dữ liệu lệch nhau chỉ tạo thêm bất ngờ cho người mua.</li>
+<li><strong>Thiết lập khôi phục giỏ hàng.</strong> Gửi email nhắc giỏ hàng bị bỏ vào khoảng 1 giờ, 24 giờ và 72 giờ. Ưu tiên nhắc nhở và giải đáp, không phải giảm giá ngay.</li>
+<li><strong>Mỗi lần chỉ thay đổi một thứ.</strong> Để mỗi thay đổi chạy trọn hai tuần rồi mới đọc dữ liệu. Thay đổi năm thứ cùng lúc thì bạn sẽ không biết cái nào có tác dụng.</li>
+</ol>
+
+<h2 id="should-you-use-discounts-to-win-back-abandoned-carts">Có nên dùng giảm giá để kéo lại giỏ hàng bị bỏ không?</h2>
+<p>Giảm giá có tác dụng nhanh, nhưng tác dụng phụ là có thật: người mua học được thói quen "thêm vào giỏ rồi chờ phiếu giảm giá". Trong một môi trường như Universal Cart, nơi chủ động đẩy thông báo giảm giá, mỗi lần bạn hạ giá có thể đến ngay trước mắt những người mua còn đang lưỡng lự. Thực chất, bạn đang giao nhịp định giá của mình cho một tính năng cảnh báo.</p>
+<p>Thông điệp khôi phục tốt hơn là giải đáp lo ngại: nhắc hàng sắp hết, hạn chót giao hàng dịp lễ, FAQ và đánh giá thật của người mua. Hãy để dành giảm giá cho những người mua có ý định cao đang vướng ở giá, chẳng hạn người đã quay lại lần thứ hai mà vẫn chưa đặt hàng.</p>
+<p>Quảng cáo nhắm mục tiêu lại là một công cụ khôi phục phổ biến khác, và chi phí của nó cần được tính vào phép tính lợi nhuận quảng cáo. Nếu phần lớn lưu lượng bạn trả tiền bị kẹt ở bước thanh toán, nhắm mục tiêu chính xác đến đâu cũng không nâng được ROAS (doanh thu trên chi phí quảng cáo).</p>
+
+<h2 id="should-you-fix-your-ads-or-your-checkout-first">Nên sửa quảng cáo hay quy trình thanh toán trước?</h2>
+<p>Quy trình thanh toán. Đổ lưu lượng vào một trang thanh toán rò rỉ chỉ khuếch đại thua lỗ theo từng đô la ngân sách thêm vào. Khi thanh toán đã trơn tru, cùng ngân sách quảng cáo sẽ mua được nhiều đơn hàng hơn.</p>
+<p>Sau đó, phía quảng cáo vẫn cần tinh chỉnh liên tục: kênh nào mang về người mua thực sự trả tiền, mẫu quảng cáo nào đã mỏi, ngân sách nên chuyển đi đâu. Tính năng Ads của ToucHigh tự động điều chỉnh ngân sách theo ROAS trên Amazon, Meta và Google, và thay bạn đưa ra quyết định về hiện tượng mỏi nội dung quảng cáo và ngân sách. Nếu bạn cũng muốn cải thiện mức độ hiển thị trong tìm kiếm AI tại Mỹ, hãy xem <a href="/vi/#products">các sản phẩm của ToucHigh</a>.</p></div>
+      <aside class="insight" aria-label="Insight"><div class="eyebrow">Insight</div><blockquote>Quá nhiều lựa chọn thường khiến người ta không thể nhúc nhích.</blockquote><p>Lý thuyết quá tải lựa chọn giải thích tình trạng bỏ giỏ hàng: mỗi lựa chọn thêm vào ở bước thanh toán, từ phương thức vận chuyển, mã khuyến mãi đến gợi ý mua thêm và phương thức thanh toán, cho người mua thêm một lý do để trì hoãn trả tiền. Trang càng ít lựa chọn, giao dịch càng trơn tru.</p></aside>
+      <section class="prop" aria-label="ToucHigh giúp gì">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh giúp gì</h2></div>
+        <div class="pb prose"><p>Khi quy trình thanh toán đã được sửa, bước tiếp theo là bảo đảm mỗi đô la quảng cáo đến được với người mua sẽ thực sự trả tiền. ToucHigh có thể giúp bạn:</p><ul><li>Chạy quảng cáo Amazon, Meta và Google từ một nơi với Ads, ngân sách được tự động điều chỉnh theo ROAS (doanh thu trên chi phí quảng cáo).</li><li>Phát hiện sớm hiện tượng mỏi nội dung quảng cáo và quyết định thay mẫu quảng cáo, chuyển ngân sách, để bạn bớt thời gian theo dõi bảng điều khiển mỗi ngày.</li><li>Kết hợp với GEO Autopilot để tìm ra nơi cửa hàng của bạn vô hình trên ChatGPT, Perplexity, Google AI và Gemini, rồi viết và triển khai các bản sửa.</li></ul><p>Hãy bắt đầu bằng việc đo mốc cơ sở cho phễu thanh toán, rồi đặt lịch cuộc gọi chiến lược 30 phút để trao đổi về cách chia ngân sách.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T09')">Đặt lịch tư vấn chiến lược 30 phút →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T09'})}catch(e){}">Đăng nhập ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Câu hỏi thường gặp"><h2>Câu hỏi thường gặp</h2><details open><summary>Cửa hàng độc lập của người bán Trung Quốc có vào được Universal Cart không?</summary><p>Đến nay, bài báo chỉ cho biết Universal Cart đang được triển khai tại Mỹ. Bài báo nêu tên các nhà bán lẻ như Nike và Walmart, cùng nhiều người bán trên Shopify, là những bên hỗ trợ thanh toán đơn giản hóa, và cho biết các tùy chọn thanh toán tùy thuộc vào người bán tham gia, nhưng không mô tả cách tham gia. Hãy theo dõi hướng dẫn chính thức của Google, và trong lúc chờ, giữ dữ liệu sản phẩm chính xác và quy trình thanh toán của riêng bạn trơn tru.</p></details><details><summary>Tỷ lệ bỏ giỏ hàng bao nhiêu là bình thường?</summary><p>Tỷ lệ này chênh lệch rất nhiều theo ngành hàng, giá trị đơn hàng và nguồn lưu lượng, nên so sánh với con số của người khác không nói lên nhiều điều. Cách hữu ích hơn là xây dựng mốc cơ sở của riêng bạn: theo dõi theo thiết bị, nguồn lưu lượng và khách hàng mới so với khách hàng quay lại, và đo mọi thay đổi theo cùng một cách. Nếu xu hướng tiếp tục giảm, bạn đang đi đúng hướng.</p></details><details><summary>Tôi nên gửi bao nhiêu email nhắc giỏ hàng bị bỏ?</summary><p>Hai hoặc ba thường là đủ. Gửi email đầu tiên khoảng một giờ sau khi bỏ giỏ để nhắc người mua rằng sản phẩm vẫn trong giỏ, email thứ hai khoảng 24 giờ sau để giải đáp thắc mắc về vận chuyển, thời gian giao hàng và đổi trả, và email thứ ba khoảng 72 giờ sau kèm đánh giá hoặc nhắc tồn kho. Chỉ cân nhắc giảm giá ở email cuối, và chỉ cho người mua có ý định cao.</p></details><details><summary>Tôi có thực sự phải bỏ việc đăng ký tài khoản khi thanh toán không?</summary><p>Chúng tôi khuyên nên cho phép thanh toán không cần tài khoản và chuyển việc đăng ký ra sau khi thanh toán, chẳng hạn mời người mua tạo tài khoản bằng một cú nhấp trên trang xác nhận đơn hàng. Bắt buộc đăng ký tạo thêm rào cản ngay trước bước thanh toán, đặc biệt gây khó chịu cho người mua xuyên biên giới lần đầu chưa tin cửa hàng của bạn.</p></details></section>
+      <section class="srcs"><h2>Nguồn tham khảo</h2><ol><li><a href="https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573" rel="noopener" target="_blank">Google launches Universal Cart across Search and Gemini for easier shopping</a> — Search Engine Land, 2026-10-15</li></ol></section>
+      <p class="note"><b>Vì sao chúng tôi viết bài này</b>Chúng tôi viết bài này vì &quot;làm sao để thanh toán trơn tru hơn và giảm tỷ lệ bỏ giỏ hàng&quot; là câu hỏi người bán qua cửa hàng độc lập tìm kiếm đi tìm kiếm lại, và Universal Cart liên cửa hàng mới của Google tại Mỹ vừa nâng tầm quan trọng của trải nghiệm thanh toán.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Trên trang này"><h4>Trên trang này</h4><a href="#what-is-google-s-universal-cart-and-what-does-it-mean-for-in">Universal Cart của Google là gì, và có ý nghĩa gì với cửa hàng độc lập?</a><a href="#why-do-shoppers-add-to-cart-and-then-not-pay">Vì sao người mua thêm vào giỏ rồi không thanh toán?</a><a href="#where-exactly-are-your-shoppers-dropping-off">Chính xác thì người mua của bạn đang rời đi ở đâu?</a><a href="#how-do-you-fix-your-checkout-in-two-weeks">Làm sao sửa quy trình thanh toán trong hai tuần?</a><a href="#should-you-use-discounts-to-win-back-abandoned-carts">Có nên dùng giảm giá để kéo lại giỏ hàng bị bỏ không?</a><a href="#should-you-fix-your-ads-or-your-checkout-first">Nên sửa quảng cáo hay quy trình thanh toán trước?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Xem bạn đang vô hình ở đâu trên tìm kiếm AI tại Mỹ</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Đặt lịch gọi</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Đăng nhập</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Bài viết liên quan</h2>
+  <div class="grid"><a class="card" href="/blog/vi/us-buyers-ai-research-citable-content/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t57-768.webp"><img src="/assets/blog/hero/t57.jpg" alt="Một cần cẩu nhỏ nâng một khay sáu ô nội dung, gồm thẻ nhận dạng, bảng thông số, bong bóng chat, chứng nhận, cân thăng bằng và các ngôi sao, về phía cửa sổ câu trả lời AI, nơi huy hiệu nhà máy màu cam giữ vị trí đầu." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="vi"><div class="eyebrow">GEO &amp; tìm kiếm AI</div><h3>Người mua Mỹ giờ hỏi AI để tìm nhà cung cấp: nội dung có thể trích dẫn mà bạn cần</h3><p>Khi người mua hỏi AI nhà máy Trung Quốc nào đáng tin, câu trả lời thường chỉ nêu ba đến năm công ty. Đây là sáu loại nội dung AI có thể trích dẫn, và sáu bước cho nhà xuất khẩu bắt đầu từ con số không.</p><div class="meta"><span class="lg">Tiếng Việt</span><span>6 phút đọc</span></div></div></a><a class="card" href="/blog/vi/seo-aeo-geo-explained-chinese-exporters/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t53-768.webp"><img src="/assets/blog/hero/t53.jpg" alt="Một khối màu cam như một đài phun nước, dẫn ba đường ống tới một danh sách kết quả tìm kiếm, một thẻ câu trả lời dạng bong bóng thoại và một bong bóng trò chuyện AI có tia sáng màu tím." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="vi"><div class="eyebrow">GEO &amp; tìm kiếm AI</div><h3>SEO, AEO và GEO khác nhau thế nào, và doanh nghiệp xuất khẩu có cần cả ba?</h3><p>SEO giúp bạn được tìm thấy, AEO giúp câu trả lời của bạn được AI trích dẫn, còn GEO giúp bạn được AI tạo sinh đề xuất. Cả ba dùng chung một nền tảng, nên doanh nghiệp xuất khẩu có thể làm cả ba bằng một quy trình.</p><div class="meta"><span class="lg">Tiếng Việt</span><span>8 phút đọc</span></div></div></a><a class="card" href="/blog/vi/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Giữa một dãy nhà máy màu xám giống hệt nhau, một nhà máy màu trắng và cam được chiếu sáng bởi đèn rọi từ một bong bóng trò chuyện AI, phía trên là bảng biểu tượng máy móc, chứng nhận, vật liệu, thời gian giao hàng và FAQ." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="vi"><div class="eyebrow">GEO &amp; tìm kiếm AI</div><h3>Để ChatGPT đề xuất nhà máy của bạn: nhập môn GEO cho website nhà máy</h3><p>Người mua nước ngoài bắt đầu dùng AI để tìm nhà cung cấp. Website nhà máy chỉ có hồ sơ công ty và ảnh sản phẩm hiếm khi được ChatGPT đề xuất. Đây là danh sách trang đáng trích dẫn và các bước GEO đầu tiên.</p><div class="meta"><span class="lg">Tiếng Việt</span><span>6 phút đọc</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/vi/">← Quay lại blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Xem bạn đang vô hình ở đâu trên tìm kiếm AI tại Mỹ</h2>
+  <p>Đặt lịch cuộc gọi miễn phí 30 phút và chúng tôi sẽ đánh giá trực tiếp khả năng hiển thị AI của cửa hàng bạn.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Đặt lịch tư vấn chiến lược 30 phút →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Đăng nhập ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Khả năng hiển thị trên tìm kiếm AI, mạng xã hội và quảng cáo tự động cho doanh nghiệp vừa và nhỏ và người bán xuyên biên giới.</p></div>
+      <div><h4>ToucHigh</h4><a href="/vi/">Trang chủ</a><a href="/vi/#geo">GEO Autopilot</a><a href="/vi/#social">Social Autopilot</a><a href="/vi/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/vi/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Đăng nhập</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Đặt lịch gọi</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
