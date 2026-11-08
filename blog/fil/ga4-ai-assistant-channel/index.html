@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fil">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Assistant Channel Group ng GA4: Setup at mga Kakulangan | ToucHigh</title>
+<meta name="description" content="May AI Assistant channel na ang default channel group ng GA4. Ano ang binibilang nito, bakit nasa labas nito ang AI Overviews at bisitang walang referrer, at paano gumawa ng custom group.">
+<link rel="canonical" href="https://touchigh.ai/blog/fil/ga4-ai-assistant-channel/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="GA4 AI assistant channel, GA4 custom channel group AI, i-track ang ChatGPT traffic sa GA4, AI referral traffic GA4 regex, AI assistants channel group, sukatin ang GEO traffic">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="hi" href="https://touchigh.ai/blog/hi/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="fil" href="https://touchigh.ai/blog/fil/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ar" href="https://touchigh.ai/blog/ar/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/fil/ga4-ai-assistant-channel/">
+<meta property="og:title" content="AI Assistant Channel ng GA4: Ano ang Binibilang, Ano ang Hindi Nakikita, at Kailan Gagawa ng Sarili Mo">
+<meta property="og:description" content="May AI Assistant channel na ang default channel group ng GA4. Ano ang binibilang nito, bakit nasa labas nito ang AI Overviews at bisitang walang referrer, at paano gumawa ng custom group.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t64-fil.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="AI Assistant Channel ng GA4: Ano ang Binibilang, Ano ang Hindi Nakikita, at Kailan Gagawa ng Sarili Mo">
+<meta property="og:locale" content="tl_PH">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:section" content="Pagsukat">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="AI traffic">
+<meta property="article:tag" content="Channel groups">
+<meta property="article:tag" content="Attribution">
+<meta property="article:tag" content="GEO measurement">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AI Assistant Channel ng GA4: Ano ang Binibilang, Ano ang Hindi Nakikita, at Kailan Gagawa ng Sarili Mo">
+<meta name="twitter:description" content="May AI Assistant channel na ang default channel group ng GA4. Ano ang binibilang nito, bakit nasa labas nito ang AI Overviews at bisitang walang referrer, at paano gumawa ng custom group.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t64-fil.jpg">
+<meta name="twitter:image:alt" content="AI Assistant Channel ng GA4: Ano ang Binibilang, Ano ang Hindi Nakikita, at Kailan Gagawa ng Sarili Mo">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/fil/ga4-ai-assistant-channel/#article","url":"https://touchigh.ai/blog/fil/ga4-ai-assistant-channel/","mainEntityOfPage":"https://touchigh.ai/blog/fil/ga4-ai-assistant-channel/","headline":"AI Assistant Channel ng GA4: Ano ang Binibilang, Ano ang Hindi Nakikita, at Kailan Gagawa ng Sarili Mo","alternativeHeadline":"AI Assistant Channel Group ng GA4: Setup at mga Kakulangan","description":"May AI Assistant channel na ang default channel group ng GA4. Ano ang binibilang nito, bakit nasa labas nito ang AI Overviews at bisitang walang referrer, at paano gumawa ng custom group.","abstract":"Gamitin ito, pero huwag ituring na buong kuwento. Sabi ng dokumentasyon ng Google, sakop ng AI Assistant channel ang mga bisita mula sa mga source gaya ng ChatGPT, Gemini, Deepseek, Copilot o Grok, at hindi kasama ang AI Overviews at AI Mode ng Google. Hindi rin nito nakikita ang mga bisitang dumarating nang walang referrer, na napupunta sa Direct. I-check kung aling assistant ang talagang lumalabas sa property mo, gumawa ng custom channel group kung may napupunta sa Referral, at ipares ang GA4 sa Search Console at citation tracking.","image":["https://touchigh.ai/assets/blog/og/t64-fil.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-11-08T10:00:00+08:00","dateModified":"2026-11-08T10:00:00+08:00","inLanguage":"fil","author":{"@type":"Organization","name":"ToucHigh Research Team","url":"https://touchigh.ai/blog/fil/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Pagsukat","keywords":"GA4 AI assistant channel, GA4 custom channel group AI, i-track ang ChatGPT traffic sa GA4, AI referral traffic GA4 regex, AI assistants channel group, sukatin ang GEO traffic","wordCount":1422,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/fil/#blog","name":"ToucHigh Blog"},"about":[{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"AI traffic"},{"@type":"Thing","name":"Channel groups"},{"@type":"Thing","name":"Attribution"},{"@type":"Thing","name":"GEO measurement"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"About regular expressions (regex)","url":"https://support.google.com/analytics/answer/1034324","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ga4-ai-assistant-channel/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"fil","mainEntity":[{"@type":"Question","name":"Kasama ba ang Google AI Overviews sa AI Assistant channel?","acceptedAnswer":{"@type":"Answer","text":"Hindi. Hindi isinasama ng depinisyon ng Google ang AI Overviews at AI Mode sa AI Assistant channel. Iniuulat ng Google ang mga iyon sa Performance report ng Search Console sa ilalim ng Web search type, kasama ng natitirang bahagi ng Search."}},{"@type":"Question","name":"Bakit lumalabas pa rin bilang Direct ang traffic mula sa ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Kapag dumating ang isang bisita nang walang referrer o tracking parameters, walang mapagbabatayan ang GA4 para i-classify ito at itinatala ito bilang Direct. Bantayan ang direct traffic sa malalalim na page at tanungin ang mga buyer kung paano ka nila nahanap para matantya ang bahaging ito."}},{"@type":"Question","name":"Babaguhin ba ng custom channel group ang historical data namin?","acceptedAnswer":{"@type":"Answer","text":"Retroactive ang epekto ng custom channel group sa reports, kaya makikita mo ang nakaraang data sa bagong grouping. Ang pagpapalit ng primary channel group ng property ay nakakaapekto lang sa reporting mula sa puntong iyon."}},{"@type":"Question","name":"Ilang custom channel group ang puwede naming gawin?","acceptedAnswer":{"@type":"Answer","text":"Naglilista ang Google ng dalawang custom group para sa standard property at lima para sa Analytics 360 property, bukod sa predefined group, na may hanggang 50 channel bawat isa."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/fil/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/fil/"},{"@type":"ListItem","position":3,"name":"AI Assistant Channel ng GA4: Ano ang Binibilang, Ano ang Hindi Nakikita, at Kailan Gagawa ng Sarili Mo","item":"https://touchigh.ai/blog/fil/ga4-ai-assistant-channel/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Sa pahinang ito</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/fil/">Home</a>
+      <a href="/fil/#products">Mga produkto</a>
+      <a href="/fil/#faq">FAQ</a>
+      <a href="/fil/pro/">ToucHigh PRO</a>
+      <a href="/blog/fil/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Wika: Filipino"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">FIL</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Wika" hidden><li><a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/ga4-ai-assistant-channel/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/vi/ga4-ai-assistant-channel/" hreflang="vi" lang="vi" data-short="VI">Tiếng Việt</a></li><li><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/ga4-ai-assistant-channel/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/hi/ga4-ai-assistant-channel/" hreflang="hi" lang="hi" data-short="हिन्दी">हिन्दी</a></li><li><a href="/blog/fil/ga4-ai-assistant-channel/" hreflang="fil" lang="fil" data-short="FIL" aria-current="page">Filipino</a></li><li><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ar/ga4-ai-assistant-channel/" hreflang="ar" lang="ar" data-short="عربي" dir="rtl">العربية</a></li><li><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Mag-log in</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Mag-book ng tawag</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/fil/">Home</a><span>/</span><a href="/blog/fil/">Blog</a><span>/</span><span>Pagsukat</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Pagsukat</div>
+    <h1>AI Assistant Channel ng GA4: Ano ang Binibilang, Ano ang Hindi Nakikita, at Kailan Gagawa ng Sarili Mo</h1>
+    <p class="dek">Inilalagay na ngayon ng Google Analytics sa sarili nitong channel ang mga bisita mula sa ChatGPT, Gemini, Copilot at iba pa. Naaayos nito ang bahagi ng problema sa AI traffic. Narito ang bahaging hindi nito naaayos, at isang custom channel group na pupuno sa puwang.</p>
+    <div class="a-meta"><b>ToucHigh Research Team</b><span>Nailathala <time datetime="2026-11-08T10:00:00+08:00">8/11/2026</time></span><span>6 minutong basa</span><span class="lang-badge">Filipino</span></div>
+    <div class="a-langs">Mayroon din sa<a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/ga4-ai-assistant-channel/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/vi/ga4-ai-assistant-channel/" hreflang="vi" lang="vi" onclick="try{localStorage.setItem('tl','vi')}catch(e){}">Tiếng Việt</a><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/ga4-ai-assistant-channel/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/hi/ga4-ai-assistant-channel/" hreflang="hi" lang="hi" onclick="try{localStorage.setItem('tl','hi')}catch(e){}">हिन्दी</a><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ar/ga4-ai-assistant-channel/" hreflang="ar" lang="ar" dir="rtl" onclick="try{localStorage.setItem('tl','ar')}catch(e){}">العربية</a><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="Dumudulas ang mga parcel palabas ng isang chat-bubble tunnel na may violet na ilaw papunta sa conveyor at nahuhulog sa isang simpleng abuhing basurahan, nakakalat sa sahig ang mga orange na tracking tag nila, habang nakaabang ang isang magnifying glass, ring chart, bar chart at shopping bag para mag-cross-check." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Ang tanong sa likod ng artikulong ito"><span class="qm">“</span><div><div class="eyebrow">Ang tanong sa likod ng artikulong ito</div><p class="q">May &quot;AI Assistant&quot; channel na ngayon sa GA4 reports namin. Mapagkakatiwalaan ba namin itong sukatin ang traffic na dala ng GEO work namin, o kailangan pa rin namin ng sariling setup?</p><p class="ans"><b>Maikling sagot</b>Gamitin ito, pero huwag ituring na buong kuwento. Sabi ng dokumentasyon ng Google, sakop ng AI Assistant channel ang mga bisita mula sa mga source gaya ng ChatGPT, Gemini, Deepseek, Copilot o Grok, at hindi kasama ang AI Overviews at AI Mode ng Google. Hindi rin nito nakikita ang mga bisitang dumarating nang walang referrer, na napupunta sa Direct. I-check kung aling assistant ang talagang lumalabas sa property mo, gumawa ng custom channel group kung may napupunta sa Referral, at ipares ang GA4 sa Search Console at citation tracking.</p></div></section>
+      <section class="kt takeaways"><h2>Mahahalagang punto</h2><ul><li>Kasama na ngayon sa default channel group ng GA4 ang AI Assistant: mga bisita mula sa mga source gaya ng ChatGPT, Gemini, Deepseek, Copilot o Grok, na naka-set ang medium sa "ai-assistant" kapag tumutugma ang referrer sa listahan ng Google.</li><li>Hindi kasama sa channel ang AI Overviews at AI Mode ng Google; binibilang ng Google ang mga iyon sa kabuuang Web search data ng Search Console.</li><li>Itinatala bilang Direct ang mga bisitang umaabot sa iyo nang walang referrer o tag, kaya walang channel rule na makakabawi sa kanila.</li><li>Hindi mae-edit ang default channel group, pero puwede ang custom channel group, at retroactive ang epekto nito. May dalawang custom group ang standard property na may hanggang 50 channel bawat isa.</li><li>Malawak ang halimbawang regex ng Google para sa mga AI assistant; naiiwasan ng tahasang listahan ng mga domain ang pagsalo sa mga source na walang kaugnayan.</li></ul></section>
+      <div class="prose"><p>Sa loob ng dalawang taon, iisa ang karaniwang payo sa pagsukat ng AI traffic sa Google Analytics 4: gumawa ng sariling channel group, dahil nakabaon sa Referral ang mga bisita mula sa ChatGPT at Perplexity. Mula noon, nagdagdag ang Google ng <strong>AI Assistant</strong> channel sa default channel group ng GA4. Magandang balita iyon, pero binabago nito ang tanong sa halip na tapusin ito. Kailangan mo na ngayong malaman kung ano ang binibilang ng bagong channel, ano ang hindi nito kasama at kailan pa rin sulit ang sarili mong grouping.</p>
+
+<h2 id="s1">Ano ang binibilang ng AI Assistant channel ng GA4?</h2>
+
+<p>Inilalarawan ng Default channel group documentation ng Google ang AI Assistant bilang channel kung saan dumarating ang mga user mula sa mga source gaya ng ChatGPT, Gemini, Deepseek, Copilot o Grok. Ang patakaran sa likod nito: naka-set ang medium sa "ai-assistant" at ang campaign sa "(ai-assistant)" kapag tumutugma ang referrer sa listahan ng mga AI assistant na pinapanatili ng Google. Napupunta ang mga session na may medium na iyon sa AI Assistant row ng Traffic acquisition report mo.</p>
+
+<p>Dalawang punto ang kasunod. Una, listahan ito ng Google, hindi sa iyo: mga halimbawa ang pinapangalanan ng dokumentasyon, hindi lahat ng assistant. Ikalawa, hindi mae-edit ang default channel group sa GA4, kaya kung hindi kinikilala ang isang assistant na ginagamit ng mga buyer mo, hindi mo ito maidaragdag sa default channel. Kailangan mo ng custom channel group.</p>
+
+<h2 id="s2">Ano ang hindi nakikita ng AI Assistant channel?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>Traffic</th><th>Saan ito napupunta sa GA4</th><th>Paano ito makikita sa ibang paraan</th></tr></thead>
+<tbody>
+<tr><td>Google AI Overviews at AI Mode</td><td>Hindi kasama sa AI Assistant ayon sa depinisyon ng Google</td><td>Search Console: sabi ng Google, lumalabas ang mga ito sa Performance report sa ilalim ng Web search type</td></tr>
+<tr><td>Mga bisita mula sa assistant na walang referrer at walang tag</td><td>Direct</td><td>Direct traffic sa malalalim na page, branded search, post-purchase survey</td></tr>
+<tr><td>Mga assistant na wala sa listahan ng Google</td><td>Kadalasan sa Referral</td><td>Custom channel group na may sarili mong regex</td></tr>
+<tr><td>Mga taong nakakita ng pangalan mo sa isang sagot at bumalik mamaya</td><td>Direct, Organic Search o saanman sila bumalik</td><td>Citation tracking at takbo ng branded search</td></tr>
+</tbody>
+</table></div>
+
+<p>Ang ikalawang row ang pinakamahalaga. Nagpapasya ang mga analytics tool kung saan galing ang isang bisita sa pagtingin sa tracking parameters at sa referring URL. Kapag nagbukas ang isang AI app ng link nang hindi ipinapasa ang alinman sa dalawa, itinatala ang bisita bilang Direct. Ipinapakita ng nauna naming artikulo tungkol sa <a href="/blog/en/chatgpt-utm-ai-referral-measurement/">mga ChatGPT link na nawawalan ng UTM tag</a> kung ano ang hitsura nito sa praktika. Walang channel rule na makakabawi ng impormasyong hindi kailanman umabot sa GA4.</p>
+
+<h2 id="s3">Paano i-check kung ano talaga ang itinatala ng property mo?</h2>
+
+<ol>
+<li><strong>Buksan ang Reports, saka Acquisition, saka Traffic acquisition</strong> at i-set ang primary dimension sa Session default channel group. Hanapin ang AI Assistant row at ang takbo nito.</li>
+<li><strong>Ilipat ang dimension sa Session source / medium</strong> at i-filter ang "ai-assistant" para makita kung aling mga assistant ang kinaklasipika ng Google.</li>
+<li><strong>I-filter ang Referral para sa mga kilalang AI domain</strong> gaya ng perplexity.ai o claude.ai. Anumang may kinalaman sa AI na nasa Referral pa rin ang puwang mo.</li>
+<li><strong>Ikumpara ang landing pages.</strong> Kadalasang lumalapag ang mga AI visit sa malalalim na page, gaya ng product, capability at blog page, sa halip na sa homepage.</li>
+</ol>
+
+<h2 id="s4">Kailan dapat gumawa ng custom AI channel group?</h2>
+
+<p>Gumawa ng isa kung napupunta sa Referral ang mga assistant na ginagamit ng mga buyer mo, kung gusto mong may sariling row ang bawat assistant, o kung gusto mo ng iisang depinisyong nananatiling stable habang ina-update ng Google ang listahan nito. Ipinapaliwanag ng custom channel group documentation ng Google ang mekanika: sa Admin, sa ilalim ng Data display, buksan ang Channel groups (kailangan mo ng Editor access o mas mataas), gumawa ng group, magdagdag ng channel at i-set ang condition nito. Retroactive ang epekto ng custom group sa reports mo. Puwedeng magkaroon ang standard property ng dalawang custom group bukod sa predefined, bawat isa may hanggang 50 channel.</p>
+
+<p>Naglalathala pa ang Google ng halimbawang "AI assistants": isang channel na may "matches regex" na condition, inilagay sa itaas ng Referral para unang makuha ang mga AI source. Sadyang malawak ang sample regex nito. Nagsisimula ito sa <code>^.*ai</code>, na tumutugma sa anumang source na may letrang "ai", gaya ng domain ng isang email provider. Mas mahigpit ang pattern na naglilista ng mga domain na talagang nakikita mo, halimbawa:</p>
+
+<p><code>.*(chatgpt\.com|openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com).*</code></p>
+
+<p>Ilapat ito sa Source, ilagay ang channel sa itaas ng Referral at, kung gusto mo ng detalye, magdagdag ng isang channel kada assistant sa halip na iisang grupo. I-update ang listahan kapag may bagong assistant na nagsisimulang magpadala ng traffic; sabi mismo ng note ng Google na i-update ang regex kapag nagbago ang listahan ng mga assistant.</p>
+
+<h2 id="s5">Dapat mo bang gawing primary channel group ang custom group?</h2>
+
+<p>Pinapayagan ka ng GA4 na pumili ng anumang custom channel group bilang primary channel group ng property, na siyang magpupuno sa primary channel group dimension mula sa puntong iyon. Kapaki-pakinabang iyon kapag stable na ang depinisyon mo, pero hindi ito retroactive sa parehong paraan ng mismong custom group. Kayang iwan ng karamihan ng maliliit na team ang default bilang primary at idagdag ang custom group bilang pangalawang view.</p>
+
+<h2 id="s6">Paano dapat isama ang GA4 sa pagsukat ng AI channel?</h2>
+
+<p>Ituring ang GA4 bilang isa sa tatlong lente. Sinasabi sa iyo ng GA4 ang tungkol sa mga click na kaya mong i-attribute. Sinasabi ng Search Console ang tungkol sa Google Search, kabilang ang AI Overviews at AI Mode. Sinasabi ng buwanang citation check kung binabanggit ka man lang ng mga assistant. Kapag sabay na gumagalaw ang tatlo, maipapakita mong gumagana ang GEO; kapag isa lang ang gumagalaw, alam mo kung saan titingin.</p></div>
+      <aside class="insight" aria-label="Insight"><div class="eyebrow">Insight</div><blockquote>Ipinapakita ng channel report ang mga click na kaya nitong lagyan ng label, hindi ang impluwensyang hindi nito nakikita.</blockquote><p>Babala ng Goodhart&#x27;s law na ang sukatang ginawang target ay hindi na mahusay sumukat. Kung ang AI Assistant row lang ang hahabulin ng isang team, mamaliitin nito ang mga AI answer na nagpapadala ng buyer sa pamamagitan ng Direct o branded search. Panatilihin ang channel bilang isang signal sa tatlo.</p></aside>
+      <section class="prop" aria-label="Paano tumutulong ang ToucHigh">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Paano tumutulong ang ToucHigh</h2></div>
+        <div class="pb prose"><p>Ipinapakita ng GA4 ang clicks; sakop ng GEO Autopilot ng ToucHigh ang natitirang bahagi ng larawan:</p><ul><li>tinitingnan nito kung saan ka hindi nakikita sa ChatGPT, Perplexity, Google AI at Gemini;</li><li>isinusulat at inilalathala nito ang mga ayos at GEO article na tumutugon sa mga tanong ng buyer;</li><li>tuloy-tuloy nitong tina-track ang AI-citation share mo, ang signal na hindi kayang baluktutin ng tracking parameters.</li></ul><p>Mag-book ng 30-minutong strategy call at dalhin ang screenshot ng Traffic acquisition report mo; babasahin natin ito kasama ang live na AI-visibility check.</p><p class="uc">Mga factory at B2B supplier: tingnan kung paano hinahawakan ng ToucHigh ang <a href="/fil/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T64'})}catch(e){}">supplier visibility sa AI search</a>. Gustong gawing pipeline ang visibility? Tingnan ang <a href="/fil/pro/" onclick="try{gtag('event','pro_click',{location:'article_T64'})}catch(e){}">ToucHigh PRO</a>, strategy-first na outreach.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T64')">Mag-book ng 30-minutong strategy session →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T64'})}catch(e){}">Mag-log in sa ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="FAQ"><h2>FAQ</h2><details open><summary>Kasama ba ang Google AI Overviews sa AI Assistant channel?</summary><p>Hindi. Hindi isinasama ng depinisyon ng Google ang AI Overviews at AI Mode sa AI Assistant channel. Iniuulat ng Google ang mga iyon sa Performance report ng Search Console sa ilalim ng Web search type, kasama ng natitirang bahagi ng Search.</p></details><details><summary>Bakit lumalabas pa rin bilang Direct ang traffic mula sa ChatGPT?</summary><p>Kapag dumating ang isang bisita nang walang referrer o tracking parameters, walang mapagbabatayan ang GA4 para i-classify ito at itinatala ito bilang Direct. Bantayan ang direct traffic sa malalalim na page at tanungin ang mga buyer kung paano ka nila nahanap para matantya ang bahaging ito.</p></details><details><summary>Babaguhin ba ng custom channel group ang historical data namin?</summary><p>Retroactive ang epekto ng custom channel group sa reports, kaya makikita mo ang nakaraang data sa bagong grouping. Ang pagpapalit ng primary channel group ng property ay nakakaapekto lang sa reporting mula sa puntong iyon.</p></details><details><summary>Ilang custom channel group ang puwede naming gawin?</summary><p>Naglilista ang Google ng dalawang custom group para sa standard property at lima para sa Analytics 360 property, bukod sa predefined group, na may hanggang 50 channel bawat isa.</p></details></section>
+      <section class="srcs"><h2>Mga sanggunian</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/1034324" rel="noopener" target="_blank">About regular expressions (regex)</a> — Google Analytics Help</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>Bakit namin ito isinulat</b>Isinulat namin ito dahil biglang nakakita ng bagong AI Assistant row ang mga team na mano-manong gumawa ng AI channel group at hindi sigurado kung aling numero ang pagkakatiwalaan. Ang sagot ay pareho, binabasa katabi ng Search Console at citation tracking.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Sa pahinang ito"><h4>Sa pahinang ito</h4><a href="#s1">Ano ang binibilang ng AI Assistant channel ng GA4?</a><a href="#s2">Ano ang hindi nakikita ng AI Assistant channel?</a><a href="#s3">Paano i-check kung ano talaga ang itinatala ng property mo?</a><a href="#s4">Kailan dapat gumawa ng custom AI channel group?</a><a href="#s5">Dapat mo bang gawing primary channel group ang custom group?</a><a href="#s6">Paano dapat isama ang GA4 sa pagsukat ng AI channel?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Tingnan kung saan ka hindi nakikita sa AI search ng US</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Mag-book ng tawag</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Mag-log in</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Kaugnay na artikulo</h2>
+  <div class="grid"><a class="card" href="/blog/en/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now</h3><p>ChatGPT appears to have stopped adding UTM tags to its outbound links, so AI-driven visits are blending into direct traffic. It&#x27;s time for a new way to measure your SEO and GEO returns.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a><a class="card" href="/blog/fil/search-console-ai-overviews-ai-mode-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="Isang search bar na nagbubuhos ng orange na holen sa isang AI answer funnel na kumikinang na violet, na iilan lang ang pinapaabot sa isang maliit na website storefront, habang isang holen lang ang naibibigay ng mataas at umuugang patong ng blangkong pahina sa tabi nito." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="fil"><div class="eyebrow">Pagsukat</div><h3>Paano Basahin ang Traffic mula sa AI Overviews at AI Mode sa Google Search Console</h3><p>Walang hiwalay na &quot;AI Overviews&quot; tab na mabubuksan. Isinasama ng Google ang mga AI feature sa Performance report na mayroon ka na. Ganito pa rin mababasa ng mga exporter kung ano ang epekto ng mga AI answer sa search traffic nila.</p><div class="meta"><span class="lg">Filipino</span><span>6 minutong basa</span></div></div></a><a class="card" href="/blog/fil/ai-attribution-post-purchase-survey/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="Tatlong garapong salamin sa puting istante na napupuno ng orange na holen sa magkakaibang taas, may markang mata, puso at bookmark, at cursor na may shopping cart, bawat isa may navy na linyang nagpapakita ng sarili nitong dating average." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="fil"><div class="eyebrow">Pagsukat</div><h3>&quot;Paano Mo Kami Nalaman?&quot; Paggamit ng Survey para Mabilang ang Sales mula sa ChatGPT at mga AI Assistant</h3><p>May mga buyer na ipinapadala sa iyo ng AI na hindi kailanman lalabas bilang AI click. Ang isang-tanong na survey sa checkout o sa inquiry form ang pinakamurang paraan para makita sila. Ganito ito isulat, saan ilalagay at paano basahin ang mga sagot.</p><div class="meta"><span class="lg">Filipino</span><span>6 minutong basa</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/fil/">← Bumalik sa blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Tingnan kung saan ka hindi nakikita sa AI search ng US</h2>
+  <p>Mag-book ng libreng 30-minutong tawag at ia-audit namin nang live ang AI visibility ng tindahan mo.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Mag-book ng 30-minutong strategy session →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Mag-log in sa ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">AI search visibility, social media at ads na naka-autopilot para sa mga SME at cross-border seller.</p></div>
+      <div><h4>ToucHigh</h4><a href="/fil/">Home</a><a href="/fil/#geo">GEO Autopilot</a><a href="/fil/#social">Social Autopilot</a><a href="/fil/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/fil/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Mag-log in</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Mag-book ng tawag</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
