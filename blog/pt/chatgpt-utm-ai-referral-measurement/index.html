@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rastreamento do tráfego do ChatGPT sem as tags UTM | ToucHigh</title>
+<meta name="description" content="Os links do ChatGPT parecem ter perdido as tags UTM, e as visitas de IA parecem tráfego direto. Meça o ChatGPT em três camadas: citações, tráfego direto e pedidos.">
+<link rel="canonical" href="https://touchigh.ai/blog/pt/chatgpt-utm-ai-referral-measurement/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="rastreamento de tráfego do ChatGPT, como rastrear o tráfego do ChatGPT no GA4, como medir o tráfego de indicação de IA, parâmetros UTM do ChatGPT, como calcular o ROI de SEO, participação nas citações de IA">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="th" href="https://touchigh.ai/blog/th/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="hi" href="https://touchigh.ai/blog/hi/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="fil" href="https://touchigh.ai/blog/fil/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/pt/chatgpt-utm-ai-referral-measurement/">
+<meta property="og:title" content="O ChatGPT parece ter abandonado as tags UTM: como medir o tráfego de IA agora">
+<meta property="og:description" content="Os links do ChatGPT parecem ter perdido as tags UTM, e as visitas de IA parecem tráfego direto. Meça o ChatGPT em três camadas: citações, tráfego direto e pedidos.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t03-pt.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="O ChatGPT parece ter abandonado as tags UTM: como medir o tráfego de IA agora">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="tl_PH">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="article:published_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:section" content="Mensuração">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="Tráfego de indicação de IA">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="Medição de GEO">
+<meta property="article:tag" content="ROI de SEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="O ChatGPT parece ter abandonado as tags UTM: como medir o tráfego de IA agora">
+<meta name="twitter:description" content="Os links do ChatGPT parecem ter perdido as tags UTM, e as visitas de IA parecem tráfego direto. Meça o ChatGPT em três camadas: citações, tráfego direto e pedidos.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t03-pt.jpg">
+<meta name="twitter:image:alt" content="O ChatGPT parece ter abandonado as tags UTM: como medir o tráfego de IA agora">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/pt/chatgpt-utm-ai-referral-measurement/#article","url":"https://touchigh.ai/blog/pt/chatgpt-utm-ai-referral-measurement/","mainEntityOfPage":"https://touchigh.ai/blog/pt/chatgpt-utm-ai-referral-measurement/","headline":"O ChatGPT parece ter abandonado as tags UTM: como medir o tráfego de IA agora","alternativeHeadline":"Rastreamento do tráfego do ChatGPT sem as tags UTM","description":"Os links do ChatGPT parecem ter perdido as tags UTM, e as visitas de IA parecem tráfego direto. Meça o ChatGPT em três camadas: citações, tráfego direto e pedidos.","abstract":"Pare de depender só da origem “chatgpt.com” no GA4. O Search Engine Land informa que os links do ChatGPT parecem não trazer mais parâmetros UTM; por isso, muitas visitas de IA são registradas como tráfego direto. Meça em três camadas: participação nas citações de IA (com que frequência as respostas de IA às suas perguntas principais mencionam você), tráfego direto para páginas internas mais buscas pela marca, e pedidos mais pesquisas pós-compra. Cruze as três.","image":["https://touchigh.ai/assets/blog/og/t03-pt.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-10-16T07:21:00+08:00","dateModified":"2026-10-16T07:21:00+08:00","inLanguage":"pt","author":{"@type":"Organization","name":"Equipe de pesquisa ToucHigh","url":"https://touchigh.ai/blog/pt/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Mensuração","keywords":"rastreamento de tráfego do ChatGPT, como rastrear o tráfego do ChatGPT no GA4, como medir o tráfego de indicação de IA, parâmetros UTM do ChatGPT, como calcular o ROI de SEO, participação nas citações de IA","wordCount":1976,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/pt/#blog","name":"Blog da ToucHigh"},"about":[{"@type":"Thing","name":"ChatGPT"},{"@type":"Thing","name":"Tráfego de indicação de IA"},{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"Medição de GEO"},{"@type":"Thing","name":"ROI de SEO"}],"citation":[{"@type":"CreativeWork","name":"ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure","url":"https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Search Engine Land"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"pt","mainEntity":[{"@type":"Question","name":"Um salto repentino no tráfego direto sempre significa que ele veio do ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Não necessariamente. A reportagem do Search Engine Land também alerta que a análise de Huesler não consegue provar que todas as origens ausentes têm a mesma causa. Verifique três coisas: a alta começou em meados de outubro? Ela está concentrada em páginas internas, como páginas de produto e artigos? As indicações do ChatGPT caíram ao mesmo tempo? Só quando as três batem é provável que seja tráfego de IA que ganhou outro rótulo."}},{"@type":"Question","name":"E o tráfego de outras plataformas de IA além do ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Primeiro verifique o relatório de referências no GA4 para ver quais domínios de produtos de IA realmente aparecem e coloque-os em um único grupo de canais “Assistentes de IA”. Mas essa mudança do ChatGPT mostra que as plataformas podem mudar o funcionamento dos links a qualquer momento; então trate os dados de origem como só um dos insumos, lidos junto com a participação nas citações de IA e os dados de pedidos."}},{"@type":"Question","name":"Como calcular a participação nas citações de IA?","acceptedAnswer":{"@type":"Answer","text":"Fixe um conjunto de perguntas principais, digamos as 40 perguntas sobre a categoria que os compradores dos EUA mais fazem. Todo mês, faça cada uma em algumas das principais plataformas de IA, conte as respostas que mencionam sua marca ou trazem link para ela e divida pelo total de respostas. Se 8 das 40 perguntas citam você, sua participação é de 20%. Mantenha a lista de perguntas inalterada para que a tendência seja real."}},{"@type":"Question","name":"Somos uma equipe pequena, sem analista de dados. Qual é o mínimo que devemos acompanhar?","acceptedAnswer":{"@type":"Answer","text":"Três números bastam: a participação mensal nas citações de IA, o tráfego direto para páginas internas e a parcela de clientes novos que escolhem “assistente de IA” na sua pesquisa pós-compra. O primeiro reflete a exposição; o segundo, as visitas; e o terceiro, as vendas. Dedique meio dia por mês a registrá-los em uma planilha e, depois de três meses, você verá se o canal de IA está gerando crescimento."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/pt/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/pt/"},{"@type":"ListItem","position":3,"name":"O ChatGPT parece ter abandonado as tags UTM: como medir o tráfego de IA agora","item":"https://touchigh.ai/blog/pt/chatgpt-utm-ai-referral-measurement/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Nesta página</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/pt/">Início</a>
+      <a href="/pt/#products">Produtos</a>
+      <a href="/pt/#faq">Perguntas frequentes</a>
+      <a href="/pt/pro/">ToucHigh PRO</a>
+      <a href="/blog/pt/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Idioma: Português"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">PT</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Idioma" hidden><li><a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/chatgpt-utm-ai-referral-measurement/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/th/chatgpt-utm-ai-referral-measurement/" hreflang="th" lang="th" data-short="ไทย">ไทย</a></li><li><a href="/blog/vi/chatgpt-utm-ai-referral-measurement/" hreflang="vi" lang="vi" data-short="VI">Tiếng Việt</a></li><li><a href="/blog/id/chatgpt-utm-ai-referral-measurement/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/chatgpt-utm-ai-referral-measurement/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/hi/chatgpt-utm-ai-referral-measurement/" hreflang="hi" lang="hi" data-short="हिन्दी">हिन्दी</a></li><li><a href="/blog/fil/chatgpt-utm-ai-referral-measurement/" hreflang="fil" lang="fil" data-short="FIL">Filipino</a></li><li><a href="/blog/es/chatgpt-utm-ai-referral-measurement/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/chatgpt-utm-ai-referral-measurement/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/chatgpt-utm-ai-referral-measurement/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/chatgpt-utm-ai-referral-measurement/" hreflang="pt" lang="pt" data-short="PT" aria-current="page">Português</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Entrar</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Agendar conversa</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/pt/">Início</a><span>/</span><a href="/blog/pt/">Blog</a><span>/</span><span>Mensuração</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Mensuração</div>
+    <h1>O ChatGPT parece ter abandonado as tags UTM: como medir o tráfego de IA agora</h1>
+    <p class="dek">O ChatGPT parece ter parado de acrescentar tags UTM aos seus links de saída, e as visitas vindas da IA estão se misturando ao tráfego direto. É hora de uma nova forma de medir o retorno do seu SEO e GEO.</p>
+    <div class="a-meta"><b>Equipe de pesquisa ToucHigh</b><span>Publicado em <time datetime="2026-10-16T07:21:00+08:00">16 de outubro de 2026</time></span><span>5 min de leitura</span><span class="lang-badge">Português</span></div>
+    <div class="a-langs">Também disponível em<a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/chatgpt-utm-ai-referral-measurement/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/th/chatgpt-utm-ai-referral-measurement/" hreflang="th" lang="th" onclick="try{localStorage.setItem('tl','th')}catch(e){}">ไทย</a><a href="/blog/vi/chatgpt-utm-ai-referral-measurement/" hreflang="vi" lang="vi" onclick="try{localStorage.setItem('tl','vi')}catch(e){}">Tiếng Việt</a><a href="/blog/id/chatgpt-utm-ai-referral-measurement/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/chatgpt-utm-ai-referral-measurement/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/hi/chatgpt-utm-ai-referral-measurement/" hreflang="hi" lang="hi" onclick="try{localStorage.setItem('tl','hi')}catch(e){}">हिन्दी</a><a href="/blog/fil/chatgpt-utm-ai-referral-measurement/" hreflang="fil" lang="fil" onclick="try{localStorage.setItem('tl','fil')}catch(e){}">Filipino</a><a href="/blog/es/chatgpt-utm-ai-referral-measurement/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/chatgpt-utm-ai-referral-measurement/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/chatgpt-utm-ai-referral-measurement/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="Pacotes deslizam de um túnel em forma de balão de conversa iluminado em violeta para uma esteira e caem numa caixa cinza comum, com as etiquetas de rastreamento laranja soltas no chão, enquanto uma lupa, um gráfico de anel, um gráfico de barras e uma sacola de compras aguardam para conferir." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="A pergunta por trás deste artigo"><span class="qm">“</span><div><div class="eyebrow">A pergunta por trás deste artigo</div><p class="q">As visitas vindas do ChatGPT agora aparecem como tráfego “direto” na minha análise. Como calcular o retorno do que gasto com SEO e GEO?</p><p class="ans"><b>Resposta curta</b>Pare de depender só da origem “chatgpt.com” no GA4. O Search Engine Land informa que os links do ChatGPT parecem não trazer mais parâmetros UTM; por isso, muitas visitas de IA são registradas como tráfego direto. Meça em três camadas: participação nas citações de IA (com que frequência as respostas de IA às suas perguntas principais mencionam você), tráfego direto para páginas internas mais buscas pela marca, e pedidos mais pesquisas pós-compra. Cruze as três.</p></div></section>
+      <section class="kt takeaways"><h2>Pontos principais</h2><ul><li>Segundo o Search Engine Land, os links do ChatGPT parecem não trazer mais parâmetros UTM; por isso, muitas visitas de IA agora aparecem como tráfego “direto” nas ferramentas de análise.</li><li>Cedric Huesler, da Adobe, constatou que, em cerca de 500 páginas, as visitas indicadas pelo ChatGPT caíram cerca de 31.000 por dia, enquanto o tráfego direto subiu cerca de 26.000 por dia.</li><li>Meça o canal de IA em três camadas: participação nas citações de IA; tráfego direto para páginas internas e buscas pela marca; e pedidos mais pesquisas pós-compra.</li><li>Não corte seu orçamento de GEO com base em uma ou duas semanas de dados de origem; a frequência com que você aparece nas respostas de IA é a métrica central que os parâmetros de rastreamento não conseguem distorcer.</li></ul></section>
+      <div class="prose"><p>As visitas vindas do ChatGPT de repente aparecem como tráfego "direto" na sua análise. Então como calcular o retorno de SEO e GEO? Conclusão: pare de tratar a origem "chatgpt.com" no GA4 (Google Analytics 4) como sua única evidência e cruze três camadas: participação nas citações de IA, mudanças no tráfego direto e dados de pedidos. Qualquer número isolado pode levar você a uma decisão de orçamento errada.</p>
+
+<p>Tudo começou com uma notícia desta semana. O <a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">Search Engine Land</a> informou em 15 de outubro que os links de saída do ChatGPT parecem não trazer mais o parâmetro "utm_source=chatgpt.com" que a OpenAI vinha acrescentando, e que a forma como os links se abrem também esconde as informações de origem (referrer). Cedric Huesler, da Adobe, analisou cerca de 500 páginas em que o ChatGPT respondia por pelo menos 5% das visitas, comparando 9 a 13 de outubro com a semana anterior. As visitas indicadas pelo ChatGPT caíram cerca de 31.000 por dia, enquanto o tráfego direto para as mesmas páginas subiu cerca de 26.000 por dia. A OpenAI não confirmou se a mudança é intencional.</p>
+
+<h2 id="why-did-my-chatgpt-traffic-suddenly-disappear">Por que meu tráfego do ChatGPT de repente "sumiu"?</h2>
+
+<p>O tráfego não sumiu. Ele ganhou outro rótulo. As ferramentas de análise decidem de onde veio uma visita olhando principalmente duas coisas: os parâmetros UTM (tags de rastreamento acrescentadas a um link) e a URL de origem que o navegador repassa. Quando as duas faltam, a visita é registrada como "direta", como se o comprador tivesse digitado seu endereço na barra do navegador.</p>
+
+<p>Segundo a reportagem, a mudança foi notada depois do lançamento do GPT-6, em outubro. Os dados de Huesler também mostraram que dois terços das páginas que perderam indicações do ChatGPT tiveram, ao mesmo tempo, alta no tráfego direto, e as novas visitas "diretas" se comportavam de forma muito parecida com as visitas do ChatGPT identificadas antes. A reportagem também alerta, porém, que a análise não consegue provar que todas as origens ausentes têm a mesma causa.</p>
+
+<p>Se você tem uma loja independente e o painel da sua loja ou o GA4 mostra as indicações do ChatGPT despencando e o tráfego direto saltando depois de meados de outubro, não tire conclusões precipitadas. O mais provável é que tenha mudado o rótulo, não a disposição da IA em recomendar você.</p>
+
+<h2 id="why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">Por que os dados de cliques sozinhos não dizem se o GEO está dando retorno?</h2>
+
+<p>A teoria da mensuração de desempenho, da pesquisa em gestão, faz uma observação simples: o que você mede é o que sua equipe otimiza, e a métrica errada leva a decisões erradas. Se você só olhar as "visitas vindas do ChatGPT", a reportagem desta semana vai dizer que seus resultados de GEO desabaram. Você pode cortar o orçamento quando, na realidade, os compradores continuam chegando, só que com outro rótulo.</p>
+
+<p>Vá um nível mais fundo, e boa parte do valor do canal de IA nem chega a aparecer como clique. Um comprador vê o ChatGPT recomendar sua marca, guarda o nome e, três dias depois, digita sua URL ou pesquisa sua marca no Google. Nenhum modelo de atribuição vai creditar esse pedido à IA. Então medir o canal de IA significa perguntar se você conquistou um lugar na mente dos compradores, e não só ler uma linha de origem em um relatório.</p>
+
+<h2 id="a-three-layer-framework-for-measuring-the-ai-channel">Uma estrutura em três camadas para medir o canal de IA</h2>
+
+<p>Divida suas métricas em três camadas, cada uma respondendo a uma pergunta. A IA mencionou você? Os compradores visitaram por causa disso? Essas visitas viraram vendas?</p>
+
+<div class="tw"><table>
+<thead><tr><th>Camada</th><th>O que acompanhar</th><th>Onde olhar</th><th>Por que importa</th></tr></thead>
+<tbody>
+<tr><td>Exposição</td><td>Participação nas citações de IA; se a IA descreve sua marca com precisão</td><td>Um conjunto fixo de perguntas, verificado regularmente no ChatGPT, no Perplexity e no Google AI</td><td>Não depende de tags UTM; a leitura mais direta dos resultados de GEO</td></tr>
+<tr><td>Tráfego</td><td>Tráfego direto para páginas internas; volume de buscas pela marca; indicações de IA que você ainda consegue identificar</td><td>Relatórios de página de destino do GA4, Google Search Console</td><td>Pouca gente digita à mão a URL longa de uma página de produto; por isso, um aumento desse tipo de tráfego direto merece atenção</td></tr>
+<tr><td>Negócio</td><td>Pedidos de clientes novos, ticket médio, participação das respostas da pesquisa pós-compra que escolhem "assistente de IA"</td><td>Painel da loja, pesquisa após o checkout</td><td>Responde à pergunta final: vale a pena?</td></tr>
+</tbody>
+</table></div>
+
+<p>Leia as três camadas juntas. Se a exposição sobe, mas o tráfego não se mexe, a IA está mencionando você sem dar aos compradores um motivo para clicar; então acrescente informações de compra, como faixas de preço e casos de uso, às páginas citadas. Se o tráfego sobe, mas as vendas não, o problema provavelmente está nas suas páginas de destino e no checkout, e não no GEO em si.</p>
+
+<h2 id="how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">Como configurar o GA4 para perder menos tráfego de IA?</h2>
+
+<ol>
+<li><strong>Crie um grupo de canais personalizado "Assistentes de IA".</strong> Agrupe os domínios de origem de produtos de IA, como chatgpt.com e perplexity.ai, usando os domínios que realmente aparecem na sua conta, para que não fiquem espalhados em "Referência", onde ninguém olha.</li>
+<li><strong>Detalhe o tráfego direto por página de destino.</strong> Concentre-se no tráfego direto para páginas internas, como páginas de detalhes de produtos e posts do blog, e analise-o separadamente do tráfego direto para a página inicial. As visitas diretas à página inicial vêm, na maioria, de clientes recorrentes; uma alta incomum em páginas internas tem mais chance de ser IA.</li>
+<li><strong>Anote a data nos seus relatórios.</strong> Registre a mudança de meados de outubro como uma anotação, para que comparações futuras ano a ano e mês a mês não enganem você, fazendo parecer que o GEO parou de funcionar.</li>
+<li><strong>Acrescente uma pesquisa após o checkout.</strong> Faça só uma pergunta, "Como você ficou sabendo de nós?", e inclua "ChatGPT ou outro assistente de IA" como opção. Você não precisa de uma amostra grande; só a tendência já tem valor.</li>
+<li><strong>Verifique por amostragem as mesmas perguntas todo mês.</strong> Escolha de 30 a 50 perguntas principais de compradores e registre se as respostas de IA mencionam você e trazem link para você. Esses são os dados brutos por trás da sua participação nas citações de IA.</li>
+</ol>
+
+<h2 id="when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">Quando meu chefe perguntar se SEO e GEO valem a pena, o que eu digo?</h2>
+
+<p>Não prometa atribuição precisa. Defenda o caso com tendências e cruzamentos. Um exemplo hipotético: uma loja independente que vende equipamentos para atividades ao ar livre vê sua participação nas citações de IA subir de uma em cada dez para uma em cada quatro em três meses. No mesmo período, o tráfego direto para páginas internas e as buscas pela marca crescem, e mais clientes novos escolhem "assistente de IA" na pesquisa pós-compra. Três linhas indo na mesma direção convencem mais do que qualquer número de origem isolado.</p>
+
+<p>Para a conta, use uma fórmula simplificada: o retorno de SEO e GEO é aproximadamente o lucro bruto adicional dos canais orgânicos dividido pelo custo total de conteúdo, ferramentas e pessoas no mesmo período. Estime o numerador de forma conservadora a partir dos dados de pedidos e das pesquisas, e inclua o tempo da sua equipe no denominador.</p>
+
+<p>Depois compare esses pedidos orgânicos com seu custo de aquisição de clientes por anúncios no mesmo período, e você terá uma referência que seu chefe consegue acompanhar. Mesmo que você não consiga calcular com duas casas decimais, a direção e a escala ficam claras, e isso basta para sustentar uma decisão de orçamento.</p>
+
+<h2 id="what-should-i-watch-for-next">O que devo acompanhar a seguir?</h2>
+
+<p>A OpenAI pode trazer as tags UTM de volta ou continuar mudando o funcionamento dos links, e outras plataformas de IA também podem mudar coisas sem aviso. Então não tome decisões de orçamento com base em uma ou duas semanas de oscilação nem aposte todo o seu sistema de mensuração nos parâmetros de rastreamento de uma única plataforma.</p>
+
+<p>No curto prazo, arquive quatro semanas de dados de cada lado de meados de outubro como conjunto de comparação. Se as indicações do ChatGPT voltarem depois, você poderá usá-lo para estimar, mais ou menos, quanto tráfego de IA ficou "escondido" nesse meio-tempo.</p>
+
+<p>A métrica realmente estável é a frequência com que você aparece nas respostas de IA. Se preferir não verificar por amostragem à mão todo mês, o <a href="/pt/#geo">GEO Autopilot da ToucHigh</a> acompanha diretamente a participação nas citações de IA, com ou sem tags UTM.</p></div>
+      <aside class="insight" aria-label="O insight"><div class="eyebrow">O insight</div><blockquote>Meça o que está na mente das pessoas, não só os números.</blockquote><p>A teoria da mensuração de desempenho nos lembra que as métricas que escolhemos orientam as decisões que tomamos. O valor do canal de IA muitas vezes aparece como compradores que se lembram de você, e não como um clique rastreável; por isso, os dados de origem sozinhos o subestimam muito.</p></aside>
+      <section class="prop" aria-label="Como a ToucHigh ajuda">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Como a ToucHigh ajuda</h2></div>
+        <div class="pb prose"><p>As tags UTM mudam e os dados de origem se perdem, mas se as respostas de IA incluem você é algo que você pode medir diretamente. O GEO Autopilot da ToucHigh foi construído exatamente em torno disso:</p><ul><li>Ele audita em quais perguntas você está invisível no ChatGPT, no Perplexity, no Google AI Overviews / AI Mode e no Gemini.</li><li>Ele escreve e publica correções, incluindo páginas, respostas e dados de entidade da marca, e cria artigos de GEO em torno das perguntas de busca conforme elas ganham força.</li><li>Ele acompanha continuamente sua participação nas citações de IA, dando a você uma curva de resultados que não depende de tags UTM.</li></ul><p>Se quiser ver primeiro sua base na busca por IA dos EUA, agende uma conversa estratégica de 30 minutos.</p><p class="uc">Fábricas e fornecedores B2B: veja como a ToucHigh cuida da <a href="/pt/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T03'})}catch(e){}">visibilidade de fornecedores na busca por IA</a>. Quer transformar visibilidade em pipeline? Conheça o <a href="/pt/pro/" onclick="try{gtag('event','pro_click',{location:'article_T03'})}catch(e){}">ToucHigh PRO</a>, nosso serviço de prospecção com a estratégia primeiro.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T03')">Agende uma conversa estratégica de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T03'})}catch(e){}">Entrar na ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Perguntas frequentes"><h2>Perguntas frequentes</h2><details open><summary>Um salto repentino no tráfego direto sempre significa que ele veio do ChatGPT?</summary><p>Não necessariamente. A reportagem do Search Engine Land também alerta que a análise de Huesler não consegue provar que todas as origens ausentes têm a mesma causa. Verifique três coisas: a alta começou em meados de outubro? Ela está concentrada em páginas internas, como páginas de produto e artigos? As indicações do ChatGPT caíram ao mesmo tempo? Só quando as três batem é provável que seja tráfego de IA que ganhou outro rótulo.</p></details><details><summary>E o tráfego de outras plataformas de IA além do ChatGPT?</summary><p>Primeiro verifique o relatório de referências no GA4 para ver quais domínios de produtos de IA realmente aparecem e coloque-os em um único grupo de canais “Assistentes de IA”. Mas essa mudança do ChatGPT mostra que as plataformas podem mudar o funcionamento dos links a qualquer momento; então trate os dados de origem como só um dos insumos, lidos junto com a participação nas citações de IA e os dados de pedidos.</p></details><details><summary>Como calcular a participação nas citações de IA?</summary><p>Fixe um conjunto de perguntas principais, digamos as 40 perguntas sobre a categoria que os compradores dos EUA mais fazem. Todo mês, faça cada uma em algumas das principais plataformas de IA, conte as respostas que mencionam sua marca ou trazem link para ela e divida pelo total de respostas. Se 8 das 40 perguntas citam você, sua participação é de 20%. Mantenha a lista de perguntas inalterada para que a tendência seja real.</p></details><details><summary>Somos uma equipe pequena, sem analista de dados. Qual é o mínimo que devemos acompanhar?</summary><p>Três números bastam: a participação mensal nas citações de IA, o tráfego direto para páginas internas e a parcela de clientes novos que escolhem “assistente de IA” na sua pesquisa pós-compra. O primeiro reflete a exposição; o segundo, as visitas; e o terceiro, as vendas. Dedique meio dia por mês a registrá-los em uma planilha e, depois de três meses, você verá se o canal de IA está gerando crescimento.</p></details></section>
+      <section class="srcs"><h2>Fontes</h2><ol><li><a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure</a> — Search Engine Land, 2026-10-15</li></ol></section>
+      <p class="note"><b>Por que escrevemos isto</b>Escrevemos este artigo porque “Como calcular o retorno de SEO e GEO?” é onde os vendedores mais costumam travar antes de definir um orçamento, e a reportagem desta semana de que o ChatGPT pode ter abandonado as tags UTM torna a pergunta ainda mais difícil.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Nesta página"><h4>Nesta página</h4><a href="#why-did-my-chatgpt-traffic-suddenly-disappear">Por que meu tráfego do ChatGPT de repente "sumiu"?</a><a href="#why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">Por que os dados de cliques sozinhos não dizem se o GEO está dando retorno?</a><a href="#a-three-layer-framework-for-measuring-the-ai-channel">Uma estrutura em três camadas para medir o canal de IA</a><a href="#how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">Como configurar o GA4 para perder menos tráfego de IA?</a><a href="#when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">Quando meu chefe perguntar se SEO e GEO valem a pena, o que eu digo?</a><a href="#what-should-i-watch-for-next">O que devo acompanhar a seguir?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Veja onde você está invisível na busca por IA dos EUA</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Agendar conversa</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Entrar</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Artigos relacionados</h2>
+  <div class="grid"><a class="card" href="/blog/pt/medir-campanas-redes-sociales-pymes/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="Três potes de vidro numa prateleira branca se enchem de bolinhas de gude laranja até níveis diferentes, marcados com um olho, um coração com marcador e um cursor com carrinho de compras, cada um com uma linha azul-marinho mostrando sua própria média anterior." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="pt"><div class="eyebrow">Mensuração</div><h3>Como medir campanhas em redes sociais sem ser analista: 3 métricas</h3><p>Você não precisa de um painel cheio de gráficos para saber se uma campanha funciona. Três métricas, uma referência e quinze minutos toda segunda-feira bastam para tomar boas decisões.</p><div class="meta"><span class="lg">Português</span><span>4 min de leitura</span></div></div></a><a class="card" href="/blog/pt/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="Vistas do banco do motorista, as mãos de um lojista repousam num volante diante de um painel com exatamente três mostradores de borda laranja e uma fileira de pequenas luzes de alerta." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="pt"><div class="eyebrow">Mensuração</div><h3>KPIs de publicidade digital para pequenas empresas: os 3 números que importam</h3><p>Sem um comprador de mídia? Foque no custo por aquisição, no retorno sobre o investimento em anúncios e na taxa de recompra ou na qualidade dos leads. Veja como definir metas de equilíbrio e revisá-las uma vez por semana.</p><div class="meta"><span class="lg">Português</span><span>6 min de leitura</span></div></div></a><a class="card" href="/blog/pt/measure-influencer-roi-tiktok-shop/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t35-768.webp"><img src="/assets/blog/hero/t35.jpg" alt="Três suportes de celular com ring light lado a lado; o que tem uma pilha alta de cartões de vídeo tem um monte de moedas laranja e sacolas de compras, enquanto um ábaco contabiliza uma caixa de presente e um pacote como custos." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="pt"><div class="eyebrow">Mensuração</div><h3>Como medir o ROI do marketing de influência no TikTok Shop sendo uma marca pequena</h3><p>A maioria dos criadores que recebem amostras grátis nunca posta, e um vídeo raramente vende. Veja um placar simples para medir o ROI de criadores no TikTok Shop sem se enganar.</p><div class="meta"><span class="lg">Português</span><span>6 min de leitura</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/pt/">← Voltar ao blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Veja onde você está invisível na busca por IA dos EUA</h2>
+  <p>Agende uma conversa gratuita de 30 minutos e faremos ao vivo uma leitura da visibilidade da sua loja em IA.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Agende uma conversa estratégica de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Entrar na ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Visibilidade na busca por IA, redes sociais e anúncios no piloto automático, para PMEs e vendedores cross-border.</p></div>
+      <div><h4>ToucHigh</h4><a href="/pt/">Início</a><a href="/pt/#geo">GEO Autopilot</a><a href="/pt/#social">Social Autopilot</a><a href="/pt/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/pt/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Entrar</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Agendar conversa</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
