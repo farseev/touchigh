@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon出品者向け広告オートパイロット：先にスコアリング、それから出稿 | ToucHigh</title>
+<meta name="description" content="Amazonは広告運用をAIエージェントに移しつつあります。ToucHighの広告オートパイロットはAmazon、Meta、Googleの予算をROASに合わせて運用し、すべてのクリエイティブを公開前にスコアリングします。">
+<meta name="keywords" content="Amazon広告 オートパイロット, Amazon出品者向けPPC, Amazon AI広告エージェント, ROAS最適化, ACoS, 越境EC 広告">
+<link rel="canonical" href="https://touchigh.ai/ja/amazon-ads-autopilot/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+
+<!-- hreflang -->
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/amazon-ads-autopilot/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/amazon-ads-autopilot/?lang=en">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/zh-hant/amazon-ads-autopilot/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/ja/amazon-ads-autopilot/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/amazon-ads-autopilot/">
+<!--/hreflang-->
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/ja/amazon-ads-autopilot/">
+<meta property="og:title" content="専任の広告チームなしでAmazon広告を：先にスコアリング、それから出稿">
+<meta property="og:description" content="Amazonは広告運用をAIエージェントに移しつつあります。ToucHighの広告オートパイロットはAmazon、Meta、Googleの予算をROASに合わせて運用し、すべてのクリエイティブを公開前にスコアリングします。">
+<meta property="og:image" content="https://touchigh.ai/og-cover-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="専任の広告チームなしでAmazon広告を：先にスコアリング、それから出稿">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="tl_PH">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="専任の広告チームなしでAmazon広告を：先にスコアリング、それから出稿">
+<meta name="twitter:description" content="Amazonは広告運用をAIエージェントに移しつつあります。ToucHighの広告オートパイロットはAmazon、Meta、Googleの予算をROASに合わせて運用し、すべてのクリエイティブを公開前にスコアリングします。">
+<meta name="twitter:image" content="https://touchigh.ai/og-cover-en.jpg">
+<meta name="twitter:image:alt" content="専任の広告チームなしでAmazon広告を：先にスコアリング、それから出稿">
+
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="ToucHigh" href="/feed.xml">
+<link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94', {page_title:'Amazon ads autopilot', page_path:'/ja/amazon-ads-autopilot/'});
+</script>
+<style>
+:root{
+  --o:#FF642D;--o-l:#FF8C43;--o-d:#C33909;--ow:#FFF3D9;
+  --ink:#191B23;--ink2:#2B2E38;--ink-l:#484A54;
+  --g50:#F4F5F9;--g100:#E0E1E9;--g200:#C4C7CF;--g300:#A9ABB6;--g500:#6C6E79;--g600:#484A54;
+  --vi:#8649E1;--bl:#006DCA;--gr:#009F81;--rd:#FF4953;--yl:#FDC23C;
+  --page:#FFFFFF;--maxw:1200px;
+  --r-s:8px;--r:12px;--r-m:16px;--r-l:24px;
+  --sh:0 4px 16px rgba(25,27,35,.08);--sh-lg:0 24px 60px rgba(25,27,35,.16);--sh-xl:0 40px 90px rgba(16,20,30,.30);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Inter','Noto Sans SC',system-ui,-apple-system,sans-serif;color:var(--ink);background:var(--page);line-height:1.55;font-size:17px;-webkit-font-smoothing:antialiased}
+html[lang="zh-Hans"] body{line-height:1.72}
+a{color:var(--bl);text-decoration:none}
+img,video{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{font-weight:600;text-transform:uppercase;font-size:12.5px;letter-spacing:.13em;color:var(--o);margin-bottom:15px}
+h1,h2,h3{letter-spacing:-.022em;line-height:1.06;font-weight:800}
+html[lang="zh-Hans"] h1,html[lang="zh-Hans"] h2,html[lang="zh-Hans"] h3{letter-spacing:0;line-height:1.22}
+h2{font-size:clamp(28px,4vw,44px);margin-bottom:16px}
+h3{font-size:21px;letter-spacing:-.01em}
+p{overflow-wrap:break-word}
+.lead{font-size:clamp(17px,1.4vw,20px);color:var(--g500);max-width:60ch}
+.skip{position:absolute;left:-999px;top:0;background:var(--o);color:#fff;padding:10px 16px;border-radius:0 0 10px 0;z-index:200}
+.skip:focus{left:0}
+.btn{display:inline-flex;align-items:center;gap:.5em;font-weight:600;font-size:16px;border-radius:999px;padding:14px 26px;transition:.15s;cursor:pointer;border:1.6px solid transparent;white-space:nowrap}
+.btn-primary{background:var(--o);color:#fff;box-shadow:0 8px 22px rgba(255,100,45,.28)}
+.btn-primary:hover{background:var(--o-l);transform:translateY(-1px)}
+.btn-primary:active{background:var(--o-d);transform:none}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--g200)}
+.btn-ghost:hover{border-color:var(--ink)}
+/* NAV */
+header.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.82);backdrop-filter:blur(14px);border-bottom:1px solid var(--g100)}
+.nav-in{display:flex;align-items:center;gap:20px;height:66px}
+.brand{display:inline-flex;align-items:center;gap:9px;font-weight:800;font-size:22px;color:var(--ink);letter-spacing:-.03em}
+.brand img{width:25px;height:25px}
+.brand .pro{background:var(--o);color:#fff;font-size:11px;font-weight:800;letter-spacing:.08em;border-radius:6px;padding:3px 7px;margin-left:2px}
+.nav-links{display:flex;gap:28px;margin-left:26px}
+.nav-links a{color:var(--g600);font-weight:500;font-size:15px}
+.nav-links a:hover{color:var(--ink)}
+.nav-right{margin-left:auto;display:flex;align-items:center;gap:14px}
+.lang{display:inline-flex;border:1px solid var(--g200);border-radius:999px;overflow:hidden;font-size:13px;font-weight:600}
+.lang button{padding:6px 12px;background:#fff;color:var(--g500);border:none;cursor:pointer;font-family:inherit;font-weight:600;white-space:nowrap}
+.lang button.active{background:var(--ink);color:#fff}
+.nav-cta{padding:10px 18px;font-size:15px}
+.menu-btn{display:none;background:none;border:none;cursor:pointer;font-size:24px;color:var(--ink)}
+/* HERO */
+.hero{padding:56px 0 30px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.02fr 1fr;gap:48px;align-items:center}
+.hero-grid>*{min-width:0}
+.hero h1{font-size:clamp(33px,5vw,56px);letter-spacing:-.03em;margin-bottom:22px}
+html[lang="zh-Hans"] .hero h1{font-size:clamp(30px,4.6vw,50px);letter-spacing:-.01em}
+.hero h1 .accent{color:var(--o)}
+.hero .lead{margin-bottom:28px;font-size:clamp(17px,1.35vw,19.5px);color:var(--g600)}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px}
+.trust{display:flex;gap:9px 18px;flex-wrap:wrap;font-size:13.5px;color:var(--g500);align-items:center}
+.trust b{color:var(--ink);font-weight:600}
+.trust .sep{color:var(--g200)}
+/* frame (email mock) */
+.frame{border-radius:16px;overflow:hidden;background:var(--ink);border:1px solid var(--ink-l);box-shadow:var(--sh-xl)}
+.frame-bar{display:flex;align-items:center;gap:7px;padding:11px 14px;background:var(--ink2);border-bottom:1px solid var(--ink-l)}
+.frame-bar .d{width:11px;height:11px;border-radius:50%}
+.frame-bar .d:nth-child(1){background:#FF6159}.frame-bar .d:nth-child(2){background:#FFBD2E}.frame-bar .d:nth-child(3){background:#28C840}
+.frame-bar .url{margin-left:10px;background:var(--ink);border:1px solid var(--ink-l);border-radius:6px;padding:4px 12px;color:var(--g300);font-size:12px;font-weight:500}
+.mail{padding:22px 24px;color:#fff}
+.mail .sub{font-weight:700;font-size:16px;margin-bottom:12px}
+.mail .sub span{color:var(--g300);font-weight:500}
+.mail p{color:var(--g200);font-size:14px;line-height:1.65;margin-bottom:14px}
+.mail .tags{display:flex;gap:8px;flex-wrap:wrap}
+.mail .tg{border:1px solid;border-radius:999px;padding:3px 10px;font-size:10.5px;font-weight:700;letter-spacing:.08em}
+.mail .tg.ws{color:var(--o-l);border-color:var(--o)}
+.mail .tg.pp{color:#fff;border-color:var(--g500)}
+.mail .cap{margin-top:14px;color:var(--g300);font-size:12px}
+/* band */
+.band{background:var(--ink);color:#fff;padding:20px 0;overflow:hidden}
+.band-in{display:flex;align-items:center;gap:14px 24px;flex-wrap:wrap;justify-content:center;color:var(--g200);font-size:15px}
+.band-in>*{min-width:0}
+.band-in strong{color:#fff;font-weight:600}
+.chip{display:inline-flex;align-items:center;gap:8px;background:var(--ink2);border:1px solid var(--ink-l);border-radius:999px;padding:8px 15px;font-weight:600;font-size:14px;color:#fff}
+.chip .dot{width:8px;height:8px;border-radius:50%;background:var(--o)}
+section{padding:78px 0}
+.sec-head{max-width:74ch;margin-bottom:40px}
+.sec-head.center{margin-inline:auto;text-align:center}
+/* cards / grids */
+.grid{display:grid;gap:22px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g5{grid-template-columns:repeat(5,1fr);gap:14px}
+.card{background:var(--g50);border:1px solid var(--g100);border-radius:16px;padding:26px}
+.card .k{font-weight:800;font-size:32px;color:var(--o);letter-spacing:-.02em;line-height:1}
+.card h3{margin:14px 0 8px;font-size:19px}
+.card p{color:var(--g500);font-size:15px}
+.g5 .card{padding:20px}
+.g5 .card .k{font-size:20px}
+.g5 .card h3{font-size:15.5px;margin:10px 0 6px}
+.g5 .card p{font-size:13px}
+/* narrative cases */
+.case{background:#fff;border:1px solid var(--g100);border-radius:16px;padding:26px;box-shadow:var(--sh)}
+.case .k2{font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:10.5px;color:var(--g300)}
+.case blockquote{font-weight:700;font-size:19px;margin:12px 0;line-height:1.4;border:none}
+.case p{color:var(--g500);font-size:14px}
+.case .hook{margin-top:14px;background:var(--g50);border-radius:10px;padding:12px 14px;font-size:13px;color:var(--g600)}
+.case .hook b{color:var(--ink)}
+/* cadence */
+.cadence{background:var(--g50);border:1px solid var(--g100);border-radius:16px;padding:28px 28px 20px;overflow-x:auto}
+.cad-grid{min-width:660px}
+.cad-phases{display:grid;grid-template-columns:110px repeat(21,1fr);gap:0 2px;margin-bottom:6px}
+.cad-phases span{font-weight:600;letter-spacing:.1em;font-size:10px;color:var(--o);text-align:center;text-transform:uppercase}
+.cad-row{display:grid;grid-template-columns:110px repeat(21,1fr);gap:0 2px;align-items:center;height:40px;border-top:1px dashed var(--g200)}
+.cad-row .ch{font-weight:600;font-size:13px}
+.cad-row i{display:block;width:20px;height:20px;line-height:20px;border-radius:50%;margin:0 auto;background:var(--ink);color:#fff;font-style:normal;font-size:9px;font-weight:600;text-align:center}
+.cad-row i.l2{background:var(--vi)}
+.cad-note{color:var(--g300);font-size:12px;margin-top:14px}
+.levels{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.levels span{background:#fff;border:1px solid var(--g100);border-radius:999px;padding:7px 14px;font-size:12.5px;color:var(--g600)}
+.levels b{color:var(--o);font-weight:600;letter-spacing:.04em}
+/* proof dark */
+.proof{background:var(--ink);color:#fff;border-radius:24px;padding:52px;position:relative;overflow:hidden}
+.proof .glow{position:absolute;right:-180px;top:-220px;width:560px;height:560px;background:radial-gradient(circle,rgba(255,100,45,.22) 0%,rgba(255,100,45,0) 62%);pointer-events:none}
+.proof .eyebrow{color:var(--o-l)}
+.proof h2{color:#fff}
+.proof .grid{position:relative}
+.stat .n{font-weight:800;font-size:clamp(30px,4vw,46px);color:var(--o);line-height:1;letter-spacing:-.02em}
+.stat .l{font-weight:600;text-transform:uppercase;letter-spacing:.09em;color:var(--o-l);font-size:12px;margin-top:10px}
+.stat .d{color:var(--g200);font-size:13.5px;margin-top:7px}
+.note{color:var(--g300);font-size:12.5px;margin-top:28px;max-width:92ch;line-height:1.7;position:relative}
+/* brands + metrics + quote */
+.brand-row{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-bottom:14px}
+.brand-chip{color:var(--ink2);font-weight:700;font-size:16px;opacity:.72;padding:6px 12px}
+.quote-card{background:var(--g50);border:1px solid var(--g100);border-radius:20px;padding:34px;display:flex;gap:22px;margin-top:34px}
+.quote-card .mark{font-weight:800;font-size:52px;color:var(--o);line-height:.8}
+.quote-card p{font-size:17px;line-height:1.6}
+.quote-card .who{margin-top:10px;font-size:13.5px;color:var(--g500)}
+.quote-card .who b{color:var(--ink);font-weight:700}
+.fine{color:var(--g300);font-size:12px;margin-top:16px;line-height:1.7}
+/* checks */
+.checks{list-style:none;margin:22px 0 0}
+.checks li{display:flex;gap:13px;align-items:flex-start;margin-bottom:14px;font-size:15.5px}
+.chk{flex:none;width:24px;height:24px;border-radius:50%;background:var(--o);color:#fff;display:inline-flex;align-items:center;justify-content:center;font-size:13px;margin-top:2px;font-weight:700}
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:0 40px}
+/* faq */
+.faq details{border-bottom:1px solid var(--g100);padding:20px 0}
+.faq summary{font-weight:700;font-size:18px;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--o);font-weight:800;font-size:24px;flex:none;line-height:1}
+.faq details[open] summary::after{content:"\2013"}
+.faq p{color:var(--g500);margin-top:12px;font-size:15.5px;max-width:88ch}
+/* final */
+.final{text-align:center}
+.final .lead{margin:0 auto 28px}
+.entities{color:var(--g300);font-size:12.5px;margin-top:26px}
+/* footer */
+footer{border-top:1px solid var(--g100);padding:46px 0 34px;color:var(--g500);font-size:14.5px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:28px;margin-bottom:30px}
+.foot-grid h4{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--g300);margin-bottom:12px}
+.foot-grid a{display:block;color:var(--g600);margin-bottom:9px}
+.foot-grid a:hover{color:var(--ink)}
+.foot-bot{display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;border-top:1px solid var(--g100);padding-top:20px;font-size:13px;color:var(--g300)}
+@media(max-width:960px){
+  .hero-grid,.two-col{grid-template-columns:1fr}
+  .g4{grid-template-columns:repeat(2,1fr)}
+  .g5{grid-template-columns:repeat(2,1fr)}
+  .g3{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .nav-links{display:none;position:absolute;top:66px;left:0;right:0;background:#fff;border-bottom:1px solid var(--g100);padding:14px 24px;flex-direction:column;gap:14px}
+  .nav-links.open{display:flex}
+  .menu-btn{display:block}
+  .proof{padding:34px 24px}
+}
+@media(max-width:560px){.g4,.g5{grid-template-columns:1fr}}
+.nav-login{padding:9px 16px;font-size:15px}
+@media(max-width:560px){.nav-right .nav-login{display:none}}
+
+.frame video{width:100%;display:block}
+.steps .card .k{color:var(--o)}
+.tw{overflow-x:auto;border:1px solid var(--g100);border-radius:var(--r-m);background:#fff}
+.tw table{width:100%;border-collapse:collapse;font-size:15px;min-width:640px}
+.tw th,.tw td{padding:14px 16px;text-align:left;vertical-align:top;border-bottom:1px solid var(--g100)}
+.tw th{background:var(--g50);font-weight:700;font-size:13px;letter-spacing:.04em;text-transform:uppercase;color:var(--g600)}
+.tw tr:last-child td{border-bottom:none}
+.reads{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.reads a{display:block;border:1px solid var(--g100);border-radius:var(--r-m);padding:20px;background:#fff;color:var(--ink);transition:.15s}
+.reads a:hover{border-color:var(--o);box-shadow:var(--sh)}
+.reads a b{display:block;font-size:17px;line-height:1.35;margin-bottom:6px}
+.reads a span{font-size:14px;color:var(--g500)}
+.pro-band{background:var(--ink);color:#fff;border-radius:var(--r-l);padding:40px;display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center}
+.pro-band h2{color:#fff}.pro-band p{color:var(--g200)}
+.pro-band .checks li{color:#fff}
+.pro-band .btn-ghost{color:#fff;border-color:rgba(255,255,255,.3)}
+@media(max-width:960px){.reads{grid-template-columns:1fr}.pro-band{grid-template-columns:1fr;padding:28px}}
+</style>
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","@id":"https://touchigh.ai/ja/amazon-ads-autopilot/#webpage","url":"https://touchigh.ai/ja/amazon-ads-autopilot/","name":"Amazon出品者向け広告オートパイロット：先にスコアリング、それから出稿 | ToucHigh","description":"Amazonは広告運用をAIエージェントに移しつつあります。ToucHighの広告オートパイロットはAmazon、Meta、Googleの予算をROASに合わせて運用し、すべてのクリエイティブを公開前にスコアリングします。","inLanguage":"ja","isPartOf":{"@id":"https://touchigh.ai/#website"},"about":{"@id":"https://touchigh.ai/#org"},"primaryImageOfPage":"https://touchigh.ai/og-cover-en.jpg","speakable":{"@type":"SpeakableSpecification","cssSelector":[".hero h1",".hero .lead"]}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","@id":"https://touchigh.ai/ja/amazon-ads-autopilot/#faq","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"ToucHighの広告オートパイロットはAmazon出品者に何をしてくれますか？","acceptedAnswer":{"@type":"Answer","text":"広告オートパイロットはAmazon、Meta、Googleの広告予算を運用し、ROASに合わせて自動調整し、クリエイティブ疲労と予算の判断を代行します。クリエイティブのコンセプトは公開前に予測パフォーマンスでスコアリングされます。"}},{"@type":"Question","name":"Amazon自身の広告ツールの代わりになりますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。AmazonのAI広告エージェントを含むAmazonのツールはAmazonの中で最適化します。ToucHighは1つの戦略でAmazon、Meta、Googleを横断し、まず競合の広告とオーガニックコンテンツを読み込み、出稿前にクリエイティブをスコアリングします。相談の際にアカウントの構成をお持ちいただければ、どう組み合わせるかをご説明します。"}},{"@type":"Question","name":"ROASやACoSの成果は保証されますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。予測パフォーマンススコアは公開前のコーパスパターンに基づく指標であり、保証ではありません。ポイントは、お金を使う前に根拠を持つことです。弱いコンセプトは予算を投じる前に除外され、結果を追跡するので伸びを確認できます。"}},{"@type":"Question","name":"誰のためのサービスですか？","acceptedAnswer":{"@type":"Answer","text":"商品と価格の競争力はあるものの、専任の米国広告・コンテンツチームを持たない、米国で販売する中国の越境EC事業者のためです。同じプラットフォームでGEO（AI回答でストアを引用させること）と米国SNSもカバーします。"}},{"@type":"Question","name":"どう始めればいいですか？","acceptedAnswer":{"@type":"Answer","text":"30分の戦略相談を予約してください。ストアのURLと競合1〜2社をお持ちいただければ、ToucHighがその広告とオーガニックコンテンツを読み込み、カタログに合ったプランをご説明します。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ja/"},{"@type":"ListItem","position":2,"name":"Amazon広告オートパイロット","item":"https://touchigh.ai/ja/amazon-ads-autopilot/"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","@id":"https://touchigh.ai/ja/amazon-ads-autopilot/#service","name":"Amazon出品者向けToucHigh広告オートパイロット","description":"ToucHighの広告オートパイロットは、1つの戦略でAmazon、Meta、Googleの広告予算を運用し、ROASに合わせて自動調整し、クリエイティブ疲労と予算の判断を出品者に代わって行います。クリエイティブのコンセプトは公開前に予測パフォーマンスでスコアリングされます。予測スコアは公開前の指標であり、保証ではありません。","provider":{"@id":"https://touchigh.ai/#org"},"url":"https://touchigh.ai/ja/amazon-ads-autopilot/"}</script>
+<style id="i18n-css">
+body{font-family:'Inter','Noto Sans JP',system-ui,-apple-system,sans-serif}
+html[lang="zh-Hant"] body,html[lang="ja"] body,html[lang="ko"] body,html[lang="th"] body,html[lang="hi"] body,html[lang="ar"] body{line-height:1.72}
+html[lang="zh-Hant"] h1,html[lang="zh-Hant"] h2,html[lang="zh-Hant"] h3,html[lang="ja"] h1,html[lang="ja"] h2,html[lang="ja"] h3,html[lang="ko"] h1,html[lang="ko"] h2,html[lang="ko"] h3,html[lang="th"] h1,html[lang="th"] h2,html[lang="th"] h3,html[lang="hi"] h1,html[lang="hi"] h2,html[lang="hi"] h3,html[lang="ar"] h1,html[lang="ar"] h2,html[lang="ar"] h3{letter-spacing:0;line-height:1.3}
+html[lang="zh-Hant"] .hero h1,html[lang="ja"] .hero h1,html[lang="ko"] .hero h1{font-size:clamp(30px,4.6vw,52px);letter-spacing:-.01em}
+html[lang="de"] .hero h1,html[lang="fr"] .hero h1,html[lang="ru"] .hero h1,html[lang="es"] .hero h1,html[lang="pt"] .hero h1,html[lang="id"] .hero h1,html[lang="ms"] .hero h1,html[lang="fil"] .hero h1,html[lang="vi"] .hero h1,html[lang="hi"] .hero h1,html[lang="th"] .hero h1,html[lang="ar"] .hero h1{font-size:clamp(30px,4.3vw,50px)}
+h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
+html[dir="rtl"] .nav-links{margin-left:0;margin-right:26px}html[dir="rtl"] .nav-right{margin-left:0;margin-right:auto}
+html[dir="rtl"] .eyebrow,html[dir="rtl"] .eyebrow *{letter-spacing:0}
+html[dir="rtl"] .checks li{text-align:right}
+html[dir="rtl"] .faq summary::after{left:0;right:auto}
+html[dir="rtl"] .tw th,html[dir="rtl"] .tw td{text-align:right}
+html[dir="rtl"] .skip{left:auto;right:-999px}html[dir="rtl"] .skip:focus{right:0}
+</style>
+</head>
+<body id="top">
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/ja/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#problem">課題</a>
+      <a href="#how">仕組み</a>
+      <a href="#faq">よくある質問</a>
+      <a href="/ja/pro/" onclick="try{gtag('event','pro_click',{location:'amazon_nav'})}catch(e){}">ToucHigh PRO</a>
+      <a href="/blog/ja/" style="color:var(--o);font-weight:600" onclick="try{gtag('event','blog_click',{location:'amazon_nav'})}catch(e){}">ブログ</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="言語: 日本語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">日本語</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="言語" hidden><li><a href="/amazon-ads-autopilot/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/amazon-ads-autopilot/?lang=en" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/zh-hant/amazon-ads-autopilot/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/ja/amazon-ads-autopilot/" hreflang="ja" lang="ja" data-short="日本語" aria-current="page">日本語</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost nav-login" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'amazon_nav'})}catch(e){}">ログイン</a>
+      <a class="btn btn-primary nav-cta" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'amazon_nav')">相談を予約</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<!-- HERO -->
+<section class="hero" aria-label="イントロ">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">Amazon出品者向け · 広告オートパイロット</div>
+        <h1><span>専任の広告チームなしでAmazon広告を。</span> <span class="accent">先にスコアリング、それから出稿。</span></h1>
+        <p class="lead">Amazonは広告運用をAIエージェントに移しつつあり、プラットフォームのツールはAmazonの中で最適化します。ToucHighの広告オートパイロットは1つの戦略でAmazon、Meta、Googleの予算を運用し、ROASに合わせて自動調整、クリエイティブ疲労と予算の判断を代行し、すべてのコンセプトを公開前にスコアリングします。</p>
+        <div class="hero-cta"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'amazon_hero')"><span>30分の戦略相談を予約</span> →</a> <a class="btn btn-ghost" href="/ja/pro/" onclick="try{gtag('event','pro_click',{location:'amazon_hero'})}catch(e){}">ToucHigh PROを見る</a></div>
+        <div class="trust"><b>ToucHighエンジンで計測</b><span class="sep">·</span><span>Amazon · Meta · Google</span><span class="sep">·</span><span>実際の製品から録画</span></div>
+      </div>
+      <div><div class="frame"><div class="frame-bar"><span class="d"></span><span class="d"></span><span class="d"></span><span class="url">cloud.touchigh.ai/ads</span></div><video poster="/media/ads.jpg" autoplay muted loop playsinline preload="metadata" aria-label="ToucHigh広告オートパイロットがAmazon、Meta、Googleの予算を調整している様子。実際の製品から録画。"><source src="/media/ads.webm" type="video/webm"><source src="/media/ads.mp4" type="video/mp4"></video></div><p class="fine" style="margin-top:10px"><span>実際の製品から録画：Amazon、Meta、Googleの予算をROASに合わせて自動調整。</span></p></div>
+    </div>
+  </div>
+</section>
+<div class="band" aria-label="チャネル">
+  <div class="wrap band-in">
+    <strong>1つの戦略、3つの広告チャネル：</strong>
+    <span class="chip"><span class="dot"></span>Amazon</span><span class="chip"><span class="dot"></span>Meta</span><span class="chip"><span class="dot"></span>Google</span>
+    <span>出稿前にクリエイティブをスコアリング</span>
+  </div>
+</div>
+<section id="problem" aria-label="課題">
+  <div class="wrap">
+<div class="sec-head"><div class="eyebrow">課題</div><h2>広告をAIに任せるのは簡単。何を任せるかを決めるのが難しい。</h2><p class="lead">AmazonのAI広告エージェントと自動ターゲティングで、出稿は簡単になりました。戦略とガードレールがなければ、利益率を超えて使ってしまうのも同じくらい簡単です。</p></div><div class="grid g3"><div class="card"><div class="k">01</div><h3>利益率を超えるACoSは赤字</h3><p>Amazon自身のガイドによれば、利益を出すにはACoSを利益率より低く保つ必要があります。プラットフォームのレポートが示すのは帰属売上であり、手元に残る利益ではありません。</p></div><div class="card"><div class="k">02</div><h3>1つのマーケットプレイス、1つの弱点</h3><p>需要がすべてAmazon広告から来ていると、コスト上昇はすべて利益率に響きます。Meta、Google、AI検索がリスクを分散します。</p></div><div class="card"><div class="k">03</div><h3>クリエイティブ疲労に誰も気づかない</h3><p>専任の広告担当がいないと、疲れたクリエイティブとずれた予算が、数字が悪化するまで回り続けます。</p></div></div>
+  </div>
+</section>
+<section id="how" aria-label="ToucHighができること" style="padding-top:30px">
+  <div class="wrap">
+<div class="sec-head"><div class="eyebrow">ToucHighができること</div><h2>市場を読み、クリエイティブをスコアリングし、予算を運用する。</h2></div><div class="steps"><div class="grid g4"><div class="card"><div class="k">01</div><h3>市場を読む</h3><p>URLを貼り付けるだけ。ToucHighが競合の広告とオーガニックコンテンツを調べ、米国市場参入戦略を作成します。</p></div><div class="card"><div class="k">02</div><h3>出稿前にスコアリング</h3><p>すべてのクリエイティブコンセプトに公開前の予測パフォーマンススコアが付くので、予算は最も強いものに回ります。</p></div><div class="card"><div class="k">03</div><h3>ROASを目標に予算を運用</h3><p>Amazon、Meta、Googleの予算を自動調整し、クリエイティブ疲労と予算の判断を代行します。</p></div><div class="card"><div class="k">04</div><h3>広告以外でも見つけてもらう</h3><p>GEOオートパイロットがAI回答でストアを引用させ、SNSオートパイロットがネイティブ米国英語のSNSを運用するので、需要が広告だけに依存しません。</p></div></div></div>
+  </div>
+</section>
+<section id="guardrails" aria-label="ガードレール" style="padding-top:30px">
+  <div class="wrap">
+<div class="sec-head"><div class="eyebrow">ガードレール</div><h2>自動化するもの、手元に残すもの</h2><p class="lead">出品者によるAI広告エージェント活用に関する私たちの研究から生まれた実践的な分担です。ACoSは、広告費をその広告が生んだ売上で割ったものです。</p></div><div class="tw"><table><thead><tr><th>業務</th><th>自動化する</th><th>自分で管理する</th></tr></thead><tbody><tr><td>入札と日々の調整</td><td>目標に向けた継続的な調整</td><td>入札上限とACoSの上限</td></tr><tr><td>予算配分</td><td>キャンペーンとチャネル間での予算移動</td><td>月間総予算と1日の上限</td></tr><tr><td>クリエイティブ</td><td>バリエーション、疲労チェック、公開前スコアリング</td><td>ブランドの主張と、言わないこと</td></tr><tr><td>キャンペーンの目標</td><td>目標に合わせた配分の計画</td><td>販売を伸ばすか、新規顧客を獲得するか、在庫を処分するか</td></tr><tr><td>レポーティング</td><td>データの集計とトレンドの説明</td><td>結論が実際の利益と合っているか</td></tr></tbody></table></div>
+  </div>
+</section>
+<section id="pro" aria-label="ToucHigh PRO" style="padding-top:30px">
+  <div class="wrap">
+<div class="pro-band"><div><div class="eyebrow">B2Bや卸売もしていますか？</div><h2>広告では作れないパイプラインを、ToucHigh PROが作ります。</h2><p>代理店、小売バイヤー、卸売の商談向けに、ToucHigh PROは戦略ファーストのアウトバウンドを実行します。AIエージェントと人の専門家が、メール、電話営業、LinkedIn、ビジネスメッセンジャーを担当します。</p><div class="hero-cta" style="margin-top:22px"><a class="btn btn-ghost" href="/ja/pro/" onclick="try{gtag('event','pro_click',{location:'amazon_pro_band'})}catch(e){}">ToucHigh PROを詳しく見る →</a></div></div><div><ul class="checks"><li><span class="chk">✓</span><span>まず貴社ブランドと競合アカウントから戦略を計算</span></li><li><span class="chk">✓</span><span>4チャネル・3つの組織階層にわたる21日間のケイデンス</span></li><li><span class="chk">✓</span><span>送信は100%人が承認し、電話はすべて人がかける</span></li><li><span class="chk">✓</span><span>KPIの基準値を契約に明記</span></li></ul></div></div>
+  </div>
+</section>
+<section id="reading" aria-label="関連記事" style="padding-top:30px">
+  <div class="wrap">
+<div class="sec-head"><div class="eyebrow">ブログから</div><h2>Amazon広告の実践ガイド</h2></div><div class="reads"><a href="/blog/en/amazon-ads-agent-sellers/" onclick="try{gtag('event','blog_click',{location:'landing_reads'})}catch(e){}"><b>Amazon's AI ad agent is here: what to hand over</b><span>4週間の対照テスト</span></a><a href="/blog/en/amazon-break-even-acos-tacos/" onclick="try{gtag('event','blog_click',{location:'landing_reads'})}catch(e){}"><b>Break-even ACoS, TACoS and ROAS explained</b><span>ガードレールの裏にある計算</span></a><a href="/blog/en/amazon-search-term-report-negative-keywords/" onclick="try{gtag('event','blog_click',{location:'landing_reads'})}catch(e){}"><b>Search term report: negatives and harvesting</b><span>毎週30分のルーティン</span></a></div>
+  </div>
+</section>
+<section id="faq" aria-label="よくある質問" style="padding-top:20px">
+  <div class="wrap">
+<div class="sec-head"><div class="eyebrow">Amazon広告 · よくある質問</div><h2>よくいただく質問</h2></div><div class="faq"><details open><summary>ToucHighの広告オートパイロットはAmazon出品者に何をしてくれますか？</summary><p>広告オートパイロットはAmazon、Meta、Googleの広告予算を運用し、ROASに合わせて自動調整し、クリエイティブ疲労と予算の判断を代行します。クリエイティブのコンセプトは公開前に予測パフォーマンスでスコアリングされます。</p></details><details><summary>Amazon自身の広告ツールの代わりになりますか？</summary><p>いいえ。AmazonのAI広告エージェントを含むAmazonのツールはAmazonの中で最適化します。ToucHighは1つの戦略でAmazon、Meta、Googleを横断し、まず競合の広告とオーガニックコンテンツを読み込み、出稿前にクリエイティブをスコアリングします。相談の際にアカウントの構成をお持ちいただければ、どう組み合わせるかをご説明します。</p></details><details><summary>ROASやACoSの成果は保証されますか？</summary><p>いいえ。予測パフォーマンススコアは公開前のコーパスパターンに基づく指標であり、保証ではありません。ポイントは、お金を使う前に根拠を持つことです。弱いコンセプトは予算を投じる前に除外され、結果を追跡するので伸びを確認できます。</p></details><details><summary>誰のためのサービスですか？</summary><p>商品と価格の競争力はあるものの、専任の米国広告・コンテンツチームを持たない、米国で販売する中国の越境EC事業者のためです。同じプラットフォームでGEO（AI回答でストアを引用させること）と米国SNSもカバーします。</p></details><details><summary>どう始めればいいですか？</summary><p>30分の戦略相談を予約してください。ストアのURLと競合1〜2社をお持ちいただければ、ToucHighがその広告とオーガニックコンテンツを読み込み、カタログに合ったプランをご説明します。</p></details></div>
+  </div>
+</section>
+<section class="final" aria-label="はじめる">
+  <div class="wrap">
+    <div class="eyebrow" style="text-align:center">準備ができたら、いつでも</div>
+    <h2>お金を使う前に、何を自動化に任せるかを決めましょう。</h2>
+    <p class="lead">30分の無料相談を予約してください。ストアのURLと競合1社をお持ちいただければ、ToucHighがその広告とオーガニックコンテンツを読み込み、プランをご説明します。</p>
+    <div class="hero-cta" style="justify-content:center"><a class="btn btn-primary" style="font-size:18px;padding:17px 34px" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'amazon_final')"><span>戦略相談を予約</span> →</a> <a class="btn btn-ghost on-dark" href="/ja/pro/" onclick="try{gtag('event','pro_click',{location:'amazon_final'})}catch(e){}">ToucHigh PRO</a></div>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="/ja/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a>
+        <p style="margin-top:12px;max-width:38ch;font-size:14px">米国に進出する越境EC事業者のための、広告・AI検索可視性・SNSのオートパイロット。</p>
+      </div>
+      <div>
+        <h4 style="text-transform:none;letter-spacing:0">ToucHigh</h4>
+        <a href="/ja/">ホーム</a>
+        <a href="/ja/#geo">GEO Autopilot</a>
+        <a href="/ja/#social">Social Autopilot</a>
+        <a href="/ja/pro/" onclick="try{gtag('event','pro_click',{location:'amazon_footer'})}catch(e){}">ToucHigh PRO — アウトバウンドとリード獲得</a>
+      </div>
+      <div>
+        <h4>活用例</h4>
+        <a href="/ja/supplier-ai-visibility/">AI検索でのサプライヤー可視性</a>
+        <a href="/ja/amazon-ads-autopilot/">Amazon出品者向け広告</a>
+        <a href="/blog/ja/">ブログ</a>
+      </div>
+      <div>
+        <h4>はじめる</h4>
+        <a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'amazon_footer')">30分の戦略相談</a>
+        <a href="https://pro.touchigh.ai" rel="noopener">ログイン</a>
+        <a href="/llms.txt">AIエンジン向け（llms.txt）</a>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 ToucHigh · ToucHighエンジンで計測</span>
+      <span>米国のAI検索で見つけてもらう。米国SNSは自動運用で。</span>
+    </div>
+  </div>
+</footer>
+<script>
+(function(){
+  var CAL='https://calendly.com/a-touchigh/30min';
+  window.setLang=function(l){
+    document.documentElement.lang=(l==='zh'?'zh-Hans':'en');
+    document.querySelectorAll('[data-en]').forEach(function(el){var t=el.getAttribute('data-'+l); if(t!==null) el.textContent=t;});
+    document.querySelectorAll('[data-en-html]').forEach(function(el){var t=el.getAttribute('data-'+l+'-html'); if(t!==null) el.innerHTML=t;});
+    document.querySelectorAll('[data-href-en]').forEach(function(x){var h=x.getAttribute(l==='en'?'data-href-en':'data-href-zh'); if(h) x.setAttribute('href',h);});
+    try{ localStorage.setItem('tl',l); }catch(e){}
+    try{ gtag('event','language_switch',{language:l, page:'amazon'}); }catch(e){}
+  };
+  window.book=function(e,loc){
+    try{ gtag('event','book_call_click',{location:loc}); }catch(_){}
+    if(window.Calendly && Calendly.initPopupWidget){ if(e&&e.preventDefault) e.preventDefault(); Calendly.initPopupWidget({url:CAL}); return false; }
+    return true;
+  };
+  var p=new URLSearchParams(location.search).get('lang');
+  var saved=null; try{ saved=localStorage.getItem('tl'); }catch(e){}
+  /* static ja page: no client-side language switch */
+  document.querySelectorAll('.nav-links a').forEach(function(x){x.addEventListener('click',function(){
+    var n=document.querySelector('.nav-links'); if(n) n.classList.remove('open');
+    var mb=document.querySelector('.menu-btn'); if(mb) mb.setAttribute('aria-expanded','false');});});
+})();
+</script>
+</body>
+</html>
