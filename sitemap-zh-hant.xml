@@ -16,6 +16,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://touchigh.ai/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://touchigh.ai/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://touchigh.ai/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/"/>
     <image:image><image:loc>https://touchigh.ai/og-cover.jpg</image:loc><image:title>ToucHigh — AI search visibility on autopilot</image:title></image:image>
     <image:image><image:loc>https://touchigh.ai/media/seo.jpg</image:loc><image:title>ToucHigh SEO, AEO and GEO dashboard</image:title></image:image>
@@ -48,6 +49,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/es/pro/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://touchigh.ai/fr/pro/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://touchigh.ai/de/pro/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://touchigh.ai/pt/pro/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/pro/"/>
     <image:image><image:loc>https://touchigh.ai/og-cover.jpg</image:loc><image:title>ToucHigh PRO — strategy-first outbound and lead generation</image:title></image:image>
   </url>
@@ -64,6 +66,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/es/supplier-ai-visibility/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://touchigh.ai/fr/supplier-ai-visibility/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://touchigh.ai/de/supplier-ai-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://touchigh.ai/pt/supplier-ai-visibility/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/supplier-ai-visibility/"/>
   </url>
   <url>
@@ -79,6 +82,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/es/amazon-ads-autopilot/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://touchigh.ai/fr/amazon-ads-autopilot/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://touchigh.ai/de/amazon-ads-autopilot/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://touchigh.ai/pt/amazon-ads-autopilot/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/amazon-ads-autopilot/"/>
   </url>
   <url>
@@ -94,6 +98,7 @@
     <xhtml:link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/"/>
     <xhtml:link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/"/>
     <xhtml:link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/"/>
   </url>
   <url>

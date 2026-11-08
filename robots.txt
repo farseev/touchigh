@@ -90,3 +90,4 @@ Sitemap: https://touchigh.ai/sitemap-ko.xml
 Sitemap: https://touchigh.ai/sitemap-es.xml
 Sitemap: https://touchigh.ai/sitemap-fr.xml
 Sitemap: https://touchigh.ai/sitemap-de.xml
+Sitemap: https://touchigh.ai/sitemap-pt.xml
