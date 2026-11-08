@@ -86,4 +86,5 @@ Sitemap: https://touchigh.ai/sitemap-zh-hans.xml
 Sitemap: https://touchigh.ai/sitemap-en.xml
 Sitemap: https://touchigh.ai/sitemap-zh-hant.xml
 Sitemap: https://touchigh.ai/sitemap-ja.xml
+Sitemap: https://touchigh.ai/sitemap-ko.xml
 Sitemap: https://touchigh.ai/sitemap-es.xml

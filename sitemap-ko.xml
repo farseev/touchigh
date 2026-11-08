@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://touchigh.ai/ko/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://touchigh.ai/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://touchigh.ai/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/"/>
+    <image:image><image:loc>https://touchigh.ai/og-cover.jpg</image:loc><image:title>ToucHigh — AI search visibility on autopilot</image:title></image:image>
+    <image:image><image:loc>https://touchigh.ai/media/seo.jpg</image:loc><image:title>ToucHigh SEO, AEO and GEO dashboard</image:title></image:image>
+    <image:image><image:loc>https://touchigh.ai/media/social-lib.jpg</image:loc><image:title>ToucHigh Social Autopilot content library</image:title></image:image>
+    <video:video>
+      <video:thumbnail_loc>https://touchigh.ai/media/audit.jpg</video:thumbnail_loc>
+      <video:title>ToucHigh builds a US market-entry strategy in real time</video:title>
+      <video:description>ToucHigh reads a store and its competitors' ads and organic content, then generates a US market-entry strategy on autopilot.</video:description>
+      <video:content_loc>https://touchigh.ai/media/audit.mp4</video:content_loc>
+      <video:live>no</video:live>
+    </video:video>
+    <video:video>
+      <video:thumbnail_loc>https://touchigh.ai/media/article.jpg</video:thumbnail_loc>
+      <video:title>ToucHigh generates a GEO / thought-leadership article</video:title>
+      <video:description>One trending query turns into a full GEO article, angled to get the store cited in AI answers.</video:description>
+      <video:content_loc>https://touchigh.ai/media/article.mp4</video:content_loc>
+      <video:live>no</video:live>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/ko/pro/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/pro/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/pro/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/zh-hant/pro/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://touchigh.ai/ja/pro/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://touchigh.ai/ko/pro/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/pro/"/>
+    <image:image><image:loc>https://touchigh.ai/og-cover.jpg</image:loc><image:title>ToucHigh PRO — strategy-first outbound and lead generation</image:title></image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/ko/supplier-ai-visibility/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/supplier-ai-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/supplier-ai-visibility/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/zh-hant/supplier-ai-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://touchigh.ai/ja/supplier-ai-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://touchigh.ai/ko/supplier-ai-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/supplier-ai-visibility/"/>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/ko/amazon-ads-autopilot/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/amazon-ads-autopilot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/amazon-ads-autopilot/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/zh-hant/amazon-ads-autopilot/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://touchigh.ai/ja/amazon-ads-autopilot/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://touchigh.ai/ko/amazon-ads-autopilot/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/amazon-ads-autopilot/"/>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/blog/ko/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/"/>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/"/>
+    <xhtml:link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/"/>
+  </url>
+</urlset>
