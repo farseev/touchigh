@@ -44,6 +44,12 @@ Chinese SMEs and cross-border e-commerce sellers who have the product and the pr
 - Prof. Aleks Farseev — Chief Research Officer (CRO). PhD in AI from the National University of Singapore and professor at INSEAD. Forbes Technology Council columnist and a Gartner Cool Vendor. Deep research in AI, with 30+ papers in leading academic venues. Website: https://farseev.com
 - Kirill Lepikhin — Chief Technology Officer (CTO). AI marketing technology expert leading all of ToucHigh's automation engineering. He has published six papers at top AI marketing conferences. Since 2017 he has been co-founder and CTO of SOMIN, leading engineering of its AI marketing platforms for brands including McDonald's, P&G and Puma.
 
+## Columns by Prof. Aleks Farseev on e27
+
+- Profile: https://e27.co/user/farseev/
+- [Every dashboard is green. So why can't anyone say what worked?](https://e27.co/every-dashboard-is-green-so-why-cant-anyone-say-what-worked-20261012/) — e27, 12 Oct 2026
+- [Singapore and Romania don't need another MOU. They need first customers](https://e27.co/singapore-and-romania-dont-need-another-mou-they-need-first-customers-20261101/) — e27, 1 Nov 2026
+
 ## Credibility
 
 - The team's AI marketing has run for leading global brands including P&G, Nestle, Audi, Ferrari, KFC, McDonald's, Citi, Abbott, Gojek and Mothercare, and agency groups including Publicis, Dentsu, Havas, GroupM and Omnicom.
