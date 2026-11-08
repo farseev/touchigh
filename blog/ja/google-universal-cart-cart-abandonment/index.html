@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIカート時代にカゴ落ちを減らす方法 | ToucHigh</title>
+<meta name="description" content="カゴ落ちが多いのは、たいていチェックアウトの選択肢が多すぎ、費用の表示が遅いため。GoogleのUniversal Cart開始を受けた、チェックアウト診断と2週間の改善計画。">
+<link rel="canonical" href="https://touchigh.ai/blog/ja/google-universal-cart-cart-abandonment/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="カゴ落ち 対策, カゴ落ち率, EC コンバージョン率, Shopify チェックアウト 最適化, カゴ落ちメール, Google Universal Cart">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/google-universal-cart-cart-abandonment/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/google-universal-cart-cart-abandonment/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ja/google-universal-cart-cart-abandonment/">
+<meta property="og:title" content="GoogleのUniversal Cart開始を受けて、カゴ落ちを減らす方法">
+<meta property="og:description" content="カゴ落ちが多いのは、たいていチェックアウトの選択肢が多すぎ、費用の表示が遅いため。GoogleのUniversal Cart開始を受けた、チェックアウト診断と2週間の改善計画。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t09-ja.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GoogleのUniversal Cart開始を受けて、カゴ落ちを減らす方法">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="article:published_time" content="2026-10-16T08:03:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T08:03:00+08:00">
+<meta property="article:section" content="GEO・AI検索">
+<meta property="article:tag" content="カゴ落ち">
+<meta property="article:tag" content="チェックアウト最適化">
+<meta property="article:tag" content="独自ストア">
+<meta property="article:tag" content="Google Universal Cart">
+<meta property="article:tag" content="AIショッピング">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GoogleのUniversal Cart開始を受けて、カゴ落ちを減らす方法">
+<meta name="twitter:description" content="カゴ落ちが多いのは、たいていチェックアウトの選択肢が多すぎ、費用の表示が遅いため。GoogleのUniversal Cart開始を受けた、チェックアウト診断と2週間の改善計画。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t09-ja.jpg">
+<meta name="twitter:image:alt" content="GoogleのUniversal Cart開始を受けて、カゴ落ちを減らす方法">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ja/google-universal-cart-cart-abandonment/#article","url":"https://touchigh.ai/blog/ja/google-universal-cart-cart-abandonment/","mainEntityOfPage":"https://touchigh.ai/blog/ja/google-universal-cart-cart-abandonment/","headline":"GoogleのUniversal Cart開始を受けて、カゴ落ちを減らす方法","alternativeHeadline":"AIカート時代にカゴ落ちを減らす方法","description":"カゴ落ちが多いのは、たいていチェックアウトの選択肢が多すぎ、費用の表示が遅いため。GoogleのUniversal Cart開始を受けた、チェックアウト診断と2週間の改善計画。","abstract":"カゴ落ちを減らすには、支払いまでの選択肢と予期せぬ驚きを減らします。送料、税金、配達予定日を早めに表示し、配送方法は最大2つにし、ゲスト購入を許可し、PayPal、Apple Pay、Google Payを用意し、返品について自然な米国英語で説明します。GoogleのUniversal Cartにより、米国の消費者はストアの比較や値下がり待ちがしやすくなるため、まずチェックアウトを整えましょう。","image":["https://touchigh.ai/assets/blog/og/t09-ja.jpg","https://touchigh.ai/assets/blog/hero/t09.jpg"],"datePublished":"2026-10-16T08:03:00+08:00","dateModified":"2026-10-16T08:03:00+08:00","inLanguage":"ja","author":{"@type":"Organization","name":"ToucHigh リサーチチーム","url":"https://touchigh.ai/blog/ja/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"GEO・AI検索","keywords":"カゴ落ち 対策, カゴ落ち率, EC コンバージョン率, Shopify チェックアウト 最適化, カゴ落ちメール, Google Universal Cart","wordCount":4430,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ja/#blog","name":"ToucHighブログ"},"about":[{"@type":"Thing","name":"カゴ落ち"},{"@type":"Thing","name":"チェックアウト最適化"},{"@type":"Thing","name":"独自ストア"},{"@type":"Thing","name":"Google Universal Cart"},{"@type":"Thing","name":"AIショッピング"}],"citation":[{"@type":"CreativeWork","name":"Google launches Universal Cart across Search and Gemini for easier shopping","url":"https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Search Engine Land"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/google-universal-cart-cart-abandonment/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"中国の事業者の独自ストアは、Universal Cartに参加できますか？","acceptedAnswer":{"@type":"Answer","text":"現時点では、報道はUniversal Cartが米国で展開中であるとしか述べていません。簡易チェックアウトに対応する小売業者としてNikeやWalmart、多くのShopify販売者の名前を挙げ、チェックアウトの選択肢は参加する販売者によって異なるとしていますが、参加方法については説明していません。Googleの公式ガイダンスを注視しつつ、その間は商品データを正確に保ち、自社のチェックアウトをスムーズにしておきましょう。"}},{"@type":"Question","name":"カゴ落ち率の標準はどのくらいですか？","acceptedAnswer":{"@type":"Answer","text":"カテゴリ、注文金額、流入元によって大きく異なるため、他社の数字と比べてもほとんど参考になりません。より有用なのは、自社の基準値を作ることです。デバイス、流入元、新規かリピーターかの別に追跡し、すべての変更を同じ方法で測定します。傾向が下がり続けていれば、正しい方向に進んでいます。"}},{"@type":"Question","name":"カゴ落ちメールは何通送るべきですか？","acceptedAnswer":{"@type":"Answer","text":"通常は2～3通で十分です。1通目はカゴ落ちの約1時間後に送り、商品がまだカートに入っていることを知らせます。2通目は約24時間後に送り、送料、配達日数、返品に関する疑問に答えます。3通目は約72時間後に、レビューや在庫のお知らせを添えて送ります。割引を検討するのは最後のメールだけ、それも購入意欲の高い消費者に限りましょう。"}},{"@type":"Question","name":"チェックアウトでのアカウント登録は本当にやめるべきですか？","acceptedAnswer":{"@type":"Answer","text":"ゲスト購入を許可し、登録は支払い後に移すことをおすすめします。たとえば、注文確認ページでワンクリックでアカウントを作成するよう案内する方法です。登録の強制はチェックアウト直前にハードルを1つ増やすことになり、まだ御社のストアを信頼していない初めての越境購入者には特に敬遠されます。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ja/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://touchigh.ai/blog/ja/"},{"@type":"ListItem","position":3,"name":"GoogleのUniversal Cart開始を受けて、カゴ落ちを減らす方法","item":"https://touchigh.ai/blog/ja/google-universal-cart-cart-abandonment/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ja/">ホーム</a>
+      <a href="/ja/#products">製品</a>
+      <a href="/ja/#faq">よくある質問</a>
+      <a href="/ja/pro/">ToucHigh PRO</a>
+      <a href="/blog/ja/" class="on">ブログ</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="言語: 日本語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">日本語</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="言語" hidden><li><a href="/blog/google-universal-cart-cart-abandonment/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/google-universal-cart-cart-abandonment/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/google-universal-cart-cart-abandonment/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/google-universal-cart-cart-abandonment/" hreflang="ja" lang="ja" data-short="日本語" aria-current="page">日本語</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">ログイン</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">相談を予約</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ja/">ホーム</a><span>/</span><a href="/blog/ja/">ブログ</a><span>/</span><span>GEO・AI検索</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">GEO・AI検索</div>
+    <h1>GoogleのUniversal Cart開始を受けて、カゴ落ちを減らす方法</h1>
+    <p class="dek">GoogleのUniversal Cartによって、米国の消費者はストアを比較し、値下がりを待てるようになりました。選択過多の理論でカゴ落ちの理由を説明し、すぐに実行できるチェックアウトのチェックリストを紹介します。</p>
+    <div class="a-meta"><b>ToucHigh リサーチチーム</b><span>公開日 <time datetime="2026-10-16T08:03:00+08:00">2026年10月16日</time></span><span>5分で読めます</span><span class="lang-badge">日本語</span></div>
+    <div class="a-langs">ほかの言語<a href="/blog/google-universal-cart-cart-abandonment/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/google-universal-cart-cart-abandonment/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/google-universal-cart-cart-abandonment/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t09-768.webp 768w, /assets/blog/hero/t09-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t09.jpg" alt="障害物と標識だらけの白い迷路の中にショッピングカートが放置されている。一方、1台のカートだけがなめらかなオレンジ色の道を進み、決済カードの置かれたレジカウンターへまっすぐ向かう。紫のきらめきをまとったカートが小さな店舗の上に浮かんでいる。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="この記事が答える質問"><span class="qm">“</span><div><div class="eyebrow">この記事が答える質問</div><p class="q">自社ストアでは多くの消費者が商品をカートに入れても、支払いまで進みません。チェックアウトを改善してカゴ落ちを減らすにはどうすればよいですか？</p><p class="ans"><b>短い答え</b>カゴ落ちを減らすには、支払いまでの選択肢と予期せぬ驚きを減らします。送料、税金、配達予定日を早めに表示し、配送方法は最大2つにし、ゲスト購入を許可し、PayPal、Apple Pay、Google Payを用意し、返品について自然な米国英語で説明します。GoogleのUniversal Cartにより、米国の消費者はストアの比較や値下がり待ちがしやすくなるため、まずチェックアウトを整えましょう。</p></div></section>
+      <section class="kt takeaways"><h2>要点</h2><ul><li>独自ストアのカゴ落ちの多くは、チェックアウトの選択肢が多すぎることと、最後の最後に表示される費用が原因です。最初の一歩は引き算です。</li><li>Search Engine Landによると、GoogleのUniversal Cartでは、米国の消費者が検索とGeminiで複数のストアの商品を保存し、値下がりを追跡し、Google Payまたは販売者自身のサイトで購入できます。</li><li>Universal Cartの中でも、小売業者が正式な販売者であり続けるため、注文確認、カスタマーサービス、最終的なチェックアウト体験は引き続き販売者の仕事です。</li><li>ファネルのデータを使って、最も多くの消費者が離脱するチェックアウトのステップを見つけ、一度に1つずつ変更し、丸2週間待ってから結果を判断します。</li><li>カート回復施策は、消費者の不安に答えることに重点を置くべきです。頻繁な割引は、値下がりを待つことを消費者に教え、価格決定力を弱めます。</li></ul></section>
+      <div class="prose"><p>オンラインストアのカゴ落ちを減らすにはどうすればよいのでしょうか？　要点は1つです。支払いまでの道のりで消費者が出くわす選択肢と予期せぬ驚きの数を減らすことです。合計金額、送料、配達日数を早めに示し、誰も必要としない選択肢を取り除き、米国人が期待する決済方法を用意し、明確な返品の約束で締めくくります。それこそが、カゴ落ち率を実際に下げるものです。</p>
+<p>今月、この課題はより切迫したものになりました。<a href="https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573" rel="noopener" target="_blank">Search Engine Land</a>は10月15日、Googleが米国でUniversal Cartを展開していると報じました。消費者はGoogle検索とGeminiアプリの中で、複数の小売業者の商品を1つのカートに入れ、価格を追跡し、購入を完了できます。対象商品はGoogle Payで直接支払えます。それ以外の商品は、販売者自身のチェックアウトページに消費者を誘導します。報道は、「小売業者が正式な販売者であり続け」、注文確認とカスタマーサポートを担うと強調しています。</p>
+<p>御社が独自ストア（マーケットプレイスの出品ではなく、自社で運営するDTCサイトで、多くはShopifyを利用）で販売しているなら、これは比較購入、値下がり待ち、異なるストアの商品の組み合わせがすべて容易になることを意味します。御社の商品は大手小売業者の商品と同じカートに入るかもしれず、「カートに入れて後で決める」が当たり前になり、そして最後のステップであるチェックアウトは、依然として御社の責任です。</p>
+
+<h2 id="what-is-google-s-universal-cart-and-what-does-it-mean-for-in">GoogleのUniversal Cartとは何か、独自ストアにとって何を意味するのか？</h2>
+<p>報道に基づくと、主な機能は次のとおりです。</p>
+<ul>
+<li><strong>ストアをまたいだ保存：</strong>消費者がAI Modeで見た商品とGeminiで保存した商品が、同じカートに入ります。</li>
+<li><strong>価格と在庫のアラート：</strong>保存した商品が値下がりしたり再入荷したりすると、消費者に通知が届きます。</li>
+<li><strong>お得情報の自動検索：</strong>Googleがプロモーションコードを表示し、Googleウォレットの情報を使って利用可能なカード特典を知らせます。</li>
+<li><strong>2つのチェックアウト方法：</strong>対象商品はGoogle Payで購入でき、それ以外の商品は販売者のWebサイトにリダイレクトされます。</li>
+<li><strong>その背後にあるデータ：</strong>Googleはショッピンググラフで価格と在庫の変化を追跡しており、報道によると、継続的に更新される600億件以上の商品リスティングを保持しています。</li>
+</ul>
+<p>報道では、簡易チェックアウトに対応する企業として、Nike、Sephora、Target、Ulta Beauty、Walmart、Wayfair、そして「多くのShopify販売者」の名前が挙げられています。販売者がどう参加するのかは説明されておらず、Merchant Centerの具体的な要件にも触れていません。Googleが公式の詳細を公表するまでは、商品データと自社のチェックアウトの流れを整えておくのが賢明です。</p>
+
+<h2 id="why-do-shoppers-add-to-cart-and-then-not-pay">なぜ消費者はカートに入れたのに支払わないのか？</h2>
+<p>心理学者はこれを選択過多と呼びます。選択肢が多いほど、人は決断を先延ばしにしたり、まったくやめてしまったりしやすくなります。そしてチェックアウトは、購買の過程全体で最も選択肢の多い瞬間です。</p>
+<p>典型的な独自ストアのチェックアウトを思い浮かべてください。3～4種類の配送方法、大きなプロモーションコード欄、何度も出てくるアップセルのポップアップ、必須のアカウント作成、なじみのない決済方法がいくつか、そして最後のステップで初めて表示される送料と税金。選択肢が1つ増えるたびに、手を止める理由が1つ増えます。</p>
+<p>プロモーションコード欄はその典型です。「どこかにもっと安い価格があるかもしれない」と消費者に伝えてしまうため、消費者はコードを探しに離脱し、その多くは二度と戻ってきません。Universal Cartでは、Googleが消費者のためにプロモーションコードを積極的に見つけ、値下がりのアラートを送るため、「とりあえず置いてセールを待つ」という考え方はますます広がるでしょう。</p>
+<p>事業者も同じ落とし穴にはまります。プラグイン、ポップアップ、回復ツール、広告チャネルを増やし続け、結局どれもうまくいかないのです。カゴ落ちを減らすには、まず引き算から始めます。</p>
+
+<h2 id="where-exactly-are-your-shoppers-dropping-off">消費者は具体的にどこで離脱しているのか？</h2>
+<p>ストアの管理画面またはGA4（Googleアナリティクス4）で、カート追加、チェックアウト開始、情報入力、支払い完了の4ステップのコンバージョンファネルを抽出します。最も離脱の大きいステップを見つけ、次の表をもとに対処しましょう。</p>
+<div class="tw"><table>
+<thead><tr><th>チェックアウトのステップ</th><th>消費者が離脱するよくある理由</th><th>最初に改善すること</th></tr></thead>
+<tbody>
+<tr><td>カートページ</td><td>送料、税金、合計金額が見えない。アップセルが多すぎる</td><td>商品ページとカートページに合計金額の見込みを表示し、おすすめは最大1つにする</td></tr>
+<tr><td>顧客情報</td><td>会員登録の強制、入力項目が多すぎる</td><td>ゲスト購入を許可し、住所の自動入力をオンにし、任意項目を削除する</td></tr>
+<tr><td>配送</td><td>選択肢が多すぎる、配達日数が曖昧</td><td>「通常配送」と「お急ぎ便」だけを残し、配達予定日の範囲を明記する</td></tr>
+<tr><td>支払い</td><td>なじみのある決済方法がない、ページが安全に見えない</td><td>PayPal、Apple Pay、Google Payなどの一般的な決済方法を追加し、セキュリティバッジを表示する</td></tr>
+<tr><td>最終確認</td><td>予期せぬ費用、返品ポリシーが見つけにくい</td><td>すべての費用を最初に表示し、支払いボタンの横に1行の返品の約束を置く</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="how-do-you-fix-your-checkout-in-two-weeks">2週間でチェックアウトを改善するには？</h2>
+<ol>
+<li><strong>基準値を設定する。</strong>過去30日間のカゴ落ち率を、デバイス別、流入元別に記録します。通常はモバイルと有料広告からのトラフィックを先に見るべきです。</li>
+<li><strong>驚きを前倒しする。</strong>送料、税金、配達予定日を商品ページに表示します。特に越境EC事業者は、注文がどこから発送され、配達にどれくらいかかるかを明記しましょう。</li>
+<li><strong>余分な選択肢を削る。</strong>配送方法は最大2つにし、プロモーションコード欄は折りたたむか割引を自動適用し、会員登録の必須をやめます。</li>
+<li><strong>決済の穴を埋める。</strong>米国の消費者が最もよく使う決済方法を用意します。Universal Cart内での購入はGoogle Payを通じて行われるため、今導入しておけばAIショッピングへの備えにもなります。</li>
+<li><strong>信頼にかかわる情報を自然な米国英語で書く。</strong>返品ポリシー、米国時間でのカスタマーサービス対応時間、実際の購入者のレビューはすべて支払い前に見えるようにし、どれも機械翻訳のように読めてはいけません。</li>
+<li><strong>商品データを確認する。</strong>サイトと商品フィードで、タイトル、価格、在庫数、画像が一致していることを確認します。Googleはショッピンググラフで価格と在庫を追跡しており、データの不一致は消費者に新たな驚きを生むだけです。</li>
+<li><strong>カート回復の仕組みを設定する。</strong>カゴ落ちメールを、およそ1時間後、24時間後、72時間後に送ります。すぐに割引を出すのではなく、リマインドと疑問への回答を中心にします。</li>
+<li><strong>一度に1つずつ変更する。</strong>変更ごとに丸2週間運用してからデータを読みます。一度に5つ変えると、どれが効いたのかわかりません。</li>
+</ol>
+
+<h2 id="should-you-use-discounts-to-win-back-abandoned-carts">カゴ落ちを取り戻すのに割引を使うべきか？</h2>
+<p>割引はすぐに効きますが、副作用は現実のものです。消費者が「カートに入れてクーポンを待つ」ことを覚えてしまうのです。値下がりのアラートを積極的に送るUniversal Cartのような環境では、御社が値下げをするたびに、それがまだ迷っている消費者の目の前に届くかもしれません。事実上、価格設定のリズムをアラート機能に委ねることになります。</p>
+<p>より良い回復メッセージは、不安に答えるものです。在庫僅少のお知らせ、ホリデーシーズンの配送締め切り、FAQ、実際の購入者のレビューなどです。割引は、2回目の訪問でもまだ注文していない人など、価格で迷っている購入意欲の高い消費者のためにとっておきましょう。</p>
+<p>リターゲティング広告もよく使われる回復手段で、その費用は広告のリターンの計算に含めるべきです。お金を払って獲得したトラフィックの多くがチェックアウトで止まってしまうなら、どれほど精密にターゲティングしてもROAS（広告費用対効果）は上がりません。</p>
+
+<h2 id="should-you-fix-your-ads-or-your-checkout-first">広告とチェックアウト、どちらを先に改善すべきか？</h2>
+<p>チェックアウトです。穴の空いたチェックアウトにトラフィックを送れば、予算を1ドル増やすごとに損失が拡大するだけです。チェックアウトがスムーズに機能するようになれば、同じ広告予算でより多くの注文を獲得できます。</p>
+<p>その後も、広告側では継続的な調整が必要です。どのチャネルが実際に支払う消費者を連れてくるのか、どのクリエイティブが疲弊しているのか、予算をどこに移すべきか。ToucHighのAds機能は、Amazon、Meta、Googleにわたって予算をROASに向けて自動調整し、クリエイティブの疲弊や予算の判断を代わりに行います。米国のAI検索での可視性も改善したい場合は、<a href="/ja/#products">ToucHighの製品</a>をご覧ください。</p></div>
+      <aside class="insight" aria-label="インサイト"><div class="eyebrow">インサイト</div><blockquote>選択肢が多すぎると、人は動けなくなることがよくあります。</blockquote><p>選択過多の理論がカゴ落ちを説明します。配送方法やプロモーションコードからアップセル、決済方法まで、チェックアウトで選択肢が1つ増えるたびに、消費者が支払いを先延ばしにする理由が1つ増えます。ページ上の選択肢が少ないほど、販売はスムーズになります。</p></aside>
+      <section class="prop" aria-label="ToucHighにできること">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHighにできること</h2></div>
+        <div class="pb prose"><p>チェックアウトを改善したら、次のステップは、広告費の1ドル1ドルが実際に支払う消費者に届くようにすることです。ToucHighは次のようにお手伝いします。</p><ul><li>Adsで、Amazon、Meta、Googleの広告を1か所から運用し、予算をROAS（広告費用対効果）に向けて自動調整します。</li><li>クリエイティブの疲弊を早期に察知し、クリエイティブの差し替えや予算の移動を判断するため、毎日ダッシュボードを見る時間が減ります。</li><li>GEO Autopilotと組み合わせて、ChatGPT、Perplexity、Google AI、Geminiで御社のストアが見えていない部分を見つけ、改善策を作成・実装します。</li></ul><p>まずはチェックアウトのファネルの基準値を測定し、それから30分の戦略相談を予約して、予算の配分について話し合いましょう。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T09')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T09'})}catch(e){}">ToucHighにログイン</a></div>
+      </section>
+      <section class="faq" aria-label="よくある質問"><h2>よくある質問</h2><details open><summary>中国の事業者の独自ストアは、Universal Cartに参加できますか？</summary><p>現時点では、報道はUniversal Cartが米国で展開中であるとしか述べていません。簡易チェックアウトに対応する小売業者としてNikeやWalmart、多くのShopify販売者の名前を挙げ、チェックアウトの選択肢は参加する販売者によって異なるとしていますが、参加方法については説明していません。Googleの公式ガイダンスを注視しつつ、その間は商品データを正確に保ち、自社のチェックアウトをスムーズにしておきましょう。</p></details><details><summary>カゴ落ち率の標準はどのくらいですか？</summary><p>カテゴリ、注文金額、流入元によって大きく異なるため、他社の数字と比べてもほとんど参考になりません。より有用なのは、自社の基準値を作ることです。デバイス、流入元、新規かリピーターかの別に追跡し、すべての変更を同じ方法で測定します。傾向が下がり続けていれば、正しい方向に進んでいます。</p></details><details><summary>カゴ落ちメールは何通送るべきですか？</summary><p>通常は2～3通で十分です。1通目はカゴ落ちの約1時間後に送り、商品がまだカートに入っていることを知らせます。2通目は約24時間後に送り、送料、配達日数、返品に関する疑問に答えます。3通目は約72時間後に、レビューや在庫のお知らせを添えて送ります。割引を検討するのは最後のメールだけ、それも購入意欲の高い消費者に限りましょう。</p></details><details><summary>チェックアウトでのアカウント登録は本当にやめるべきですか？</summary><p>ゲスト購入を許可し、登録は支払い後に移すことをおすすめします。たとえば、注文確認ページでワンクリックでアカウントを作成するよう案内する方法です。登録の強制はチェックアウト直前にハードルを1つ増やすことになり、まだ御社のストアを信頼していない初めての越境購入者には特に敬遠されます。</p></details></section>
+      <section class="srcs"><h2>参考資料</h2><ol><li><a href="https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573" rel="noopener" target="_blank">Google launches Universal Cart across Search and Gemini for easier shopping</a> — Search Engine Land, 2026-10-15</li></ol></section>
+      <p class="note"><b>この記事を書いた理由</b>この記事を書いたのは、「チェックアウトをスムーズにしてカゴ落ちを減らすにはどうすればよいか」が独自ストアの事業者に繰り返し検索されている質問であり、Googleが米国で新たに開始したストア横断型のUniversal Cartによって、チェックアウト体験の重要性が一段と高まったからです。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="このページの内容"><h4>このページの内容</h4><a href="#what-is-google-s-universal-cart-and-what-does-it-mean-for-in">GoogleのUniversal Cartとは何か、独自ストアにとって何を意味するのか？</a><a href="#why-do-shoppers-add-to-cart-and-then-not-pay">なぜ消費者はカートに入れたのに支払わないのか？</a><a href="#where-exactly-are-your-shoppers-dropping-off">消費者は具体的にどこで離脱しているのか？</a><a href="#how-do-you-fix-your-checkout-in-two-weeks">2週間でチェックアウトを改善するには？</a><a href="#should-you-use-discounts-to-win-back-abandoned-carts">カゴ落ちを取り戻すのに割引を使うべきか？</a><a href="#should-you-fix-your-ads-or-your-checkout-first">広告とチェックアウト、どちらを先に改善すべきか？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>米国のAI検索で、どこが見えていないかを確認</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">相談を予約</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">ログイン</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>関連記事</h2>
+  <div class="grid"><a class="card" href="/blog/ja/us-buyers-ai-research-citable-content/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t57-768.webp"><img src="/assets/blog/hero/t57.jpg" alt="小さなクレーンが6枚のコンテンツタイル（IDバッジ、仕様表、吹き出し、証明書、天秤、星）を載せたトレーをAI回答のウィンドウへ持ち上げている。ウィンドウでは、オレンジの工場のバッジが最上位を占めている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ja"><div class="eyebrow">GEO・AI検索</div><h3>米国のバイヤーはAIでサプライヤーを探すようになった：必要なのは引用されるコンテンツ</h3><p>バイヤーがAIにどの中国の工場が信頼できるかを尋ねると、回答に挙がるのはたいてい3〜5社だけです。AIが引用できる6種類のコンテンツと、ゼロから始める輸出企業のための6つのステップを紹介します。</p><div class="meta"><span class="lg">日本語</span><span>6分で読めます</span></div></div></a><a class="card" href="/blog/ja/seo-aeo-geo-explained-chinese-exporters/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t53-768.webp"><img src="/assets/blog/hero/t53.jpg" alt="オレンジ色のブロックが噴水のように3本のパイプを伸ばし、検索結果のリスト、吹き出し型の回答カード、紫色のきらめきが付いたAIチャットの吹き出しへとつながっています。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ja"><div class="eyebrow">GEO・AI検索</div><h3>SEO・AEO・GEOの違いとは？輸出企業に3つとも必要か</h3><p>SEOは見つけてもらうため、AEOはAIに回答として引用されるため、GEOは生成AIに推薦されるためのもの。土台は共通なので、輸出企業は1つのワークフローで3つすべてを実行できます。</p><div class="meta"><span class="lg">日本語</span><span>8分で読めます</span></div></div></a><a class="card" href="/blog/ja/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="同じような灰色の工場が並ぶ中、白とオレンジの工場が1つだけAIチャットの吹き出しからのスポットライトに照らされ、その上には機械、認証、素材、リードタイム、FAQのアイコンが並ぶパネルがあります。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ja"><div class="eyebrow">GEO・AI検索</div><h3>ChatGPTに工場を推薦させる：工場サイトのためのGEO入門</h3><p>海外バイヤーはAIでサプライヤーを探し始めています。会社概要と製品写真だけの工場サイトは、ChatGPTにほとんど推薦されません。引用されるページのチェックリストとGEOの最初のステップを紹介します。</p><div class="meta"><span class="lg">日本語</span><span>6分で読めます</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ja/">← ブログに戻る</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>米国のAI検索で、どこが見えていないかを確認</h2>
+  <p>30分の無料相談を予約していただければ、ストアのAI可視性をその場で診断します。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHighにログイン</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">中小企業と越境EC事業者のための、AI検索可視性・SNS・広告のオートパイロット。</p></div>
+      <div><h4>ToucHigh</h4><a href="/ja/">ホーム</a><a href="/ja/#geo">GEO Autopilot</a><a href="/ja/#social">Social Autopilot</a><a href="/ja/pro/">ToucHigh PRO</a></div>
+      <div><h4>ブログ</h4><a href="/blog/ja/">ブログ</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>ログイン</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">相談を予約</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
