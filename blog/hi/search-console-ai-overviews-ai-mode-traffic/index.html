@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search Console में AI Overviews और AI Mode: कैसे मापें | ToucHigh</title>
+<meta name="description" content="Google AI Overviews और AI Mode को Search Console के Web सर्च डेटा के अंदर गिनता है। AI जवाब दिखने पर इम्प्रेशन, क्लिक और पेज कैसे पढ़ें, और किसकी तुलना करें।">
+<link rel="canonical" href="https://touchigh.ai/blog/hi/search-console-ai-overviews-ai-mode-traffic/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="AI Overviews Search Console, AI Mode ट्रैफ़िक Search Console, AI Overviews क्लिक मापें, Search Console Web सर्च टाइप AI, Google AI फ़ीचर्स ट्रैफ़िक, Google के लिए GEO माप">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="hi" href="https://touchigh.ai/blog/hi/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ar" href="https://touchigh.ai/blog/ar/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/hi/search-console-ai-overviews-ai-mode-traffic/">
+<meta property="og:title" content="Google Search Console में AI Overviews और AI Mode ट्रैफ़िक कैसे पढ़ें">
+<meta property="og:description" content="Google AI Overviews और AI Mode को Search Console के Web सर्च डेटा के अंदर गिनता है। AI जवाब दिखने पर इम्प्रेशन, क्लिक और पेज कैसे पढ़ें, और किसकी तुलना करें।">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t65-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Google Search Console में AI Overviews और AI Mode ट्रैफ़िक कैसे पढ़ें">
+<meta property="og:locale" content="hi_IN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:section" content="मापन">
+<meta property="article:tag" content="Google Search Console">
+<meta property="article:tag" content="AI Overviews">
+<meta property="article:tag" content="AI Mode">
+<meta property="article:tag" content="SEO माप">
+<meta property="article:tag" content="GEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Search Console में AI Overviews और AI Mode ट्रैफ़िक कैसे पढ़ें">
+<meta name="twitter:description" content="Google AI Overviews और AI Mode को Search Console के Web सर्च डेटा के अंदर गिनता है। AI जवाब दिखने पर इम्प्रेशन, क्लिक और पेज कैसे पढ़ें, और किसकी तुलना करें।">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t65-en.jpg">
+<meta name="twitter:image:alt" content="Google Search Console में AI Overviews और AI Mode ट्रैफ़िक कैसे पढ़ें">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/hi/search-console-ai-overviews-ai-mode-traffic/#article","url":"https://touchigh.ai/blog/hi/search-console-ai-overviews-ai-mode-traffic/","mainEntityOfPage":"https://touchigh.ai/blog/hi/search-console-ai-overviews-ai-mode-traffic/","headline":"Google Search Console में AI Overviews और AI Mode ट्रैफ़िक कैसे पढ़ें","alternativeHeadline":"Search Console में AI Overviews और AI Mode: कैसे मापें","description":"Google AI Overviews और AI Mode को Search Console के Web सर्च डेटा के अंदर गिनता है। AI जवाब दिखने पर इम्प्रेशन, क्लिक और पेज कैसे पढ़ें, और किसकी तुलना करें।","abstract":"अलग से नहीं। Google कहता है कि AI Overviews और AI Mode में दिखने वाली साइटें Search Console के कुल सर्च ट्रैफ़िक में, Performance रिपोर्ट के Web सर्च टाइप में शामिल होती हैं। इसलिए इसे तुलना से पढ़ें: सवाल जैसी और लंबी क्वेरी बनाम छोटी क्वेरी, पहले बनाम बाद, इम्प्रेशन बनाम क्लिक, और वे पेज जिनके इम्प्रेशन बढ़ते हैं। इसे GA4 लैंडिंग पेजों और इस मैनुअल जाँच के साथ जोड़ें कि कौन-सी प्राथमिक क्वेरी पर AI Overview दिखता है।","image":["https://touchigh.ai/assets/blog/og/t65-en.jpg","https://touchigh.ai/assets/blog/hero/t01.jpg"],"datePublished":"2026-11-08T10:20:00+08:00","dateModified":"2026-11-08T10:20:00+08:00","inLanguage":"hi","author":{"@type":"Organization","name":"ToucHigh रिसर्च टीम","url":"https://touchigh.ai/blog/hi/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"मापन","keywords":"AI Overviews Search Console, AI Mode ट्रैफ़िक Search Console, AI Overviews क्लिक मापें, Search Console Web सर्च टाइप AI, Google AI फ़ीचर्स ट्रैफ़िक, Google के लिए GEO माप","wordCount":1394,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/hi/#blog","name":"ToucHigh ब्लॉग"},"about":[{"@type":"Thing","name":"Google Search Console"},{"@type":"Thing","name":"AI Overviews"},{"@type":"Thing","name":"AI Mode"},{"@type":"Thing","name":"SEO माप"},{"@type":"Thing","name":"GEO"}],"citation":[{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Performance report (Search results): Overview and basic setup","url":"https://support.google.com/webmasters/answer/7576553","publisher":{"@type":"Organization","name":"Search Console Help"}},{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"hi","mainEntity":[{"@type":"Question","name":"क्या Search Console में AI Overviews के लिए कोई फ़िल्टर है?","acceptedAnswer":{"@type":"Answer","text":"Google का मार्गदर्शन किसी अलग रिपोर्ट की ओर इशारा करने के बजाय कहता है कि AI Overviews और AI Mode, Performance रिपोर्ट के कुल Web सर्च डेटा में शामिल हैं। उनका असर क्वेरी समूहों, पेजों और अवधियों की तुलना से पढ़ें।"}},{"@type":"Question","name":"हमारे इम्प्रेशन क्यों बढ़ते हैं जबकि क्लिक स्थिर रहते हैं?","acceptedAnswer":{"@type":"Answer","text":"एक आम वजह यह है कि आपका पेज दिखाया जाता है, जिसमें AI जवाब में सपोर्टिंग लिंक के रूप में दिखना भी शामिल है, जबकि सर्च करने वाले को जवाब से ही काफ़ी जानकारी मिल जाती है। इसे समस्या मानने से पहले जाँचें कि कौन-सी क्वेरी और पेज यह बदलाव ला रहे हैं।"}},{"@type":"Question","name":"क्या Google-Extended ब्लॉक करने से हमारे पेज AI Overviews से बाहर रहते हैं?","acceptedAnswer":{"@type":"Answer","text":"नहीं। Google कहता है कि Google-Extended का Google Search में शामिल होने पर कोई असर नहीं है। AI फ़ीचर्स में दिखने वाली चीज़ सीमित करने के लिए Google nosnippet, data-nosnippet, max-snippet या noindex की ओर इशारा करता है।"}},{"@type":"Question","name":"क्या AI Overviews में दिखने के लिए खास मार्कअप चाहिए?","acceptedAnswer":{"@type":"Answer","text":"Google कहता है कि कोई अतिरिक्त शर्त नहीं है और किसी खास schema की ज़रूरत नहीं है। पेज इंडेक्स होने चाहिए और स्निपेट के योग्य होने चाहिए, और SEO के सामान्य सर्वोत्तम तरीके लागू होते हैं।"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/hi/"},{"@type":"ListItem","position":2,"name":"ब्लॉग","item":"https://touchigh.ai/blog/hi/"},{"@type":"ListItem","position":3,"name":"Google Search Console में AI Overviews और AI Mode ट्रैफ़िक कैसे पढ़ें","item":"https://touchigh.ai/blog/hi/search-console-ai-overviews-ai-mode-traffic/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">इस पेज पर</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/hi/">होम</a>
+      <a href="/hi/#products">प्रोडक्ट</a>
+      <a href="/hi/#faq">अक्सर पूछे जाने वाले प्रश्न</a>
+      <a href="/hi/pro/">ToucHigh PRO</a>
+      <a href="/blog/hi/" class="on">ब्लॉग</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="भाषा: हिन्दी"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">हिन्दी</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="भाषा" hidden><li><a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/search-console-ai-overviews-ai-mode-traffic/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/search-console-ai-overviews-ai-mode-traffic/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/vi/search-console-ai-overviews-ai-mode-traffic/" hreflang="vi" lang="vi" data-short="VI">Tiếng Việt</a></li><li><a href="/blog/id/search-console-ai-overviews-ai-mode-traffic/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/search-console-ai-overviews-ai-mode-traffic/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/hi/search-console-ai-overviews-ai-mode-traffic/" hreflang="hi" lang="hi" data-short="हिन्दी" aria-current="page">हिन्दी</a></li><li><a href="/blog/es/search-console-ai-overviews-ai-mode-traffic/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/search-console-ai-overviews-ai-mode-traffic/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/search-console-ai-overviews-ai-mode-traffic/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/search-console-ai-overviews-ai-mode-traffic/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ar/search-console-ai-overviews-ai-mode-traffic/" hreflang="ar" lang="ar" data-short="عربي" dir="rtl">العربية</a></li><li><a href="/blog/ru/search-console-ai-overviews-ai-mode-traffic/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">लॉग इन</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">कॉल बुक करें</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/hi/">होम</a><span>/</span><a href="/blog/hi/">ब्लॉग</a><span>/</span><span>मापन</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">मापन</div>
+    <h1>Google Search Console में AI Overviews और AI Mode ट्रैफ़िक कैसे पढ़ें</h1>
+    <p class="dek">खोलने के लिए कोई अलग &quot;AI Overviews&quot; टैब नहीं है। Google AI फ़ीचर्स को उसी Performance रिपोर्ट में शामिल करता है जो आपके पास पहले से है। एक्सपोर्टर फिर भी कैसे पढ़ सकते हैं कि AI जवाब उनके सर्च ट्रैफ़िक के साथ क्या कर रहे हैं, यहाँ जानें।</p>
+    <div class="a-meta"><b>ToucHigh रिसर्च टीम</b><span><time datetime="2026-11-08T10:20:00+08:00">8/11/2026</time> को प्रकाशित</span><span>6 मिनट पढ़ें</span><span class="lang-badge">हिन्दी</span></div>
+    <div class="a-langs">इसमें भी उपलब्ध<a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/search-console-ai-overviews-ai-mode-traffic/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/search-console-ai-overviews-ai-mode-traffic/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/vi/search-console-ai-overviews-ai-mode-traffic/" hreflang="vi" lang="vi" onclick="try{localStorage.setItem('tl','vi')}catch(e){}">Tiếng Việt</a><a href="/blog/id/search-console-ai-overviews-ai-mode-traffic/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/search-console-ai-overviews-ai-mode-traffic/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/es/search-console-ai-overviews-ai-mode-traffic/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/search-console-ai-overviews-ai-mode-traffic/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/search-console-ai-overviews-ai-mode-traffic/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/search-console-ai-overviews-ai-mode-traffic/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ar/search-console-ai-overviews-ai-mode-traffic/" hreflang="ar" lang="ar" dir="rtl" onclick="try{localStorage.setItem('tl','ar')}catch(e){}">العربية</a><a href="/blog/ru/search-console-ai-overviews-ai-mode-traffic/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp 768w, /assets/blog/hero/t01-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t01.jpg" alt="एक सर्च बार नारंगी कंचे बैंगनी चमक वाली AI जवाब कीप में डाल रहा है, जो उनमें से सिर्फ़ कुछ को एक छोटे वेबसाइट स्टोरफ़्रंट तक पहुँचने देती है, जबकि पास में खाली पन्नों का एक ऊँचा डगमगाता ढेर बस एक कंचा देता है।" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="इस लेख के पीछे का प्रश्न"><span class="qm">“</span><div><div class="eyebrow">इस लेख के पीछे का प्रश्न</div><p class="q">Google के AI Overviews और AI Mode हमें कितना ट्रैफ़िक लाते हैं, यह कहाँ देख सकते हैं? क्या Search Console में इसकी कोई रिपोर्ट है?</p><p class="ans"><b>संक्षिप्त जवाब</b>अलग से नहीं। Google कहता है कि AI Overviews और AI Mode में दिखने वाली साइटें Search Console के कुल सर्च ट्रैफ़िक में, Performance रिपोर्ट के Web सर्च टाइप में शामिल होती हैं। इसलिए इसे तुलना से पढ़ें: सवाल जैसी और लंबी क्वेरी बनाम छोटी क्वेरी, पहले बनाम बाद, इम्प्रेशन बनाम क्लिक, और वे पेज जिनके इम्प्रेशन बढ़ते हैं। इसे GA4 लैंडिंग पेजों और इस मैनुअल जाँच के साथ जोड़ें कि कौन-सी प्राथमिक क्वेरी पर AI Overview दिखता है।</p></div></section>
+      <section class="kt takeaways"><h2>मुख्य बातें</h2><ul><li>Google कहता है कि AI Overviews और AI Mode का ट्रैफ़िक Search Console की Performance रिपोर्ट में Web सर्च टाइप के तहत, बाकी Search के साथ गिना जाता है।</li><li>GA4 का AI Assistant चैनल Google के AI Overviews और AI Mode को शामिल नहीं करता, इसलिए इन्हें देखने की मुख्य जगह Search Console है।</li><li>सपोर्टिंग लिंक बनने के योग्य होने के लिए पेज इंडेक्स होना चाहिए और स्निपेट के साथ दिखने के योग्य होना चाहिए; कोई अतिरिक्त तकनीकी शर्त नहीं है।</li><li>Google कहता है कि AI Overviews और AI Mode संबंधित सर्च का "query fan-out" चला सकते हैं, और यह एक वजह है कि आपकी रिपोर्ट में नई, लंबी क्वेरी दिख सकती हैं।</li><li>रुझान क्वेरी समूह और पेज के हिसाब से पढ़ें, पूरी साइट के कुल से नहीं: AI जवाब इम्प्रेशन बढ़ा सकते हैं जबकि क्लिक अलग तरह से बदलते हैं।</li></ul></section>
+      <div class="prose"><p>कई टीमें "AI Overviews" रिपोर्ट ढूँढने के लिए Search Console खोलती हैं और कुछ नहीं पातीं। इसका मतलब यह नहीं कि डेटा गायब है; इसका मतलब है कि Google ने इसे उसी रिपोर्ट में रखा है जिसे आप पहले से इस्तेमाल करते हैं। एक बार जब आप जान लें कि यह कहाँ है, और यह क्या अलग नहीं कर सकता, तो आप फिर भी अपने बॉस के सवाल का जवाब दे सकते हैं: क्या Google के AI जवाब हमारे ट्रैफ़िक की मदद कर रहे हैं या नुकसान?</p>
+
+<h2 id="s1">Search Console AI Overviews और AI Mode को कहाँ रिपोर्ट करता है?</h2>
+
+<p>AI फ़ीचर्स पर साइट मालिकों के लिए Google का मार्गदर्शन सीधा है: AI Overviews और AI Mode जैसे AI फ़ीचर्स में दिखने वाली साइटें Search Console के कुल सर्च ट्रैफ़िक में शामिल होती हैं, और Performance रिपोर्ट में "Web" सर्च टाइप के तहत रिपोर्ट होती हैं। दूसरे शब्दों में, AI Overview से मिला इम्प्रेशन या क्लिक उस क्वेरी और पेज के आपके दूसरे Google Search इम्प्रेशन और क्लिक के साथ ही गिना जाता है।</p>
+
+<p>इससे Google Analytics 4 में लोगों को दिखने वाला एक अंतर भी समझ आता है। GA4 का AI Assistant चैनल ChatGPT, Gemini, Copilot और दूसरे स्रोतों को कवर करता है, लेकिन Google की परिभाषा AI Overviews और AI Mode को साफ़ तौर पर बाहर रखती है। उनसे आने वाली विज़िट Google ऑर्गेनिक सर्च ट्रैफ़िक के रूप में आती हैं। अगर आप Google के AI जवाबों को समझना चाहते हैं, तो Search Console आपका मुख्य उपकरण है।</p>
+
+<h2 id="s2">कौन-से पेज AI जवाबों में दिखने के योग्य हैं?</h2>
+
+<p>योग्यता का नियम वही है जो स्निपेट वाले सामान्य नतीजों का है। Google कहता है कि AI Overviews या AI Mode में सपोर्टिंग लिंक के रूप में दिखने के लिए पेज इंडेक्स होना चाहिए और Google Search में स्निपेट के साथ दिखने के योग्य होना चाहिए, और कोई अतिरिक्त तकनीकी शर्त नहीं है। इससे दो व्यावहारिक जाँचें निकलती हैं:</p>
+
+<ul>
+<li>पक्का करें कि प्राथमिक पेज इंडेक्स हैं: Search Console में Pages रिपोर्ट और URL Inspection इस्तेमाल करें।</li>
+<li>पक्का करें कि आपने गलती से स्निपेट सीमित नहीं किए हैं। Google nosnippet, data-nosnippet, max-snippet और noindex को उन नियंत्रणों के रूप में गिनाता है जो दिखाई जाने वाली चीज़ को सीमित करते हैं। कोई थीम या प्लगइन जो पूरी साइट पर <code>nosnippet</code> जोड़ता है, वह भी आपको AI जवाबों से बाहर रखेगा।</li>
+</ul>
+
+<h2 id="s3">मिले-जुले डेटा से AI जवाबों का असर कैसे पढ़ें?</h2>
+
+<p>क्योंकि AI ट्रैफ़िक अलग से नहीं दिखाया जाता, आप इसे समूहों की तुलना करके पढ़ते हैं। ज़्यादातर काम चार तुलनाएँ कर देती हैं।</p>
+
+<div class="tw"><table>
+<thead><tr><th>तुलना</th><th>इसे कैसे सेट करें</th><th>यह क्या बता सकती है</th></tr></thead>
+<tbody>
+<tr><td>सवाल जैसी बनाम छोटी क्वेरी</td><td>Query डाइमेंशन को <code>^(what|how|which|why|best|can|does)\b</code> जैसे कस्टम regex से फ़िल्टर करें</td><td>क्या बातचीत वाली क्वेरी, जहाँ AI जवाब अक्सर दिखते हैं, इम्प्रेशन और क्लिक में बढ़ रही हैं</td></tr>
+<tr><td>पहले बनाम बाद</td><td>किसी ज्ञात बदलाव, जैसे कंटेंट रिलीज़, के आसपास की तारीख सीमाओं की तुलना करें</td><td>क्या कोई बदलाव इम्प्रेशन या CTR में बदलाव के साथ मेल खाता है</td></tr>
+<tr><td>इम्प्रेशन बनाम क्लिक</td><td>एक ही क्वेरी समूह पर दोनों मेट्रिक्स दिखाएँ</td><td>बढ़ते इम्प्रेशन और स्थिर क्लिक का मतलब हो सकता है कि आप दिख रहे हैं लेकिन जवाब वहीं मिल जा रहा है</td></tr>
+<tr><td>पेज समूह</td><td>पेजों को फ़ोल्डर के हिसाब से फ़िल्टर करें, जैसे /products/ या /blog/</td><td>कौन-से कंटेंट प्रकार विज़िबिलिटी पा रहे हैं</td></tr>
+</tbody>
+</table></div>
+
+<p>Google यह भी कहता है कि AI Overviews और AI Mode जवाब तैयार करने के लिए "query fan-out" तकनीक इस्तेमाल कर सकते हैं, जिसमें कई संबंधित सर्च की जाती हैं। अपनी Queries टेबल में ऐसी नई, लंबी और ज़्यादा खास क्वेरी पर नज़र रखें जिन्हें आपने कभी टार्गेट नहीं किया; वे इस बात का उपयोगी सुराग हैं कि आपके पेज किन उप-सवालों के जवाब देने में इस्तेमाल हो रहे हैं।</p>
+
+<h2 id="s4">Search Console को GA4 के साथ कैसे जोड़ें?</h2>
+
+<p>Search Console क्लिक पर रुक जाता है। यह जानने के लिए कि वह क्लिक किसी काम का था या नहीं, Google विज़िबिलिटी पाने वाले पेजों को GA4 की लैंडिंग पेज रिपोर्ट से मिलाएँ, जिसे Organic Search पर फ़िल्टर किया गया हो, और एंगेजमेंट व मुख्य इवेंट देखें। Google का अपना मार्गदर्शन Google Analytics जैसे टूल्स में कन्वर्ज़न और साइट पर बिताया समय ट्रैक करने का सुझाव देता है, और कहता है कि AI Overviews वाले सर्च नतीजों के पेजों से आने वाले क्लिक बेहतर गुणवत्ता के होते हैं, यानी यूज़र्स के साइट पर ज़्यादा समय बिताने की संभावना ज़्यादा होती है। इसे Google का दावा मानें जिसे अपने डेटा में जाँचना है, पक्की बात नहीं।</p>
+
+<h2 id="s5">हर महीने क्या ट्रैक करना चाहिए?</h2>
+
+<ol>
+<li><strong>20 से 50 प्राथमिक क्वेरी की एक तय सूची।</strong> इन्हें हाथ से सर्च करें और दर्ज करें कि AI Overview दिखता है या नहीं और आपका हवाला दिया गया है या नहीं।</li>
+<li><strong>सवाल जैसी क्वेरी समूह के इम्प्रेशन और क्लिक</strong>, पिछले महीने से और, जहाँ उपलब्ध हो, पिछले साल के उसी महीने से तुलना करके।</li>
+<li><strong>सबसे ज़्यादा इम्प्रेशन बढ़त वाले दस पेज</strong>, उनके GA4 एंगेजमेंट के साथ।</li>
+<li>आपके प्रोडक्ट, क्षमता और FAQ पेजों का <strong>इंडेक्सिंग और स्निपेट स्टेटस</strong>।</li>
+<li><strong>ब्रांडेड सर्च इम्प्रेशन</strong>, एक अप्रत्यक्ष संकेत कि दूसरी जगहों के AI जवाब लोगों को आपको सर्च करने भेज रहे हैं।</li>
+</ol>
+
+<p>इनमें से कुछ भी आपको एक "AI ट्रैफ़िक" संख्या नहीं देता, और किसी भी ऐसे टूल से सावधान रहना चाहिए जो Google के मिले-जुले डेटा से इसे पूरी तरह अलग करने का दावा करे। यह आपको एक सुसंगत तरीका देता है यह देखने का कि आपका कंटेंट Google के AI जवाबों में इस्तेमाल हो रहा है या नहीं, और क्या वह काम की विज़िट में बदल रहा है।</p></div>
+      <aside class="insight" aria-label="इनसाइट"><div class="eyebrow">इनसाइट</div><blockquote>जब डेटा मिला-जुला हो, तो एक संख्या ढूँढने के बजाय समूहों की तुलना करें।</blockquote><p>रिसर्च डिज़ाइन में इसे डिफ़रेंस-इन-डिफ़रेंसेज़ दृष्टिकोण कहते हैं: आप ट्रीटमेंट को सीधे अलग नहीं कर सकते, इसलिए ऐसे समूहों और अवधियों की तुलना करते हैं जिनकी प्रतिक्रिया अलग होनी चाहिए। सवाल जैसी क्वेरी बनाम छोटी क्वेरी, पहले बनाम बाद, यह AI Overviews के लिए इसका व्यावहारिक रूप है।</p></aside>
+      <section class="prop" aria-label="ToucHigh कैसे मदद करता है">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh कैसे मदद करता है</h2></div>
+        <div class="pb prose"><p>Search Console Google दिखाता है; ToucHigh का GEO Autopilot AI की व्यापक तस्वीर दिखाता है:</p><ul><li>यह ChatGPT, Perplexity, Google AI Overviews और AI Mode, और Gemini पर आपकी विज़िबिलिटी का ऑडिट करता है;</li><li>यह उन सवालों के लिए सुधार और GEO लेख लिखकर प्रकाशित करता है जिनमें आप गायब हैं;</li><li>यह आपके सर्च डेटा के साथ आपका AI-साइटेशन शेयर ट्रैक करता है, ताकि आप बढ़त दिखा सकें।</li></ul><p>30 मिनट की रणनीति कॉल बुक करें और हम Search Console के आँकड़ों की तुलना आपकी साइट की लाइव AI-विज़िबिलिटी जाँच से करेंगे।</p><p class="uc">फ़ैक्टरियाँ और B2B सप्लायर: देखें ToucHigh <a href="/hi/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T65'})}catch(e){}">AI सर्च में सप्लायर विज़िबिलिटी</a> कैसे संभालता है। विज़िबिलिटी को पाइपलाइन में बदलना चाहते हैं? <a href="/hi/pro/" onclick="try{gtag('event','pro_click',{location:'article_T65'})}catch(e){}">ToucHigh PRO</a> देखें, रणनीति-पहले आउटरीच।</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T65')">30 मिनट का रणनीति सत्र बुक करें →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T65'})}catch(e){}">ToucHigh में लॉग इन करें</a></div>
+      </section>
+      <section class="faq" aria-label="अक्सर पूछे जाने वाले प्रश्न"><h2>अक्सर पूछे जाने वाले प्रश्न</h2><details open><summary>क्या Search Console में AI Overviews के लिए कोई फ़िल्टर है?</summary><p>Google का मार्गदर्शन किसी अलग रिपोर्ट की ओर इशारा करने के बजाय कहता है कि AI Overviews और AI Mode, Performance रिपोर्ट के कुल Web सर्च डेटा में शामिल हैं। उनका असर क्वेरी समूहों, पेजों और अवधियों की तुलना से पढ़ें।</p></details><details><summary>हमारे इम्प्रेशन क्यों बढ़ते हैं जबकि क्लिक स्थिर रहते हैं?</summary><p>एक आम वजह यह है कि आपका पेज दिखाया जाता है, जिसमें AI जवाब में सपोर्टिंग लिंक के रूप में दिखना भी शामिल है, जबकि सर्च करने वाले को जवाब से ही काफ़ी जानकारी मिल जाती है। इसे समस्या मानने से पहले जाँचें कि कौन-सी क्वेरी और पेज यह बदलाव ला रहे हैं।</p></details><details><summary>क्या Google-Extended ब्लॉक करने से हमारे पेज AI Overviews से बाहर रहते हैं?</summary><p>नहीं। Google कहता है कि Google-Extended का Google Search में शामिल होने पर कोई असर नहीं है। AI फ़ीचर्स में दिखने वाली चीज़ सीमित करने के लिए Google nosnippet, data-nosnippet, max-snippet या noindex की ओर इशारा करता है।</p></details><details><summary>क्या AI Overviews में दिखने के लिए खास मार्कअप चाहिए?</summary><p>Google कहता है कि कोई अतिरिक्त शर्त नहीं है और किसी खास schema की ज़रूरत नहीं है। पेज इंडेक्स होने चाहिए और स्निपेट के योग्य होने चाहिए, और SEO के सामान्य सर्वोत्तम तरीके लागू होते हैं।</p></details></section>
+      <section class="srcs"><h2>स्रोत</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://support.google.com/webmasters/answer/7576553" rel="noopener" target="_blank">Performance report (Search results): Overview and basic setup</a> — Search Console Help</li><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li></ol></section>
+      <p class="note"><b>हमने यह क्यों लिखा</b>हमने यह इसलिए लिखा क्योंकि एक्सपोर्टर बार-बार पूछते हैं कि उनका AI Overview डेटा कहाँ है। ईमानदार जवाब यह है कि वह पहले से Search Console में है, मिला हुआ, और उसे पढ़ने का एक अनुशासित तरीका है।</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="इस पेज पर"><h4>इस पेज पर</h4><a href="#s1">Search Console AI Overviews और AI Mode को कहाँ रिपोर्ट करता है?</a><a href="#s2">कौन-से पेज AI जवाबों में दिखने के योग्य हैं?</a><a href="#s3">मिले-जुले डेटा से AI जवाबों का असर कैसे पढ़ें?</a><a href="#s4">Search Console को GA4 के साथ कैसे जोड़ें?</a><a href="#s5">हर महीने क्या ट्रैक करना चाहिए?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>देखें कि अमेरिकी AI सर्च में आप कहाँ अदृश्य हैं</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">कॉल बुक करें</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">लॉग इन</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>संबंधित लेख</h2>
+  <div class="grid"><a class="card" href="/blog/hi/ga4-ai-assistant-channel/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="बैंगनी रोशनी वाली चैट-बबल सुरंग से पार्सल एक कन्वेयर पर फिसलकर एक सादे भूरे डिब्बे में गिर रहे हैं, उनके नारंगी ट्रैकिंग टैग फ़र्श पर बिखरे हैं, जबकि एक मैग्निफ़ाइंग ग्लास, रिंग चार्ट, बार चार्ट और शॉपिंग बैग मिलान के लिए पास खड़े हैं।" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="hi"><div class="eyebrow">मापन</div><h3>GA4 का AI Assistant चैनल: क्या गिनता है, क्या छूटता है, और अपना चैनल कब बनाएँ</h3><p>Google Analytics अब ChatGPT, Gemini, Copilot और दूसरों से आने वाली विज़िट को उनके अपने चैनल में रखता है। इससे AI-ट्रैफ़िक की समस्या का एक हिस्सा हल होता है। यहाँ वह हिस्सा है जो हल नहीं होता, और एक कस्टम चैनल ग्रुप जो यह कमी पूरी करता है।</p><div class="meta"><span class="lg">हिन्दी</span><span></span></div></div></a><a class="card" href="/blog/en/ai-overviews-branded-queries-seo-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="A search bar pours orange marbles into a violet-glowing AI answer funnel that lets only a few reach a small website storefront, while a tall wobbling stack of blank pages beside it yields just one marble." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">SEO</div><h3>Store SEO Traffic Dropping? AI Overviews Now Cover 80% of Branded Searches</h3><p>AI Overviews are taking over branded searches, and more blog posts and backlinks pay back less every month. What should independent store owners stop doing, and what should they start?</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/seo-best-practices-ai-overviews-ai-mode/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t30-768.webp"><img src="/assets/blog/hero/t30.jpg" alt="A gloved hand prunes thin grey page-leaves from a potted plant while a few large orange page cards bloom, one of them linked by a violet line to a floating AI answer panel." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO Best Practices for AI Overviews and AI Mode (October 2026)</h3><p>Google&#x27;s AI now answers most branded searches and carries more inline links. Here&#x27;s where SEO effort still pays, where returns have flattened, and a one-week checklist.</p><div class="meta"><span class="lg">English</span><span>7 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/hi/">← ब्लॉग पर वापस</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>देखें कि अमेरिकी AI सर्च में आप कहाँ अदृश्य हैं</h2>
+  <p>30 मिनट की मुफ़्त कॉल बुक करें और हम आपके स्टोर की AI विज़िबिलिटी का लाइव ऑडिट करेंगे।</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30 मिनट का रणनीति सत्र बुक करें →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHigh में लॉग इन करें</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">SME और क्रॉस-बॉर्डर विक्रेताओं के लिए AI सर्च विज़िबिलिटी, सोशल मीडिया और विज्ञापन ऑटोपायलट पर।</p></div>
+      <div><h4>ToucHigh</h4><a href="/hi/">होम</a><a href="/hi/#geo">GEO Autopilot</a><a href="/hi/#social">Social Autopilot</a><a href="/hi/pro/">ToucHigh PRO</a></div>
+      <div><h4>ब्लॉग</h4><a href="/blog/hi/">ब्लॉग</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>लॉग इन</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">कॉल बुक करें</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

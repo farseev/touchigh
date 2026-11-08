@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GA4 AI Assistant चैनल ग्रुप: सेटअप और कमियाँ | ToucHigh</title>
+<meta name="description" content="GA4 के डिफ़ॉल्ट चैनल ग्रुप में अब AI Assistant चैनल है। यह क्या गिनता है, AI Overviews और बिना रेफ़रर वाली विज़िट इससे बाहर क्यों हैं, और कस्टम ग्रुप कैसे बनाएँ।">
+<link rel="canonical" href="https://touchigh.ai/blog/hi/ga4-ai-assistant-channel/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="GA4 AI assistant चैनल, GA4 कस्टम चैनल ग्रुप AI, GA4 में ChatGPT ट्रैफ़िक ट्रैक करें, AI रेफ़रल ट्रैफ़िक GA4 regex, AI सहायक चैनल ग्रुप, GEO ट्रैफ़िक मापें">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="hi" href="https://touchigh.ai/blog/hi/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ar" href="https://touchigh.ai/blog/ar/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/hi/ga4-ai-assistant-channel/">
+<meta property="og:title" content="GA4 का AI Assistant चैनल: क्या गिनता है, क्या छूटता है, और अपना चैनल कब बनाएँ">
+<meta property="og:description" content="GA4 के डिफ़ॉल्ट चैनल ग्रुप में अब AI Assistant चैनल है। यह क्या गिनता है, AI Overviews और बिना रेफ़रर वाली विज़िट इससे बाहर क्यों हैं, और कस्टम ग्रुप कैसे बनाएँ।">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t64-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GA4 का AI Assistant चैनल: क्या गिनता है, क्या छूटता है, और अपना चैनल कब बनाएँ">
+<meta property="og:locale" content="hi_IN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:section" content="मापन">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="AI ट्रैफ़िक">
+<meta property="article:tag" content="चैनल ग्रुप">
+<meta property="article:tag" content="एट्रिब्यूशन">
+<meta property="article:tag" content="GEO माप">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GA4 का AI Assistant चैनल: क्या गिनता है, क्या छूटता है, और अपना चैनल कब बनाएँ">
+<meta name="twitter:description" content="GA4 के डिफ़ॉल्ट चैनल ग्रुप में अब AI Assistant चैनल है। यह क्या गिनता है, AI Overviews और बिना रेफ़रर वाली विज़िट इससे बाहर क्यों हैं, और कस्टम ग्रुप कैसे बनाएँ।">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t64-en.jpg">
+<meta name="twitter:image:alt" content="GA4 का AI Assistant चैनल: क्या गिनता है, क्या छूटता है, और अपना चैनल कब बनाएँ">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Devanagari:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/hi/ga4-ai-assistant-channel/#article","url":"https://touchigh.ai/blog/hi/ga4-ai-assistant-channel/","mainEntityOfPage":"https://touchigh.ai/blog/hi/ga4-ai-assistant-channel/","headline":"GA4 का AI Assistant चैनल: क्या गिनता है, क्या छूटता है, और अपना चैनल कब बनाएँ","alternativeHeadline":"GA4 AI Assistant चैनल ग्रुप: सेटअप और कमियाँ","description":"GA4 के डिफ़ॉल्ट चैनल ग्रुप में अब AI Assistant चैनल है। यह क्या गिनता है, AI Overviews और बिना रेफ़रर वाली विज़िट इससे बाहर क्यों हैं, और कस्टम ग्रुप कैसे बनाएँ।","abstract":"इसका इस्तेमाल करें, लेकिन इसे पूरी कहानी न मानें। Google के दस्तावेज़ कहते हैं कि AI Assistant चैनल ChatGPT, Gemini, Deepseek, Copilot या Grok जैसे स्रोतों से आने वाली विज़िट को कवर करता है, और Google के AI Overviews और AI Mode को बाहर रखता है। यह बिना रेफ़रर वाली विज़िट भी नहीं देख सकता, जो Direct में जाती हैं। जाँचें कि आपकी प्रॉपर्टी में असल में कौन-से सहायक दिखते हैं, अगर कुछ Referral में जा रहे हैं तो कस्टम चैनल ग्रुप बनाएँ, और GA4 को Search Console और साइटेशन ट्रैकिंग के साथ जोड़ें।","image":["https://touchigh.ai/assets/blog/og/t64-en.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-11-08T10:00:00+08:00","dateModified":"2026-11-08T10:00:00+08:00","inLanguage":"hi","author":{"@type":"Organization","name":"ToucHigh रिसर्च टीम","url":"https://touchigh.ai/blog/hi/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"मापन","keywords":"GA4 AI assistant चैनल, GA4 कस्टम चैनल ग्रुप AI, GA4 में ChatGPT ट्रैफ़िक ट्रैक करें, AI रेफ़रल ट्रैफ़िक GA4 regex, AI सहायक चैनल ग्रुप, GEO ट्रैफ़िक मापें","wordCount":1458,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/hi/#blog","name":"ToucHigh ब्लॉग"},"about":[{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"AI ट्रैफ़िक"},{"@type":"Thing","name":"चैनल ग्रुप"},{"@type":"Thing","name":"एट्रिब्यूशन"},{"@type":"Thing","name":"GEO माप"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"About regular expressions (regex)","url":"https://support.google.com/analytics/answer/1034324","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ga4-ai-assistant-channel/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"hi","mainEntity":[{"@type":"Question","name":"क्या AI Assistant चैनल में Google AI Overviews शामिल हैं?","acceptedAnswer":{"@type":"Answer","text":"नहीं। Google की परिभाषा AI Overviews और AI Mode को AI Assistant चैनल से बाहर रखती है। Google इन्हें Search Console की Performance रिपोर्ट में Web सर्च टाइप के तहत, बाकी Search के साथ रिपोर्ट करता है।"}},{"@type":"Question","name":"ChatGPT ट्रैफ़िक अब भी Direct में क्यों दिखता है?","acceptedAnswer":{"@type":"Answer","text":"जब कोई विज़िट बिना रेफ़रर या ट्रैकिंग पैरामीटर के आती है, तो GA4 के पास उसे वर्गीकृत करने का कोई आधार नहीं होता और वह उसे Direct के रूप में दर्ज करता है। इस हिस्से का अनुमान लगाने के लिए गहरे पेजों पर आने वाले डायरेक्ट ट्रैफ़िक पर नज़र रखें और खरीदारों से पूछें कि उन्होंने आपको कैसे ढूँढा।"}},{"@type":"Question","name":"क्या कस्टम चैनल ग्रुप हमारा पुराना डेटा बदल देगा?","acceptedAnswer":{"@type":"Answer","text":"कस्टम चैनल ग्रुप रिपोर्ट पर पिछली तारीख से लागू होते हैं, इसलिए आप पुराना डेटा नए ग्रुप के ज़रिए देख सकते हैं। प्रॉपर्टी का प्राइमरी चैनल ग्रुप बदलने का असर सिर्फ़ उसके बाद की रिपोर्टिंग पर होता है।"}},{"@type":"Question","name":"हम कितने कस्टम चैनल ग्रुप बना सकते हैं?","acceptedAnswer":{"@type":"Answer","text":"Google के अनुसार पहले से तय ग्रुप के अलावा स्टैंडर्ड प्रॉपर्टी के लिए दो और Analytics 360 प्रॉपर्टी के लिए पाँच कस्टम ग्रुप, हर एक में 50 तक चैनल।"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/hi/"},{"@type":"ListItem","position":2,"name":"ब्लॉग","item":"https://touchigh.ai/blog/hi/"},{"@type":"ListItem","position":3,"name":"GA4 का AI Assistant चैनल: क्या गिनता है, क्या छूटता है, और अपना चैनल कब बनाएँ","item":"https://touchigh.ai/blog/hi/ga4-ai-assistant-channel/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">इस पेज पर</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/hi/">होम</a>
+      <a href="/hi/#products">प्रोडक्ट</a>
+      <a href="/hi/#faq">अक्सर पूछे जाने वाले प्रश्न</a>
+      <a href="/hi/pro/">ToucHigh PRO</a>
+      <a href="/blog/hi/" class="on">ब्लॉग</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="भाषा: हिन्दी"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">हिन्दी</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="भाषा" hidden><li><a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/ga4-ai-assistant-channel/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/vi/ga4-ai-assistant-channel/" hreflang="vi" lang="vi" data-short="VI">Tiếng Việt</a></li><li><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/ga4-ai-assistant-channel/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/hi/ga4-ai-assistant-channel/" hreflang="hi" lang="hi" data-short="हिन्दी" aria-current="page">हिन्दी</a></li><li><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ar/ga4-ai-assistant-channel/" hreflang="ar" lang="ar" data-short="عربي" dir="rtl">العربية</a></li><li><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">लॉग इन</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">कॉल बुक करें</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/hi/">होम</a><span>/</span><a href="/blog/hi/">ब्लॉग</a><span>/</span><span>मापन</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">मापन</div>
+    <h1>GA4 का AI Assistant चैनल: क्या गिनता है, क्या छूटता है, और अपना चैनल कब बनाएँ</h1>
+    <p class="dek">Google Analytics अब ChatGPT, Gemini, Copilot और दूसरों से आने वाली विज़िट को उनके अपने चैनल में रखता है। इससे AI-ट्रैफ़िक की समस्या का एक हिस्सा हल होता है। यहाँ वह हिस्सा है जो हल नहीं होता, और एक कस्टम चैनल ग्रुप जो यह कमी पूरी करता है।</p>
+    <div class="a-meta"><b>ToucHigh रिसर्च टीम</b><span><time datetime="2026-11-08T10:00:00+08:00">8/11/2026</time> को प्रकाशित</span><span>6 मिनट पढ़ें</span><span class="lang-badge">हिन्दी</span></div>
+    <div class="a-langs">इसमें भी उपलब्ध<a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/ga4-ai-assistant-channel/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/vi/ga4-ai-assistant-channel/" hreflang="vi" lang="vi" onclick="try{localStorage.setItem('tl','vi')}catch(e){}">Tiếng Việt</a><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/ga4-ai-assistant-channel/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ar/ga4-ai-assistant-channel/" hreflang="ar" lang="ar" dir="rtl" onclick="try{localStorage.setItem('tl','ar')}catch(e){}">العربية</a><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="बैंगनी रोशनी वाली चैट-बबल सुरंग से पार्सल एक कन्वेयर पर फिसलकर एक सादे भूरे डिब्बे में गिर रहे हैं, उनके नारंगी ट्रैकिंग टैग फ़र्श पर बिखरे हैं, जबकि एक मैग्निफ़ाइंग ग्लास, रिंग चार्ट, बार चार्ट और शॉपिंग बैग मिलान के लिए पास खड़े हैं।" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="इस लेख के पीछे का प्रश्न"><span class="qm">“</span><div><div class="eyebrow">इस लेख के पीछे का प्रश्न</div><p class="q">GA4 अब हमारी रिपोर्ट में &quot;AI Assistant&quot; चैनल दिखाता है। क्या हमारे GEO काम से आने वाले ट्रैफ़िक को मापने के लिए हम इस पर भरोसा कर सकते हैं, या हमें अब भी अपना सेटअप चाहिए?</p><p class="ans"><b>संक्षिप्त जवाब</b>इसका इस्तेमाल करें, लेकिन इसे पूरी कहानी न मानें। Google के दस्तावेज़ कहते हैं कि AI Assistant चैनल ChatGPT, Gemini, Deepseek, Copilot या Grok जैसे स्रोतों से आने वाली विज़िट को कवर करता है, और Google के AI Overviews और AI Mode को बाहर रखता है। यह बिना रेफ़रर वाली विज़िट भी नहीं देख सकता, जो Direct में जाती हैं। जाँचें कि आपकी प्रॉपर्टी में असल में कौन-से सहायक दिखते हैं, अगर कुछ Referral में जा रहे हैं तो कस्टम चैनल ग्रुप बनाएँ, और GA4 को Search Console और साइटेशन ट्रैकिंग के साथ जोड़ें।</p></div></section>
+      <section class="kt takeaways"><h2>मुख्य बातें</h2><ul><li>GA4 के डिफ़ॉल्ट चैनल ग्रुप में अब AI Assistant है: ChatGPT, Gemini, Deepseek, Copilot या Grok जैसे स्रोतों से आने वाली विज़िट, जिनका medium "ai-assistant" सेट होता है जब रेफ़रर Google की सूची से मेल खाता है।</li><li>यह चैनल Google के AI Overviews और AI Mode को बाहर रखता है; Google इन्हें Search Console के कुल Web सर्च डेटा में गिनता है।</li><li>जो विज़िट बिना रेफ़रर या टैग के आप तक पहुँचती हैं, वे Direct के रूप में दर्ज होती हैं, इसलिए कोई चैनल नियम उन्हें वापस नहीं ला सकता।</li><li>डिफ़ॉल्ट चैनल ग्रुप एडिट नहीं किए जा सकते, लेकिन कस्टम चैनल ग्रुप किए जा सकते हैं, और वे पिछली तारीख से लागू होते हैं। स्टैंडर्ड प्रॉपर्टी को दो कस्टम ग्रुप मिलते हैं, हर एक में 50 तक चैनल।</li><li>AI सहायकों के लिए Google का उदाहरण regex व्यापक है; डोमेन की स्पष्ट सूची असंबंधित स्रोतों को पकड़ने से बचाती है।</li></ul></section>
+      <div class="prose"><p>दो साल तक Google Analytics 4 में AI ट्रैफ़िक मापने की मानक सलाह एक ही थी: अपना चैनल ग्रुप बनाइए, क्योंकि ChatGPT और Perplexity की विज़िट Referral में दबी रहती थीं। तब से Google ने GA4 के डिफ़ॉल्ट चैनल ग्रुप में एक <strong>AI Assistant</strong> चैनल जोड़ दिया है। यह अच्छी खबर है, लेकिन इससे सवाल खत्म नहीं होता, बदल जाता है। अब आपको जानना है कि नया चैनल क्या गिनता है, क्या छोड़ देता है और कब आपका अपना ग्रुप अब भी मेहनत के लायक है।</p>
+
+<h2 id="s1">GA4 का AI Assistant चैनल क्या गिनता है?</h2>
+
+<p>Google के Default channel group दस्तावेज़ में AI Assistant को वह चैनल बताया गया है जिससे यूज़र ChatGPT, Gemini, Deepseek, Copilot या Grok जैसे स्रोतों से आते हैं। इसके पीछे का नियम: जब रेफ़रर Google की रखी AI सहायकों की सूची से मेल खाता है, तो medium "ai-assistant" और campaign "(ai-assistant)" सेट होता है। उस medium वाले सेशन आपकी Traffic acquisition रिपोर्ट की AI Assistant पंक्ति में आते हैं।</p>
+
+<p>इससे दो बातें निकलती हैं। पहली, यह Google की सूची है, आपकी नहीं: दस्तावेज़ उदाहरणों के नाम देता है, हर सहायक के नहीं। दूसरी, GA4 में डिफ़ॉल्ट चैनल ग्रुप एडिट नहीं किए जा सकते, इसलिए अगर आपके खरीदारों का इस्तेमाल किया कोई सहायक पहचाना नहीं जाता, तो आप उसे डिफ़ॉल्ट चैनल में नहीं जोड़ सकते। आपको कस्टम चैनल ग्रुप चाहिए।</p>
+
+<h2 id="s2">AI Assistant चैनल क्या छोड़ देता है?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>ट्रैफ़िक</th><th>GA4 में यह कहाँ आता है</th><th>इसके बजाय इसे कैसे देखें</th></tr></thead>
+<tbody>
+<tr><td>Google AI Overviews और AI Mode</td><td>Google की परिभाषा के अनुसार AI Assistant से बाहर</td><td>Search Console: Google के अनुसार ये Performance रिपोर्ट में Web सर्च टाइप के तहत दिखते हैं</td></tr>
+<tr><td>बिना रेफ़रर और बिना टैग वाली सहायक विज़िट</td><td>Direct</td><td>गहरे पेजों पर Direct ट्रैफ़िक, ब्रांडेड सर्च, खरीद के बाद सर्वे</td></tr>
+<tr><td>Google की सूची में न होने वाले सहायक</td><td>आमतौर पर Referral</td><td>आपके अपने regex वाला कस्टम चैनल ग्रुप</td></tr>
+<tr><td>वे लोग जिन्होंने जवाब में आपका नाम देखा और बाद में लौटे</td><td>Direct, Organic Search या जहाँ से भी वे लौटें</td><td>साइटेशन ट्रैकिंग और ब्रांडेड-सर्च रुझान</td></tr>
+</tbody>
+</table></div>
+
+<p>दूसरी पंक्ति सबसे अहम है। एनालिटिक्स टूल ट्रैकिंग पैरामीटर और रेफ़र करने वाले URL को देखकर तय करते हैं कि विज़िट कहाँ से आई। जब कोई AI ऐप दोनों में से कुछ भी भेजे बिना लिंक खोलता है, तो विज़िट Direct के रूप में दर्ज होती है। <a href="/blog/en/chatgpt-utm-ai-referral-measurement/">ChatGPT लिंक से UTM टैग गायब होने</a> पर हमारा पिछला लेख बताता है कि व्यवहार में यह कैसा दिखता है। कोई भी चैनल नियम वह जानकारी वापस नहीं ला सकता जो GA4 तक कभी पहुँची ही नहीं।</p>
+
+<h2 id="s3">कैसे जाँचें कि आपकी प्रॉपर्टी असल में क्या दर्ज करती है?</h2>
+
+<ol>
+<li><strong>Reports, फिर Acquisition, फिर Traffic acquisition खोलें</strong> और प्राइमरी डाइमेंशन को Session default channel group पर सेट करें। AI Assistant पंक्ति और उसका रुझान देखें।</li>
+<li><strong>डाइमेंशन को Session source / medium पर बदलें</strong> और "ai-assistant" के लिए फ़िल्टर करें, यह देखने के लिए कि Google किन सहायकों को वर्गीकृत कर रहा है।</li>
+<li>perplexity.ai या claude.ai जैसे <strong>जाने-पहचाने AI डोमेन के लिए Referral फ़िल्टर करें</strong>। Referral में अब भी पड़ा AI से जुड़ा कुछ भी आपकी कमी है।</li>
+<li><strong>लैंडिंग पेजों की तुलना करें।</strong> AI विज़िट होमपेज के बजाय गहरे पेजों, जैसे प्रोडक्ट, क्षमता और ब्लॉग पेजों, पर उतरती हैं।</li>
+</ol>
+
+<h2 id="s4">कस्टम AI चैनल ग्रुप कब बनाना चाहिए?</h2>
+
+<p>अगर आपके खरीदारों के इस्तेमाल किए सहायक Referral में जाते हैं, अगर आप हर सहायक को अलग पंक्ति में चाहते हैं, या अगर आप ऐसी एक परिभाषा चाहते हैं जो Google के सूची अपडेट करने पर भी स्थिर रहे, तो एक बनाएँ। Google का कस्टम चैनल ग्रुप दस्तावेज़ तरीका बताता है: Admin में, Data display के तहत, Channel groups खोलें (आपको Editor या उससे ऊपर का एक्सेस चाहिए), एक ग्रुप बनाएँ, एक चैनल जोड़ें और उसकी शर्त सेट करें। कस्टम ग्रुप आपकी रिपोर्ट पर पिछली तारीख से लागू होते हैं। स्टैंडर्ड प्रॉपर्टी में पहले से तय ग्रुप के अलावा दो कस्टम ग्रुप हो सकते हैं, हर एक में 50 तक चैनल।</p>
+
+<p>Google एक "AI assistants" उदाहरण भी प्रकाशित करता है: "matches regex" शर्त वाला एक चैनल, जिसे Referral के ऊपर रखा जाता है ताकि AI स्रोत पहले पकड़े जाएँ। इसका सैंपल regex जानबूझकर व्यापक है। यह <code>^.*ai</code> से शुरू होता है, जो "ai" अक्षरों वाले किसी भी स्रोत से मेल खाता है, जैसे किसी ईमेल प्रोवाइडर का डोमेन। एक सख़्त पैटर्न उन डोमेन की सूची देता है जो आपको असल में दिखते हैं, उदाहरण के लिए:</p>
+
+<p><code>.*(chatgpt\.com|openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com).*</code></p>
+
+<p>इसे Source पर लागू करें, चैनल को Referral के ऊपर रखें और, अगर विस्तार चाहिए, तो एक ग्रुप के बजाय हर सहायक के लिए एक चैनल जोड़ें। जब कोई नया सहायक ट्रैफ़िक भेजना शुरू करे तो सूची अपडेट करें; Google का अपना नोट कहता है कि सहायकों की सूची बदलने पर regex अपडेट करें।</p>
+
+<h2 id="s5">क्या कस्टम ग्रुप को अपना प्राइमरी चैनल ग्रुप बनाना चाहिए?</h2>
+
+<p>GA4 आपको किसी भी कस्टम चैनल ग्रुप को प्रॉपर्टी का प्राइमरी चैनल ग्रुप चुनने देता है, जो उसके बाद से प्राइमरी चैनल ग्रुप डाइमेंशन भरता है। आपकी परिभाषा स्थिर होने पर यह उपयोगी है, लेकिन यह उस तरह पिछली तारीख से लागू नहीं होता जैसे कस्टम ग्रुप खुद होता है। ज़्यादातर छोटी टीमें डिफ़ॉल्ट को प्राइमरी रहने दे सकती हैं और कस्टम ग्रुप को दूसरे व्यू के रूप में जोड़ सकती हैं।</p>
+
+<h2 id="s6">AI-चैनल माप में GA4 की क्या भूमिका होनी चाहिए?</h2>
+
+<p>GA4 को तीन लेंसों में से एक मानें। GA4 आपको उन क्लिक के बारे में बताता है जिन्हें आप एट्रिब्यूट कर सकते हैं। Search Console आपको Google Search के बारे में बताता है, AI Overviews और AI Mode सहित। हर महीने की साइटेशन जाँच बताती है कि सहायक आपका ज़िक्र करते भी हैं या नहीं। जब तीनों साथ बढ़ते हैं, तो आप दिखा सकते हैं कि GEO काम कर रहा है; जब सिर्फ़ एक बदलता है, तो आपको पता होता है कि कहाँ देखना है।</p></div>
+      <aside class="insight" aria-label="इनसाइट"><div class="eyebrow">इनसाइट</div><blockquote>चैनल रिपोर्ट वे क्लिक दिखाती है जिन्हें वह लेबल कर सकती है, वह असर नहीं जिसे वह देख नहीं सकती।</blockquote><p>Goodhart का नियम चेतावनी देता है कि जो माप लक्ष्य बन जाता है, वह ठीक से मापना बंद कर देता है। अगर कोई टीम सिर्फ़ AI Assistant पंक्ति के पीछे भागती है, तो वह उन AI जवाबों को कम आँकेगी जो खरीदारों को Direct या ब्रांडेड सर्च से भेजते हैं। चैनल को तीन संकेतों में से एक के रूप में रखें।</p></aside>
+      <section class="prop" aria-label="ToucHigh कैसे मदद करता है">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh कैसे मदद करता है</h2></div>
+        <div class="pb prose"><p>GA4 क्लिक दिखाता है; ToucHigh का GEO Autopilot बाकी तस्वीर कवर करता है:</p><ul><li>यह जाँचता है कि ChatGPT, Perplexity, Google AI और Gemini पर आप कहाँ अदृश्य हैं;</li><li>यह खरीदारों के सवालों को ध्यान में रखकर सुधार और GEO लेख लिखकर प्रकाशित करता है;</li><li>यह आपका AI-साइटेशन शेयर लगातार ट्रैक करता है, वह संकेत जिसे ट्रैकिंग पैरामीटर बिगाड़ नहीं सकते।</li></ul><p>30 मिनट की रणनीति कॉल बुक करें और अपनी Traffic acquisition रिपोर्ट का स्क्रीनशॉट साथ लाएँ; हम उसे लाइव AI-विज़िबिलिटी जाँच के साथ मिलकर पढ़ेंगे।</p><p class="uc">फ़ैक्टरियाँ और B2B सप्लायर: देखें ToucHigh <a href="/hi/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T64'})}catch(e){}">AI सर्च में सप्लायर विज़िबिलिटी</a> कैसे संभालता है। विज़िबिलिटी को पाइपलाइन में बदलना चाहते हैं? <a href="/hi/pro/" onclick="try{gtag('event','pro_click',{location:'article_T64'})}catch(e){}">ToucHigh PRO</a> देखें, रणनीति-पहले आउटरीच।</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T64')">30 मिनट का रणनीति सत्र बुक करें →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T64'})}catch(e){}">ToucHigh में लॉग इन करें</a></div>
+      </section>
+      <section class="faq" aria-label="अक्सर पूछे जाने वाले प्रश्न"><h2>अक्सर पूछे जाने वाले प्रश्न</h2><details open><summary>क्या AI Assistant चैनल में Google AI Overviews शामिल हैं?</summary><p>नहीं। Google की परिभाषा AI Overviews और AI Mode को AI Assistant चैनल से बाहर रखती है। Google इन्हें Search Console की Performance रिपोर्ट में Web सर्च टाइप के तहत, बाकी Search के साथ रिपोर्ट करता है।</p></details><details><summary>ChatGPT ट्रैफ़िक अब भी Direct में क्यों दिखता है?</summary><p>जब कोई विज़िट बिना रेफ़रर या ट्रैकिंग पैरामीटर के आती है, तो GA4 के पास उसे वर्गीकृत करने का कोई आधार नहीं होता और वह उसे Direct के रूप में दर्ज करता है। इस हिस्से का अनुमान लगाने के लिए गहरे पेजों पर आने वाले डायरेक्ट ट्रैफ़िक पर नज़र रखें और खरीदारों से पूछें कि उन्होंने आपको कैसे ढूँढा।</p></details><details><summary>क्या कस्टम चैनल ग्रुप हमारा पुराना डेटा बदल देगा?</summary><p>कस्टम चैनल ग्रुप रिपोर्ट पर पिछली तारीख से लागू होते हैं, इसलिए आप पुराना डेटा नए ग्रुप के ज़रिए देख सकते हैं। प्रॉपर्टी का प्राइमरी चैनल ग्रुप बदलने का असर सिर्फ़ उसके बाद की रिपोर्टिंग पर होता है।</p></details><details><summary>हम कितने कस्टम चैनल ग्रुप बना सकते हैं?</summary><p>Google के अनुसार पहले से तय ग्रुप के अलावा स्टैंडर्ड प्रॉपर्टी के लिए दो और Analytics 360 प्रॉपर्टी के लिए पाँच कस्टम ग्रुप, हर एक में 50 तक चैनल।</p></details></section>
+      <section class="srcs"><h2>स्रोत</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/1034324" rel="noopener" target="_blank">About regular expressions (regex)</a> — Google Analytics Help</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>हमने यह क्यों लिखा</b>हमने यह इसलिए लिखा क्योंकि जिन टीमों ने हाथ से AI चैनल ग्रुप बनाए थे, उन्हें अचानक एक नई AI Assistant पंक्ति दिखी और वे तय नहीं कर पाईं कि किस संख्या पर भरोसा करें। जवाब है दोनों, Search Console और साइटेशन ट्रैकिंग के साथ पढ़कर।</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="इस पेज पर"><h4>इस पेज पर</h4><a href="#s1">GA4 का AI Assistant चैनल क्या गिनता है?</a><a href="#s2">AI Assistant चैनल क्या छोड़ देता है?</a><a href="#s3">कैसे जाँचें कि आपकी प्रॉपर्टी असल में क्या दर्ज करती है?</a><a href="#s4">कस्टम AI चैनल ग्रुप कब बनाना चाहिए?</a><a href="#s5">क्या कस्टम ग्रुप को अपना प्राइमरी चैनल ग्रुप बनाना चाहिए?</a><a href="#s6">AI-चैनल माप में GA4 की क्या भूमिका होनी चाहिए?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>देखें कि अमेरिकी AI सर्च में आप कहाँ अदृश्य हैं</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">कॉल बुक करें</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">लॉग इन</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>संबंधित लेख</h2>
+  <div class="grid"><a class="card" href="/blog/en/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now</h3><p>ChatGPT appears to have stopped adding UTM tags to its outbound links, so AI-driven visits are blending into direct traffic. It&#x27;s time for a new way to measure your SEO and GEO returns.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a><a class="card" href="/blog/hi/search-console-ai-overviews-ai-mode-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="एक सर्च बार नारंगी कंचे बैंगनी चमक वाली AI जवाब कीप में डाल रहा है, जो उनमें से सिर्फ़ कुछ को एक छोटे वेबसाइट स्टोरफ़्रंट तक पहुँचने देती है, जबकि पास में खाली पन्नों का एक ऊँचा डगमगाता ढेर बस एक कंचा देता है।" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="hi"><div class="eyebrow">मापन</div><h3>Google Search Console में AI Overviews और AI Mode ट्रैफ़िक कैसे पढ़ें</h3><p>खोलने के लिए कोई अलग &quot;AI Overviews&quot; टैब नहीं है। Google AI फ़ीचर्स को उसी Performance रिपोर्ट में शामिल करता है जो आपके पास पहले से है। एक्सपोर्टर फिर भी कैसे पढ़ सकते हैं कि AI जवाब उनके सर्च ट्रैफ़िक के साथ क्या कर रहे हैं, यहाँ जानें।</p><div class="meta"><span class="lg">हिन्दी</span><span></span></div></div></a><a class="card" href="/blog/hi/ai-attribution-post-purchase-survey/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="एक सफ़ेद शेल्फ़ पर तीन काँच के जार अलग-अलग स्तर तक नारंगी कंचों से भरे हैं, जिन पर एक आँख, एक दिल और बुकमार्क, और शॉपिंग कार्ट वाला कर्सर बना है, और हर जार पर नेवी रंग की एक लाइन उसका अपना पिछला औसत दिखाती है।" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="hi"><div class="eyebrow">मापन</div><h3>&quot;आपको हमारे बारे में कैसे पता चला?&quot; ChatGPT और AI सहायकों से आई बिक्री गिनने के लिए सर्वे</h3><p>AI जिन खरीदारों को आपके पास भेजता है, उनमें से कुछ कभी AI क्लिक के रूप में नहीं दिखेंगे। चेकआउट या पूछताछ फ़ॉर्म पर एक सवाल वाला सर्वे उन्हें देखने का सबसे सस्ता तरीका है। इसे कैसे लिखें, कहाँ रखें और जवाब कैसे पढ़ें, यहाँ जानें।</p><div class="meta"><span class="lg">हिन्दी</span><span></span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/hi/">← ब्लॉग पर वापस</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>देखें कि अमेरिकी AI सर्च में आप कहाँ अदृश्य हैं</h2>
+  <p>30 मिनट की मुफ़्त कॉल बुक करें और हम आपके स्टोर की AI विज़िबिलिटी का लाइव ऑडिट करेंगे।</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30 मिनट का रणनीति सत्र बुक करें →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHigh में लॉग इन करें</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">SME और क्रॉस-बॉर्डर विक्रेताओं के लिए AI सर्च विज़िबिलिटी, सोशल मीडिया और विज्ञापन ऑटोपायलट पर।</p></div>
+      <div><h4>ToucHigh</h4><a href="/hi/">होम</a><a href="/hi/#geo">GEO Autopilot</a><a href="/hi/#social">Social Autopilot</a><a href="/hi/pro/">ToucHigh PRO</a></div>
+      <div><h4>ब्लॉग</h4><a href="/blog/hi/">ब्लॉग</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>लॉग इन</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">कॉल बुक करें</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
