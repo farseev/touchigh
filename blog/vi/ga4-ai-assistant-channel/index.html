@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nhóm kênh AI Assistant trong GA4: thiết lập và khoảng trống | ToucHigh</title>
+<meta name="description" content="Nhóm kênh mặc định của GA4 giờ có kênh AI Assistant. Nó tính gì, vì sao AI Overviews và lượt truy cập không có referrer nằm ngoài, và cách xây nhóm tùy chỉnh.">
+<link rel="canonical" href="https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="kênh AI Assistant GA4, nhóm kênh tùy chỉnh AI GA4, theo dõi lưu lượng ChatGPT GA4, regex lưu lượng giới thiệu AI GA4, nhóm kênh trợ lý AI, đo lưu lượng GEO">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/">
+<meta property="og:title" content="Kênh AI Assistant trong GA4: tính gì, bỏ sót gì, và khi nào nên tự xây kênh riêng">
+<meta property="og:description" content="Nhóm kênh mặc định của GA4 giờ có kênh AI Assistant. Nó tính gì, vì sao AI Overviews và lượt truy cập không có referrer nằm ngoài, và cách xây nhóm tùy chỉnh.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t64-vi.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kênh AI Assistant trong GA4: tính gì, bỏ sót gì, và khi nào nên tự xây kênh riêng">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:section" content="Đo lường">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="Lưu lượng từ AI">
+<meta property="article:tag" content="Nhóm kênh">
+<meta property="article:tag" content="Ghi nhận nguồn">
+<meta property="article:tag" content="Đo lường GEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Kênh AI Assistant trong GA4: tính gì, bỏ sót gì, và khi nào nên tự xây kênh riêng">
+<meta name="twitter:description" content="Nhóm kênh mặc định của GA4 giờ có kênh AI Assistant. Nó tính gì, vì sao AI Overviews và lượt truy cập không có referrer nằm ngoài, và cách xây nhóm tùy chỉnh.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t64-vi.jpg">
+<meta name="twitter:image:alt" content="Kênh AI Assistant trong GA4: tính gì, bỏ sót gì, và khi nào nên tự xây kênh riêng">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/#article","url":"https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/","mainEntityOfPage":"https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/","headline":"Kênh AI Assistant trong GA4: tính gì, bỏ sót gì, và khi nào nên tự xây kênh riêng","alternativeHeadline":"Nhóm kênh AI Assistant trong GA4: thiết lập và khoảng trống","description":"Nhóm kênh mặc định của GA4 giờ có kênh AI Assistant. Nó tính gì, vì sao AI Overviews và lượt truy cập không có referrer nằm ngoài, và cách xây nhóm tùy chỉnh.","abstract":"Hãy dùng nó, nhưng đừng coi đó là toàn bộ câu chuyện. Tài liệu của Google cho biết kênh AI Assistant bao gồm lượt truy cập từ các nguồn như ChatGPT, Gemini, Deepseek, Copilot hoặc Grok, và loại trừ AI Overviews và AI Mode của Google. Nó cũng không thấy được lượt truy cập không có nguồn giới thiệu, vốn rơi vào Direct. Hãy kiểm tra trợ lý nào thực sự xuất hiện trong property của bạn, xây nhóm kênh tùy chỉnh nếu một số rơi vào Referral (Giới thiệu), và kết hợp GA4 với Search Console và theo dõi trích dẫn.","image":["https://touchigh.ai/assets/blog/og/t64-vi.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-11-08T10:00:00+08:00","dateModified":"2026-11-08T10:00:00+08:00","inLanguage":"vi","author":{"@type":"Organization","name":"Nhóm nghiên cứu ToucHigh","url":"https://touchigh.ai/blog/vi/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Đo lường","keywords":"kênh AI Assistant GA4, nhóm kênh tùy chỉnh AI GA4, theo dõi lưu lượng ChatGPT GA4, regex lưu lượng giới thiệu AI GA4, nhóm kênh trợ lý AI, đo lưu lượng GEO","wordCount":1560,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/vi/#blog","name":"Blog ToucHigh"},"about":[{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"Lưu lượng từ AI"},{"@type":"Thing","name":"Nhóm kênh"},{"@type":"Thing","name":"Ghi nhận nguồn"},{"@type":"Thing","name":"Đo lường GEO"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"About regular expressions (regex)","url":"https://support.google.com/analytics/answer/1034324","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ga4-ai-assistant-channel/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"vi","mainEntity":[{"@type":"Question","name":"Kênh AI Assistant có bao gồm Google AI Overviews không?","acceptedAnswer":{"@type":"Answer","text":"Không. Định nghĩa của Google loại trừ AI Overviews và AI Mode khỏi kênh AI Assistant. Google báo cáo chúng trong báo cáo Hiệu suất của Search Console thuộc loại tìm kiếm Web, cùng phần còn lại của Google Search."}},{"@type":"Question","name":"Vì sao lưu lượng ChatGPT vẫn hiện là Direct?","acceptedAnswer":{"@type":"Answer","text":"Khi lượt truy cập đến mà không có nguồn giới thiệu hay tham số theo dõi, GA4 không có gì để phân loại và ghi nó là Direct. Hãy theo dõi lưu lượng Direct vào trang sâu và hỏi người mua họ tìm thấy bạn thế nào để ước tính phần này."}},{"@type":"Question","name":"Nhóm kênh tùy chỉnh có làm thay đổi dữ liệu lịch sử không?","acceptedAnswer":{"@type":"Answer","text":"Nhóm kênh tùy chỉnh áp dụng hồi tố cho báo cáo, nên bạn có thể xem dữ liệu cũ qua cách nhóm mới. Thay đổi nhóm kênh chính của property chỉ ảnh hưởng đến báo cáo từ thời điểm đó trở đi."}},{"@type":"Question","name":"Có thể tạo bao nhiêu nhóm kênh tùy chỉnh?","acceptedAnswer":{"@type":"Answer","text":"Google nêu hai nhóm tùy chỉnh cho property tiêu chuẩn và năm nhóm cho property Analytics 360, ngoài nhóm định sẵn, mỗi nhóm tối đa 50 kênh."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/vi/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/vi/"},{"@type":"ListItem","position":3,"name":"Kênh AI Assistant trong GA4: tính gì, bỏ sót gì, và khi nào nên tự xây kênh riêng","item":"https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Trên trang này</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/vi/">Trang chủ</a>
+      <a href="/vi/#products">Sản phẩm</a>
+      <a href="/vi/#faq">Câu hỏi thường gặp</a>
+      <a href="/vi/pro/">ToucHigh PRO</a>
+      <a href="/blog/vi/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Ngôn ngữ: Tiếng Việt"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">VI</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Ngôn ngữ" hidden><li><a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/ga4-ai-assistant-channel/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/vi/ga4-ai-assistant-channel/" hreflang="vi" lang="vi" data-short="VI" aria-current="page">Tiếng Việt</a></li><li><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/ga4-ai-assistant-channel/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Đăng nhập</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Đặt lịch gọi</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/vi/">Trang chủ</a><span>/</span><a href="/blog/vi/">Blog</a><span>/</span><span>Đo lường</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Đo lường</div>
+    <h1>Kênh AI Assistant trong GA4: tính gì, bỏ sót gì, và khi nào nên tự xây kênh riêng</h1>
+    <p class="dek">Google Analytics giờ xếp lượt truy cập từ ChatGPT, Gemini, Copilot và các nguồn khác vào một kênh riêng. Điều đó giải quyết một phần vấn đề lưu lượng AI. Đây là phần nó không giải quyết, và một nhóm kênh tùy chỉnh để lấp khoảng trống.</p>
+    <div class="a-meta"><b>Nhóm nghiên cứu ToucHigh</b><span>Đăng ngày <time datetime="2026-11-08T10:00:00+08:00">8/11/2026</time></span><span>6 phút đọc</span><span class="lang-badge">Tiếng Việt</span></div>
+    <div class="a-langs">Cũng có bằng<a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/ga4-ai-assistant-channel/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/ga4-ai-assistant-channel/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="Những bưu kiện trượt ra từ một đường hầm hình bong bóng chat ánh tím lên băng chuyền và rơi vào một thùng xám trơn, các thẻ theo dõi màu cam nằm rơi vãi trên sàn, trong khi một kính lúp, biểu đồ vòng, biểu đồ cột và túi mua sắm đứng sẵn để đối chiếu." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Câu hỏi đằng sau bài viết này"><span class="qm">“</span><div><div class="eyebrow">Câu hỏi đằng sau bài viết này</div><p class="q">GA4 giờ hiển thị kênh &quot;AI Assistant&quot; trong báo cáo của chúng tôi. Có thể tin nó để đo lưu lượng mà công việc GEO mang lại không, hay vẫn cần thiết lập riêng?</p><p class="ans"><b>Trả lời ngắn</b>Hãy dùng nó, nhưng đừng coi đó là toàn bộ câu chuyện. Tài liệu của Google cho biết kênh AI Assistant bao gồm lượt truy cập từ các nguồn như ChatGPT, Gemini, Deepseek, Copilot hoặc Grok, và loại trừ AI Overviews và AI Mode của Google. Nó cũng không thấy được lượt truy cập không có nguồn giới thiệu, vốn rơi vào Direct. Hãy kiểm tra trợ lý nào thực sự xuất hiện trong property của bạn, xây nhóm kênh tùy chỉnh nếu một số rơi vào Referral (Giới thiệu), và kết hợp GA4 với Search Console và theo dõi trích dẫn.</p></div></section>
+      <section class="kt takeaways"><h2>Điểm chính</h2><ul><li>Nhóm kênh mặc định của GA4 giờ có AI Assistant: lượt truy cập từ các nguồn như ChatGPT, Gemini, Deepseek, Copilot hoặc Grok, với medium được đặt là "ai-assistant" khi nguồn giới thiệu khớp với danh sách của Google.</li><li>Kênh này loại trừ AI Overviews và AI Mode của Google; Google tính chúng trong tổng dữ liệu tìm kiếm Web của Search Console.</li><li>Lượt truy cập đến với bạn mà không có nguồn giới thiệu hay thẻ theo dõi được ghi là Direct, nên không quy tắc kênh nào khôi phục được chúng.</li><li>Nhóm kênh mặc định không chỉnh sửa được, nhưng nhóm kênh tùy chỉnh thì được, và chúng áp dụng hồi tố. Property tiêu chuẩn có hai nhóm tùy chỉnh, mỗi nhóm tối đa 50 kênh.</li><li>Biểu thức chính quy mẫu của Google cho trợ lý AI khá rộng; một danh sách tên miền tường minh tránh bắt nhầm các nguồn không liên quan.</li></ul></section>
+      <div class="prose"><p>Trong hai năm, lời khuyên tiêu chuẩn để đo lưu lượng AI trong Google Analytics 4 luôn giống nhau: tự xây nhóm kênh, vì lượt truy cập từ ChatGPT và Perplexity bị chôn vùi trong Referral. Từ đó Google đã thêm kênh <strong>AI Assistant</strong> vào nhóm kênh mặc định của GA4. Đó là tin tốt, nhưng nó thay đổi câu hỏi chứ không chấm dứt nó. Giờ bạn cần biết kênh mới tính gì, bỏ sót gì và khi nào nhóm kênh của riêng bạn vẫn đáng công sức.</p>
+
+<h2 id="s1">Kênh AI Assistant của GA4 tính những gì?</h2>
+
+<p>Tài liệu Default channel group (Nhóm kênh mặc định) của Google mô tả AI Assistant là kênh mà người dùng đến từ các nguồn như ChatGPT, Gemini, Deepseek, Copilot hoặc Grok. Quy tắc đằng sau: medium được đặt là "ai-assistant" và campaign là "(ai-assistant)" khi nguồn giới thiệu khớp với danh sách trợ lý AI do Google duy trì. Các phiên có medium đó rơi vào hàng AI Assistant trong báo cáo Traffic acquisition (Thu nạp lưu lượng truy cập) của bạn.</p>
+
+<p>Từ đó rút ra hai điểm. Thứ nhất, đó là danh sách của Google, không phải của bạn: tài liệu chỉ nêu ví dụ, không phải mọi trợ lý. Thứ hai, nhóm kênh mặc định không chỉnh sửa được trong GA4, nên nếu một trợ lý mà người mua của bạn dùng không được nhận diện, bạn không thể thêm nó vào kênh mặc định. Bạn cần một nhóm kênh tùy chỉnh.</p>
+
+<h2 id="s2">Kênh AI Assistant bỏ sót những gì?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>Lưu lượng</th><th>Rơi vào đâu trong GA4</th><th>Cách xem nó thay thế</th></tr></thead>
+<tbody>
+<tr><td>Google AI Overviews và AI Mode</td><td>Bị loại khỏi AI Assistant theo định nghĩa của Google</td><td>Search Console: Google cho biết chúng xuất hiện trong báo cáo Hiệu suất thuộc loại tìm kiếm Web</td></tr>
+<tr><td>Lượt truy cập từ trợ lý không có referrer và không có thẻ</td><td>Direct</td><td>Lưu lượng Direct vào trang sâu, tìm kiếm theo thương hiệu, khảo sát sau mua hàng</td></tr>
+<tr><td>Trợ lý không có trong danh sách của Google</td><td>Thường là Referral</td><td>Nhóm kênh tùy chỉnh với biểu thức chính quy của riêng bạn</td></tr>
+<tr><td>Người đã thấy tên bạn trong một câu trả lời và quay lại sau</td><td>Direct, Organic Search hoặc bất cứ nơi nào họ quay lại từ đó</td><td>Theo dõi trích dẫn và xu hướng tìm kiếm theo thương hiệu</td></tr>
+</tbody>
+</table></div>
+
+<p>Hàng thứ hai quan trọng nhất. Công cụ phân tích xác định lượt truy cập đến từ đâu bằng cách xem tham số theo dõi và URL giới thiệu. Khi một ứng dụng AI mở đường link mà không truyền cả hai, lượt truy cập được ghi là Direct. Bài trước của chúng tôi về <a href="/blog/en/chatgpt-utm-ai-referral-measurement/">đường link ChatGPT bị mất thẻ UTM</a> mô tả điều đó trên thực tế. Không quy tắc kênh nào khôi phục được thông tin chưa từng đến được GA4.</p>
+
+<h2 id="s3">Làm sao kiểm tra property của bạn thực sự ghi nhận gì?</h2>
+
+<ol>
+<li><strong>Mở Reports, rồi Acquisition, rồi Traffic acquisition</strong> và đặt chiều chính là Session default channel group. Tìm hàng AI Assistant và xu hướng của nó.</li>
+<li><strong>Chuyển chiều sang Session source / medium</strong> và lọc "ai-assistant" để xem Google đang phân loại những trợ lý nào.</li>
+<li><strong>Lọc Referral theo các tên miền AI đã biết</strong> như perplexity.ai hoặc claude.ai. Bất cứ thứ gì liên quan đến AI vẫn nằm trong Referral là khoảng trống của bạn.</li>
+<li><strong>So sánh trang đích.</strong> Lượt truy cập từ AI có xu hướng đáp xuống trang sâu, như trang sản phẩm, năng lực sản xuất và blog, thay vì trang chủ.</li>
+</ol>
+
+<h2 id="s4">Khi nào nên xây nhóm kênh AI tùy chỉnh?</h2>
+
+<p>Hãy xây một nhóm nếu các trợ lý mà người mua của bạn dùng rơi vào Referral, nếu bạn muốn mỗi trợ lý thành một hàng riêng, hoặc nếu bạn muốn một định nghĩa ổn định trong khi Google cập nhật danh sách. Tài liệu nhóm kênh tùy chỉnh của Google giải thích cách làm: trong Admin, mục Data display, mở Channel groups (bạn cần quyền Editor trở lên), tạo nhóm, thêm kênh và đặt điều kiện. Nhóm tùy chỉnh áp dụng hồi tố cho báo cáo. Property tiêu chuẩn có thể có hai nhóm tùy chỉnh ngoài nhóm định sẵn, mỗi nhóm tối đa 50 kênh.</p>
+
+<p>Google thậm chí còn công bố một ví dụ "AI assistants": một kênh với điều kiện "matches regex", đặt trên Referral để các nguồn AI được nhận trước. Biểu thức mẫu của Google cố ý để rộng. Nó bắt đầu bằng <code>^.*ai</code>, khớp với bất kỳ nguồn nào chứa các chữ "ai", chẳng hạn tên miền của một nhà cung cấp email. Một mẫu chặt chẽ hơn liệt kê đúng các tên miền bạn thực sự thấy, ví dụ:</p>
+
+<p><code>.*(chatgpt\.com|openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com).*</code></p>
+
+<p>Áp dụng nó cho Source, đặt kênh trên Referral và, nếu muốn chi tiết, thêm mỗi trợ lý một kênh thay vì một nhóm chung. Cập nhật danh sách khi một trợ lý mới bắt đầu gửi lưu lượng; chính ghi chú của Google cũng nói hãy cập nhật biểu thức khi danh sách trợ lý thay đổi.</p>
+
+<h2 id="s5">Có nên đặt nhóm tùy chỉnh làm nhóm kênh chính không?</h2>
+
+<p>GA4 cho phép chọn bất kỳ nhóm kênh tùy chỉnh nào làm nhóm kênh chính của property, và nhóm đó sẽ điền chiều nhóm kênh chính từ thời điểm đó trở đi. Điều này hữu ích khi định nghĩa của bạn đã ổn định, nhưng nó không hồi tố theo cách mà bản thân nhóm tùy chỉnh làm được. Phần lớn đội nhỏ có thể giữ nhóm mặc định làm nhóm chính và thêm nhóm tùy chỉnh làm góc nhìn phụ.</p>
+
+<h2 id="s6">GA4 nên nằm ở đâu trong việc đo lường kênh AI?</h2>
+
+<p>Hãy coi GA4 là một trong ba lăng kính. GA4 cho bạn biết về các lượt nhấp có thể ghi nhận nguồn. Search Console cho bạn biết về Google Search, gồm cả AI Overviews và AI Mode. Một lần kiểm tra trích dẫn hằng tháng cho bạn biết các trợ lý có nhắc đến bạn hay không. Khi cả ba cùng chuyển động, bạn chứng minh được GEO đang hiệu quả; khi chỉ một cái chuyển động, bạn biết cần xem ở đâu.</p></div>
+      <aside class="insight" aria-label="Insight"><div class="eyebrow">Insight</div><blockquote>Báo cáo kênh cho thấy các lượt nhấp nó gắn nhãn được, không phải ảnh hưởng mà nó không nhìn thấy.</blockquote><p>Định luật Goodhart cảnh báo rằng một thước đo bị biến thành mục tiêu sẽ không còn đo tốt nữa. Nếu một đội chỉ chạy theo hàng AI Assistant, họ sẽ đánh giá thấp những câu trả lời AI đưa người mua đến qua Direct hoặc tìm kiếm theo thương hiệu. Hãy giữ kênh này là một tín hiệu trong ba.</p></aside>
+      <section class="prop" aria-label="ToucHigh giúp gì">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh giúp gì</h2></div>
+        <div class="pb prose"><p>GA4 cho thấy lượt nhấp; GEO Autopilot của ToucHigh bao quát phần còn lại của bức tranh:</p><ul><li>nó kiểm tra nơi bạn đang vô hình trên ChatGPT, Perplexity, Google AI và Gemini;</li><li>nó viết và triển khai các bản sửa cùng bài viết GEO nhắm vào những câu hỏi người mua đặt ra;</li><li>nó theo dõi liên tục tỷ lệ trích dẫn AI của bạn, tín hiệu mà tham số theo dõi không thể làm sai lệch.</li></ul><p>Đặt lịch tư vấn chiến lược 30 phút và mang theo ảnh chụp báo cáo Traffic acquisition; chúng tôi sẽ cùng đọc nó với một lần kiểm tra trực tiếp khả năng hiển thị AI.</p><p class="uc">Nhà máy và nhà cung cấp B2B: xem ToucHigh xử lý <a href="/vi/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T64'})}catch(e){}">khả năng hiển thị nhà cung cấp trên tìm kiếm AI</a> thế nào. Muốn biến khả năng hiển thị thành phễu bán hàng? Tìm hiểu <a href="/vi/pro/" onclick="try{gtag('event','pro_click',{location:'article_T64'})}catch(e){}">ToucHigh PRO</a>, dịch vụ tiếp cận khách hàng với chiến lược đi trước.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T64')">Đặt lịch tư vấn chiến lược 30 phút →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T64'})}catch(e){}">Đăng nhập ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Câu hỏi thường gặp"><h2>Câu hỏi thường gặp</h2><details open><summary>Kênh AI Assistant có bao gồm Google AI Overviews không?</summary><p>Không. Định nghĩa của Google loại trừ AI Overviews và AI Mode khỏi kênh AI Assistant. Google báo cáo chúng trong báo cáo Hiệu suất của Search Console thuộc loại tìm kiếm Web, cùng phần còn lại của Google Search.</p></details><details><summary>Vì sao lưu lượng ChatGPT vẫn hiện là Direct?</summary><p>Khi lượt truy cập đến mà không có nguồn giới thiệu hay tham số theo dõi, GA4 không có gì để phân loại và ghi nó là Direct. Hãy theo dõi lưu lượng Direct vào trang sâu và hỏi người mua họ tìm thấy bạn thế nào để ước tính phần này.</p></details><details><summary>Nhóm kênh tùy chỉnh có làm thay đổi dữ liệu lịch sử không?</summary><p>Nhóm kênh tùy chỉnh áp dụng hồi tố cho báo cáo, nên bạn có thể xem dữ liệu cũ qua cách nhóm mới. Thay đổi nhóm kênh chính của property chỉ ảnh hưởng đến báo cáo từ thời điểm đó trở đi.</p></details><details><summary>Có thể tạo bao nhiêu nhóm kênh tùy chỉnh?</summary><p>Google nêu hai nhóm tùy chỉnh cho property tiêu chuẩn và năm nhóm cho property Analytics 360, ngoài nhóm định sẵn, mỗi nhóm tối đa 50 kênh.</p></details></section>
+      <section class="srcs"><h2>Nguồn tham khảo</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/1034324" rel="noopener" target="_blank">About regular expressions (regex)</a> — Google Analytics Help</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>Vì sao chúng tôi viết bài này</b>Chúng tôi viết bài này vì những đội đã tự tay xây nhóm kênh AI bỗng thấy một hàng AI Assistant mới và không chắc nên tin con số nào. Câu trả lời là cả hai, đọc cùng Search Console và theo dõi trích dẫn.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Trên trang này"><h4>Trên trang này</h4><a href="#s1">Kênh AI Assistant của GA4 tính những gì?</a><a href="#s2">Kênh AI Assistant bỏ sót những gì?</a><a href="#s3">Làm sao kiểm tra property của bạn thực sự ghi nhận gì?</a><a href="#s4">Khi nào nên xây nhóm kênh AI tùy chỉnh?</a><a href="#s5">Có nên đặt nhóm tùy chỉnh làm nhóm kênh chính không?</a><a href="#s6">GA4 nên nằm ở đâu trong việc đo lường kênh AI?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Xem bạn đang vô hình ở đâu trên tìm kiếm AI tại Mỹ</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Đặt lịch gọi</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Đăng nhập</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Bài viết liên quan</h2>
+  <div class="grid"><a class="card" href="/blog/en/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now</h3><p>ChatGPT appears to have stopped adding UTM tags to its outbound links, so AI-driven visits are blending into direct traffic. It&#x27;s time for a new way to measure your SEO and GEO returns.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a><a class="card" href="/blog/vi/search-console-ai-overviews-ai-mode-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="Một thanh tìm kiếm đổ những viên bi cam vào một chiếc phễu câu trả lời AI phát sáng tím, chỉ cho vài viên đến được một cửa hàng website nhỏ, trong khi bên cạnh, một chồng trang trắng cao chênh vênh chỉ cho ra đúng một viên bi." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="vi"><div class="eyebrow">Đo lường</div><h3>Cách đọc lưu lượng AI Overviews và AI Mode trong Google Search Console</h3><p>Không có tab &quot;AI Overviews&quot; riêng nào để mở. Google gộp các tính năng AI vào báo cáo Hiệu suất mà bạn đã có. Đây là cách các nhà xuất khẩu vẫn có thể đọc được câu trả lời AI đang tác động thế nào đến lưu lượng tìm kiếm của họ.</p><div class="meta"><span class="lg">Tiếng Việt</span><span>6 phút đọc</span></div></div></a><a class="card" href="/blog/vi/ai-attribution-post-purchase-survey/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="Ba lọ thủy tinh trên một kệ trắng chứa bi màu cam đến các mức khác nhau, được đánh dấu bằng một con mắt, một trái tim và dấu trang, và một con trỏ có giỏ hàng, mỗi lọ có một vạch xanh đậm thể hiện mức trung bình trước đây của nó." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="vi"><div class="eyebrow">Đo lường</div><h3>&quot;Bạn biết đến chúng tôi qua đâu?&quot; Dùng khảo sát để đếm doanh số từ ChatGPT và trợ lý AI</h3><p>Một số người mua mà AI gửi đến sẽ không bao giờ hiện ra dưới dạng lượt nhấp từ AI. Một khảo sát một câu hỏi khi thanh toán hoặc trên biểu mẫu yêu cầu báo giá là cách rẻ nhất để thấy họ. Đây là cách đặt câu hỏi, đặt ở đâu và đọc câu trả lời thế nào.</p><div class="meta"><span class="lg">Tiếng Việt</span><span>6 phút đọc</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/vi/">← Quay lại blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Xem bạn đang vô hình ở đâu trên tìm kiếm AI tại Mỹ</h2>
+  <p>Đặt lịch cuộc gọi miễn phí 30 phút và chúng tôi sẽ đánh giá trực tiếp khả năng hiển thị AI của cửa hàng bạn.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Đặt lịch tư vấn chiến lược 30 phút →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Đăng nhập ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Khả năng hiển thị trên tìm kiếm AI, mạng xã hội và quảng cáo tự động cho doanh nghiệp vừa và nhỏ và người bán xuyên biên giới.</p></div>
+      <div><h4>ToucHigh</h4><a href="/vi/">Trang chủ</a><a href="/vi/#geo">GEO Autopilot</a><a href="/vi/#social">Social Autopilot</a><a href="/vi/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/vi/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Đăng nhập</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Đặt lịch gọi</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

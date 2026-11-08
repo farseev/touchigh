@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Overviews và AI Mode trong Search Console: cách đo lường | ToucHigh</title>
+<meta name="description" content="Google tính AI Overviews và AI Mode vào dữ liệu tìm kiếm Web của Search Console. Cách đọc lượt hiển thị, lượt nhấp và trang khi có câu trả lời AI, và nên so sánh gì.">
+<link rel="canonical" href="https://touchigh.ai/blog/vi/search-console-ai-overviews-ai-mode-traffic/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="AI Overviews Search Console, lưu lượng AI Mode Search Console, đo lượt nhấp AI Overviews, loại tìm kiếm Web trong Search Console, lưu lượng tính năng AI của Google, đo lường GEO trên Google">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/vi/search-console-ai-overviews-ai-mode-traffic/">
+<meta property="og:title" content="Cách đọc lưu lượng AI Overviews và AI Mode trong Google Search Console">
+<meta property="og:description" content="Google tính AI Overviews và AI Mode vào dữ liệu tìm kiếm Web của Search Console. Cách đọc lượt hiển thị, lượt nhấp và trang khi có câu trả lời AI, và nên so sánh gì.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t65-vi.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cách đọc lưu lượng AI Overviews và AI Mode trong Google Search Console">
+<meta property="og:locale" content="vi_VN">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:section" content="Đo lường">
+<meta property="article:tag" content="Google Search Console">
+<meta property="article:tag" content="AI Overviews">
+<meta property="article:tag" content="AI Mode">
+<meta property="article:tag" content="Đo lường SEO">
+<meta property="article:tag" content="GEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cách đọc lưu lượng AI Overviews và AI Mode trong Google Search Console">
+<meta name="twitter:description" content="Google tính AI Overviews và AI Mode vào dữ liệu tìm kiếm Web của Search Console. Cách đọc lượt hiển thị, lượt nhấp và trang khi có câu trả lời AI, và nên so sánh gì.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t65-vi.jpg">
+<meta name="twitter:image:alt" content="Cách đọc lưu lượng AI Overviews và AI Mode trong Google Search Console">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/vi/search-console-ai-overviews-ai-mode-traffic/#article","url":"https://touchigh.ai/blog/vi/search-console-ai-overviews-ai-mode-traffic/","mainEntityOfPage":"https://touchigh.ai/blog/vi/search-console-ai-overviews-ai-mode-traffic/","headline":"Cách đọc lưu lượng AI Overviews và AI Mode trong Google Search Console","alternativeHeadline":"AI Overviews và AI Mode trong Search Console: cách đo lường","description":"Google tính AI Overviews và AI Mode vào dữ liệu tìm kiếm Web của Search Console. Cách đọc lượt hiển thị, lượt nhấp và trang khi có câu trả lời AI, và nên so sánh gì.","abstract":"Không có báo cáo riêng. Google cho biết các trang web xuất hiện trong AI Overviews và AI Mode được tính vào tổng lưu lượng tìm kiếm trong Search Console, ở báo cáo Hiệu suất thuộc loại tìm kiếm Web. Vì vậy hãy đọc bằng cách so sánh: truy vấn dạng câu hỏi và truy vấn dài so với truy vấn ngắn, trước so với sau, lượt hiển thị so với lượt nhấp, và các trang tăng lượt hiển thị. Kết hợp với trang đích trong GA4 và kiểm tra thủ công xem truy vấn ưu tiên nào hiện AI Overview.","image":["https://touchigh.ai/assets/blog/og/t65-vi.jpg","https://touchigh.ai/assets/blog/hero/t01.jpg"],"datePublished":"2026-11-08T10:20:00+08:00","dateModified":"2026-11-08T10:20:00+08:00","inLanguage":"vi","author":{"@type":"Organization","name":"Nhóm nghiên cứu ToucHigh","url":"https://touchigh.ai/blog/vi/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Đo lường","keywords":"AI Overviews Search Console, lưu lượng AI Mode Search Console, đo lượt nhấp AI Overviews, loại tìm kiếm Web trong Search Console, lưu lượng tính năng AI của Google, đo lường GEO trên Google","wordCount":1590,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/vi/#blog","name":"Blog ToucHigh"},"about":[{"@type":"Thing","name":"Google Search Console"},{"@type":"Thing","name":"AI Overviews"},{"@type":"Thing","name":"AI Mode"},{"@type":"Thing","name":"Đo lường SEO"},{"@type":"Thing","name":"GEO"}],"citation":[{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Performance report (Search results): Overview and basic setup","url":"https://support.google.com/webmasters/answer/7576553","publisher":{"@type":"Organization","name":"Search Console Help"}},{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"vi","mainEntity":[{"@type":"Question","name":"Search Console có bộ lọc cho AI Overviews không?","acceptedAnswer":{"@type":"Answer","text":"Hướng dẫn của Google cho biết AI Overviews và AI Mode được tính trong tổng dữ liệu tìm kiếm Web của báo cáo Hiệu suất, chứ không chỉ đến một báo cáo riêng. Hãy đọc tác động của chúng qua việc so sánh nhóm truy vấn, trang và giai đoạn."}},{"@type":"Question","name":"Vì sao lượt hiển thị tăng trong khi lượt nhấp đi ngang?","acceptedAnswer":{"@type":"Answer","text":"Một lý do phổ biến là trang của bạn được hiển thị, kể cả dưới dạng đường link hỗ trợ trong câu trả lời AI, trong khi người tìm kiếm đã có đủ thông tin từ chính câu trả lời. Hãy kiểm tra truy vấn và trang nào gây ra thay đổi trước khi kết luận đó là vấn đề."}},{"@type":"Question","name":"Chặn Google-Extended có giữ trang của chúng tôi khỏi AI Overviews không?","acceptedAnswer":{"@type":"Answer","text":"Không. Google cho biết Google-Extended không ảnh hưởng đến việc được đưa vào Google Search. Để giới hạn những gì xuất hiện trong tính năng AI, Google chỉ đến nosnippet, data-nosnippet, max-snippet hoặc noindex."}},{"@type":"Question","name":"Có cần markup đặc biệt để xuất hiện trong AI Overviews không?","acceptedAnswer":{"@type":"Answer","text":"Google cho biết không có yêu cầu bổ sung và không cần schema đặc biệt. Trang phải được lập chỉ mục và đủ điều kiện có đoạn trích, và các thực hành SEO tốt thông thường vẫn áp dụng."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/vi/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/vi/"},{"@type":"ListItem","position":3,"name":"Cách đọc lưu lượng AI Overviews và AI Mode trong Google Search Console","item":"https://touchigh.ai/blog/vi/search-console-ai-overviews-ai-mode-traffic/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Trên trang này</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/vi/">Trang chủ</a>
+      <a href="/vi/#products">Sản phẩm</a>
+      <a href="/vi/#faq">Câu hỏi thường gặp</a>
+      <a href="/vi/pro/">ToucHigh PRO</a>
+      <a href="/blog/vi/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Ngôn ngữ: Tiếng Việt"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">VI</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Ngôn ngữ" hidden><li><a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/search-console-ai-overviews-ai-mode-traffic/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/search-console-ai-overviews-ai-mode-traffic/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/vi/search-console-ai-overviews-ai-mode-traffic/" hreflang="vi" lang="vi" data-short="VI" aria-current="page">Tiếng Việt</a></li><li><a href="/blog/id/search-console-ai-overviews-ai-mode-traffic/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/search-console-ai-overviews-ai-mode-traffic/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/es/search-console-ai-overviews-ai-mode-traffic/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/search-console-ai-overviews-ai-mode-traffic/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/search-console-ai-overviews-ai-mode-traffic/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/search-console-ai-overviews-ai-mode-traffic/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ru/search-console-ai-overviews-ai-mode-traffic/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Đăng nhập</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Đặt lịch gọi</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/vi/">Trang chủ</a><span>/</span><a href="/blog/vi/">Blog</a><span>/</span><span>Đo lường</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Đo lường</div>
+    <h1>Cách đọc lưu lượng AI Overviews và AI Mode trong Google Search Console</h1>
+    <p class="dek">Không có tab &quot;AI Overviews&quot; riêng nào để mở. Google gộp các tính năng AI vào báo cáo Hiệu suất mà bạn đã có. Đây là cách các nhà xuất khẩu vẫn có thể đọc được câu trả lời AI đang tác động thế nào đến lưu lượng tìm kiếm của họ.</p>
+    <div class="a-meta"><b>Nhóm nghiên cứu ToucHigh</b><span>Đăng ngày <time datetime="2026-11-08T10:20:00+08:00">8/11/2026</time></span><span>6 phút đọc</span><span class="lang-badge">Tiếng Việt</span></div>
+    <div class="a-langs">Cũng có bằng<a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/search-console-ai-overviews-ai-mode-traffic/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/search-console-ai-overviews-ai-mode-traffic/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/id/search-console-ai-overviews-ai-mode-traffic/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/search-console-ai-overviews-ai-mode-traffic/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/es/search-console-ai-overviews-ai-mode-traffic/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/search-console-ai-overviews-ai-mode-traffic/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/search-console-ai-overviews-ai-mode-traffic/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/search-console-ai-overviews-ai-mode-traffic/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ru/search-console-ai-overviews-ai-mode-traffic/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp 768w, /assets/blog/hero/t01-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t01.jpg" alt="Một thanh tìm kiếm đổ những viên bi cam vào một chiếc phễu câu trả lời AI phát sáng tím, chỉ cho vài viên đến được một cửa hàng website nhỏ, trong khi bên cạnh, một chồng trang trắng cao chênh vênh chỉ cho ra đúng một viên bi." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Câu hỏi đằng sau bài viết này"><span class="qm">“</span><div><div class="eyebrow">Câu hỏi đằng sau bài viết này</div><p class="q">Chúng tôi có thể xem AI Overviews và AI Mode của Google mang lại bao nhiêu lưu lượng ở đâu? Search Console có báo cáo nào cho việc này không?</p><p class="ans"><b>Trả lời ngắn</b>Không có báo cáo riêng. Google cho biết các trang web xuất hiện trong AI Overviews và AI Mode được tính vào tổng lưu lượng tìm kiếm trong Search Console, ở báo cáo Hiệu suất thuộc loại tìm kiếm Web. Vì vậy hãy đọc bằng cách so sánh: truy vấn dạng câu hỏi và truy vấn dài so với truy vấn ngắn, trước so với sau, lượt hiển thị so với lượt nhấp, và các trang tăng lượt hiển thị. Kết hợp với trang đích trong GA4 và kiểm tra thủ công xem truy vấn ưu tiên nào hiện AI Overview.</p></div></section>
+      <section class="kt takeaways"><h2>Điểm chính</h2><ul><li>Google cho biết lưu lượng từ AI Overviews và AI Mode được tính trong báo cáo Hiệu suất của Search Console thuộc loại tìm kiếm Web, cùng phần còn lại của Google Search.</li><li>Kênh AI Assistant của GA4 loại trừ AI Overviews và AI Mode của Google, nên Search Console là nơi chính để xem chúng.</li><li>Để đủ điều kiện làm đường link hỗ trợ, trang phải được lập chỉ mục và đủ điều kiện hiển thị kèm đoạn trích; không có yêu cầu kỹ thuật bổ sung nào.</li><li>Google cho biết AI Overviews và AI Mode có thể chạy "query fan-out" (tỏa truy vấn) gồm các lượt tìm kiếm liên quan, đó là một lý do khiến các truy vấn mới, dài hơn có thể xuất hiện trong báo cáo của bạn.</li><li>Đọc xu hướng theo nhóm truy vấn và trang, không theo tổng toàn trang web: câu trả lời AI có thể làm tăng lượt hiển thị trong khi lượt nhấp biến động khác đi.</li></ul></section>
+      <div class="prose"><p>Nhiều đội mở Search Console tìm báo cáo "AI Overviews" và không thấy gì. Điều đó không có nghĩa là dữ liệu bị thiếu; nghĩa là Google đã đặt nó trong báo cáo bạn vẫn dùng. Khi biết nó nằm ở đâu, và nó không tách được những gì, bạn vẫn trả lời được câu hỏi sếp đang hỏi: câu trả lời AI của Google đang giúp hay làm hại lưu lượng của chúng ta?</p>
+
+<h2 id="s1">Search Console báo cáo AI Overviews và AI Mode ở đâu?</h2>
+
+<p>Hướng dẫn của Google cho chủ sở hữu trang web về các tính năng AI rất thẳng: các trang xuất hiện trong tính năng AI như AI Overviews và AI Mode được tính vào tổng lưu lượng tìm kiếm trong Search Console, báo cáo trong báo cáo Hiệu suất ở loại tìm kiếm "Web". Nói cách khác, một lượt hiển thị hay lượt nhấp từ AI Overview được tính chung với các lượt hiển thị và lượt nhấp Google Search khác cho truy vấn và trang đó.</p>
+
+<p>Điều này cũng giải thích một khoảng trống mà người dùng nhận thấy trong Google Analytics 4. Kênh AI Assistant của GA4 bao gồm các nguồn như ChatGPT, Gemini, Copilot và một số nguồn khác, nhưng định nghĩa của Google loại trừ rõ ràng AI Overviews và AI Mode. Lượt truy cập từ chúng đến dưới dạng lưu lượng tìm kiếm tự nhiên của Google. Nếu muốn hiểu câu trả lời AI của Google, Search Console là công cụ chính của bạn.</p>
+
+<h2 id="s2">Những trang nào đủ điều kiện xuất hiện trong câu trả lời AI?</h2>
+
+<p>Quy tắc đủ điều kiện giống như với kết quả thông thường có đoạn trích. Google cho biết một trang phải được lập chỉ mục và đủ điều kiện hiển thị trong Google Search kèm đoạn trích thì mới được hiển thị làm đường link hỗ trợ trong AI Overviews hoặc AI Mode, và không có yêu cầu kỹ thuật bổ sung nào. Từ đó có hai bước kiểm tra thực tế:</p>
+
+<ul>
+<li>Đảm bảo các trang ưu tiên được lập chỉ mục: dùng báo cáo Trang và công cụ Kiểm tra URL trong Search Console.</li>
+<li>Đảm bảo bạn không vô tình giới hạn đoạn trích. Google liệt kê nosnippet, data-nosnippet, max-snippet và noindex là các cơ chế giới hạn những gì được hiển thị. Một giao diện hoặc plugin thêm <code>nosnippet</code> trên toàn trang cũng sẽ khiến bạn bị loại khỏi câu trả lời AI.</li>
+</ul>
+
+<h2 id="s3">Đọc tác động của câu trả lời AI từ dữ liệu bị gộp thế nào?</h2>
+
+<p>Vì lưu lượng AI không được tách riêng, bạn đọc nó bằng cách so sánh các nhóm. Bốn phép so sánh làm được phần lớn việc.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Phép so sánh</th><th>Cách thiết lập</th><th>Nó cho bạn biết điều gì</th></tr></thead>
+<tbody>
+<tr><td>Truy vấn dạng câu hỏi so với truy vấn ngắn</td><td>Lọc chiều Truy vấn bằng biểu thức chính quy tùy chỉnh như <code>^(what|how|which|why|best|can|does)\b</code></td><td>Liệu các truy vấn dạng hội thoại, nơi câu trả lời AI thường xuất hiện, có đang tăng lượt hiển thị và lượt nhấp</td></tr>
+<tr><td>Trước so với sau</td><td>So sánh các khoảng thời gian quanh một thay đổi đã biết, như một lần ra mắt nội dung</td><td>Liệu một thay đổi có trùng với biến động lượt hiển thị hoặc CTR</td></tr>
+<tr><td>Lượt hiển thị so với lượt nhấp</td><td>Hiển thị cả hai chỉ số trên cùng một nhóm truy vấn</td><td>Lượt hiển thị tăng mà lượt nhấp đi ngang có thể nghĩa là bạn được thấy nhưng câu hỏi đã được trả lời ngay tại chỗ</td></tr>
+<tr><td>Nhóm trang</td><td>Lọc trang theo thư mục, như /products/ hoặc /blog/</td><td>Loại nội dung nào đang tăng khả năng hiển thị</td></tr>
+</tbody>
+</table></div>
+
+<p>Google cũng cho biết AI Overviews và AI Mode có thể dùng kỹ thuật "query fan-out", đưa ra nhiều lượt tìm kiếm liên quan để xây dựng câu trả lời. Hãy theo dõi bảng Truy vấn để tìm các truy vấn mới, dài hơn và cụ thể hơn mà bạn chưa từng nhắm; chúng là manh mối hữu ích về các câu hỏi phụ mà trang của bạn đang được dùng để trả lời.</p>
+
+<h2 id="s4">Nên kết hợp Search Console với GA4 thế nào?</h2>
+
+<p>Search Console dừng ở lượt nhấp. Để biết lượt nhấp đó có giá trị gì không, hãy đối chiếu các trang đang tăng khả năng hiển thị trên Google với báo cáo trang đích của GA4 được lọc theo Organic Search, và xem mức tương tác và sự kiện chính. Chính hướng dẫn của Google gợi ý theo dõi chuyển đổi và thời gian trên trang bằng các công cụ như Google Analytics, và cho biết lượt nhấp từ trang kết quả tìm kiếm có AI Overviews có chất lượng cao hơn, nghĩa là người dùng có xu hướng ở lại trang lâu hơn. Hãy coi đó là tuyên bố của Google cần kiểm chứng bằng dữ liệu của chính bạn, chứ không phải điều hiển nhiên.</p>
+
+<h2 id="s5">Nên theo dõi gì mỗi tháng?</h2>
+
+<ol>
+<li><strong>Một danh sách cố định 20 đến 50 truy vấn ưu tiên.</strong> Tìm thủ công và ghi lại AI Overview có xuất hiện không và bạn có được trích dẫn không.</li>
+<li><strong>Lượt hiển thị và lượt nhấp của nhóm truy vấn dạng câu hỏi</strong>, so với tháng trước và cùng tháng năm ngoái nếu có.</li>
+<li><strong>Mười trang tăng lượt hiển thị nhiều nhất</strong>, kèm mức tương tác trong GA4.</li>
+<li><strong>Trạng thái lập chỉ mục và đoạn trích</strong> của các trang sản phẩm, năng lực sản xuất và FAQ.</li>
+<li><strong>Lượt hiển thị tìm kiếm theo thương hiệu</strong>, một tín hiệu gián tiếp cho thấy câu trả lời AI ở nơi khác đang khiến người ta đi tìm bạn.</li>
+</ol>
+
+<p>Không điều nào ở trên cho bạn một con số "lưu lượng AI" duy nhất, và bạn nên cảnh giác với bất kỳ công cụ nào tuyên bố tách được nó hoàn hảo khỏi dữ liệu gộp của Google. Thứ bạn có được là một cách nhất quán để thấy nội dung của mình có đang được dùng trong câu trả lời AI của Google không, và điều đó có chuyển thành những lượt truy cập có giá trị không.</p></div>
+      <aside class="insight" aria-label="Insight"><div class="eyebrow">Insight</div><blockquote>Khi dữ liệu bị gộp, hãy so sánh các nhóm thay vì đi tìm một con số duy nhất.</blockquote><p>Thiết kế nghiên cứu gọi đây là góc nhìn sai biệt kép (difference-in-differences): bạn không thể tách riêng tác động một cách trực tiếp, nên bạn so sánh các nhóm và giai đoạn lẽ ra phải phản ứng khác nhau. Truy vấn dạng câu hỏi so với truy vấn ngắn, trước so với sau, là phiên bản thực tế cho AI Overviews.</p></aside>
+      <section class="prop" aria-label="ToucHigh giúp gì">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh giúp gì</h2></div>
+        <div class="pb prose"><p>Search Console cho thấy Google; GEO Autopilot của ToucHigh cho thấy bức tranh AI rộng hơn:</p><ul><li>nó đánh giá khả năng hiển thị của bạn trên ChatGPT, Perplexity, Google AI Overviews và AI Mode, và Gemini;</li><li>nó viết và triển khai các bản sửa và bài viết GEO cho những câu hỏi bạn đang bỏ lỡ;</li><li>nó theo dõi tỷ lệ trích dẫn AI cùng với dữ liệu tìm kiếm, để bạn chứng minh được mức tăng.</li></ul><p>Đặt lịch tư vấn chiến lược 30 phút và chúng tôi sẽ so sánh những gì Search Console hiển thị với kết quả đọc trực tiếp khả năng hiển thị AI của trang web bạn.</p><p class="uc">Nhà máy và nhà cung cấp B2B: xem ToucHigh xử lý <a href="/vi/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T65'})}catch(e){}">khả năng hiển thị nhà cung cấp trên tìm kiếm AI</a> thế nào. Muốn biến khả năng hiển thị thành phễu bán hàng? Tìm hiểu <a href="/vi/pro/" onclick="try{gtag('event','pro_click',{location:'article_T65'})}catch(e){}">ToucHigh PRO</a>, dịch vụ tiếp cận khách hàng với chiến lược đi trước.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T65')">Đặt lịch tư vấn chiến lược 30 phút →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T65'})}catch(e){}">Đăng nhập ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Câu hỏi thường gặp"><h2>Câu hỏi thường gặp</h2><details open><summary>Search Console có bộ lọc cho AI Overviews không?</summary><p>Hướng dẫn của Google cho biết AI Overviews và AI Mode được tính trong tổng dữ liệu tìm kiếm Web của báo cáo Hiệu suất, chứ không chỉ đến một báo cáo riêng. Hãy đọc tác động của chúng qua việc so sánh nhóm truy vấn, trang và giai đoạn.</p></details><details><summary>Vì sao lượt hiển thị tăng trong khi lượt nhấp đi ngang?</summary><p>Một lý do phổ biến là trang của bạn được hiển thị, kể cả dưới dạng đường link hỗ trợ trong câu trả lời AI, trong khi người tìm kiếm đã có đủ thông tin từ chính câu trả lời. Hãy kiểm tra truy vấn và trang nào gây ra thay đổi trước khi kết luận đó là vấn đề.</p></details><details><summary>Chặn Google-Extended có giữ trang của chúng tôi khỏi AI Overviews không?</summary><p>Không. Google cho biết Google-Extended không ảnh hưởng đến việc được đưa vào Google Search. Để giới hạn những gì xuất hiện trong tính năng AI, Google chỉ đến nosnippet, data-nosnippet, max-snippet hoặc noindex.</p></details><details><summary>Có cần markup đặc biệt để xuất hiện trong AI Overviews không?</summary><p>Google cho biết không có yêu cầu bổ sung và không cần schema đặc biệt. Trang phải được lập chỉ mục và đủ điều kiện có đoạn trích, và các thực hành SEO tốt thông thường vẫn áp dụng.</p></details></section>
+      <section class="srcs"><h2>Nguồn tham khảo</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://support.google.com/webmasters/answer/7576553" rel="noopener" target="_blank">Performance report (Search results): Overview and basic setup</a> — Search Console Help</li><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li></ol></section>
+      <p class="note"><b>Vì sao chúng tôi viết bài này</b>Chúng tôi viết bài này vì các nhà xuất khẩu liên tục hỏi dữ liệu AI Overview của họ ở đâu. Câu trả lời thật là nó đã nằm trong Search Console, trộn lẫn với dữ liệu khác, và có một cách đọc có kỷ luật.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Trên trang này"><h4>Trên trang này</h4><a href="#s1">Search Console báo cáo AI Overviews và AI Mode ở đâu?</a><a href="#s2">Những trang nào đủ điều kiện xuất hiện trong câu trả lời AI?</a><a href="#s3">Đọc tác động của câu trả lời AI từ dữ liệu bị gộp thế nào?</a><a href="#s4">Nên kết hợp Search Console với GA4 thế nào?</a><a href="#s5">Nên theo dõi gì mỗi tháng?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Xem bạn đang vô hình ở đâu trên tìm kiếm AI tại Mỹ</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Đặt lịch gọi</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Đăng nhập</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Bài viết liên quan</h2>
+  <div class="grid"><a class="card" href="/blog/vi/ga4-ai-assistant-channel/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Những bưu kiện trượt ra từ một đường hầm hình bong bóng chat ánh tím lên băng chuyền và rơi vào một thùng xám trơn, các thẻ theo dõi màu cam nằm rơi vãi trên sàn, trong khi một kính lúp, biểu đồ vòng, biểu đồ cột và túi mua sắm đứng sẵn để đối chiếu." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="vi"><div class="eyebrow">Đo lường</div><h3>Kênh AI Assistant trong GA4: tính gì, bỏ sót gì, và khi nào nên tự xây kênh riêng</h3><p>Google Analytics giờ xếp lượt truy cập từ ChatGPT, Gemini, Copilot và các nguồn khác vào một kênh riêng. Điều đó giải quyết một phần vấn đề lưu lượng AI. Đây là phần nó không giải quyết, và một nhóm kênh tùy chỉnh để lấp khoảng trống.</p><div class="meta"><span class="lg">Tiếng Việt</span><span>6 phút đọc</span></div></div></a><a class="card" href="/blog/en/ai-overviews-branded-queries-seo-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="A search bar pours orange marbles into a violet-glowing AI answer funnel that lets only a few reach a small website storefront, while a tall wobbling stack of blank pages beside it yields just one marble." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">SEO</div><h3>Store SEO Traffic Dropping? AI Overviews Now Cover 80% of Branded Searches</h3><p>AI Overviews are taking over branded searches, and more blog posts and backlinks pay back less every month. What should independent store owners stop doing, and what should they start?</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/seo-best-practices-ai-overviews-ai-mode/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t30-768.webp"><img src="/assets/blog/hero/t30.jpg" alt="A gloved hand prunes thin grey page-leaves from a potted plant while a few large orange page cards bloom, one of them linked by a violet line to a floating AI answer panel." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO Best Practices for AI Overviews and AI Mode (October 2026)</h3><p>Google&#x27;s AI now answers most branded searches and carries more inline links. Here&#x27;s where SEO effort still pays, where returns have flattened, and a one-week checklist.</p><div class="meta"><span class="lg">English</span><span>7 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/vi/">← Quay lại blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Xem bạn đang vô hình ở đâu trên tìm kiếm AI tại Mỹ</h2>
+  <p>Đặt lịch cuộc gọi miễn phí 30 phút và chúng tôi sẽ đánh giá trực tiếp khả năng hiển thị AI của cửa hàng bạn.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Đặt lịch tư vấn chiến lược 30 phút →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Đăng nhập ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Khả năng hiển thị trên tìm kiếm AI, mạng xã hội và quảng cáo tự động cho doanh nghiệp vừa và nhỏ và người bán xuyên biên giới.</p></div>
+      <div><h4>ToucHigh</h4><a href="/vi/">Trang chủ</a><a href="/vi/#geo">GEO Autopilot</a><a href="/vi/#social">Social Autopilot</a><a href="/vi/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/vi/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Đăng nhập</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Đặt lịch gọi</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
