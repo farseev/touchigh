@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>robots.txt untuk Crawler AI: OAI-SearchBot, GPTBot, Google-Extended | ToucHigh</title>
+<meta name="description" content="Crawler AI mana yang sebaiknya diizinkan situs B2B atau pabrik: OAI-SearchBot vs GPTBot, PerplexityBot, Google-Extended, dan pengaturan firewall yang diam-diam memblokirnya.">
+<link rel="canonical" href="https://touchigh.ai/blog/id/ai-crawlers-robots-txt-b2b-website/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="robots.txt crawler AI, OAI-SearchBot vs GPTBot, izinkan crawler ChatGPT, Google-Extended robots.txt, PerplexityBot, blokir pelatihan AI tetapi izinkan pencarian">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/id/ai-crawlers-robots-txt-b2b-website/">
+<meta property="og:title" content="Apakah Situs Anda Memblokir ChatGPT? robots.txt untuk Crawler AI di Situs B2B">
+<meta property="og:description" content="Crawler AI mana yang sebaiknya diizinkan situs B2B atau pabrik: OAI-SearchBot vs GPTBot, PerplexityBot, Google-Extended, dan pengaturan firewall yang diam-diam memblokirnya.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t63-id.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Apakah Situs Anda Memblokir ChatGPT? robots.txt untuk Crawler AI di Situs B2B">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:section" content="GEO &amp; pencarian AI">
+<meta property="article:tag" content="robots.txt">
+<meta property="article:tag" content="Crawler AI">
+<meta property="article:tag" content="OAI-SearchBot">
+<meta property="article:tag" content="GEO teknis">
+<meta property="article:tag" content="Situs web B2B">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Apakah Situs Anda Memblokir ChatGPT? robots.txt untuk Crawler AI di Situs B2B">
+<meta name="twitter:description" content="Crawler AI mana yang sebaiknya diizinkan situs B2B atau pabrik: OAI-SearchBot vs GPTBot, PerplexityBot, Google-Extended, dan pengaturan firewall yang diam-diam memblokirnya.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t63-id.jpg">
+<meta name="twitter:image:alt" content="Apakah Situs Anda Memblokir ChatGPT? robots.txt untuk Crawler AI di Situs B2B">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/id/ai-crawlers-robots-txt-b2b-website/#article","url":"https://touchigh.ai/blog/id/ai-crawlers-robots-txt-b2b-website/","mainEntityOfPage":"https://touchigh.ai/blog/id/ai-crawlers-robots-txt-b2b-website/","headline":"Apakah Situs Anda Memblokir ChatGPT? robots.txt untuk Crawler AI di Situs B2B","alternativeHeadline":"robots.txt untuk Crawler AI: OAI-SearchBot, GPTBot, Google-Extended","description":"Crawler AI mana yang sebaiknya diizinkan situs B2B atau pabrik: OAI-SearchBot vs GPTBot, PerplexityBot, Google-Extended, dan pengaturan firewall yang diam-diam memblokirnya.","abstract":"Sangat mungkin. Perusahaan AI menjalankan bot terpisah untuk pencarian dan untuk pelatihan model. OpenAI menyatakan situs yang menolak OAI-SearchBot tidak ditampilkan dalam jawaban pencarian ChatGPT, sedangkan GPTBot hanya mengatur pelatihan. Izinkan crawler pencarian (OAI-SearchBot, PerplexityBot, Googlebot, Bingbot), putuskan secara terpisah soal bot pelatihan seperti GPTBot dan Google-Extended, dan pastikan CDN atau firewall Anda tidak memblokir mereka terlepas dari robots.txt.","image":["https://touchigh.ai/assets/blog/og/t63-id.jpg","https://touchigh.ai/assets/blog/hero/t04.jpg"],"datePublished":"2026-11-08T09:40:00+08:00","dateModified":"2026-11-08T09:40:00+08:00","inLanguage":"id","author":{"@type":"Organization","name":"Tim Riset ToucHigh","url":"https://touchigh.ai/blog/id/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"GEO & pencarian AI","keywords":"robots.txt crawler AI, OAI-SearchBot vs GPTBot, izinkan crawler ChatGPT, Google-Extended robots.txt, PerplexityBot, blokir pelatihan AI tetapi izinkan pencarian","wordCount":1144,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/id/#blog","name":"Blog ToucHigh"},"about":[{"@type":"Thing","name":"robots.txt"},{"@type":"Thing","name":"Crawler AI"},{"@type":"Thing","name":"OAI-SearchBot"},{"@type":"Thing","name":"GEO teknis"},{"@type":"Thing","name":"Situs web B2B"}],"citation":[{"@type":"CreativeWork","name":"Overview of OpenAI Crawlers","url":"https://platform.openai.com/docs/bots","publisher":{"@type":"Organization","name":"OpenAI"}},{"@type":"CreativeWork","name":"Perplexity Crawlers","url":"https://docs.perplexity.ai/guides/bots","publisher":{"@type":"Organization","name":"Perplexity"}},{"@type":"CreativeWork","name":"Google's common crawlers (Google-Extended)","url":"https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to robots.txt","url":"https://developers.google.com/search/docs/crawling-indexing/robots/intro","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"id","mainEntity":[{"@type":"Question","name":"Jika kami memblokir GPTBot, apakah ChatGPT akan berhenti menampilkan situs kami?","acceptedAnswer":{"@type":"Answer","text":"Tidak, menurut OpenAI. GPTBot mengatur apakah konten boleh dipakai untuk pelatihan model; OAI-SearchBot mengatur kemunculan di pencarian ChatGPT. Kedua pengaturan itu terpisah, jadi Anda bisa melarang GPTBot dan tetap mengizinkan OAI-SearchBot."}},{"@type":"Question","name":"Apakah memblokir Google-Extended menghapus kami dari AI Overviews?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Google menyatakan Google-Extended tidak memengaruhi penyertaan di Google Search, dan AI Overviews serta AI Mode adalah bagian dari Penelusuran yang dikontrol lewat Googlebot. Untuk membatasi apa yang muncul di cuplikan dan fitur AI, Google merujuk ke nosnippet, data-nosnippet, max-snippet, atau noindex."}},{"@type":"Question","name":"Apakah kami butuh file llms.txt agar ditemukan AI?","acceptedAnswer":{"@type":"Answer","text":"Google menyatakan Anda tidak butuh file baru yang bisa dibaca mesin atau file teks AI untuk muncul di fitur AI-nya. Sebagian situs menerbitkan llms.txt sebagai ringkasan tambahan untuk alat AI, tetapi itu bukan pengganti halaman yang bisa dirayapi."}},{"@type":"Question","name":"Berapa lama setelah memperbaiki robots.txt kami akan melihat perubahan?","acceptedAnswer":{"@type":"Answer","text":"OpenAI menyatakan sistemnya bisa memakan waktu sekitar 24 jam untuk menyesuaikan diri dengan pembaruan robots.txt untuk pencarian. Dikutip atau tidak tetap bergantung pada konten Anda, jadi ukur selama beberapa minggu berikutnya, bukan keesokan harinya."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/id/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/id/"},{"@type":"ListItem","position":3,"name":"Apakah Situs Anda Memblokir ChatGPT? robots.txt untuk Crawler AI di Situs B2B","item":"https://touchigh.ai/blog/id/ai-crawlers-robots-txt-b2b-website/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Di halaman ini</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/id/">Beranda</a>
+      <a href="/id/#products">Produk</a>
+      <a href="/id/#faq">FAQ</a>
+      <a href="/id/pro/">ToucHigh PRO</a>
+      <a href="/blog/id/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Bahasa: Bahasa Indonesia"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">ID</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Bahasa" hidden><li><a href="/blog/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ai-crawlers-robots-txt-b2b-website/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/id/ai-crawlers-robots-txt-b2b-website/" hreflang="id" lang="id" data-short="ID" aria-current="page">Bahasa Indonesia</a></li><li><a href="/blog/es/ai-crawlers-robots-txt-b2b-website/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/ai-crawlers-robots-txt-b2b-website/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/pt/ai-crawlers-robots-txt-b2b-website/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ru/ai-crawlers-robots-txt-b2b-website/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Masuk</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Jadwalkan panggilan</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/id/">Beranda</a><span>/</span><a href="/blog/id/">Blog</a><span>/</span><span>GEO &amp; pencarian AI</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">GEO &amp; pencarian AI</div>
+    <h1>Apakah Situs Anda Memblokir ChatGPT? robots.txt untuk Crawler AI di Situs B2B</h1>
+    <p class="dek">Sebelum konten, periksa akses. Banyak situs ekspor memblokir crawler pencarian AI tanpa sengaja lewat robots.txt, CDN, atau plugin keamanan. Begini cara membedakan bot pencarian dari bot pelatihan dan apa yang perlu diizinkan.</p>
+    <div class="a-meta"><b>Tim Riset ToucHigh</b><span>Terbit <time datetime="2026-11-08T09:40:00+08:00">8 November 2026</time></span><span>6 menit baca</span><span class="lang-badge">Bahasa Indonesia</span></div>
+    <div class="a-langs">Juga tersedia dalam<a href="/blog/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/ai-crawlers-robots-txt-b2b-website/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/es/ai-crawlers-robots-txt-b2b-website/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/ai-crawlers-robots-txt-b2b-website/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/pt/ai-crawlers-robots-txt-b2b-website/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ru/ai-crawlers-robots-txt-b2b-website/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp 768w, /assets/blog/hero/t04-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t04.jpg" alt="Gelembung obrolan AI yang ramah dengan mata ungu menurunkan ember oranye ke sumur batu yang bersih, dikelilingi labu laboratorium, penggaris, botol produk, dan papan klip kosong, sementara tumpukan mata rantai gelap yang berdebu tergeletak tak dihiraukan di dekatnya." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Pertanyaan di balik artikel ini"><span class="qm">“</span><div><div class="eyebrow">Pertanyaan di balik artikel ini</div><p class="q">Tim IT kami memblokir &quot;bot AI&quot; di situs web tahun lalu. Mungkinkah itu sebabnya ChatGPT tidak pernah menampilkan pabrik kami, dan apa yang sebaiknya kami izinkan?</p><p class="ans"><b>Jawaban singkat</b>Sangat mungkin. Perusahaan AI menjalankan bot terpisah untuk pencarian dan untuk pelatihan model. OpenAI menyatakan situs yang menolak OAI-SearchBot tidak ditampilkan dalam jawaban pencarian ChatGPT, sedangkan GPTBot hanya mengatur pelatihan. Izinkan crawler pencarian (OAI-SearchBot, PerplexityBot, Googlebot, Bingbot), putuskan secara terpisah soal bot pelatihan seperti GPTBot dan Google-Extended, dan pastikan CDN atau firewall Anda tidak memblokir mereka terlepas dari robots.txt.</p></div></section>
+      <section class="kt takeaways"><h2>Poin penting</h2><ul><li>OAI-SearchBot dari OpenAI menampilkan situs di pencarian ChatGPT; GPTBot untuk pelatihan. Pengaturannya terpisah, jadi Anda bisa mengizinkan pencarian dan menolak pelatihan.</li><li>OpenAI menyatakan perubahan robots.txt bisa memakan waktu sekitar 24 jam untuk berdampak pada pencarian ChatGPT.</li><li>PerplexityBot menampilkan dan menautkan situs di hasil Perplexity dan, menurut Perplexity, tidak dipakai untuk melatih model fondasi.</li><li>Google-Extended mengontrol penggunaan konten Anda untuk pelatihan dan grounding Gemini; Google menyatakan ini tidak memengaruhi penyertaan atau peringkat di Google Search.</li><li>Firewall dan CDN bisa memblokir crawler meskipun robots.txt mengizinkannya; karena itulah Perplexity menerbitkan rentang IP dan petunjuk WAF.</li></ul></section>
+      <div class="prose"><p>Banyak sekali situs ekspor tidak terlihat oleh pencarian AI karena alasan yang membosankan: crawler tidak bisa masuk. Suatu saat dalam dua tahun terakhir, seseorang menambahkan aturan "blokir bot AI", mengaktifkan proteksi bot di CDN, atau memasang plugin keamanan. Situsnya tetap berfungsi bagi manusia, jadi tak ada yang sadar. Lalu tim menghabiskan berbulan-bulan menulis ulang konten yang memang tidak pernah boleh dibaca mesin pencari AI.</p>
+
+<p>Panduan ini adalah pemeriksaan teknis 30 menit untuk situs pabrik dan B2B. Ini saja tidak akan membuat Anda terlihat, tetapi jika aksesnya rusak, tidak ada hal lain yang Anda lakukan akan berarti.</p>
+
+<h2 id="s1">Crawler AI mana yang untuk pencarian, dan mana yang untuk pelatihan?</h2>
+
+<p>Ide kuncinya: perusahaan AI memisahkan bot yang mencari halaman untuk ditampilkan di jawaban dari bot yang mengumpulkan konten untuk pelatihan model. Anda bisa membuat pilihan berbeda untuk masing-masing.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Perusahaan</th><th>User agent</th><th>Tujuan (menurut dokumentasi perusahaan)</th></tr></thead>
+<tbody>
+<tr><td>OpenAI</td><td>OAI-SearchBot</td><td>Menampilkan situs web di fitur pencarian ChatGPT. Situs yang menolak tidak ditampilkan di jawaban pencarian ChatGPT, meskipun masih bisa muncul sebagai tautan navigasi.</td></tr>
+<tr><td>OpenAI</td><td>GPTBot</td><td>Merayapi konten yang mungkin dipakai untuk melatih model fondasi OpenAI. Melarangnya menandakan bahwa konten tidak boleh dipakai untuk pelatihan.</td></tr>
+<tr><td>OpenAI</td><td>ChatGPT-User</td><td>Mengunjungi halaman untuk tindakan pengguna tertentu. OpenAI menyatakan aturan robots.txt mungkin tidak berlaku dan bot ini tidak dipakai untuk menentukan apa yang muncul di pencarian.</td></tr>
+<tr><td>Perplexity</td><td>PerplexityBot</td><td>Menampilkan dan menautkan situs web di hasil pencarian Perplexity; tidak dipakai untuk merayapi konten bagi model fondasi AI.</td></tr>
+<tr><td>Perplexity</td><td>Perplexity-User</td><td>Mengambil halaman saat pengguna mengajukan pertanyaan; umumnya mengabaikan robots.txt karena pengambilan itu diminta pengguna.</td></tr>
+<tr><td>Google</td><td>Google-Extended</td><td>Token robots.txt yang mengontrol apakah konten yang dirayapi Google boleh dipakai untuk pelatihan dan grounding Gemini. Token ini tidak memengaruhi penyertaan atau peringkat di Google Search.</td></tr>
+</tbody>
+</table></div>
+
+<p>Fitur AI milik Google di Penelusuran bekerja berbeda. Panduan Google menyatakan AI sudah menyatu dengan Penelusuran, sehingga aturan robots.txt untuk Googlebot adalah kontrol cara situs dirayapi untuk Penelusuran, termasuk AI Overviews dan AI Mode. Memblokir Googlebot untuk "menolak AI" juga akan menghapus Anda dari hasil penelusuran biasa.</p>
+
+<h2 id="s2">Apa isi robots.txt yang tepat untuk situs pabrik?</h2>
+
+<p>Bagi sebagian besar produsen ekspor, tujuannya adalah ditemukan, jadi izinkan crawler pencarian. Mengizinkan crawler pelatihan atau tidak adalah keputusan bisnis; menolaknya tidak menghapus Anda dari pencarian AI. Titik awal yang sederhana terlihat seperti ini:</p>
+
+<div class="tw"><table>
+<thead><tr><th>Baris robots.txt</th><th>Efek</th></tr></thead>
+<tbody>
+<tr><td><code>User-agent: OAI-SearchBot</code> / <code>Allow: /</code></td><td>Memenuhi syarat untuk jawaban pencarian ChatGPT</td></tr>
+<tr><td><code>User-agent: PerplexityBot</code> / <code>Allow: /</code></td><td>Memenuhi syarat untuk hasil Perplexity</td></tr>
+<tr><td><code>User-agent: Googlebot</code> / <code>Allow: /</code></td><td>Google Search, termasuk AI Overviews dan AI Mode</td></tr>
+<tr><td><code>User-agent: Bingbot</code> / <code>Allow: /</code></td><td>Pencarian Bing</td></tr>
+<tr><td><code>User-agent: GPTBot</code> / <code>Allow</code> atau <code>Disallow</code></td><td>Pilihan Anda soal pelatihan model OpenAI</td></tr>
+<tr><td><code>User-agent: Google-Extended</code> / <code>Allow</code> atau <code>Disallow</code></td><td>Pilihan Anda soal pelatihan dan grounding Gemini</td></tr>
+<tr><td><code>Sitemap: https://www.example.com/sitemap.xml</code></td><td>Membantu crawler menemukan setiap halaman</td></tr>
+</tbody>
+</table></div>
+
+<p>Jauhkan area privat, seperti portal dealer atau daftar harga, dari crawler dengan proteksi login, bukan hanya robots.txt. Dokumentasi robots.txt Google dengan tegas menyatakan bahwa robots.txt bukan mekanisme untuk mencegah halaman masuk ke Google; gunakan noindex atau proteksi kata sandi untuk itu.</p>
+
+<h2 id="s3">Mengapa firewall bisa memblokir crawler AI meskipun robots.txt mengizinkannya?</h2>
+
+<p>robots.txt adalah permintaan; CDN, firewall, atau plugin keamanan Anda adalah gerbang. Banyak fitur proteksi bot menantang atau memblokir crawler yang tidak dikenal sebelum mereka sempat membaca robots.txt. Google mencantumkan "memastikan perayapan diizinkan di robots.txt, serta oleh CDN atau infrastruktur hosting mana pun" sebagai salah satu dasar untuk fitur AI. Perplexity bahkan lebih jauh dengan menerbitkan daftar alamat IP dan aturan web application firewall langkah demi langkah agar pemilik situs bisa mengizinkan bot-botnya. OpenAI juga menerbitkan rentang IP untuk crawler-nya.</p>
+
+<p>Ajukan tiga pertanyaan kepada pengelola hosting Anda: apakah proteksi bot aktif, apakah ada daftar izin (allow list), dan apakah crawler pencarian di atas ada di dalamnya? Lalu periksa log server untuk user agent di tabel. Jika mereka muncul dan mendapat error, atau tidak pernah muncul sama sekali, Anda sudah menemukan masalahnya.</p>
+
+<h2 id="s4">Bagaimana memeriksa akses dalam 30 menit?</h2>
+
+<ol>
+<li><strong>Buka situsanda.com/robots.txt.</strong> Cari <code>Disallow: /</code> di bawah <code>User-agent: *</code> atau di bawah user agent AI mana pun.</li>
+<li><strong>Periksa CDN atau firewall</strong> untuk proteksi bot, pemblokiran negara, atau tombol "AI scraper".</li>
+<li><strong>Telusuri log server Anda</strong> untuk OAI-SearchBot, PerplexityBot, dan Googlebot, beserta kode status yang mereka terima.</li>
+<li><strong>Pastikan pengindeksan di Google Search Console</strong> untuk halaman produk dan kapabilitas utama Anda.</li>
+<li><strong>Uji ulang di ChatGPT setelah sehari.</strong> OpenAI menyatakan perubahan robots.txt bisa memakan waktu sekitar 24 jam untuk tercermin di pencarian.</li>
+<li><strong>Tuliskan kebijakannya</strong>, agar pembaruan keamanan berikutnya tidak membatalkannya.</li>
+</ol>
+
+<h2 id="s5">Apakah mengizinkan crawler berarti AI akan merekomendasikan Anda?</h2>
+
+<p>Tidak. Akses membuat Anda memenuhi syarat; akses tidak membuat Anda dipilih. Setelah crawler bisa membaca situs Anda, pertanyaan berikutnya adalah apakah halaman Anda menjawab pertanyaan pembeli dengan fakta spesifik, dan apakah informasi perusahaan Anda konsisten di seluruh web. Tetapi akses yang utama. Ini perbaikan termurah dalam GEO dan yang paling sering terlewat.</p></div>
+      <aside class="insight" aria-label="Wawasan utama"><div class="eyebrow">Wawasan utama</div><blockquote>Anda tidak bisa dikutip oleh mesin yang Anda kunci di luar.</blockquote><p>Pemikiran bottleneck dari riset operasi menyatakan bahwa output suatu sistem ditentukan oleh titik tersempitnya. Untuk visibilitas AI, akses crawler sering menjadi titik itu: sebanyak apa pun pekerjaan konten tidak akan menaikkan hasil sampai gerbangnya terbuka.</p></aside>
+      <section class="prop" aria-label="Bagaimana ToucHigh membantu">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Bagaimana ToucHigh membantu</h2></div>
+        <div class="pb prose"><p>GEO Autopilot dari ToucHigh memulai setiap kerja sama dengan pemeriksaan semacam ini:</p><ul><li>audit di mana situs Anda tidak terlihat di ChatGPT, Perplexity, Google AI, dan Gemini;</li><li>perbaikan yang ditulis dan diterbitkan untuk Anda, termasuk halaman, jawaban, dan data entitas;</li><li>pangsa kutipan AI yang dipantau setelahnya, agar Anda bisa melihat dampak dibukanya gerbang.</li></ul><p>Jadwalkan panggilan strategi 30 menit dan kami akan melihat visibilitas AI situs Anda secara langsung.</p><p class="uc">Pabrik dan pemasok B2B: lihat cara ToucHigh menangani <a href="/id/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T63'})}catch(e){}">visibilitas pemasok di pencarian AI</a>. Ingin visibilitas berubah menjadi pipeline? Kenali <a href="/id/pro/" onclick="try{gtag('event','pro_click',{location:'article_T63'})}catch(e){}">ToucHigh PRO</a>, layanan outbound berbasis strategi kami.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T63')">Jadwalkan konsultasi strategi 30 menit →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T63'})}catch(e){}">Masuk ke ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Pertanyaan umum"><h2>Pertanyaan umum</h2><details open><summary>Jika kami memblokir GPTBot, apakah ChatGPT akan berhenti menampilkan situs kami?</summary><p>Tidak, menurut OpenAI. GPTBot mengatur apakah konten boleh dipakai untuk pelatihan model; OAI-SearchBot mengatur kemunculan di pencarian ChatGPT. Kedua pengaturan itu terpisah, jadi Anda bisa melarang GPTBot dan tetap mengizinkan OAI-SearchBot.</p></details><details><summary>Apakah memblokir Google-Extended menghapus kami dari AI Overviews?</summary><p>Tidak. Google menyatakan Google-Extended tidak memengaruhi penyertaan di Google Search, dan AI Overviews serta AI Mode adalah bagian dari Penelusuran yang dikontrol lewat Googlebot. Untuk membatasi apa yang muncul di cuplikan dan fitur AI, Google merujuk ke nosnippet, data-nosnippet, max-snippet, atau noindex.</p></details><details><summary>Apakah kami butuh file llms.txt agar ditemukan AI?</summary><p>Google menyatakan Anda tidak butuh file baru yang bisa dibaca mesin atau file teks AI untuk muncul di fitur AI-nya. Sebagian situs menerbitkan llms.txt sebagai ringkasan tambahan untuk alat AI, tetapi itu bukan pengganti halaman yang bisa dirayapi.</p></details><details><summary>Berapa lama setelah memperbaiki robots.txt kami akan melihat perubahan?</summary><p>OpenAI menyatakan sistemnya bisa memakan waktu sekitar 24 jam untuk menyesuaikan diri dengan pembaruan robots.txt untuk pencarian. Dikutip atau tidak tetap bergantung pada konten Anda, jadi ukur selama beberapa minggu berikutnya, bukan keesokan harinya.</p></details></section>
+      <section class="srcs"><h2>Sumber</h2><ol><li><a href="https://platform.openai.com/docs/bots" rel="noopener" target="_blank">Overview of OpenAI Crawlers</a> — OpenAI</li><li><a href="https://docs.perplexity.ai/guides/bots" rel="noopener" target="_blank">Perplexity Crawlers</a> — Perplexity</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers" rel="noopener" target="_blank">Google&#x27;s common crawlers (Google-Extended)</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro" rel="noopener" target="_blank">Introduction to robots.txt</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>Mengapa kami menulis ini</b>Kami menulis ini karena hal pertama yang kami periksa di situs pabrik baru adalah apakah crawler AI bisa masuk, dan jawabannya &quot;tidak&quot; jauh lebih sering dari yang diduga orang.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Di halaman ini"><h4>Di halaman ini</h4><a href="#s1">Crawler AI mana yang untuk pencarian, dan mana yang untuk pelatihan?</a><a href="#s2">Apa isi robots.txt yang tepat untuk situs pabrik?</a><a href="#s3">Mengapa firewall bisa memblokir crawler AI meskipun robots.txt mengizinkannya?</a><a href="#s4">Bagaimana memeriksa akses dalam 30 menit?</a><a href="#s5">Apakah mengizinkan crawler berarti AI akan merekomendasikan Anda?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Lihat di mana Anda tidak terlihat di pencarian AI AS</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Jadwalkan panggilan</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Masuk</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Artikel terkait</h2>
+  <div class="grid"><a class="card" href="/blog/id/chatgpt-supplier-shortlist-audit/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t46-768.webp"><img src="/assets/blog/hero/t46.jpg" alt="Kaca pembesar raksasa memeriksa empat gelembung obrolan AI yang melayang di samping toko kecil berkanopi oranye, dan hanya satu gelembung yang menampilkan pin peta oranye milik toko itu, di sebelah papan klip berisi tanda centang." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="id"><div class="eyebrow">GEO &amp; pencarian AI</div><h3>Apakah Pabrik Anda Masuk Daftar Pendek Pemasok ChatGPT? Audit 30 Prompt</h3><p>Sebelum menulis ulang satu halaman pun, cari tahu posisi Anda. Berikut audit 30 prompt, lembar penilaian, dan cara membaca hasilnya yang bisa dijalankan tim ekspor mana pun dalam satu sore.</p><div class="meta"><span class="lg">Bahasa Indonesia</span><span>6 menit baca</span></div></div></a><a class="card" href="/blog/en/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Among a row of identical grey factories, one white and orange factory is lit by a spotlight from an AI chat bubble, above a panel of icons for machinery, certification, materials, lead time and FAQs." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites</h3><p>Overseas buyers are starting to use AI to find suppliers. A factory site with only a company profile and product photos rarely gets recommended by ChatGPT. Here&#x27;s a checklist of citable pages and first GEO steps.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/en/backlinks-vs-primary-sources-chatgpt-citations/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp"><img src="/assets/blog/hero/t04.jpg" alt="A friendly AI chat bubble with violet eyes lowers an orange bucket into a clean stone well surrounded by a lab flask, a ruler, a product bottle and a blank clipboard, while a dusty heap of dark chain links lies ignored nearby." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Do Backlinks Still Matter? ChatGPT Now Favors Primary Sources</h3><p>ChatGPT increasingly favors primary sources, and each new backlink pays back less. Small sellers should shift time from buying links to publishing original data.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/id/">← Kembali ke blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Lihat di mana Anda tidak terlihat di pencarian AI AS</h2>
+  <p>Jadwalkan panggilan gratis 30 menit dan kami akan membaca visibilitas AI toko Anda secara langsung.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Jadwalkan konsultasi strategi 30 menit →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Masuk ke ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Visibilitas pencarian AI, media sosial, dan iklan secara otomatis untuk UKM dan penjual lintas batas.</p></div>
+      <div><h4>ToucHigh</h4><a href="/id/">Beranda</a><a href="/id/#geo">GEO Autopilot</a><a href="/id/#social">Social Autopilot</a><a href="/id/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/id/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Masuk</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Jadwalkan panggilan</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Overviews dan AI Mode di Search Console: Cara Mengukurnya | ToucHigh</title>
+<meta name="description" content="Google menghitung AI Overviews dan AI Mode dalam data penelusuran Web di Search Console. Cara membaca impresi, klik, dan halaman saat jawaban AI muncul, dan apa yang dibandingkan.">
+<link rel="canonical" href="https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="AI Overviews Search Console, lalu lintas AI Mode Search Console, mengukur klik AI Overviews, jenis penelusuran Web Search Console AI, lalu lintas fitur AI Google, pengukuran GEO Google">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/">
+<meta property="og:title" content="Cara Membaca Lalu Lintas AI Overviews dan AI Mode di Google Search Console">
+<meta property="og:description" content="Google menghitung AI Overviews dan AI Mode dalam data penelusuran Web di Search Console. Cara membaca impresi, klik, dan halaman saat jawaban AI muncul, dan apa yang dibandingkan.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t65-id.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cara Membaca Lalu Lintas AI Overviews dan AI Mode di Google Search Console">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:section" content="Pengukuran">
+<meta property="article:tag" content="Google Search Console">
+<meta property="article:tag" content="AI Overviews">
+<meta property="article:tag" content="AI Mode">
+<meta property="article:tag" content="Pengukuran SEO">
+<meta property="article:tag" content="GEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cara Membaca Lalu Lintas AI Overviews dan AI Mode di Google Search Console">
+<meta name="twitter:description" content="Google menghitung AI Overviews dan AI Mode dalam data penelusuran Web di Search Console. Cara membaca impresi, klik, dan halaman saat jawaban AI muncul, dan apa yang dibandingkan.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t65-id.jpg">
+<meta name="twitter:image:alt" content="Cara Membaca Lalu Lintas AI Overviews dan AI Mode di Google Search Console">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/#article","url":"https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/","mainEntityOfPage":"https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/","headline":"Cara Membaca Lalu Lintas AI Overviews dan AI Mode di Google Search Console","alternativeHeadline":"AI Overviews dan AI Mode di Search Console: Cara Mengukurnya","description":"Google menghitung AI Overviews dan AI Mode dalam data penelusuran Web di Search Console. Cara membaca impresi, klik, dan halaman saat jawaban AI muncul, dan apa yang dibandingkan.","abstract":"Tidak ada laporan terpisah. Google menyatakan situs yang muncul di AI Overviews dan AI Mode disertakan dalam keseluruhan lalu lintas pencarian di Search Console, di laporan Performa dengan jenis penelusuran Web. Jadi bacalah dengan perbandingan: kueri berbentuk pertanyaan dan kueri panjang dibandingkan kueri pendek, sebelum dibandingkan sesudah, impresi dibandingkan klik, dan halaman yang mendapat tambahan impresi. Padukan dengan halaman landing di GA4 dan pemeriksaan manual atas kueri prioritas mana yang menampilkan AI Overview.","image":["https://touchigh.ai/assets/blog/og/t65-id.jpg","https://touchigh.ai/assets/blog/hero/t01.jpg"],"datePublished":"2026-11-08T10:20:00+08:00","dateModified":"2026-11-08T10:20:00+08:00","inLanguage":"id","author":{"@type":"Organization","name":"Tim Riset ToucHigh","url":"https://touchigh.ai/blog/id/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Pengukuran","keywords":"AI Overviews Search Console, lalu lintas AI Mode Search Console, mengukur klik AI Overviews, jenis penelusuran Web Search Console AI, lalu lintas fitur AI Google, pengukuran GEO Google","wordCount":1097,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/id/#blog","name":"Blog ToucHigh"},"about":[{"@type":"Thing","name":"Google Search Console"},{"@type":"Thing","name":"AI Overviews"},{"@type":"Thing","name":"AI Mode"},{"@type":"Thing","name":"Pengukuran SEO"},{"@type":"Thing","name":"GEO"}],"citation":[{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Performance report (Search results): Overview and basic setup","url":"https://support.google.com/webmasters/answer/7576553","publisher":{"@type":"Organization","name":"Search Console Help"}},{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"id","mainEntity":[{"@type":"Question","name":"Apakah ada filter untuk AI Overviews di Search Console?","acceptedAnswer":{"@type":"Answer","text":"Panduan Google menyatakan AI Overviews dan AI Mode disertakan dalam keseluruhan data penelusuran Web di laporan Performa, alih-alih menunjuk ke laporan terpisah. Baca dampaknya melalui perbandingan kelompok kueri, halaman, dan periode."}},{"@type":"Question","name":"Mengapa impresi kami naik sementara klik tetap stagnan?","acceptedAnswer":{"@type":"Answer","text":"Salah satu alasan umum adalah halaman Anda ditampilkan, termasuk sebagai tautan pendukung di jawaban AI, sementara pencari sudah mendapat cukup informasi dari jawabannya sendiri. Periksa kueri dan halaman mana yang mendorong perubahan itu sebelum menyimpulkan bahwa itu masalah."}},{"@type":"Question","name":"Apakah memblokir Google-Extended membuat halaman kami tidak muncul di AI Overviews?","acceptedAnswer":{"@type":"Answer","text":"Tidak. Google menyatakan Google-Extended tidak memengaruhi penyertaan di Google Search. Untuk membatasi apa yang muncul di fitur AI, Google merujuk ke nosnippet, data-nosnippet, max-snippet, atau noindex."}},{"@type":"Question","name":"Apakah kami butuh markup khusus untuk muncul di AI Overviews?","acceptedAnswer":{"@type":"Answer","text":"Google menyatakan tidak ada persyaratan tambahan dan tidak perlu schema khusus. Halaman harus terindeks dan memenuhi syarat untuk cuplikan, dan praktik terbaik SEO biasa tetap berlaku."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/id/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/id/"},{"@type":"ListItem","position":3,"name":"Cara Membaca Lalu Lintas AI Overviews dan AI Mode di Google Search Console","item":"https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Di halaman ini</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/id/">Beranda</a>
+      <a href="/id/#products">Produk</a>
+      <a href="/id/#faq">FAQ</a>
+      <a href="/id/pro/">ToucHigh PRO</a>
+      <a href="/blog/id/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Bahasa: Bahasa Indonesia"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">ID</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Bahasa" hidden><li><a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/search-console-ai-overviews-ai-mode-traffic/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/id/search-console-ai-overviews-ai-mode-traffic/" hreflang="id" lang="id" data-short="ID" aria-current="page">Bahasa Indonesia</a></li><li><a href="/blog/es/search-console-ai-overviews-ai-mode-traffic/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/search-console-ai-overviews-ai-mode-traffic/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/pt/search-console-ai-overviews-ai-mode-traffic/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ru/search-console-ai-overviews-ai-mode-traffic/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Masuk</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Jadwalkan panggilan</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/id/">Beranda</a><span>/</span><a href="/blog/id/">Blog</a><span>/</span><span>Pengukuran</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Pengukuran</div>
+    <h1>Cara Membaca Lalu Lintas AI Overviews dan AI Mode di Google Search Console</h1>
+    <p class="dek">Tidak ada tab &quot;AI Overviews&quot; terpisah. Google memasukkan fitur AI ke dalam laporan Performa yang sudah Anda miliki. Begini cara eksportir tetap bisa membaca dampak jawaban AI terhadap lalu lintas pencarian mereka.</p>
+    <div class="a-meta"><b>Tim Riset ToucHigh</b><span>Terbit <time datetime="2026-11-08T10:20:00+08:00">8 November 2026</time></span><span>6 menit baca</span><span class="lang-badge">Bahasa Indonesia</span></div>
+    <div class="a-langs">Juga tersedia dalam<a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/search-console-ai-overviews-ai-mode-traffic/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/es/search-console-ai-overviews-ai-mode-traffic/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/search-console-ai-overviews-ai-mode-traffic/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/pt/search-console-ai-overviews-ai-mode-traffic/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ru/search-console-ai-overviews-ai-mode-traffic/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp 768w, /assets/blog/hero/t01-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t01.jpg" alt="Sebuah bilah pencarian menuangkan kelereng oranye ke corong jawaban AI yang berpendar ungu, yang hanya meloloskan beberapa kelereng ke etalase situs web kecil, sementara tumpukan tinggi halaman kosong yang goyah di sampingnya hanya menghasilkan satu kelereng." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Pertanyaan di balik artikel ini"><span class="qm">“</span><div><div class="eyebrow">Pertanyaan di balik artikel ini</div><p class="q">Di mana kami bisa melihat berapa banyak lalu lintas yang dibawa AI Overviews dan AI Mode Google? Apakah ada laporannya di Search Console?</p><p class="ans"><b>Jawaban singkat</b>Tidak ada laporan terpisah. Google menyatakan situs yang muncul di AI Overviews dan AI Mode disertakan dalam keseluruhan lalu lintas pencarian di Search Console, di laporan Performa dengan jenis penelusuran Web. Jadi bacalah dengan perbandingan: kueri berbentuk pertanyaan dan kueri panjang dibandingkan kueri pendek, sebelum dibandingkan sesudah, impresi dibandingkan klik, dan halaman yang mendapat tambahan impresi. Padukan dengan halaman landing di GA4 dan pemeriksaan manual atas kueri prioritas mana yang menampilkan AI Overview.</p></div></section>
+      <section class="kt takeaways"><h2>Poin penting</h2><ul><li>Google menyatakan lalu lintas AI Overviews dan AI Mode dihitung di laporan Performa Search Console dengan jenis penelusuran Web, bersama bagian Penelusuran lainnya.</li><li>Kanal AI Assistant di GA4 mengecualikan Google AI Overviews dan AI Mode, sehingga Search Console menjadi tempat utama untuk melihatnya.</li><li>Agar memenuhi syarat sebagai tautan pendukung, halaman harus terindeks dan memenuhi syarat untuk tampil dengan cuplikan; tidak ada persyaratan teknis tambahan.</li><li>Google menyatakan AI Overviews dan AI Mode dapat menjalankan "query fan-out" berupa penelusuran terkait, yang menjadi salah satu alasan kueri baru yang lebih panjang bisa muncul di laporan Anda.</li><li>Baca tren per kelompok kueri dan halaman, bukan total seluruh situs: jawaban AI bisa menaikkan impresi sementara klik bergerak berbeda.</li></ul></section>
+      <div class="prose"><p>Banyak tim membuka Search Console untuk mencari laporan "AI Overviews" dan tidak menemukan apa pun. Itu bukan berarti datanya tidak ada; artinya Google menaruhnya di laporan yang sudah Anda gunakan. Begitu Anda tahu letaknya, dan apa yang tidak bisa dipisahkannya, Anda tetap bisa menjawab pertanyaan atasan Anda: apakah jawaban AI Google membantu atau merugikan lalu lintas kita?</p>
+
+<h2 id="s1">Di mana Search Console melaporkan AI Overviews dan AI Mode?</h2>
+
+<p>Panduan Google untuk pemilik situs tentang fitur AI sangat lugas: situs yang muncul di fitur AI seperti AI Overviews dan AI Mode disertakan dalam keseluruhan lalu lintas pencarian di Search Console, dilaporkan di laporan Performa dengan jenis penelusuran "Web". Dengan kata lain, impresi atau klik dari AI Overview dihitung bersama impresi dan klik Google Search lainnya untuk kueri dan halaman tersebut.</p>
+
+<p>Ini juga menjelaskan selisih yang sering terlihat di Google Analytics 4. Kanal AI Assistant di GA4 mencakup sumber seperti ChatGPT, Gemini, Copilot, dan lainnya, tetapi definisi Google secara eksplisit mengecualikan AI Overviews dan AI Mode. Kunjungan dari keduanya masuk sebagai lalu lintas pencarian organik Google. Jika Anda ingin memahami jawaban AI Google, Search Console adalah instrumen utama Anda.</p>
+
+<h2 id="s2">Halaman mana yang memenuhi syarat untuk muncul di jawaban AI?</h2>
+
+<p>Aturan kelayakannya sama dengan hasil biasa yang memiliki cuplikan. Google menyatakan halaman harus terindeks dan memenuhi syarat untuk ditampilkan di Google Search dengan cuplikan agar bisa tampil sebagai tautan pendukung di AI Overviews atau AI Mode, dan tidak ada persyaratan teknis tambahan. Ada dua pemeriksaan praktis:</p>
+
+<ul>
+<li>Pastikan halaman prioritas terindeks: gunakan laporan Halaman dan Inspeksi URL di Search Console.</li>
+<li>Pastikan Anda tidak membatasi cuplikan secara tidak sengaja. Google mencantumkan nosnippet, data-nosnippet, max-snippet, dan noindex sebagai kontrol yang membatasi apa yang ditampilkan. Tema atau plugin yang menambahkan <code>nosnippet</code> di seluruh situs juga akan membuat Anda tidak muncul di jawaban AI.</li>
+</ul>
+
+<h2 id="s3">Bagaimana membaca dampak jawaban AI dari data yang tercampur?</h2>
+
+<p>Karena lalu lintas AI tidak dipisahkan, Anda membacanya dengan membandingkan kelompok. Empat perbandingan sudah mencakup sebagian besar pekerjaannya.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Perbandingan</th><th>Cara menyiapkannya</th><th>Apa yang bisa diungkapkannya</th></tr></thead>
+<tbody>
+<tr><td>Kueri berbentuk pertanyaan vs kueri pendek</td><td>Filter dimensi Kueri dengan regex kustom seperti <code>^(what|how|which|why|best|can|does)\b</code></td><td>Apakah kueri percakapan, tempat jawaban AI sering muncul, bertumbuh dalam impresi dan klik</td></tr>
+<tr><td>Sebelum vs sesudah</td><td>Bandingkan rentang tanggal di sekitar perubahan yang diketahui, misalnya peluncuran konten</td><td>Apakah sebuah perubahan bertepatan dengan pergerakan impresi atau CTR</td></tr>
+<tr><td>Impresi vs klik</td><td>Tampilkan kedua metrik pada kelompok kueri yang sama</td><td>Impresi yang naik dengan klik yang stagnan bisa berarti Anda terlihat, tetapi pertanyaannya sudah terjawab di tempat</td></tr>
+<tr><td>Kelompok halaman</td><td>Filter halaman berdasarkan folder, seperti /products/ atau /blog/</td><td>Jenis konten mana yang mendapat tambahan visibilitas</td></tr>
+</tbody>
+</table></div>
+
+<p>Google juga menyatakan AI Overviews dan AI Mode dapat memakai teknik "query fan-out", yaitu menjalankan beberapa penelusuran terkait untuk menyusun jawaban. Perhatikan tabel Kueri Anda untuk kueri baru yang lebih panjang dan lebih spesifik yang tidak pernah Anda targetkan; kueri itu petunjuk berguna tentang sub-pertanyaan yang dijawab dengan memakai halaman Anda.</p>
+
+<h2 id="s4">Bagaimana sebaiknya menggabungkan Search Console dengan GA4?</h2>
+
+<p>Search Console berhenti di klik. Untuk mengetahui apakah klik itu bernilai, cocokkan halaman yang mendapat tambahan visibilitas di Google dengan laporan halaman landing GA4 yang difilter ke Organic Search, lalu lihat keterlibatan dan peristiwa utama. Panduan Google sendiri menyarankan melacak konversi dan waktu di situs dengan alat seperti Google Analytics, dan menyatakan bahwa klik dari halaman hasil penelusuran dengan AI Overviews berkualitas lebih tinggi, artinya pengguna cenderung menghabiskan lebih banyak waktu di situs. Anggap itu sebagai klaim Google yang perlu diperiksa di data Anda sendiri, bukan sebagai kepastian.</p>
+
+<h2 id="s5">Apa yang perlu dipantau setiap bulan?</h2>
+
+<ol>
+<li><strong>Daftar tetap berisi 20 hingga 50 kueri prioritas.</strong> Cari secara manual dan catat apakah AI Overview muncul dan apakah Anda dikutip.</li>
+<li><strong>Impresi dan klik untuk kelompok kueri berbentuk pertanyaan</strong>, dibandingkan dengan bulan sebelumnya dan bulan yang sama tahun lalu jika datanya ada.</li>
+<li><strong>Sepuluh halaman dengan kenaikan impresi terbesar</strong>, beserta keterlibatannya di GA4.</li>
+<li><strong>Status pengindeksan dan cuplikan</strong> untuk halaman produk, kapabilitas, dan FAQ Anda.</li>
+<li><strong>Impresi penelusuran bermerek</strong>, sinyal tidak langsung bahwa jawaban AI di tempat lain mengarahkan orang untuk mencari Anda.</li>
+</ol>
+
+<p>Tidak satu pun dari ini memberi Anda satu angka "lalu lintas AI", dan Anda sebaiknya waspada terhadap alat apa pun yang mengklaim bisa memisahkannya dengan sempurna dari data Google yang tercampur. Yang Anda dapatkan adalah cara yang konsisten untuk melihat apakah konten Anda dipakai dalam jawaban AI Google, dan apakah itu berubah menjadi kunjungan yang berarti.</p></div>
+      <aside class="insight" aria-label="Wawasan utama"><div class="eyebrow">Wawasan utama</div><blockquote>Jika datanya tercampur, bandingkan kelompok alih-alih mencari satu angka.</blockquote><p>Desain riset menyebutnya pendekatan difference-in-differences: Anda tidak bisa mengisolasi perlakuannya secara langsung, jadi Anda membandingkan kelompok dan periode yang seharusnya bereaksi berbeda. Kueri berbentuk pertanyaan dibandingkan kueri pendek, sebelum dibandingkan sesudah, adalah versi praktisnya untuk AI Overviews.</p></aside>
+      <section class="prop" aria-label="Bagaimana ToucHigh membantu">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Bagaimana ToucHigh membantu</h2></div>
+        <div class="pb prose"><p>Search Console menunjukkan Google; GEO Autopilot dari ToucHigh menunjukkan gambaran AI yang lebih luas:</p><ul><li>mengaudit visibilitas Anda di ChatGPT, Perplexity, Google AI Overviews dan AI Mode, serta Gemini;</li><li>menulis dan menerbitkan perbaikan serta artikel GEO untuk pertanyaan yang belum Anda jawab;</li><li>memantau pangsa kutipan AI Anda berdampingan dengan data pencarian, sehingga Anda bisa menunjukkan kenaikannya.</li></ul><p>Jadwalkan panggilan strategi 30 menit dan kami akan membandingkan apa yang ditunjukkan Search Console dengan pembacaan visibilitas AI situs Anda secara langsung.</p><p class="uc">Pabrik dan pemasok B2B: lihat cara ToucHigh menangani <a href="/id/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T65'})}catch(e){}">visibilitas pemasok di pencarian AI</a>. Ingin visibilitas berubah menjadi pipeline? Kenali <a href="/id/pro/" onclick="try{gtag('event','pro_click',{location:'article_T65'})}catch(e){}">ToucHigh PRO</a>, layanan outbound berbasis strategi kami.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T65')">Jadwalkan konsultasi strategi 30 menit →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T65'})}catch(e){}">Masuk ke ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Pertanyaan umum"><h2>Pertanyaan umum</h2><details open><summary>Apakah ada filter untuk AI Overviews di Search Console?</summary><p>Panduan Google menyatakan AI Overviews dan AI Mode disertakan dalam keseluruhan data penelusuran Web di laporan Performa, alih-alih menunjuk ke laporan terpisah. Baca dampaknya melalui perbandingan kelompok kueri, halaman, dan periode.</p></details><details><summary>Mengapa impresi kami naik sementara klik tetap stagnan?</summary><p>Salah satu alasan umum adalah halaman Anda ditampilkan, termasuk sebagai tautan pendukung di jawaban AI, sementara pencari sudah mendapat cukup informasi dari jawabannya sendiri. Periksa kueri dan halaman mana yang mendorong perubahan itu sebelum menyimpulkan bahwa itu masalah.</p></details><details><summary>Apakah memblokir Google-Extended membuat halaman kami tidak muncul di AI Overviews?</summary><p>Tidak. Google menyatakan Google-Extended tidak memengaruhi penyertaan di Google Search. Untuk membatasi apa yang muncul di fitur AI, Google merujuk ke nosnippet, data-nosnippet, max-snippet, atau noindex.</p></details><details><summary>Apakah kami butuh markup khusus untuk muncul di AI Overviews?</summary><p>Google menyatakan tidak ada persyaratan tambahan dan tidak perlu schema khusus. Halaman harus terindeks dan memenuhi syarat untuk cuplikan, dan praktik terbaik SEO biasa tetap berlaku.</p></details></section>
+      <section class="srcs"><h2>Sumber</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://support.google.com/webmasters/answer/7576553" rel="noopener" target="_blank">Performance report (Search results): Overview and basic setup</a> — Search Console Help</li><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li></ol></section>
+      <p class="note"><b>Mengapa kami menulis ini</b>Kami menulis ini karena eksportir terus bertanya di mana data AI Overview mereka. Jawaban jujurnya: data itu sudah ada di Search Console, tercampur, dan ada cara disiplin untuk membacanya.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Di halaman ini"><h4>Di halaman ini</h4><a href="#s1">Di mana Search Console melaporkan AI Overviews dan AI Mode?</a><a href="#s2">Halaman mana yang memenuhi syarat untuk muncul di jawaban AI?</a><a href="#s3">Bagaimana membaca dampak jawaban AI dari data yang tercampur?</a><a href="#s4">Bagaimana sebaiknya menggabungkan Search Console dengan GA4?</a><a href="#s5">Apa yang perlu dipantau setiap bulan?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Lihat di mana Anda tidak terlihat di pencarian AI AS</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Jadwalkan panggilan</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Masuk</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Artikel terkait</h2>
+  <div class="grid"><a class="card" href="/blog/id/ga4-ai-assistant-channel/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Paket-paket meluncur keluar dari terowongan gelembung obrolan bercahaya ungu ke ban berjalan dan jatuh ke tempat sampah kelabu polos, label pelacakan oranyenya berserakan di lantai, sementara kaca pembesar, diagram cincin, diagram batang, dan tas belanja siap untuk memeriksa silang." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="id"><div class="eyebrow">Pengukuran</div><h3>Kanal AI Assistant di GA4: Apa yang Dihitung, Apa yang Terlewat, dan Kapan Membuat Kanal Sendiri</h3><p>Google Analytics kini memilah kunjungan dari ChatGPT, Gemini, Copilot, dan lainnya ke dalam kanal tersendiri. Itu menyelesaikan sebagian masalah lalu lintas AI. Berikut bagian yang belum terselesaikan, dan grup kanal kustom untuk menutup celahnya.</p><div class="meta"><span class="lg">Bahasa Indonesia</span><span>6 menit baca</span></div></div></a><a class="card" href="/blog/en/ai-overviews-branded-queries-seo-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="A search bar pours orange marbles into a violet-glowing AI answer funnel that lets only a few reach a small website storefront, while a tall wobbling stack of blank pages beside it yields just one marble." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">SEO</div><h3>Store SEO Traffic Dropping? AI Overviews Now Cover 80% of Branded Searches</h3><p>AI Overviews are taking over branded searches, and more blog posts and backlinks pay back less every month. What should independent store owners stop doing, and what should they start?</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/seo-best-practices-ai-overviews-ai-mode/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t30-768.webp"><img src="/assets/blog/hero/t30.jpg" alt="A gloved hand prunes thin grey page-leaves from a potted plant while a few large orange page cards bloom, one of them linked by a violet line to a floating AI answer panel." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO Best Practices for AI Overviews and AI Mode (October 2026)</h3><p>Google&#x27;s AI now answers most branded searches and carries more inline links. Here&#x27;s where SEO effort still pays, where returns have flattened, and a one-week checklist.</p><div class="meta"><span class="lg">English</span><span>7 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/id/">← Kembali ke blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Lihat di mana Anda tidak terlihat di pencarian AI AS</h2>
+  <p>Jadwalkan panggilan gratis 30 menit dan kami akan membaca visibilitas AI toko Anda secara langsung.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Jadwalkan konsultasi strategi 30 menit →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Masuk ke ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Visibilitas pencarian AI, media sosial, dan iklan secara otomatis untuk UKM dan penjual lintas batas.</p></div>
+      <div><h4>ToucHigh</h4><a href="/id/">Beranda</a><a href="/id/#geo">GEO Autopilot</a><a href="/id/#social">Social Autopilot</a><a href="/id/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/id/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Masuk</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Jadwalkan panggilan</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

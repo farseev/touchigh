@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACoS Titik Impas, TACoS, dan ROAS untuk Penjual Amazon | ToucHigh</title>
+<meta name="description" content="Cara menghitung ACoS titik impas dari margin riil, hubungan ACoS dan ROAS, peran TACoS, dan cara menetapkan target ACoS untuk laba, peluncuran, atau cuci gudang.">
+<link rel="canonical" href="https://touchigh.ai/blog/id/amazon-break-even-acos-tacos/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="ACoS titik impas, cara menghitung ACoS, ACoS vs ROAS, TACoS Amazon, target ACoS, margin laba iklan Amazon, break even ACoS">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/id/amazon-break-even-acos-tacos/">
+<meta property="og:title" content="ACoS Titik Impas, TACoS, dan ROAS: Hitungan Iklan Amazon yang Wajib Dipahami Penjual">
+<meta property="og:description" content="Cara menghitung ACoS titik impas dari margin riil, hubungan ACoS dan ROAS, peran TACoS, dan cara menetapkan target ACoS untuk laba, peluncuran, atau cuci gudang.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t68-id.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ACoS Titik Impas, TACoS, dan ROAS: Hitungan Iklan Amazon yang Wajib Dipahami Penjual">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:section" content="Iklan untuk UKM">
+<meta property="article:tag" content="ACoS">
+<meta property="article:tag" content="TACoS">
+<meta property="article:tag" content="ROAS">
+<meta property="article:tag" content="PPC Amazon">
+<meta property="article:tag" content="Margin laba">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ACoS Titik Impas, TACoS, dan ROAS: Hitungan Iklan Amazon yang Wajib Dipahami Penjual">
+<meta name="twitter:description" content="Cara menghitung ACoS titik impas dari margin riil, hubungan ACoS dan ROAS, peran TACoS, dan cara menetapkan target ACoS untuk laba, peluncuran, atau cuci gudang.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t68-id.jpg">
+<meta name="twitter:image:alt" content="ACoS Titik Impas, TACoS, dan ROAS: Hitungan Iklan Amazon yang Wajib Dipahami Penjual">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/id/amazon-break-even-acos-tacos/#article","url":"https://touchigh.ai/blog/id/amazon-break-even-acos-tacos/","mainEntityOfPage":"https://touchigh.ai/blog/id/amazon-break-even-acos-tacos/","headline":"ACoS Titik Impas, TACoS, dan ROAS: Hitungan Iklan Amazon yang Wajib Dipahami Penjual","alternativeHeadline":"ACoS Titik Impas, TACoS, dan ROAS untuk Penjual Amazon","description":"Cara menghitung ACoS titik impas dari margin riil, hubungan ACoS dan ROAS, peran TACoS, dan cara menetapkan target ACoS untuk laba, peluncuran, atau cuci gudang.","abstract":"Semuanya bergantung pada margin Anda. Amazon mendefinisikan ACoS sebagai belanja iklan dibagi pendapatan iklan dan menyatakan bahwa agar tetap untung, ACoS harus lebih rendah dari margin laba Anda. Hitung margin Anda sebelum biaya iklan (harga dikurangi biaya produk, biaya Amazon, pengiriman, bea masuk, dan perkiraan retur); persentase itu adalah ACoS titik impas Anda. Jika angkanya 35%, ACoS 28% menguntungkan untuk penjualan yang diatribusikan; jika 22%, Anda rugi pada setiap penjualan dari iklan. Lalu pantau TACoS, total belanja iklan dibagi total penjualan, untuk melihat apakah iklan membangun penjualan organik.","image":["https://touchigh.ai/assets/blog/og/t68-id.jpg","https://touchigh.ai/assets/blog/hero/t40.jpg"],"datePublished":"2026-11-08T11:20:00+08:00","dateModified":"2026-11-08T11:20:00+08:00","inLanguage":"id","author":{"@type":"Organization","name":"Tim Riset ToucHigh","url":"https://touchigh.ai/blog/id/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Iklan untuk UKM","keywords":"ACoS titik impas, cara menghitung ACoS, ACoS vs ROAS, TACoS Amazon, target ACoS, margin laba iklan Amazon, break even ACoS","wordCount":1056,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/id/#blog","name":"Blog ToucHigh"},"about":[{"@type":"Thing","name":"ACoS"},{"@type":"Thing","name":"TACoS"},{"@type":"Thing","name":"ROAS"},{"@type":"Thing","name":"PPC Amazon"},{"@type":"Thing","name":"Margin laba"}],"citation":[{"@type":"CreativeWork","name":"What is advertising cost of sales (ACOS)?","url":"https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales","publisher":{"@type":"Organization","name":"Amazon Ads"}},{"@type":"CreativeWork","name":"Sponsored Products","url":"https://advertising.amazon.com/solutions/products/sponsored-products","publisher":{"@type":"Organization","name":"Amazon Ads"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/amazon-break-even-acos-tacos/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"id","mainEntity":[{"@type":"Question","name":"Apakah ACoS titik impas sama dengan margin laba?","acceptedAnswer":{"@type":"Answer","text":"ACoS titik impas sama dengan margin Anda sebelum biaya iklan, yaitu persentase yang tersisa setelah biaya produk, biaya Amazon, fulfillment, pengiriman, bea masuk, dan retur. Pada ACoS itu, penjualan dari iklan menghasilkan laba nol."}},{"@type":"Question","name":"Mengapa ACoS kami baik-baik saja tetapi saldo bank kami tidak?","acceptedAnswer":{"@type":"Answer","text":"ACoS hanya menghitung penjualan iklan yang diatribusikan dan belanja iklan. Kenaikan biaya, ongkos angkut, atau retur bisa menghapus margin yang menjadi dasar titik impas Anda, dan TACoS mungkin menunjukkan iklan menggantikan penjualan organik. Hitung ulang margin dan lihat TACoS."}},{"@type":"Question","name":"Dari mana kami mendapatkan TACoS?","acceptedAnswer":{"@type":"Answer","text":"Hitung sendiri: total belanja iklan untuk suatu periode dibagi total penjualan pada periode yang sama, termasuk pesanan organik, dari laporan penjual Anda. Pantau setiap bulan."}},{"@type":"Question","name":"Haruskah kami membiarkan alat iklan AI menetapkan target ACoS kami?","acceptedAnswer":{"@type":"Answer","text":"Biarkan alat itu mengoptimalkan ke arah target, tetapi tetapkan targetnya sendiri dari margin dan tujuan Anda. Alat itu melihat data iklan; Anda melihat biaya penuh setiap unit."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/id/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/id/"},{"@type":"ListItem","position":3,"name":"ACoS Titik Impas, TACoS, dan ROAS: Hitungan Iklan Amazon yang Wajib Dipahami Penjual","item":"https://touchigh.ai/blog/id/amazon-break-even-acos-tacos/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">Di halaman ini</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/id/">Beranda</a>
+      <a href="/id/#products">Produk</a>
+      <a href="/id/#faq">FAQ</a>
+      <a href="/id/pro/">ToucHigh PRO</a>
+      <a href="/blog/id/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Bahasa: Bahasa Indonesia"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">ID</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Bahasa" hidden><li><a href="/blog/amazon-break-even-acos-tacos/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/amazon-break-even-acos-tacos/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/amazon-break-even-acos-tacos/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/id/amazon-break-even-acos-tacos/" hreflang="id" lang="id" data-short="ID" aria-current="page">Bahasa Indonesia</a></li><li><a href="/blog/es/amazon-break-even-acos-tacos/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/amazon-break-even-acos-tacos/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/pt/amazon-break-even-acos-tacos/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ru/amazon-break-even-acos-tacos/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Masuk</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Jadwalkan panggilan</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/id/">Beranda</a><span>/</span><a href="/blog/id/">Blog</a><span>/</span><span>Iklan untuk UKM</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Iklan untuk UKM</div>
+    <h1>ACoS Titik Impas, TACoS, dan ROAS: Hitungan Iklan Amazon yang Wajib Dipahami Penjual</h1>
+    <p class="dek">&quot;Berapa ACoS yang bagus?&quot; tidak punya jawaban universal, dan Amazon pun mengatakannya. Tetapi ACoS titik impas Anda punya jawaban pasti, dan itulah angka yang harus menjadi tolok ukur setiap bid, anggaran, dan agen iklan AI.</p>
+    <div class="a-meta"><b>Tim Riset ToucHigh</b><span>Terbit <time datetime="2026-11-08T11:20:00+08:00">8 November 2026</time></span><span>6 menit baca</span><span class="lang-badge">Bahasa Indonesia</span></div>
+    <div class="a-langs">Juga tersedia dalam<a href="/blog/amazon-break-even-acos-tacos/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/amazon-break-even-acos-tacos/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/amazon-break-even-acos-tacos/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/es/amazon-break-even-acos-tacos/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/amazon-break-even-acos-tacos/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/pt/amazon-break-even-acos-tacos/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ru/amazon-break-even-acos-tacos/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp 768w, /assets/blog/hero/t40-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t40.jpg" alt="Dilihat dari kursi pengemudi, tangan pemilik toko bertumpu pada setir di depan dasbor dengan tepat tiga pengukur berbingkai oranye dan sederet lampu peringatan kecil." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Pertanyaan di balik artikel ini"><span class="qm">“</span><div><div class="eyebrow">Pertanyaan di balik artikel ini</div><p class="q">Iklan Amazon kami menunjukkan ACoS 28%. Apakah itu bagus atau buruk, dan bagaimana kami tahu ACoS yang benar-benar sanggup kami tanggung?</p><p class="ans"><b>Jawaban singkat</b>Semuanya bergantung pada margin Anda. Amazon mendefinisikan ACoS sebagai belanja iklan dibagi pendapatan iklan dan menyatakan bahwa agar tetap untung, ACoS harus lebih rendah dari margin laba Anda. Hitung margin Anda sebelum biaya iklan (harga dikurangi biaya produk, biaya Amazon, pengiriman, bea masuk, dan perkiraan retur); persentase itu adalah ACoS titik impas Anda. Jika angkanya 35%, ACoS 28% menguntungkan untuk penjualan yang diatribusikan; jika 22%, Anda rugi pada setiap penjualan dari iklan. Lalu pantau TACoS, total belanja iklan dibagi total penjualan, untuk melihat apakah iklan membangun penjualan organik.</p></div></section>
+      <section class="kt takeaways"><h2>Poin penting</h2><ul><li>Rumus Amazon: ACoS = belanja iklan ÷ pendapatan iklan × 100; ROAS = pendapatan iklan ÷ belanja iklan. Yang satu adalah kebalikan dari yang lain.</li><li>Panduan Amazon: ACoS titik impas terkait dengan margin laba Anda; ACoS harus tetap di bawahnya agar tetap untung.</li><li>Gunakan margin sebelum biaya iklan, setelah semua biaya lain: produk, biaya Amazon, fulfillment, pengiriman, bea masuk, dan retur.</li><li>TACoS (total belanja iklan ÷ total penjualan) tidak ada di panduan ACoS Amazon; penjual menghitungnya untuk melihat apakah iklan mendongkrak penjualan organik.</li><li>Tetapkan target ACoS yang berbeda untuk setiap tujuan: laba, peluncuran, atau cuci gudang. Amazon sendiri mengingatkan agar tidak terlalu fokus pada ACoS semata.</li></ul></section>
+      <div class="prose"><p>ACoS adalah angka yang paling sering disebut penjual Amazon dan paling sedikit dipahami. Agensi melaporkannya, alat iklan AI mengoptimalkan ke arahnya, dan penjual berdebat soal angka yang bagus. Panduan Amazon sendiri menjawab pertanyaan terakhir itu dengan jujur: tidak ada angka pasti untuk ACoS yang bagus. Semuanya bergantung pada industri, skala, dan tujuan Anda. Yang bisa Anda hitung secara pasti adalah ACoS saat iklan Anda berhenti menghasilkan uang. Setiap keputusan lain harus dimulai dari sana.</p>
+
+<h2 id="s1">Bagaimana hubungan ACoS dan ROAS?</h2>
+
+<p>Amazon mendefinisikan advertising cost of sales (ACoS) sebagai belanja iklan dibagi pendapatan iklan, dinyatakan dalam persen. Contohnya: belanja $50, mendapat $100 penjualan yang diatribusikan ke iklan, maka ACoS-nya 50%. Return on ad spend adalah kebalikannya, pendapatan iklan dibagi belanja iklan, sehingga kampanye yang sama memiliki ROAS 2.</p>
+
+<div class="tw"><table>
+<thead><tr><th>ACoS</th><th>ROAS setara</th><th>Arti</th></tr></thead>
+<tbody>
+<tr><td>20%</td><td>5.0</td><td>$1 iklan menghasilkan $5 penjualan yang diatribusikan</td></tr>
+<tr><td>25%</td><td>4.0</td><td>$1 iklan menghasilkan $4</td></tr>
+<tr><td>33%</td><td>3.0</td><td>$1 iklan menghasilkan $3</td></tr>
+<tr><td>50%</td><td>2.0</td><td>$1 iklan menghasilkan $2</td></tr>
+</tbody>
+</table></div>
+
+<p>Laporan Amazon dan banyak alat lintas kanal menampilkan ROAS; spreadsheet penjual biasanya memakai ACoS. Keduanya membawa informasi yang sama. Pilih satu untuk mengambil keputusan dan konversikan saat membandingkan.</p>
+
+<h2 id="s2">Bagaimana cara menghitung ACoS titik impas?</h2>
+
+<p>Panduan Amazon jelas: ACoS titik impas terkait langsung dengan margin laba Anda, dan ACoS Anda harus lebih rendah dari margin laba agar tetap untung. Pekerjaannya ada pada menghitung margin itu dengan jujur, sebelum biaya iklan tetapi setelah semua biaya lain.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Pos (ilustrasi, per unit)</th><th>Jumlah</th></tr></thead>
+<tbody>
+<tr><td>Harga jual</td><td>$40.00</td></tr>
+<tr><td>Biaya produk (landed cost, termasuk bea masuk dan ongkos angkut)</td><td>−$12.00</td></tr>
+<tr><td>Biaya rujukan Amazon (referral fee)</td><td>−$6.00</td></tr>
+<tr><td>Biaya fulfillment</td><td>−$6.50</td></tr>
+<tr><td>Retur dan penyisihan lainnya</td><td>−$1.50</td></tr>
+<tr><td><strong>Margin sebelum biaya iklan</strong></td><td><strong>$14.00 = 35% dari harga</strong></td></tr>
+</tbody>
+</table></div>
+
+<p>Dalam ilustrasi ini, ACoS titik impas adalah 35% dan ROAS titik impas adalah 1 ÷ 0,35, sekitar 2,9. Gunakan angka Anda sendiri: biaya bervariasi menurut kategori dan ukuran, dan landed cost bagi penjual lintas batas berubah mengikuti ongkos angkut dan tarif. Hitung ulang setiap kali salah satunya berubah. Kampanye yang menguntungkan sebelum perubahan tarif bisa merugi setelahnya dengan ACoS yang tidak berubah.</p>
+
+<h2 id="s3">Apa yang ditambahkan TACoS?</h2>
+
+<p>ACoS hanya melihat penjualan yang diatribusikan Amazon ke iklan. ACoS tidak bisa memberi tahu apakah iklan membantu bagian lain bisnis Anda. Untuk itulah TACoS, total advertising cost of sales: total belanja iklan dibagi total penjualan, termasuk pesanan organik. Metrik ini bukan bagian dari panduan ACoS Amazon; penjual menghitungnya sendiri dari belanja iklan dan total penjualan di Seller Central.</p>
+
+<ul>
+<li><strong>TACoS turun sementara penjualan naik:</strong> penjualan organik tumbuh lebih cepat daripada belanja iklan. Iklan kemungkinan membantu peringkat dan pembelian ulang.</li>
+<li><strong>TACoS naik dengan total penjualan stagnan:</strong> Anda membayar penjualan yang mungkin tetap Anda dapatkan, atau iklan menggantikan penjualan organik alih-alih menambahnya.</li>
+<li><strong>TACoS stabil, ACoS membaik:</strong> ada peningkatan efisiensi di dalam iklan; pastikan total penjualan tidak menyusut.</li>
+</ul>
+
+<h2 id="s4">Bagaimana cara menetapkan target ACoS?</h2>
+
+<p>Amazon menyarankan untuk memulai dari titik impas, lalu memutuskan apa yang paling penting bagi setiap merek dan kampanye. Dalam praktiknya, tetapkan target sesuai tujuan:</p>
+
+<div class="tw"><table>
+<thead><tr><th>Tujuan</th><th>Target ACoS</th><th>Periksa juga</th></tr></thead>
+<tbody>
+<tr><td>Laba pada produk yang sudah matang</td><td>Jelas di bawah titik impas</td><td>Laba bersih per unit setelah iklan</td></tr>
+<tr><td>Meluncurkan produk baru</td><td>Di titik impas atau sementara di atasnya, untuk periode tertentu</td><td>Ulasan, peringkat organik, tren TACoS</td></tr>
+<tr><td>Menghabiskan stok lama</td><td>Hingga kerugian yang bisa Anda terima pada diskon</td><td>Unit terjual, biaya penyimpanan yang terhindarkan</td></tr>
+</tbody>
+</table></div>
+
+<p>Tuliskan target dan batas waktunya sebelum kampanye dimulai, dan berikan angka yang sama kepada siapa pun, atau apa pun, yang mengelola bid Anda. Agen iklan AI yang mengoptimalkan "ke arah ROAS" tanpa garis titik impas Anda bisa sangat efisien dalam menghabiskan uang.</p>
+
+<h2 id="s5">Apa yang tidak diberitahukan ACoS?</h2>
+
+<p>Panduan Amazon punya bagian berjudul "Why you shouldn't focus too much on ACOS" (Mengapa Anda tidak boleh terlalu fokus pada ACoS), dan merekomendasikan untuk juga melihat impresi, tingkat konversi, rasio klik-tayang, dan laba atas investasi. ACoS mengabaikan nilai jangka panjang pelanggan baru, efek halo pada peringkat organik, dan biaya stok yang mengendap di gudang. Gunakan ACoS titik impas sebagai batas bawah yang menjaga Anda tetap aman, TACoS sebagai tren yang menunjukkan gambaran lebih besar, dan laba riil Anda sebagai penilai akhir.</p></div>
+      <aside class="insight" aria-label="Wawasan utama"><div class="eyebrow">Wawasan utama</div><blockquote>ACoS yang bagus adalah angka di bawah margin Anda. Selebihnya hanya opini.</blockquote><p>Akuntansi manajemen menyebutnya margin kontribusi: kontribusi setiap penjualan setelah biaya variabel. ACoS titik impas hanyalah margin kontribusi yang dinyatakan sebagai anggaran iklan, dan karena itulah ACoS titik impas, bukan rata-rata industri, yang menjadi garis acuan yang tepat.</p></aside>
+      <section class="prop" aria-label="Bagaimana ToucHigh membantu">
+        <div class="ph"><div class="eyebrow">Ads Autopilot · GEO Autopilot · Social Autopilot</div><h2>Bagaimana ToucHigh membantu</h2></div>
+        <div class="pb prose"><p>Setelah Anda tahu garis Anda, Ads Autopilot dari ToucHigh dapat bekerja sesuai garis itu:</p><ul><li>menjalankan belanja di Amazon, Meta, dan Google dari satu strategi, disesuaikan otomatis dengan ROAS;</li><li>menangani keputusan soal kejenuhan materi kreatif dan anggaran, agar iklan yang sudah jenuh tidak diam-diam menggerus margin;</li><li>menilai prediksi kinerja konsep kreatif sebelum tayang.</li></ul><p>Jadwalkan panggilan strategi 30 menit dan bawa lembar margin Anda; kami akan membahas rencana yang sesuai dengan katalog Anda.</p><p class="uc">Penjual Amazon: lihat cara <a href="/id/amazon-ads-autopilot/" onclick="try{gtag('event','landing_click',{location:'article_T68'})}catch(e){}">Ads Autopilot</a> ToucHigh menilai materi kreatif sebelum belanja iklan. Ingin visibilitas berubah menjadi pipeline? Kenali <a href="/id/pro/" onclick="try{gtag('event','pro_click',{location:'article_T68'})}catch(e){}">ToucHigh PRO</a>, layanan outbound berbasis strategi kami.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T68')">Jadwalkan konsultasi strategi 30 menit →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T68'})}catch(e){}">Masuk ke ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Pertanyaan umum"><h2>Pertanyaan umum</h2><details open><summary>Apakah ACoS titik impas sama dengan margin laba?</summary><p>ACoS titik impas sama dengan margin Anda sebelum biaya iklan, yaitu persentase yang tersisa setelah biaya produk, biaya Amazon, fulfillment, pengiriman, bea masuk, dan retur. Pada ACoS itu, penjualan dari iklan menghasilkan laba nol.</p></details><details><summary>Mengapa ACoS kami baik-baik saja tetapi saldo bank kami tidak?</summary><p>ACoS hanya menghitung penjualan iklan yang diatribusikan dan belanja iklan. Kenaikan biaya, ongkos angkut, atau retur bisa menghapus margin yang menjadi dasar titik impas Anda, dan TACoS mungkin menunjukkan iklan menggantikan penjualan organik. Hitung ulang margin dan lihat TACoS.</p></details><details><summary>Dari mana kami mendapatkan TACoS?</summary><p>Hitung sendiri: total belanja iklan untuk suatu periode dibagi total penjualan pada periode yang sama, termasuk pesanan organik, dari laporan penjual Anda. Pantau setiap bulan.</p></details><details><summary>Haruskah kami membiarkan alat iklan AI menetapkan target ACoS kami?</summary><p>Biarkan alat itu mengoptimalkan ke arah target, tetapi tetapkan targetnya sendiri dari margin dan tujuan Anda. Alat itu melihat data iklan; Anda melihat biaya penuh setiap unit.</p></details></section>
+      <section class="srcs"><h2>Sumber</h2><ol><li><a href="https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales" rel="noopener" target="_blank">What is advertising cost of sales (ACOS)?</a> — Amazon Ads</li><li><a href="https://advertising.amazon.com/solutions/products/sponsored-products" rel="noopener" target="_blank">Sponsored Products</a> — Amazon Ads</li></ol></section>
+      <p class="note"><b>Mengapa kami menulis ini</b>Kami menulis ini karena penjual sering menilai ACoS berdasarkan rata-rata industri yang tidak ada hubungannya dengan biaya mereka sendiri. Panduan Amazon mengarah kembali ke margin, begitu pula kami.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="Di halaman ini"><h4>Di halaman ini</h4><a href="#s1">Bagaimana hubungan ACoS dan ROAS?</a><a href="#s2">Bagaimana cara menghitung ACoS titik impas?</a><a href="#s3">Apa yang ditambahkan TACoS?</a><a href="#s4">Bagaimana cara menetapkan target ACoS?</a><a href="#s5">Apa yang tidak diberitahukan ACoS?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Lihat di mana Anda tidak terlihat di pencarian AI AS</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Jadwalkan panggilan</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Masuk</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Artikel terkait</h2>
+  <div class="grid"><a class="card" href="/blog/id/amazon-sponsored-products-first-campaign/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t10-768.webp"><img src="/assets/blog/hero/t10.jpg" alt="Di atas meja laboratorium, sebuah pipet meneteskan beberapa koin oranye dari anggaran uji kecil yang berpagar ke corong berbentuk gelembung obrolan bergaris ungu di atas gelas kimia, sementara stoples besar penuh koin tetap tersegel di sampingnya." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="id"><div class="eyebrow">Iklan untuk UKM</div><h3>Kampanye Sponsored Products Amazon Pertama Anda: Otomatis vs Manual, Bid, dan Anggaran</h3><p>Anda tidak butuh agensi untuk meluncurkan iklan Amazon pertama, tetapi Anda butuh struktur yang menunjukkan apa yang berhasil. Berikut susunan dua kampanye yang sederhana, hitungan bid, dan rencana empat minggu.</p><div class="meta"><span class="lg">Bahasa Indonesia</span><span>7 menit baca</span></div></div></a><a class="card" href="/blog/en/amazon-ads-agent-sellers/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t20-768.webp"><img src="/assets/blog/hero/t20.jpg" alt="A friendly robot copilot works the buttons and sliders of a rounded cockpit while a human hand in the foreground holds a compass, an orange padlocked coin box and a key in front of a dashboard of abstract charts." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Ads for SMEs</div><h3>Amazon&#x27;s AI Ad Agent Is Here: What Sellers New to Ads Should Hand Over</h3><p>Amazon Ads Agent hands search, display and full-funnel ads to agentic AI. If you don&#x27;t know how to run ads, skip the all-or-nothing choice and prove it out with a four-week controlled test.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="Seen from the driver&#x27;s seat, a shop owner&#x27;s hands rest on a steering wheel in front of a dashboard with exactly three orange-rimmed gauges and a row of small warning lights." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>Digital Advertising KPIs for Small Business: The 3 Numbers That Matter</h3><p>No media buyer? Focus on cost per acquisition, return on ad spend and repeat or lead quality. Here&#x27;s how to set break-even targets and review them once a week.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/id/">← Kembali ke blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Lihat di mana Anda tidak terlihat di pencarian AI AS</h2>
+  <p>Jadwalkan panggilan gratis 30 menit dan kami akan membaca visibilitas AI toko Anda secara langsung.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Jadwalkan konsultasi strategi 30 menit →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Masuk ke ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Visibilitas pencarian AI, media sosial, dan iklan secara otomatis untuk UKM dan penjual lintas batas.</p></div>
+      <div><h4>ToucHigh</h4><a href="/id/">Beranda</a><a href="/id/#geo">GEO Autopilot</a><a href="/id/#social">Social Autopilot</a><a href="/id/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/id/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Masuk</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Jadwalkan panggilan</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
