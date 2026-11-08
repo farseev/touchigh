@@ -1,0 +1,40 @@
+{
+ "num": "t21",
+ "original": "zh-Hans",
+ "cat": "cross-border",
+ "hero": "t21",
+ "published": "2026-10-16T09:27:00+08:00",
+ "related": [
+  "trade-show-to-search-social-assets",
+  "global-ecommerce-operations-less-is-more",
+  "de-minimis-end-brand-independent-site"
+ ],
+ "sources": [
+  {
+   "name": "TikTok Shop美国站开始“边增长边收紧”，这4件事卖家现在就要注意",
+   "url": "https://www.cifnews.com/article/189084",
+   "publisher": "雨果跨境 (Cifnews)",
+   "date": "2026-09-24"
+  },
+  {
+   "name": "SHEIN重磅推出跨境电商补贴权益组合 海量资源携手卖家冲刺",
+   "url": "https://www.cifnews.com/article/189412",
+   "publisher": "雨果跨境 (Cifnews)",
+   "date": "2026-10-13"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t21.jpg",
+  "en": "/assets/blog/og/t21-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1943,
+  "en": 1381
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

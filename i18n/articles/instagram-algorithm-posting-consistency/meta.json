@@ -1,0 +1,35 @@
+{
+ "num": "t07",
+ "original": "zh-Hans",
+ "cat": "social-media",
+ "hero": "t07",
+ "published": "2026-10-16T07:49:00+08:00",
+ "landing": "amazon",
+ "related": [
+  "chinese-manufacturers-founder-thought-leadership",
+  "made-in-china-story-localized-thought-leadership",
+  "overseas-social-algorithms-thought-leadership"
+ ],
+ "sources": [
+  {
+   "name": "Instagram chief shares algorithm insights and posting tips",
+   "url": "https://www.socialmediatoday.com/news/instagram-chief-shares-algorithm-insights-and-posting-tips/831326/",
+   "publisher": "Social Media Today",
+   "date": "2026-09-24"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t07.jpg",
+  "en": "/assets/blog/og/t07-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1856,
+  "en": 1283
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

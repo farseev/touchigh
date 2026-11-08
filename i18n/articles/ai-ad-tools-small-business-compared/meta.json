@@ -1,0 +1,46 @@
+{
+ "num": "t32",
+ "original": "en",
+ "cat": "ads-for-smes",
+ "hero": "t32",
+ "published": "2026-10-16T10:44:00+08:00",
+ "related": [
+  "publicidad-ia-pymes-meta-muse",
+  "reduce-marketing-costs-ai-smes",
+  "tiktok-ads-playbook-small-advertisers"
+ ],
+ "sources": [
+  {
+   "name": "Meta launches Muse AI for SMBs",
+   "url": "https://www.socialmediatoday.com/news/meta-launches-muse-ai-for-smbs/831714/",
+   "publisher": "Social Media Today",
+   "date": "2026-09-29"
+  },
+  {
+   "name": "Meta introduces new AI-powered tools at Advertising Week",
+   "url": "https://www.socialmediatoday.com/news/meta-introduces-new-ai-powered-tools-at-advertising-week/832288/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-06"
+  },
+  {
+   "name": "X launches AI-powered ad creation option",
+   "url": "https://www.socialmediatoday.com/news/x-launches-ai-powered-ad-creation-option/832276/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-06"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t32.jpg",
+  "zh-Hans": "/assets/blog/og/t32-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1120,
+  "zh-Hans": 1924
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

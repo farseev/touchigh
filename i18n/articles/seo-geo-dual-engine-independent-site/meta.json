@@ -1,0 +1,40 @@
+{
+ "num": "t02",
+ "original": "zh-Hans",
+ "cat": "cross-border",
+ "hero": "t02",
+ "published": "2026-10-16T07:14:00+08:00",
+ "related": [
+  "trade-show-to-search-social-assets",
+  "tiktok-shop-shein-channel-mix",
+  "global-ecommerce-operations-less-is-more"
+ ],
+ "sources": [
+  {
+   "name": "流量越来越贵，独立站SEO+GEO凭什么成为跨境人的\"压舱石\"？",
+   "url": "https://www.cifnews.com/article/188357",
+   "publisher": "雨果跨境 (Cifnews) contributor",
+   "date": "2026-08-19"
+  },
+  {
+   "name": "流量新入口与转化新范式，五位嘉宾纵论独立站增长新路径",
+   "url": "https://www.cifnews.com/article/188899",
+   "publisher": "雨果跨境 (Cifnews)",
+   "date": "2026-09-18"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t02.jpg",
+  "en": "/assets/blog/og/t02-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1860,
+  "en": 1219
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

@@ -1,0 +1,34 @@
+{
+ "num": "t27",
+ "original": "en",
+ "cat": "ads-for-smes",
+ "hero": "t27",
+ "published": "2026-10-16T10:09:00+08:00",
+ "related": [
+  "publicidad-ia-pymes-meta-muse",
+  "reduce-marketing-costs-ai-smes",
+  "tiktok-ads-playbook-small-advertisers"
+ ],
+ "sources": [
+  {
+   "name": "Global ad spending rises 11.9% as the market beats earlier forecasts",
+   "url": "https://www.emarketer.com/content/global-ad-spending-rises-11-9--market-beats-earlier-forecasts",
+   "publisher": "EMARKETER",
+   "date": "2026-10-08"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t27.jpg",
+  "zh-Hans": "/assets/blog/og/t27-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1120,
+  "zh-Hans": 1915
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

@@ -1,0 +1,40 @@
+{
+ "num": "t35",
+ "original": "en",
+ "cat": "measurement",
+ "hero": "t35",
+ "published": "2026-10-16T11:05:00+08:00",
+ "related": [
+  "medir-campanas-redes-sociales-pymes",
+  "digital-advertising-kpis-small-business",
+  "social-media-metrics-that-matter-smes"
+ ],
+ "sources": [
+  {
+   "name": "Future of TV Briefing: TikTok Shop success = small creators + more videos",
+   "url": "https://digiday.com/future-of-tv/future-of-tv-briefing-tiktok-shop-success-small-creators-more-videos/",
+   "publisher": "Digiday",
+   "date": "2026-10-14"
+  },
+  {
+   "name": "How Litter Robot is doing TikTok Shop without the deep discounts",
+   "url": "https://www.modernretail.co/operations/how-litter-robot-is-doing-tiktok-shop-without-the-deep-discounts/",
+   "publisher": "Modern Retail",
+   "date": "2026-10-03"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t35.jpg",
+  "zh-Hans": "/assets/blog/og/t35-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1155,
+  "zh-Hans": 1972
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

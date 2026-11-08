@@ -1,0 +1,34 @@
+{
+ "num": "t19",
+ "original": "zh-Hans",
+ "cat": "social-media",
+ "hero": "t19",
+ "published": "2026-10-16T09:13:00+08:00",
+ "related": [
+  "chinese-manufacturers-founder-thought-leadership",
+  "made-in-china-story-localized-thought-leadership",
+  "overseas-social-algorithms-thought-leadership"
+ ],
+ "sources": [
+  {
+   "name": "YouTube invests in AI agents, live 'gamification,' and editing tools to keep creators close",
+   "url": "https://digiday.com/future-of-tv/youtube-invests-in-ai-agents-live-gamification-and-editing-tools-to-keep-creators-close/",
+   "publisher": "Digiday",
+   "date": "2026-09-25"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t19.jpg",
+  "en": "/assets/blog/og/t19-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1946,
+  "en": 1280
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

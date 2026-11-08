@@ -1,0 +1,40 @@
+{
+ "num": "t56",
+ "original": "zh-Hans",
+ "cat": "social-media",
+ "hero": "t56",
+ "published": "2026-10-16T13:32:00+08:00",
+ "related": [
+  "chinese-manufacturers-founder-thought-leadership",
+  "overseas-social-algorithms-thought-leadership",
+  "factory-founder-linkedin-thought-leadership"
+ ],
+ "sources": [
+  {
+   "name": "一件睡袍近千元，老外抢着买单！普通产品凭什么卖出高溢价",
+   "url": "https://www.cifnews.com/article/189425",
+   "publisher": "雨果跨境 (Cifnews)",
+   "date": "2026-10-14"
+  },
+  {
+   "name": "流量新入口与转化新范式，五位嘉宾纵论独立站增长新路径",
+   "url": "https://www.cifnews.com/article/188899",
+   "publisher": "雨果跨境 (Cifnews)",
+   "date": "2026-09-18"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t56.jpg",
+  "en": "/assets/blog/og/t56-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 2079,
+  "en": 1373
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

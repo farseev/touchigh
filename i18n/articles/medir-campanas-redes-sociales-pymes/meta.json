@@ -1,0 +1,63 @@
+{
+ "num": "t50",
+ "original": "es",
+ "cat": "measurement",
+ "hero": "t50",
+ "published": "2026-10-16T12:50:00+08:00",
+ "related": [
+  "publicidad-ia-pymes-meta-muse",
+  "perfil-empresa-google-redes-pymes",
+  "geo-pymes-que-funciona"
+ ],
+ "sources": [
+  {
+   "name": "Global ad spending rises 11.9% as the market beats earlier forecasts",
+   "url": "https://www.emarketer.com/content/global-ad-spending-rises-11-9--market-beats-earlier-forecasts",
+   "publisher": "EMARKETER",
+   "date": "2026-10-08"
+  }
+ ],
+ "og_by_lang": {
+  "es": "/assets/blog/og/t50.jpg",
+  "en": "/assets/blog/og/t50-en.jpg",
+  "zh-Hans": "/assets/blog/og/t50-zh.jpg"
+ },
+ "words_by_lang": {
+  "es": 1019,
+  "en": 991,
+  "zh-Hans": 1740
+ },
+ "related_by_lang": {
+  "en": [
+   "digital-advertising-kpis-small-business",
+   "measure-influencer-roi-tiktok-shop",
+   "social-media-metrics-that-matter-smes"
+  ],
+  "zh-Hans": [
+   "digital-advertising-kpis-small-business",
+   "measure-influencer-roi-tiktok-shop",
+   "social-media-metrics-that-matter-smes"
+  ]
+ },
+ "ui": {
+  "es": {
+   "faq_nav": "Preguntas",
+   "login": "Acceder",
+   "book": "Agendar llamada",
+   "published": "Publicado {d}",
+   "short": "Respuesta corta",
+   "insight": "El insight",
+   "help": "Cómo te ayuda ToucHigh",
+   "book30": "Agenda una llamada de 30 min →",
+   "login_th": "Acceder a ToucHigh",
+   "side": "Descubre dónde eres invisible en la búsqueda con IA",
+   "final_p": "Agenda una llamada gratuita de 30 minutos y revisamos en directo la visibilidad de tu negocio en IA.",
+   "tagline": "AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.",
+   "blog_name": "ToucHigh Blog"
+  },
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

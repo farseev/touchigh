@@ -1,0 +1,114 @@
+== title ==
+Learn SEO Yourself: A Free AEO and GEO Roadmap for Exporters on a Budget
+== seo_title ==
+Learn SEO Yourself: A Free 12-Week Plan for Exporters | ToucHigh
+== desc ==
+Where should an export team start learning SEO? A free 12-week plan covering SEO, AEO and GEO, plus the tricks to drop after Google's September spam update.
+== dek ==
+No agency needed: use free official resources and your own site to learn the basics of SEO, AEO and GEO in 12 weeks, and avoid the shortcuts Google's spam update is cracking down on.
+== section ==
+SEO
+== tags ==
+Learn SEO | Cross-border marketing | AEO | GEO | Google spam update
+== keywords ==
+learn SEO yourself, SEO for exporters, free SEO learning resources, ecommerce SEO for beginners, SEO learning roadmap, how to learn GEO
+== read ==
+7
+== q ==
+Our export team has no budget for an SEO agency. We want to learn SEO ourselves and cover AEO and GEO too. How do we avoid detours and wasted money?
+== a ==
+Start with free official resources and your own website, in this order: SEO (search engine optimization) basics like indexing, keywords and page writing; then AEO (answer engine optimization) Q&A writing; then GEO (generative engine optimization) entity consistency and first-hand content. Ship one page a week and check it with Search Console and AI self-tests. Don't pay to learn shortcuts like site networks or mass-spun articles; Google's September spam update targets policy violations.
+== takeaways ==
+- According to Search Engine Roundtable, Google's September 2026 spam update ran from September 24 to October 8, about two weeks, far longer than the roughly two days earlier spam updates took.
+- Google says the update applies to all languages worldwide and that affected sites may take months to recover, so paying to learn loophole tactics carries far more risk than reward.
+- According to Search Engine Land, Google AI Overviews now appear on more than 80% of tracked branded searches, so your learning plan should include an AI-visibility self-test.
+- Google Search Central documentation, Search Console, Bing Webmaster Tools and Schema.org are all free and enough for a small team to get started.
+- The most effective way to teach yourself is to learn by doing: each week, apply one new skill to one page on your own site and track how the data changes.
+== alt ==
+A learner with an orange backpack walks up a hillside path past an open book with a magnifier, a Q&A card and an AI chat bubble, while a grey ladder off to the side leads to a broken plank over a gap.
+== body ==
+<p>Can an export team with no agency budget learn SEO on its own? Yes. The cheapest path: use free official resources, practice on your own website, learn in the order "SEO for the foundation, AEO for answers, GEO for credibility," and ship one visible page every week. The hard part isn't finding a course. It's avoiding the "shortcuts" that get sites penalized.</p>
+
+<p>The timing matters. According to <a href="https://www.seroundtable.com/google-september-2026-spam-update-done-42235.html" rel="noopener" target="_blank">Search Engine Roundtable</a>, Google's September 2026 spam update started on September 24 and didn't finish rolling out until October 8, about two weeks, while past spam updates wrapped up in roughly two days. Google said the update applies to all languages worldwide and that affected sites may take months to recover. Meanwhile, <a href="https://searchengineland.com/google-ai-overviews-jump-branded-queries-september-492962" rel="noopener" target="_blank">Search Engine Land</a> reported that Google AI Overviews' coverage of branded searches rose from about 26% in early September to more than 80% by month's end. One story tells you what not to learn; the other tells you what you now need to add.</p>
+
+<h2 id="how-far-do-you-need-to-go-with-seo-aeo-and-geo">How far do you need to go with SEO, AEO and GEO?</h2>
+
+<p>First, the terms. SEO is search engine optimization: getting your pages to rank in Google's link results. AEO is answer engine optimization: getting your content quoted directly as an AI answer. GEO is generative engine optimization: getting your brand mentioned and recommended in generative answers from ChatGPT, Perplexity and Google AI Overviews.</p>
+
+<p>A three- to five-person export team doesn't need to become technical experts. For SEO, learn enough to read Search Console and write solid product pages and articles on your own. For AEO, learn to structure content as questions and answers. For GEO, learn to check whether your brand information is consistent across the web and to test your own visibility in AI tools. Those three skills solve most problems.</p>
+
+<p>This foundation works whether you're an e-commerce seller with an independent DTC site or a factory winning inquiries through Alibaba.com (Alibaba's international B2B marketplace) and trade shows. Only the practice pages differ: sellers start with product and category pages; factories start with capability pages, certification pages and FAQs.</p>
+
+<h2 id="which-seo-tricks-should-you-stop-learning-now">Which SEO "tricks" should you stop learning now?</h2>
+
+<p>Google didn't say exactly which tactics this update targeted. It said only that the update targets sites violating some of its spam policies, not spammy links, and suggested affected sites check themselves against those policies. So the test is simple: any tactic that works by gaming the rules rather than by giving users something of value isn't worth paying to learn.</p>
+
+<p>Common paid "secret playbooks" include using AI to mass-rewrite articles and pile up hundreds of posts in a few days; buying expired domains to build site networks that funnel traffic; stuffing keywords or hiding text on pages; and making lots of near-identical landing pages built only to rank. Each of these maps to an entry in Google's public spam policies. If you get penalized, recovery may take months. For factories and sellers who rely on their independent site for inquiries, that costs far more than any course fee.</p>
+
+<p>If you still want to buy a course, ask three questions first. Can its methods be backed up by Google's official documentation? Does the instructor run a public website you can check? Does the course teach you to understand what users need, or promise to get you "ranking in days"? If any of the three gets a no, keep your money for now.</p>
+
+<h2 id="why-do-small-teams-feel-they-can-t-afford-seo">Why do small teams feel they "can't afford" SEO?</h2>
+
+<p>Organizational theory has a concept called resource dependence theory: the more an organization relies on outside resources it can't control, the more it's at their mercy. Many exporters rely on platforms and ads for traffic and on agencies for expertise. When a platform changes its rules, ad prices rise or the agency swaps out your account manager, the business swings with them.</p>
+
+<p>Big companies have budgets for teams and tools; small teams don't, so it's easy to feel this craft is "not a game we can afford to play." But the core knowledge of SEO is shared in public: Google's official documentation, free webmaster tools and industry news coverage. Big companies and small teams read the same pages. Inequality stifles innovation; shared resources lift everyone up. Putting those free resources to work is how you chip away at outside dependence, one step at a time.</p>
+
+<h2 id="how-should-you-lay-out-a-12-week-plan">How should you lay out a 12-week plan?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>Phase</th><th>What to learn</th><th>Free resources</th><th>Output for this phase</th></tr></thead>
+<tbody>
+<tr><td>Weeks 1–2</td><td>How search engines crawl, index and rank</td><td>Google Search Central's SEO Starter Guide, Search Console</td><td>Site connected to Search Console, indexing problems fixed</td></tr>
+<tr><td>Weeks 3–4</td><td>Keywords and buyer questions</td><td>Search Console Performance report, Google Trends, inquiry logs</td><td>A list of 50 buyer questions</td></tr>
+<tr><td>Weeks 5–6</td><td>Page writing and site structure</td><td>Search Central docs on titles, descriptions and internal links</td><td>5 core product or category pages rewritten</td></tr>
+<tr><td>Weeks 7–8</td><td>AEO: Q&amp;A writing and structured data</td><td>Schema.org, Google Rich Results Test</td><td>10 FAQs live and passing the test</td></tr>
+<tr><td>Weeks 9–10</td><td>GEO: entity consistency and first-hand content</td><td>Self-tests in ChatGPT, Perplexity and Gemini</td><td>An AI-visibility self-test sheet</td></tr>
+<tr><td>Weeks 11–12</td><td>Speed, mobile and measurement</td><td>PageSpeed Insights, Bing Webmaster Tools</td><td>A monthly review template</td></tr>
+</tbody>
+</table></div>
+
+<p>If your team finds English documentation slow going, a translation tool can help at first, but learn the original English terms so you can follow official updates later.</p>
+
+<h2 id="one-hour-a-day-what-does-that-look-like">One hour a day: what does that look like?</h2>
+
+<ol>
+<li><strong>Name one owner.</strong> Block the same hour every day, ideally for the person who knows the product and customers best, not a newcomer pulled in at the last minute.</li>
+<li><strong>Practice only on your own site.</strong> Apply each concept to a page the same week. That beats watching ten lessons.</li>
+<li><strong>Find topics in your inquiries.</strong> Ask your sales reps to forward three real customer questions every week. It's a more accurate topic bank than any keyword tool.</li>
+<li><strong>Run an AI self-test every week.</strong> Ask ChatGPT, Perplexity and Gemini, in English, about your brand name and category questions, then search your English brand name on Google to see how the AI Overview describes you. Log the results in a spreadsheet.</li>
+<li><strong>Follow first-hand sources only.</strong> Put Google's official blog, Search Central documentation and authoritative industry media first, and be wary of any "guru's exclusive secrets."</li>
+<li><strong>Review once a month.</strong> Track indexed pages, impressions, clicks, inquiries and AI mentions, and see which types of pages are working.</li>
+</ol>
+
+<p>Step four is weekly because tracking data reported by Search Engine Land shows AI Overview coverage of branded searches hit 90.48% on September 27. When buyers search your brand name, the first thing they often see is an AI summary, and that can't wait until you've finished learning SEO.</p>
+
+<h2 id="when-should-you-hand-some-of-the-work-to-tools">When should you hand some of the work to tools?</h2>
+
+<p>Once you understand the principles but find your time eaten up by repetitive work, like asking dozens of AI questions by hand every week, compiling the results and writing pages with the same structure, it's time to bring in tools. For example, ToucHigh's <a href="/#geo">GEO Autopilot</a> audits your visibility in ChatGPT, Perplexity, Google AI and Gemini, writes and ships the fixes, and tracks your AI-citation share.</p>
+
+<p>But don't reverse the order: learn enough to tell good from bad first, then use tools to go faster. A team that understands the principles uses tools to free up time for what only it can do, such as compiling test data, shooting real footage on the factory floor and answering customers' technical questions.</p>
+== insight_quote ==
+Inequality stifles innovation; shared resources lift everyone up.
+== insight ==
+Resource dependence theory reminds us that the more you rely on platforms, ads and agencies, the more exposed you are. The core knowledge of SEO is publicly shared, so when a small team puts free resources to work, it takes back control of its growth bit by bit.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+Once self-study has built your foundation, ToucHigh's GEO Autopilot can take over the repetitive checking and writing:
+== prop_items ==
+- It audits your visibility across ChatGPT, Perplexity, Google AI Overviews/AI Mode and Gemini and shows you which questions you're invisible on.
+- It writes and ships fixes, including pages, answers and brand entity data, and builds GEO articles around questions as they trend.
+- It keeps tracking your AI-citation share, so the data tells you what to learn or fix next.
+== prop_outro ==
+Start with a 30-minute strategy call. Bring your self-study progress and your website, and we'll look at which steps are worth automating first.
+== faq ==
+Q: Do I need to know how to code to learn SEO?
+A: Not at the beginner stage. Most website builders let you edit titles, descriptions, URLs and image descriptions in the back end, and there are often plugins for structured data. The parts that need some technical judgment are indexing, site speed and the mobile experience. Search Console and PageSpeed Insights point out those problems directly, and your web developer or a technical colleague can fix them.
+Q: Can I learn SEO if my English isn't strong?
+A: Yes. Some Google Search Central documentation is available in Chinese, and English material can be read with the help of a translation tool. Where you really need English is on pages written for overseas buyers. Draft the key points in Chinese first, have a knowledgeable colleague or a tool turn them into English, then have someone who knows the product check the technical terms.
+Q: How long does self-taught SEO take to show results?
+A: There's no single answer; it depends on your site's starting point, the competition and your content quality. Generally, once indexing problems are fixed, you'll see changes in Search Console fairly quickly, while gains in rankings and inquiries are usually measured in months. Work through the full 12-week plan and use your monthly review data to judge direction instead of checking rankings every day.
+Q: Our traffic dropped after this spam update. What should we do?
+A: Don't rush into a big overhaul. Check your site point by point against Google's public spam policies, focusing on mass-generated low-quality pages, keyword stuffing and near-duplicate landing pages. Delete or rewrite whatever you find, then keep publishing useful content. Google says recovery may take months, and that it will refresh this update periodically.
+== note ==
+We wrote this because "Are there cheap, reliable SEO learning resources?" is one of the most common searches from export teams without an agency budget, and Google's just-finished September spam update shows exactly what isn't worth paying to learn.

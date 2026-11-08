@@ -1,0 +1,63 @@
+{
+ "num": "t48",
+ "original": "es",
+ "cat": "seo",
+ "hero": "t48",
+ "published": "2026-10-16T12:36:00+08:00",
+ "related": [
+  "medir-campanas-redes-sociales-pymes",
+  "publicidad-ia-pymes-meta-muse",
+  "geo-pymes-que-funciona"
+ ],
+ "sources": [
+  {
+   "name": "Tienes cuatro días para rechazar un cambio en tu perfil de Google",
+   "url": "https://www.puromarketing.com/14/217633/tienes-cuatro-dias-para-rechazar-cambio-perfil-google",
+   "publisher": "PuroMarketing",
+   "date": "2026-10-07"
+  }
+ ],
+ "og_by_lang": {
+  "es": "/assets/blog/og/t48.jpg",
+  "en": "/assets/blog/og/t48-en.jpg",
+  "zh-Hans": "/assets/blog/og/t48-zh.jpg"
+ },
+ "words_by_lang": {
+  "es": 1063,
+  "en": 1064,
+  "zh-Hans": 1729
+ },
+ "related_by_lang": {
+  "en": [
+   "factory-to-brand-seo-aeo-geo-us",
+   "seo-aeo-geo-learning-path-exporters",
+   "seo-tools-buying-guide-ai-search"
+  ],
+  "zh-Hans": [
+   "factory-to-brand-seo-aeo-geo-us",
+   "seo-aeo-geo-learning-path-exporters",
+   "seo-tools-buying-guide-ai-search"
+  ]
+ },
+ "ui": {
+  "es": {
+   "faq_nav": "Preguntas",
+   "login": "Acceder",
+   "book": "Agendar llamada",
+   "published": "Publicado {d}",
+   "short": "Respuesta corta",
+   "insight": "El insight",
+   "help": "Cómo te ayuda ToucHigh",
+   "book30": "Agenda una llamada de 30 min →",
+   "login_th": "Acceder a ToucHigh",
+   "side": "Descubre dónde eres invisible en la búsqueda con IA",
+   "final_p": "Agenda una llamada gratuita de 30 minutos y revisamos en directo la visibilidad de tu negocio en IA.",
+   "tagline": "AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.",
+   "blog_name": "ToucHigh Blog"
+  },
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

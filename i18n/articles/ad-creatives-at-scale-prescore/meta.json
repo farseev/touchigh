@@ -1,0 +1,40 @@
+{
+ "num": "t14",
+ "original": "zh-Hans",
+ "cat": "ads-for-smes",
+ "hero": "t14",
+ "published": "2026-10-16T08:38:00+08:00",
+ "related": [
+  "publicidad-ia-pymes-meta-muse",
+  "reduce-marketing-costs-ai-smes",
+  "tiktok-ads-playbook-small-advertisers"
+ ],
+ "sources": [
+  {
+   "name": "X launches AI-powered ad creation option",
+   "url": "https://www.socialmediatoday.com/news/x-launches-ai-powered-ad-creation-option/832276/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-06"
+  },
+  {
+   "name": "Meta launches Muse AI for SMBs",
+   "url": "https://www.socialmediatoday.com/news/meta-launches-muse-ai-for-smbs/831714/",
+   "publisher": "Social Media Today",
+   "date": "2026-09-29"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t14.jpg",
+  "en": "/assets/blog/og/t14-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1925,
+  "en": 1305
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

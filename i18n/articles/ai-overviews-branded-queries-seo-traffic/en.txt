@@ -1,0 +1,118 @@
+== title ==
+Store SEO Traffic Dropping? AI Overviews Now Cover 80% of Branded Searches
+== seo_title ==
+SEO Traffic Dropping? How to Shift From SEO to GEO | ToucHigh
+== desc ==
+Google AI Overviews now show on 80%+ of branded searches, so falling SEO traffic isn't just you. Learn why, plus a 5-step plan to diagnose it and shift to GEO.
+== dek ==
+AI Overviews are taking over branded searches, and more blog posts and backlinks pay back less every month. What should independent store owners stop doing, and what should they start?
+== section ==
+SEO
+== tags ==
+SEO traffic | Google AI Overviews | GEO | organic traffic | branded search
+== keywords ==
+SEO traffic dropping, why is my website traffic dropping, Google organic traffic decline, AI Overviews branded queries, generative engine optimization, ecommerce store organic traffic
+== read ==
+6
+== q ==
+My store's SEO traffic keeps falling even though I'm still publishing. How do I get my organic traffic back?
+== a ==
+Don't just publish more. Google AI Overviews now appear on more than 80% of branded searches, so shoppers get answers on the results page and extra posts and backlinks pay back less. Instead, find the AI answers to your core questions that leave you out, rewrite product pages, FAQs and comparisons into answers AI can quote, and measure AI citation share, not just clicks.
+== takeaways ==
+- According to Search Engine Land, Google AI Overviews appeared on more than 80% of branded searches by late September, so branded terms are no longer guaranteed traffic for independent stores.
+- Piling on articles and buying backlinks pays back less each round; rewriting 20 core pages well often beats writing 300 more long-tail posts.
+- Use Google Search Console to tell “AI took the click” apart from “we really lost rankings,” because the fixes are completely different.
+- GEO aims to get you cited by ChatGPT, Perplexity, Google AI and other answer engines, so measurement shifts from clicks to AI citation share.
+== alt ==
+A search bar pours orange marbles into a violet-glowing AI answer funnel that lets only a few reach a small website storefront, while a tall wobbling stack of blank pages beside it yields just one marble.
+== body ==
+<p>Your store's SEO traffic keeps sliding. You're still publishing posts and buying links, but the numbers won't budge. The problem usually isn't effort. It's that shoppers now get their answers somewhere else. Short version: piling on more content and backlinks pays back less every month. The better bet is to find out whether AI answers mention you at all, then put your effort into getting AI to cite you.</p>
+
+<p>The shift sped up sharply in September. According to <a href="https://searchengineland.com/google-ai-overviews-jump-branded-queries-september-492962" rel="noopener" target="_blank">Search Engine Land</a>, tracking data from DemandSphere showed that the share of branded searches triggering Google AI Overviews jumped from about 26% in early September to more than 80% by month's end, peaking at 90.48% on September 27. In Nectiv's test of 100 enterprise brands, 93 had AI Overviews on their branded queries. In other words, when someone searches your brand name, the first thing they often see is Google's AI summary of you, not a link to your site.</p>
+
+<h2 id="why-does-my-store-s-seo-traffic-keep-dropping">Why does my store's SEO traffic keep dropping?</h2>
+
+<p>Reason one: more "zero-click" searches, where people get what they need on the results page and never click through. <a href="https://www.marketplace.org/story/2026/08/03/googles-ai-search-is-changing-who-gets-web-traffic" rel="noopener" target="_blank">Marketplace</a>, citing outside research, reported that the share of Google searches showing AI summaries rose from about 15% to about 40% over the past year, and that Business Insider's traffic reportedly fell 35% year over year. Google says it still sends "billions" of visits to websites.</p>
+
+<p>Reason two: branded searches aren't safe anymore. Branded traffic used to be the most dependable traffic an independent store had. People searching "brand name + review" or "is brand name legit" were mostly ready to buy. Now an AI summary sits above those results, and who it cites and how it describes you shapes whether anyone clicks through to your site.</p>
+
+<p>One caveat: neither DemandSphere nor Nectiv measured clicks, so nobody knows yet how much branded click-through has actually fallen. But the direction is clear. You're no longer managing just rankings. You're managing how AI introduces you.</p>
+
+<h2 id="why-aren-t-more-blog-posts-and-backlinks-working-anymore">Why aren't more blog posts and backlinks working anymore?</h2>
+
+<p>Economists call it the law of diminishing marginal returns: keep adding more of the same input, and each extra unit buys you less. SEO works the same way. Picture it: your first 50 articles covered your core product terms and the questions buyers care about most, and they paid off fast. Article 300 can only chase tiny long-tail keywords, and many of those simple questions now get answered by AI before anyone clicks.</p>
+
+<p>Backlinks follow the same curve. Your first few quality links from industry publications noticeably lift your site's credibility. After that, links bought in bulk cost more and more while your rankings sit still.</p>
+
+<p>For a two- or three-person team, the math is even harsher. A solid English long-form post takes a day or two to write. If its only job is to chase a long-tail term searched a few dozen times a month, that time would very likely earn more spent rewriting your core product pages.</p>
+
+<p>So "stepping back" doesn't mean giving up on SEO. It means stopping the reflex to add more and looking hard at where shoppers actually get their answers. As more of those answers show up in AI-generated results, your competition shifts from "the top ten pages" to "the sources AI is willing to cite."</p>
+
+<h2 id="first-diagnose-did-ai-take-your-clicks-or-did-you-really-los">First, diagnose: did AI take your clicks, or did you really lose rankings?</h2>
+
+<p>Before you change anything, open Google Search Console and look at branded and non-branded queries separately. Different symptoms call for completely different fixes:</p>
+
+<div class="tw"><table>
+<thead><tr><th>What you see</th><th>Likely cause</th><th>First move</th></tr></thead>
+<tbody>
+<tr><td>Impressions steady, click-through rate falling</td><td>AI Overviews and other search features are taking the clicks</td><td>Check who the AI answers for those terms cite, and rewrite your pages to earn the citation</td></tr>
+<tr><td>Branded clicks falling</td><td>AI Overviews now appear on branded searches, and people leave after reading the summary</td><td>Check whether the AI's description of you is accurate, and fill the gaps in the official information on your site</td></tr>
+<tr><td>Impressions and rankings both falling</td><td>An algorithm update or content quality problems</td><td>Hunt down thin and duplicate content; merge or remove low-quality pages</td></tr>
+<tr><td>Only a few pages slipping</td><td>Competitors refreshed their content, or your page information is out of date</td><td>Update data, prices and specs; add comparison content and FAQs</td></tr>
+</tbody>
+</table></div>
+
+<p>Chinese sellers often run into one more pattern: the AI Overview for their brand name cites a third-party review site, or even a competitor's comparison page, instead of their own site. That's a sign the site lacks official information AI can use directly, such as a clear brand introduction, warranty terms and spec sheets.</p>
+
+<h2 id="5-things-to-do-on-monday-after-your-store-s-traffic-drops">5 things to do on Monday after your store's traffic drops</h2>
+
+<ol>
+<li><strong>Pull out branded queries on their own.</strong> In Search Console, filter queries by your brand name and note how click-through rate changed before and after September. That's your baseline for every later comparison.</li>
+<li><strong>Search yourself.</strong> On Google, ChatGPT and Perplexity, search "brand name + review," "brand name vs. competitor" and "is brand name authentic." Screenshot what the AI says about you and which sites it cites.</li>
+<li><strong>List your 20 core buyer questions.</strong> Pull them from customer service logs, Amazon Q&amp;A and negative reviews (for example, "How long does this camping lantern stay lit?"), then check each one for whether AI answers include you.</li>
+<li><strong>Rewrite old pages instead of writing new ones.</strong> Put the answer in the first paragraph, add a spec table, your return policy and FAQs, and add structured data (schema markup) so AI can spot a quotable sentence at a glance.</li>
+<li><strong>Make your brand information consistent.</strong> Your English brand name, company bio, product model numbers and after-sales promises should match word for word across your independent site, your Amazon store and your social profiles, so AI never gets contradictory versions.</li>
+</ol>
+
+<p>At the same time, you can stop one thing: mass-producing long-tail articles that nobody searches for or asks about. Move that budget into the five steps above, and every dollar has a clearer job.</p>
+
+<h2 id="should-i-still-do-seo-and-what-is-geo">Should I still do SEO? And what is GEO?</h2>
+
+<p>Yes, but its role has changed. GEO, or Generative Engine Optimization, aims to get ChatGPT, Perplexity, Google AI Overviews and Gemini to cite your content when they answer questions. When an AI searches the web to answer, it first has to find and understand your pages. So the SEO basics (a crawlable site, clear page structure, accurate information) are still the foundation.</p>
+
+<p>The difference is how you measure. SEO tracks rankings and clicks; GEO tracks citations. When an AI answer mentions you and links to you, it builds brand awareness for you even if the reader doesn't click right then.</p>
+
+<p>Content that AI likes to cite usually has three traits: it gives a clear answer up front; it includes concrete numbers, specs and conditions of use; and what your site says matches what your other channels say. "This folding chair holds 120 kg and folds down to 8 cm thick" is far more likely to be pulled into an AI answer than "super strong, premium quality."</p>
+
+<h2 id="how-do-i-know-if-the-changes-are-working">How do I know if the changes are working?</h2>
+
+<p>Pick a fixed set of core questions and track three numbers every month. One: AI citation share, meaning the percentage of AI answers to those questions that cite you. Two: whether the AI Overview for your brand name describes you accurately. Three: non-branded impressions and orders from organic channels. If all three rise together, you're heading the right way.</p>
+
+<p>Tracking can be simple: one spreadsheet listing the question, the platform, whether you're mentioned, whether there's a link and who got cited. Three straight months of that tells you more than any ranking screenshot.</p>
+
+<p>If checking by hand eats too much time, you can hand the audit and tracking to a tool. <a href="/#geo">ToucHigh's GEO Autopilot</a>, for example, regularly checks your visibility across AI search, writes and ships fixes, and records how your citation share changes.</p>
+== insight_quote ==
+In the pursuit of progress, the biggest win is sometimes knowing when to step back.
+== insight ==
+Diminishing marginal returns means the same spend on content and links buys less and less traffic. Knowing when to stop adding volume and shift effort toward getting cited by AI is the better deal.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+If you don't have time to check AI answers by hand every week, ToucHigh's GEO Autopilot can take that job off your plate:
+== prop_items ==
+- It audits your blind spots across ChatGPT, Perplexity, Google AI Overviews / AI Mode and Gemini, so on day one you can see which answers leave you out.
+- It writes and ships the fixes, including pages, answers and brand entity data, and builds GEO articles around search questions as they trend.
+- It tracks your AI citation share continuously, so you can see whether the work is actually paying off.
+== prop_outro ==
+A good first step is a 30-minute strategy call to see where your store stands in US AI search today.
+== faq ==
+Q: Will AI Overviews wipe out my store's organic traffic?
+A: No. Google says it still sends billions of visits to websites, and AI Overviews include source links. But the mix is changing: simple informational questions are more likely to be answered right on the results page, and the people who do click through tend to arrive with a clear need. Rather than worrying about traffic going to zero, make sure you're among the sources AI cites.
+Q: AI Overviews now show up for my brand name. Can I control how they describe me?
+A: Not directly, but you can influence it. AI usually draws on several sources, so make your site's brand introduction, product specs and after-sales policies clear and complete, and keep them consistent on Amazon and social media. If third-party sites carry wrong information, ask them to correct it. Search your brand name once a month and log what changes.
+Q: I've already published hundreds of blog posts. Should I delete them?
+A: Don't delete them all at once. In Search Console, filter for posts with almost no impressions over the past six months: merge the ones that overlap, update the outdated ones, and only consider removing those with no value at all. For posts that still get impressions, rewrite the opening and structure so the answer is more direct. That costs far less than writing a new post.
+Q: How long does GEO take to show results?
+A: There's no standard timeline. It depends on how competitive your category is, the content you already have and each AI platform's own update cycle. The practical approach is to fix a set of core questions, record how AI cites you today as a baseline, and compare month by month. If your citation share and the way answers describe you keep improving, you're on the right track.
+== note ==
+We wrote this because “Why does my store's SEO traffic keep falling?” is one of the most common questions cross-border sellers ask, and Google AI Overviews spreading across branded searches in September made it more urgent.

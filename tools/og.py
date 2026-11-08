@@ -128,11 +128,19 @@ def articles(force=False, only_langs=None):
             hl = f[:-4]
             if only_langs and hl not in only_langs:
                 continue
+            if hl in meta.get("og_by_lang", {}):   # imported article: keeps the card it already had
+                continue
             out = os.path.join(ROOT, "assets/blog/og/%s%s.jpg" % (meta["num"], "" if hl == "zh-Hans" else "-" + L[hl]["code"]))
             if os.path.exists(out) and not force:
                 continue
             d = parse(os.path.join(ART, slug, f))
-            card(out, d["title"], d["section"], os.path.join(ROOT, "assets/blog/hero/%s.jpg" % meta["hero"]), hl)
+            try:
+                card(out, d["title"], d["section"], os.path.join(ROOT, "assets/blog/hero/%s.jpg" % meta["hero"]), hl)
+            except OSError as e:   # font for this script not installed: the page falls back to the English card
+                print("og: skipped", slug, hl, "-", e)
+                if os.path.exists(out):
+                    os.remove(out)
+                continue
             n += 1
     return n
 

@@ -1,0 +1,34 @@
+{
+ "num": "t31",
+ "original": "en",
+ "cat": "seo",
+ "hero": "t31",
+ "published": "2026-10-16T10:37:00+08:00",
+ "related": [
+  "factory-to-brand-seo-aeo-geo-us",
+  "seo-aeo-geo-learning-path-exporters",
+  "perfil-empresa-google-redes-pymes"
+ ],
+ "sources": [
+  {
+   "name": "ChatGPT's Most-Cited Sites Tilt Toward Primary Sources, Data Shows",
+   "url": "https://www.searchenginejournal.com/chatgpt-most-cited-sites-primary-sources-ahrefs/592682/",
+   "publisher": "Search Engine Journal",
+   "date": "2026-10-12"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t31.jpg",
+  "zh-Hans": "/assets/blog/og/t31-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1091,
+  "zh-Hans": 1876
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

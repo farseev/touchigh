@@ -1,0 +1,118 @@
+== title ==
+Do Backlinks Still Matter? ChatGPT Now Favors Primary Sources
+== seo_title ==
+Do Backlinks Still Matter? ChatGPT Favors Primary Sources | ToucHigh
+== desc ==
+Do backlinks still matter? Ahrefs data shows ChatGPT citations shifting to primary sources, with Reddit down from 19.1% to 2.3%. Buy fewer links; publish test data.
+== dek ==
+ChatGPT increasingly favors primary sources, and each new backlink pays back less. Small sellers should shift time from buying links to publishing original data.
+== section ==
+GEO & AI search
+== tags ==
+link building | GEO | ChatGPT citations | ecommerce SEO | original content
+== keywords ==
+do backlinks still matter, how to build backlinks for an online store, are backlinks still important for SEO, how to get cited by ChatGPT, ChatGPT citation sources, backlinks vs GEO citations
+== read ==
+5
+== q ==
+Link building takes so much time and money. Is it still worth doing, or is there an easier way to get my site taken seriously?
+== a ==
+Backlinks still work, but each new one pays back less. According to Ahrefs data reported by Search Engine Journal, from March to September 2026 the sites ChatGPT cited most in US answers shifted clearly toward primary, authoritative sources, and the share of answers citing Reddit fell from 19.1% to 2.3%. Rather than trading hours for links, invest in what only you can provide: test data, official specs and original research.
+== takeaways ==
+- According to Ahrefs data reported by Search Engine Journal, the share of ChatGPT's US answers citing Reddit fell from 19.1% to 2.3% between March and September 2026.
+- The sources that climbed most in ChatGPT's citations were government and research sites, regulators and reviewers who test products hands-on, so first-hand information wins.
+- Link building follows diminishing returns; instead of buying links in bulk, put the time into test data, official specs and original research.
+- A common gap for Chinese sellers is first-hand information that exists only in Chinese; turning it into English pages is usually the cheapest GEO move available.
+== alt ==
+A friendly AI chat bubble with violet eyes lowers an orange bucket into a clean stone well surrounded by a lab flask, a ruler, a product bottle and a blank clipboard, while a dusty heap of dark chain links lies ignored nearby.
+== body ==
+<p>Link building eats a lot of time and money. Is it still worth it? Yes, but do less of it, do it better, and put the time you save into first-hand information that only you can provide. The latest data shows ChatGPT increasingly cites the original source of information, not the sites that repackage it.</p>
+
+<p><a href="https://www.searchenginejournal.com/chatgpt-most-cited-sites-primary-sources-ahrefs/592682/" rel="noopener" target="_blank">Search Engine Journal</a> reported Ahrefs' figures on October 12: from March to September 2026, the sites ChatGPT cited most in US answers shifted clearly toward primary, authoritative sources. The share of answers citing Reddit fell from 19.1% to 2.3%, and Wikipedia from 14.1% to 2.9%. PubMed climbed from 64th place to 4th, while WebMD fell from 18th to 79th.</p>
+
+<h2 id="who-does-chatgpt-prefer-to-cite-now">Who does ChatGPT prefer to cite now?</h2>
+
+<p>By Ahrefs' count, the biggest climbers fell into three groups: government health and research sites, regulators, and reviewers who test products hands-on. The sites that lost ground were mostly health and finance sites offering secondhand interpretation; Britannica and Investopedia even dropped out of the top 200.</p>
+
+<p>For sellers, "reviewers who test products themselves" making the list is a clear signal: real tests and real data are more likely to be cited than repackaged opinions. Keep the caveats in view, too. Ahrefs notes that Reddit and Wikipedia are still among the sites ChatGPT cites most, and that citation rank doesn't equal traffic.</p>
+
+<p>The sample is large. Ahrefs analyzed the top 200 most-cited domains across about 2.4 million answers in March and about 3.8 million in September. To rule out noise from new questions, it also compared about 25,000 prompts that appeared in both months, and every site on the charts moved in the same direction.</p>
+
+<p>Another number stands out: of 66.6 million free, logged-out ChatGPT responses, only 14.4% triggered a web search. In other words, a large share of answers rely on what the model already knows. Whether your brand information shows up consistently, over time, in trusted places will matter longer than how many links you pile up in one push.</p>
+
+<h2 id="why-does-link-building-keep-getting-harder-while-paying-off">Why does link building keep getting harder while paying off less?</h2>
+
+<p>That's the economic law of diminishing marginal returns: keep adding more of the same input, and each extra unit brings back less. Your first few links from industry publications and partners noticeably boost your site's credibility. By link number 200, you're likely paying for links on forums and directories that have nothing to do with your category, and your rankings barely move.</p>
+
+<p>The time cost is easier to miss. Writing guest posts, mass-emailing for links and chasing replies can eat a whole week of one marketer's time. For a two- or three-person team, those hours could have produced a product test report or a clearer product page.</p>
+
+<p>So real progress sometimes comes from stepping back. Stop doubling down where returns keep shrinking, and look at what AI and shoppers actually need: reliable, specific information that only you can give.</p>
+
+<h2 id="how-should-i-split-my-time-between-backlinks-and-primary-sou">How should I split my time between backlinks and primary sources?</h2>
+
+<p>Here's our priority guide for small sellers, ranked by how much each move helps with AI citations and long-term brand credibility:</p>
+
+<div class="tw"><table>
+<thead><tr><th>Tactic</th><th>Effort</th><th>Helps AI citations?</th><th>Our advice</th></tr></thead>
+<tbody>
+<tr><td>Official spec sheets, FAQs, after-sales policies</td><td>Low: most of the material already exists</td><td>High: AI needs accurate official information</td><td>Do it now</td></tr>
+<tr><td>Original test-data pages (durability, battery life, materials testing)</td><td>Medium: you need to document the testing</td><td>High: this is first-hand information</td><td>Prioritize</td></tr>
+<tr><td>Industry media coverage and reviews by real testers</td><td>Medium to high</td><td>Medium to high: third-party endorsement</td><td>Pick key targets</td></tr>
+<tr><td>Guest posts on relevant industry sites</td><td>Medium</td><td>Medium: depends on site quality</td><td>Do a few</td></tr>
+<tr><td>Cheap backlinks bought in bulk</td><td>Low to medium</td><td>Low: rarely becomes a credible source</td><td>Stop</td></tr>
+</tbody>
+</table></div>
+
+<p>A simple way to rebalance: if you used to spend 70% of your SEO time chasing links, move half of that to the first two rows of the table. After three months, check how your AI citations and organic traffic have changed, then decide whether to keep adjusting.</p>
+
+<h2 id="how-do-i-become-a-primary-source">How do I become a "primary source"?</h2>
+
+<ol>
+<li><strong>Take stock of the information only you have.</strong> Factory test reports, material specs, quality-control processes, return-reason stats, frequent customer-service questions: many sellers have all of this, locked away in Chinese spreadsheets and internal chat groups.</li>
+<li><strong>Build an English test page.</strong> Spell out the method, the conditions and the results, for example "remaining battery after 8 hours of continuous use at -10°C," so the data can be verified.</li>
+<li><strong>Complete your official information.</strong> The spec sheets, certification numbers and warranty terms on your independent site should be the most complete and accurate version anywhere, and what you say on Amazon and social media should match it.</li>
+<li><strong>Publish small original research regularly.</strong> For example, send past buyers a short survey each quarter and turn the results into a report on "how US customers use this type of product." Content like this naturally gets cited and shared.</li>
+<li><strong>Trade data for links.</strong> Offer your test and research results to relevant media and reviewers. Good data earns links on its own; you don't need to buy them.</li>
+<li><strong>Recheck after model updates.</strong> Ahrefs suggests checking which sources ChatGPT cites on your core topics after OpenAI updates its models, then deciding what to fill in next.</li>
+</ol>
+
+<p>A solid test page usually has five parts: the purpose of the test, the samples and environment, the test method, a results table, and conclusions with usage advice. Go easy on marketing adjectives like "ultra-strong" or "top-tier," and let numbers and conditions do the talking. Both AI and shoppers find that easier to trust.</p>
+
+<h2 id="which-backlinks-are-still-worth-building">Which backlinks are still worth building?</h2>
+
+<p>Real links with real context still have value: exhibitor pages from industry associations and trade shows, websites of partner brands and distributors, media coverage, and reviews by genuine testers. What they have in common is that they'd bring you potential customers even if SEO didn't exist.</p>
+
+<p>What you can stop: bulk forum signatures, directories unrelated to your category, and link packages priced by the link. The test is simple. If you wouldn't bother reading the page a link sits on, US shoppers and AI probably won't take it seriously either.</p>
+
+<h2 id="what-should-chinese-sellers-watch-out-for">What should Chinese sellers watch out for?</h2>
+
+<p>The most common problem is first-hand information that exists but can't be seen. A factory has done plenty of testing, but the documents exist only as Chinese PDFs. The English brand name is written one way on the independent site, another on Amazon and a third in trade-show materials. If AI and US shoppers can't see the information or match it up, all that data might as well not exist.</p>
+
+<p>One more thing: many factory sellers treat certificates and test reports as "materials for procurement teams," sent out only when an inquiry comes in. To AI and to US end buyers, information that isn't public doesn't exist.</p>
+
+<p>Turning that information into clearly structured English pages is usually the lowest-cost step you can take. If you want to know first who AI cites on your core questions, run a visibility audit with <a href="/#geo">ToucHigh's GEO Autopilot</a>, then decide where to start filling the gaps.</p>
+== insight_quote ==
+In the pursuit of progress, the biggest win is sometimes knowing when to step back.
+== insight ==
+Link building follows diminishing returns too: the more links you have, the less each new one is worth. Knowing when to pull back and shift effort to original data and official information is how you become the source AI wants to cite.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+Want to know who ChatGPT, Perplexity and Google AI cite on your category's questions, and what you should add? ToucHigh's GEO Autopilot can help:
+== prop_items ==
+- It audits your visibility across ChatGPT, Perplexity, Google AI Overviews / AI Mode and Gemini and finds the questions where you're invisible.
+- It writes and ships fixes, including pages, answers and brand entity data, and builds GEO articles around questions as they trend.
+- It tracks your AI citation share continuously, so you can see whether the work is getting you cited more often.
+== prop_outro ==
+Start with a 30-minute strategy call to talk through which first-hand information you can put to work first.
+== faq ==
+Q: Do backlinks still help with Google SEO?
+A: Yes, but quality beats quantity. Links from related industries, real media outlets and partners still help build your site's credibility, while bulk-bought links unrelated to your category return less the more you buy. For small sellers, rather than chasing link counts, make sure every link has real context and real potential visitors behind it.
+Q: Reddit's citation share collapsed. Should I still create content on Reddit?
+A: You can, but don't treat it as a shortcut to AI citations. In Ahrefs' data, the share of answers citing Reddit fell from 19.1% to 2.3%, yet it remains one of the sites ChatGPT cites most. Focus on genuine conversation, like answering shoppers' product questions and gathering feedback, rather than mass posting to drive traffic.
+Q: What if my small brand has no original data?
+A: Most sellers do have it; they just haven't organized it. Frequent customer-service questions, return reasons, how products perform in different use cases, and comparison tests you ran while choosing products can all become first-hand content. Start with one core product and build one English test page that clearly explains your method and results. That's a great starting point.
+Q: What counts as a “primary source”?
+A: A quick test: Is this information something only you can provide, or are you the earliest and most authoritative provider? Official product specs, your own tests, surveys of your own customers and explanations of your quality-control and production process all count. Rewriting other people's articles or summarizing online reviews is secondhand. The latest data suggests ChatGPT's citations lean toward the former.
+== note ==
+We wrote this because “How can I spend less time on link building?” is one of the questions independent store sellers ask most, and new data showing ChatGPT prefers primary sources changes the answer.

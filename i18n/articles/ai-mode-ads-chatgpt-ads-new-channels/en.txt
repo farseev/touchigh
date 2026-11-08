@@ -1,0 +1,105 @@
+== title ==
+Google AI Mode Ads Are Here: Should Small Sellers Test New Channels?
+== seo_title ==
+Google AI Mode Ads: Should Small Sellers Test Them? | ToucHigh
+== desc ==
+Google AI Mode ads and ChatGPT visual ads both moved this month. How AI Mode ads work, whether ChatGPT ads are open, and a stop-loss test plan for small sellers.
+== dek ==
+Should you test new ad channels? Yes, but only with money you can afford to lose. Here's where Google AI Mode ads and ChatGPT ads stand, plus a way to judge tests by gross margin.
+== section ==
+Ads for SMEs
+== tags ==
+AI Mode ads | ChatGPT ads | Google Ads | New ad channels | Small business advertising
+== keywords ==
+Google AI Mode ads, how to run ads in AI Mode, ChatGPT ads for advertisers, AI Max for Search, AI search ads, ad channel ROI
+== read ==
+5
+== q ==
+Google AI Mode ads and ChatGPT ads are both here. Should a small seller like us try these new channels, and how do we avoid wasting money?
+== a ==
+Yes, but only with budget you can afford to lose. AI Mode ads have no separate campaign type; they run through Performance Max, Shopping and broad-match Search campaigns, including AI Max. Fix conversion tracking, product data and landing pages first, then test one business question on a small budget and judge it on gross margin, not conversions. ChatGPT's visual ads open first to only some US advertisers, so watch for now.
+== takeaways ==
+- Google Ads has no separate AI Mode campaign; ads reach AI Mode through Performance Max, Shopping and broad-match Search campaigns, including AI Max.
+- According to an SE Ranking study cited by Search Engine Land, text ads appeared in 29.45% of AI Mode responses across 50,032 US commercial keywords.
+- OpenAI's ChatGPT visual ads open first to only a small group of US advertisers, and targeting, pricing and reporting details have not been released.
+- Loss aversion pushes sellers either to chase every new channel or to avoid them entirely; the fix is a stop-loss budget and an experiment built around one clear business question.
+- Because AI Mode performance can't be broken out on its own, judge tests on order quality and gross margin rather than conversion volume.
+== alt ==
+On a lab bench, a pipette drops a few orange coins from a small fenced test budget into a violet-outlined chat-bubble funnel over a beaker, while a large jar full of coins stays sealed beside it.
+== body ==
+<p>Should small sellers try new channels like Google AI Mode ads and ChatGPT ads? Our advice: yes, but only with money you can afford to lose. First get your conversion tracking, product data and landing pages in order, then carve a small slice of budget out of your existing Google account and run an experiment around one clear business question. Most advertisers can't use ChatGPT's new visual ads yet, so for now, watch and get your creative ready.</p>
+<p>Both channels moved this month. In an October 9 explainer, <a href="https://searchengineland.com/google-ai-mode-ads-everything-you-need-to-know-494628" rel="noopener" target="_blank">Search Engine Land</a> pulled together the key numbers: Google said in May that AI Mode, its conversational search experience, had passed 1 billion monthly users, and a July SE Ranking study of 50,032 US commercial keywords found text ads in 29.45% of AI Mode responses. Meanwhile, <a href="https://www.searchenginejournal.com/openai-chatgpt-image-generation-visual-ads-test/591981/" rel="noopener" target="_blank">Search Engine Journal</a> reported that starting in late October, OpenAI will test visual ads that appear while ChatGPT generates images, with a small group of US advertisers, and that "most advertisers won't have access to visual ads yet."</p>
+
+<h2 id="how-do-ads-show-up-in-ai-mode-and-do-you-need-a-separate-cam">How do ads show up in AI Mode, and do you need a separate campaign?</h2>
+<p>According to Search Engine Land's roundup, AI Mode currently has four ad formats, most of them still in testing:</p>
+<ul>
+<li><strong>Existing text and Shopping ads:</strong> served from eligible campaigns and shown below the AI answer or blended into it (testing).</li>
+<li><strong>Conversational Discovery ads:</strong> Gemini tailors the ad creative to the user's question (testing).</li>
+<li><strong>Highlighted Answers:</strong> sponsored merchants appear directly in the list of recommendations (testing).</li>
+<li><strong>Direct Offers:</strong> promotions shown during shopping conversations; retailers supply the offer in their campaign settings, and Google's AI decides when to show it (pilot).</li>
+</ul>
+<p>The key point: Google Ads has no separate "AI Mode campaign," and you can't pick AI Mode as a placement on its own. What gets into AI Mode is Performance Max, Shopping ads and Search ads using broad match, including AI Max for Search. In September, a small experiment also let exact- and phrase-match Search ads enter AI Mode when user intent was clear.</p>
+<p>The article also warns that AI Mode launching in a market doesn't mean its ad formats are available there. If you sell into the US, step one is confirming whether your account can take part.</p>
+
+<h2 id="can-you-run-chatgpt-ads-right-now">Can you run ChatGPT ads right now?</h2>
+<p>According to Search Engine Journal, ChatGPT's existing ads appear below answers, and OpenAI says ChatGPT reaches 1.2 billion people a week. The new visual ads will appear while users generate images, using pictures to show product inspiration, how a product is used or what it feels like to use it. They will be clearly labeled and kept separate from the image the user generated.</p>
+<p>But OpenAI hasn't released targeting, pricing, creative requirements or reporting details for the new format. On measurement, the report says Hightouch, Tealium and LiveRamp can send conversion data back to ChatGPT Ads, while AppsFlyer, Triple Whale and others are attribution partners. The report also stresses that the early results several partners disclosed measured different metrics, so they can't be treated as general benchmarks.</p>
+<p>For small sellers, the practical move right now is to prepare high-quality images of your products in use and follow the rollout, rather than pulling existing budget to chase a placement you can't get yet.</p>
+
+<h2 id="why-do-new-channels-feel-exciting-and-scary-at-the-same-time">Why do new channels feel exciting and scary at the same time?</h2>
+<p>Behavioral economics has a name for this tension: loss aversion. Losing a given amount hurts noticeably more than gaining the same amount feels good.</p>
+<p>It pushes sellers to two extremes. Some are afraid of missing the window ("everyone else is running these, so I'm losing out by sitting still") and rush money in. Others are afraid of wasting it, especially after being burned by an agency that "guaranteed results," and touch nothing at all. Both reactions come from the same psychology, just pointed in opposite directions.</p>
+<p>It's also why many small sellers are wary of the traditional agency model: the monthly fee always gets paid, but nobody can explain the results. Skepticism about new channels is healthy. The key is to write it down as questions you can test: how much to spend, which metric to watch and how long before you decide.</p>
+<p>So turn doubt into method. Set a test budget you won't mind losing and a stop-loss line, then let the data talk. Doubt isn't the problem; never testing it is.</p>
+
+<h2 id="is-a-new-channel-worth-testing-start-with-this-table">Is a new channel worth testing? Start with this table</h2>
+<div class="tw"><table>
+<thead><tr><th>Channel / format</th><th>Current status (as reported)</th><th>How you get in</th><th>What small sellers should do</th></tr></thead>
+<tbody>
+<tr><td>Text and Shopping ads in AI Mode</td><td>Testing</td><td>Performance Max, Shopping, broad-match Search (including AI Max)</td><td>Run a small-budget test inside your existing Google account</td></tr>
+<tr><td>Conversational Discovery / Highlighted Answers</td><td>Testing</td><td>Google recommends AI Max and Performance Max for the new formats</td><td>Make your landing pages and product data clear so the system understands what you sell</td></tr>
+<tr><td>Direct Offers</td><td>Pilot</td><td>Supply offers in campaign settings</td><td>Use gross margin to pick the products that can absorb a promotion</td></tr>
+<tr><td>Ads below ChatGPT answers</td><td>Live</td><td>Depends on OpenAI's rollout</td><td>Learn which measurement tools connect before deciding whether to apply</td></tr>
+<tr><td>Visual ads in ChatGPT image generation</td><td>Small test from late October</td><td>Initially limited to some US advertisers</td><td>Hold off on budget; prepare product lifestyle images</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="how-do-you-test-ai-mode-ads-with-money-you-can-afford-to-los">How do you test AI Mode ads with money you can afford to lose?</h2>
+<ol>
+<li><strong>Confirm eligibility.</strong> Check whether your target market and your account can take part in the relevant ad formats.</li>
+<li><strong>Lay the foundation.</strong> As Search Engine Land recommends, fix conversion tracking, product feed errors and landing pages first, so your pages clearly say what you sell and who it's for.</li>
+<li><strong>Write down one business question.</strong> For example: "With AI Max turned on, can we win orders from new search terms without raising our cost per acquisition (CPA)?"</li>
+<li><strong>Set a stop-loss budget.</strong> Take a small share of your existing Google budget, fix a test period and a maximum loss, and stop when you hit that line.</li>
+<li><strong>Review AI Max settings one by one.</strong> Focus on brand exclusions, URL controls and text customization. The article warns that under certain asset optimization and URL settings, fixed ad copy won't be honored.</li>
+<li><strong>Judge results on profit.</strong> AI Max reports don't break out AI Mode performance separately, so don't just watch conversion counts. Look at order quality, gross margin and the share of new customers, and review search terms, landing pages and assets.</li>
+<li><strong>Decide on schedule.</strong> If the test hits its target, scale up gradually; if it doesn't, stop. Write down what you learned as the starting point for the next round.</li>
+</ol>
+
+<h2 id="on-a-tight-budget-how-do-you-rank-old-and-new-channels">On a tight budget, how do you rank old and new channels?</h2>
+<p>The order is simple: get your existing channels healthy first, then test new ones with what's left over. Your test budget should come from money saved by optimizing current channels, not from cutting ads that are already making money.</p>
+<p>ToucHigh's Ads feature automatically adjusts budgets toward ROAS (return on ad spend) across Amazon, Meta and Google and makes creative-fatigue and budget-allocation calls for you, freeing up time and budget for experiments. On the other side, visibility in AI answers doesn't have to be all paid: GEO (generative engine optimization) is about getting your store cited naturally in answers from ChatGPT, Perplexity and Google AI. To see how the paid and organic tracks fit together, explore <a href="/#products">ToucHigh's products</a>.</p>
+== insight_quote ==
+Test new ideas with healthy skepticism, and innovation can turn into growth.
+== insight ==
+Loss aversion makes a new channel feel like both a window you might miss and money you might lose. Instead of swinging between those two fears, set a stop-loss budget and run a small experiment, so skepticism becomes a question you can test.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+New channels are worth testing, as long as your existing channels aren't leaking money. ToucHigh can help you steady the base first:
+== prop_items ==
+- Ads runs Amazon, Meta and Google from one place, adjusts budgets toward ROAS automatically, and makes creative-fatigue and budget calls for you.
+- GEO Autopilot finds where your store is invisible in ChatGPT, Perplexity, Google AI and Gemini, writes and ships the fixes, and keeps tracking your AI-citation share.
+- With paid and organic in one view, you have a clear baseline to compare against when you test a new channel.
+== prop_outro ==
+If you're weighing a new channel, book a 30-minute strategy call and we'll walk through your current accounts together.
+== faq ==
+Q: Do I need a separate campaign to run AI Mode ads?
+A: No, and you couldn't create one if you tried. According to Search Engine Land, Google Ads has no separate AI Mode campaign, and turning on AI Max doesn't let you select AI Mode as its own placement. Ads reach AI Mode through existing Performance Max, Shopping and broad-match Search campaigns, so get the basics of those campaigns right first.
+Q: Can I see how my ads perform in AI Mode on their own?
+A: Not right now. AI Max reports show expanded-match search terms, headlines, landing pages and asset performance, but they don't report AI Mode performance separately, and Search Console's generative AI data covers organic traffic only. So set up a comparison and judge the overall change in order quality and gross margin.
+Q: Can Chinese sellers run ChatGPT visual ads now?
+A: Most likely not yet. According to Search Engine Journal, the test starts in late October with only a small group of US advertisers, most advertisers won't have access for now, and OpenAI hasn't shared targeting, pricing or reporting details. For now, prepare images of your products in use and keep an eye on the rollout.
+Q: What's the difference between AI Mode ads and GEO?
+A: AI Mode ads are paid placements that compete in auctions under campaign rules. GEO (generative engine optimization) gets your store and content cited naturally in AI answers, with no pay-per-click. Both reach the same people asking questions in AI tools, so they work well together: paid ads test demand quickly, and GEO builds long-term visibility.
+== note ==
+We wrote this because "which new ad channels should I try to get better returns" is one of the advertising questions small sellers ask most, and this month's moves on Google AI Mode ads and ChatGPT visual ads call for a calm way to decide.

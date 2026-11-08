@@ -1,0 +1,40 @@
+{
+ "num": "t06",
+ "original": "zh-Hans",
+ "cat": "social-media",
+ "hero": "t06",
+ "published": "2026-10-16T07:42:00+08:00",
+ "related": [
+  "chinese-manufacturers-founder-thought-leadership",
+  "made-in-china-story-localized-thought-leadership",
+  "overseas-social-algorithms-thought-leadership"
+ ],
+ "sources": [
+  {
+   "name": "Meta launches Muse AI for SMBs",
+   "url": "https://www.socialmediatoday.com/news/meta-launches-muse-ai-for-smbs/831714/",
+   "publisher": "Social Media Today",
+   "date": "2026-09-29"
+  },
+  {
+   "name": "Canva Teams Up with Meta's Muse to Transform How Users Create Designs",
+   "url": "https://smallbiztrends.com/canva-teams-up-with-metas-muse-to-transform-how-users-create-designs/",
+   "publisher": "Small Business Trends",
+   "date": "2026-10-15"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t06.jpg",
+  "en": "/assets/blog/og/t06-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1867,
+  "en": 1300
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

@@ -1,0 +1,34 @@
+{
+ "num": "t12",
+ "original": "zh-Hans",
+ "cat": "cross-border",
+ "hero": "t12",
+ "published": "2026-10-16T08:24:00+08:00",
+ "related": [
+  "trade-show-to-search-social-assets",
+  "tiktok-shop-shein-channel-mix",
+  "global-ecommerce-operations-less-is-more"
+ ],
+ "sources": [
+  {
+   "name": "一件睡袍近千元，老外抢着买单！普通产品凭什么卖出高溢价",
+   "url": "https://www.cifnews.com/article/189425",
+   "publisher": "雨果跨境 (Cifnews)",
+   "date": "2026-10-14"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t12.jpg",
+  "en": "/assets/blog/og/t12-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1863,
+  "en": 1265
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

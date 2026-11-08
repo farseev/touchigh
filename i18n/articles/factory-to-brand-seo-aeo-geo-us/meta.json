@@ -1,0 +1,41 @@
+{
+ "num": "t60",
+ "original": "en",
+ "cat": "seo",
+ "hero": "t60",
+ "published": "2026-10-16T14:00:00+08:00",
+ "landing": "supplier",
+ "related": [
+  "seo-aeo-geo-learning-path-exporters",
+  "perfil-empresa-google-redes-pymes",
+  "seo-tools-buying-guide-ai-search"
+ ],
+ "sources": [
+  {
+   "name": "Shein and Temu lost a duty break, and their $5 tops took the biggest hit",
+   "url": "https://qz.com/de-minimis-exemption-end-shein-temu-prices-100626",
+   "publisher": "Quartz",
+   "date": "2026-10-07"
+  },
+  {
+   "name": "Google AI Overviews jump from 26% to 80% of branded queries",
+   "url": "https://searchengineland.com/google-ai-overviews-jump-branded-queries-september-492962",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-01"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t60.jpg",
+  "zh-Hans": "/assets/blog/og/t60-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1163,
+  "zh-Hans": 1997
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

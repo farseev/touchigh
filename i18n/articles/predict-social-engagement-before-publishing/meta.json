@@ -1,0 +1,34 @@
+{
+ "num": "t34",
+ "original": "en",
+ "cat": "social-media",
+ "hero": "t34",
+ "published": "2026-10-16T10:58:00+08:00",
+ "related": [
+  "chinese-manufacturers-founder-thought-leadership",
+  "made-in-china-story-localized-thought-leadership",
+  "overseas-social-algorithms-thought-leadership"
+ ],
+ "sources": [
+  {
+   "name": "Pinterest asks brands to send people 'back into their life'",
+   "url": "https://www.socialmediatoday.com/news/pinterest-asks-brands-to-send-people-back-into-their-life/832922/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-13"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t34.jpg",
+  "zh-Hans": "/assets/blog/og/t34-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1144,
+  "zh-Hans": 1943
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

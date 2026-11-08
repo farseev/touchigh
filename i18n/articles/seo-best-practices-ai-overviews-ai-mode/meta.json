@@ -1,0 +1,40 @@
+{
+ "num": "t30",
+ "original": "en",
+ "cat": "geo-ai-search",
+ "hero": "t30",
+ "published": "2026-10-16T10:30:00+08:00",
+ "related": [
+  "us-buyers-ai-research-citable-content",
+  "seo-aeo-geo-explained-chinese-exporters",
+  "factory-website-geo-chatgpt-supplier"
+ ],
+ "sources": [
+  {
+   "name": "Google updates AI Mode and AI Overview with more links, context, carousels, and information on creators",
+   "url": "https://searchengineland.com/google-updates-ai-mode-and-ai-overview-with-more-links-context-carousels-and-information-on-creators-496242",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-15"
+  },
+  {
+   "name": "Google AI Overviews jump from 26% to 80% of branded queries",
+   "url": "https://searchengineland.com/google-ai-overviews-jump-branded-queries-september-492962",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-01"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t30.jpg",
+  "zh-Hans": "/assets/blog/og/t30-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1166,
+  "zh-Hans": 2028
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

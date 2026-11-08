@@ -1,0 +1,41 @@
+{
+ "num": "t52",
+ "original": "zh-Hans",
+ "cat": "geo-ai-search",
+ "hero": "t52",
+ "published": "2026-10-16T13:04:00+08:00",
+ "landing": "supplier",
+ "related": [
+  "us-buyers-ai-research-citable-content",
+  "seo-aeo-geo-explained-chinese-exporters",
+  "geo-pymes-que-funciona"
+ ],
+ "sources": [
+  {
+   "name": "ChatGPT's Most-Cited Sites Tilt Toward Primary Sources, Data Shows",
+   "url": "https://www.searchenginejournal.com/chatgpt-most-cited-sites-primary-sources-ahrefs/592682/",
+   "publisher": "Search Engine Journal",
+   "date": "2026-10-12"
+  },
+  {
+   "name": "Google AI Overviews jump from 26% to 80% of branded queries",
+   "url": "https://searchengineland.com/google-ai-overviews-jump-branded-queries-september-492962",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-01"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t52.jpg",
+  "en": "/assets/blog/og/t52-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1913,
+  "en": 1301
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

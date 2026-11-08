@@ -1,0 +1,112 @@
+== title ==
+SEO Best Practices for AI Overviews and AI Mode (October 2026)
+== seo_title ==
+SEO Best Practices for AI Overviews and AI Mode in 2026 | ToucHigh
+== desc ==
+AI Overviews now appear on most branded searches, with more inline links. Here's the short SEO checklist that still pays off, and what you can stop doing.
+== dek ==
+Google's AI now answers most branded searches and carries more inline links. Here's where SEO effort still pays, where returns have flattened, and a one-week checklist.
+== section ==
+GEO & AI search
+== tags ==
+SEO | AI Overviews | AI Mode | GEO | Google
+== keywords ==
+SEO best practices AI Overviews, SEO checklist 2026, how to optimize for AI Overviews, AI Mode SEO, branded search AI Overviews, Google AI Overviews inline links
+== read ==
+7
+== q ==
+Which SEO best practices actually matter now that Google shows AI Overviews and AI Mode?
+== a ==
+Do fewer things, better. Make sure Google's AI describes your brand correctly, since AI Overviews now appear on most branded searches. Publish answer-first pages built on facts only you have, keep your business details identical everywhere, and refresh your best pages instead of adding thin new ones. Then check monthly which sources AI answers cite for your top questions.
+== takeaways ==
+- Search Engine Land reported that AI Overviews appeared on more than 80% of tracked branded queries by late September 2026, up from about 26% at the start of the month.
+- Google now places inline source links inside AI Overviews and AI Mode higher up and more often, so being a cited source matters as much as ranking.
+- Much small-business SEO has hit diminishing returns on volume, and merging and refreshing existing pages is now a better use of time than publishing more.
+- The highest-return SEO work is keeping brand facts accurate and consistent wherever Google's AI reads them.
+- Track AI-citation share and branded-answer accuracy monthly, because Search Console does not yet report click data for AI features.
+== alt ==
+A gloved hand prunes thin grey page-leaves from a potted plant while a few large orange page cards bloom, one of them linked by a violet line to a floating AI answer panel.
+== body ==
+<p>The SEO best practices that matter in October 2026 are fewer than most checklists suggest. Make sure Google's AI describes your business correctly, write pages that answer a question in their first lines, keep your facts consistent everywhere, and stop spending hours on tactics that have stopped paying back. Two reports from the past few weeks show why.</p>
+<p>On October 1, <a href="https://searchengineland.com/google-ai-overviews-jump-branded-queries-september-492962" rel="noopener" target="_blank">Search Engine Land</a> reported DemandSphere tracking that found AI Overviews on more than 80% of tracked branded queries by late September, up from about 26% at the start of the month and peaking at 90.48% on September 27. Nectiv separately found AI Overviews for 93 of 100 enterprise brands. Two weeks later, <a href="https://searchengineland.com/google-updates-ai-mode-and-ai-overview-with-more-links-context-carousels-and-information-on-creators-496242" rel="noopener" target="_blank">Search Engine Land</a> covered Google's update to AI Overviews and AI Mode, which puts inline source links "higher up and more often" to "ensure key sources are easily clickable."</p>
+<p>Put those together and the picture is clear. When someone searches your business name, Google increasingly answers with AI first. That answer now carries more links than before. Your job is to make sure the facts in it are right, and that one of those links is yours.</p>
+
+<h2 id="what-changed-in-ai-overviews-and-ai-mode-this-month">What changed in AI Overviews and AI Mode this month?</h2>
+<p>According to Search Engine Land's October 15 report, Google announced several changes at once:</p>
+<ul>
+<li><strong>More inline links</strong> inside the AI-written text, placed higher and shown more often.</li>
+<li><strong>A dedicated links section</strong> at the top of some answers when only a few official sites exist for a task, with context on why each one is useful.</li>
+<li><strong>Article carousels</strong> for timely queries, expanding to more locations, languages and types of query.</li>
+<li><strong>Clickable creator names</strong> in some AI Mode video results, which lead to Google's own Search profile pages.</li>
+<li><strong>Preferred Sources</strong>, which lets searchers pick sources they want to see more of. Google says use of the feature has grown seven-fold this year.</li>
+</ul>
+<p>The update responds to publisher complaints that AI answers starve websites of clicks. Whether it actually brings clicks back is still an open question: Search Engine Land's Barry Schwartz noted that Search Console still doesn't report click data for AI features.</p>
+
+<h2 id="why-it-keeps-happening-more-seo-effort-smaller-gains">Why it keeps happening: more SEO effort, smaller gains</h2>
+<p>Economists call this the law of diminishing returns. After a certain point, each extra unit of effort adds less than the one before. A lot of small-business SEO passed that point a while ago.</p>
+<p>The first ten posts on your core topics built real visibility. The fortieth post on the same topic mostly competes with the other 39. The first few links from respected sites in your niche mattered; the next batch of cheap directory links barely registers. Meanwhile, AI answers pull a handful of clear sources into one response, so ten overlapping pages don't earn ten times the visibility. They can earn less than one clear page, because none of them stands out as the obvious source.</p>
+<p>The smart move is knowing when to step back. Stop feeding the parts of SEO that have flattened, and move those hours to the few things AI answers actually draw on: accurate facts, clear answers and first-hand material.</p>
+
+<h2 id="which-seo-practices-still-pay-off-and-which-have-flattened">Which SEO practices still pay off, and which have flattened?</h2>
+<p>This is our read for a typical small business or online store. Adjust it for your niche.</p>
+<div class="tw"><table>
+<thead><tr><th>Practice</th><th>Return now</th><th>What to do instead</th></tr></thead>
+<tbody>
+<tr><td>Publishing more posts on topics you already cover</td><td>Low</td><td>Merge overlapping posts into one strong page and refresh it</td></tr>
+<tr><td>Chasing cheap backlinks and directory listings</td><td>Low, sometimes risky</td><td>Earn a few mentions from sites your customers actually read</td></tr>
+<tr><td>Long, keyword-heavy category copy</td><td>Low</td><td>Short, answer-first copy with specs, price and policies</td></tr>
+<tr><td>Accurate brand facts on your own site</td><td>High</td><td>One clear, dated page each for pricing, shipping, returns and company details</td></tr>
+<tr><td>Consistent business details across the web</td><td>High</td><td>Match name, description, hours and categories on Google Business Profile, marketplaces and social bios</td></tr>
+<tr><td>Original photos, data and test results</td><td>High</td><td>Publish one piece of first-hand material a month</td></tr>
+<tr><td>Structured data (schema markup)</td><td>Steady</td><td>Mark up product and organization details through your store platform or SEO plugin</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="how-do-i-optimize-my-site-for-ai-overviews-a-one-week-checkl">How do I optimize my site for AI Overviews? A one-week checklist</h2>
+<ol>
+<li><strong>Audit your branded answers (day 1).</strong> Search your business name with "reviews," "pricing," "shipping," "returns" and "is it legit." Screenshot every AI Overview. Note wrong or missing facts and which sources Google cites.</li>
+<li><strong>Fix the source, not the symptom (day 2).</strong> Wrong facts in AI answers often trace back to an old page, an outdated listing or a third-party review. Update your own pages first, then correct the listings you control.</li>
+<li><strong>Rewrite the top of your five most important pages (day 3).</strong> Open each with a direct answer of 40 to 60 words to the question that page serves, then add detail below.</li>
+<li><strong>Align your business data (day 4).</strong> Make your Google Business Profile, marketplace storefronts and social bios say the same thing in the same words.</li>
+<li><strong>Check your structured data (day 4).</strong> Most store platforms and SEO plugins can add product and organization markup. Confirm it matches what the page actually says.</li>
+<li><strong>Test ten non-branded questions (day 5).</strong> Ask Google AI Mode the questions customers ask you. For each, note who gets cited and whether you have first-hand facts to add. If you don't, skip that question for now.</li>
+<li><strong>Merge or retire thin pages (day 6).</strong> Pick the weakest overlapping posts, fold anything useful into your best page and redirect the rest.</li>
+<li><strong>Book a monthly 30-minute review (day 7).</strong> Re-run the same searches and log what changed. If you publish timely content, ask regular readers to add you as a preferred source in Google.</li>
+</ol>
+
+<h2 id="what-can-i-safely-stop-doing">What can I safely stop doing?</h2>
+<ul>
+<li><strong>Publishing to a quota.</strong> If a post adds no fact, example or angle you haven't already published, skip it.</li>
+<li><strong>Checking rankings every day.</strong> AI answers now sit above the classic results for many searches, so position alone tells you less than it used to.</li>
+<li><strong>Reacting to every algorithm rumor.</strong> Google's AI features change month to month. Base decisions on what your own searches and sales show.</li>
+<li><strong>Treating traffic as the only score.</strong> With click data for AI features missing from Search Console, judge organic search on leads and sales as well as visits.</li>
+</ul>
+
+<h2 id="how-do-i-track-whether-ai-answers-cite-my-business">How do I track whether AI answers cite my business?</h2>
+<p>The metric to watch is AI-citation share: how often your site appears as a source when AI engines answer a fixed set of questions that matter to your business. Track it alongside two simpler checks: whether your branded AI Overviews state your facts correctly, and whether organic leads are growing.</p>
+<p>This is the heart of GEO, short for Generative Engine Optimization: making your business the source that AI answer engines quote, not just a link they rank. You can track it by hand with a spreadsheet and monthly searches. If you would rather not, <a href="/#geo">ToucHigh's GEO Autopilot</a> finds where you're invisible across ChatGPT, Perplexity, Google AI Overviews and AI Mode, and Gemini, writes and ships the fixes, and tracks your citation share over time.</p>
+== insight_quote ==
+In the pursuit of progress, sometimes the greatest victories lie in knowing when to step back.
+== insight ==
+The law of diminishing returns says each extra unit of effort eventually adds less than the one before. In SEO that point comes quickly: another overlapping post or cheap backlink rarely changes an AI answer, while fixing one wrong fact can.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+Most small teams don't have a spare week every month to audit AI answers and fix what they find. ToucHigh's GEO Autopilot does that work continuously.
+== prop_items ==
+- <strong>Audit:</strong> shows where your business is invisible across ChatGPT, Perplexity, Google AI Overviews and AI Mode, and Gemini.
+- <strong>Fix:</strong> writes and ships the fixes, including pages, answers and entity data, plus GEO articles built around questions as they trend.
+- <strong>Prove:</strong> tracks your AI-citation share over time, so you can see what is working.
+== prop_outro ==
+The GEO + Social bundle starts under USD 500 a month. If you want to see your gaps first, book a 30-minute strategy call.
+== faq ==
+Q: Do AI Overviews reduce traffic to small business websites?
+A: They can. Publishers have complained that AI answers keep people on Google instead of sending them to websites, and Google's October update adding more inline links is partly a response. Search Console still doesn't report click data for AI features, so you can't measure the effect precisely. Watch organic leads and sales alongside traffic to see the real impact on your business.
+Q: Is classic SEO still worth doing in 2026?
+A: Yes. AI Overviews and AI Mode draw on pages Google has crawled and indexed, so the basics still apply: crawlable pages, clear titles, sensible internal links and fast load times. What has changed is where the returns are. A few clear, well-sourced pages are now a better use of your time than a large volume of overlapping content.
+Q: What is GEO, and how is it different from SEO?
+A: GEO stands for Generative Engine Optimization. It means making your business the source that AI answer engines such as ChatGPT, Perplexity, Gemini and Google's AI Overviews quote when they answer a question. SEO aims to rank a page in a list of results. The two overlap heavily, but GEO puts more weight on clear facts, consistent business data and first-hand material.
+Q: How often should I check what Google's AI says about my brand?
+A: Monthly is a sensible minimum, plus after any change to your pricing, policies or products. Things move fast: according to Search Engine Land, AI Overviews went from about 26% to more than 80% of tracked branded queries within September 2026 alone. A short monthly review catches wrong facts before customers act on them.
+== note ==
+We wrote this because 'What are the SEO best practices right now?' is the question small-business owners search most whenever Google changes, and this month's data shows AI Overviews on most branded searches while Google adds more links to AI answers.

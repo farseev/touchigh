@@ -1,0 +1,40 @@
+{
+ "num": "t17",
+ "original": "zh-Hans",
+ "cat": "geo-ai-search",
+ "hero": "t17",
+ "published": "2026-10-16T08:59:00+08:00",
+ "related": [
+  "us-buyers-ai-research-citable-content",
+  "seo-aeo-geo-explained-chinese-exporters",
+  "factory-website-geo-chatgpt-supplier"
+ ],
+ "sources": [
+  {
+   "name": "57% of beauty consumers don't start with Google Search",
+   "url": "https://searchengineland.com/beauty-consumers-google-search-493828",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-07"
+  },
+  {
+   "name": "The rise of the AI shelf",
+   "url": "https://www.modernretail.co/operations/the-rise-of-the-ai-shelf/",
+   "publisher": "Modern Retail",
+   "date": "2026-09-26"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t17.jpg",
+  "en": "/assets/blog/og/t17-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1846,
+  "en": 1241
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

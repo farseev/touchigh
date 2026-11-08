@@ -1,0 +1,35 @@
+{
+ "num": "t03",
+ "original": "zh-Hans",
+ "cat": "measurement",
+ "hero": "t03",
+ "published": "2026-10-16T07:21:00+08:00",
+ "landing": "supplier",
+ "related": [
+  "medir-campanas-redes-sociales-pymes",
+  "digital-advertising-kpis-small-business",
+  "measure-influencer-roi-tiktok-shop"
+ ],
+ "sources": [
+  {
+   "name": "ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure",
+   "url": "https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-15"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t03.jpg",
+  "en": "/assets/blog/og/t03-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1830,
+  "en": 1212
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

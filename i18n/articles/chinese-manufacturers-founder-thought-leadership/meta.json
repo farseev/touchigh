@@ -1,0 +1,40 @@
+{
+ "num": "t59",
+ "original": "en",
+ "cat": "social-media",
+ "hero": "t59",
+ "published": "2026-10-16T13:53:00+08:00",
+ "related": [
+  "made-in-china-story-localized-thought-leadership",
+  "overseas-social-algorithms-thought-leadership",
+  "factory-founder-linkedin-thought-leadership"
+ ],
+ "sources": [
+  {
+   "name": "AI favors brands with an active social media presence",
+   "url": "https://www.socialmediatoday.com/news/ai-favors-brands-with-an-active-social-media-presence/832450/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-07"
+  },
+  {
+   "name": "LinkedIn exec offers insight into the battle against AI slop",
+   "url": "https://www.socialmediatoday.com/news/linkedin-exec-offers-insight-into-the-battle-against-ai-slop/832576/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-08"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t59.jpg",
+  "zh-Hans": "/assets/blog/og/t59-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1224,
+  "zh-Hans": 2151
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

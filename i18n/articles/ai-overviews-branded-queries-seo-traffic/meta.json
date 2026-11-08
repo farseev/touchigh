@@ -1,0 +1,40 @@
+{
+ "num": "t01",
+ "original": "zh-Hans",
+ "cat": "seo",
+ "hero": "t01",
+ "published": "2026-10-16T07:07:00+08:00",
+ "related": [
+  "factory-to-brand-seo-aeo-geo-us",
+  "seo-aeo-geo-learning-path-exporters",
+  "perfil-empresa-google-redes-pymes"
+ ],
+ "sources": [
+  {
+   "name": "Google AI Overviews jump from 26% to 80% of branded queries",
+   "url": "https://searchengineland.com/google-ai-overviews-jump-branded-queries-september-492962",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-01"
+  },
+  {
+   "name": "Google's AI search is changing who gets web traffic",
+   "url": "https://www.marketplace.org/story/2026/08/03/googles-ai-search-is-changing-who-gets-web-traffic",
+   "publisher": "Marketplace (APM)",
+   "date": "2026-08-03"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t01.jpg",
+  "en": "/assets/blog/og/t01-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1951,
+  "en": 1313
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

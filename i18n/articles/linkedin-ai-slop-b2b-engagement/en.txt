@@ -1,0 +1,104 @@
+== title ==
+LinkedIn Engagement Strategy: How Small B2B Brands Win as AI Slop Gets Cut
+== seo_title ==
+LinkedIn Engagement Strategy After the AI Slop Crackdown | ToucHigh
+== desc ==
+LinkedIn says it now spots generic AI posts with 94% precision. A LinkedIn engagement strategy small B2B brands can run in about 30 minutes a day.
+== dek ==
+LinkedIn now screens every post that travels beyond your network for generic AI slop. Small B2B brands still win by posting first-hand expertise and building real relationships in the comments.
+== section ==
+Social media
+== tags ==
+LinkedIn | B2B marketing | AI content | Engagement | Thought leadership
+== keywords ==
+LinkedIn engagement strategy, how to increase LinkedIn engagement, LinkedIn AI slop, LinkedIn best practices for small business, B2B LinkedIn content strategy, does LinkedIn penalize AI content
+== read ==
+7
+== q ==
+What are the best practices for getting real engagement on LinkedIn as a small B2B business?
+== a ==
+Post specific, first-hand expertise and spend as much time in other people's comments as on your own posts. LinkedIn now runs AI-slop classifiers on every post distributed beyond your immediate network, so generic, repetitive content risks losing reach. Small B2B brands win with founder and employee voices, real numbers and stories, and replies that start conversations with the right people.
+== takeaways ==
+- LinkedIn defines AI slop as posts that are generic or repetitive and add no real insight, and says its classifiers detect it with 94% precision on posts shared beyond your immediate network.
+- More than 1 million people used LinkedIn's AI-slop report option within three weeks of its launch, so members themselves now flag generic content.
+- Using AI to draft isn't the problem; publishing posts with no first-hand detail, opinion or proof is.
+- On LinkedIn, engagement follows relationships: thoughtful comments on the right people's posts build more lasting reach than broadcasting alone.
+- Small B2B brands should measure conversations and inbound inquiries started on LinkedIn, not just impressions.
+== alt ==
+A conveyor belt drops identical grey post cards through a sieve into a recycling bin, while two professionals chat over coffee with linked orange speech bubbles.
+== body ==
+<p>What's the best LinkedIn engagement strategy for a small B2B brand right now? Post things only you could have written, and treat comments as the main event rather than an afterthought. LinkedIn is actively cutting the reach of generic AI-written posts, so volume without substance has become a liability.</p>
+<p>In a piece from <a href="https://www.socialmediatoday.com/news/linkedin-exec-offers-insight-into-the-battle-against-ai-slop/832576/" rel="noopener" target="_blank">Social Media Today</a> on October 8, a LinkedIn VP of Engineering explained how the platform fights "AI slop," which LinkedIn defines as posts that are generic or repetitive and add no real insight. He said LinkedIn has expanded its classifiers "to cover all posts that are distributed beyond your immediate network" with "94% precision at detecting AI-slop."</p>
+
+<h2 id="how-does-linkedin-detect-ai-slop">How does LinkedIn detect AI slop?</h2>
+<p>According to the article, LinkedIn uses several layers. Large "teacher" models track new slop patterns and generate training examples. Smaller "student" models learn those patterns so they can check posts quickly. AI agents, each following a specific policy, judge posts on criteria such as whether a post is promotional, celebrates an achievement or is timely, and they pass the hard cases to human reviewers.</p>
+<p>Members are part of the loop too. In August LinkedIn added an in-feed option to report suspected AI-generated content, and more than 1 million people used it in under three weeks. That feedback helps train the system. LinkedIn had previously reported a 40% reduction in views of AI slop.</p>
+<p>The article doesn't say how the 94% figure was measured, and LinkedIn hasn't published a list of what it rewards. So be wary of anyone selling a "slop-proof template." The definition is your best guide: generic, repetitive and no real insight is what gets cut.</p>
+
+<h2 id="will-using-ai-to-write-my-posts-hurt-my-reach">Will using AI to write my posts hurt my reach?</h2>
+<p>Not by itself. LinkedIn's definition is about the content, not the tool. A post drafted with AI that includes your real numbers, a client's actual problem (shared with permission) and a clear opinion is not generic. A post you typed by hand that says "Consistency is key. Agree?" is.</p>
+<p>The risk is that AI makes generic posts effortless. Ask a chatbot for "a LinkedIn post about customer service" and you get the same polished nothing everyone else gets. Researchers call this content homogenization, and ToucHigh's team has studied it in <a href="https://dl.acm.org/doi/10.1145/3805712.3808371" rel="noopener" target="_blank">peer-reviewed work published at ACM SIGIR</a>. The fix is better input, not avoiding AI: feed the draft your specifics, then edit until it sounds like you.</p>
+
+<h2 id="why-does-genuine-networking-beat-posting-volume">Why does genuine networking beat posting volume?</h2>
+<p>Sociologists call it social capital: the value that sits in your relationships, built on trust and give-and-take over time. A business card in a drawer is a contact. Someone who has read your comments for six months and trusts your judgment is social capital.</p>
+<p>LinkedIn engagement works the same way. A thoughtful comment on a prospect's post is a small deposit. A useful answer to someone's question is another. Over time those deposits turn into people who read your posts, share them and think of you when a need comes up. Networking is about genuine connections, not collecting business cards.</p>
+<p>Slop is the opposite. It tries to make a withdrawal, your attention, without ever making a deposit. People sense that, and now the feed is built to sense it too.</p>
+
+<h2 id="what-does-a-strong-small-brand-linkedin-post-look-like">What does a strong small-brand LinkedIn post look like?</h2>
+<p>Use this table to check drafts before you publish. The rewrites are hypothetical examples; swap in your own details.</p>
+<div class="tw"><table>
+<thead><tr><th>Slop signal</th><th>Human signal</th><th>Example rewrite (hypothetical)</th></tr></thead>
+<tbody>
+<tr><td>Generic advice anyone could give</td><td>A lesson from your own work, with a number</td><td>"We lost a deal because our proposal ran 22 pages. Here's the 2-page version we send now."</td></tr>
+<tr><td>The same hook format every week</td><td>Varied formats on one topic: a story, a teardown, a question</td><td>Swap the weekly "3 tips" list for a teardown of one real customer question.</td></tr>
+<tr><td>A celebration with no takeaway</td><td>A milestone plus what it taught you</td><td>"We hit 100 clients. The three we lost taught us more than the first 50 we won."</td></tr>
+<tr><td>Pure promotion</td><td>Useful first, offer second</td><td>Explain how to fix the problem yourself, then mention you also do it as a service.</td></tr>
+<tr><td>Engagement bait ("Agree?")</td><td>A real question you want answered</td><td>"Buyers: do you read the pricing page before the first sales call, or after?"</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="how-should-a-small-b2b-brand-run-linkedin-each-week">How should a small B2B brand run LinkedIn each week?</h2>
+<p>This routine fits a founder or a two-person marketing team. Plan on about 30 minutes a day.</p>
+<ol>
+<li><strong>Pick one topic for the quarter.</strong> Choose the problem your best customers pay you to solve, such as "getting freight quotes faster" or "first-time ERP rollouts." Everything you post connects back to it.</li>
+<li><strong>Keep a proof file.</strong> Each week, jot down three things from real work: a question a client asked, a number that surprised you, a mistake you fixed. These become the details no AI can invent for you.</li>
+<li><strong>Post two or three times a week from a person.</strong> Founder and employee profiles read as more human than a company page. Use the company page to reshare those posts with added context.</li>
+<li><strong>Comment before you post.</strong> Spend 15 minutes leaving substantive comments on posts from 10 people you want to know: customers, prospects, partners. Add a fact or a view, not "Great post!"</li>
+<li><strong>Reply to every comment the same day.</strong> Ask a follow-up question. A thread of real replies is what turns a post into a conversation.</li>
+<li><strong>Move warm conversations to messages, slowly.</strong> When someone engages twice, send a short, specific note. No pitch in the first message.</li>
+<li><strong>Review on Friday.</strong> Count conversations started, profile visits from target accounts and inbound messages. Impressions are context, not the goal.</li>
+</ol>
+
+<h2 id="what-should-you-stop-doing-on-linkedin-now">What should you stop doing on LinkedIn now?</h2>
+<ul>
+<li><strong>Scheduling AI drafts you haven't read.</strong> If you can't add one specific detail to a draft, don't publish it.</li>
+<li><strong>Engagement pods and copy-paste comments.</strong> They add repetition, not insight.</li>
+<li><strong>Reusing the same hook every week.</strong> Repetitive is part of LinkedIn's own definition of slop.</li>
+<li><strong>Judging posts by impressions alone.</strong> A post seen by 400 of the right buyers beats one seen by 40,000 strangers.</li>
+</ul>
+<p>If you want help drafting without sliding into sameness, <a href="/#social">ToucHigh's Social Media Manager Autopilot</a> writes posts from your own material and lets you approve every one before it goes out.</p>
+== insight_quote ==
+Networking is about genuine connections, not collecting business cards.
+== insight ==
+Social capital theory says value lives in relationships built on trust and give-and-take. LinkedIn's crackdown on generic AI posts rewards the same thing: posts and comments that add something real to a specific conversation.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+ToucHigh's Social Media Manager Autopilot is built for small teams that need a steady LinkedIn presence without publishing filler.
+== prop_items ==
+- It writes native US-English thought-leadership posts and articles from your own material, so they carry your specifics and sound like a person.
+- Every draft gets a predicted-engagement score before it's scheduled. The score is a pre-launch estimate drawn from content patterns, not a guarantee, but it helps you fix weak posts early.
+- You approve each post, edit it, or let trusted formats publish on autopilot.
+== prop_outro ==
+Your part stays the human part: the proof file, the comments and the conversations. Start by seeing where your current social presence falls short.
+== faq ==
+Q: What counts as AI slop on LinkedIn?
+A: LinkedIn defines AI slop as posts that are generic and/or repetitive and add no real insight. That covers recycled advice, templated hooks, empty celebrations and engagement bait, whether a person or a tool wrote them. A practical test: if a competitor could post your exact words without changing anything, the post is probably too generic to earn reach.
+Q: Can LinkedIn tell if I used ChatGPT to write my post?
+A: What LinkedIn has described is a system aimed at slop, which it defines by quality: generic, repetitive, no real insight. It hasn't said it penalizes AI-assisted writing as such. Its classifiers cover posts distributed beyond your immediate network, and members can report suspected AI content. A draft filled with your real details and edited into your own voice is a very different post from an unedited one.
+Q: Should a small business post from the company page or the founder's profile?
+A: Do both, with different jobs. Personal profiles are where conversations and relationships happen, so the founder and key staff should carry most of the posting and commenting. The company page works as a home base for job posts, product news and reshares with added context. People tend to reply to people, not logos, so put faces forward.
+Q: How do I measure LinkedIn engagement that matters?
+A: Track conversations, not applause. Each week, count meaningful comments (more than a few words), reply threads you joined, profile visits from people at target companies, relevant connection requests and inbound messages or meetings. Impressions and likes are useful context, but a post that starts three real conversations with buyers is worth more than one that travels far and stays quiet.
+== note ==
+We wrote this because "How do I get more out of LinkedIn?" is a constant question from small B2B teams, and LinkedIn's new detail on how it demotes generic AI content changes what a good answer looks like.

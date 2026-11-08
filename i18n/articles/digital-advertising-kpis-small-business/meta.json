@@ -1,0 +1,40 @@
+{
+ "num": "t40",
+ "original": "en",
+ "cat": "measurement",
+ "hero": "t40",
+ "published": "2026-10-16T11:40:00+08:00",
+ "related": [
+  "medir-campanas-redes-sociales-pymes",
+  "measure-influencer-roi-tiktok-shop",
+  "social-media-metrics-that-matter-smes"
+ ],
+ "sources": [
+  {
+   "name": "Global ad spending rises 11.9% as the market beats earlier forecasts",
+   "url": "https://www.emarketer.com/content/global-ad-spending-rises-11-9--market-beats-earlier-forecasts",
+   "publisher": "EMARKETER",
+   "date": "2026-10-08"
+  },
+  {
+   "name": "Google Ads introduces channel prioritization and budget allocation controls",
+   "url": "https://searchengineland.com/google-ads-introduces-channel-prioritization-and-budget-allocation-controls-495946",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-14"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t40.jpg",
+  "zh-Hans": "/assets/blog/og/t40-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1098,
+  "zh-Hans": 1923
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

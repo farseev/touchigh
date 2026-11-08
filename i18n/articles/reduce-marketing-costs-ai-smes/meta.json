@@ -1,0 +1,57 @@
+{
+ "num": "t44",
+ "original": "zh-Hant",
+ "cat": "ads-for-smes",
+ "hero": "t44",
+ "published": "2026-10-16T12:08:00+08:00",
+ "related": [
+  "social-algorithms-explained-facebook-instagram",
+  "content-marketing-trends-2026-primary-sources",
+  "localized-social-content-frameworks"
+ ],
+ "sources": [
+  {
+   "name": "Global ad spending rises 11.9% as the market beats earlier forecasts",
+   "url": "https://www.emarketer.com/content/global-ad-spending-rises-11-9--market-beats-earlier-forecasts",
+   "publisher": "EMARKETER",
+   "date": "2026-10-08"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hant": "/assets/blog/og/t44.jpg",
+  "en": "/assets/blog/og/t44-en.jpg",
+  "zh-Hans": "/assets/blog/og/t44-zh.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hant": 1857,
+  "en": 1237,
+  "zh-Hans": 1878
+ },
+ "related_by_lang": {
+  "en": [
+   "publicidad-ia-pymes-meta-muse",
+   "tiktok-ads-playbook-small-advertisers",
+   "ai-ad-tools-small-business-compared"
+  ],
+  "zh-Hans": [
+   "publicidad-ia-pymes-meta-muse",
+   "tiktok-ads-playbook-small-advertisers",
+   "ai-ad-tools-small-business-compared"
+  ]
+ },
+ "ui": {
+  "zh-Hant": {
+   "book": "預約諮詢",
+   "takeaways": "重點整理",
+   "book30": "預約 30 分鐘策略諮詢 →",
+   "side": "看看您在美國 AI 搜尋中的曝光盲點",
+   "final_p": "預約一次 30 分鐘免費通話，我們線上為您的網站做一次 AI 曝光檢測。",
+   "tagline": "AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.",
+   "blog_name": "ToucHigh Blog"
+  },
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

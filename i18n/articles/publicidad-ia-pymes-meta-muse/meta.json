@@ -1,0 +1,63 @@
+{
+ "num": "t49",
+ "original": "es",
+ "cat": "ads-for-smes",
+ "hero": "t49",
+ "published": "2026-10-16T12:43:00+08:00",
+ "related": [
+  "medir-campanas-redes-sociales-pymes",
+  "perfil-empresa-google-redes-pymes",
+  "geo-pymes-que-funciona"
+ ],
+ "sources": [
+  {
+   "name": "Meta launches Muse AI for SMBs",
+   "url": "https://www.socialmediatoday.com/news/meta-launches-muse-ai-for-smbs/831714/",
+   "publisher": "Social Media Today",
+   "date": "2026-09-29"
+  }
+ ],
+ "og_by_lang": {
+  "es": "/assets/blog/og/t49.jpg",
+  "en": "/assets/blog/og/t49-en.jpg",
+  "zh-Hans": "/assets/blog/og/t49-zh.jpg"
+ },
+ "words_by_lang": {
+  "es": 1061,
+  "en": 1052,
+  "zh-Hans": 1721
+ },
+ "related_by_lang": {
+  "en": [
+   "reduce-marketing-costs-ai-smes",
+   "tiktok-ads-playbook-small-advertisers",
+   "ai-ad-tools-small-business-compared"
+  ],
+  "zh-Hans": [
+   "reduce-marketing-costs-ai-smes",
+   "tiktok-ads-playbook-small-advertisers",
+   "ai-ad-tools-small-business-compared"
+  ]
+ },
+ "ui": {
+  "es": {
+   "faq_nav": "Preguntas",
+   "login": "Acceder",
+   "book": "Agendar llamada",
+   "published": "Publicado {d}",
+   "short": "Respuesta corta",
+   "insight": "El insight",
+   "help": "Cómo te ayuda ToucHigh",
+   "book30": "Agenda una llamada de 30 min →",
+   "login_th": "Acceder a ToucHigh",
+   "side": "Descubre dónde eres invisible en la búsqueda con IA",
+   "final_p": "Agenda una llamada gratuita de 30 minutos y revisamos en directo la visibilidad de tu negocio en IA.",
+   "tagline": "AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.",
+   "blog_name": "ToucHigh Blog"
+  },
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

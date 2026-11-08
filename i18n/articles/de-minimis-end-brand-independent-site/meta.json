@@ -1,0 +1,40 @@
+{
+ "num": "t13",
+ "original": "zh-Hans",
+ "cat": "cross-border",
+ "hero": "t13",
+ "published": "2026-10-16T08:31:00+08:00",
+ "related": [
+  "trade-show-to-search-social-assets",
+  "tiktok-shop-shein-channel-mix",
+  "global-ecommerce-operations-less-is-more"
+ ],
+ "sources": [
+  {
+   "name": "Shein and Temu lost a duty break, and their $5 tops took the biggest hit",
+   "url": "https://qz.com/de-minimis-exemption-end-shein-temu-prices-100626",
+   "publisher": "Quartz",
+   "date": "2026-10-07"
+  },
+  {
+   "name": "知名外贸老厂倒闭！一批大卖也扛不住了",
+   "url": "https://www.cifnews.com/article/189421",
+   "publisher": "雨果跨境 (Cifnews)",
+   "date": "2026-10-13"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t13.jpg",
+  "en": "/assets/blog/og/t13-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 2020,
+  "en": 1396
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

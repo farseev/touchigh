@@ -1,0 +1,63 @@
+{
+ "num": "t47",
+ "original": "es",
+ "cat": "geo-ai-search",
+ "hero": "t47",
+ "published": "2026-10-16T12:29:00+08:00",
+ "related": [
+  "visibilidad-marca-ia-pymes",
+  "medir-campanas-redes-sociales-pymes",
+  "publicidad-ia-pymes-meta-muse"
+ ],
+ "sources": [
+  {
+   "name": "GEO: lo que sabemos y lo que se está vendiendo",
+   "url": "https://www.puromarketing.com/126/217656/sabemos-esta-vendiendo",
+   "publisher": "PuroMarketing",
+   "date": "2026-10-14"
+  }
+ ],
+ "og_by_lang": {
+  "es": "/assets/blog/og/t47.jpg",
+  "en": "/assets/blog/og/t47-en.jpg",
+  "zh-Hans": "/assets/blog/og/t47-zh.jpg"
+ },
+ "words_by_lang": {
+  "es": 1028,
+  "en": 1050,
+  "zh-Hans": 1767
+ },
+ "related_by_lang": {
+  "en": [
+   "us-buyers-ai-research-citable-content",
+   "seo-aeo-geo-explained-chinese-exporters",
+   "factory-website-geo-chatgpt-supplier"
+  ],
+  "zh-Hans": [
+   "us-buyers-ai-research-citable-content",
+   "seo-aeo-geo-explained-chinese-exporters",
+   "factory-website-geo-chatgpt-supplier"
+  ]
+ },
+ "ui": {
+  "es": {
+   "faq_nav": "Preguntas",
+   "login": "Acceder",
+   "book": "Agendar llamada",
+   "published": "Publicado {d}",
+   "short": "Respuesta corta",
+   "insight": "El insight",
+   "help": "Cómo te ayuda ToucHigh",
+   "book30": "Agenda una llamada de 30 min →",
+   "login_th": "Acceder a ToucHigh",
+   "side": "Descubre dónde eres invisible en la búsqueda con IA",
+   "final_p": "Agenda una llamada gratuita de 30 minutos y revisamos en directo la visibilidad de tu negocio en IA.",
+   "tagline": "AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.",
+   "blog_name": "ToucHigh Blog"
+  },
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

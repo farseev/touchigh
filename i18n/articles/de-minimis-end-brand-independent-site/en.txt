@@ -1,0 +1,104 @@
+== title ==
+US De Minimis Is Gone: How Cross-Border Sellers Can Break Platform Dependence
+== seo_title ==
+De Minimis Ended: How Chinese Sellers Can Build a Brand | ToucHigh
+== desc ==
+The US de minimis exemption is gone, and cheap parcels shipped direct lost their price edge. See the pressures ahead and a 90-day plan to build your own brand site.
+== dek ==
+De minimis is gone, marketplace traffic costs more, and veteran factories are closing. The answer isn't leaving the marketplaces; it's building your own brand and visibility, one step at a time.
+== section ==
+Cross-border
+== tags ==
+De minimis | Brand site | Brand building | Cross-border ecommerce | US market
+== keywords ==
+end of de minimis exemption, de minimis end impact on Chinese sellers, US de minimis rule change, independent DTC site for cross-border sellers, duties on small parcels to the US, how to build a brand off Amazon, reduce marketplace dependence
+== read ==
+6
+== q ==
+Now that the US has ended the de minimis exemption, what challenges should I expect selling cross-border, and should I shift from marketplaces to my own brand site?
+== a ==
+With the US de minimis exemption gone, import fees wipe out the price edge of low-value parcels shipped direct, while marketplace ad costs keep climbing. The safer move isn't quitting Amazon; it's building while you sell: recalculate landed costs, cut money-losing SKUs, focus on one or two differentiated hero products, launch your own brand site, and make sure US shoppers can find you in AI search and on social.
+== takeaways ==
+- With de minimis gone, import fees now show up at checkout for US shoppers, and the cheapest products take the hardest hit.
+- Rising marketplace ad costs and thinner margins from mass listing mean "more revenue, less profit" has spread from the biggest sellers to small and mid-sized ones.
+- Brand independence doesn't mean quitting marketplaces: let the marketplace close sales while your own site and content build the brand and repeat business.
+- Whether your brand shows up in ChatGPT and Perplexity answers is a new measure of how independent a cross-border seller has become.
+== alt ==
+Parcels crowd a grey port platform behind a striped toll barrier, while a seller paints a new white storefront with an orange door and awning on solid ground, linked by a small bridge, as a violet AI chat bubble guides shoppers to it.
+== body ==
+<p>Now that the US has ended the de minimis exemption, the thing Chinese cross-border sellers most need to anticipate isn't any single duty bill. It's a whole playbook failing at once: import fees erase the price edge of low-value parcels shipped straight to US buyers, marketplace traffic keeps getting pricier, and margins on contract manufacturing or mass listing get squeezed to almost nothing. The steadier path is to keep using the marketplaces while you build, step by step, your own brand, your own independent site and your visibility in US AI search.</p>
+<p>US shoppers are already feeling it at checkout. According to <a href="https://qz.com/de-minimis-exemption-end-shein-temu-prices-100626" rel="noopener" target="_blank">Quartz</a> in early October, the cheapest goods on Shein and Temu took the biggest hit after the duty-free treatment for small parcels, known as de minimis, ended. One shopper in Tampa had two dog harnesses in her cart for about $33, and import fees added roughly $46 more, pushing the total past $80. She abandoned the order and said she would buy elsewhere from now on.</p>
+<p>Back in China, <a href="https://www.cifnews.com/article/189421" rel="noopener" target="_blank">Cifnews</a> reported that a Zhejiang furniture exporter founded in 2002 was declared bankrupt on September 21, 2026, with debts of about 121 million yuan against assets of about 60.58 million yuan. Over the same period, Aukey posted first-half revenue of 7.221 billion yuan, up 28.77% year over year, while its net profit attributable to shareholders fell 62.07%.</p>
+<h2 id="what-challenges-should-cross-border-sellers-expect-after-de">What challenges should cross-border sellers expect after de minimis ends?</h2>
+<p>Put these reports side by side and at least five pressures show up at the same time:</p>
+<ul>
+<li><strong>The price edge disappears.</strong> Low-priced products that relied on small parcels entering the US duty-free now have to carry import fees in their landed cost. The Quartz example shows that when fees only appear at checkout, shoppers simply walk away.</li>
+<li><strong>Marketplace traffic costs more.</strong> Citing data from SellerSprite, Cifnews says Amazon's average CPC (cost per click) rose from $1.12 in 2025 to $1.18–1.25 in 2026, and in beauty and personal care it jumped from $1.28 to $2.15.</li>
+<li><strong>Mass listing stops working.</strong> The same report, citing a survey by 100EC, says 41% of small and mid-sized sellers running a pure mass-listing model (uploading large catalogs of unbranded products) exited in the first half, and more than seven in ten have gross margins below 5%.</li>
+<li><strong>Currency and payment pressure.</strong> Cifnews notes the yuan appreciated about 3.13% against the dollar in the first half of 2026 compared with the end of last year, and exporters without hedging tools commonly booked foreign-exchange losses.</li>
+<li><strong>Exposure to one customer base and one channel.</strong> The bankrupt furniture factory's customers were concentrated in Europe and the US, and it depended heavily on payments for contract-manufacturing orders. In the report's words, it lacked a second leg to stand on.</li>
+</ul>
+<p>These pressures share one root: the lifeline of the business sits in someone else's hands. Customs sets the rules, the marketplace sets the traffic, and overseas buyers set the orders.</p>
+<h2 id="why-do-profits-get-thinner-as-sales-get-bigger">Why do profits get thinner as sales get bigger?</h2>
+<p>Aukey's numbers are typical: revenue up nearly 30%, net profit down more than 60%. Cifnews' analysis is that the marginal return on online traffic is falling, customer acquisition costs keep rising, and scale built on low prices and mass listing rarely turns into profit.</p>
+<p>For small and mid-sized sellers, the old "list more, spend more on ads" approach pays off less every quarter. Every extra sale on a marketplace costs more in ad spend and commission, and what those dollars build is the platform's customer base, not your brand.</p>
+<p>Now flip it around. A US shopper who remembers your brand name will Google you, ask ChatGPT whether the brand is any good, and sign up for your emails. Those are the assets that stay with you when tariffs and platform rules change.</p>
+<h2 id="why-won-t-this-new-barrier-just-blow-over">Why won't this new barrier just blow over?</h2>
+<p>Sociology offers a useful lens here: the anti-globalization movement. When people inside a country feel the gains from globalization were shared unfairly, they put back the barriers that were once taken down, through tariffs, customs rules and "buy local" sentiment. Ending de minimis is one place where that sentiment landed in customs rules.</p>
+<p>This kind of backlash is usually not a one-off policy wobble but a longer cycle. Rather than betting on a reversal, accept the reality: the window for making money purely on cross-border price gaps is narrowing. What carries a business through the cycle is a reason for US shoppers to choose you on purpose.</p>
+<p>That is the core argument of this piece. Real confidence doesn't come from cutting every dependency; it comes from moving step by step toward self-reliance. You will still use marketplaces, logistics providers and overseas warehouses, but your brand, content and customer relationships should gradually become your own.</p>
+<h2 id="does-building-a-brand-site-mean-giving-up-amazon-and-tiktok">Does building a brand site mean giving up Amazon and TikTok Shop?</h2>
+<p>No, and don't try to switch all at once. Marketplaces are still a common starting point for US shoppers, and pulling out abruptly only tightens your cash flow. The more realistic approach is to walk on two legs: the marketplace handles sales and the cold start, while your own site and content handle brand, repeat purchases and margin.</p>
+<p>Use this table to see which side you are closer to today:</p>
+<div class="tw"><table>
+<thead><tr><th>Dimension</th><th>Platform-dependent</th><th>Brand-independent</th></tr></thead>
+<tbody>
+<tr><td>Traffic sources</td><td>Almost entirely on-platform ads and recommendations</td><td>Marketplace, organic search, AI search, social and email running in parallel</td></tr>
+<tr><td>Pricing logic</td><td>Cheaper than similar products</td><td>Explains clearly why it's worth the price</td></tr>
+<tr><td>Customer data</td><td>Stays with the platform; hard to reach for repeat sales</td><td>Your own site collects emails and purchase history</td></tr>
+<tr><td>AI search visibility</td><td>Ask ChatGPT a category question and you basically don't appear</td><td>Brand information, reviews and FAQs can be cited in AI answers</td></tr>
+<tr><td>When the rules change</td><td>One new regulation does serious damage</td><td>You can shift channels and product mix; the impact stays manageable</td></tr>
+</tbody>
+</table></div>
+<h2 id="how-can-you-move-from-platform-dependence-to-brand-independe">How can you move from platform dependence to brand independence in 90 days?</h2>
+<ol>
+<li><strong>Weeks 1–2: Recalculate landed cost and pricing.</strong> Fold import duties and fees, customs clearance and last-mile delivery into the unit cost of every item. Flag the SKUs that no longer make money under the new costs, then raise prices or scale back where needed.</li>
+<li><strong>Weeks 2–3: Pick one or two hero products with a story to tell.</strong> Favor products with a clear point of difference and a higher order value or repeat-purchase rate, not the cheapest item in the catalog.</li>
+<li><strong>Weeks 3–5: Build a minimum viable brand site.</strong> The homepage says who the brand is and what problem it solves. Product pages spell out specs, materials, sizing and the return policy. A separate FAQ page answers the questions US shoppers actually ask, in their own words.</li>
+<li><strong>Weeks 5–6: Run a US AI search checkup.</strong> In ChatGPT, Perplexity and Google AI Overviews, type English questions such as "best + category + use case." Note which brands get recommended, which sites get cited, and whether you appear. This work is called GEO (Generative Engine Optimization): the goal is to get your brand cited in AI answers.</li>
+<li><strong>Weeks 6–10: Fill the gaps with content.</strong> For every question where you were missing, write comparison articles, how-to guides and FAQs. At the same time, publish native English content on US social media and invite followers to join your email list.</li>
+<li><strong>Weeks 10–12: Set up a monthly review.</strong> Track three numbers: the share of revenue from outside marketplaces, branded search volume, and how often you're mentioned in AI answers. If all three are rising, you are becoming more independent.</li>
+</ol>
+<h2 id="three-things-you-can-do-next-monday">Three things you can do next Monday</h2>
+<p>If a 90-day plan feels like too much right now, start with these three small tasks:</p>
+<ul>
+<li>Pull your top 20 SKUs by sales over the last three months, recalculate gross margin with the new costs, and list the items that need a price increase or should be delisted.</li>
+<li>Ask ChatGPT and Perplexity five buying questions about your category in English, and save screenshots as a baseline to compare against later.</li>
+<li>Check whether your store or site has one page that directly answers, "Why should I choose you instead of the cheaper option?"</li>
+</ul>
+<p>If you want to see in one pass where your store falls short in US AI search and on social, take a look at <a href="/#products">ToucHigh's GEO and Social Autopilot</a>. The day-one audit reads your store plus your competitors' ads and organic content, and flags the questions where you are invisible.</p>
+== insight_quote ==
+Real confidence doesn't come from cutting every dependency; it comes from moving step by step toward self-reliance.
+== insight ==
+Seen through the lens of the anti-globalization movement, the return of tariffs and customs barriers may last a long time. Rather than waiting for a policy reversal, gradually take your brand, content and customer relationships into your own hands.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+ToucHigh helps cross-border sellers take the first step toward independence with a day-one audit. It reads your store along with your competitors' ads and organic content, and tells you plainly where US AI search can't see you and where your US social media falls short.
+== prop_items ==
+- A visibility audit across ChatGPT, Perplexity, Google AI and Gemini
+- Fixes written and shipped for each gap: pages, answers and brand entity data
+- Ongoing tracking of your AI-citation share, so the data shows whether your path to independence is moving forward
+== prop_outro ==
+A good first step is a 30-minute strategy call. Once you've seen your audit results, decide how much to invest next.
+== faq ==
+Q: Can I keep shipping small parcels direct to US customers after de minimis ends?
+A: Yes, but you can't price as if it's still the duty-free era. Add import duties and fees, customs clearance and last-mile costs to your landed cost, and reassess gross margin for every SKU. Low-value, low-margin items lose profit fastest, so consider raising prices, bundling or changing how you stock inventory. Confirm the right customs-clearance model with your logistics provider and a compliance advisor.
+Q: What's the most common first-year mistake small sellers make with their own brand site?
+A: Putting the entire catalog online on day one and pouring money into ads, which brings expensive traffic and low conversion. A steadier approach is to nail the brand story, product pages, FAQ and return policy for one or two hero products first, then use content, social and AI search to bring in organic traffic, and scale ad spend only after conversion data stabilizes.
+Q: What is GEO, and how is it different from traditional SEO?
+A: GEO, or Generative Engine Optimization, aims to get your brand cited and recommended in AI answers from ChatGPT, Perplexity, Google AI Overviews and similar tools. Traditional SEO focuses on where a page ranks in search results; GEO focuses on whether AI can understand and trust your information, such as clear FAQs, product specs, brand entity data and third-party reviews. The two complement each other.
+Q: How can I tell if I'm too dependent on marketplaces?
+A: Watch three numbers: the share of revenue from outside marketplaces, branded search volume, and how often you're mentioned in AI answers. If nearly all your revenue comes from one platform and your brand never appears when you ask AI category questions in English, a single rule change or ad price increase could hit your profit for the whole year.
+== note ==
+We wrote this because "What challenges should I prepare for when selling overseas?" is one of the questions cross-border sellers ask most right now, and back-to-back news of the US ending de minimis and a long-established export factory going bankrupt has made it more urgent.

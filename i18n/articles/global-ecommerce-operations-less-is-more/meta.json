@@ -1,0 +1,40 @@
+{
+ "num": "t16",
+ "original": "zh-Hans",
+ "cat": "cross-border",
+ "hero": "t16",
+ "published": "2026-10-16T08:52:00+08:00",
+ "related": [
+  "trade-show-to-search-social-assets",
+  "tiktok-shop-shein-channel-mix",
+  "de-minimis-end-brand-independent-site"
+ ],
+ "sources": [
+  {
+   "name": "36氪2026出海大会：全球化到达下一站，中国企业如何走得更远",
+   "url": "https://news.qq.com/rain/a/20260922A07CY800",
+   "publisher": "36氪 (36Kr), via 腾讯新闻 (Tencent News)",
+   "date": "2026-09-22"
+  },
+  {
+   "name": "从千亿巨头到小而美黑马：新一波跨境企业上市潮中，谁在真增长？",
+   "url": "https://www.huxiu.com/article/4892264.html",
+   "publisher": "虎嗅网 (Huxiu), republished from 亿邦动力 (Ebrun)",
+   "date": "2026-09-18"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t16.jpg",
+  "en": "/assets/blog/og/t16-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1848,
+  "en": 1220
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

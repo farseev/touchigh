@@ -8,7 +8,9 @@ Run everything from the repo root.
 | `site_config.py` | The 17 site languages (zh-Hans default + en + 15), hreflang codes, URL scheme. |
 | `make_landings.py` | Builds the bilingual (zh-Hans / `?lang=en`) landing pages `/supplier-ai-visibility/` and `/amazon-ads-autopilot/` on the `/pro/` design system (CSS copied from `pro/index.html`). |
 | `registry.py` | Scans existing article pages (title, dek, hero, versions per language). |
-| `articles.py` | Renders articles from `i18n/articles/<slug>/meta.json` + `<hl>.txt` (one text file per language) with the existing article template, BlogPosting (workTranslation/translationOfWork), FAQPage, BreadcrumbList. |
+| `articles.py` | Renders all 72 articles from `i18n/articles/<slug>/meta.json` + `<hl>.txt` (one text file per language) with the existing article template, BlogPosting (workTranslation/translationOfWork), FAQPage, BreadcrumbList. Versions translated from English get their internal links pointed at the reader's language where that page exists. |
+| `import_legacy.py` | One-off: converted the 60 hand-built article pages into `i18n/articles/<slug>/` (`"legacy": true` in meta.json). Per-language chrome wording, OG image, wordCount, related list and sources that differed from the defaults are kept in meta.json (`ui`, `og_by_lang`, `words_by_lang`, `related_by_lang`, …) so the pages render as before. |
+| `article_i18n.py` | Segmented translation path for articles. Source = every article's `en.txt`; segments (title, SEO title, description, dek, Q/A, takeaways, alt, body blocks, insight, help box, FAQ, note, tags, keywords) keyed by sha1[:10] of the English, inline markup as `<g1>…</g1>` / `<x1/>`. Translation memory `i18n/articles_tm/<code>.json`, English in `i18n/articles_tm/source.json`. `export` writes `<code>.todo.tsv` files, `merge <code> f.tsv`, `write <code>` creates `<hl>.txt` (marked `# generated`) only for 100 %-translated articles, `status`. Hand-written versions (e.g. the zh-Hant and Spanish originals) are never overwritten. |
 | `hubs.py` | Adds rendered articles to the zh/en hubs (cards, Blog JSON-LD, count) and RSS feeds. |
 | `traction_links.py` | Adds the use-case line (landing page + ToucHigh PRO) to the six traction articles. |
 | `localize.py` | Renders home, /pro/ and both landing pages into the 15 further languages from `i18n/<code>.json` (segments = the page's `data-en` values, alt/aria-label, demo captions, head metadata from `i18n/pages.json`). `todo <code>` lists untranslated segments, `merge <code> file.tsv` imports `id<TAB>translation` lines. Pages are only built at ≥ 97 % coverage. |
@@ -24,7 +26,14 @@ GA4 (G-XCXZPEFP94) events used by the generated pages follow the existing patter
 `blog_click`, `pro_click` (links to /pro/ from the landing pages and articles), `landing_click`
 (article → landing page), `language_switch`.
 
-Typical article workflow: write `i18n/articles/<slug>/zh-Hans.txt` and `en.txt` (+ `meta.json`), then
+Article translation workflow: `python3 tools/article_i18n.py export` (todo files for translators) → translators fill
+`<code>.out.tsv` → `python3 tools/article_i18n.py merge <code> <code>.out.tsv && python3 tools/article_i18n.py write <code>`
+→ `python3 tools/og.py articles <hl>` → `python3 tools/build_i18n.py <code>` → `python3 tools/check_site.py`. A language's
+hub (`/blog/<code>/`) shows the translated card as soon as the article exists in that language, the English card otherwise.
+When an English article changes, its changed segments become untranslated again and `write` withdraws that language version
+until they are translated.
+
+Typical new-article workflow: write `i18n/articles/<slug>/zh-Hans.txt` and `en.txt` (+ `meta.json`), then
 `python3 tools/articles.py && python3 tools/og.py articles && python3 tools/hubs.py && python3 tools/check_site.py`.
 
 ## Language URL scheme

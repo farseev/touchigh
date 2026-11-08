@@ -1,0 +1,40 @@
+{
+ "num": "t54",
+ "original": "zh-Hans",
+ "cat": "seo",
+ "hero": "t54",
+ "published": "2026-10-16T13:18:00+08:00",
+ "related": [
+  "factory-to-brand-seo-aeo-geo-us",
+  "perfil-empresa-google-redes-pymes",
+  "seo-tools-buying-guide-ai-search"
+ ],
+ "sources": [
+  {
+   "name": "Google September 2026 Spam Update Is Done Rolling Out",
+   "url": "https://www.seroundtable.com/google-september-2026-spam-update-done-42235.html",
+   "publisher": "Search Engine Roundtable",
+   "date": "2026-10-08"
+  },
+  {
+   "name": "Google AI Overviews jump from 26% to 80% of branded queries",
+   "url": "https://searchengineland.com/google-ai-overviews-jump-branded-queries-september-492962",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-01"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t54.jpg",
+  "en": "/assets/blog/og/t54-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1859,
+  "en": 1236
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

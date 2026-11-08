@@ -1,0 +1,40 @@
+{
+ "num": "t08",
+ "original": "zh-Hans",
+ "cat": "social-media",
+ "hero": "t08",
+ "published": "2026-10-16T07:56:00+08:00",
+ "related": [
+  "chinese-manufacturers-founder-thought-leadership",
+  "made-in-china-story-localized-thought-leadership",
+  "overseas-social-algorithms-thought-leadership"
+ ],
+ "sources": [
+  {
+   "name": "Future of TV Briefing: TikTok Shop success = small creators + more videos",
+   "url": "https://digiday.com/future-of-tv/future-of-tv-briefing-tiktok-shop-success-small-creators-more-videos/",
+   "publisher": "Digiday",
+   "date": "2026-10-14"
+  },
+  {
+   "name": "权威发布丨2026 TikTok Shop美区卖家发展报告",
+   "url": "https://www.cifnews.com/article/189392",
+   "publisher": "雨果跨境 (Cifnews), republished from 品牌出海BrandGlobal",
+   "date": "2026-10-13"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t08.jpg",
+  "en": "/assets/blog/og/t08-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1812,
+  "en": 1251
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

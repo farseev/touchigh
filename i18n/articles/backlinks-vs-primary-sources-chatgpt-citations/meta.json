@@ -1,0 +1,34 @@
+{
+ "num": "t04",
+ "original": "zh-Hans",
+ "cat": "geo-ai-search",
+ "hero": "t04",
+ "published": "2026-10-16T07:28:00+08:00",
+ "related": [
+  "us-buyers-ai-research-citable-content",
+  "seo-aeo-geo-explained-chinese-exporters",
+  "factory-website-geo-chatgpt-supplier"
+ ],
+ "sources": [
+  {
+   "name": "ChatGPT's Most-Cited Sites Tilt Toward Primary Sources, Data Shows",
+   "url": "https://www.searchenginejournal.com/chatgpt-most-cited-sites-primary-sources-ahrefs/592682/",
+   "publisher": "Search Engine Journal",
+   "date": "2026-10-12"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t04.jpg",
+  "en": "/assets/blog/og/t04-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1810,
+  "en": 1176
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

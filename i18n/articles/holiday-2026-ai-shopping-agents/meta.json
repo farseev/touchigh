@@ -1,0 +1,40 @@
+{
+ "num": "t22",
+ "original": "zh-Hans",
+ "cat": "geo-ai-search",
+ "hero": "t22",
+ "published": "2026-10-16T09:34:00+08:00",
+ "related": [
+  "us-buyers-ai-research-citable-content",
+  "seo-aeo-geo-explained-chinese-exporters",
+  "factory-website-geo-chatgpt-supplier"
+ ],
+ "sources": [
+  {
+   "name": "AI Shopping Agent Use to Rise 130% During Holidays, Adobe Says",
+   "url": "https://www.bloomberg.com/news/articles/2026-09-28/ai-assisted-shopping-to-rise-130-during-holidays-adobe-says",
+   "publisher": "Bloomberg",
+   "date": "2026-09-28"
+  },
+  {
+   "name": "Why ChatGPT ads won't likely impact holiday sales in a major way this year",
+   "url": "https://www.modernretail.co/marketing/why-chatgpt-ads-wont-likely-impact-holiday-sales-in-a-major-way-this-year/",
+   "publisher": "Modern Retail",
+   "date": "2026-10-09"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t22.jpg",
+  "en": "/assets/blog/og/t22-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1803,
+  "en": 1232
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

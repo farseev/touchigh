@@ -1,0 +1,40 @@
+{
+ "num": "t05",
+ "original": "zh-Hans",
+ "cat": "seo",
+ "hero": "t05",
+ "published": "2026-10-16T07:35:00+08:00",
+ "related": [
+  "factory-to-brand-seo-aeo-geo-us",
+  "seo-aeo-geo-learning-path-exporters",
+  "perfil-empresa-google-redes-pymes"
+ ],
+ "sources": [
+  {
+   "name": "Google September 2026 Spam Update Is Done Rolling Out",
+   "url": "https://www.seroundtable.com/google-september-2026-spam-update-done-42235.html",
+   "publisher": "Search Engine Roundtable",
+   "date": "2026-10-08"
+  },
+  {
+   "name": "Google updates AI Mode and AI Overview with more links, context, carousels, and information on creators",
+   "url": "https://searchengineland.com/google-updates-ai-mode-and-ai-overview-with-more-links-context-carousels-and-information-on-creators-496242",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-15"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t05.jpg",
+  "en": "/assets/blog/og/t05-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1833,
+  "en": 1206
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

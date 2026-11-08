@@ -1,0 +1,34 @@
+{
+ "num": "t25",
+ "original": "en",
+ "cat": "social-media",
+ "hero": "t25",
+ "published": "2026-10-16T09:55:00+08:00",
+ "related": [
+  "chinese-manufacturers-founder-thought-leadership",
+  "made-in-china-story-localized-thought-leadership",
+  "overseas-social-algorithms-thought-leadership"
+ ],
+ "sources": [
+  {
+   "name": "LinkedIn exec offers insight into the battle against AI slop",
+   "url": "https://www.socialmediatoday.com/news/linkedin-exec-offers-insight-into-the-battle-against-ai-slop/832576/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-08"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t25.jpg",
+  "zh-Hans": "/assets/blog/og/t25-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1037,
+  "zh-Hans": 1799
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

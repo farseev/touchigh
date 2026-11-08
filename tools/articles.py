@@ -114,9 +114,10 @@ def number_h2(body):
 
     def rep(m):
         n[0] += 1
-        toc.append(("s%d" % n[0], re.sub(r"<[^>]+>", "", m.group(2))))
-        return '<h2 id="s%d"%s>%s</h2>' % (n[0], m.group(1), m.group(2))
-    body = re.sub(r"<h2(?: id=\"[^\"]*\")?([^>]*)>(.*?)</h2>", rep, body)
+        hid = m.group(1) or "s%d" % n[0]
+        toc.append((hid, html.unescape(re.sub(r"<[^>]+>", "", m.group(3)))))
+        return '<h2 id="%s"%s>%s</h2>' % (hid, m.group(2), m.group(3))
+    body = re.sub(r"<h2(?: id=\"([^\"]*)\")?([^>]*)>(.*?)</h2>", rep, body)
     return body, toc
 
 
@@ -131,11 +132,56 @@ def _exists_or(path, fallback):
 
 
 def usecase_html(landing, hl, loc):
+    if not landing:
+        return ""
     u = UI[hl]
     fb = "zh-Hans" if hl == "zh-Hant" else "en"
     lu = _exists_or(landing_url(landing, hl), landing_url(landing, fb))
     pu = _exists_or(pro_url(hl), pro_url(fb))
     return ('<p class="uc">%s %s</p>' % (uc_line(u["uc_" + landing], lu, loc, "landing"), uc_line(u["uc_pro"], pu, loc, "pro")))
+
+
+_PATHS = None
+
+
+def article_paths():
+    """{article path in any language: (slug, meta)} for every article source folder."""
+    global _PATHS
+    if _PATHS is None:
+        _PATHS = {}
+        for slug in os.listdir(ART):
+            mp = os.path.join(ART, slug, "meta.json")
+            if not os.path.exists(mp):
+                continue
+            meta = json.load(open(mp, encoding="utf-8"))
+            for h in article_langs(slug):
+                _PATHS[url_for(slug, h, meta)] = (slug, meta)
+    return _PATHS
+
+
+def map_href(href, hl):
+    """Point an internal link of the English text at the hl version of the target when it exists."""
+    path, sep, frag = href.partition("#")
+    q = path.split("?")[0]
+    if q == "/":
+        new = home_url(hl)
+    elif q == "/pro/":
+        new = _exists_or(pro_url(hl), path)
+    elif q in LANDING.values():
+        key = next(k for k, v in LANDING.items() if v == q)
+        new = _exists_or(landing_url(key, hl), path)
+    elif q in ("/blog/", "/blog/en/"):
+        new = _exists_or(hub_url(hl), path)
+    elif q in article_paths():
+        slug, meta = article_paths()[q]
+        new = url_for(slug, hl, meta) if os.path.exists(os.path.join(ART, slug, hl + ".txt")) else path
+    else:
+        new = path
+    return new + sep + frag
+
+
+def localize_links(htm, hl):
+    return re.sub(r'href="(/[^"]*)"', lambda m: 'href="%s"' % map_href(html.unescape(m.group(1)), hl), htm)
 
 
 def card_html(info, hl_page, cat_label=None):
@@ -147,6 +193,16 @@ def card_html(info, hl_page, cat_label=None):
             '<div class="tx" lang="%s"%s><div class="eyebrow">%s</div><h3>%s</h3><p>%s</p><div class="meta"><span class="lg">%s</span><span>%s</span></div></div></a>'
             % (info["path"], info["hero"], info["hero"], a(info["alt"]), lang, ' dir="rtl"' if L[lang]["dir"] == "rtl" else "",
                E(cat_label or info["eyebrow"]), E(info["title"]), E(info["dek"]), badge, E(info["read"])))
+
+
+def by_lang(meta, key, hl):
+    """Per-language override (key_by_lang) of a shared meta list; translations follow the English version."""
+    b = meta.get(key + "_by_lang", {})
+    if hl in b:
+        return b[hl]
+    if hl not in (meta["original"], "zh-Hans", "en") and "en" in b:
+        return b["en"]
+    return meta.get(key, [])
 
 
 def related_pick(rel_slugs, hl, reg):
@@ -173,22 +229,30 @@ def hero_alt(hero, hl, reg):
 
 def render(slug, hl, meta, reg, versions):
     d = parse(os.path.join(ART, slug, hl + ".txt"))
-    u = UI[hl]
+    u = dict(UI[hl], **meta.get("ui", {}).get(hl, {}))
+    if hl not in (meta["original"], "zh-Hans", "en"):
+        # translated from English: internal links follow the reader's language where a version exists
+        for k in ("body", "prop_intro", "prop_outro"):
+            d[k] = localize_links(d[k], hl)
+        for k in ("takeaways", "prop_items"):
+            d[k] = [localize_links(x, hl) for x in d[k]]
+        d["faq"] = [(q, localize_links(x, hl)) for q, x in d["faq"]]
     dr = L[hl]["dir"]
     path = versions[hl]
     url = SITE + path
     num = meta["num"].upper()
-    og = "/assets/blog/og/%s%s.jpg" % (meta["num"], "" if hl == "zh-Hans" else "-" + L[hl]["code"])
+    og = meta.get("og_by_lang", {}).get(hl) or "/assets/blog/og/%s%s.jpg" % (meta["num"], "" if hl == "zh-Hans" else "-" + L[hl]["code"])
     if not os.path.exists(os.path.join(ROOT, og.lstrip("/"))):
         og = "/assets/blog/og/%s-en.jpg" % meta["num"]
     pub = meta["published"]
-    mod = meta.get("modified", pub)
+    mod = meta.get("modified_by_lang", {}).get(hl, meta.get("modified", pub))
     hero = meta["hero"]
     alt = d.get("alt") or meta.get("alt", {}).get(hl, "") or hero_alt(hero, hl, reg)
     body, toc = number_h2(d["body"])
     words = text_len(" ".join([body, d["a"], d["insight"], " ".join(d["takeaways"]), " ".join(q + " " + x for q, x in d["faq"])]), hl)
+    words = meta.get("words_by_lang", {}).get(hl) or words
     tags = d["tags"]
-    srcs = meta.get("sources", [])
+    srcs = by_lang(meta, "sources", hl)
     orig = meta["original"]
     trans = {"@type": "BlogPosting", "@id": SITE + versions[orig] + "#article", "inLanguage": orig}
     posting = {"@context": "https://schema.org", "@type": "BlogPosting", "@id": url + "#article", "url": url, "mainEntityOfPage": url,
@@ -208,7 +272,7 @@ def render(slug, hl, meta, reg, versions):
     else:
         posting["translationOfWork"] = trans
     faq = {"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": hl,
-           "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": re.sub(r"<[^>]+>", "", aa)}} for q, aa in d["faq"]]}
+           "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": html.unescape(re.sub(r"<[^>]+>", "", aa))}} for q, aa in d["faq"]]}
     crumbs = {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "ToucHigh", "item": SITE + home_url(hl)},
         {"@type": "ListItem", "position": 2, "name": u["blog"], "item": SITE + hub_url(hl)},
@@ -269,7 +333,7 @@ def render(slug, hl, meta, reg, versions):
     faqh = "".join('<details%s><summary>%s</summary><p>%s</p></details>' % (" open" if i == 0 else "", E(q, quote=False), aa) for i, (q, aa) in enumerate(d["faq"]))
     srch = "".join('<li><a href="%s" rel="noopener" target="_blank">%s</a> — %s%s</li>' % (a(s["url"]), E(s["name"]), E(s["publisher"]), (", " + s["date"]) if s.get("date") else "") for s in srcs)
     toch = "".join('<a href="#%s">%s</a>' % (i, E(t, quote=False)) for i, t in toc)
-    rel = related_pick(meta.get("related", []), hl, reg)
+    rel = related_pick(by_lang(meta, "related", hl), hl, reg)
     relh = "".join(card_html(r, hl) for r in rel)
     bodyh = """<body>
 <a class="skip" href="#main">{skip}</a>
@@ -309,11 +373,11 @@ def render(slug, hl, meta, reg, versions):
       <div class="prose">{body}</div>
       <aside class="insight" aria-label="{t_insight}"><div class="eyebrow">{t_insight}</div><blockquote>{iq}</blockquote><p>{ins}</p></aside>
       <section class="prop" aria-label="{help}">
-        <div class="ph"><div class="eyebrow">{peb}</div><h2>{help}</h2></div>
+        <div class="ph"><div class="eyebrow">{peb}</div><h2>{help_h2}</h2></div>
         <div class="pb prose"><p>{pintro}</p><ul>{pi}</ul><p>{pout}</p>{uc}</div>
         <div class="pa"><a class="btn btn-primary" href="{cal}" target="_blank" rel="noopener" onclick="return book(event,'{loc}')">{book30}</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{{gtag('event','login_click',{{location:'{loc}'}})}}catch(e){{}}">{login_th}</a></div>
       </section>
-      <section class="faq" aria-label="{t_faq}"><h2>{t_faq}</h2>{faqh}</section>
+      <section class="faq" aria-label="{faq_aria}"><h2>{t_faq}</h2>{faqh}</section>
       <section class="srcs"><h2>{t_sources}</h2><ol>{srch}</ol></section>
       <p class="note"><b>{why}</b>{note}</p>
     </div>
@@ -330,7 +394,7 @@ def render(slug, hl, meta, reg, versions):
 </main>
 <section class="final" aria-label="Get started">
   <div class="eyebrow">ToucHigh</div>
-  <h2>{side}</h2>
+  <h2>{final_side}</h2>
   <p>{final_p}</p>
   <div class="row"><a class="btn btn-primary" href="{cal}" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">{book30}</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{{gtag('event','login_click',{{location:'blog_final'}})}}catch(e){{}}">{login_th}</a></div>
 </section>
@@ -353,13 +417,13 @@ window.book=function(e,loc){{try{{gtag('event','book_call_click',{{location:loc}
 """.format(skip=u["skip"], home=home_url(hl), homeh=home_url(hl).replace("?lang=en", "?lang=en"), t_home=u["home"], products=u["products"],
            faq_nav=u["faq_nav"], pro=pro_url(hl), hub=hub_url(hl), blog=u["blog"], menu=menu, login=u["login"], cal=CAL, book=u["book"],
            section=E(d["section"]), title=E(d["title"]), dek=E(d["dek"]), author=u["author"],
-           published=u["published"].format(d='<time datetime="%s">%s</time>' % (pub, fmt_date(pub, hl))),
+           published=u["published"].format(d='<time datetime="%s">%s</time>' % (pub, E(u.get("date_text") or fmt_date(pub, hl)))),
            read=u["read"].format(n=d["read"]), lname=L[hl]["name"], also=u["also"] if others else "", others=others,
            hero=hero, alt=a(alt), qeyebrow=u["qeyebrow"], q=E(d["q"]), short=u["short"], ans=E(d["a"]), t_takeaways=u["takeaways"], tk=tk,
            body=body, t_insight=u["insight"], iq=E(d["insight_quote"]), ins=E(d["insight"]), help=u["help"], peb=E(d.get("prop_eyebrow", "GEO Autopilot · Social Autopilot · Ads")),
-           pintro=d["prop_intro"], pi=pi, pout=d["prop_outro"], uc=usecase_html(meta["landing"], hl, loc), loc=loc, book30=u["book30"],
+           pintro=d["prop_intro"], pi=pi, pout=d["prop_outro"], uc=usecase_html(meta.get("landing"), hl, loc), loc=loc, book30=u["book30"],
            login_th=u["login_th"], t_faq=u["faq"], faqh=faqh, t_sources=u["sources"], srch=srch, why=u["why"], note=E(d["note"]), t_toc=u["toc"],
-           toch=toch, side=E(u["side"]), t_related=u["related"], relh=relh, back=u["back"], final_p=E(u["final_p"]), tagline=E(u["tagline"]),
+           toch=toch, side=E(u["side"]), help_h2=E(u.get("help_h2", u["help"])), faq_aria=E(u.get("faq_aria", u["faq"])), final_side=E(u.get("final_side", u["side"])), t_related=u["related"], relh=relh, back=u["back"], final_p=E(u["final_p"]), tagline=E(u["tagline"]),
            rssl=('<a href="%s">RSS</a>' % rss) if rss else "")
     homeq = home_url(hl)
     if "?lang=en" in homeq:
@@ -369,6 +433,14 @@ window.book=function(e,loc){{try{{gtag('event','book_call_click',{{location:loc}
 
 def build_all(slugs=None, langs=None):
     reg = registry()
+    out = _build(reg, slugs, langs)
+    reg2 = registry()
+    if {p for e in reg2.values() for p in e["versions"].values()} != {p for e in reg.values() for p in e["versions"].values()}:
+        out = _build(reg2, slugs, langs)   # new language versions appeared: refresh related cards
+    return out
+
+
+def _build(reg, slugs=None, langs=None):
     out = {}
     for slug in sorted(os.listdir(ART)):
         if slugs and slug not in slugs:

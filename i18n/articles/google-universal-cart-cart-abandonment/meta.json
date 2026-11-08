@@ -1,0 +1,34 @@
+{
+ "num": "t09",
+ "original": "zh-Hans",
+ "cat": "geo-ai-search",
+ "hero": "t09",
+ "published": "2026-10-16T08:03:00+08:00",
+ "related": [
+  "us-buyers-ai-research-citable-content",
+  "seo-aeo-geo-explained-chinese-exporters",
+  "factory-website-geo-chatgpt-supplier"
+ ],
+ "sources": [
+  {
+   "name": "Google launches Universal Cart across Search and Gemini for easier shopping",
+   "url": "https://searchengineland.com/google-launches-universal-cart-across-search-and-gemini-for-easier-shopping-496573",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-15"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t09.jpg",
+  "en": "/assets/blog/og/t09-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1896,
+  "en": 1238
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

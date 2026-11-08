@@ -1,0 +1,40 @@
+{
+ "num": "t38",
+ "original": "en",
+ "cat": "ads-for-smes",
+ "hero": "t38",
+ "published": "2026-10-16T11:26:00+08:00",
+ "related": [
+  "publicidad-ia-pymes-meta-muse",
+  "reduce-marketing-costs-ai-smes",
+  "ai-ad-tools-small-business-compared"
+ ],
+ "sources": [
+  {
+   "name": "TikTok US reports generating $81B in economic value",
+   "url": "https://www.socialmediatoday.com/news/tiktok-us-reports-generating-81b-in-economic-value/831978/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-01"
+  },
+  {
+   "name": "TikTok unveils AI-powered updates at Advertising Week",
+   "url": "https://www.socialmediatoday.com/news/tiktok-unveils-ai-powered-updates-at-advertising-week/832192/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-05"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t38.jpg",
+  "zh-Hans": "/assets/blog/og/t38-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1182,
+  "zh-Hans": 1984
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

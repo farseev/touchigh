@@ -1,0 +1,40 @@
+{
+ "num": "t53",
+ "original": "zh-Hans",
+ "cat": "geo-ai-search",
+ "hero": "t53",
+ "published": "2026-10-16T13:11:00+08:00",
+ "related": [
+  "us-buyers-ai-research-citable-content",
+  "factory-website-geo-chatgpt-supplier",
+  "geo-pymes-que-funciona"
+ ],
+ "sources": [
+  {
+   "name": "流量越来越贵，独立站SEO+GEO凭什么成为跨境人的\"压舱石\"？",
+   "url": "https://www.cifnews.com/article/188357",
+   "publisher": "雨果跨境 (Cifnews) contributor",
+   "date": "2026-08-19"
+  },
+  {
+   "name": "Google updates AI Mode and AI Overview with more links, context, carousels, and information on creators",
+   "url": "https://searchengineland.com/google-updates-ai-mode-and-ai-overview-with-more-links-context-carousels-and-information-on-creators-496242",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-15"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t53.jpg",
+  "en": "/assets/blog/og/t53-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1961,
+  "en": 1294
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

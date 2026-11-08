@@ -1,0 +1,40 @@
+{
+ "num": "t33",
+ "original": "en",
+ "cat": "social-media",
+ "hero": "t33",
+ "published": "2026-10-16T10:51:00+08:00",
+ "related": [
+  "chinese-manufacturers-founder-thought-leadership",
+  "made-in-china-story-localized-thought-leadership",
+  "overseas-social-algorithms-thought-leadership"
+ ],
+ "sources": [
+  {
+   "name": "Instagram chief shares algorithm insights and posting tips",
+   "url": "https://www.socialmediatoday.com/news/instagram-chief-shares-algorithm-insights-and-posting-tips/831326/",
+   "publisher": "Social Media Today",
+   "date": "2026-09-24"
+  },
+  {
+   "name": "Facebook adds plain language algorithm controls",
+   "url": "https://www.socialmediatoday.com/news/facebook-adds-plain-language-algorithm-controls/832910/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-13"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t33.jpg",
+  "zh-Hans": "/assets/blog/og/t33-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1256,
+  "zh-Hans": 2051
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

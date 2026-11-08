@@ -1,0 +1,64 @@
+{
+ "num": "t43",
+ "original": "zh-Hant",
+ "cat": "geo-ai-search",
+ "hero": "t43",
+ "published": "2026-10-16T12:01:00+08:00",
+ "landing": "supplier",
+ "related": [
+  "social-algorithms-explained-facebook-instagram",
+  "reduce-marketing-costs-ai-smes",
+  "localized-social-content-frameworks"
+ ],
+ "sources": [
+  {
+   "name": "ChatGPT's Most-Cited Sites Tilt Toward Primary Sources, Data Shows",
+   "url": "https://www.searchenginejournal.com/chatgpt-most-cited-sites-primary-sources-ahrefs/592682/",
+   "publisher": "Search Engine Journal",
+   "date": "2026-10-12"
+  },
+  {
+   "name": "AI favors brands with an active social media presence",
+   "url": "https://www.socialmediatoday.com/news/ai-favors-brands-with-an-active-social-media-presence/832450/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-07"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hant": "/assets/blog/og/t43.jpg",
+  "en": "/assets/blog/og/t43-en.jpg",
+  "zh-Hans": "/assets/blog/og/t43-zh.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hant": 1828,
+  "en": 1195,
+  "zh-Hans": 1860
+ },
+ "related_by_lang": {
+  "en": [
+   "us-buyers-ai-research-citable-content",
+   "seo-aeo-geo-explained-chinese-exporters",
+   "factory-website-geo-chatgpt-supplier"
+  ],
+  "zh-Hans": [
+   "us-buyers-ai-research-citable-content",
+   "seo-aeo-geo-explained-chinese-exporters",
+   "factory-website-geo-chatgpt-supplier"
+  ]
+ },
+ "ui": {
+  "zh-Hant": {
+   "book": "預約諮詢",
+   "takeaways": "重點整理",
+   "book30": "預約 30 分鐘策略諮詢 →",
+   "side": "看看您在美國 AI 搜尋中的曝光盲點",
+   "final_p": "預約一次 30 分鐘免費通話，我們線上為您的網站做一次 AI 曝光檢測。",
+   "tagline": "AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.",
+   "blog_name": "ToucHigh Blog"
+  },
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

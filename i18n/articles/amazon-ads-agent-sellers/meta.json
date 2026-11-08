@@ -1,0 +1,35 @@
+{
+ "num": "t20",
+ "original": "zh-Hans",
+ "cat": "ads-for-smes",
+ "hero": "t20",
+ "published": "2026-10-16T09:20:00+08:00",
+ "landing": "amazon",
+ "related": [
+  "publicidad-ia-pymes-meta-muse",
+  "reduce-marketing-costs-ai-smes",
+  "tiktok-ads-playbook-small-advertisers"
+ ],
+ "sources": [
+  {
+   "name": "亚马逊广告发布以智能体AI为核心的亚马逊AI广告平台（Amazon Ads Agent）",
+   "url": "https://www.cifnews.com/article/189410",
+   "publisher": "雨果跨境 (Cifnews)",
+   "date": "2026-10-13"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t20.jpg",
+  "en": "/assets/blog/og/t20-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1943,
+  "en": 1272
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

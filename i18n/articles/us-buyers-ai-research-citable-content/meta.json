@@ -1,0 +1,46 @@
+{
+ "num": "t57",
+ "original": "zh-Hans",
+ "cat": "geo-ai-search",
+ "hero": "t57",
+ "published": "2026-10-16T13:39:00+08:00",
+ "related": [
+  "seo-aeo-geo-explained-chinese-exporters",
+  "factory-website-geo-chatgpt-supplier",
+  "geo-pymes-que-funciona"
+ ],
+ "sources": [
+  {
+   "name": "57% of beauty consumers don't start with Google Search",
+   "url": "https://searchengineland.com/beauty-consumers-google-search-493828",
+   "publisher": "Search Engine Land",
+   "date": "2026-10-07"
+  },
+  {
+   "name": "The rise of the AI shelf",
+   "url": "https://www.modernretail.co/operations/the-rise-of-the-ai-shelf/",
+   "publisher": "Modern Retail",
+   "date": "2026-09-26"
+  },
+  {
+   "name": "AI Shopping Agent Use to Rise 130% During Holidays, Adobe Says",
+   "url": "https://www.bloomberg.com/news/articles/2026-09-28/ai-assisted-shopping-to-rise-130-during-holidays-adobe-says",
+   "publisher": "Bloomberg",
+   "date": "2026-09-28"
+  }
+ ],
+ "og_by_lang": {
+  "zh-Hans": "/assets/blog/og/t57.jpg",
+  "en": "/assets/blog/og/t57-en.jpg"
+ },
+ "words_by_lang": {
+  "zh-Hans": 1957,
+  "en": 1328
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

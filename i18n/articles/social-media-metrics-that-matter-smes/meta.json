@@ -1,0 +1,34 @@
+{
+ "num": "t26",
+ "original": "en",
+ "cat": "measurement",
+ "hero": "t26",
+ "published": "2026-10-16T10:02:00+08:00",
+ "related": [
+  "medir-campanas-redes-sociales-pymes",
+  "digital-advertising-kpis-small-business",
+  "measure-influencer-roi-tiktok-shop"
+ ],
+ "sources": [
+  {
+   "name": "AI favors brands with an active social media presence",
+   "url": "https://www.socialmediatoday.com/news/ai-favors-brands-with-an-active-social-media-presence/832450/",
+   "publisher": "Social Media Today",
+   "date": "2026-10-07"
+  }
+ ],
+ "og_by_lang": {
+  "en": "/assets/blog/og/t26.jpg",
+  "zh-Hans": "/assets/blog/og/t26-zh.jpg"
+ },
+ "words_by_lang": {
+  "en": 1017,
+  "zh-Hans": 1740
+ },
+ "ui": {
+  "zh-Hans": {
+   "blog_name": "ToucHigh Blog"
+  }
+ },
+ "legacy": true
+}

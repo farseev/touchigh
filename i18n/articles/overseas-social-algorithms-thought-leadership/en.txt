@@ -1,0 +1,112 @@
+== title ==
+What Social Media Algorithms Reward: Thought Leadership for Chinese Brands
+== seo_title ==
+What Social Media Algorithms Reward Now: A Brand Guide | ToucHigh
+== desc ==
+What do social media algorithms reward? Instagram's head explains ranking and Facebook adds plain-language controls. Here's how brands going global should post.
+== dek ==
+Algorithms don't reward trend-chasing; they reward originality and real engagement. Using Instagram's and Facebook's latest changes, here's how Chinese brands going global can build thought leadership.
+== section ==
+Social media
+== tags ==
+Social media marketing | Social algorithms | Thought leadership | Instagram | Global brands
+== keywords ==
+social media algorithms, Instagram algorithm 2026, Facebook algorithm changes, how to get more reach on Instagram as a brand, content strategy for brands going global, Instagram Reels algorithm
+== read ==
+7
+== q ==
+Instagram and Facebook keep changing their algorithms, and our brand's posts in overseas markets barely get any reach. What do I need to know about the latest changes?
+== a ==
+Social media algorithms reward originality, freshness and real engagement, not copycat trends. Instagram head Adam Mosseri says ranking is based on predicting how people will react, original content ranks ahead of reposts, and newer posts get more exposure. Facebook now lets users tell its algorithm in plain language what they want to see more of. For Chinese brands going global, the safest play is expert thought leadership, tested in small steps with trial Reels.
+== takeaways ==
+- According to Social Media Today, Instagram head Adam Mosseri said ranking is based on predictions of how people will react, such as whether they'll watch to the end or share a post with a friend.
+- Mosseri's ranking principles include putting original content first, favoring fresh posts and giving smaller creators a shot at exposure, and he advises watching engagement rate rather than views or likes.
+- Facebook now lets users tell its algorithm in everyday language, in Feed and Reels, what they want to see more or less of, and recommendations adjust within the same session.
+- Chasing trends is classic herd behavior: the more alike everyone's content looks, the harder it is for algorithms and users to tell any single post apart.
+- Thought leadership for Chinese brands going global should center on craft knowledge, founder views, behind-the-scenes manufacturing and real customer questions, not templated trending formats.
+== alt ==
+A herd of grey sheep faces a generic trend bubble while one orange sheep stands apart on a lit platform holding up a gear and a prototype, surrounded by heart and share icons.
+== body ==
+<p>What has changed in social media algorithms lately, and why does your brand's content keep stalling overseas? The short version: Instagram's and Facebook's algorithms keep getting better at judging who will genuinely react to a post. They reward originality, freshness and real engagement, while trend-chasing, templated content is getting harder to see. For Chinese brands going global, the most reliable play is thought leadership: using your expert judgment in your category to answer the questions your target customers actually care about.</p>
+
+<p>Two recent stories point the way. According to <a href="https://www.socialmediatoday.com/news/instagram-chief-shares-algorithm-insights-and-posting-tips/831326/" rel="noopener" target="_blank">Social Media Today</a>, Instagram head Adam Mosseri explained the platform's ranking logic in a video series. He noted bluntly that businesses and brands post far more than creators and regular people do, so without ranking, feeds would be swamped by the accounts that post most often. On October 13, <a href="https://www.socialmediatoday.com/news/facebook-adds-plain-language-algorithm-controls/832910/" rel="noopener" target="_blank">Social Media Today</a> reported that Facebook has launched a way to adjust its algorithm in plain language, which Facebook pitches as unlocking an algorithm you can genuinely have a conversation with.</p>
+
+<h2 id="what-does-instagram-s-algorithm-actually-reward">What does Instagram's algorithm actually reward?</h2>
+
+<p>According to Mosseri, ranking is based on predicting how people will react: will this person watch to the end, will they share it with a friend? Timeliness matters too, so the feed is roughly chronological and newer posts get more exposure.</p>
+
+<p>He laid out several guiding principles: original content takes priority over reposts; new content gets more exposure; smaller creators' public posts are shown to non-followers to test how people respond; and as the models scale up, they'll weigh more signals. His advice to creators is practical, too. To grow your reach, watch engagement rate rather than views or likes. Trends move fast, so use trial Reels to test new directions. Posting more raises your odds of a hit, but pace yourself to avoid burnout.</p>
+
+<p>For Chinese brands, the first principle matters most. Reposting a video that took off on Douyin (China's TikTok) or another domestic platform, or copying an overseas competitor's viral structure, rarely earns the "original" point.</p>
+
+<h2 id="facebook-now-lets-users-talk-to-the-algorithm-what-should-br">Facebook now lets users "talk to" the algorithm. What should brands watch for?</h2>
+
+<p>Per Social Media Today, Facebook users can now tell the algorithm in their own words, in Feed and Reels, what they want to see more or less of, and recommendations adjust within the same session. After someone taps "interested" or "not interested," Facebook may also ask a follow-up question. Facebook says it uses large language models to understand the interests, context and intent behind everyday language.</p>
+
+<p>Our read: when users can simply say "show me more home espresso brewing tips," content with a clear topic that's genuinely useful becomes easier to match, while posts that look like hard-sell ads become easier to shut out with a quick "show me less of this." The report also cautions, though, that most users rarely change their settings, so how much this feature will actually get used is still uncertain.</p>
+
+<h2 id="why-does-chasing-trends-get-you-less-reach-not-more">Why does chasing trends get you less reach, not more?</h2>
+
+<p>Behavioral economics calls it the herd effect: when information is incomplete, people tend to copy other people's choices, assuming that whatever everyone is doing must be right. In social media, the classic version goes like this: one format takes off, and every brand piles in with the same audio, the same opening hook and the same "authentic" script.</p>
+
+<p>The result is content that looks more and more alike. ToucHigh's competitive-content research found that about 87% of social content crowds into the same "authentic" formula. When everyone looks the same, the algorithm struggles to predict whose content will make people stop, watch to the end and share. In a world chasing trends, authenticity is the scarcest currency. It's also the problem studied in a <a href="https://dl.acm.org/doi/10.1145/3805712.3808371" rel="noopener" target="_blank">peer-reviewed paper on countering content homogenization</a> that the ToucHigh team published at ACM SIGIR.</p>
+
+<h2 id="what-should-thought-leadership-from-chinese-brands-cover">What should thought leadership from Chinese brands cover?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>Content pillar</th><th>DTC brand example</th><th>Factory or B2B example</th><th>Reaction you want</th></tr></thead>
+<tbody>
+<tr><td>Expertise</td><td>Why some ceramic-coated pans peel within six months and others don't</td><td>How sink marks form on injection-molded parts, and how to avoid them</td><td>Saves, shares with colleagues</td></tr>
+<tr><td>Founder views</td><td>Why we don't make a cheap version</td><td>A factory owner's take on tariff changes</td><td>Comments, discussion</td></tr>
+<tr><td>Behind the scenes</td><td>Three rounds of rework between first sample and launch</td><td>A batch that got stopped on the quality-control line</td><td>Full views, trust</td></tr>
+<tr><td>Customer questions</td><td>The three questions customer service got most this month</td><td>Buyers' most common questions on MOQ (minimum order quantity) and lead times</td><td>Saves, DMs</td></tr>
+<tr><td>Tests and comparisons</td><td>Hands-on test of three products at the same price point</td><td>Durability tests of different materials</td><td>Shares, citations</td></tr>
+</tbody>
+</table></div>
+
+<p>This content has a bonus: you can expand it into articles on your independent DTC site that also serve SEO (search engine optimization, ranking your pages in search results), AEO (answer engine optimization, getting quoted directly in AI answers) and GEO (generative engine optimization, getting cited in generative answers from ChatGPT, Perplexity and Google AI Overviews). Think it through once, and get seen in many places.</p>
+
+<h2 id="how-do-you-write-a-thought-leadership-post">How do you write a thought leadership post?</h2>
+
+<ol>
+<li><strong>Start from a real question or disagreement.</strong> For example, "Lots of people think stainless steel never rusts," not "Today we're excited to introduce our new product."</li>
+<li><strong>Lead with your point in the first sentence.</strong> Overseas users scroll fast. Your point has to come first if you want them to stop.</li>
+<li><strong>Show evidence only you have.</strong> Factory test data, rework records, customer service stats and the founder's own experience all beat adjectives.</li>
+<li><strong>Be honest about tradeoffs.</strong> Say who your solution is for and who it isn't for. Sincerity is more credible than perfection.</li>
+<li><strong>End with a specific question.</strong> For example, "When you buy a pan, do you care more about weight or durability?" That invites comments in a way an empty "follow us for more" never will.</li>
+<li><strong>Make it native to each platform.</strong> Turn the same idea into a Reel or carousel on Instagram, a long text post on LinkedIn and a talking-head short on TikTok.</li>
+<li><strong>Test in small steps with trial Reels.</strong> Try new directions on a small scale first, and check the engagement rate before you double down.</li>
+</ol>
+
+<p>When writing for US audiences, one detail often gets overlooked: the language itself. English translated word for word from Chinese reads like a product manual and rarely makes anyone stop scrolling. Use the units and phrasing Americans are used to, such as inches, pounds and Fahrenheit. Skip empty words like "best quality" and write about specific use cases and numbers instead. When a post sounds like a knowledgeable person talking, both the algorithm and your audience will give it a chance.</p>
+
+<h2 id="how-much-should-you-post-and-how-do-you-test-without-burning">How much should you post, and how do you test without burning out?</h2>
+
+<p>Mosseri says posting more raises your odds of a hit, but he also warns about burnout. For a two- or three-person export team, a realistic pace is three to five posts a week, with at least half of them thought leadership from the table above; the rest can be product and promotional posts. Each month, pick the five posts with the highest engagement rate and use their topics and opening hooks as templates for the next month.</p>
+
+<p>If English writing is your bottleneck, ToucHigh's <a href="/#social">Social Media Manager Autopilot</a> can help: it writes native US-English posts in your brand voice and gives each one a predicted-engagement score before it's scheduled. That score is a pre-launch estimate based on corpus patterns, not a guarantee, but it helps you weed out obviously mediocre versions before they go live.</p>
+== insight_quote ==
+In a world chasing trends, authenticity is the scarcest currency.
+== insight ==
+The herd effect pushes brands to copy the same trending formats, so their content grows more and more alike. Algorithms favor originality and users favor usefulness, so the more a Chinese brand shares expert judgment that is truly its own, the easier it is to stand out among look-alike posts.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+Want less copycat content and more expert views on your overseas social accounts, but short on people who can write native English? ToucHigh's Social Media Manager Autopilot can help:
+== prop_items ==
+- It writes native US-English posts, articles and creatives in your brand voice, with thought leadership and organic content that sounds like a real person wrote it.
+- Every piece gets a predicted-engagement score before it's scheduled, as a pre-launch estimate rather than a performance guarantee.
+- You can approve posts one by one, or let content you've signed off on publish automatically on schedule.
+== prop_outro ==
+Start with a 30-minute strategy call. Bring a few of your best- and worst-performing recent posts, and we'll find the content directions worth scaling.
+== faq ==
+Q: Does posting time still matter on overseas social media?
+A: Yes, but don't overthink it. Instagram head Adam Mosseri says the feed is roughly chronological and newer posts get more exposure, so posting when your target audience is active still helps. Still, whether the content itself drives views, shares and comments matters far more than timing your post down to the minute.
+Q: Can our brand account repost videos that went viral on Chinese platforms?
+A: Not as they are. Mosseri says original content takes priority over reposts, and the context, pacing and humor of a hit on Chinese platforms may not land with overseas audiences. A better approach is to keep the valuable core, such as a process explanation or test results, reshoot it to fit the overseas platform's style, and add English captions and copy.
+Q: What are trial Reels, and how can Chinese brands use them?
+A: Trial Reels are a testing feature Instagram offers, and Mosseri recommends using them to try new content and approaches. Brands going global can test different hooks, topics and styles, check the engagement rate first, then decide whether to make that direction part of their core content. That keeps you current with platform changes without letting one failed experiment drag down the whole account.
+Q: Is thought leadership only for the founder's personal account?
+A: No. Brand accounts can share expert views too, such as craft knowledge, test comparisons and industry analysis. The difference is that a founder's personal account suits taking stances and sharing personal experience, while a brand account suits systematic knowledge content. They work best together: the founder explains why, and the brand shows how.
+== note ==
+We wrote this because "What do the latest algorithm changes actually mean?" is one of the questions social media teams at Chinese brands going global ask most. Instagram's head explaining ranking himself, and Facebook launching conversational algorithm controls, show that algorithms reward expertise, not copycat content.

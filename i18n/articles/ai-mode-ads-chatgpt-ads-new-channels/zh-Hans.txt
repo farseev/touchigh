@@ -1,0 +1,105 @@
+== title ==
+谷歌 AI Mode 广告来了：中小卖家该不该试新渠道？
+== seo_title ==
+谷歌 AI Mode 广告：中小卖家该不该试？ | ToucHigh
+== desc ==
+谷歌 AI Mode 广告和 ChatGPT 视觉广告接连有新进展。本文讲清 AI Mode 广告怎么进入、ChatGPT 广告能否投放，并给中小卖家一套止损式测试步骤。
+== dek ==
+新广告渠道该不该试？可以，但只用输得起的钱。本文梳理谷歌 AI Mode 广告和 ChatGPT 广告的现状，给出一套按毛利评估的测试方法。
+== section ==
+广告投放
+== tags ==
+AI Mode 广告 | ChatGPT 广告 | 谷歌广告 | 新广告渠道 | 中小卖家投放
+== keywords ==
+谷歌 AI Mode 广告, AI Mode 广告怎么投, ChatGPT 广告投放, AI Max for Search, AI 搜索广告, 广告渠道 ROI
+== read ==
+5
+== q ==
+谷歌 AI Mode 广告、ChatGPT 广告都来了，我们这种中小卖家该不该试这些新渠道，怎样才能不白花钱？
+== a ==
+可以试，但只用输得起的预算。AI Mode 广告没有单独的广告系列，要通过 Performance Max、购物广告或广泛匹配搜索广告（含 AI Max）进入；先修好转化追踪、商品数据和落地页，再用小预算围绕一个商业问题做实验，按毛利而不是转化数评估。ChatGPT 视觉广告首批只对部分美国广告主开放，现阶段先观察。
+== takeaways ==
+- Google Ads 中没有单独的 AI Mode 广告系列，广告通过 Performance Max、购物广告和广泛匹配搜索广告（含 AI Max）进入 AI Mode。
+- 据 Search Engine Land 引述的 SE Ranking 研究，在 50,032 个美国商业关键词中，29.45% 的 AI Mode 回答出现了文字广告。
+- OpenAI 的 ChatGPT 视觉广告首批只向部分美国广告主开放，定向、价格和报告细节尚未公布。
+- 损失厌恶让卖家要么盲目追新、要么完全不碰，解决办法是设定止损预算，围绕明确的商业问题做实验。
+- 由于 AI Mode 的表现无法单独拆分，评估测试应看订单质量和毛利，而不是转化数量。
+== alt ==
+实验台上，移液器把围栏托盘里有限的橙色硬币一枚枚滴进紫色描边的对话气泡漏斗和烧杯，旁边装满硬币的大罐子仍然密封着。
+== body ==
+<p>谷歌 AI Mode 广告、ChatGPT 广告这些新渠道，中小卖家该不该试？我们的建议是：可以试，但只用“输得起的钱”去试。先把转化追踪、商品数据和落地页打好底，再从现有 Google 账户里划出一小块预算，围绕一个明确的商业问题做实验；ChatGPT 的新视觉广告目前大多数广告主还用不上，先观察、先备素材。</p>
+<p>本月这两个渠道都有新进展。<a href="https://searchengineland.com/google-ai-mode-ads-everything-you-need-to-know-494628" rel="noopener" target="_blank">Search Engine Land</a> 10 月 9 日的解读文章汇总了关键数字：谷歌 5 月表示 AI Mode 月活用户已超过 10 亿；SE Ranking 7 月的研究在 50,032 个美国商业关键词中发现，29.45% 的 AI Mode 回答里出现了文字广告。<a href="https://www.searchenginejournal.com/openai-chatgpt-image-generation-visual-ads-test/591981/" rel="noopener" target="_blank">Search Engine Journal</a> 则报道，OpenAI 将从 10 月下旬开始，与一小批美国广告主测试在 ChatGPT 生成图片时展示的视觉广告，而且“大多数广告主暂时还无法使用”。</p>
+
+<h2 id="s1">AI Mode 广告是怎么出现的？要不要单独开广告系列？</h2>
+<p>据 Search Engine Land 的整理，AI Mode 里目前有四种广告形态，多数仍处在测试阶段：</p>
+<ul>
+<li><strong>现有的文字广告和购物广告</strong>：来自符合条件的广告系列，出现在 AI 回答下方或融入回答之中（测试中）。</li>
+<li><strong>Conversational Discovery 广告</strong>：由 Gemini 根据用户的问题定制广告创意（测试中）。</li>
+<li><strong>Highlighted Answers</strong>：赞助商家直接出现在推荐列表里（测试中）。</li>
+<li><strong>Direct Offers</strong>：在购物对话中展示促销，零售商在广告系列设置里提供优惠，由谷歌的 AI 决定何时展示（试点中）。</li>
+</ul>
+<p>关键在于：Google Ads 里没有单独的“AI Mode 广告系列”，也不能单独选择 AI Mode 版位。能进入 AI Mode 的，是效果最大化广告（Performance Max）、购物广告，以及使用广泛匹配的搜索广告，包括 AI Max for Search。9 月还有一个小范围实验，允许完全匹配和词组匹配的搜索广告在用户意图明确时进入 AI Mode。</p>
+<p>文章还提醒，AI Mode 在某个市场上线，不代表它的广告形态也在那里开放。面向美国投放的卖家，第一步是确认自己的账户能否参与。</p>
+
+<h2 id="s2">ChatGPT 广告现在能投吗？</h2>
+<p>据 Search Engine Journal 报道，ChatGPT 现有的广告出现在回答下方，OpenAI 称 ChatGPT 每周触达 12 亿人。新的视觉广告会在用户生成图片时出现，用图片展示产品灵感、使用方式或体验，并且会清楚标注、与用户生成的图片分开。</p>
+<p>不过，OpenAI 还没有公布这种新形式的定向、价格、创意要求和数据报告细节。效果衡量方面，报道提到 Hightouch、Tealium 和 LiveRamp 可以把转化数据回传给 ChatGPT Ads，AppsFlyer、Triple Whale 等是归因合作伙伴。同期披露的几家合作伙伴早期结果，报道也特别说明它们衡量的指标各不相同，不能当作普遍基准。</p>
+<p>对中小卖家来说，现阶段更务实的动作是准备好高质量的产品使用场景图，关注开放进度，而不是挪用现有预算去抢一个还拿不到的版位。</p>
+
+<h2 id="s3">为什么新渠道让人既心动又害怕？</h2>
+<p>行为经济学里的“损失厌恶”可以解释这种矛盾：同样金额的损失，带来的痛苦明显大于同样金额的收益带来的快乐。</p>
+<p>它会把卖家推向两个极端。一种是怕错过窗口期，觉得“别人都在投，我不投就亏了”，于是匆忙砸钱；另一种是怕钱打水漂，尤其是被承诺“包效果”的代理商坑过之后，干脆什么都不碰。两种反应源自同一种心理，只是方向相反。</p>
+<p>这也是很多中小卖家对传统代理模式心存疑虑的原因：月费照付，结果却说不清。对新渠道保持怀疑是健康的，关键是把怀疑写成可以检验的问题：花多少钱、看什么指标、多久下结论。</p>
+<p>出路是把怀疑变成方法：先定一个亏了也不心疼的测试预算和止损线，再让数据说话。怀疑本身不是问题，不去验证才是。</p>
+
+<h2 id="s4">新渠道值不值得试？先看这张表</h2>
+<div class="tw"><table>
+<thead><tr><th>渠道 / 形式</th><th>目前状态（据报道）</th><th>怎么进入</th><th>中小卖家的建议动作</th></tr></thead>
+<tbody>
+<tr><td>AI Mode 中的文字和购物广告</td><td>测试中</td><td>Performance Max、购物广告、广泛匹配搜索广告（含 AI Max）</td><td>在现有 Google 账户里做小预算实验</td></tr>
+<tr><td>Conversational Discovery / Highlighted Answers</td><td>测试中</td><td>谷歌建议用 AI Max 和 Performance Max 承接新形态</td><td>先把落地页和商品数据写清楚，方便系统理解你卖什么</td></tr>
+<tr><td>Direct Offers</td><td>试点中</td><td>在广告系列设置中提供优惠</td><td>按毛利挑出能承受促销的商品</td></tr>
+<tr><td>ChatGPT 回答下方的广告</td><td>已上线</td><td>以 OpenAI 的开放情况为准</td><td>先了解可对接的效果衡量工具，再决定是否申请</td></tr>
+<tr><td>ChatGPT 图片生成中的视觉广告</td><td>10 月下旬起小范围测试</td><td>首批仅限部分美国广告主</td><td>暂不分配预算，先准备产品场景图</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="s5">如何用“输得起的钱”测试 AI Mode 广告？</h2>
+<ol>
+<li><strong>确认资格。</strong>先查清你的投放市场和账户能否参与相关广告形态。</li>
+<li><strong>打好地基。</strong>按 Search Engine Land 的建议，先修好转化追踪、商品数据源报错和落地页，让页面清楚说明你卖什么、卖给谁。</li>
+<li><strong>写下一个商业问题。</strong>比如：“开启 AI Max 后，能否在单次转化成本（CPA）不上升的前提下，带来新搜索词的订单？”</li>
+<li><strong>划出止损预算。</strong>从现有 Google 预算里拿出一小部分，定好测试周期和亏损上限，到线就停。</li>
+<li><strong>逐项检查 AI Max 设置。</strong>重点看品牌排除、网址控制和文字自定义；文章提醒，在某些素材优化和网址设置下，固定的广告文案不会被遵守。</li>
+<li><strong>按利润看结果。</strong>AI Max 报告不会单独拆出 AI Mode 的表现，所以别只盯转化数，要看订单质量、毛利和新客占比，并复查搜索词、落地页和素材。</li>
+<li><strong>到期做决定。</strong>达标就逐步加码，不达标就停，把结论记下来，作为下一轮测试的起点。</li>
+</ol>
+
+<h2 id="s6">预算有限时，新旧渠道怎么排优先级？</h2>
+<p>顺序很简单：先让已有渠道跑得健康，再拿结余去试新渠道。新渠道的测试预算，应该来自老渠道优化省下来的钱，而不是挤掉正在赚钱的广告。</p>
+<p>ToucHigh 的 Ads 功能会在 Amazon、Meta 和 Google 上按 ROAS（广告支出回报率）自动调整预算，替你判断素材疲劳和预算分配，省下来的时间和预算可以留给实验。另一方面，AI 回答里的曝光不必全靠付费：GEO（生成式引擎优化）关注的是让店铺被 ChatGPT、Perplexity 和谷歌 AI 的回答自然引用。想看付费和自然两条线如何配合，可以了解 <a href="/#products">ToucHigh 的产品组合</a>。</p>
+== insight_quote ==
+带着怀疑去验证，创新才能长成增长。
+== insight ==
+损失厌恶让人对新渠道既怕错过、又怕亏钱。与其在两种恐惧之间摇摆，不如设定止损预算做小规模实验，让怀疑变成可检验的问题。
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+新渠道值得试，前提是老渠道不漏钱。ToucHigh 可以帮您先把基本盘稳住：
+== prop_items ==
+- Ads 功能在 Amazon、Meta 和 Google 上统一投放，按 ROAS 自动调整预算，并替您判断素材疲劳、做出预算调配。
+- GEO Autopilot 排查您的店铺在 ChatGPT、Perplexity、谷歌 AI 和 Gemini 中“看不见”的地方，写好并上线修复内容，持续跟踪 AI 引用占比。
+- 付费和自然两条线放在一起看，测试新渠道时就有清楚的对照基准。
+== prop_outro ==
+如果您正在考虑测试新渠道，可以先预约 30 分钟策略沟通，把现有账户的情况一起过一遍。
+== faq ==
+Q: 投 AI Mode 广告需要单独开广告系列吗？
+A: 不需要，也做不到。据 Search Engine Land 介绍，Google Ads 里没有单独的 AI Mode 广告系列，开启 AI Max 也不能单独选择 AI Mode 版位。广告是通过现有的 Performance Max、购物广告和广泛匹配搜索广告进入 AI Mode 的，所以要先把这些广告系列的基础打好。
+Q: 能不能单独看到 AI Mode 广告的效果？
+A: 目前不能。AI Max 的报告可以看到扩展匹配的搜索词、标题、落地页和素材表现，但不会单独报告 AI Mode 里的表现；Search Console 的生成式 AI 数据只覆盖自然流量。因此评估时要设好对照，看订单质量和毛利的整体变化。
+Q: 中国卖家现在能投 ChatGPT 的视觉广告吗？
+A: 大概率还不能。据 Search Engine Journal 报道，这项测试从 10 月下旬开始，首批只面向一小部分美国广告主，大多数广告主暂时无法使用，OpenAI 也没有公布定向、价格和报告细节。现阶段建议先准备产品使用场景图，关注开放进度。
+Q: AI Mode 广告和 GEO 有什么区别？
+A: AI Mode 广告是付费版位，按广告系列规则参与竞价；GEO（生成式引擎优化）是让你的店铺和内容被 AI 回答自然引用，不按点击付费。两者面对的是同一批在 AI 里提问的用户，适合配合使用：付费广告用来快速测试需求，GEO 用来积累长期可见度。
+== note ==
+我们写这篇，是因为“该试哪些新广告渠道才能提高回报”是中小卖家最常问的投放问题之一；本月谷歌 AI Mode 广告和 ChatGPT 视觉广告接连有新动作，正需要一个冷静的判断框架。
