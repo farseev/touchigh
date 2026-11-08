@@ -80,4 +80,9 @@ Allow: /
 # LLM-readable indexes (non-standard but read by some tools)
 # See /llms.txt and /llms-full.txt
 
+# Sitemaps: index plus one sitemap per language (hreflang clusters inside)
 Sitemap: https://touchigh.ai/sitemap.xml
+Sitemap: https://touchigh.ai/sitemap-zh-hans.xml
+Sitemap: https://touchigh.ai/sitemap-en.xml
+Sitemap: https://touchigh.ai/sitemap-zh-hant.xml
+Sitemap: https://touchigh.ai/sitemap-es.xml

@@ -12,9 +12,11 @@
 <meta name="theme-color" content="#FF642D">
 <meta name="format-detection" content="telephone=no">
 <meta name="keywords" content="ChatGPT流量统计, AI引荐流量怎么衡量, GA4统计ChatGPT流量, ChatGPT UTM, SEO投资回报率怎么算, AI引用份额">
+<!--hreflang-->
 <link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
 <link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/chatgpt-utm-ai-referral-measurement/">
 <link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<!--/hreflang-->
 
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="ToucHigh">
@@ -67,6 +69,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"直接流量突然上涨，一定是ChatGPT带来的吗？","acceptedAnswer":{"@type":"Answer","text":"不一定。Search Engine Land的报道也提醒，Huesler的分析不能证明每一次来源缺失都出于同一原因。判断时看三点：上涨是否从10月中旬开始；是否集中在产品页、文章页等深层页面；同期ChatGPT来源是否同步下降。三点都吻合，才比较可能是AI流量被重新归类。"}},{"@type":"Question","name":"除了ChatGPT，其他AI平台的流量要怎么看？","acceptedAnswer":{"@type":"Answer","text":"先在GA4的引荐报告里查看实际出现了哪些AI产品的来源域名，把它们归入同一个“AI助手”渠道组。但这次ChatGPT的变化说明，平台随时可能调整链接方式，所以引荐数据只能作为参考之一，还要结合AI引用份额和订单数据一起看。"}},{"@type":"Question","name":"AI引用份额怎么算？","acceptedAnswer":{"@type":"Answer","text":"先固定一组核心问题，比如40个美国买家最常问的品类问题，每月在几个主流AI平台上逐一提问，记录答案里提到或链接你品牌的次数，再除以总回答数。例如40个问题里有8个引用了你，份额就是20%。关键是问题清单保持不变，才能看出趋势。"}},{"@type":"Question","name":"小团队没有数据分析师，最少要看哪几个数？","acceptedAnswer":{"@type":"Answer","text":"三个就够：每月的AI引用份额、深层页面的直接流量、购后问卷里选择“AI助手”的新客比例。第一个反映曝光，第二个反映访问，第三个反映生意。每月花半天记在一张表里，连续三个月就能看出AI渠道是否在贡献增长。"}}]}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://touchigh.ai/blog/"},{"@type":"ListItem","position":3,"name":"ChatGPT不再带UTM：AI带来的流量还怎么统计？","item":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/"}]}</script>
 
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">本页目录</a>
@@ -81,7 +85,7 @@
       <a href="/blog/" class="on">博客</a>
     </nav>
     <div class="nav-right">
-      <div class="lang" role="group" aria-label="语言"><a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" class="active" aria-current="page" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">中文</a><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">EN</a></div>
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="语言: 简体中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">中文</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="语言" hidden><li><a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文" aria-current="page">简体中文</a></li><li><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" data-short="EN">English</a></li></ul></div><!--/lmenu-->
       <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登录</a>
       <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">预约沟通</a>
       <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
