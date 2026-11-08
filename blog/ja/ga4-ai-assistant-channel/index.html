@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GA4のAI Assistantチャネルグループ：設定と抜け漏れを解説 | ToucHigh</title>
+<meta name="description" content="GA4のデフォルトチャネルグループにAI Assistantチャネルが追加されました。数える対象、AI Overviewsとリファラーなしの訪問が対象外になる理由、カスタムグループの作り方。">
+<link rel="canonical" href="https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="GA4 AIアシスタント チャネル, GA4 カスタムチャネルグループ AI, ChatGPT トラフィック GA4 計測, AI 参照トラフィック GA4 正規表現, AIアシスタント チャネルグループ, GEO トラフィック 測定">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/">
+<meta property="og:title" content="GA4のAI Assistantチャネル：数えるもの、見逃すもの、自作すべきとき">
+<meta property="og:description" content="GA4のデフォルトチャネルグループにAI Assistantチャネルが追加されました。数える対象、AI Overviewsとリファラーなしの訪問が対象外になる理由、カスタムグループの作り方。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t64-ja.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GA4のAI Assistantチャネル：数えるもの、見逃すもの、自作すべきとき">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="article:published_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:section" content="効果測定">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="AIトラフィック">
+<meta property="article:tag" content="チャネルグループ">
+<meta property="article:tag" content="アトリビューション">
+<meta property="article:tag" content="GEOの測定">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GA4のAI Assistantチャネル：数えるもの、見逃すもの、自作すべきとき">
+<meta name="twitter:description" content="GA4のデフォルトチャネルグループにAI Assistantチャネルが追加されました。数える対象、AI Overviewsとリファラーなしの訪問が対象外になる理由、カスタムグループの作り方。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t64-ja.jpg">
+<meta name="twitter:image:alt" content="GA4のAI Assistantチャネル：数えるもの、見逃すもの、自作すべきとき">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/#article","url":"https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/","mainEntityOfPage":"https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/","headline":"GA4のAI Assistantチャネル：数えるもの、見逃すもの、自作すべきとき","alternativeHeadline":"GA4のAI Assistantチャネルグループ：設定と抜け漏れを解説","description":"GA4のデフォルトチャネルグループにAI Assistantチャネルが追加されました。数える対象、AI Overviewsとリファラーなしの訪問が対象外になる理由、カスタムグループの作り方。","abstract":"使いましょう。ただし、それですべてがわかるとは考えないでください。Googleのドキュメントによると、AI AssistantチャネルはChatGPT、Gemini、Deepseek、Copilot、Grokなどのソースからの訪問を対象とし、GoogleのAI OverviewsとAI Modeは除外されます。また、リファラーなしで届きDirectに入る訪問は見えません。自社のプロパティに実際にどのアシスタントが現れているかを確認し、Referralに入っているものがあればカスタムチャネルグループを作成し、GA4をSearch Consoleや引用の追跡と組み合わせましょう。","image":["https://touchigh.ai/assets/blog/og/t64-ja.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-11-08T10:00:00+08:00","dateModified":"2026-11-08T10:00:00+08:00","inLanguage":"ja","author":{"@type":"Organization","name":"ToucHigh リサーチチーム","url":"https://touchigh.ai/blog/ja/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"効果測定","keywords":"GA4 AIアシスタント チャネル, GA4 カスタムチャネルグループ AI, ChatGPT トラフィック GA4 計測, AI 参照トラフィック GA4 正規表現, AIアシスタント チャネルグループ, GEO トラフィック 測定","wordCount":3280,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ja/#blog","name":"ToucHighブログ"},"about":[{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"AIトラフィック"},{"@type":"Thing","name":"チャネルグループ"},{"@type":"Thing","name":"アトリビューション"},{"@type":"Thing","name":"GEOの測定"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"About regular expressions (regex)","url":"https://support.google.com/analytics/answer/1034324","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ga4-ai-assistant-channel/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"AI AssistantチャネルにGoogleのAI Overviewsは含まれますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。Googleの定義では、AI OverviewsとAI ModeはAI Assistantチャネルから除外されています。Googleはそれらを、他の検索と一緒にSearch Consoleの検索パフォーマンスレポートの検索タイプ「ウェブ」で報告しています。"}},{"@type":"Question","name":"なぜChatGPTのトラフィックが今もDirectとして表示されるのですか？","acceptedAnswer":{"@type":"Answer","text":"リファラーもトラッキングパラメータもなく訪問が届くと、GA4には分類の手がかりがないため、Directとして記録します。深い階層のページへのダイレクトトラフィックを注視し、バイヤーにどうやって御社を見つけたかを尋ねて、この割合を推定しましょう。"}},{"@type":"Question","name":"カスタムチャネルグループを作ると、過去のデータは変わりますか？","acceptedAnswer":{"@type":"Answer","text":"カスタムチャネルグループはレポートにさかのぼって適用されるので、過去のデータを新しいグループ分けで見ることができます。プロパティのメインのチャネルグループを変更した場合は、その時点以降のレポートにのみ影響します。"}},{"@type":"Question","name":"カスタムチャネルグループはいくつ作成できますか？","acceptedAnswer":{"@type":"Answer","text":"Googleによると、定義済みのグループに加えて、標準プロパティでは2つ、アナリティクス 360のプロパティでは5つのカスタムグループを作成でき、それぞれ最大50チャネルを持てます。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ja/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://touchigh.ai/blog/ja/"},{"@type":"ListItem","position":3,"name":"GA4のAI Assistantチャネル：数えるもの、見逃すもの、自作すべきとき","item":"https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ja/">ホーム</a>
+      <a href="/ja/#products">製品</a>
+      <a href="/ja/#faq">よくある質問</a>
+      <a href="/ja/pro/">ToucHigh PRO</a>
+      <a href="/blog/ja/" class="on">ブログ</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="言語: 日本語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">日本語</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="言語" hidden><li><a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" data-short="日本語" aria-current="page">日本語</a></li><li><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" data-short="ES">Español</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">ログイン</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">相談を予約</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ja/">ホーム</a><span>/</span><a href="/blog/ja/">ブログ</a><span>/</span><span>効果測定</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">効果測定</div>
+    <h1>GA4のAI Assistantチャネル：数えるもの、見逃すもの、自作すべきとき</h1>
+    <p class="dek">Google アナリティクスは、ChatGPT、Gemini、Copilotなどからの訪問を専用のチャネルに分類するようになりました。これでAIトラフィックの問題の一部は解決します。解決しない部分と、その穴を埋めるカスタムチャネルグループを解説します。</p>
+    <div class="a-meta"><b>ToucHigh リサーチチーム</b><span>公開日 <time datetime="2026-11-08T10:00:00+08:00">2026年11月8日</time></span><span>6分で読めます</span><span class="lang-badge">日本語</span></div>
+    <div class="a-langs">ほかの言語<a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="紫に光る吹き出し型のトンネルから荷物がコンベアに滑り出て、無地の灰色の箱に落ちていく。オレンジの追跡タグは床に外れて散らばり、そばでは虫眼鏡、リングチャート、棒グラフ、買い物袋が照合のために待機している。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="この記事が答える質問"><span class="qm">“</span><div><div class="eyebrow">この記事が答える質問</div><p class="q">GA4のレポートに「AI Assistant」チャネルが表示されるようになりました。GEOの取り組みがもたらすトラフィックの測定はこれに任せてよいのでしょうか？それとも独自の設定がまだ必要ですか？</p><p class="ans"><b>短い答え</b>使いましょう。ただし、それですべてがわかるとは考えないでください。Googleのドキュメントによると、AI AssistantチャネルはChatGPT、Gemini、Deepseek、Copilot、Grokなどのソースからの訪問を対象とし、GoogleのAI OverviewsとAI Modeは除外されます。また、リファラーなしで届きDirectに入る訪問は見えません。自社のプロパティに実際にどのアシスタントが現れているかを確認し、Referralに入っているものがあればカスタムチャネルグループを作成し、GA4をSearch Consoleや引用の追跡と組み合わせましょう。</p></div></section>
+      <section class="kt takeaways"><h2>要点</h2><ul><li>GA4のデフォルトチャネルグループにAI Assistantが含まれるようになりました。ChatGPT、Gemini、Deepseek、Copilot、Grokなどのソースからの訪問で、リファラーがGoogleのリストに一致するとメディアが「ai-assistant」に設定されます。</li><li>このチャネルはGoogleのAI OverviewsとAI Modeを除外しています。Googleはそれらを、Search Consoleのウェブ検索データ全体に含めてカウントしています。</li><li>リファラーもタグもなく届いた訪問はDirectとして記録されるため、どんなチャネルルールでも取り戻せません。</li><li>デフォルトチャネルグループは編集できませんが、カスタムチャネルグループは編集でき、さかのぼって適用されます。標準プロパティでは、それぞれ最大50チャネルのカスタムグループを2つ作成できます。</li><li>GoogleのAIアシスタント用の正規表現の例は範囲が広いため、ドメインを明示的に列挙すると無関係なソースを拾わずに済みます。</li></ul></section>
+      <div class="prose"><p>2年間、Google アナリティクス 4でAIトラフィックを測るための定番のアドバイスは同じでした。ChatGPTやPerplexityからの訪問はReferralに埋もれているので、独自のチャネルグループを作ること。その後GoogleはGA4のデフォルトチャネルグループに<strong>AI Assistant</strong>チャネルを追加しました。良いニュースですが、これで問いが終わるわけではなく、問いが変わるだけです。新しいチャネルが何を数え、何を除外しているのか、そして独自のグループ分けがまだ手間に見合うのはどんなときかを知る必要があります。</p>
+
+<h2 id="s1">GA4のAI Assistantチャネルは何を数えるのか？</h2>
+
+<p>Googleのデフォルトチャネルグループのドキュメントは、AI Assistantを、ユーザーがChatGPT、Gemini、Deepseek、Copilot、Grokなどのソースから訪れるチャネルと説明しています。その背後にあるルールは、リファラーがGoogleの管理するAIアシスタントのリストに一致したとき、メディアを「ai-assistant」、キャンペーンを「(ai-assistant)」に設定するというものです。そのメディアのセッションは、トラフィック獲得レポートのAI Assistantの行に入ります。</p>
+
+<p>ここから2つのことが言えます。第一に、それはGoogleのリストであって御社のリストではありません。ドキュメントが挙げているのは例であり、すべてのアシスタントではありません。第二に、GA4ではデフォルトチャネルグループを編集できないため、バイヤーが使うアシスタントが認識されていなくても、デフォルトのチャネルに追加することはできません。カスタムチャネルグループが必要です。</p>
+
+<h2 id="s2">AI Assistantチャネルは何を見逃すのか？</h2>
+
+<div class="tw"><table>
+<thead><tr><th>トラフィック</th><th>GA4での分類先</th><th>代わりに確認する方法</th></tr></thead>
+<tbody>
+<tr><td>GoogleのAI OverviewsとAI Mode</td><td>Googleの定義によりAI Assistantから除外</td><td>Search Console：Googleによると、検索パフォーマンスレポートの検索タイプ「ウェブ」に表示される</td></tr>
+<tr><td>リファラーもタグもないアシスタントからの訪問</td><td>Direct</td><td>深い階層のページへのDirectトラフィック、指名検索、購入後アンケート</td></tr>
+<tr><td>Googleのリストにないアシスタント</td><td>通常はReferral</td><td>独自の正規表現を使ったカスタムチャネルグループ</td></tr>
+<tr><td>回答で御社の名前を見て、後で戻ってきた人</td><td>Direct、Organic Search、または戻ってきた経路</td><td>引用の追跡と指名検索の推移</td></tr>
+</tbody>
+</table></div>
+
+<p>最も重要なのは2行目です。アクセス解析ツールは、トラッキングパラメータと参照元URLを見て、訪問がどこから来たかを判断します。AIアプリがそのどちらも渡さずにリンクを開くと、訪問はDirectとして記録されます。以前の記事<a href="/blog/en/chatgpt-utm-ai-referral-measurement/">ChatGPTのリンクでUTMタグが失われる問題</a>で、実際にどう見えるかを解説しています。GA4に届かなかった情報は、どんなチャネルルールでも取り戻せません。</p>
+
+<h2 id="s3">自社のプロパティが実際に何を記録しているかはどう確認するのか？</h2>
+
+<ol>
+<li><strong>［レポート］→［集客］→［トラフィック獲得］を開き</strong>、メインのディメンションを「セッションのデフォルト チャネル グループ」に設定します。AI Assistantの行とその推移を確認します。</li>
+<li><strong>ディメンションを「セッションの参照元 / メディア」に切り替え</strong>、「ai-assistant」でフィルタして、Googleがどのアシスタントを分類しているかを確認します。</li>
+<li>perplexity.aiやclaude.aiなど、<strong>既知のAIドメインでReferralをフィルタ</strong>します。AI関連でまだReferralに残っているものが、御社の抜け漏れです。</li>
+<li><strong>ランディングページを比較する。</strong>AIからの訪問は、ホームページではなく、製品、生産能力、ブログのページなど深い階層のページに着地する傾向があります。</li>
+</ol>
+
+<h2 id="s4">カスタムのAIチャネルグループはいつ作るべきか？</h2>
+
+<p>バイヤーが使うアシスタントがReferralに入っている場合、アシスタントごとに行を分けたい場合、Googleがリストを更新しても変わらない定義を1つ持ちたい場合に作りましょう。Googleのカスタムチャネルグループのドキュメントが手順を説明しています。［管理］の［データの表示］で［チャネルグループ］を開き（編集者以上の権限が必要）、グループを作成し、チャネルを追加して条件を設定します。カスタムグループはレポートにさかのぼって適用されます。標準プロパティでは、定義済みのグループに加えてカスタムグループを2つ作成でき、それぞれ最大50チャネルを持てます。</p>
+
+<p>Googleは「AIアシスタント」の例まで公開しています。「正規表現に一致」の条件を持つチャネルで、AIのソースが先に割り当てられるようReferralより上に配置します。そのサンプルの正規表現は意図的に範囲を広くしてあります。<code>^.*ai</code>で始まっており、メールプロバイダーのドメインなど、「ai」という文字を含むあらゆるソースに一致します。より厳密なパターンでは、実際に目にしているドメインを列挙します。例：</p>
+
+<p><code>.*(chatgpt\.com|openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com).*</code></p>
+
+<p>これを「参照元」に適用し、チャネルをReferralより上に置きます。詳細を見たい場合は、1つのグループではなくアシスタントごとにチャネルを追加します。新しいアシスタントがトラフィックを送り始めたらリストを更新しましょう。Google自身も、アシスタントのリストが変わったら正規表現を更新するよう注記しています。</p>
+
+<h2 id="s5">カスタムグループをメインのチャネルグループにすべきか？</h2>
+
+<p>GA4では、任意のカスタムチャネルグループをプロパティのメインのチャネルグループとして選ぶことができ、その時点以降、メインのチャネルグループのディメンションにそれが反映されます。定義が安定したら便利ですが、カスタムグループそのものと同じようにはさかのぼって適用されません。ほとんどの小規模チームは、デフォルトをメインのまま残し、カスタムグループを補助的なビューとして追加すれば十分です。</p>
+
+<h2 id="s6">AIチャネルの測定の中で、GA4をどう位置付けるべきか？</h2>
+
+<p>GA4は3つのレンズのうちの1つとして扱いましょう。GA4は帰属できるクリックについて教えてくれます。Search ConsoleはAI OverviewsとAI Modeを含むGoogle検索について教えてくれます。毎月の引用チェックは、アシスタントがそもそも御社に言及しているかを教えてくれます。3つがそろって動けばGEOが効いていると示せますし、1つだけが動けばどこを見るべきかがわかります。</p></div>
+      <aside class="insight" aria-label="インサイト"><div class="eyebrow">インサイト</div><blockquote>チャネルレポートが示すのは、ラベルを付けられるクリックであり、見えない影響ではない。</blockquote><p>グッドハートの法則は、目標にされた指標はうまく測れなくなると警告しています。チームがAI Assistantの行だけを追いかけると、DirectやOrganic Searchの指名検索を通じてバイヤーを送り込むAI回答を過小評価してしまいます。このチャネルは、3つのシグナルのうちの1つとして扱いましょう。</p></aside>
+      <section class="prop" aria-label="ToucHighにできること">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHighにできること</h2></div>
+        <div class="pb prose"><p>GA4はクリックを示し、ToucHighのGEO Autopilotは残りの全体像をカバーします。</p><ul><li>ChatGPT、Perplexity、Google AI、Geminiのどこで見えていないかを確認します。</li><li>バイヤーが尋ねる質問に合わせた修正とGEO記事を作成・公開します。</li><li>トラッキングパラメータに左右されないシグナル、AI引用シェアを継続的に追跡します。</li></ul><p>30分の戦略相談を予約し、トラフィック獲得レポートのスクリーンショットをお持ちください。ライブのAI可視性チェックと併せて一緒に読み解きます。</p><p class="uc">工場・B2Bサプライヤーの方へ：ToucHighの<a href="/ja/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T64'})}catch(e){}">AI検索でのサプライヤー可視性</a>をご覧ください。 可視性を商談につなげたい場合は、戦略ファーストのアウトバウンドサービス<a href="/ja/pro/" onclick="try{gtag('event','pro_click',{location:'article_T64'})}catch(e){}">ToucHigh PRO</a>をご覧ください。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T64')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T64'})}catch(e){}">ToucHighにログイン</a></div>
+      </section>
+      <section class="faq" aria-label="よくある質問"><h2>よくある質問</h2><details open><summary>AI AssistantチャネルにGoogleのAI Overviewsは含まれますか？</summary><p>いいえ。Googleの定義では、AI OverviewsとAI ModeはAI Assistantチャネルから除外されています。Googleはそれらを、他の検索と一緒にSearch Consoleの検索パフォーマンスレポートの検索タイプ「ウェブ」で報告しています。</p></details><details><summary>なぜChatGPTのトラフィックが今もDirectとして表示されるのですか？</summary><p>リファラーもトラッキングパラメータもなく訪問が届くと、GA4には分類の手がかりがないため、Directとして記録します。深い階層のページへのダイレクトトラフィックを注視し、バイヤーにどうやって御社を見つけたかを尋ねて、この割合を推定しましょう。</p></details><details><summary>カスタムチャネルグループを作ると、過去のデータは変わりますか？</summary><p>カスタムチャネルグループはレポートにさかのぼって適用されるので、過去のデータを新しいグループ分けで見ることができます。プロパティのメインのチャネルグループを変更した場合は、その時点以降のレポートにのみ影響します。</p></details><details><summary>カスタムチャネルグループはいくつ作成できますか？</summary><p>Googleによると、定義済みのグループに加えて、標準プロパティでは2つ、アナリティクス 360のプロパティでは5つのカスタムグループを作成でき、それぞれ最大50チャネルを持てます。</p></details></section>
+      <section class="srcs"><h2>参考資料</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/1034324" rel="noopener" target="_blank">About regular expressions (regex)</a> — Google Analytics Help</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>この記事を書いた理由</b>この記事を書いたのは、AIチャネルグループを手作業で作っていたチームが、突然新しいAI Assistantの行を目にして、どちらの数字を信じればよいかわからなくなっていたからです。答えは両方です。Search Consoleと引用の追跡と併せて読みましょう。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="このページの内容"><h4>このページの内容</h4><a href="#s1">GA4のAI Assistantチャネルは何を数えるのか？</a><a href="#s2">AI Assistantチャネルは何を見逃すのか？</a><a href="#s3">自社のプロパティが実際に何を記録しているかはどう確認するのか？</a><a href="#s4">カスタムのAIチャネルグループはいつ作るべきか？</a><a href="#s5">カスタムグループをメインのチャネルグループにすべきか？</a><a href="#s6">AIチャネルの測定の中で、GA4をどう位置付けるべきか？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>米国のAI検索で、どこが見えていないかを確認</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">相談を予約</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">ログイン</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>関連記事</h2>
+  <div class="grid"><a class="card" href="/blog/en/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now</h3><p>ChatGPT appears to have stopped adding UTM tags to its outbound links, so AI-driven visits are blending into direct traffic. It&#x27;s time for a new way to measure your SEO and GEO returns.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a><a class="card" href="/blog/ja/search-console-ai-overviews-ai-mode-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="検索バーがオレンジのビー玉を紫に光るAI回答のじょうごに注ぎ込み、小さなWebサイトの店先に届くのはわずか数個だけ。その横では、白紙のページを高く積み上げたぐらつく山から、ビー玉が1つしか出てこない。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ja"><div class="eyebrow">効果測定</div><h3>Google Search ConsoleでAI OverviewsとAI Modeのトラフィックを読む方法</h3><p>「AI Overviews」専用のタブはありません。GoogleはAI機能を既存の検索パフォーマンスレポートに含めています。それでも輸出企業がAI回答による検索トラフィックへの影響を読み取る方法を解説します。</p><div class="meta"><span class="lg">日本語</span><span>6分で読めます</span></div></div></a><a class="card" href="/blog/ja/ai-attribution-post-purchase-survey/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="白い棚の上の3つのガラス瓶にオレンジのビー玉が異なる高さまでたまっている。瓶には目、ハートとしおり、ショッピングカート付きのカーソルの印があり、それぞれに過去の平均を示す紺色の線が引かれている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ja"><div class="eyebrow">効果測定</div><h3>「どこで当社を知りましたか？」アンケートでChatGPTとAIアシスタント経由の売上を数える</h3><p>AIが送ってくれるバイヤーの中には、AIからのクリックとして一度も現れない人がいます。チェックアウト時や問い合わせフォームでの1問だけのアンケートは、そうした人を把握する最も安価な方法です。質問の書き方、設置場所、回答の読み方を解説します。</p><div class="meta"><span class="lg">日本語</span><span>6分で読めます</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ja/">← ブログに戻る</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>米国のAI検索で、どこが見えていないかを確認</h2>
+  <p>30分の無料相談を予約していただければ、ストアのAI可視性をその場で診断します。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHighにログイン</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">中小企業と越境EC事業者のための、AI検索可視性・SNS・広告のオートパイロット。</p></div>
+      <div><h4>ToucHigh</h4><a href="/ja/">ホーム</a><a href="/ja/#geo">GEO Autopilot</a><a href="/ja/#social">Social Autopilot</a><a href="/ja/pro/">ToucHigh PRO</a></div>
+      <div><h4>ブログ</h4><a href="/blog/ja/">ブログ</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>ログイン</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">相談を予約</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

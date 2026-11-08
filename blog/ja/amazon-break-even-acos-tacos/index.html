@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon出品者のための損益分岐点ACoS、TACoS、ROAS | ToucHigh</title>
+<meta name="description" content="実際の利益率から損益分岐点ACoSを計算する方法、ACoSとROASの関係、TACoSでわかること、利益・新商品立ち上げ・在庫処分ごとの目標ACoSの決め方。">
+<link rel="canonical" href="https://touchigh.ai/blog/ja/amazon-break-even-acos-tacos/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="損益分岐点 ACoS, ACoS 計算方法, ACoS ROAS 違い, TACoS Amazon, 目標ACoS, Amazon広告 利益率">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ja/amazon-break-even-acos-tacos/">
+<meta property="og:title" content="損益分岐点ACoS、TACoS、ROAS：すべての出品者に必要なAmazon広告の計算">
+<meta property="og:description" content="実際の利益率から損益分岐点ACoSを計算する方法、ACoSとROASの関係、TACoSでわかること、利益・新商品立ち上げ・在庫処分ごとの目標ACoSの決め方。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t68-ja.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="損益分岐点ACoS、TACoS、ROAS：すべての出品者に必要なAmazon広告の計算">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="article:published_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:section" content="中小企業の広告">
+<meta property="article:tag" content="ACoS">
+<meta property="article:tag" content="TACoS">
+<meta property="article:tag" content="ROAS">
+<meta property="article:tag" content="Amazon PPC">
+<meta property="article:tag" content="利益率">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="損益分岐点ACoS、TACoS、ROAS：すべての出品者に必要なAmazon広告の計算">
+<meta name="twitter:description" content="実際の利益率から損益分岐点ACoSを計算する方法、ACoSとROASの関係、TACoSでわかること、利益・新商品立ち上げ・在庫処分ごとの目標ACoSの決め方。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t68-ja.jpg">
+<meta name="twitter:image:alt" content="損益分岐点ACoS、TACoS、ROAS：すべての出品者に必要なAmazon広告の計算">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ja/amazon-break-even-acos-tacos/#article","url":"https://touchigh.ai/blog/ja/amazon-break-even-acos-tacos/","mainEntityOfPage":"https://touchigh.ai/blog/ja/amazon-break-even-acos-tacos/","headline":"損益分岐点ACoS、TACoS、ROAS：すべての出品者に必要なAmazon広告の計算","alternativeHeadline":"Amazon出品者のための損益分岐点ACoS、TACoS、ROAS","description":"実際の利益率から損益分岐点ACoSを計算する方法、ACoSとROASの関係、TACoSでわかること、利益・新商品立ち上げ・在庫処分ごとの目標ACoSの決め方。","abstract":"それは利益率次第です。AmazonはACoSを広告費÷広告売上と定義し、利益を確保するにはACoSを利益率より低く保つ必要があるとしています。広告費を引く前の利益率（価格から製品原価、Amazonの手数料、配送料、関税、想定返品を差し引いたもの）を計算しましょう。その割合が損益分岐点ACoSです。それが35%なら、ACoS 28%は帰属売上ベースで利益が出ています。22%なら、広告経由の販売1件ごとに損をしています。そのうえでTACoS（総広告費÷総売上）を追跡し、広告がオーガニックの売上を伸ばしているかを確認します。","image":["https://touchigh.ai/assets/blog/og/t68-ja.jpg","https://touchigh.ai/assets/blog/hero/t40.jpg"],"datePublished":"2026-11-08T11:20:00+08:00","dateModified":"2026-11-08T11:20:00+08:00","inLanguage":"ja","author":{"@type":"Organization","name":"ToucHigh リサーチチーム","url":"https://touchigh.ai/blog/ja/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"中小企業の広告","keywords":"損益分岐点 ACoS, ACoS 計算方法, ACoS ROAS 違い, TACoS Amazon, 目標ACoS, Amazon広告 利益率","wordCount":2630,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ja/#blog","name":"ToucHighブログ"},"about":[{"@type":"Thing","name":"ACoS"},{"@type":"Thing","name":"TACoS"},{"@type":"Thing","name":"ROAS"},{"@type":"Thing","name":"Amazon PPC"},{"@type":"Thing","name":"利益率"}],"citation":[{"@type":"CreativeWork","name":"What is advertising cost of sales (ACOS)?","url":"https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales","publisher":{"@type":"Organization","name":"Amazon Ads"}},{"@type":"CreativeWork","name":"Sponsored Products","url":"https://advertising.amazon.com/solutions/products/sponsored-products","publisher":{"@type":"Organization","name":"Amazon Ads"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/amazon-break-even-acos-tacos/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"損益分岐点ACoSは利益率と同じですか？","acceptedAnswer":{"@type":"Answer","text":"広告費を引く前の利益率、つまり製品原価、Amazonの手数料、フルフィルメント、配送、関税、返品を差し引いた後に残る割合と等しくなります。そのACoSでは、広告経由の販売の利益はゼロです。"}},{"@type":"Question","name":"なぜACoSは問題ないのに、口座残高は問題なのでしょうか？","acceptedAnswer":{"@type":"Answer","text":"ACoSは帰属した広告売上と広告費しか数えません。手数料、運賃、返品が増えると、損益分岐点の前提だった利益率が消えてしまうことがあり、TACoSを見ると広告がオーガニックの売上を置き換えていることがわかる場合もあります。利益率を再計算し、TACoSを確認しましょう。"}},{"@type":"Question","name":"TACoSはどこで確認できますか？","acceptedAnswer":{"@type":"Answer","text":"自分で計算します。セラーレポートから、ある期間の総広告費を、同じ期間のオーガニックの注文を含む総売上で割ります。毎月追跡しましょう。"}},{"@type":"Question","name":"目標ACoSの設定はAIの広告ツールに任せるべきですか？","acceptedAnswer":{"@type":"Answer","text":"目標に向けた最適化は任せて構いませんが、目標そのものは利益率と目的から自分で設定しましょう。ツールが見ているのは広告データで、1個あたりの全コストを見ているのは御社です。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ja/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://touchigh.ai/blog/ja/"},{"@type":"ListItem","position":3,"name":"損益分岐点ACoS、TACoS、ROAS：すべての出品者に必要なAmazon広告の計算","item":"https://touchigh.ai/blog/ja/amazon-break-even-acos-tacos/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ja/">ホーム</a>
+      <a href="/ja/#products">製品</a>
+      <a href="/ja/#faq">よくある質問</a>
+      <a href="/ja/pro/">ToucHigh PRO</a>
+      <a href="/blog/ja/" class="on">ブログ</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="言語: 日本語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">日本語</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="言語" hidden><li><a href="/blog/amazon-break-even-acos-tacos/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/amazon-break-even-acos-tacos/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/amazon-break-even-acos-tacos/" hreflang="ja" lang="ja" data-short="日本語" aria-current="page">日本語</a></li><li><a href="/blog/es/amazon-break-even-acos-tacos/" hreflang="es" lang="es" data-short="ES">Español</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">ログイン</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">相談を予約</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ja/">ホーム</a><span>/</span><a href="/blog/ja/">ブログ</a><span>/</span><span>中小企業の広告</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">中小企業の広告</div>
+    <h1>損益分岐点ACoS、TACoS、ROAS：すべての出品者に必要なAmazon広告の計算</h1>
+    <p class="dek">「良いACoSとは？」に万能の答えはなく、Amazon自身もそう言っています。しかし損益分岐点ACoSには正確な答えがあり、すべての入札、予算、AI広告エージェントはこの数字を基準に評価されるべきです。</p>
+    <div class="a-meta"><b>ToucHigh リサーチチーム</b><span>公開日 <time datetime="2026-11-08T11:20:00+08:00">2026年11月8日</time></span><span>6分で読めます</span><span class="lang-badge">日本語</span></div>
+    <div class="a-langs">ほかの言語<a href="/blog/amazon-break-even-acos-tacos/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/amazon-break-even-acos-tacos/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/es/amazon-break-even-acos-tacos/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp 768w, /assets/blog/hero/t40-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t40.jpg" alt="運転席から見た視点。店主の両手がハンドルに置かれ、その前のダッシュボードには、オレンジの縁取りのメーターがちょうど3つと、小さな警告灯が1列に並んでいる。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="この記事が答える質問"><span class="qm">“</span><div><div class="eyebrow">この記事が答える質問</div><p class="q">当社のAmazon広告のACoSは28%です。これは良いのか悪いのか、また実際にどこまでのACoSなら許容できるのか、どうすればわかりますか？</p><p class="ans"><b>短い答え</b>それは利益率次第です。AmazonはACoSを広告費÷広告売上と定義し、利益を確保するにはACoSを利益率より低く保つ必要があるとしています。広告費を引く前の利益率（価格から製品原価、Amazonの手数料、配送料、関税、想定返品を差し引いたもの）を計算しましょう。その割合が損益分岐点ACoSです。それが35%なら、ACoS 28%は帰属売上ベースで利益が出ています。22%なら、広告経由の販売1件ごとに損をしています。そのうえでTACoS（総広告費÷総売上）を追跡し、広告がオーガニックの売上を伸ばしているかを確認します。</p></div></section>
+      <section class="kt takeaways"><h2>要点</h2><ul><li>Amazonの計算式：ACoS＝広告費÷広告売上×100、ROAS＝広告売上÷広告費。一方はもう一方の逆数です。</li><li>Amazonのガイダンス：損益分岐点ACoSは利益率と結び付いており、利益を確保するにはACoSをそれより低く保つ必要があります。</li><li>広告費を引く前で、それ以外のすべてのコスト（製品、Amazonの手数料、フルフィルメント、配送、関税、返品）を引いた後の利益率を使います。</li><li>TACoS（総広告費÷総売上）はAmazonのACoSガイドには載っていません。広告がオーガニックの売上を押し上げているかを見るため、出品者が自分で計算します。</li><li>利益、新商品の立ち上げ、在庫処分といった目標ごとに、異なる目標ACoSを設定します。Amazon自身も、ACoSだけに注目しすぎないよう注意を促しています。</li></ul></section>
+      <div class="prose"><p>ACoSは、Amazon出品者が最もよく口にし、最も理解していない数字です。代理店はそれを報告し、AI広告ツールはそれに向けて最適化し、出品者は何が良い数字かで議論します。最後の問いに、Amazon自身のガイドは率直に答えています。良いACoSの決定的な数字はなく、業種、規模、目標によって変わる、と。正確に計算できるのは、広告が利益を生まなくなるACoSです。他のすべての判断はそこから始めるべきです。</p>
+
+<h2 id="s1">ACoSとROASはどう関係しているのか？</h2>
+
+<p>Amazonは広告売上高費用比率（ACoS）を、広告費を広告売上で割り、パーセントで表したものと定義しています。例として、50ドルを使って広告経由の売上が100ドルなら、ACoSは50%です。広告費用対効果（ROAS）はその逆数で、広告売上を広告費で割ったものなので、同じキャンペーンのROASは2になります。</p>
+
+<div class="tw"><table>
+<thead><tr><th>ACoS</th><th>対応するROAS</th><th>意味</th></tr></thead>
+<tbody>
+<tr><td>20%</td><td>5.0</td><td>広告費1ドルが、5ドルの帰属売上を生む</td></tr>
+<tr><td>25%</td><td>4.0</td><td>広告費1ドルが4ドルを生む</td></tr>
+<tr><td>33%</td><td>3.0</td><td>広告費1ドルが3ドルを生む</td></tr>
+<tr><td>50%</td><td>2.0</td><td>広告費1ドルが2ドルを生む</td></tr>
+</tbody>
+</table></div>
+
+<p>Amazonのレポートや多くのクロスチャネルツールはROASを報告し、出品者のスプレッドシートは通常ACoSを使います。どちらも同じ情報を表しています。判断にはどちらか一方を使い、比較するときに換算しましょう。</p>
+
+<h2 id="s2">損益分岐点ACoSはどう計算するのか？</h2>
+
+<p>Amazonのガイドは明確です。損益分岐点ACoSは利益率に直接ひも付いており、利益を維持するにはACoSを利益率より低くする必要があります。手間がかかるのは、その利益率を正直に計算することです。広告費を引く前、ただしそれ以外はすべて引いた後の数字です。</p>
+
+<div class="tw"><table>
+<thead><tr><th>項目（例、1個あたり）</th><th>金額</th></tr></thead>
+<tbody>
+<tr><td>販売価格</td><td>$40.00</td></tr>
+<tr><td>製品原価（関税と運賃を含む到着原価）</td><td>−$12.00</td></tr>
+<tr><td>Amazon販売手数料</td><td>−$6.00</td></tr>
+<tr><td>フルフィルメント手数料</td><td>−$6.50</td></tr>
+<tr><td>返品とその他の引当</td><td>−$1.50</td></tr>
+<tr><td><strong>広告費を引く前の利益</strong></td><td><strong>$14.00＝価格の35%</strong></td></tr>
+</tbody>
+</table></div>
+
+<p>この例では、損益分岐点ACoSは35%、損益分岐点ROASは1÷0.35で約2.9です。自社の数字を使ってください。手数料はカテゴリーとサイズによって異なり、越境EC事業者の到着原価は運賃と関税によって変動します。どれかが変わるたびに再計算しましょう。関税の変更前に利益が出ていたキャンペーンが、ACoSは変わらないまま、変更後には赤字になっていることもあります。</p>
+
+<h2 id="s3">TACoSで何がわかるのか？</h2>
+
+<p>ACoSは、Amazonが広告に帰属させた売上しか見ていません。広告がビジネスの他の部分に役立っているかどうかはわかりません。そのためにあるのがTACoS（総広告売上高費用比率）です。総広告費を、オーガニックの注文を含む総売上で割ったものです。AmazonのACoSガイドに載っている指標ではなく、出品者がSeller Centralの広告費と総売上から自分で計算します。</p>
+
+<ul>
+<li><strong>売上が伸びる一方でTACoSが下がっている：</strong>オーガニックの売上が広告費より速く伸びています。広告がランキングとリピート購入に貢献している可能性が高いです。</li>
+<li><strong>総売上が横ばいでTACoSが上がっている：</strong>広告がなくても得られたかもしれない売上にお金を払っているか、広告がオーガニックの売上を上乗せせずに置き換えています。</li>
+<li><strong>TACoSは安定、ACoSは改善：</strong>広告内部で効率が上がっています。総売上が縮小していないか確認しましょう。</li>
+</ul>
+
+<h2 id="s4">目標ACoSはどう設定すべきか？</h2>
+
+<p>Amazonは、損益分岐点から出発し、ブランドとキャンペーンごとに何が最も重要かを決めるよう勧めています。実際には、目標ごとに設定します。</p>
+
+<div class="tw"><table>
+<thead><tr><th>目標</th><th>目標ACoS</th><th>併せて確認する指標</th></tr></thead>
+<tbody>
+<tr><td>定番商品での利益</td><td>損益分岐点を明確に下回る水準</td><td>広告費を引いた後の1個あたり純利益</td></tr>
+<tr><td>新商品の立ち上げ</td><td>期間を決めて、損益分岐点と同じか一時的に上回る水準</td><td>レビュー、オーガニック順位、TACoSの推移</td></tr>
+<tr><td>古い在庫の処分</td><td>値引きで許容する損失額まで</td><td>販売個数、回避できた保管コスト</td></tr>
+</tbody>
+</table></div>
+
+<p>キャンペーン開始前に目標とその期限を書き留め、入札を管理する人やツールにも同じ数字を渡しましょう。損益分岐点の線を知らずに「ROASに向けて」最適化するAI広告エージェントは、とても効率よく損を出しかねません。</p>
+
+<h2 id="s5">ACoSでわからないことは？</h2>
+
+<p>Amazonのガイドには「ACOSだけに注目しすぎるべきでない理由」という節があり、インプレッション、コンバージョン率、クリック率、投資収益率も併せて見るよう勧めています。ACoSは、新規顧客の長期的な価値、オーガニック順位への波及効果、倉庫に眠る在庫のコストを無視しています。損益分岐点ACoSは安全を守る下限として、TACoSは全体像を示す推移として、そして実際の利益を最終的な判断基準として使いましょう。</p></div>
+      <aside class="insight" aria-label="インサイト"><div class="eyebrow">インサイト</div><blockquote>良いACoSとは、自社の利益率を下回る数字のこと。それ以外は意見にすぎません。</blockquote><p>管理会計ではこれを貢献利益と呼びます。変動費を引いた後に各販売が貢献する金額です。損益分岐点ACoSは貢献利益を広告予算として表しただけのものであり、だからこそ業界平均ではなく、それが管理の基準にすべき正しい線なのです。</p></aside>
+      <section class="prop" aria-label="ToucHighにできること">
+        <div class="ph"><div class="eyebrow">Ads Autopilot · GEO Autopilot · Social Autopilot</div><h2>ToucHighにできること</h2></div>
+        <div class="pb prose"><p>自社の線がわかれば、ToucHighのAds Autopilotはそれに沿って運用できます。</p><ul><li>1つの戦略でAmazon、Meta、Googleの支出を運用し、ROASに合わせて自動調整します。</li><li>クリエイティブ疲労と予算の判断を担うので、疲弊した広告が知らないうちに利益を食いつぶすことはありません。</li><li>公開前にクリエイティブのコンセプトの予測パフォーマンスをスコアリングします。</li></ul><p>30分の戦略相談を予約し、利益率の表をお持ちください。カタログに合わせた計画を一緒に確認します。</p><p class="uc">Amazon出品者の方へ：出稿前にクリエイティブをスコアリングするToucHighの<a href="/ja/amazon-ads-autopilot/" onclick="try{gtag('event','landing_click',{location:'article_T68'})}catch(e){}">広告オートパイロット</a>をご覧ください。 可視性を商談につなげたい場合は、戦略ファーストのアウトバウンドサービス<a href="/ja/pro/" onclick="try{gtag('event','pro_click',{location:'article_T68'})}catch(e){}">ToucHigh PRO</a>をご覧ください。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T68')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T68'})}catch(e){}">ToucHighにログイン</a></div>
+      </section>
+      <section class="faq" aria-label="よくある質問"><h2>よくある質問</h2><details open><summary>損益分岐点ACoSは利益率と同じですか？</summary><p>広告費を引く前の利益率、つまり製品原価、Amazonの手数料、フルフィルメント、配送、関税、返品を差し引いた後に残る割合と等しくなります。そのACoSでは、広告経由の販売の利益はゼロです。</p></details><details><summary>なぜACoSは問題ないのに、口座残高は問題なのでしょうか？</summary><p>ACoSは帰属した広告売上と広告費しか数えません。手数料、運賃、返品が増えると、損益分岐点の前提だった利益率が消えてしまうことがあり、TACoSを見ると広告がオーガニックの売上を置き換えていることがわかる場合もあります。利益率を再計算し、TACoSを確認しましょう。</p></details><details><summary>TACoSはどこで確認できますか？</summary><p>自分で計算します。セラーレポートから、ある期間の総広告費を、同じ期間のオーガニックの注文を含む総売上で割ります。毎月追跡しましょう。</p></details><details><summary>目標ACoSの設定はAIの広告ツールに任せるべきですか？</summary><p>目標に向けた最適化は任せて構いませんが、目標そのものは利益率と目的から自分で設定しましょう。ツールが見ているのは広告データで、1個あたりの全コストを見ているのは御社です。</p></details></section>
+      <section class="srcs"><h2>参考資料</h2><ol><li><a href="https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales" rel="noopener" target="_blank">What is advertising cost of sales (ACOS)?</a> — Amazon Ads</li><li><a href="https://advertising.amazon.com/solutions/products/sponsored-products" rel="noopener" target="_blank">Sponsored Products</a> — Amazon Ads</li></ol></section>
+      <p class="note"><b>この記事を書いた理由</b>この記事を書いたのは、出品者が自社のコストと無関係な業界平均でACoSを判断していることが多いからです。Amazonのガイドも利益率に立ち返るよう示しており、私たちも同じ考えです。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="このページの内容"><h4>このページの内容</h4><a href="#s1">ACoSとROASはどう関係しているのか？</a><a href="#s2">損益分岐点ACoSはどう計算するのか？</a><a href="#s3">TACoSで何がわかるのか？</a><a href="#s4">目標ACoSはどう設定すべきか？</a><a href="#s5">ACoSでわからないことは？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>米国のAI検索で、どこが見えていないかを確認</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">相談を予約</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">ログイン</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>関連記事</h2>
+  <div class="grid"><a class="card" href="/blog/ja/amazon-sponsored-products-first-campaign/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t10-768.webp"><img src="/assets/blog/hero/t10.jpg" alt="実験台の上で、ピペットが小さな柵で囲まれたテスト予算からオレンジのコインを数枚、ビーカーの上の紫の縁取りの吹き出し型じょうごに落としている。その横では、コインでいっぱいの大きな瓶が封をされたまま置かれている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ja"><div class="eyebrow">中小企業の広告</div><h3>初めてのAmazon Sponsored Productsキャンペーン：オートかマニュアルか、入札と予算</h3><p>初めてのAmazon広告を始めるのに代理店は要りませんが、何が効いているかを教えてくれる構成は必要です。シンプルな2キャンペーン構成、入札の計算、4週間の計画を紹介します。</p><div class="meta"><span class="lg">日本語</span><span>7分で読めます</span></div></div></a><a class="card" href="/blog/en/amazon-ads-agent-sellers/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t20-768.webp"><img src="/assets/blog/hero/t20.jpg" alt="A friendly robot copilot works the buttons and sliders of a rounded cockpit while a human hand in the foreground holds a compass, an orange padlocked coin box and a key in front of a dashboard of abstract charts." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Ads for SMEs</div><h3>Amazon&#x27;s AI Ad Agent Is Here: What Sellers New to Ads Should Hand Over</h3><p>Amazon Ads Agent hands search, display and full-funnel ads to agentic AI. If you don&#x27;t know how to run ads, skip the all-or-nothing choice and prove it out with a four-week controlled test.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="Seen from the driver&#x27;s seat, a shop owner&#x27;s hands rest on a steering wheel in front of a dashboard with exactly three orange-rimmed gauges and a row of small warning lights." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>Digital Advertising KPIs for Small Business: The 3 Numbers That Matter</h3><p>No media buyer? Focus on cost per acquisition, return on ad spend and repeat or lead quality. Here&#x27;s how to set break-even targets and review them once a week.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ja/">← ブログに戻る</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>米国のAI検索で、どこが見えていないかを確認</h2>
+  <p>30分の無料相談を予約していただければ、ストアのAI可視性をその場で診断します。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHighにログイン</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">中小企業と越境EC事業者のための、AI検索可視性・SNS・広告のオートパイロット。</p></div>
+      <div><h4>ToucHigh</h4><a href="/ja/">ホーム</a><a href="/ja/#geo">GEO Autopilot</a><a href="/ja/#social">Social Autopilot</a><a href="/ja/pro/">ToucHigh PRO</a></div>
+      <div><h4>ブログ</h4><a href="/blog/ja/">ブログ</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>ログイン</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">相談を予約</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

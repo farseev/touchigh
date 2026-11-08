@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon検索用語レポート：除外キーワードの運用手順 | ToucHigh</title>
+<meta name="description" content="Sponsored Productsの検索用語レポートを使う週30分の手順。除外すべき語句、完全一致に移すべき語句、自社の数字から決める基準値。">
+<link rel="canonical" href="https://touchigh.ai/blog/ja/amazon-search-term-report-negative-keywords/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="Amazon 検索用語レポート, Amazon 除外キーワード, Amazon キーワード 刈り取り, Amazon 広告 無駄 削減, 除外 完全一致 フレーズ一致, スポンサープロダクト広告 最適化">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/amazon-search-term-report-negative-keywords/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/amazon-search-term-report-negative-keywords/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/amazon-search-term-report-negative-keywords/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/amazon-search-term-report-negative-keywords/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ja/amazon-search-term-report-negative-keywords/">
+<meta property="og:title" content="Amazon検索用語レポート：除外キーワードと刈り取りのための週次ルーティン">
+<meta property="og:description" content="Sponsored Productsの検索用語レポートを使う週30分の手順。除外すべき語句、完全一致に移すべき語句、自社の数字から決める基準値。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t69-ja.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Amazon検索用語レポート：除外キーワードと刈り取りのための週次ルーティン">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="article:published_time" content="2026-11-08T11:40:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T11:40:00+08:00">
+<meta property="article:section" content="中小企業の広告">
+<meta property="article:tag" content="Amazon検索用語レポート">
+<meta property="article:tag" content="除外キーワード">
+<meta property="article:tag" content="Amazon PPC">
+<meta property="article:tag" content="キーワードの刈り取り">
+<meta property="article:tag" content="ACoS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Amazon検索用語レポート：除外キーワードと刈り取りのための週次ルーティン">
+<meta name="twitter:description" content="Sponsored Productsの検索用語レポートを使う週30分の手順。除外すべき語句、完全一致に移すべき語句、自社の数字から決める基準値。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t69-ja.jpg">
+<meta name="twitter:image:alt" content="Amazon検索用語レポート：除外キーワードと刈り取りのための週次ルーティン">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ja/amazon-search-term-report-negative-keywords/#article","url":"https://touchigh.ai/blog/ja/amazon-search-term-report-negative-keywords/","mainEntityOfPage":"https://touchigh.ai/blog/ja/amazon-search-term-report-negative-keywords/","headline":"Amazon検索用語レポート：除外キーワードと刈り取りのための週次ルーティン","alternativeHeadline":"Amazon検索用語レポート：除外キーワードの運用手順","description":"Sponsored Productsの検索用語レポートを使う週30分の手順。除外すべき語句、完全一致に移すべき語句、自社の数字から決める基準値。","abstract":"検索用語レポートを毎週使いましょう。支出順に並べ替え、自社の数字から決めた3つのルールを適用します。無関係な語句や、注文が見込めるだけのクリックがあったのに注文ゼロの語句は除外する。損益分岐点ACoSを下回って繰り返し注文が入っている語句はマニュアルの完全一致キャンペーンに移す（刈り取り）。それ以外はデータがたまるまで触らない。Amazonでは、オート、キーワードターゲティング、商品ターゲティングのSponsored Productsキャンペーンに、キャンペーン単位または広告グループ単位で除外キーワードを追加できます。","image":["https://touchigh.ai/assets/blog/og/t69-ja.jpg","https://touchigh.ai/assets/blog/hero/t16.jpg"],"datePublished":"2026-11-08T11:40:00+08:00","dateModified":"2026-11-08T11:40:00+08:00","inLanguage":"ja","author":{"@type":"Organization","name":"ToucHigh リサーチチーム","url":"https://touchigh.ai/blog/ja/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"中小企業の広告","keywords":"Amazon 検索用語レポート, Amazon 除外キーワード, Amazon キーワード 刈り取り, Amazon 広告 無駄 削減, 除外 完全一致 フレーズ一致, スポンサープロダクト広告 最適化","wordCount":2787,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ja/#blog","name":"ToucHighブログ"},"about":[{"@type":"Thing","name":"Amazon検索用語レポート"},{"@type":"Thing","name":"除外キーワード"},{"@type":"Thing","name":"Amazon PPC"},{"@type":"Thing","name":"キーワードの刈り取り"},{"@type":"Thing","name":"ACoS"}],"citation":[{"@type":"CreativeWork","name":"What is keyword targeting?","url":"https://advertising.amazon.com/library/guides/keyword-targeting","publisher":{"@type":"Organization","name":"Amazon Ads"}},{"@type":"CreativeWork","name":"What is advertising cost of sales (ACOS)?","url":"https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales","publisher":{"@type":"Organization","name":"Amazon Ads"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"除外キーワードは完全一致とフレーズ一致のどちらを使うべきですか？","acceptedAnswer":{"@type":"Answer","text":"具体的な無駄な検索には、まず完全一致の除外を使いましょう。フレーズ一致の除外は、その語を含むすべての検索をブロックするため、販売していない素材など、どんな組み合わせでも無関係な語にだけ使います。"}},{"@type":"Question","name":"検索用語レポートはどのくらいの頻度で確認すべきですか？","acceptedAnswer":{"@type":"Answer","text":"稼働中のキャンペーンなら、直近14〜30日分のデータを使って週1回確認するのが良いリズムです。毎日確認しても、見えるのはほとんどノイズです。"}},{"@type":"Question","name":"除外キーワードはオートキャンペーンに悪影響を与えますか？","acceptedAnswer":{"@type":"Answer","text":"対象を絞り込みますが、それこそが目的です。Amazonは、除外キーワードが目標に合わないクエリへの過剰な支出を防ぐのに役立つと説明しています。ただし、非常に少ないデータで除外するのは避けましょう。"}},{"@type":"Question","name":"競合のブランド語句は除外すべきですか？","acceptedAnswer":{"@type":"Answer","text":"それは経営判断です。別のキャンペーンで競合語句を意図的にテストする出品者もいれば、除外する出品者もいます。それらのクリックが損益分岐点を下回るACoSでコンバージョンしているかで判断しましょう。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ja/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://touchigh.ai/blog/ja/"},{"@type":"ListItem","position":3,"name":"Amazon検索用語レポート：除外キーワードと刈り取りのための週次ルーティン","item":"https://touchigh.ai/blog/ja/amazon-search-term-report-negative-keywords/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ja/">ホーム</a>
+      <a href="/ja/#products">製品</a>
+      <a href="/ja/#faq">よくある質問</a>
+      <a href="/ja/pro/">ToucHigh PRO</a>
+      <a href="/blog/ja/" class="on">ブログ</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="言語: 日本語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">日本語</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="言語" hidden><li><a href="/blog/amazon-search-term-report-negative-keywords/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/amazon-search-term-report-negative-keywords/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/amazon-search-term-report-negative-keywords/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/amazon-search-term-report-negative-keywords/" hreflang="ja" lang="ja" data-short="日本語" aria-current="page">日本語</a></li><li><a href="/blog/es/amazon-search-term-report-negative-keywords/" hreflang="es" lang="es" data-short="ES">Español</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">ログイン</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">相談を予約</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ja/">ホーム</a><span>/</span><a href="/blog/ja/">ブログ</a><span>/</span><span>中小企業の広告</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">中小企業の広告</div>
+    <h1>Amazon検索用語レポート：除外キーワードと刈り取りのための週次ルーティン</h1>
+    <p class="dek">検索用語レポートは、買い物客が広告をクリックする前に実際に入力した語句をAmazonが示す場所です。3つのシンプルなルールで毎週読めば、入札を1つも変えずに無駄な支出の大半がなくなります。</p>
+    <div class="a-meta"><b>ToucHigh リサーチチーム</b><span>公開日 <time datetime="2026-11-08T11:40:00+08:00">2026年11月8日</time></span><span>6分で読めます</span><span class="lang-badge">日本語</span></div>
+    <div class="a-langs">ほかの言語<a href="/blog/amazon-search-term-report-negative-keywords/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/amazon-search-term-report-negative-keywords/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/amazon-search-term-report-negative-keywords/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/es/amazon-search-term-report-negative-keywords/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t16-768.webp 768w, /assets/blog/hero/t16-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t16.jpg" alt="手袋をした手が、オレンジの剪定ばさみで青灰色の葉の小さな鉢植えの木を剪定している。残った枝には大きなオレンジの実が3つと小さな包みが1つあり、切り落とされた小枝が下に散らばっている。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="この記事が答える質問"><span class="qm">“</span><div><div class="eyebrow">この記事が答える質問</div><p class="q">Amazonのオートキャンペーンが、当社の製品とまったく関係のない検索にお金を使っています。キャンペーンを止めずに、その無駄を見つけて止めるにはどうすればよいですか？</p><p class="ans"><b>短い答え</b>検索用語レポートを毎週使いましょう。支出順に並べ替え、自社の数字から決めた3つのルールを適用します。無関係な語句や、注文が見込めるだけのクリックがあったのに注文ゼロの語句は除外する。損益分岐点ACoSを下回って繰り返し注文が入っている語句はマニュアルの完全一致キャンペーンに移す（刈り取り）。それ以外はデータがたまるまで触らない。Amazonでは、オート、キーワードターゲティング、商品ターゲティングのSponsored Productsキャンペーンに、キャンペーン単位または広告グループ単位で除外キーワードを追加できます。</p></div></section>
+      <section class="kt takeaways"><h2>要点</h2><ul><li>Amazonのキーワードターゲティングガイドは、どのクエリが売上につながっているかを把握するため、検索用語レポートを定期的に確認するよう勧めています。</li><li>除外キーワードは、特定の検索で広告が表示されないようにします。Amazonでは、オート、商品ターゲティング、キーワードターゲティングのSponsored Productsキャンペーンで、キャンペーン単位または広告グループ単位で利用できます。</li><li>「注文なし」の基準はコンバージョン率から決めます。10%なら約10クリックに1件の注文が見込めるので、20クリック以上で注文ゼロはシグナルです。</li><li>勝ち語句を刈り取る：繰り返し注文があり、ACoSが損益分岐点を下回る語句は、入札を自分で管理できるマニュアルの完全一致に移します。</li><li>少ないデータで除外しないこと。1〜2クリックでは、どちらとも言えません。</li></ul></section>
+      <div class="prose"><p>オートキャンペーンとブロードキーワードは、思いもよらなかった買い物客をAmazonが見つける仕組みです。同時に、決して来てほしくない買い物客にお金を使ってしまう仕組みでもあります。その違いは、新しい出品者の多くが一度も開かない1つのレポート、検索用語レポートにあります。</p>
+
+<p>これは週30分のルーティンです。ツールも代理店も必要ありません。必要なのは損益分岐点ACoSと、少しの規律だけです。</p>
+
+<h2 id="s1">検索用語レポートには何が表示されるのか？</h2>
+
+<p>検索用語レポートは、Sponsored Productsキャンペーンの各ターゲティングについて、広告を表示させた顧客の検索語句を、インプレッション、クリック、支出、注文、売上とともに一覧にします。つまり、自分が選んだキーワードではなく、買い物客が実際に入力した語句がわかります。Amazonのキーワードターゲティングガイドはシンプルにこう述べています。検索用語レポートを定期的に確認してどのクエリが売上につながっているかを把握し、成果の高い語句のパターンを探し、戦略を調整すること。</p>
+
+<p>直近1週間だけでなく、直近14〜30日分のレポートをダウンロードし、検索数の少ない語句にもパターンが現れるようにします。</p>
+
+<h2 id="s2">どの検索語句を除外キーワードにすべきか？</h2>
+
+<p>Amazonは除外キーワードターゲティングを、目標に合わないクエリへの過剰な支出を防ぐため、特定の検索語句で広告が表示されないようにするものと説明しています。除外キーワードは、Sponsored Productsのオート、商品ターゲティング、キーワードターゲティングのキャンペーンに、キャンペーン単位または広告グループ単位で追加できます。</p>
+
+<div class="tw"><table>
+<thead><tr><th>語句の種類</th><th>例（シリコン製ベーキングマットの場合）</th><th>アクション</th></tr></thead>
+<tbody>
+<tr><td>違う製品</td><td>"silicone phone case"（シリコン製スマホケース）</td><td>クリック数に関係なく、すぐに除外</td></tr>
+<tr><td>違う意図</td><td>"how to clean baking mat"（ベーキングマットの洗い方）、"free"（無料）、"used"（中古）</td><td>すぐに除外</td></tr>
+<tr><td>関連あり、十分なクリック、注文なし</td><td>"baking sheet liner"（天板用シート）で25クリック、注文0件</td><td>商品ページがクエリに合っているか確認したうえで、除外するか入札を下げる</td></tr>
+<tr><td>競合のブランド名</td><td>"[ブランド] baking mat"</td><td>経営判断：別キャンペーンで意図的にテストするか、除外する</td></tr>
+<tr><td>関連あり、クリック少</td><td>クリックが1〜5回の語句</td><td>そのままにする</td></tr>
+</tbody>
+</table></div>
+
+<p>「十分なクリック」の線は、他のカテゴリーの経験則ではなく、自社のコンバージョン率から決めるべきです。約10クリックに1件が注文になるなら、20クリック以上で注文ゼロは、その語句では自社製品が売れないという妥当なシグナルです。コンバージョン率が5%なら、40クリック前後まで待ちましょう。</p>
+
+<h2 id="s3">どの検索語句を刈り取るべきか？</h2>
+
+<p>レポートのもう半分は宝の山です。注文をもたらす語句です。オートまたはブロードのキャンペーンの検索語句が、損益分岐点を下回るACoSで繰り返し注文を生んでいるなら、それをマニュアルキャンペーンに完全一致キーワードとして移します。そこでは入札を直接設定でき、Amazonのガイドが勧めるように、売れる語句の入札を上げつつ広告費用対効果を健全に保てます。</p>
+
+<p>多くの出品者は、そのうえで同じ語句を元のオートキャンペーンに除外キーワード（完全一致）として追加し、2つのキャンペーンが同じ検索で競合せず、データがきれいに保たれるようにしています。これはルールではなく構成上の選択です。大切なのは、実績のある各語句をどのキャンペーンで買うのかを把握しておくことです。</p>
+
+<h2 id="s4">週30分のルーティンはどのようなものか？</h2>
+
+<ol>
+<li>直近14〜30日分のSponsored Products検索用語レポートを<strong>ダウンロード</strong>します。</li>
+<li>支出の多い順に<strong>並べ替え</strong>ます。無駄の大半と勝ち語句の大半は、たいてい上位20行にあります。</li>
+<li>違う製品、違う意図といった<strong>明らかなものを除外</strong>します。</li>
+<li>注文のない関連語句に<strong>クリック数の基準を適用</strong>し、除外するか入札を下げます。</li>
+<li>損益分岐点CPCに基づく入札で、<strong>勝ち語句を刈り取って</strong>マニュアルの完全一致に移します。</li>
+<li>翌週に効果を確認できるよう、<strong>変更内容を日付とともに記録</strong>します。</li>
+</ol>
+
+<h2 id="s5">よくある間違いは？</h2>
+
+<ul>
+<li><strong>範囲を広げすぎた除外。</strong>"mat"のようなフレーズ一致の除外は、意図したよりはるかに多くの検索をブロックします。単語自体が本当に無関係な場合を除き、完全一致の除外を優先しましょう。</li>
+<li><strong>1〜2クリックでの除外。</strong>それはノイズであり、証拠ではありません。</li>
+<li><strong>商品ページの問題をキーワードのせいにする。</strong>関連語句にクリックがあるのに注文がない場合は、価格、画像、レビューがその買い物客の求めるものに合っているか確認しましょう。</li>
+<li><strong>一度だけで終わらせる。</strong>検索行動は季節や競合によって変わります。価値は毎週の習慣にあります。</li>
+</ul></div>
+      <aside class="insight" aria-label="インサイト"><div class="eyebrow">インサイト</div><blockquote>キーワードは意図したもの。検索用語レポートは、実際にお金を払ったもの。</blockquote><p>果樹園で剪定が効くのは、広告アカウントで効くのと同じ理由です。資源を奪うものを取り除けば、最も強い枝が育ちます。週次レポートは剪定のスケジュールであり、損益分岐点ACoSがどこを切るべきかを教えてくれます。</p></aside>
+      <section class="prop" aria-label="ToucHighにできること">
+        <div class="ph"><div class="eyebrow">Ads Autopilot · GEO Autopilot · Social Autopilot</div><h2>ToucHighにできること</h2></div>
+        <div class="pb prose"><p>週次のルーティンが滞りがちなら、ToucHighのAds Autopilotが日々の作業を担えます。</p><ul><li>1つの戦略でAmazon、Meta、Googleの支出を運用し、ROASに合わせて自動調整します。</li><li>クリエイティブ疲労と予算の判断を代わりに行います。</li><li>公開前にクリエイティブのコンセプトの予測パフォーマンスをスコアリングします。</li></ul><p>ストアのURLと競合1社を添えて30分の戦略相談を予約してください。カタログに合わせた計画を一緒に確認します。</p><p class="uc">Amazon出品者の方へ：出稿前にクリエイティブをスコアリングするToucHighの<a href="/ja/amazon-ads-autopilot/" onclick="try{gtag('event','landing_click',{location:'article_T69'})}catch(e){}">広告オートパイロット</a>をご覧ください。 可視性を商談につなげたい場合は、戦略ファーストのアウトバウンドサービス<a href="/ja/pro/" onclick="try{gtag('event','pro_click',{location:'article_T69'})}catch(e){}">ToucHigh PRO</a>をご覧ください。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T69')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T69'})}catch(e){}">ToucHighにログイン</a></div>
+      </section>
+      <section class="faq" aria-label="よくある質問"><h2>よくある質問</h2><details open><summary>除外キーワードは完全一致とフレーズ一致のどちらを使うべきですか？</summary><p>具体的な無駄な検索には、まず完全一致の除外を使いましょう。フレーズ一致の除外は、その語を含むすべての検索をブロックするため、販売していない素材など、どんな組み合わせでも無関係な語にだけ使います。</p></details><details><summary>検索用語レポートはどのくらいの頻度で確認すべきですか？</summary><p>稼働中のキャンペーンなら、直近14〜30日分のデータを使って週1回確認するのが良いリズムです。毎日確認しても、見えるのはほとんどノイズです。</p></details><details><summary>除外キーワードはオートキャンペーンに悪影響を与えますか？</summary><p>対象を絞り込みますが、それこそが目的です。Amazonは、除外キーワードが目標に合わないクエリへの過剰な支出を防ぐのに役立つと説明しています。ただし、非常に少ないデータで除外するのは避けましょう。</p></details><details><summary>競合のブランド語句は除外すべきですか？</summary><p>それは経営判断です。別のキャンペーンで競合語句を意図的にテストする出品者もいれば、除外する出品者もいます。それらのクリックが損益分岐点を下回るACoSでコンバージョンしているかで判断しましょう。</p></details></section>
+      <section class="srcs"><h2>参考資料</h2><ol><li><a href="https://advertising.amazon.com/library/guides/keyword-targeting" rel="noopener" target="_blank">What is keyword targeting?</a> — Amazon Ads</li><li><a href="https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales" rel="noopener" target="_blank">What is advertising cost of sales (ACOS)?</a> — Amazon Ads</li></ol></section>
+      <p class="note"><b>この記事を書いた理由</b>この記事を書いたのは、私たちが最もよく目にするAmazon広告の問題が、入札や予算ではないからです。誰も見たことのない検索への支出です。1つのレポートを毎週読むだけで、その大半は解決します。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="このページの内容"><h4>このページの内容</h4><a href="#s1">検索用語レポートには何が表示されるのか？</a><a href="#s2">どの検索語句を除外キーワードにすべきか？</a><a href="#s3">どの検索語句を刈り取るべきか？</a><a href="#s4">週30分のルーティンはどのようなものか？</a><a href="#s5">よくある間違いは？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>米国のAI検索で、どこが見えていないかを確認</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">相談を予約</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">ログイン</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>関連記事</h2>
+  <div class="grid"><a class="card" href="/blog/ja/amazon-sponsored-products-first-campaign/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t10-768.webp"><img src="/assets/blog/hero/t10.jpg" alt="実験台の上で、ピペットが小さな柵で囲まれたテスト予算からオレンジのコインを数枚、ビーカーの上の紫の縁取りの吹き出し型じょうごに落としている。その横では、コインでいっぱいの大きな瓶が封をされたまま置かれている。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ja"><div class="eyebrow">中小企業の広告</div><h3>初めてのAmazon Sponsored Productsキャンペーン：オートかマニュアルか、入札と予算</h3><p>初めてのAmazon広告を始めるのに代理店は要りませんが、何が効いているかを教えてくれる構成は必要です。シンプルな2キャンペーン構成、入札の計算、4週間の計画を紹介します。</p><div class="meta"><span class="lg">日本語</span><span>7分で読めます</span></div></div></a><a class="card" href="/blog/ja/amazon-break-even-acos-tacos/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="運転席から見た視点。店主の両手がハンドルに置かれ、その前のダッシュボードには、オレンジの縁取りのメーターがちょうど3つと、小さな警告灯が1列に並んでいる。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ja"><div class="eyebrow">中小企業の広告</div><h3>損益分岐点ACoS、TACoS、ROAS：すべての出品者に必要なAmazon広告の計算</h3><p>「良いACoSとは？」に万能の答えはなく、Amazon自身もそう言っています。しかし損益分岐点ACoSには正確な答えがあり、すべての入札、予算、AI広告エージェントはこの数字を基準に評価されるべきです。</p><div class="meta"><span class="lg">日本語</span><span>6分で読めます</span></div></div></a><a class="card" href="/blog/en/amazon-ads-agent-sellers/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t20-768.webp"><img src="/assets/blog/hero/t20.jpg" alt="A friendly robot copilot works the buttons and sliders of a rounded cockpit while a human hand in the foreground holds a compass, an orange padlocked coin box and a key in front of a dashboard of abstract charts." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Ads for SMEs</div><h3>Amazon&#x27;s AI Ad Agent Is Here: What Sellers New to Ads Should Hand Over</h3><p>Amazon Ads Agent hands search, display and full-funnel ads to agentic AI. If you don&#x27;t know how to run ads, skip the all-or-nothing choice and prove it out with a four-week controlled test.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ja/">← ブログに戻る</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>米国のAI検索で、どこが見えていないかを確認</h2>
+  <p>30分の無料相談を予約していただければ、ストアのAI可視性をその場で診断します。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHighにログイン</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">中小企業と越境EC事業者のための、AI検索可視性・SNS・広告のオートパイロット。</p></div>
+      <div><h4>ToucHigh</h4><a href="/ja/">ホーム</a><a href="/ja/#geo">GEO Autopilot</a><a href="/ja/#social">Social Autopilot</a><a href="/ja/pro/">ToucHigh PRO</a></div>
+      <div><h4>ブログ</h4><a href="/blog/ja/">ブログ</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>ログイン</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">相談を予約</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

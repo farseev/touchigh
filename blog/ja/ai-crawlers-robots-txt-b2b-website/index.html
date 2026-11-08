@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AIクローラー向けrobots.txt：OAI-SearchBot、GPTBot、Google-Extended | ToucHigh</title>
+<meta name="description" content="B2Bサイトや工場のサイトが許可すべきAIクローラー：OAI-SearchBotとGPTBot、PerplexityBot、Google-Extended、知らずにブロックするファイアウォール設定。">
+<link rel="canonical" href="https://touchigh.ai/blog/ja/ai-crawlers-robots-txt-b2b-website/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="robots.txt AIクローラー, OAI-SearchBot GPTBot 違い, ChatGPT クローラー 許可, Google-Extended robots.txt, PerplexityBot, AI学習 ブロック 検索 許可">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ja/ai-crawlers-robots-txt-b2b-website/">
+<meta property="og:title" content="御社のサイトはChatGPTをブロックしていませんか？B2BサイトのAIクローラー向けrobots.txt">
+<meta property="og:description" content="B2Bサイトや工場のサイトが許可すべきAIクローラー：OAI-SearchBotとGPTBot、PerplexityBot、Google-Extended、知らずにブロックするファイアウォール設定。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t63-ja.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="御社のサイトはChatGPTをブロックしていませんか？B2BサイトのAIクローラー向けrobots.txt">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="article:published_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:section" content="GEO・AI検索">
+<meta property="article:tag" content="robots.txt">
+<meta property="article:tag" content="AIクローラー">
+<meta property="article:tag" content="OAI-SearchBot">
+<meta property="article:tag" content="テクニカルGEO">
+<meta property="article:tag" content="B2Bサイト">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="御社のサイトはChatGPTをブロックしていませんか？B2BサイトのAIクローラー向けrobots.txt">
+<meta name="twitter:description" content="B2Bサイトや工場のサイトが許可すべきAIクローラー：OAI-SearchBotとGPTBot、PerplexityBot、Google-Extended、知らずにブロックするファイアウォール設定。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t63-ja.jpg">
+<meta name="twitter:image:alt" content="御社のサイトはChatGPTをブロックしていませんか？B2BサイトのAIクローラー向けrobots.txt">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ja/ai-crawlers-robots-txt-b2b-website/#article","url":"https://touchigh.ai/blog/ja/ai-crawlers-robots-txt-b2b-website/","mainEntityOfPage":"https://touchigh.ai/blog/ja/ai-crawlers-robots-txt-b2b-website/","headline":"御社のサイトはChatGPTをブロックしていませんか？B2BサイトのAIクローラー向けrobots.txt","alternativeHeadline":"AIクローラー向けrobots.txt：OAI-SearchBot、GPTBot、Google-Extended","description":"B2Bサイトや工場のサイトが許可すべきAIクローラー：OAI-SearchBotとGPTBot、PerplexityBot、Google-Extended、知らずにブロックするファイアウォール設定。","abstract":"その可能性は十分にあります。AI企業は、検索用とモデル学習用で別々のボットを運用しています。OpenAIによると、OAI-SearchBotをオプトアウトしたサイトはChatGPTの検索回答に表示されず、GPTBotが管理するのは学習だけです。検索用クローラー（OAI-SearchBot、PerplexityBot、Googlebot、Bingbot）を許可し、GPTBotやGoogle-Extendedなどの学習用ボットについては別途判断し、robots.txtに関係なくCDNやファイアウォールがそれらをブロックしていないか確認しましょう。","image":["https://touchigh.ai/assets/blog/og/t63-ja.jpg","https://touchigh.ai/assets/blog/hero/t04.jpg"],"datePublished":"2026-11-08T09:40:00+08:00","dateModified":"2026-11-08T09:40:00+08:00","inLanguage":"ja","author":{"@type":"Organization","name":"ToucHigh リサーチチーム","url":"https://touchigh.ai/blog/ja/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"GEO・AI検索","keywords":"robots.txt AIクローラー, OAI-SearchBot GPTBot 違い, ChatGPT クローラー 許可, Google-Extended robots.txt, PerplexityBot, AI学習 ブロック 検索 許可","wordCount":3143,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ja/#blog","name":"ToucHighブログ"},"about":[{"@type":"Thing","name":"robots.txt"},{"@type":"Thing","name":"AIクローラー"},{"@type":"Thing","name":"OAI-SearchBot"},{"@type":"Thing","name":"テクニカルGEO"},{"@type":"Thing","name":"B2Bサイト"}],"citation":[{"@type":"CreativeWork","name":"Overview of OpenAI Crawlers","url":"https://platform.openai.com/docs/bots","publisher":{"@type":"Organization","name":"OpenAI"}},{"@type":"CreativeWork","name":"Perplexity Crawlers","url":"https://docs.perplexity.ai/guides/bots","publisher":{"@type":"Organization","name":"Perplexity"}},{"@type":"CreativeWork","name":"Google's common crawlers (Google-Extended)","url":"https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to robots.txt","url":"https://developers.google.com/search/docs/crawling-indexing/robots/intro","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ja","mainEntity":[{"@type":"Question","name":"GPTBotをブロックすると、ChatGPTに当社のサイトが表示されなくなりますか？","acceptedAnswer":{"@type":"Answer","text":"OpenAIによれば、そうはなりません。GPTBotはコンテンツをモデル学習に使ってよいかを管理し、OAI-SearchBotはChatGPT検索への表示を管理します。2つの設定は独立しているので、GPTBotを禁止してもOAI-SearchBotは許可できます。"}},{"@type":"Question","name":"Google-Extendedをブロックすると、AI Overviewsから外れますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。Googleによると、Google-ExtendedはGoogle検索への掲載に影響せず、AI OverviewsとAI Modeは検索の一部としてGooglebotで制御されます。スニペットとAI機能に表示される内容を制限するには、nosnippet、data-nosnippet、max-snippet、noindexを使うようGoogleは示しています。"}},{"@type":"Question","name":"AIに見つけてもらうにはllms.txtファイルが必要ですか？","acceptedAnswer":{"@type":"Answer","text":"Googleによると、同社のAI機能に表示されるために、新しい機械可読ファイルやAI用のテキストファイルは必要ありません。AIツール向けの追加の要約としてllms.txtを公開するサイトもありますが、クロール可能なページの代わりにはなりません。"}},{"@type":"Question","name":"robots.txtを修正してから、どのくらいで変化が見られますか？","acceptedAnswer":{"@type":"Answer","text":"OpenAIによると、検索についてはrobots.txtの更新にシステムが対応するまで約24時間かかることがあります。引用されるかどうかは引き続きコンテンツ次第なので、翌日ではなく、その後数週間かけて測定しましょう。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ja/"},{"@type":"ListItem","position":2,"name":"ブログ","item":"https://touchigh.ai/blog/ja/"},{"@type":"ListItem","position":3,"name":"御社のサイトはChatGPTをブロックしていませんか？B2BサイトのAIクローラー向けrobots.txt","item":"https://touchigh.ai/blog/ja/ai-crawlers-robots-txt-b2b-website/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本文へスキップ</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ja/">ホーム</a>
+      <a href="/ja/#products">製品</a>
+      <a href="/ja/#faq">よくある質問</a>
+      <a href="/ja/pro/">ToucHigh PRO</a>
+      <a href="/blog/ja/" class="on">ブログ</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="言語: 日本語"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">日本語</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="言語" hidden><li><a href="/blog/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ai-crawlers-robots-txt-b2b-website/" hreflang="ja" lang="ja" data-short="日本語" aria-current="page">日本語</a></li><li><a href="/blog/es/ai-crawlers-robots-txt-b2b-website/" hreflang="es" lang="es" data-short="ES">Español</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">ログイン</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">相談を予約</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ja/">ホーム</a><span>/</span><a href="/blog/ja/">ブログ</a><span>/</span><span>GEO・AI検索</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">GEO・AI検索</div>
+    <h1>御社のサイトはChatGPTをブロックしていませんか？B2BサイトのAIクローラー向けrobots.txt</h1>
+    <p class="dek">コンテンツの前に、まずアクセスを確認しましょう。多くの輸出企業のサイトは、robots.txt、CDN、セキュリティプラグインによって、AI検索のクローラーをうっかりブロックしています。検索用ボットと学習用ボットの見分け方と、何を許可すべきかを解説します。</p>
+    <div class="a-meta"><b>ToucHigh リサーチチーム</b><span>公開日 <time datetime="2026-11-08T09:40:00+08:00">2026年11月8日</time></span><span>6分で読めます</span><span class="lang-badge">日本語</span></div>
+    <div class="a-langs">ほかの言語<a href="/blog/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/es/ai-crawlers-robots-txt-b2b-website/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp 768w, /assets/blog/hero/t04-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t04.jpg" alt="紫の目をした親しみやすいAIの吹き出しが、オレンジのバケツをきれいな石の井戸に下ろしている。井戸の周りには実験用フラスコ、定規、製品のボトル、白紙のクリップボードがあり、近くには暗い色の鎖がほこりをかぶって放置されている。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="この記事が答える質問"><span class="qm">“</span><div><div class="eyebrow">この記事が答える質問</div><p class="q">昨年、IT部門がWebサイトで「AIボット」をブロックしました。ChatGPTに当社の工場がまったく表示されないのはそのせいでしょうか？何を許可すべきですか？</p><p class="ans"><b>短い答え</b>その可能性は十分にあります。AI企業は、検索用とモデル学習用で別々のボットを運用しています。OpenAIによると、OAI-SearchBotをオプトアウトしたサイトはChatGPTの検索回答に表示されず、GPTBotが管理するのは学習だけです。検索用クローラー（OAI-SearchBot、PerplexityBot、Googlebot、Bingbot）を許可し、GPTBotやGoogle-Extendedなどの学習用ボットについては別途判断し、robots.txtに関係なくCDNやファイアウォールがそれらをブロックしていないか確認しましょう。</p></div></section>
+      <section class="kt takeaways"><h2>要点</h2><ul><li>OpenAIのOAI-SearchBotはChatGPT検索にサイトを表示させるためのもので、GPTBotは学習用です。設定は独立しているので、検索を許可して学習を拒否できます。</li><li>OpenAIによると、robots.txtの変更がChatGPT検索に反映されるまで約24時間かかることがあります。</li><li>PerplexityBotはPerplexityの検索結果でサイトを表示・リンクするもので、Perplexityによると基盤モデルの学習には使われません。</li><li>Google-Extendedは、コンテンツをGeminiの学習とグラウンディングに使うかどうかを制御します。Googleによると、Google検索への掲載や順位には影響しません。</li><li>robots.txtで許可していても、ファイアウォールやCDNがクローラーをブロックすることがあります。そのためPerplexityはIPアドレスの範囲とWAFの設定手順を公開しています。</li></ul></section>
+      <div class="prose"><p>驚くほど多くの輸出企業のサイトが、地味な理由でAI検索から見えなくなっています。クローラーが中に入れないのです。この2年のどこかで、誰かが「AIボットをブロック」のルールを追加したり、CDNのボット対策をオンにしたり、セキュリティプラグインを入れたりしました。人間にはサイトが問題なく表示されるので、誰も気づきません。そしてチームは、AI検索エンジンが一度も読むことを許されていなかったコンテンツを、何カ月もかけて書き直すことになります。</p>
+
+<p>このガイドは、工場やB2Bのサイトのための30分の技術チェックです。これだけで見えるようになるわけではありませんが、アクセスが壊れていれば、他に何をしても意味がありません。</p>
+
+<h2 id="s1">どのAIクローラーが検索用で、どれが学習用なのか？</h2>
+
+<p>要点はこうです。AI企業は、回答に表示するページを見つけるボットと、モデル学習のためにコンテンツを集めるボットを分けています。それぞれについて異なる選択ができます。</p>
+
+<div class="tw"><table>
+<thead><tr><th>企業</th><th>ユーザーエージェント</th><th>目的（各社のドキュメントによる）</th></tr></thead>
+<tbody>
+<tr><td>OpenAI</td><td>OAI-SearchBot</td><td>ChatGPTの検索機能にWebサイトを表示させます。オプトアウトしたサイトはChatGPTの検索回答に表示されませんが、ナビゲーション用のリンクとして表示されることはあります。</td></tr>
+<tr><td>OpenAI</td><td>GPTBot</td><td>OpenAIの基盤モデルの学習に使われる可能性のあるコンテンツをクロールします。これを禁止すると、コンテンツを学習に使うべきでないという意思表示になります。</td></tr>
+<tr><td>OpenAI</td><td>ChatGPT-User</td><td>特定のユーザー操作のためにページを訪問します。OpenAIによると、robots.txtのルールが適用されない場合があり、検索に何を表示するかの判断には使われません。</td></tr>
+<tr><td>Perplexity</td><td>PerplexityBot</td><td>Perplexityの検索結果でWebサイトを表示・リンクします。AI基盤モデルのためのコンテンツのクロールには使われません。</td></tr>
+<tr><td>Perplexity</td><td>Perplexity-User</td><td>ユーザーが質問したときにページを取得します。ユーザーが取得を要求しているため、通常はrobots.txtを無視します。</td></tr>
+<tr><td>Google</td><td>Google-Extended</td><td>Googleがクロールしたコンテンツを、Geminiの学習とグラウンディングに使ってよいかを制御するrobots.txtのトークン。Google検索への掲載や順位には影響しません。</td></tr>
+</tbody>
+</table></div>
+
+<p>Google検索自体のAI機能は仕組みが違います。Googleのガイダンスによると、AIは検索に組み込まれているため、AI OverviewsとAI Modeを含め、検索のためにサイトがどうクロールされるかを制御するのはGooglebot向けのrobots.txtのルールです。「AIをオプトアウトする」ためにGooglebotをブロックすると、通常の検索結果からも消えてしまいます。</p>
+
+<h2 id="s2">工場のサイトのrobots.txtには何を書くべきか？</h2>
+
+<p>ほとんどの輸出メーカーにとって目的は見つけてもらうことなので、検索用クローラーは許可しましょう。学習用クローラーを許可するかどうかは経営判断です。拒否してもAI検索から消えるわけではありません。シンプルな出発点は次のようになります。</p>
+
+<div class="tw"><table>
+<thead><tr><th>robots.txtの行</th><th>効果</th></tr></thead>
+<tbody>
+<tr><td><code>User-agent: OAI-SearchBot</code> / <code>Allow: /</code></td><td>ChatGPTの検索回答の表示対象になる</td></tr>
+<tr><td><code>User-agent: PerplexityBot</code> / <code>Allow: /</code></td><td>Perplexityの検索結果の表示対象になる</td></tr>
+<tr><td><code>User-agent: Googlebot</code> / <code>Allow: /</code></td><td>AI OverviewsとAI Modeを含むGoogle検索</td></tr>
+<tr><td><code>User-agent: Bingbot</code> / <code>Allow: /</code></td><td>Bing検索</td></tr>
+<tr><td><code>User-agent: GPTBot</code> / <code>Allow</code> または <code>Disallow</code></td><td>OpenAIのモデル学習についての自社の選択</td></tr>
+<tr><td><code>User-agent: Google-Extended</code> / <code>Allow</code> または <code>Disallow</code></td><td>Geminiの学習とグラウンディングについての自社の選択</td></tr>
+<tr><td><code>Sitemap: https://www.example.com/sitemap.xml</code></td><td>クローラーがすべてのページを見つけやすくなる</td></tr>
+</tbody>
+</table></div>
+
+<p>販売店ポータルや価格表などの非公開エリアは、robots.txtだけでなくログイン保護でクローラーから守りましょう。Googleのrobots.txtのドキュメントは、robots.txtはページをGoogleに表示させないための仕組みではないと明言しています。そのためにはnoindexかパスワード保護を使います。</p>
+
+<h2 id="s3">robots.txtで許可していても、なぜファイアウォールがAIクローラーをブロックしてしまうのか？</h2>
+
+<p>robots.txtはお願いであり、CDN、ファイアウォール、セキュリティプラグインは門です。多くのボット対策機能は、見慣れないクローラーがrobots.txtを読む前に、チャレンジを課したりブロックしたりします。GoogleはAI機能のための基本として「robots.txtと、CDNやホスティングのインフラでクロールが許可されていることを確認する」ことを挙げています。Perplexityはさらに踏み込み、サイト所有者が同社のボットを許可できるよう、IPアドレスのリストとWebアプリケーションファイアウォールのルールの手順を公開しています。OpenAIもクローラーのIPアドレスの範囲を公開しています。</p>
+
+<p>ホスティングの管理者に3つ質問しましょう。ボット対策はオンになっているか、許可リストはあるか、上記の検索用クローラーはそこに入っているか。次に、サーバーログで表のユーザーエージェントを確認します。現れていてエラーを受けている、またはまったく現れないなら、問題が見つかったということです。</p>
+
+<h2 id="s4">30分でアクセスを確認するには？</h2>
+
+<ol>
+<li><strong>yoursite.com/robots.txtを開きます。</strong><code>User-agent: *</code>またはAIのユーザーエージェントの下に<code>Disallow: /</code>がないか確認します。</li>
+<li><strong>CDNやファイアウォールを確認し</strong>、ボット対策、国別ブロック、「AIスクレイパー」の切り替えがないか見ます。</li>
+<li><strong>サーバーログを検索し</strong>、OAI-SearchBot、PerplexityBot、Googlebotと、それらが受け取っているステータスコードを確認します。</li>
+<li>主要な製品ページと生産能力ページについて、<strong>Google Search Consoleでインデックス状況を確認</strong>します。</li>
+<li><strong>1日たってからChatGPTで再テストします。</strong>OpenAIによると、robots.txtの変更が検索に反映されるまで約24時間かかることがあります。</li>
+<li>次のセキュリティ更新で元に戻されないよう、<strong>方針を書面に残します</strong>。</li>
+</ol>
+
+<h2 id="s5">クローラーを許可すれば、AIは推薦してくれるのか？</h2>
+
+<p>いいえ。アクセスによって表示対象にはなりますが、選ばれるわけではありません。クローラーがサイトを読めるようになったら、次の課題は、ページがバイヤーの質問に具体的な事実で答えているか、会社情報がWeb全体で一貫しているかです。それでも、まずはアクセスです。GEOで最も安上がりな修正であり、最も見落とされがちなものです。</p></div>
+      <aside class="insight" aria-label="インサイト"><div class="eyebrow">インサイト</div><blockquote>締め出したエンジンから引用されることはない。</blockquote><p>オペレーションズリサーチのボトルネックの考え方では、システムの出力は最も狭い箇所で決まります。AIでの可視性にとっては、クローラーのアクセスがその箇所であることが多く、門が開くまではどれだけコンテンツに取り組んでも結果は上がりません。</p></aside>
+      <section class="prop" aria-label="ToucHighにできること">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHighにできること</h2></div>
+        <div class="pb prose"><p>ToucHighのGEO Autopilotは、すべての案件をこの種のチェックから始めます。</p><ul><li>ChatGPT、Perplexity、Google AI、Geminiのどこでサイトが見えていないかの診断。</li><li>ページ、回答、エンティティデータなど、作成・公開まで代行する修正。</li><li>その後のAI引用シェアの追跡。門を開いた効果を確認できます。</li></ul><p>30分の戦略相談を予約してください。御社サイトのAI可視性をその場で確認します。</p><p class="uc">工場・B2Bサプライヤーの方へ：ToucHighの<a href="/ja/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T63'})}catch(e){}">AI検索でのサプライヤー可視性</a>をご覧ください。 可視性を商談につなげたい場合は、戦略ファーストのアウトバウンドサービス<a href="/ja/pro/" onclick="try{gtag('event','pro_click',{location:'article_T63'})}catch(e){}">ToucHigh PRO</a>をご覧ください。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T63')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T63'})}catch(e){}">ToucHighにログイン</a></div>
+      </section>
+      <section class="faq" aria-label="よくある質問"><h2>よくある質問</h2><details open><summary>GPTBotをブロックすると、ChatGPTに当社のサイトが表示されなくなりますか？</summary><p>OpenAIによれば、そうはなりません。GPTBotはコンテンツをモデル学習に使ってよいかを管理し、OAI-SearchBotはChatGPT検索への表示を管理します。2つの設定は独立しているので、GPTBotを禁止してもOAI-SearchBotは許可できます。</p></details><details><summary>Google-Extendedをブロックすると、AI Overviewsから外れますか？</summary><p>いいえ。Googleによると、Google-ExtendedはGoogle検索への掲載に影響せず、AI OverviewsとAI Modeは検索の一部としてGooglebotで制御されます。スニペットとAI機能に表示される内容を制限するには、nosnippet、data-nosnippet、max-snippet、noindexを使うようGoogleは示しています。</p></details><details><summary>AIに見つけてもらうにはllms.txtファイルが必要ですか？</summary><p>Googleによると、同社のAI機能に表示されるために、新しい機械可読ファイルやAI用のテキストファイルは必要ありません。AIツール向けの追加の要約としてllms.txtを公開するサイトもありますが、クロール可能なページの代わりにはなりません。</p></details><details><summary>robots.txtを修正してから、どのくらいで変化が見られますか？</summary><p>OpenAIによると、検索についてはrobots.txtの更新にシステムが対応するまで約24時間かかることがあります。引用されるかどうかは引き続きコンテンツ次第なので、翌日ではなく、その後数週間かけて測定しましょう。</p></details></section>
+      <section class="srcs"><h2>参考資料</h2><ol><li><a href="https://platform.openai.com/docs/bots" rel="noopener" target="_blank">Overview of OpenAI Crawlers</a> — OpenAI</li><li><a href="https://docs.perplexity.ai/guides/bots" rel="noopener" target="_blank">Perplexity Crawlers</a> — Perplexity</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers" rel="noopener" target="_blank">Google&#x27;s common crawlers (Google-Extended)</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro" rel="noopener" target="_blank">Introduction to robots.txt</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>この記事を書いた理由</b>この記事を書いたのは、新しい工場のサイトで私たちが最初に確認するのがAIクローラーが入れるかどうかであり、その答えが誰もが思うよりずっと頻繁に「いいえ」だからです。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="このページの内容"><h4>このページの内容</h4><a href="#s1">どのAIクローラーが検索用で、どれが学習用なのか？</a><a href="#s2">工場のサイトのrobots.txtには何を書くべきか？</a><a href="#s3">robots.txtで許可していても、なぜファイアウォールがAIクローラーをブロックしてしまうのか？</a><a href="#s4">30分でアクセスを確認するには？</a><a href="#s5">クローラーを許可すれば、AIは推薦してくれるのか？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>米国のAI検索で、どこが見えていないかを確認</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">相談を予約</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">ログイン</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>関連記事</h2>
+  <div class="grid"><a class="card" href="/blog/ja/chatgpt-supplier-shortlist-audit/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t46-768.webp"><img src="/assets/blog/hero/t46.jpg" alt="巨大な虫眼鏡が、オレンジの日よけのある小さな店のそばに浮かぶ4つのAIの吹き出しを調べている。店のオレンジの地図ピンが表示されているのは1つの吹き出しだけで、その横にはチェックマークの付いたクリップボードがある。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ja"><div class="eyebrow">GEO・AI検索</div><h3>御社の工場はChatGPTのサプライヤー候補に入っていますか？30プロンプト診断</h3><p>ページを1つでも書き直す前に、現在地を把握しましょう。30個のプロンプトによる診断、採点シート、そしてどの輸出チームでも半日で実施できる結果の読み方を紹介します。</p><div class="meta"><span class="lg">日本語</span><span>6分で読めます</span></div></div></a><a class="card" href="/blog/en/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Among a row of identical grey factories, one white and orange factory is lit by a spotlight from an AI chat bubble, above a panel of icons for machinery, certification, materials, lead time and FAQs." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites</h3><p>Overseas buyers are starting to use AI to find suppliers. A factory site with only a company profile and product photos rarely gets recommended by ChatGPT. Here&#x27;s a checklist of citable pages and first GEO steps.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/en/backlinks-vs-primary-sources-chatgpt-citations/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp"><img src="/assets/blog/hero/t04.jpg" alt="A friendly AI chat bubble with violet eyes lowers an orange bucket into a clean stone well surrounded by a lab flask, a ruler, a product bottle and a blank clipboard, while a dusty heap of dark chain links lies ignored nearby." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Do Backlinks Still Matter? ChatGPT Now Favors Primary Sources</h3><p>ChatGPT increasingly favors primary sources, and each new backlink pays back less. Small sellers should shift time from buying links to publishing original data.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ja/">← ブログに戻る</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>米国のAI検索で、どこが見えていないかを確認</h2>
+  <p>30分の無料相談を予約していただければ、ストアのAI可視性をその場で診断します。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30分の戦略相談を予約 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHighにログイン</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">中小企業と越境EC事業者のための、AI検索可視性・SNS・広告のオートパイロット。</p></div>
+      <div><h4>ToucHigh</h4><a href="/ja/">ホーム</a><a href="/ja/#geo">GEO Autopilot</a><a href="/ja/#social">Social Autopilot</a><a href="/ja/pro/">ToucHigh PRO</a></div>
+      <div><h4>ブログ</h4><a href="/blog/ja/">ブログ</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>ログイン</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">相談を予約</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
