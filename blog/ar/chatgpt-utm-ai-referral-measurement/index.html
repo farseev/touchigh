@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>تتبّع زيارات ChatGPT بعد اختفاء وسوم UTM | ToucHigh</title>
+<meta name="description" content="يبدو أن روابط ChatGPT تخلّت عن وسوم UTM، فأصبحت زيارات الذكاء الاصطناعي تبدو زيارات مباشرة. تتبّع زيارات ChatGPT على ثلاث طبقات: حصة الاستشهاد، والزيارات المباشرة، والطلبات.">
+<link rel="canonical" href="https://touchigh.ai/blog/ar/chatgpt-utm-ai-referral-measurement/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="تتبّع زيارات ChatGPT، كيفية تتبّع زيارات ChatGPT في GA4، كيفية قياس زيارات الإحالة من الذكاء الاصطناعي، معاملات UTM في ChatGPT، كيفية حساب العائد على الاستثمار في SEO، حصة الاستشهاد في الذكاء الاصطناعي">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="th" href="https://touchigh.ai/blog/th/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="hi" href="https://touchigh.ai/blog/hi/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="fil" href="https://touchigh.ai/blog/fil/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ar" href="https://touchigh.ai/blog/ar/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ar/chatgpt-utm-ai-referral-measurement/">
+<meta property="og:title" content="يبدو أن ChatGPT تخلّى عن وسوم UTM: كيف تقيس زيارات الذكاء الاصطناعي الآن">
+<meta property="og:description" content="يبدو أن روابط ChatGPT تخلّت عن وسوم UTM، فأصبحت زيارات الذكاء الاصطناعي تبدو زيارات مباشرة. تتبّع زيارات ChatGPT على ثلاث طبقات: حصة الاستشهاد، والزيارات المباشرة، والطلبات.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t03-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="يبدو أن ChatGPT تخلّى عن وسوم UTM: كيف تقيس زيارات الذكاء الاصطناعي الآن">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="th_TH">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="tl_PH">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="article:published_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:section" content="القياس">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="زيارات الإحالة من الذكاء الاصطناعي">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="قياس GEO">
+<meta property="article:tag" content="العائد على الاستثمار في SEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="يبدو أن ChatGPT تخلّى عن وسوم UTM: كيف تقيس زيارات الذكاء الاصطناعي الآن">
+<meta name="twitter:description" content="يبدو أن روابط ChatGPT تخلّت عن وسوم UTM، فأصبحت زيارات الذكاء الاصطناعي تبدو زيارات مباشرة. تتبّع زيارات ChatGPT على ثلاث طبقات: حصة الاستشهاد، والزيارات المباشرة، والطلبات.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t03-en.jpg">
+<meta name="twitter:image:alt" content="يبدو أن ChatGPT تخلّى عن وسوم UTM: كيف تقيس زيارات الذكاء الاصطناعي الآن">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Arabic:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ar/chatgpt-utm-ai-referral-measurement/#article","url":"https://touchigh.ai/blog/ar/chatgpt-utm-ai-referral-measurement/","mainEntityOfPage":"https://touchigh.ai/blog/ar/chatgpt-utm-ai-referral-measurement/","headline":"يبدو أن ChatGPT تخلّى عن وسوم UTM: كيف تقيس زيارات الذكاء الاصطناعي الآن","alternativeHeadline":"تتبّع زيارات ChatGPT بعد اختفاء وسوم UTM","description":"يبدو أن روابط ChatGPT تخلّت عن وسوم UTM، فأصبحت زيارات الذكاء الاصطناعي تبدو زيارات مباشرة. تتبّع زيارات ChatGPT على ثلاث طبقات: حصة الاستشهاد، والزيارات المباشرة، والطلبات.","abstract":"توقّف عن الاعتماد على مصدر \"chatgpt.com\" في GA4 وحده. يفيد Search Engine Land بأن روابط ChatGPT يبدو أنها لم تعد تحمل معاملات UTM، فتُسجَّل كثير من زيارات الذكاء الاصطناعي كزيارات مباشرة. قِس بدلاً من ذلك على ثلاث طبقات: حصة الاستشهاد في الذكاء الاصطناعي (عدد مرات ذكرك في إجابات الذكاء الاصطناعي عن أسئلتك الأساسية)، والزيارات المباشرة إلى الصفحات الداخلية مع البحث باسم العلامة، والطلبات مع استبيانات ما بعد الشراء. وطابِق الطبقات الثلاث ببعضها.","image":["https://touchigh.ai/assets/blog/og/t03-en.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-10-16T07:21:00+08:00","dateModified":"2026-10-16T07:21:00+08:00","inLanguage":"ar","author":{"@type":"Organization","name":"فريق أبحاث ToucHigh","url":"https://touchigh.ai/blog/ar/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"القياس","keywords":"تتبّع زيارات ChatGPT، كيفية تتبّع زيارات ChatGPT في GA4، كيفية قياس زيارات الإحالة من الذكاء الاصطناعي، معاملات UTM في ChatGPT، كيفية حساب العائد على الاستثمار في SEO، حصة الاستشهاد في الذكاء الاصطناعي","wordCount":1584,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ar/#blog","name":"مدونة ToucHigh"},"about":[{"@type":"Thing","name":"ChatGPT"},{"@type":"Thing","name":"زيارات الإحالة من الذكاء الاصطناعي"},{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"قياس GEO"},{"@type":"Thing","name":"العائد على الاستثمار في SEO"}],"citation":[{"@type":"CreativeWork","name":"ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure","url":"https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Search Engine Land"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ar","mainEntity":[{"@type":"Question","name":"هل تعني القفزة المفاجئة في الزيارات المباشرة دائماً أنها جاءت من ChatGPT؟","acceptedAnswer":{"@type":"Answer","text":"ليس بالضرورة. ينبّه تقرير Search Engine Land أيضاً إلى أن تحليل Huesler لا يستطيع إثبات أن كل إحالة مفقودة لها السبب نفسه. تحقّق من ثلاثة أمور: هل بدأ الارتفاع في منتصف أكتوبر؟ هل هو مركّز على الصفحات الداخلية مثل صفحات المنتجات والمقالات؟ هل انخفضت إحالات ChatGPT في الوقت نفسه؟ فقط عندما تتطابق الثلاثة يُرجَّح أنها زيارات من الذكاء الاصطناعي أُعيد تصنيفها."}},{"@type":"Question","name":"وماذا عن الزيارات من منصات الذكاء الاصطناعي الأخرى غير ChatGPT؟","acceptedAnswer":{"@type":"Answer","text":"تحقّق أولاً من تقرير الإحالات في GA4 لترى أي نطاقات منتجات الذكاء الاصطناعي تظهر فعلاً، وضعها في مجموعة قنوات واحدة باسم \"AI assistants\". لكن تغيير ChatGPT هذا يُظهر أن المنصات قد تغيّر طريقة عمل روابطها في أي وقت، لذا تعامل مع بيانات الإحالة كمُدخل واحد فقط، يُقرأ إلى جانب حصة الاستشهاد في الذكاء الاصطناعي وبيانات الطلبات."}},{"@type":"Question","name":"كيف أحسب حصة الاستشهاد في الذكاء الاصطناعي؟","acceptedAnswer":{"@type":"Answer","text":"ثبّت مجموعة من الأسئلة الأساسية، مثل أكثر 40 سؤالاً عن الفئة يطرحها المتسوقون الأمريكيون. كل شهر، اطرح كل سؤال على بضع منصات ذكاء اصطناعي رئيسية، واحسب الإجابات التي تذكر علامتك أو ترتبط بها، واقسمها على إجمالي عدد الإجابات. إذا استشهد بك 8 من 40 سؤالاً، فحصتك 20%. وأبقِ قائمة الأسئلة دون تغيير ليكون الاتجاه حقيقياً."}},{"@type":"Question","name":"نحن فريق صغير بلا محلل بيانات. ما الحد الأدنى الذي يجب أن نتتبّعه؟","acceptedAnswer":{"@type":"Answer","text":"ثلاثة أرقام تكفي: حصة الاستشهاد الشهرية في الذكاء الاصطناعي، والزيارات المباشرة إلى الصفحات الداخلية، وحصة العملاء الجدد الذين يختارون \"مساعد ذكاء اصطناعي\" في استبيان ما بعد الشراء. الأول يعكس الظهور، والثاني الزيارات، والثالث المبيعات. خصّص نصف يوم شهرياً لتسجيلها في جدول بيانات واحد، وبعد ثلاثة أشهر سترى ما إذا كانت قناة الذكاء الاصطناعي تقود النمو."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ar/"},{"@type":"ListItem","position":2,"name":"المدونة","item":"https://touchigh.ai/blog/ar/"},{"@type":"ListItem","position":3,"name":"يبدو أن ChatGPT تخلّى عن وسوم UTM: كيف تقيس زيارات الذكاء الاصطناعي الآن","item":"https://touchigh.ai/blog/ar/chatgpt-utm-ai-referral-measurement/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">في هذه الصفحة</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ar/">الرئيسية</a>
+      <a href="/ar/#products">المنتجات</a>
+      <a href="/ar/#faq">الأسئلة الشائعة</a>
+      <a href="/ar/pro/">ToucHigh PRO</a>
+      <a href="/blog/ar/" class="on">المدونة</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="اللغة: العربية"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">عربي</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="اللغة" hidden><li><a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/chatgpt-utm-ai-referral-measurement/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/th/chatgpt-utm-ai-referral-measurement/" hreflang="th" lang="th" data-short="ไทย">ไทย</a></li><li><a href="/blog/vi/chatgpt-utm-ai-referral-measurement/" hreflang="vi" lang="vi" data-short="VI">Tiếng Việt</a></li><li><a href="/blog/id/chatgpt-utm-ai-referral-measurement/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/chatgpt-utm-ai-referral-measurement/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/hi/chatgpt-utm-ai-referral-measurement/" hreflang="hi" lang="hi" data-short="हिन्दी">हिन्दी</a></li><li><a href="/blog/fil/chatgpt-utm-ai-referral-measurement/" hreflang="fil" lang="fil" data-short="FIL">Filipino</a></li><li><a href="/blog/es/chatgpt-utm-ai-referral-measurement/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/chatgpt-utm-ai-referral-measurement/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/chatgpt-utm-ai-referral-measurement/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/chatgpt-utm-ai-referral-measurement/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ar/chatgpt-utm-ai-referral-measurement/" hreflang="ar" lang="ar" data-short="عربي" dir="rtl" aria-current="page">العربية</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">تسجيل الدخول</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">احجز مكالمة</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ar/">الرئيسية</a><span>/</span><a href="/blog/ar/">المدونة</a><span>/</span><span>القياس</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">القياس</div>
+    <h1>يبدو أن ChatGPT تخلّى عن وسوم UTM: كيف تقيس زيارات الذكاء الاصطناعي الآن</h1>
+    <p class="dek">يبدو أن ChatGPT توقف عن إضافة وسوم UTM إلى روابطه الخارجية، فأصبحت الزيارات القادمة من الذكاء الاصطناعي تندمج في الزيارات المباشرة. حان الوقت لطريقة جديدة لقياس عوائد SEO وGEO لديك.</p>
+    <div class="a-meta"><b>فريق أبحاث ToucHigh</b><span>نُشر في <time datetime="2026-10-16T07:21:00+08:00">16/10/2026</time></span><span>قراءة 5 دقائق</span><span class="lang-badge">العربية</span></div>
+    <div class="a-langs">متاح أيضاً بـ<a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/chatgpt-utm-ai-referral-measurement/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/th/chatgpt-utm-ai-referral-measurement/" hreflang="th" lang="th" onclick="try{localStorage.setItem('tl','th')}catch(e){}">ไทย</a><a href="/blog/vi/chatgpt-utm-ai-referral-measurement/" hreflang="vi" lang="vi" onclick="try{localStorage.setItem('tl','vi')}catch(e){}">Tiếng Việt</a><a href="/blog/id/chatgpt-utm-ai-referral-measurement/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/chatgpt-utm-ai-referral-measurement/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/hi/chatgpt-utm-ai-referral-measurement/" hreflang="hi" lang="hi" onclick="try{localStorage.setItem('tl','hi')}catch(e){}">हिन्दी</a><a href="/blog/fil/chatgpt-utm-ai-referral-measurement/" hreflang="fil" lang="fil" onclick="try{localStorage.setItem('tl','fil')}catch(e){}">Filipino</a><a href="/blog/es/chatgpt-utm-ai-referral-measurement/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/chatgpt-utm-ai-referral-measurement/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/chatgpt-utm-ai-referral-measurement/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/chatgpt-utm-ai-referral-measurement/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="طرود تنزلق من نفق على شكل فقاعة محادثة مضاء بالبنفسجي إلى سير ناقل وتسقط في صندوق رمادي عادي، بينما تتناثر بطاقات التتبع البرتقالية الخاصة بها على الأرض، وتقف عدسة مكبّرة ومخطط دائري ومخطط أعمدة وحقيبة تسوق جاهزة للتحقق المتقاطع." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="السؤال الذي يجيب عنه هذا المقال"><span class="qm">“</span><div><div class="eyebrow">السؤال الذي يجيب عنه هذا المقال</div><p class="q">تظهر الزيارات القادمة من ChatGPT الآن كزيارات &quot;مباشرة&quot; في تحليلاتي. كيف أحسب العائد على ما أنفقه على SEO وGEO؟</p><p class="ans"><b>الإجابة المختصرة</b>توقّف عن الاعتماد على مصدر &quot;chatgpt.com&quot; في GA4 وحده. يفيد Search Engine Land بأن روابط ChatGPT يبدو أنها لم تعد تحمل معاملات UTM، فتُسجَّل كثير من زيارات الذكاء الاصطناعي كزيارات مباشرة. قِس بدلاً من ذلك على ثلاث طبقات: حصة الاستشهاد في الذكاء الاصطناعي (عدد مرات ذكرك في إجابات الذكاء الاصطناعي عن أسئلتك الأساسية)، والزيارات المباشرة إلى الصفحات الداخلية مع البحث باسم العلامة، والطلبات مع استبيانات ما بعد الشراء. وطابِق الطبقات الثلاث ببعضها.</p></div></section>
+      <section class="kt takeaways"><h2>أهم النقاط</h2><ul><li>بحسب Search Engine Land، يبدو أن روابط ChatGPT لم تعد تحمل معاملات UTM، لذا تظهر كثير من زيارات الذكاء الاصطناعي الآن كزيارات "مباشرة" في أدوات التحليلات.</li><li>وجد Cedric Huesler من Adobe أنه عبر نحو 500 صفحة، انخفضت الزيارات المحالة من ChatGPT بنحو 31,000 زيارة يومياً، بينما ارتفعت الزيارات المباشرة بنحو 26,000 زيارة يومياً.</li><li>قِس قناة الذكاء الاصطناعي على ثلاث طبقات: حصة الاستشهاد في الذكاء الاصطناعي؛ والزيارات المباشرة إلى الصفحات الداخلية والبحث باسم العلامة؛ والطلبات مع استبيانات ما بعد الشراء.</li><li>لا تخفّض ميزانية GEO بناءً على بيانات المصادر لأسبوع أو أسبوعين؛ فعدد مرات ظهورك في إجابات الذكاء الاصطناعي هو المقياس الأساسي الذي لا تستطيع معاملات التتبّع تشويهه.</li></ul></section>
+      <div class="prose"><p>تظهر الزيارات القادمة من ChatGPT فجأة كزيارات "مباشرة" في تحليلاتك. فكيف تحسب العائد على SEO وGEO؟ الخلاصة: توقّف عن التعامل مع مصدر "chatgpt.com" في GA4 (Google Analytics 4) كدليلك الوحيد، وطابِق بدلاً من ذلك ثلاث طبقات: حصة الاستشهاد في الذكاء الاصطناعي، والتغيرات في الزيارات المباشرة، وبيانات الطلبات. فأي رقم منفرد وحده قد يدفعك إلى قرار خاطئ بشأن الميزانية.</p>
+
+<p>بدأ الأمر بخبر هذا الأسبوع. أفاد <a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">Search Engine Land</a> في 15 أكتوبر بأن الروابط الخارجية في ChatGPT يبدو أنها لم تعد تحمل معامل "utm_source=chatgpt.com" الذي كانت OpenAI تضيفه، وأن طريقة فتح الروابط تُخفي أيضاً معلومات الإحالة. وحلّل Cedric Huesler من Adobe نحو 500 صفحة شكّل ChatGPT ما لا يقل عن 5% من زياراتها، مقارناً الفترة من 9 إلى 13 أكتوبر بالأسبوع السابق. انخفضت الزيارات المحالة من ChatGPT بنحو 31,000 زيارة يومياً، بينما ارتفعت الزيارات المباشرة إلى الصفحات نفسها بنحو 26,000 زيارة يومياً. ولم تؤكد OpenAI ما إذا كان التغيير مقصوداً.</p>
+
+<h2 id="why-did-my-chatgpt-traffic-suddenly-disappear">لماذا "اختفت" زياراتي من ChatGPT فجأة؟</h2>
+
+<p>الزيارات لم تختفِ، بل حصلت على تصنيف مختلف. تحدد أدوات التحليلات مصدر الزيارة أساساً بالنظر إلى أمرين: معاملات UTM (وسوم تتبّع تُضاف إلى الرابط) وعنوان URL المُحيل الذي يمرره المتصفح. وعندما يغيب الاثنان، تُسجَّل الزيارة كزيارة "مباشرة"، كأن المتسوق كتب عنوانك في شريط المتصفح.</p>
+
+<p>بحسب التقرير، رُصد التغيير بعد إطلاق GPT-6 في أكتوبر. وأظهرت بيانات Huesler أيضاً أن ثلثي الصفحات التي فقدت إحالات ChatGPT شهدت ارتفاعاً في الزيارات المباشرة في الوقت نفسه، وأن الزيارات "المباشرة" الجديدة تصرّفت بشكل يشبه كثيراً زيارات ChatGPT المحددة سابقاً. لكن التقرير ينبّه أيضاً إلى أن التحليل لا يستطيع إثبات أن كل إحالة مفقودة لها السبب نفسه.</p>
+
+<p>إذا كنت تدير متجراً مستقلاً وأظهرت لوحة تحكم متجرك أو GA4 انهيار إحالات ChatGPT وقفزة في الزيارات المباشرة بعد منتصف أكتوبر، فلا تتسرع في الاستنتاج. الأرجح أن التصنيف هو الذي تغيّر، لا استعداد الذكاء الاصطناعي للتوصية بك.</p>
+
+<h2 id="why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">لماذا لا تستطيع بيانات النقر وحدها أن تخبرك بما إذا كان GEO يؤتي ثماره؟</h2>
+
+<p>تطرح نظرية قياس الأداء، من أبحاث الإدارة، فكرة بسيطة: ما تقيسه هو ما يحسّنه فريقك، والمقياس الخاطئ يقود إلى قرارات خاطئة. إذا كنت لا تراقب إلا "الزيارات القادمة من ChatGPT"، فسيقول تقرير هذا الأسبوع إن نتائج GEO لديك انهارت. وقد تخفّض الميزانية بينما في الواقع لا يزال المتسوقون يأتون، لكن تحت تصنيف مختلف.</p>
+
+<p>تعمّق مستوى آخر، وستجد أن كثيراً من قيمة قناة الذكاء الاصطناعي لا يظهر أصلاً كنقرة. يرى المتسوق ChatGPT يوصي بعلامتك، فيتذكر الاسم، وبعد ثلاثة أيام يكتب عنوان موقعك أو يبحث عن علامتك على Google. ولن ينسب أي نموذج إسناد ذلك الطلب إلى الذكاء الاصطناعي. لذا فإن قياس قناة الذكاء الاصطناعي يعني أن تسأل ما إذا كنت قد كسبت مكاناً في أذهان المتسوقين، لا مجرد قراءة سطر مصدر واحد في تقرير.</p>
+
+<h2 id="a-three-layer-framework-for-measuring-the-ai-channel">إطار من ثلاث طبقات لقياس قناة الذكاء الاصطناعي</h2>
+
+<p>قسّم مقاييسك إلى ثلاث طبقات، تجيب كل منها عن سؤال واحد. هل ذكرك الذكاء الاصطناعي؟ هل زارك المتسوقون بسببه؟ هل تحولت تلك الزيارات إلى مبيعات؟</p>
+
+<div class="tw"><table>
+<thead><tr><th>الطبقة</th><th>ما تتتبّعه</th><th>أين تنظر</th><th>لماذا يهم</th></tr></thead>
+<tbody>
+<tr><td>الظهور</td><td>حصة الاستشهاد في الذكاء الاصطناعي؛ وما إذا كان الذكاء الاصطناعي يصف علامتك بدقة</td><td>مجموعة ثابتة من الأسئلة، تُفحص بانتظام في ChatGPT وPerplexity وGoogle AI</td><td>لا يعتمد على وسوم UTM؛ وهو القراءة الأكثر مباشرة لنتائج GEO</td></tr>
+<tr><td>الزيارات</td><td>الزيارات المباشرة إلى الصفحات الداخلية؛ وحجم البحث باسم العلامة؛ وإحالات الذكاء الاصطناعي التي لا يزال يمكن تحديدها</td><td>تقارير صفحات الهبوط في GA4، وGoogle Search Console</td><td>قلّة من الناس يكتبون عنوان URL طويلاً لصفحة منتج يدوياً، لذا فإن ارتفاع هذا النوع من الزيارات المباشرة يستحق الانتباه</td></tr>
+<tr><td>الأعمال</td><td>طلبات العملاء الجدد، ومتوسط قيمة الطلب، وحصة إجابات استبيان ما بعد الشراء التي تختار "مساعد ذكاء اصطناعي"</td><td>لوحة إدارة المتجر، واستبيان ما بعد الدفع</td><td>يجيب عن السؤال الأخير: هل يستحق الأمر؟</td></tr>
+</tbody>
+</table></div>
+
+<p>اقرأ الطبقات الثلاث معاً. إذا ارتفع الظهور ولم تتحرك الزيارات، فالذكاء الاصطناعي يذكرك دون أن يمنح المتسوقين سبباً للنقر، لذا أضف معلومات الشراء مثل نطاقات الأسعار وحالات الاستخدام إلى الصفحات التي يُستشهد بها. وإذا ارتفعت الزيارات ولم ترتفع المبيعات، فالمشكلة على الأرجح في صفحات الهبوط والدفع، لا في GEO نفسه.</p>
+
+<h2 id="how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">كيف أعدّ GA4 لأفقد قدراً أقل من زيارات الذكاء الاصطناعي؟</h2>
+
+<ol>
+<li><strong>أنشئ مجموعة قنوات مخصصة باسم "AI assistants".</strong> اجمع نطاقات الإحالة لمنتجات الذكاء الاصطناعي مثل chatgpt.com وperplexity.ai معاً، مستخدماً النطاقات التي تظهر فعلاً في حسابك، حتى لا تتبعثر في "Referral" حيث لا ينظر أحد.</li>
+<li><strong>فصّل الزيارات المباشرة حسب صفحة الهبوط.</strong> ركّز على الزيارات المباشرة إلى الصفحات الداخلية مثل صفحات تفاصيل المنتجات ومقالات المدونة، وحلّلها بمعزل عن الزيارات المباشرة إلى الصفحة الرئيسية. فالزيارات المباشرة لصفحتك الرئيسية تأتي في الغالب من العملاء العائدين؛ أما الارتفاع غير المعتاد في الصفحات الداخلية فالأرجح أنه من الذكاء الاصطناعي.</li>
+<li><strong>دوّن التاريخ في تقاريرك.</strong> سجّل تغيير منتصف أكتوبر كملاحظة، حتى لا تخدعك المقارنات السنوية والشهرية اللاحقة فتظن أن GEO توقف عن العمل.</li>
+<li><strong>أضف استبياناً بعد الدفع.</strong> اسأل سؤالاً واحداً فقط: "How did you hear about us?" (كيف سمعت عنا؟)، وضمّن "ChatGPT أو مساعد ذكاء اصطناعي آخر" كخيار. لا تحتاج إلى عينة كبيرة؛ فالاتجاه وحده ذو قيمة.</li>
+<li><strong>افحص الأسئلة نفسها كل شهر بشكل عشوائي.</strong> اختر من 30 إلى 50 سؤالاً أساسياً للمشترين، وسجّل ما إذا كانت إجابات الذكاء الاصطناعي تذكرك وترتبط بموقعك. هذه هي البيانات الخام لحصتك من الاستشهادات في الذكاء الاصطناعي.</li>
+</ol>
+
+<h2 id="when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">عندما يسألني مديري ما إذا كان SEO وGEO يستحقان، ماذا أقول؟</h2>
+
+<p>لا تعِد بإسناد دقيق. ابنِ حجتك على الاتجاهات والمطابقة المتقاطعة. إليك مثالاً افتراضياً: متجر مستقل يبيع معدات الأنشطة الخارجية يرى حصة استشهاده في الذكاء الاصطناعي ترتفع من واحد من كل عشرة إلى واحد من كل أربعة خلال ثلاثة أشهر. وفي الفترة نفسها، تنمو الزيارات المباشرة إلى الصفحات الداخلية وعمليات البحث باسم العلامة، ويختار عدد أكبر من العملاء الجدد "مساعد ذكاء اصطناعي" في استبيان ما بعد الشراء. ثلاثة خطوط تتحرك في الاتجاه نفسه أكثر إقناعاً من أي رقم مصدر منفرد.</p>
+
+<p>للحساب، استخدم معادلة مبسّطة: العائد على SEO وGEO يساوي تقريباً إجمالي الربح الإضافي من القنوات العضوية مقسوماً على إجمالي تكلفة المحتوى والأدوات والأفراد في الفترة نفسها. قدّر البسط بتحفّظ من بيانات الطلبات والاستبيانات، واحسب وقت فريقك في المقام.</p>
+
+<p>ثم قارن تلك الطلبات العضوية بتكلفة اكتساب العملاء من الإعلانات في الفترة نفسها، وسيكون لديك معيار مرجعي يستطيع مديرك متابعته. حتى لو لم تستطع حسابه إلى منزلتين عشريتين، فالاتجاه والحجم واضحان، وهذا كافٍ لدعم قرار الميزانية.</p>
+
+<h2 id="what-should-i-watch-for-next">ما الذي يجب أن أراقبه بعد ذلك؟</h2>
+
+<p>قد تعيد OpenAI وسوم UTM أو تواصل تغيير طريقة عمل روابطها، وقد تغيّر منصات الذكاء الاصطناعي الأخرى الأمور دون سابق إنذار أيضاً. لذا لا تتخذ قرارات الميزانية بناءً على تقلبات أسبوع أو أسبوعين، ولا تراهن بنظام القياس كله على معاملات التتبّع لدى منصة واحدة.</p>
+
+<p>على المدى القصير، أرشف بيانات أربعة أسابيع على جانبي منتصف أكتوبر كمجموعة مقارنة. وإذا عادت إحالات ChatGPT لاحقاً، يمكنك استخدامها لتقدير حجم زيارات الذكاء الاصطناعي التي كانت "مخفية" في الأثناء تقريباً.</p>
+
+<p>المقياس المستقر فعلاً هو عدد مرات ظهورك في إجابات الذكاء الاصطناعي. وإذا كنت تفضّل عدم الفحص اليدوي العشوائي كل شهر، فإن <a href="/ar/#geo">GEO Autopilot من ToucHigh</a> يتتبّع حصة الاستشهاد في الذكاء الاصطناعي مباشرة، سواء وُجدت وسوم UTM أم لا.</p></div>
+      <aside class="insight" aria-label="رؤية"><div class="eyebrow">رؤية</div><blockquote>قِس ما في أذهان الناس، لا الأرقام فقط.</blockquote><p>تذكّرنا نظرية قياس الأداء بأن المقاييس التي نختارها تقود القرارات التي نتخذها. وكثيراً ما تظهر قيمة قناة الذكاء الاصطناعي في تذكّر المتسوقين لك لا في نقرة قابلة للتتبّع، لذا فإن بيانات المصادر وحدها تقلّل من تقديرها كثيراً.</p></aside>
+      <section class="prop" aria-label="كيف يساعد ToucHigh">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>كيف يساعد ToucHigh</h2></div>
+        <div class="pb prose"><p>تتغير وسوم UTM وتضيع بيانات الإحالة، لكن ما إذا كانت إجابات الذكاء الاصطناعي تتضمنك أمر تستطيع قياسه مباشرة. وGEO Autopilot من ToucHigh مبني حول هذا بالضبط:</p><ul><li>يدقّق الأسئلة التي تكون فيها غير مرئي عبر ChatGPT وPerplexity وGoogle AI Overviews / AI Mode وGemini.</li><li>يكتب الإصلاحات وينشرها، بما فيها الصفحات والإجابات وبيانات كيان العلامة، ويبني مقالات GEO حول أسئلة البحث فور رواجها.</li><li>يتتبّع حصتك من الاستشهادات في الذكاء الاصطناعي باستمرار، فيمنحك منحنى نتائج لا يعتمد على وسوم UTM.</li></ul><p>إذا أردت أن ترى خط الأساس الخاص بك في البحث بالذكاء الاصطناعي في الولايات المتحدة أولاً، فاحجز مكالمة استراتيجية مدتها 30 دقيقة.</p><p class="uc">المصانع وموردو B2B: شاهد كيف يتعامل ToucHigh مع <a href="/ar/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T03'})}catch(e){}">ظهور الموردين في بحث الذكاء الاصطناعي</a>. تريد تحويل الظهور إلى مسار مبيعات؟ تعرّف على <a href="/ar/pro/" onclick="try{gtag('event','pro_click',{location:'article_T03'})}catch(e){}">ToucHigh PRO</a>، التواصل بالاستراتيجية أولاً.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T03')">احجز جلسة استراتيجية مدتها 30 دقيقة ←</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T03'})}catch(e){}">تسجيل الدخول إلى ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="الأسئلة الشائعة"><h2>الأسئلة الشائعة</h2><details open><summary>هل تعني القفزة المفاجئة في الزيارات المباشرة دائماً أنها جاءت من ChatGPT؟</summary><p>ليس بالضرورة. ينبّه تقرير Search Engine Land أيضاً إلى أن تحليل Huesler لا يستطيع إثبات أن كل إحالة مفقودة لها السبب نفسه. تحقّق من ثلاثة أمور: هل بدأ الارتفاع في منتصف أكتوبر؟ هل هو مركّز على الصفحات الداخلية مثل صفحات المنتجات والمقالات؟ هل انخفضت إحالات ChatGPT في الوقت نفسه؟ فقط عندما تتطابق الثلاثة يُرجَّح أنها زيارات من الذكاء الاصطناعي أُعيد تصنيفها.</p></details><details><summary>وماذا عن الزيارات من منصات الذكاء الاصطناعي الأخرى غير ChatGPT؟</summary><p>تحقّق أولاً من تقرير الإحالات في GA4 لترى أي نطاقات منتجات الذكاء الاصطناعي تظهر فعلاً، وضعها في مجموعة قنوات واحدة باسم "AI assistants". لكن تغيير ChatGPT هذا يُظهر أن المنصات قد تغيّر طريقة عمل روابطها في أي وقت، لذا تعامل مع بيانات الإحالة كمُدخل واحد فقط، يُقرأ إلى جانب حصة الاستشهاد في الذكاء الاصطناعي وبيانات الطلبات.</p></details><details><summary>كيف أحسب حصة الاستشهاد في الذكاء الاصطناعي؟</summary><p>ثبّت مجموعة من الأسئلة الأساسية، مثل أكثر 40 سؤالاً عن الفئة يطرحها المتسوقون الأمريكيون. كل شهر، اطرح كل سؤال على بضع منصات ذكاء اصطناعي رئيسية، واحسب الإجابات التي تذكر علامتك أو ترتبط بها، واقسمها على إجمالي عدد الإجابات. إذا استشهد بك 8 من 40 سؤالاً، فحصتك 20%. وأبقِ قائمة الأسئلة دون تغيير ليكون الاتجاه حقيقياً.</p></details><details><summary>نحن فريق صغير بلا محلل بيانات. ما الحد الأدنى الذي يجب أن نتتبّعه؟</summary><p>ثلاثة أرقام تكفي: حصة الاستشهاد الشهرية في الذكاء الاصطناعي، والزيارات المباشرة إلى الصفحات الداخلية، وحصة العملاء الجدد الذين يختارون "مساعد ذكاء اصطناعي" في استبيان ما بعد الشراء. الأول يعكس الظهور، والثاني الزيارات، والثالث المبيعات. خصّص نصف يوم شهرياً لتسجيلها في جدول بيانات واحد، وبعد ثلاثة أشهر سترى ما إذا كانت قناة الذكاء الاصطناعي تقود النمو.</p></details></section>
+      <section class="srcs"><h2>المصادر</h2><ol><li><a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure</a> — Search Engine Land, 2026-10-15</li></ol></section>
+      <p class="note"><b>لماذا كتبنا هذا</b>كتبنا هذا لأن سؤال &quot;كيف أحسب العائد على SEO وGEO؟&quot; هو أكثر ما يتعثر عنده البائعون قبل تحديد الميزانية، ولأن تقرير هذا الأسبوع عن احتمال تخلّي ChatGPT عن وسوم UTM يجعل السؤال أصعب.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="في هذه الصفحة"><h4>في هذه الصفحة</h4><a href="#why-did-my-chatgpt-traffic-suddenly-disappear">لماذا "اختفت" زياراتي من ChatGPT فجأة؟</a><a href="#why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">لماذا لا تستطيع بيانات النقر وحدها أن تخبرك بما إذا كان GEO يؤتي ثماره؟</a><a href="#a-three-layer-framework-for-measuring-the-ai-channel">إطار من ثلاث طبقات لقياس قناة الذكاء الاصطناعي</a><a href="#how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">كيف أعدّ GA4 لأفقد قدراً أقل من زيارات الذكاء الاصطناعي؟</a><a href="#when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">عندما يسألني مديري ما إذا كان SEO وGEO يستحقان، ماذا أقول؟</a><a href="#what-should-i-watch-for-next">ما الذي يجب أن أراقبه بعد ذلك؟</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>اعرف أين أنت غير مرئي في بحث الذكاء الاصطناعي الأمريكي</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">احجز مكالمة</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">تسجيل الدخول</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>مقالات ذات صلة</h2>
+  <div class="grid"><a class="card" href="/blog/ar/medir-campanas-redes-sociales-pymes/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="ثلاث جرار زجاجية على رف أبيض تمتلئ بكرات زجاجية برتقالية إلى مستويات مختلفة، عليها علامات عين وقلب وإشارة مرجعية، ومؤشر فأرة مع عربة تسوق، ولكل منها خط كحلي يُظهر متوسطها السابق." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ar" dir="rtl"><div class="eyebrow">القياس</div><h3>كيف تقيس حملات وسائل التواصل دون أن تكون محللاً: 3 مقاييس</h3><p>لا تحتاج إلى لوحة مليئة بالرسوم البيانية لتعرف ما إذا كانت الحملة تنجح. ثلاثة مقاييس، وخط أساس، وخمس عشرة دقيقة كل يوم اثنين تكفي لاتخاذ قرارات سليمة.</p><div class="meta"><span class="lg">العربية</span><span>قراءة 4 دقائق</span></div></div></a><a class="card" href="/blog/ar/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="من مقعد السائق، تستقر يدا صاحب متجر على عجلة القيادة أمام لوحة عدّادات فيها ثلاثة عدّادات بإطارات برتقالية تماماً وصف من أضواء التحذير الصغيرة." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ar" dir="rtl"><div class="eyebrow">القياس</div><h3>مؤشرات KPI للإعلان الرقمي للأعمال الصغيرة: الأرقام الثلاثة التي تهم</h3><p>لا يوجد لديك متخصص في شراء الوسائط؟ ركّز على تكلفة الاكتساب، والعائد على الإنفاق الإعلاني، ومعدل التكرار أو جودة العملاء المحتملين. إليك كيف تحدد أهداف نقطة التعادل وتراجعها مرة أسبوعياً.</p><div class="meta"><span class="lg">العربية</span><span>قراءة 6 دقائق</span></div></div></a><a class="card" href="/blog/ar/measure-influencer-roi-tiktok-shop/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t35-768.webp"><img src="/assets/blog/hero/t35.jpg" alt="ثلاثة حوامل هواتف بإضاءة حلقية متجاورة؛ الحامل الذي بجانبه كومة عالية من بطاقات الفيديو لديه كومة من العملات البرتقالية وأكياس التسوق، بينما يحسب عدّاد خرزي علبة هدايا وطرداً كتكاليف." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ar" dir="rtl"><div class="eyebrow">القياس</div><h3>كيف تقيس عائد تسويق المؤثرين على TikTok Shop كعلامة صغيرة</h3><p>معظم صنّاع المحتوى الذين يتلقّون عينات مجانية لا ينشرون أبداً، ونادراً ما يبيع فيديو واحد. إليك بطاقة تقييم بسيطة لقياس عائد صنّاع المحتوى على TikTok Shop دون أن تخدع نفسك.</p><div class="meta"><span class="lg">العربية</span><span>قراءة 6 دقائق</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ar/">العودة إلى المدونة →</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>اعرف أين أنت غير مرئي في بحث الذكاء الاصطناعي الأمريكي</h2>
+  <p>احجز مكالمة مجانية مدتها 30 دقيقة وسندقّق ظهور متجرك في الذكاء الاصطناعي مباشرةً.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">احجز جلسة استراتيجية مدتها 30 دقيقة ←</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">تسجيل الدخول إلى ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">الظهور في بحث الذكاء الاصطناعي ووسائل التواصل والإعلانات على الطيار الآلي للشركات الصغيرة والمتوسطة والبائعين العابرين للحدود.</p></div>
+      <div><h4>ToucHigh</h4><a href="/ar/">الرئيسية</a><a href="/ar/#geo">GEO Autopilot</a><a href="/ar/#social">Social Autopilot</a><a href="/ar/pro/">ToucHigh PRO</a></div>
+      <div><h4>المدونة</h4><a href="/blog/ar/">المدونة</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>تسجيل الدخول</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">احجز مكالمة</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
