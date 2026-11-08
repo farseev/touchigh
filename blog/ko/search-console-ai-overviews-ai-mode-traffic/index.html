@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search Console에서 AI Overviews·AI Mode 측정하는 법 | ToucHigh</title>
+<meta name="description" content="Google은 AI Overviews와 AI Mode를 Search Console 웹 검색 데이터에 포함해 집계합니다. AI 답변이 나타날 때 노출, 클릭, 페이지를 읽는 법과 비교 기준.">
+<link rel="canonical" href="https://touchigh.ai/blog/ko/search-console-ai-overviews-ai-mode-traffic/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="AI Overviews 서치 콘솔, AI Mode 트래픽 서치 콘솔, AI Overviews 클릭 측정, 서치 콘솔 웹 검색 유형 AI, 구글 AI 기능 트래픽, 구글 GEO 측정">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ko/search-console-ai-overviews-ai-mode-traffic/">
+<meta property="og:title" content="Google Search Console에서 AI Overviews·AI Mode 트래픽 읽는 법">
+<meta property="og:description" content="Google은 AI Overviews와 AI Mode를 Search Console 웹 검색 데이터에 포함해 집계합니다. AI 답변이 나타날 때 노출, 클릭, 페이지를 읽는 법과 비교 기준.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t65-ko.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Google Search Console에서 AI Overviews·AI Mode 트래픽 읽는 법">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:section" content="성과 측정">
+<meta property="article:tag" content="Google Search Console">
+<meta property="article:tag" content="AI Overviews">
+<meta property="article:tag" content="AI Mode">
+<meta property="article:tag" content="SEO 측정">
+<meta property="article:tag" content="GEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Google Search Console에서 AI Overviews·AI Mode 트래픽 읽는 법">
+<meta name="twitter:description" content="Google은 AI Overviews와 AI Mode를 Search Console 웹 검색 데이터에 포함해 집계합니다. AI 답변이 나타날 때 노출, 클릭, 페이지를 읽는 법과 비교 기준.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t65-ko.jpg">
+<meta name="twitter:image:alt" content="Google Search Console에서 AI Overviews·AI Mode 트래픽 읽는 법">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ko/search-console-ai-overviews-ai-mode-traffic/#article","url":"https://touchigh.ai/blog/ko/search-console-ai-overviews-ai-mode-traffic/","mainEntityOfPage":"https://touchigh.ai/blog/ko/search-console-ai-overviews-ai-mode-traffic/","headline":"Google Search Console에서 AI Overviews·AI Mode 트래픽 읽는 법","alternativeHeadline":"Search Console에서 AI Overviews·AI Mode 측정하는 법","description":"Google은 AI Overviews와 AI Mode를 Search Console 웹 검색 데이터에 포함해 집계합니다. AI 답변이 나타날 때 노출, 클릭, 페이지를 읽는 법과 비교 기준.","abstract":"별도 보고서는 없습니다. Google에 따르면 AI Overviews와 AI Mode에 노출되는 사이트는 Search Console 실적 보고서의 웹(Web) 검색 유형 아래 전체 검색 트래픽에 포함됩니다. 그러니 비교로 읽으세요. 질문형·긴 검색어 대 짧은 검색어, 이전 대 이후, 노출 대 클릭, 그리고 노출이 늘어난 페이지를 보세요. 여기에 GA4 방문 페이지 데이터와, 우선순위 검색어 중 어떤 것에 AI Overview가 나타나는지 직접 확인한 결과를 함께 보세요.","image":["https://touchigh.ai/assets/blog/og/t65-ko.jpg","https://touchigh.ai/assets/blog/hero/t01.jpg"],"datePublished":"2026-11-08T10:20:00+08:00","dateModified":"2026-11-08T10:20:00+08:00","inLanguage":"ko","author":{"@type":"Organization","name":"ToucHigh 리서치 팀","url":"https://touchigh.ai/blog/ko/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"성과 측정","keywords":"AI Overviews 서치 콘솔, AI Mode 트래픽 서치 콘솔, AI Overviews 클릭 측정, 서치 콘솔 웹 검색 유형 AI, 구글 AI 기능 트래픽, 구글 GEO 측정","wordCount":880,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ko/#blog","name":"ToucHigh 블로그"},"about":[{"@type":"Thing","name":"Google Search Console"},{"@type":"Thing","name":"AI Overviews"},{"@type":"Thing","name":"AI Mode"},{"@type":"Thing","name":"SEO 측정"},{"@type":"Thing","name":"GEO"}],"citation":[{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Performance report (Search results): Overview and basic setup","url":"https://support.google.com/webmasters/answer/7576553","publisher":{"@type":"Organization","name":"Search Console Help"}},{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"Search Console에 AI Overviews 필터가 있나요?","acceptedAnswer":{"@type":"Answer","text":"Google 가이드는 별도 보고서를 안내하는 대신, AI Overviews와 AI Mode가 실적 보고서의 전체 웹 검색 데이터에 포함된다고 말합니다. 그 효과는 검색어 그룹, 페이지, 기간을 비교해 읽으세요."}},{"@type":"Question","name":"노출은 오르는데 왜 클릭은 그대로일까요?","acceptedAnswer":{"@type":"Answer","text":"흔한 이유 하나는 귀사 페이지가 AI 답변의 보조 링크 등으로 표시되지만, 검색한 사람이 답변 자체에서 충분한 정보를 얻는 경우입니다. 문제라고 단정하기 전에 어떤 검색어와 페이지가 변화를 이끄는지 확인하세요."}},{"@type":"Question","name":"Google-Extended를 차단하면 우리 페이지가 AI Overviews에서 빠지나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Google에 따르면 Google-Extended는 Google 검색 포함 여부에 영향을 주지 않습니다. AI 기능에 표시되는 내용을 제한하려면 Google은 nosnippet, data-nosnippet, max-snippet 또는 noindex를 안내합니다."}},{"@type":"Question","name":"AI Overviews에 나오려면 특별한 마크업이 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"Google에 따르면 추가 요건이나 특별한 스키마는 필요 없습니다. 페이지가 색인되어 있고 스니펫 표시 자격이 있어야 하며, 일반적인 SEO 모범 사례가 적용됩니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ko/"},{"@type":"ListItem","position":2,"name":"블로그","item":"https://touchigh.ai/blog/ko/"},{"@type":"ListItem","position":3,"name":"Google Search Console에서 AI Overviews·AI Mode 트래픽 읽는 법","item":"https://touchigh.ai/blog/ko/search-console-ai-overviews-ai-mode-traffic/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ko/">홈</a>
+      <a href="/ko/#products">제품</a>
+      <a href="/ko/#faq">자주 묻는 질문</a>
+      <a href="/ko/pro/">ToucHigh PRO</a>
+      <a href="/blog/ko/" class="on">블로그</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="언어: 한국어"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">한국어</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="언어" hidden><li><a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/search-console-ai-overviews-ai-mode-traffic/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/search-console-ai-overviews-ai-mode-traffic/" hreflang="ko" lang="ko" data-short="한국어" aria-current="page">한국어</a></li><li><a href="/blog/id/search-console-ai-overviews-ai-mode-traffic/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/es/search-console-ai-overviews-ai-mode-traffic/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/search-console-ai-overviews-ai-mode-traffic/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/search-console-ai-overviews-ai-mode-traffic/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/search-console-ai-overviews-ai-mode-traffic/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ru/search-console-ai-overviews-ai-mode-traffic/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">로그인</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">상담 예약</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ko/">홈</a><span>/</span><a href="/blog/ko/">블로그</a><span>/</span><span>성과 측정</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">성과 측정</div>
+    <h1>Google Search Console에서 AI Overviews·AI Mode 트래픽 읽는 법</h1>
+    <p class="dek">별도의 &#x27;AI Overviews&#x27; 탭은 없습니다. Google은 AI 기능을 이미 쓰고 있는 실적 보고서에 합쳐 놓았습니다. 그래도 수출 기업이 AI 답변이 검색 트래픽에 미치는 영향을 읽어 내는 방법을 소개합니다.</p>
+    <div class="a-meta"><b>ToucHigh 리서치 팀</b><span>게시일 <time datetime="2026-11-08T10:20:00+08:00">2026년 11월 8일</time></span><span>6분 분량</span><span class="lang-badge">한국어</span></div>
+    <div class="a-langs">다른 언어<a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/search-console-ai-overviews-ai-mode-traffic/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/id/search-console-ai-overviews-ai-mode-traffic/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/es/search-console-ai-overviews-ai-mode-traffic/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/search-console-ai-overviews-ai-mode-traffic/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/search-console-ai-overviews-ai-mode-traffic/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/search-console-ai-overviews-ai-mode-traffic/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ru/search-console-ai-overviews-ai-mode-traffic/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp 768w, /assets/blog/hero/t01-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t01.jpg" alt="검색창이 주황색 구슬을 보라색으로 빛나는 AI 답변 깔때기에 쏟아붓고, 그중 몇 개만 작은 웹사이트 상점에 닿습니다. 옆에는 빈 페이지가 높이 쌓여 흔들리는데, 거기서는 구슬이 단 하나만 나옵니다." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="이 글이 답하는 질문"><span class="qm">“</span><div><div class="eyebrow">이 글이 답하는 질문</div><p class="q">Google AI Overviews와 AI Mode가 우리에게 얼마나 트래픽을 가져오는지 어디서 볼 수 있나요? Search Console에 이를 위한 보고서가 있나요?</p><p class="ans"><b>짧은 답</b>별도 보고서는 없습니다. Google에 따르면 AI Overviews와 AI Mode에 노출되는 사이트는 Search Console 실적 보고서의 웹(Web) 검색 유형 아래 전체 검색 트래픽에 포함됩니다. 그러니 비교로 읽으세요. 질문형·긴 검색어 대 짧은 검색어, 이전 대 이후, 노출 대 클릭, 그리고 노출이 늘어난 페이지를 보세요. 여기에 GA4 방문 페이지 데이터와, 우선순위 검색어 중 어떤 것에 AI Overview가 나타나는지 직접 확인한 결과를 함께 보세요.</p></div></section>
+      <section class="kt takeaways"><h2>핵심 요약</h2><ul><li>Google에 따르면 AI Overviews와 AI Mode 트래픽은 Search Console 실적 보고서의 웹 검색 유형에서 나머지 검색과 함께 집계됩니다.</li><li>GA4의 AI Assistant 채널은 Google AI Overviews와 AI Mode를 제외하므로, 이를 볼 수 있는 주된 곳은 Search Console입니다.</li><li>보조 링크로 노출될 자격을 얻으려면 페이지가 색인되어 있고 스니펫과 함께 표시될 수 있어야 합니다. 추가 기술 요건은 없습니다.</li><li>Google에 따르면 AI Overviews와 AI Mode는 관련 검색을 여러 번 수행하는 '쿼리 팬아웃(query fan-out)'을 사용할 수 있으며, 이것이 보고서에 새롭고 더 긴 검색어가 나타나는 이유 중 하나입니다.</li><li>사이트 전체 합계가 아니라 검색어 그룹과 페이지별로 추세를 읽으세요. AI 답변은 노출을 끌어올리는 동안 클릭은 다르게 움직일 수 있습니다.</li></ul></section>
+      <div class="prose"><p>많은 팀이 'AI Overviews' 보고서를 찾으러 Search Console을 열었다가 아무것도 찾지 못합니다. 데이터가 없다는 뜻이 아니라, Google이 이미 쓰고 있는 보고서 안에 넣었다는 뜻입니다. 어디에 있는지, 그리고 무엇을 분리할 수 없는지 알면, 상사가 묻는 질문에 여전히 답할 수 있습니다. Google의 AI 답변이 우리 트래픽에 도움이 되고 있는가, 해가 되고 있는가?</p>
+
+<h2 id="s1">Search Console은 AI Overviews와 AI Mode를 어디에 보고하나요?</h2>
+
+<p>AI 기능에 관한 Google의 사이트 소유자용 가이드는 분명합니다. AI Overviews, AI Mode 같은 AI 기능에 노출되는 사이트는 Search Console의 전체 검색 트래픽에 포함되며, 실적 보고서의 '웹' 검색 유형에 보고됩니다. 즉 AI Overview에서 발생한 노출이나 클릭은 해당 검색어와 페이지의 다른 Google 검색 노출·클릭과 함께 집계됩니다.</p>
+
+<p>이는 Google 애널리틱스 4에서 사람들이 발견하는 공백도 설명해 줍니다. GA4의 AI Assistant 채널은 ChatGPT, Gemini, Copilot 등의 출처를 다루지만, Google의 정의는 AI Overviews와 AI Mode를 명시적으로 제외합니다. 이들에서 온 방문은 Google 자연 검색 트래픽으로 도착합니다. Google의 AI 답변을 이해하고 싶다면 Search Console이 주된 도구입니다.</p>
+
+<h2 id="s2">어떤 페이지가 AI 답변에 노출될 자격이 있나요?</h2>
+
+<p>자격 기준은 스니펫이 있는 일반 검색 결과와 같습니다. Google에 따르면 AI Overviews나 AI Mode에 보조 링크로 표시되려면 페이지가 색인되어 있고 Google 검색에서 스니펫과 함께 표시될 수 있어야 하며, 추가 기술 요건은 없습니다. 여기서 두 가지 실무 점검이 나옵니다.</p>
+
+<ul>
+<li>우선순위 페이지가 색인되어 있는지 확인하세요. Search Console의 페이지 보고서와 URL 검사를 활용하세요.</li>
+<li>실수로 스니펫을 제한하지 않았는지 확인하세요. Google은 표시 내용을 제한하는 설정으로 nosnippet, data-nosnippet, max-snippet, noindex를 꼽습니다. 사이트 전체에 <code>nosnippet</code>를 추가하는 테마나 플러그인도 AI 답변에서 귀사를 빠지게 만듭니다.</li>
+</ul>
+
+<h2 id="s3">섞여 있는 데이터에서 AI 답변의 효과는 어떻게 읽나요?</h2>
+
+<p>AI 트래픽이 따로 분리되어 있지 않으므로, 그룹을 비교해서 읽어야 합니다. 네 가지 비교가 대부분의 일을 해 줍니다.</p>
+
+<div class="tw"><table>
+<thead><tr><th>비교</th><th>설정 방법</th><th>알 수 있는 것</th></tr></thead>
+<tbody>
+<tr><td>질문형 vs 짧은 검색어</td><td>검색어 측정기준을 <code>^(what|how|which|why|best|can|does)\b</code> 같은 맞춤 정규식으로 필터링</td><td>AI 답변이 자주 나타나는 대화형 검색어의 노출과 클릭이 늘고 있는지</td></tr>
+<tr><td>이전 vs 이후</td><td>콘텐츠 게시처럼 알려진 변화 전후로 기간 비교</td><td>변화가 노출이나 CTR의 움직임과 시기적으로 겹치는지</td></tr>
+<tr><td>노출 vs 클릭</td><td>같은 검색어 그룹에서 두 지표를 함께 표시</td><td>노출은 오르는데 클릭이 그대로라면, 귀사가 보이긴 하지만 검색 결과 안에서 답이 끝나고 있다는 뜻일 수 있음</td></tr>
+<tr><td>페이지 그룹</td><td>/products/나 /blog/ 같은 폴더로 페이지 필터링</td><td>어떤 콘텐츠 유형의 가시성이 늘고 있는지</td></tr>
+</tbody>
+</table></div>
+
+<p>Google은 또한 AI Overviews와 AI Mode가 응답을 만들기 위해 여러 관련 검색을 수행하는 '쿼리 팬아웃' 기법을 쓸 수 있다고 말합니다. 검색어 표에서 한 번도 겨냥하지 않은 새롭고 더 길고 구체적인 검색어를 살펴보세요. 귀사 페이지가 어떤 하위 질문에 답하는 데 쓰이고 있는지 알려 주는 유용한 단서입니다.</p>
+
+<h2 id="s4">Search Console과 GA4는 어떻게 함께 써야 할까요?</h2>
+
+<p>Search Console은 클릭에서 멈춥니다. 그 클릭이 가치가 있었는지 알려면, Google 가시성이 늘어난 페이지를 자연 검색(Organic Search)으로 필터링한 GA4 방문 페이지 보고서와 맞춰 보고, 참여도와 주요 이벤트를 확인하세요. Google 자체 가이드는 Google 애널리틱스 같은 도구로 전환과 체류 시간을 추적하라고 제안하며, AI Overviews가 있는 검색 결과 페이지에서 나온 클릭이 더 질이 높다, 즉 사용자가 사이트에 더 오래 머물 가능성이 크다고 말합니다. 이를 당연한 사실이 아니라 자사 데이터로 확인할 Google의 주장으로 받아들이세요.</p>
+
+<h2 id="s5">매달 무엇을 추적해야 할까요?</h2>
+
+<ol>
+<li><strong>우선순위 검색어 20~50개로 된 고정 목록.</strong> 직접 검색해 AI Overview가 나타나는지, 귀사가 인용되는지 기록하세요.</li>
+<li><strong>질문형 검색어 그룹의 노출과 클릭</strong>을 전월, 그리고 데이터가 있다면 전년 동월과 비교하세요.</li>
+<li><strong>노출이 가장 많이 늘어난 페이지 10개</strong>와 그 GA4 참여도.</li>
+<li>제품, 역량, FAQ 페이지의 <strong>색인 및 스니펫 상태</strong>.</li>
+<li><strong>브랜드 검색 노출수</strong>. 다른 곳의 AI 답변이 사람들을 귀사 검색으로 보내고 있다는 간접 신호입니다.</li>
+</ol>
+
+<p>이 중 어느 것도 단일한 'AI 트래픽' 숫자를 주지는 않으며, Google의 섞인 데이터에서 이를 완벽하게 분리한다고 주장하는 도구는 경계해야 합니다. 대신 귀사 콘텐츠가 Google의 AI 답변에 쓰이고 있는지, 그리고 그것이 의미 있는 방문으로 이어지는지 일관되게 확인할 수 있는 방법을 얻게 됩니다.</p></div>
+      <aside class="insight" aria-label="인사이트"><div class="eyebrow">인사이트</div><blockquote>데이터가 섞여 있을 때는 숫자 하나를 찾지 말고 그룹을 비교하세요.</blockquote><p>연구 설계에서는 이를 이중차분법(difference-in-differences) 관점이라고 부릅니다. 처치 효과를 직접 분리할 수 없으니, 다르게 반응해야 할 그룹과 기간을 비교하는 것입니다. 질문형 검색어 대 짧은 검색어, 이전 대 이후가 AI Overviews에 맞는 실용적인 버전입니다.</p></aside>
+      <section class="prop" aria-label="ToucHigh가 돕는 방법">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh가 돕는 방법</h2></div>
+        <div class="pb prose"><p>Search Console은 Google을 보여 주고, ToucHigh의 GEO Autopilot은 더 넓은 AI 전반의 그림을 보여 줍니다.</p><ul><li>ChatGPT, Perplexity, Google AI Overviews와 AI Mode, Gemini 전반에서 귀사의 가시성을 진단합니다.</li><li>귀사가 빠져 있는 질문에 대한 수정 사항과 GEO 아티클을 작성하고 게시합니다.</li><li>검색 데이터와 함께 AI 인용 점유율을 추적해 상승 효과를 보여 줄 수 있게 합니다.</li></ul><p>30분 전략 상담을 예약하시면 Search Console이 보여 주는 내용과 귀사 사이트의 실시간 AI 가시성 분석을 비교해 드립니다.</p><p class="uc">공장·B2B 공급업체라면: ToucHigh의 <a href="/ko/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T65'})}catch(e){}">AI 검색 공급업체 가시성</a>을 확인하세요. 가시성을 파이프라인으로 바꾸고 싶다면 전략 우선 아웃바운드 서비스 <a href="/ko/pro/" onclick="try{gtag('event','pro_click',{location:'article_T65'})}catch(e){}">ToucHigh PRO</a>를 확인하세요.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T65')">30분 전략 상담 예약 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T65'})}catch(e){}">ToucHigh 로그인</a></div>
+      </section>
+      <section class="faq" aria-label="자주 묻는 질문"><h2>자주 묻는 질문</h2><details open><summary>Search Console에 AI Overviews 필터가 있나요?</summary><p>Google 가이드는 별도 보고서를 안내하는 대신, AI Overviews와 AI Mode가 실적 보고서의 전체 웹 검색 데이터에 포함된다고 말합니다. 그 효과는 검색어 그룹, 페이지, 기간을 비교해 읽으세요.</p></details><details><summary>노출은 오르는데 왜 클릭은 그대로일까요?</summary><p>흔한 이유 하나는 귀사 페이지가 AI 답변의 보조 링크 등으로 표시되지만, 검색한 사람이 답변 자체에서 충분한 정보를 얻는 경우입니다. 문제라고 단정하기 전에 어떤 검색어와 페이지가 변화를 이끄는지 확인하세요.</p></details><details><summary>Google-Extended를 차단하면 우리 페이지가 AI Overviews에서 빠지나요?</summary><p>아니요. Google에 따르면 Google-Extended는 Google 검색 포함 여부에 영향을 주지 않습니다. AI 기능에 표시되는 내용을 제한하려면 Google은 nosnippet, data-nosnippet, max-snippet 또는 noindex를 안내합니다.</p></details><details><summary>AI Overviews에 나오려면 특별한 마크업이 필요한가요?</summary><p>Google에 따르면 추가 요건이나 특별한 스키마는 필요 없습니다. 페이지가 색인되어 있고 스니펫 표시 자격이 있어야 하며, 일반적인 SEO 모범 사례가 적용됩니다.</p></details></section>
+      <section class="srcs"><h2>참고 자료</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://support.google.com/webmasters/answer/7576553" rel="noopener" target="_blank">Performance report (Search results): Overview and basic setup</a> — Search Console Help</li><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li></ol></section>
+      <p class="note"><b>이 글을 쓴 이유</b>이 글을 쓴 이유는 수출 기업들이 AI Overview 데이터가 어디 있는지 계속 묻기 때문입니다. 솔직한 답은 이미 Search Console 안에 섞여 있다는 것이며, 이를 체계적으로 읽는 방법이 있습니다.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="이 페이지 내용"><h4>이 페이지 내용</h4><a href="#s1">Search Console은 AI Overviews와 AI Mode를 어디에 보고하나요?</a><a href="#s2">어떤 페이지가 AI 답변에 노출될 자격이 있나요?</a><a href="#s3">섞여 있는 데이터에서 AI 답변의 효과는 어떻게 읽나요?</a><a href="#s4">Search Console과 GA4는 어떻게 함께 써야 할까요?</a><a href="#s5">매달 무엇을 추적해야 할까요?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>미국 AI 검색에서 어디가 보이지 않는지 확인하세요</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">상담 예약</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">로그인</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>관련 글</h2>
+  <div class="grid"><a class="card" href="/blog/ko/ga4-ai-assistant-channel/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="보라색 빛이 나는 말풍선 터널에서 소포들이 컨베이어로 미끄러져 나와 평범한 회색 통에 떨어지고, 주황색 추적 태그는 바닥에 흩어져 있습니다. 옆에서는 돋보기, 링 차트, 막대 차트, 쇼핑백이 교차 확인을 위해 대기하고 있습니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ko"><div class="eyebrow">성과 측정</div><h3>GA4 AI Assistant 채널: 무엇을 세고, 무엇을 놓치며, 언제 직접 만들어야 하는가</h3><p>이제 Google 애널리틱스는 ChatGPT, Gemini, Copilot 등에서 온 방문을 별도 채널로 분류합니다. AI 트래픽 문제의 일부는 이로써 해결됩니다. 해결되지 않는 부분과, 그 공백을 메우는 맞춤 채널 그룹을 소개합니다.</p><div class="meta"><span class="lg">한국어</span><span>6분 분량</span></div></div></a><a class="card" href="/blog/en/ai-overviews-branded-queries-seo-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="A search bar pours orange marbles into a violet-glowing AI answer funnel that lets only a few reach a small website storefront, while a tall wobbling stack of blank pages beside it yields just one marble." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">SEO</div><h3>Store SEO Traffic Dropping? AI Overviews Now Cover 80% of Branded Searches</h3><p>AI Overviews are taking over branded searches, and more blog posts and backlinks pay back less every month. What should independent store owners stop doing, and what should they start?</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/seo-best-practices-ai-overviews-ai-mode/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t30-768.webp"><img src="/assets/blog/hero/t30.jpg" alt="A gloved hand prunes thin grey page-leaves from a potted plant while a few large orange page cards bloom, one of them linked by a violet line to a floating AI answer panel." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO Best Practices for AI Overviews and AI Mode (October 2026)</h3><p>Google&#x27;s AI now answers most branded searches and carries more inline links. Here&#x27;s where SEO effort still pays, where returns have flattened, and a one-week checklist.</p><div class="meta"><span class="lg">English</span><span>7 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ko/">← 블로그로 돌아가기</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>미국 AI 검색에서 어디가 보이지 않는지 확인하세요</h2>
+  <p>30분 무료 상담을 예약하시면 스토어의 AI 가시성을 실시간으로 진단해 드립니다.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30분 전략 상담 예약 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHigh 로그인</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">중소기업과 크로스보더 셀러를 위한 AI 검색 가시성, 소셜, 광고 오토파일럿.</p></div>
+      <div><h4>ToucHigh</h4><a href="/ko/">홈</a><a href="/ko/#geo">GEO Autopilot</a><a href="/ko/#social">Social Autopilot</a><a href="/ko/pro/">ToucHigh PRO</a></div>
+      <div><h4>블로그</h4><a href="/blog/ko/">블로그</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>로그인</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">상담 예약</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

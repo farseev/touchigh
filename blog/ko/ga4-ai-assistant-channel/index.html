@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GA4 AI Assistant 채널 그룹: 설정과 공백 정리 | ToucHigh</title>
+<meta name="description" content="GA4 기본 채널 그룹에 AI Assistant 채널이 생겼습니다. 무엇을 세는지, AI Overviews와 리퍼러 없는 방문이 왜 빠지는지, 맞춤 그룹은 어떻게 만드는지.">
+<link rel="canonical" href="https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="GA4 AI 어시스턴트 채널, GA4 맞춤 채널 그룹 AI, GA4 ChatGPT 트래픽 추적, GA4 AI 추천 트래픽 정규식, AI 어시스턴트 채널 그룹, GEO 트래픽 측정">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/">
+<meta property="og:title" content="GA4 AI Assistant 채널: 무엇을 세고, 무엇을 놓치며, 언제 직접 만들어야 하는가">
+<meta property="og:description" content="GA4 기본 채널 그룹에 AI Assistant 채널이 생겼습니다. 무엇을 세는지, AI Overviews와 리퍼러 없는 방문이 왜 빠지는지, 맞춤 그룹은 어떻게 만드는지.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t64-ko.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GA4 AI Assistant 채널: 무엇을 세고, 무엇을 놓치며, 언제 직접 만들어야 하는가">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:section" content="성과 측정">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="AI 트래픽">
+<meta property="article:tag" content="채널 그룹">
+<meta property="article:tag" content="기여 측정">
+<meta property="article:tag" content="GEO 측정">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GA4 AI Assistant 채널: 무엇을 세고, 무엇을 놓치며, 언제 직접 만들어야 하는가">
+<meta name="twitter:description" content="GA4 기본 채널 그룹에 AI Assistant 채널이 생겼습니다. 무엇을 세는지, AI Overviews와 리퍼러 없는 방문이 왜 빠지는지, 맞춤 그룹은 어떻게 만드는지.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t64-ko.jpg">
+<meta name="twitter:image:alt" content="GA4 AI Assistant 채널: 무엇을 세고, 무엇을 놓치며, 언제 직접 만들어야 하는가">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/#article","url":"https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/","mainEntityOfPage":"https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/","headline":"GA4 AI Assistant 채널: 무엇을 세고, 무엇을 놓치며, 언제 직접 만들어야 하는가","alternativeHeadline":"GA4 AI Assistant 채널 그룹: 설정과 공백 정리","description":"GA4 기본 채널 그룹에 AI Assistant 채널이 생겼습니다. 무엇을 세는지, AI Overviews와 리퍼러 없는 방문이 왜 빠지는지, 맞춤 그룹은 어떻게 만드는지.","abstract":"사용하되, 그것이 전부라고 여기지는 마세요. Google 문서에 따르면 AI Assistant 채널은 ChatGPT, Gemini, Deepseek, Copilot, Grok 같은 출처의 방문을 다루며, Google의 AI Overviews와 AI Mode는 제외합니다. 또한 리퍼러 없이 도착해 Direct로 분류되는 방문은 볼 수 없습니다. 귀사 속성에 실제로 어떤 어시스턴트가 나타나는지 확인하고, 일부가 Referral로 빠진다면 맞춤 채널 그룹을 만들고, GA4를 Search Console 및 인용 추적과 함께 쓰세요.","image":["https://touchigh.ai/assets/blog/og/t64-ko.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-11-08T10:00:00+08:00","dateModified":"2026-11-08T10:00:00+08:00","inLanguage":"ko","author":{"@type":"Organization","name":"ToucHigh 리서치 팀","url":"https://touchigh.ai/blog/ko/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"성과 측정","keywords":"GA4 AI 어시스턴트 채널, GA4 맞춤 채널 그룹 AI, GA4 ChatGPT 트래픽 추적, GA4 AI 추천 트래픽 정규식, AI 어시스턴트 채널 그룹, GEO 트래픽 측정","wordCount":932,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ko/#blog","name":"ToucHigh 블로그"},"about":[{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"AI 트래픽"},{"@type":"Thing","name":"채널 그룹"},{"@type":"Thing","name":"기여 측정"},{"@type":"Thing","name":"GEO 측정"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"About regular expressions (regex)","url":"https://support.google.com/analytics/answer/1034324","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ga4-ai-assistant-channel/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"AI Assistant 채널에 Google AI Overviews가 포함되나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. Google 정의상 AI Overviews와 AI Mode는 AI Assistant 채널에서 제외됩니다. Google은 이를 Search Console 실적 보고서의 웹 검색 유형에서 나머지 검색과 함께 보고합니다."}},{"@type":"Question","name":"ChatGPT 트래픽이 왜 여전히 Direct로 나오나요?","acceptedAnswer":{"@type":"Answer","text":"방문이 리퍼러나 추적 매개변수 없이 도착하면 GA4는 분류할 근거가 없어 Direct로 기록합니다. 이 비중을 추정하려면 하위 페이지로 들어온 Direct 트래픽을 지켜보고 바이어에게 어떻게 찾았는지 물어보세요."}},{"@type":"Question","name":"맞춤 채널 그룹을 만들면 과거 데이터가 바뀌나요?","acceptedAnswer":{"@type":"Answer","text":"맞춤 채널 그룹은 보고서에 소급 적용되므로, 과거 데이터를 새 그룹으로 볼 수 있습니다. 속성의 기본 채널 그룹을 바꾸면 그 시점 이후의 보고에만 영향을 줍니다."}},{"@type":"Question","name":"맞춤 채널 그룹은 몇 개까지 만들 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"Google에 따르면 사전 정의된 그룹 외에 표준 속성은 맞춤 그룹 두 개, 애널리틱스 360 속성은 다섯 개를 만들 수 있으며, 각각 최대 50개 채널을 담을 수 있습니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ko/"},{"@type":"ListItem","position":2,"name":"블로그","item":"https://touchigh.ai/blog/ko/"},{"@type":"ListItem","position":3,"name":"GA4 AI Assistant 채널: 무엇을 세고, 무엇을 놓치며, 언제 직접 만들어야 하는가","item":"https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ko/">홈</a>
+      <a href="/ko/#products">제품</a>
+      <a href="/ko/#faq">자주 묻는 질문</a>
+      <a href="/ko/pro/">ToucHigh PRO</a>
+      <a href="/blog/ko/" class="on">블로그</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="언어: 한국어"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">한국어</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="언어" hidden><li><a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/ga4-ai-assistant-channel/" hreflang="ko" lang="ko" data-short="한국어" aria-current="page">한국어</a></li><li><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">로그인</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">상담 예약</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ko/">홈</a><span>/</span><a href="/blog/ko/">블로그</a><span>/</span><span>성과 측정</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">성과 측정</div>
+    <h1>GA4 AI Assistant 채널: 무엇을 세고, 무엇을 놓치며, 언제 직접 만들어야 하는가</h1>
+    <p class="dek">이제 Google 애널리틱스는 ChatGPT, Gemini, Copilot 등에서 온 방문을 별도 채널로 분류합니다. AI 트래픽 문제의 일부는 이로써 해결됩니다. 해결되지 않는 부분과, 그 공백을 메우는 맞춤 채널 그룹을 소개합니다.</p>
+    <div class="a-meta"><b>ToucHigh 리서치 팀</b><span>게시일 <time datetime="2026-11-08T10:00:00+08:00">2026년 11월 8일</time></span><span>6분 분량</span><span class="lang-badge">한국어</span></div>
+    <div class="a-langs">다른 언어<a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="보라색 빛이 나는 말풍선 터널에서 소포들이 컨베이어로 미끄러져 나와 평범한 회색 통에 떨어지고, 주황색 추적 태그는 바닥에 흩어져 있습니다. 옆에서는 돋보기, 링 차트, 막대 차트, 쇼핑백이 교차 확인을 위해 대기하고 있습니다." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="이 글이 답하는 질문"><span class="qm">“</span><div><div class="eyebrow">이 글이 답하는 질문</div><p class="q">GA4 보고서에 이제 &#x27;AI Assistant&#x27; 채널이 보입니다. GEO 작업이 가져오는 트래픽을 측정하는 데 이것을 믿어도 될까요, 아니면 여전히 자체 설정이 필요할까요?</p><p class="ans"><b>짧은 답</b>사용하되, 그것이 전부라고 여기지는 마세요. Google 문서에 따르면 AI Assistant 채널은 ChatGPT, Gemini, Deepseek, Copilot, Grok 같은 출처의 방문을 다루며, Google의 AI Overviews와 AI Mode는 제외합니다. 또한 리퍼러 없이 도착해 Direct로 분류되는 방문은 볼 수 없습니다. 귀사 속성에 실제로 어떤 어시스턴트가 나타나는지 확인하고, 일부가 Referral로 빠진다면 맞춤 채널 그룹을 만들고, GA4를 Search Console 및 인용 추적과 함께 쓰세요.</p></div></section>
+      <section class="kt takeaways"><h2>핵심 요약</h2><ul><li>이제 GA4 기본 채널 그룹에는 AI Assistant가 포함됩니다. ChatGPT, Gemini, Deepseek, Copilot, Grok 같은 출처의 방문으로, 리퍼러가 Google 목록과 일치하면 매체가 "ai-assistant"로 설정됩니다.</li><li>이 채널은 Google의 AI Overviews와 AI Mode를 제외합니다. Google은 이를 Search Console의 전체 웹 검색 데이터에 포함해 집계합니다.</li><li>리퍼러나 태그 없이 도착한 방문은 Direct로 기록되므로, 어떤 채널 규칙으로도 복구할 수 없습니다.</li><li>기본 채널 그룹은 수정할 수 없지만 맞춤 채널 그룹은 가능하며, 소급 적용됩니다. 표준 속성에서는 각각 최대 50개 채널을 가진 맞춤 그룹 두 개를 만들 수 있습니다.</li><li>Google이 제시한 AI 어시스턴트용 정규식 예시는 범위가 넓습니다. 도메인을 명시적으로 나열하면 무관한 출처가 잡히는 것을 피할 수 있습니다.</li></ul></section>
+      <div class="prose"><p>2년 동안 Google 애널리틱스 4에서 AI 트래픽을 측정하는 표준 조언은 같았습니다. ChatGPT와 Perplexity 방문이 Referral에 묻혀 있으니 채널 그룹을 직접 만들라는 것이었습니다. 이후 Google은 GA4 기본 채널 그룹에 <strong>AI Assistant</strong> 채널을 추가했습니다. 좋은 소식이지만, 질문이 끝난 것이 아니라 바뀐 것입니다. 이제는 새 채널이 무엇을 세는지, 무엇을 빼는지, 그리고 언제 자체 그룹을 만들 가치가 여전히 있는지 알아야 합니다.</p>
+
+<h2 id="s1">GA4 AI Assistant 채널은 무엇을 세나요?</h2>
+
+<p>Google의 기본 채널 그룹 문서는 AI Assistant를 사용자가 ChatGPT, Gemini, Deepseek, Copilot, Grok 같은 출처에서 도착하는 채널로 설명합니다. 그 규칙은 이렇습니다. 리퍼러가 Google이 관리하는 AI 어시스턴트 목록과 일치하면 매체는 "ai-assistant", 캠페인은 "(ai-assistant)"로 설정됩니다. 이 매체를 가진 세션은 트래픽 획득 보고서의 AI Assistant 행에 들어갑니다.</p>
+
+<p>여기서 두 가지가 나옵니다. 첫째, 그것은 귀사가 아니라 Google의 목록입니다. 문서는 예시를 들 뿐 모든 어시스턴트를 나열하지 않습니다. 둘째, GA4에서 기본 채널 그룹은 수정할 수 없으므로, 바이어가 쓰는 어시스턴트가 인식되지 않아도 기본 채널에 추가할 수 없습니다. 맞춤 채널 그룹이 필요합니다.</p>
+
+<h2 id="s2">AI Assistant 채널은 무엇을 놓치나요?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>트래픽</th><th>GA4에서 분류되는 곳</th><th>대신 확인하는 방법</th></tr></thead>
+<tbody>
+<tr><td>Google AI Overviews와 AI Mode</td><td>Google 정의상 AI Assistant에서 제외</td><td>Search Console: Google에 따르면 실적 보고서의 웹 검색 유형에 표시</td></tr>
+<tr><td>리퍼러도 태그도 없는 어시스턴트 방문</td><td>Direct</td><td>하위 페이지로 들어온 Direct 트래픽, 브랜드 검색, 구매 후 설문</td></tr>
+<tr><td>Google 목록에 없는 어시스턴트</td><td>대개 Referral</td><td>자체 정규식을 쓴 맞춤 채널 그룹</td></tr>
+<tr><td>답변에서 귀사 이름을 보고 나중에 돌아온 사람</td><td>Direct, Organic Search 또는 돌아온 경로</td><td>인용 추적과 브랜드 검색 추세</td></tr>
+</tbody>
+</table></div>
+
+<p>두 번째 행이 가장 중요합니다. 분석 도구는 추적 매개변수와 리퍼러 URL을 보고 방문의 출처를 판단합니다. AI 앱이 둘 다 전달하지 않고 링크를 열면 그 방문은 Direct로 기록됩니다. 앞서 쓴 <a href="/blog/en/chatgpt-utm-ai-referral-measurement/">ChatGPT 링크에서 UTM 태그가 사라지는 문제</a>에 관한 글에서 실제 모습을 다뤘습니다. GA4에 도달하지 않은 정보는 어떤 채널 규칙으로도 복구할 수 없습니다.</p>
+
+<h2 id="s3">귀사 속성이 실제로 무엇을 기록하는지 어떻게 확인하나요?</h2>
+
+<ol>
+<li><strong>보고서 → 획득 → 트래픽 획득을 열고</strong> 기본 측정기준을 '세션 기본 채널 그룹'으로 설정합니다. AI Assistant 행과 그 추세를 찾으세요.</li>
+<li><strong>측정기준을 '세션 소스/매체'로 바꾸고</strong> "ai-assistant"로 필터링해 Google이 어떤 어시스턴트를 분류하고 있는지 확인합니다.</li>
+<li><strong>Referral을 알려진 AI 도메인으로 필터링합니다</strong>. perplexity.ai, claude.ai 등입니다. 여전히 Referral에 남아 있는 AI 관련 출처가 바로 공백입니다.</li>
+<li><strong>방문 페이지를 비교합니다.</strong> AI 방문은 홈페이지보다 제품, 역량, 블로그 페이지 같은 하위 페이지에 도착하는 경향이 있습니다.</li>
+</ol>
+
+<h2 id="s4">맞춤 AI 채널 그룹은 언제 만들어야 할까요?</h2>
+
+<p>바이어가 쓰는 어시스턴트가 Referral로 빠지거나, 어시스턴트마다 별도 행으로 보고 싶거나, Google이 목록을 업데이트하는 동안에도 안정적인 정의를 원한다면 만드세요. Google의 맞춤 채널 그룹 문서가 방법을 설명합니다. 관리 → 데이터 표시에서 채널 그룹을 열고(편집자 이상 권한 필요), 그룹을 만들고, 채널을 추가하고 조건을 설정합니다. 맞춤 그룹은 보고서에 소급 적용됩니다. 표준 속성은 사전 정의된 그룹 외에 맞춤 그룹 두 개를 가질 수 있으며, 각각 최대 50개 채널을 담을 수 있습니다.</p>
+
+<p>Google은 'AI assistants' 예시까지 공개합니다. "정규식과 일치" 조건을 가진 채널을 Referral 위에 두어 AI 출처가 먼저 분류되게 하는 방식입니다. 예시 정규식은 의도적으로 범위가 넓습니다. <code>^.*ai</code>로 시작하는데, 이는 이메일 서비스 도메인처럼 "ai"라는 글자가 들어간 모든 소스와 일치합니다. 더 엄격한 패턴은 실제로 보이는 도메인을 나열합니다. 예를 들면 다음과 같습니다.</p>
+
+<p><code>.*(chatgpt\.com|openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com).*</code></p>
+
+<p>이를 소스에 적용하고, 채널을 Referral 위에 두고, 세부 정보를 원한다면 그룹 하나 대신 어시스턴트마다 채널을 하나씩 추가하세요. 새 어시스턴트가 트래픽을 보내기 시작하면 목록을 업데이트하세요. Google 자체 안내도 어시스턴트 목록이 바뀌면 정규식을 업데이트하라고 말합니다.</p>
+
+<h2 id="s5">맞춤 그룹을 기본 채널 그룹으로 지정해야 할까요?</h2>
+
+<p>GA4에서는 어떤 맞춤 채널 그룹이든 속성의 기본 채널 그룹으로 지정할 수 있으며, 그 시점부터 기본 채널 그룹 측정기준이 그에 따라 채워집니다. 정의가 안정되면 유용하지만, 맞춤 그룹 자체처럼 소급 적용되지는 않습니다. 소규모 팀 대부분은 기본값을 그대로 두고 맞춤 그룹을 보조 보기로 추가하면 됩니다.</p>
+
+<h2 id="s6">AI 채널 측정에서 GA4는 어떤 역할을 해야 할까요?</h2>
+
+<p>GA4를 세 개의 렌즈 중 하나로 다루세요. GA4는 귀속할 수 있는 클릭을 알려 줍니다. Search Console은 AI Overviews와 AI Mode를 포함한 Google 검색을 알려 줍니다. 월간 인용 점검은 어시스턴트가 귀사를 언급하기는 하는지 알려 줍니다. 세 가지가 함께 움직이면 GEO가 효과를 내고 있음을 보여 줄 수 있고, 하나만 움직이면 어디를 봐야 할지 알 수 있습니다.</p></div>
+      <aside class="insight" aria-label="인사이트"><div class="eyebrow">인사이트</div><blockquote>채널 보고서는 라벨을 붙일 수 있는 클릭을 보여 줄 뿐, 볼 수 없는 영향력은 보여 주지 않습니다.</blockquote><p>굿하트의 법칙은 목표가 된 지표는 더 이상 제대로 측정하지 못한다고 경고합니다. 팀이 AI Assistant 행만 좇으면, Direct나 브랜드 검색을 통해 바이어를 보내는 AI 답변을 과소평가하게 됩니다. 이 채널은 세 신호 중 하나로 유지하세요.</p></aside>
+      <section class="prop" aria-label="ToucHigh가 돕는 방법">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh가 돕는 방법</h2></div>
+        <div class="pb prose"><p>GA4는 클릭을 보여 주고, ToucHigh의 GEO Autopilot은 나머지 그림을 채웁니다.</p><ul><li>ChatGPT, Perplexity, Google AI, Gemini에서 귀사가 보이지 않는 곳을 확인합니다.</li><li>바이어가 묻는 질문을 겨냥한 수정 사항과 GEO 아티클을 작성하고 게시합니다.</li><li>추적 매개변수가 왜곡할 수 없는 신호인 AI 인용 점유율을 지속적으로 추적합니다.</li></ul><p>30분 전략 상담을 예약하고 트래픽 획득 보고서 스크린샷을 가져오세요. 실시간 AI 가시성 점검과 함께 읽어 드리겠습니다.</p><p class="uc">공장·B2B 공급업체라면: ToucHigh의 <a href="/ko/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T64'})}catch(e){}">AI 검색 공급업체 가시성</a>을 확인하세요. 가시성을 파이프라인으로 바꾸고 싶다면 전략 우선 아웃바운드 서비스 <a href="/ko/pro/" onclick="try{gtag('event','pro_click',{location:'article_T64'})}catch(e){}">ToucHigh PRO</a>를 확인하세요.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T64')">30분 전략 상담 예약 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T64'})}catch(e){}">ToucHigh 로그인</a></div>
+      </section>
+      <section class="faq" aria-label="자주 묻는 질문"><h2>자주 묻는 질문</h2><details open><summary>AI Assistant 채널에 Google AI Overviews가 포함되나요?</summary><p>아니요. Google 정의상 AI Overviews와 AI Mode는 AI Assistant 채널에서 제외됩니다. Google은 이를 Search Console 실적 보고서의 웹 검색 유형에서 나머지 검색과 함께 보고합니다.</p></details><details><summary>ChatGPT 트래픽이 왜 여전히 Direct로 나오나요?</summary><p>방문이 리퍼러나 추적 매개변수 없이 도착하면 GA4는 분류할 근거가 없어 Direct로 기록합니다. 이 비중을 추정하려면 하위 페이지로 들어온 Direct 트래픽을 지켜보고 바이어에게 어떻게 찾았는지 물어보세요.</p></details><details><summary>맞춤 채널 그룹을 만들면 과거 데이터가 바뀌나요?</summary><p>맞춤 채널 그룹은 보고서에 소급 적용되므로, 과거 데이터를 새 그룹으로 볼 수 있습니다. 속성의 기본 채널 그룹을 바꾸면 그 시점 이후의 보고에만 영향을 줍니다.</p></details><details><summary>맞춤 채널 그룹은 몇 개까지 만들 수 있나요?</summary><p>Google에 따르면 사전 정의된 그룹 외에 표준 속성은 맞춤 그룹 두 개, 애널리틱스 360 속성은 다섯 개를 만들 수 있으며, 각각 최대 50개 채널을 담을 수 있습니다.</p></details></section>
+      <section class="srcs"><h2>참고 자료</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/1034324" rel="noopener" target="_blank">About regular expressions (regex)</a> — Google Analytics Help</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>이 글을 쓴 이유</b>이 글을 쓴 이유는 AI 채널 그룹을 직접 만들어 쓰던 팀들이 갑자기 새 AI Assistant 행을 보고 어느 숫자를 믿어야 할지 몰랐기 때문입니다. 답은 둘 다이며, Search Console 및 인용 추적과 함께 읽어야 합니다.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="이 페이지 내용"><h4>이 페이지 내용</h4><a href="#s1">GA4 AI Assistant 채널은 무엇을 세나요?</a><a href="#s2">AI Assistant 채널은 무엇을 놓치나요?</a><a href="#s3">귀사 속성이 실제로 무엇을 기록하는지 어떻게 확인하나요?</a><a href="#s4">맞춤 AI 채널 그룹은 언제 만들어야 할까요?</a><a href="#s5">맞춤 그룹을 기본 채널 그룹으로 지정해야 할까요?</a><a href="#s6">AI 채널 측정에서 GA4는 어떤 역할을 해야 할까요?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>미국 AI 검색에서 어디가 보이지 않는지 확인하세요</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">상담 예약</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">로그인</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>관련 글</h2>
+  <div class="grid"><a class="card" href="/blog/en/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now</h3><p>ChatGPT appears to have stopped adding UTM tags to its outbound links, so AI-driven visits are blending into direct traffic. It&#x27;s time for a new way to measure your SEO and GEO returns.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a><a class="card" href="/blog/ko/search-console-ai-overviews-ai-mode-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="검색창이 주황색 구슬을 보라색으로 빛나는 AI 답변 깔때기에 쏟아붓고, 그중 몇 개만 작은 웹사이트 상점에 닿습니다. 옆에는 빈 페이지가 높이 쌓여 흔들리는데, 거기서는 구슬이 단 하나만 나옵니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ko"><div class="eyebrow">성과 측정</div><h3>Google Search Console에서 AI Overviews·AI Mode 트래픽 읽는 법</h3><p>별도의 &#x27;AI Overviews&#x27; 탭은 없습니다. Google은 AI 기능을 이미 쓰고 있는 실적 보고서에 합쳐 놓았습니다. 그래도 수출 기업이 AI 답변이 검색 트래픽에 미치는 영향을 읽어 내는 방법을 소개합니다.</p><div class="meta"><span class="lg">한국어</span><span>6분 분량</span></div></div></a><a class="card" href="/blog/ko/ai-attribution-post-purchase-survey/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="흰 선반 위 유리병 세 개에 주황색 구슬이 서로 다른 높이로 차 있습니다. 병에는 눈, 하트와 책갈피, 쇼핑 카트가 달린 커서가 표시되어 있고, 각각 남색 선이 자체 과거 평균을 보여 줍니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ko"><div class="eyebrow">성과 측정</div><h3>&quot;어떻게 알고 오셨나요?&quot; 설문으로 ChatGPT·AI 어시스턴트 경유 매출 측정하기</h3><p>AI가 보내 준 바이어 중 일부는 결코 AI 클릭으로 나타나지 않습니다. 결제 단계나 문의 양식에 질문 하나짜리 설문을 넣는 것이 이들을 확인하는 가장 저렴한 방법입니다. 질문 문구, 배치 위치, 답변 해석법을 소개합니다.</p><div class="meta"><span class="lg">한국어</span><span>6분 분량</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ko/">← 블로그로 돌아가기</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>미국 AI 검색에서 어디가 보이지 않는지 확인하세요</h2>
+  <p>30분 무료 상담을 예약하시면 스토어의 AI 가시성을 실시간으로 진단해 드립니다.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30분 전략 상담 예약 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHigh 로그인</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">중소기업과 크로스보더 셀러를 위한 AI 검색 가시성, 소셜, 광고 오토파일럿.</p></div>
+      <div><h4>ToucHigh</h4><a href="/ko/">홈</a><a href="/ko/#geo">GEO Autopilot</a><a href="/ko/#social">Social Autopilot</a><a href="/ko/pro/">ToucHigh PRO</a></div>
+      <div><h4>블로그</h4><a href="/blog/ko/">블로그</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>로그인</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">상담 예약</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

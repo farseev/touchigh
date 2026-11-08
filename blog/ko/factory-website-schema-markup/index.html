@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>공장 웹사이트 스키마 마크업: 무엇을 넣을까 | ToucHigh</title>
+<meta name="description" content="B2B 공장 사이트에 필요한 구조화 데이터: Organization, Product 스니펫, Breadcrumb. FAQ 마크업이 리치 결과를 거의 얻지 못하는 이유와 AI에 대한 Google의 입장.">
+<link rel="canonical" href="https://touchigh.ai/blog/ko/factory-website-schema-markup/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="제조업체 스키마 마크업, 공장 웹사이트 구조화 데이터, B2B Organization 스키마, 공장 Product 구조화 데이터, 2026 FAQ 스키마, 수출 기업 JSON-LD">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/factory-website-schema-markup/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/factory-website-schema-markup/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/factory-website-schema-markup/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/factory-website-schema-markup/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/factory-website-schema-markup/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/factory-website-schema-markup/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/factory-website-schema-markup/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/factory-website-schema-markup/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/factory-website-schema-markup/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ko/factory-website-schema-markup/">
+<meta property="og:title" content="공장 웹사이트를 위한 스키마 마크업: Organization, Product, FAQ 제대로 하기">
+<meta property="og:description" content="B2B 공장 사이트에 필요한 구조화 데이터: Organization, Product 스니펫, Breadcrumb. FAQ 마크업이 리치 결과를 거의 얻지 못하는 이유와 AI에 대한 Google의 입장.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t62-ko.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="공장 웹사이트를 위한 스키마 마크업: Organization, Product, FAQ 제대로 하기">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:section" content="SEO">
+<meta property="article:tag" content="구조화 데이터">
+<meta property="article:tag" content="Schema.org">
+<meta property="article:tag" content="공장 웹사이트">
+<meta property="article:tag" content="B2B SEO">
+<meta property="article:tag" content="엔티티 데이터">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="공장 웹사이트를 위한 스키마 마크업: Organization, Product, FAQ 제대로 하기">
+<meta name="twitter:description" content="B2B 공장 사이트에 필요한 구조화 데이터: Organization, Product 스니펫, Breadcrumb. FAQ 마크업이 리치 결과를 거의 얻지 못하는 이유와 AI에 대한 Google의 입장.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t62-ko.jpg">
+<meta name="twitter:image:alt" content="공장 웹사이트를 위한 스키마 마크업: Organization, Product, FAQ 제대로 하기">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ko/factory-website-schema-markup/#article","url":"https://touchigh.ai/blog/ko/factory-website-schema-markup/","mainEntityOfPage":"https://touchigh.ai/blog/ko/factory-website-schema-markup/","headline":"공장 웹사이트를 위한 스키마 마크업: Organization, Product, FAQ 제대로 하기","alternativeHeadline":"공장 웹사이트 스키마 마크업: 무엇을 넣을까","description":"B2B 공장 사이트에 필요한 구조화 데이터: Organization, Product 스니펫, Breadcrumb. FAQ 마크업이 리치 결과를 거의 얻지 못하는 이유와 AI에 대한 Google의 입장.","abstract":"세 가지 유형을 넣고 정확하게 유지하세요. 홈페이지에 Organization(이름, 로고, 주소, 연락처, 공식 프로필로 연결되는 sameAs 링크), 각 제품·역량 페이지에 Google 제품 스니펫 형식의 Product 마크업, 사이트 전체에 BreadcrumbList입니다. FAQ 마크업은 선택 사항입니다. 2023년부터 Google은 잘 알려진 정부·보건 사이트에만 FAQ 리치 결과를 표시하기 때문입니다. Google에 따르면 AI Overviews에 나오기 위해 특별한 스키마는 필요 없으며, 마크업은 그저 화면에 보이는 텍스트와 일치하면 됩니다.","image":["https://touchigh.ai/assets/blog/og/t62-ko.jpg","https://touchigh.ai/assets/blog/hero/t57.jpg"],"datePublished":"2026-11-08T09:20:00+08:00","dateModified":"2026-11-08T09:20:00+08:00","inLanguage":"ko","author":{"@type":"Organization","name":"ToucHigh 리서치 팀","url":"https://touchigh.ai/blog/ko/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"SEO","keywords":"제조업체 스키마 마크업, 공장 웹사이트 구조화 데이터, B2B Organization 스키마, 공장 Product 구조화 데이터, 2026 FAQ 스키마, 수출 기업 JSON-LD","wordCount":940,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ko/#blog","name":"ToucHigh 블로그"},"about":[{"@type":"Thing","name":"구조화 데이터"},{"@type":"Thing","name":"Schema.org"},{"@type":"Thing","name":"공장 웹사이트"},{"@type":"Thing","name":"B2B SEO"},{"@type":"Thing","name":"엔티티 데이터"}],"citation":[{"@type":"CreativeWork","name":"Organization (Organization) structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/organization","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to Product structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/product","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Changes to HowTo and FAQ rich results","url":"https://developers.google.com/search/blog/2023/08/howto-faq-changes","datePublished":"2023-08-08","publisher":{"@type":"Organization","name":"Google Search Central Blog"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Rich Results Test","url":"https://search.google.com/test/rich-results","publisher":{"@type":"Organization","name":"Google"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/factory-website-schema-markup/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"JSON-LD와 마이크로데이터 중 무엇을 써야 하나요?","acceptedAnswer":{"@type":"Answer","text":"Google은 여러 형식을 지원하며, JSON-LD는 HTML 안에 엮여 들어가지 않고 스크립트 블록 하나에 담기므로 대개 유지 관리가 가장 쉽습니다. 무엇을 고르든 기준 정보원을 하나로 두어 마크업과 화면 텍스트가 어긋나지 않게 하세요."}},{"@type":"Question","name":"견적으로만 제공하는 가격도 마크업할 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"아니요. 구조화 데이터는 페이지에 있는 내용을 기술해야 합니다. 페이지에 가격이 없다면 price를 빼고, Google이 직접 구매할 수 없는 페이지용으로 의도한 제품 스니펫 형식을 쓰세요."}},{"@type":"Question","name":"LocalBusiness 마크업이 필요한가요?","acceptedAnswer":{"@type":"Answer","text":"영업시간이 있는 쇼룸처럼 바이어가 지역 비즈니스로서 직접 방문하는 경우에만 필요합니다. 수출 제조업체라면 실제 주소를 담은 Organization이 대개 맞는 유형입니다."}},{"@type":"Question","name":"스키마 마크업으로 ChatGPT 답변에 나올 수 있나요?","acceptedAnswer":{"@type":"Answer","text":"그것만으로는 아닙니다. Google에 따르면 AI 기능에 특별한 스키마는 필요 없으며, 다른 어시스턴트들은 크롤링할 수 있는 페이지와 웹 전반에서 찾은 정보에 의존합니다. 마크업은 엔티티 정보를 명확히 밝혀 도움을 줄 뿐, 바이어의 질문에 답하는 것은 여전히 콘텐츠의 몫입니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ko/"},{"@type":"ListItem","position":2,"name":"블로그","item":"https://touchigh.ai/blog/ko/"},{"@type":"ListItem","position":3,"name":"공장 웹사이트를 위한 스키마 마크업: Organization, Product, FAQ 제대로 하기","item":"https://touchigh.ai/blog/ko/factory-website-schema-markup/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ko/">홈</a>
+      <a href="/ko/#products">제품</a>
+      <a href="/ko/#faq">자주 묻는 질문</a>
+      <a href="/ko/pro/">ToucHigh PRO</a>
+      <a href="/blog/ko/" class="on">블로그</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="언어: 한국어"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">한국어</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="언어" hidden><li><a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/factory-website-schema-markup/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/factory-website-schema-markup/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/factory-website-schema-markup/" hreflang="ko" lang="ko" data-short="한국어" aria-current="page">한국어</a></li><li><a href="/blog/id/factory-website-schema-markup/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/es/factory-website-schema-markup/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/factory-website-schema-markup/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/factory-website-schema-markup/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/factory-website-schema-markup/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ru/factory-website-schema-markup/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">로그인</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">상담 예약</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ko/">홈</a><span>/</span><a href="/blog/ko/">블로그</a><span>/</span><span>SEO</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">SEO</div>
+    <h1>공장 웹사이트를 위한 스키마 마크업: Organization, Product, FAQ 제대로 하기</h1>
+    <p class="dek">구조화 데이터만으로 ChatGPT가 귀사를 추천하지는 않지만, 귀사가 누구이고 무엇을 만드는지에 대한 의심을 없애 줍니다. 공장 웹사이트에 필요한 짧은 목록과 건너뛸 것을 정리했습니다.</p>
+    <div class="a-meta"><b>ToucHigh 리서치 팀</b><span>게시일 <time datetime="2026-11-08T09:20:00+08:00">2026년 11월 8일</time></span><span>6분 분량</span><span class="lang-badge">한국어</span></div>
+    <div class="a-langs">다른 언어<a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/factory-website-schema-markup/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/factory-website-schema-markup/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/id/factory-website-schema-markup/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/es/factory-website-schema-markup/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/factory-website-schema-markup/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/factory-website-schema-markup/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/factory-website-schema-markup/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ru/factory-website-schema-markup/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t57-768.webp 768w, /assets/blog/hero/t57-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t57.jpg" alt="작은 크레인이 콘텐츠 타일 여섯 개(신분증, 사양표, 말풍선, 인증서, 저울, 별)가 담긴 쟁반을 AI 답변 창 쪽으로 들어 올리고, 그 창에서는 주황색 공장 배지가 맨 위 자리를 차지하고 있습니다." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="이 글이 답하는 질문"><span class="qm">“</span><div><div class="eyebrow">이 글이 답하는 질문</div><p class="q">개발자가 공장 영문 웹사이트에 어떤 스키마 마크업을 넣어야 하는지 물었습니다. Google과 AI를 위해 필요한가요? 어떤 유형이 중요한가요?</p><p class="ans"><b>짧은 답</b>세 가지 유형을 넣고 정확하게 유지하세요. 홈페이지에 Organization(이름, 로고, 주소, 연락처, 공식 프로필로 연결되는 sameAs 링크), 각 제품·역량 페이지에 Google 제품 스니펫 형식의 Product 마크업, 사이트 전체에 BreadcrumbList입니다. FAQ 마크업은 선택 사항입니다. 2023년부터 Google은 잘 알려진 정부·보건 사이트에만 FAQ 리치 결과를 표시하기 때문입니다. Google에 따르면 AI Overviews에 나오기 위해 특별한 스키마는 필요 없으며, 마크업은 그저 화면에 보이는 텍스트와 일치하면 됩니다.</p></div></section>
+      <section class="kt takeaways"><h2>핵심 요약</h2><ul><li>Google 문서에 따르면 AI Overviews나 AI Mode에 나오기 위해 특별한 schema.org 마크업은 필요 없으며, 구조화 데이터는 페이지에 보이는 텍스트와 일치해야 합니다.</li><li>Organization 마크업에는 필수 속성이 없습니다. Google은 name, address나 telephone 같은 실제 존재 정보, url이나 logo 같은 온라인 존재 정보를 권장합니다.</li><li>온라인으로 판매하지 않는 공장은 사람들이 직접 구매할 수 없는 제품 페이지를 위한 Google 제품 스니펫 형식을 써야 합니다.</li><li>2023년 8월부터 FAQ 리치 결과는 잘 알려진 권위 있는 정부·보건 웹사이트로 제한되었으므로, FAQ 마크업은 선택 사항으로 보세요.</li><li>모든 템플릿을 Google 리치 결과 테스트로 검증하고, 전체 페이지에 마크업을 적용하기 전에 오류를 고치세요.</li></ul></section>
+      <div class="prose"><p>SEO 업체 세 곳에 공장 웹사이트에 어떤 스키마가 필요한지 물으면 긴 목록 세 개를 받게 됩니다. 대부분 과합니다. 해외 바이어에게 판매하는 B2B 제조업체에게 필요한 것은 바이어가 실제로 읽는 페이지에 정확하게 유지되는 소량의 구조화 데이터입니다. 이 가이드는 무엇을 넣고, 무엇을 건너뛰며, AI 검색과 어떤 관계인지 다룹니다.</p>
+
+<h2 id="s1">구조화 데이터가 공장이 AI에 인용되는 데 도움이 되나요?</h2>
+
+<p>Google이 하는 말부터 보세요. AI 기능에 관한 사이트 소유자용 가이드는 AI Overviews나 AI Mode에 나타나기 위한 추가 요건이 없고, 새로운 기계 판독용 파일이나 마크업도 필요 없으며, 반드시 추가해야 할 특별한 schema.org 구조화 데이터도 없다고 밝힙니다. 같은 페이지는 일반적인 SEO 모범 사례로 "구조화 데이터가 페이지에 보이는 텍스트와 일치하도록 하는 것"을 꼽습니다.</p>
+
+<p>즉 구조화 데이터는 AI 인용을 켜는 스위치가 아닙니다. 하는 일은 모호함을 없애는 것입니다. 이 페이지가 이 주소에 있고, 이 제품을 만들며, 이런 공식 프로필을 가진 이 회사에 관한 것이라고 기계가 읽을 수 있게 밝힙니다. 영문명, 중국어 이름, 무역회사 이름이 웹 곳곳에서 제각각인 경우가 많은 중국 공장이라면, 그 명확성은 개발자의 반나절을 들일 가치가 있습니다.</p>
+
+<h2 id="s2">공장 홈페이지의 Organization 마크업에는 무엇을 넣어야 할까요?</h2>
+
+<p>Google의 Organization 문서에 따르면 필수 속성은 없습니다. 조직과 관련된 속성, 특히 사용자에게 유용한 속성을 추가하라고 권장하며, name 또는 alternateName, address나 telephone 같은 실제 존재의 표시, url이나 logo 같은 온라인 존재를 예로 듭니다. 예시에서는 공식 프로필을 나열하는 데 sameAs도 사용합니다.</p>
+
+<div class="tw"><table>
+<thead><tr><th>속성</th><th>공장의 경우 넣을 내용</th><th>흔한 실수</th></tr></thead>
+<tbody>
+<tr><td>name</td><td>청구서와 똑같은 등록 영문 회사명</td><td>마케팅 슬로건이나 무역회사 이름 사용</td></tr>
+<tr><td>alternateName</td><td>짧은 브랜드명, 병음 또는 한자로 된 중국어 이름</td><td>생략해서 AI가 이름 변형을 연결하지 못함</td></tr>
+<tr><td>url, logo</td><td>홈페이지 URL과 고정된 로고 이미지 URL</td><td>리디자인할 때마다 바뀌는 로고 URL</td></tr>
+<tr><td>address, telephone, email</td><td>공장의 실제 주소와 실제로 응대하는 영업 연락처</td><td>마켓플레이스 스토어와 다른 주소</td></tr>
+<tr><td>sameAs</td><td>LinkedIn 회사 페이지, 마켓플레이스 스토어, YouTube 채널</td><td>비활성 프로필이나 에이전트 소유 프로필 연결</td></tr>
+<tr><td>foundingDate, numberOfEmployees</td><td>About 페이지에도 적을 사실 정보</td><td>화면 어디에도 나오지 않는 숫자</td></tr>
+</tbody>
+</table></div>
+
+<p>Organization은 홈페이지(원한다면 About 페이지도)에 넣고, 모든 페이지에 서로 다른 값으로 반복하지 마세요. 사실 정보는 방문자가 보는 내용과 일치해야 합니다.</p>
+
+<h2 id="s3">온라인으로 판매하지 않는 공장에는 어떤 Product 마크업이 맞을까요?</h2>
+
+<p>Google은 제품 구조화 데이터를 두 종류로 설명합니다. 제품 스니펫은 사람들이 제품을 직접 구매할 수 없는 제품 페이지용입니다. 판매자 등록정보(merchant listings)는 고객이 직접 구매할 수 있는 페이지용으로, 배송과 반품에 관한 옵션이 더 많습니다. 대부분의 B2B 공장은 요청 시 견적을 내므로, 제품 스니펫이 정직한 선택입니다.</p>
+
+<p>각 제품·역량 페이지에서 name, description, image, brand(귀사 브랜드 또는 "OEM"), 해당되는 경우 소재나 카테고리로 제품을 기술하세요. 리치 결과를 얻으려고 가격이나 리뷰 평점을 지어내지 마세요. 가격이 견적에만 있다면 빼세요. 정확한 사양이 화면에 보이는 제품 페이지가, 페이지보다 더 많은 것을 약속하는 마크업보다 바이어와 AI 모두에게 더 도움이 됩니다.</p>
+
+<h2 id="s4">FAQ 스키마는 여전히 추가할 가치가 있나요?</h2>
+
+<p>2023년 8월 Google은 FAQ 리치 결과의 노출을 줄인다고 발표했습니다. FAQPage 구조화 데이터의 FAQ 리치 결과는 잘 알려진 권위 있는 정부·보건 웹사이트에만 표시된다는 것입니다. 공장 사이트에서는 일부 대행사가 아직도 판매하는 펼침형 결과가 FAQ 마크업으로 거의 나오지 않는다는 뜻입니다.</p>
+
+<p>FAQ 자체는 여전히 가치가 있습니다. 화면에 보이는 질문과 답변("맞춤 색상의 MOQ는 얼마인가요?", "어떤 식품 접촉 시험을 통과했나요?")은 AI 답변이 그대로 가져갈 수 있는 바로 그런 문단입니다. 보이는 FAQ는 유지하고, 각 답변의 첫 문장이 단독으로도 성립하게 쓰고, FAQPage 마크업은 선택적인 정리 작업으로 보세요.</p>
+
+<h2 id="s5">공장은 구조화 데이터를 어떻게 적용해야 할까요?</h2>
+
+<ol>
+<li><strong>사실 정보부터 정리하세요.</strong> 모든 곳에서 쓸 단일 영문 회사명, 주소, 제품 카테고리를 정하세요.</li>
+<li>name, alternateName, url, logo, address, 연락처, sameAs를 담아 <strong>홈페이지에 Organization을 추가하세요</strong>.</li>
+<li><strong>템플릿 하나(제품 또는 역량 페이지 하나)에 Product를 추가하고</strong>, 사이트 전체에 BreadcrumbList를 추가하세요.</li>
+<li>템플릿을 적용하기 전에 <strong>리치 결과 테스트로 검증하고</strong> 치명적 오류를 고치세요.</li>
+<li>마크업한 모든 값이 화면 텍스트에 나오는지 확인하며 <strong>페이지별로 적용하세요</strong>.</li>
+<li><strong>리디자인할 때마다 다시 점검하세요.</strong> 테마가 바뀌면 템플릿에서 JSON-LD가 빠지거나 중복되는 경우가 많습니다.</li>
+</ol>
+
+<h2 id="s6">구조화 데이터로 해결되지 않는 것은?</h2>
+
+<p>마크업은 빈약한 페이지를 유용하게 만들지 못합니다. 역량 페이지에 숫자 하나 없이 "첨단 설비와 엄격한 품질 관리"라고만 적혀 있다면, Product 스키마를 추가해도 빈 상자에 라벨을 붙이는 것에 불과합니다. GEO 작업 순서는 그대로입니다. 첫째, 페이지에 구체적이고 검증 가능한 콘텐츠. 둘째, 웹 전반에 일관된 엔티티 정보. 셋째, 이 둘을 깔끔하게 기술하는 구조화 데이터입니다.</p></div>
+      <aside class="insight" aria-label="인사이트"><div class="eyebrow">인사이트</div><blockquote>마크업은 상자에 라벨을 붙일 뿐, 상자를 채우지는 못합니다.</blockquote><p>신호 이론에 따르면 신호는 위조하는 데 비용이 들 때만 신뢰를 얻습니다. 인증 번호, 생산 능력, 실제 주소처럼 화면에 보이는 상세한 사실을 반영한 스키마는 신뢰를 강화하고, 페이지보다 많은 것을 주장하는 스키마는 검색 엔진과 바이어가 무시하게 되는 값싼 말일 뿐입니다.</p></aside>
+      <section class="prop" aria-label="ToucHigh가 돕는 방법">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh가 돕는 방법</h2></div>
+        <div class="pb prose"><p>ToucHigh의 GEO Autopilot은 구조화 데이터를 별도 프로젝트가 아니라 수정 작업의 일부로 다룹니다.</p><ul><li>ChatGPT, Perplexity, Google AI, Gemini 전반에서 귀사 공장이 보이지 않는 곳을 진단합니다.</li><li>페이지, 답변, 엔티티 데이터를 포함한 수정 사항을 작성·게시해 사실 정보와 마크업이 일치하게 합니다.</li><li>AI 인용 점유율을 추적해 어떤 페이지가 인용되기 시작하는지 볼 수 있게 합니다.</li></ul><p>30분 전략 상담을 예약하고 제품 페이지 하나를 가져오세요. 페이지 내용, 마크업 내용, 그리고 AI가 귀사에 대해 하는 말을 함께 검토하겠습니다.</p><p class="uc">공장·B2B 공급업체라면: ToucHigh의 <a href="/ko/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T62'})}catch(e){}">AI 검색 공급업체 가시성</a>을 확인하세요. 가시성을 파이프라인으로 바꾸고 싶다면 전략 우선 아웃바운드 서비스 <a href="/ko/pro/" onclick="try{gtag('event','pro_click',{location:'article_T62'})}catch(e){}">ToucHigh PRO</a>를 확인하세요.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T62')">30분 전략 상담 예약 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T62'})}catch(e){}">ToucHigh 로그인</a></div>
+      </section>
+      <section class="faq" aria-label="자주 묻는 질문"><h2>자주 묻는 질문</h2><details open><summary>JSON-LD와 마이크로데이터 중 무엇을 써야 하나요?</summary><p>Google은 여러 형식을 지원하며, JSON-LD는 HTML 안에 엮여 들어가지 않고 스크립트 블록 하나에 담기므로 대개 유지 관리가 가장 쉽습니다. 무엇을 고르든 기준 정보원을 하나로 두어 마크업과 화면 텍스트가 어긋나지 않게 하세요.</p></details><details><summary>견적으로만 제공하는 가격도 마크업할 수 있나요?</summary><p>아니요. 구조화 데이터는 페이지에 있는 내용을 기술해야 합니다. 페이지에 가격이 없다면 price를 빼고, Google이 직접 구매할 수 없는 페이지용으로 의도한 제품 스니펫 형식을 쓰세요.</p></details><details><summary>LocalBusiness 마크업이 필요한가요?</summary><p>영업시간이 있는 쇼룸처럼 바이어가 지역 비즈니스로서 직접 방문하는 경우에만 필요합니다. 수출 제조업체라면 실제 주소를 담은 Organization이 대개 맞는 유형입니다.</p></details><details><summary>스키마 마크업으로 ChatGPT 답변에 나올 수 있나요?</summary><p>그것만으로는 아닙니다. Google에 따르면 AI 기능에 특별한 스키마는 필요 없으며, 다른 어시스턴트들은 크롤링할 수 있는 페이지와 웹 전반에서 찾은 정보에 의존합니다. 마크업은 엔티티 정보를 명확히 밝혀 도움을 줄 뿐, 바이어의 질문에 답하는 것은 여전히 콘텐츠의 몫입니다.</p></details></section>
+      <section class="srcs"><h2>참고 자료</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/structured-data/organization" rel="noopener" target="_blank">Organization (Organization) structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener" target="_blank">Introduction to Product structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/blog/2023/08/howto-faq-changes" rel="noopener" target="_blank">Changes to HowTo and FAQ rich results</a> — Google Search Central Blog, 2023-08-08</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://search.google.com/test/rich-results" rel="noopener" target="_blank">Rich Results Test</a> — Google</li></ol></section>
+      <p class="note"><b>이 글을 쓴 이유</b>이 글을 쓴 이유는 공장들이 &#x27;AI 스키마 패키지&#x27; 견적을 계속 받고 있기 때문입니다. 공식 문서만 봐도 짧고 정확한 목록이 길고 부풀린 목록보다 낫다는 것이 분명합니다.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="이 페이지 내용"><h4>이 페이지 내용</h4><a href="#s1">구조화 데이터가 공장이 AI에 인용되는 데 도움이 되나요?</a><a href="#s2">공장 홈페이지의 Organization 마크업에는 무엇을 넣어야 할까요?</a><a href="#s3">온라인으로 판매하지 않는 공장에는 어떤 Product 마크업이 맞을까요?</a><a href="#s4">FAQ 스키마는 여전히 추가할 가치가 있나요?</a><a href="#s5">공장은 구조화 데이터를 어떻게 적용해야 할까요?</a><a href="#s6">구조화 데이터로 해결되지 않는 것은?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>미국 AI 검색에서 어디가 보이지 않는지 확인하세요</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">상담 예약</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">로그인</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>관련 글</h2>
+  <div class="grid"><a class="card" href="/blog/en/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Among a row of identical grey factories, one white and orange factory is lit by a spotlight from an AI chat bubble, above a panel of icons for machinery, certification, materials, lead time and FAQs." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites</h3><p>Overseas buyers are starting to use AI to find suppliers. A factory site with only a company profile and product photos rarely gets recommended by ChatGPT. Here&#x27;s a checklist of citable pages and first GEO steps.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/ko/us-brand-entity-chinese-brands-google-ai/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t48-768.webp"><img src="/assets/blog/hero/t48.jpg" alt="주황색 줄무늬 차양이 있는 작은 가게 위에 큰 지도 핀이 있고, 점선으로 지도 목록, 웹사이트 창, 휴대폰 프로필과 연결되어 있습니다. 세 곳 모두 같은 시계, 전화, 지구본, 별 아이콘을 보여 주며, 옆에는 주황색 칸이 하나 있는 달력이 있습니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ko"><div class="eyebrow">크로스보더</div><h3>미국 브랜드 엔티티 구축: 중국 브랜드가 Google과 AI에 인식되는 방법</h3><p>많은 중국 브랜드가 온라인에서 세 개의 &#x27;반쪽 브랜드&#x27;로 존재합니다. 마켓플레이스의 병음 이름, 웹사이트의 영문 이름, LinkedIn의 회사명입니다. Google과 AI는 식별할 수 없는 것을 추천할 수 없습니다. 하나의 엔티티가 되는 방법을 소개합니다.</p><div class="meta"><span class="lg">한국어</span><span>7분 분량</span></div></div></a><a class="card" href="/blog/en/seo-aeo-geo-explained-chinese-exporters/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t53-768.webp"><img src="/assets/blog/hero/t53.jpg" alt="An orange block works like a fountain, sending three pipes to a search results list, a speech-bubble answer card and an AI chat bubble with a violet spark." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO vs. AEO vs. GEO: What&#x27;s the Difference, and Do Exporters Need All Three?</h3><p>SEO gets you found, AEO gets your answer quoted by AI, and GEO gets you recommended by generative AI. They share one foundation, so exporters can run all three with one workflow.</p><div class="meta"><span class="lg">English</span><span>8 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ko/">← 블로그로 돌아가기</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>미국 AI 검색에서 어디가 보이지 않는지 확인하세요</h2>
+  <p>30분 무료 상담을 예약하시면 스토어의 AI 가시성을 실시간으로 진단해 드립니다.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30분 전략 상담 예약 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHigh 로그인</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">중소기업과 크로스보더 셀러를 위한 AI 검색 가시성, 소셜, 광고 오토파일럿.</p></div>
+      <div><h4>ToucHigh</h4><a href="/ko/">홈</a><a href="/ko/#geo">GEO Autopilot</a><a href="/ko/#social">Social Autopilot</a><a href="/ko/pro/">ToucHigh PRO</a></div>
+      <div><h4>블로그</h4><a href="/blog/ko/">블로그</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>로그인</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">상담 예약</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
