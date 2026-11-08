@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Overviews y AI Mode en Search Console: cómo medirlos | ToucHigh</title>
+<meta name="description" content="Google cuenta AI Overviews y AI Mode dentro de los datos de búsqueda web de Search Console. Cómo leer impresiones, clics y páginas cuando aparecen respuestas de IA, y qué comparar.">
+<link rel="canonical" href="https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="AI Overviews Search Console, tráfico AI Mode Search Console, medir clics de AI Overviews, tipo de búsqueda Web Search Console IA, tráfico de funciones de IA de Google, medición GEO Google">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/">
+<meta property="og:title" content="Cómo leer el tráfico de AI Overviews y AI Mode en Google Search Console">
+<meta property="og:description" content="Google cuenta AI Overviews y AI Mode dentro de los datos de búsqueda web de Search Console. Cómo leer impresiones, clics y páginas cuando aparecen respuestas de IA, y qué comparar.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t65-es.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Cómo leer el tráfico de AI Overviews y AI Mode en Google Search Console">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="article:published_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:section" content="Medición">
+<meta property="article:tag" content="Google Search Console">
+<meta property="article:tag" content="AI Overviews">
+<meta property="article:tag" content="AI Mode">
+<meta property="article:tag" content="Medición SEO">
+<meta property="article:tag" content="GEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Cómo leer el tráfico de AI Overviews y AI Mode en Google Search Console">
+<meta name="twitter:description" content="Google cuenta AI Overviews y AI Mode dentro de los datos de búsqueda web de Search Console. Cómo leer impresiones, clics y páginas cuando aparecen respuestas de IA, y qué comparar.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t65-es.jpg">
+<meta name="twitter:image:alt" content="Cómo leer el tráfico de AI Overviews y AI Mode en Google Search Console">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/#article","url":"https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/","mainEntityOfPage":"https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/","headline":"Cómo leer el tráfico de AI Overviews y AI Mode en Google Search Console","alternativeHeadline":"AI Overviews y AI Mode en Search Console: cómo medirlos","description":"Google cuenta AI Overviews y AI Mode dentro de los datos de búsqueda web de Search Console. Cómo leer impresiones, clics y páginas cuando aparecen respuestas de IA, y qué comparar.","abstract":"No uno separado. Google dice que los sitios que aparecen en AI Overviews y AI Mode se incluyen en el tráfico de búsqueda total de Search Console, en el informe de rendimiento con el tipo de búsqueda Web. Así que léelo por comparación: consultas en forma de pregunta y largas frente a cortas, antes frente a después, impresiones frente a clics, y las páginas que ganan impresiones. Combínalo con las páginas de destino de GA4 y una revisión manual de qué consultas prioritarias muestran un AI Overview.","image":["https://touchigh.ai/assets/blog/og/t65-es.jpg","https://touchigh.ai/assets/blog/hero/t01.jpg"],"datePublished":"2026-11-08T10:20:00+08:00","dateModified":"2026-11-08T10:20:00+08:00","inLanguage":"es","author":{"@type":"Organization","name":"Equipo de investigación de ToucHigh","url":"https://touchigh.ai/blog/es/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Medición","keywords":"AI Overviews Search Console, tráfico AI Mode Search Console, medir clics de AI Overviews, tipo de búsqueda Web Search Console IA, tráfico de funciones de IA de Google, medición GEO Google","wordCount":1333,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/es/#blog","name":"Blog de ToucHigh"},"about":[{"@type":"Thing","name":"Google Search Console"},{"@type":"Thing","name":"AI Overviews"},{"@type":"Thing","name":"AI Mode"},{"@type":"Thing","name":"Medición SEO"},{"@type":"Thing","name":"GEO"}],"citation":[{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Performance report (Search results): Overview and basic setup","url":"https://support.google.com/webmasters/answer/7576553","publisher":{"@type":"Organization","name":"Search Console Help"}},{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"es","mainEntity":[{"@type":"Question","name":"¿Hay un filtro para AI Overviews en Search Console?","acceptedAnswer":{"@type":"Answer","text":"La guía de Google dice que AI Overviews y AI Mode se incluyen en los datos de búsqueda Web totales del informe de rendimiento, en lugar de remitir a un informe aparte. Lee su efecto comparando grupos de consultas, páginas y periodos."}},{"@type":"Question","name":"¿Por qué suben nuestras impresiones mientras los clics siguen igual?","acceptedAnswer":{"@type":"Answer","text":"Un motivo habitual es que tu página se muestra, también como enlace de apoyo en una respuesta de IA, mientras que quien busca obtiene suficiente de la propia respuesta. Comprueba qué consultas y páginas provocan el cambio antes de decidir que es un problema."}},{"@type":"Question","name":"¿Bloquear Google-Extended deja nuestras páginas fuera de AI Overviews?","acceptedAnswer":{"@type":"Answer","text":"No. Google dice que Google-Extended no afecta a la inclusión en Google Search. Para limitar lo que aparece en las funciones de IA, Google remite a nosnippet, data-nosnippet, max-snippet o noindex."}},{"@type":"Question","name":"¿Necesitamos un marcado especial para aparecer en AI Overviews?","acceptedAnswer":{"@type":"Answer","text":"Google dice que no hay requisitos adicionales ni hace falta un schema especial. Las páginas deben estar indexadas y poder mostrarse con fragmento, y se aplican las buenas prácticas de SEO habituales."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/es/"},{"@type":"ListItem","position":3,"name":"Cómo leer el tráfico de AI Overviews y AI Mode en Google Search Console","item":"https://touchigh.ai/blog/es/search-console-ai-overviews-ai-mode-traffic/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">En esta página</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/es/">Inicio</a>
+      <a href="/es/#products">Productos</a>
+      <a href="/es/#faq">Preguntas frecuentes</a>
+      <a href="/es/pro/">ToucHigh PRO</a>
+      <a href="/blog/es/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Idioma: Español"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">ES</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Idioma" hidden><li><a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/es/search-console-ai-overviews-ai-mode-traffic/" hreflang="es" lang="es" data-short="ES" aria-current="page">Español</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Iniciar sesión</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Reservar llamada</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/es/">Inicio</a><span>/</span><a href="/blog/es/">Blog</a><span>/</span><span>Medición</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Medición</div>
+    <h1>Cómo leer el tráfico de AI Overviews y AI Mode en Google Search Console</h1>
+    <p class="dek">No hay una pestaña aparte de «AI Overviews». Google integra las funciones de IA en el informe de rendimiento que ya tienes. Así pueden los exportadores leer igualmente qué efecto tienen las respuestas de IA en su tráfico de búsqueda.</p>
+    <div class="a-meta"><b>Equipo de investigación de ToucHigh</b><span>Publicado el <time datetime="2026-11-08T10:20:00+08:00">8 de noviembre de 2026</time></span><span>6 min de lectura</span><span class="lang-badge">Español</span></div>
+    <div class="a-langs">También disponible en<a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp 768w, /assets/blog/hero/t01-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t01.jpg" alt="Una barra de búsqueda vierte canicas naranjas en un embudo de respuesta de IA con brillo violeta que solo deja llegar unas pocas a un pequeño escaparate web, mientras a su lado una pila alta y tambaleante de páginas en blanco solo aporta una canica." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="La pregunta detrás de este artículo"><span class="qm">“</span><div><div class="eyebrow">La pregunta detrás de este artículo</div><p class="q">¿Dónde podemos ver cuánto tráfico nos traen Google AI Overviews y AI Mode? ¿Hay un informe para eso en Search Console?</p><p class="ans"><b>Respuesta breve</b>No uno separado. Google dice que los sitios que aparecen en AI Overviews y AI Mode se incluyen en el tráfico de búsqueda total de Search Console, en el informe de rendimiento con el tipo de búsqueda Web. Así que léelo por comparación: consultas en forma de pregunta y largas frente a cortas, antes frente a después, impresiones frente a clics, y las páginas que ganan impresiones. Combínalo con las páginas de destino de GA4 y una revisión manual de qué consultas prioritarias muestran un AI Overview.</p></div></section>
+      <section class="kt takeaways"><h2>Ideas clave</h2><ul><li>Google dice que el tráfico de AI Overviews y AI Mode se cuenta en el informe de rendimiento de Search Console con el tipo de búsqueda Web, junto con el resto de la búsqueda.</li><li>El canal AI Assistant de GA4 excluye Google AI Overviews y AI Mode, así que Search Console es el sitio principal donde buscarlos.</li><li>Para poder aparecer como enlace de apoyo, una página debe estar indexada y poder mostrarse con fragmento; no hay requisitos técnicos adicionales.</li><li>Google dice que AI Overviews y AI Mode pueden hacer un «query fan-out» de búsquedas relacionadas, y esa es una de las razones por las que pueden aparecer en tus informes consultas nuevas y más largas.</li><li>Lee las tendencias por grupo de consultas y por página, no con totales de todo el sitio: las respuestas de IA pueden subir las impresiones mientras los clics se mueven de otra forma.</li></ul></section>
+      <div class="prose"><p>Muchos equipos abren Search Console buscando un informe de «AI Overviews» y no encuentran nada. Eso no significa que falten los datos, sino que Google los ha puesto en el informe que ya usas. Cuando sabes dónde están y qué no permiten separar, puedes responder igualmente a la pregunta que te hace tu jefe: ¿las respuestas de IA de Google ayudan o perjudican a nuestro tráfico?</p>
+
+<h2 id="s1">¿Dónde informa Search Console sobre AI Overviews y AI Mode?</h2>
+
+<p>La guía de Google para propietarios de sitios sobre las funciones de IA es directa: los sitios que aparecen en funciones de IA como AI Overviews y AI Mode se incluyen en el tráfico de búsqueda total de Search Console, en el informe de rendimiento dentro del tipo de búsqueda «Web». Es decir, una impresión o un clic desde un AI Overview se cuenta junto con tus demás impresiones y clics de Google Search para esa consulta y esa página.</p>
+
+<p>Esto también explica una diferencia que se nota en Google Analytics 4. El canal AI Assistant de GA4 cubre fuentes como ChatGPT, Gemini, Copilot y otras, pero la definición de Google excluye expresamente AI Overviews y AI Mode. Las visitas desde ahí llegan como tráfico de búsqueda orgánica de Google. Si quieres entender las respuestas de IA de Google, Search Console es tu instrumento principal.</p>
+
+<h2 id="s2">¿Qué páginas pueden aparecer en las respuestas de IA?</h2>
+
+<p>La regla de elegibilidad es la misma que para los resultados normales con fragmento. Google dice que una página debe estar indexada y poder mostrarse en Google Search con fragmento para aparecer como enlace de apoyo en AI Overviews o AI Mode, y que no hay requisitos técnicos adicionales. De ahí salen dos comprobaciones prácticas:</p>
+
+<ul>
+<li>Asegúrate de que las páginas prioritarias están indexadas: usa el informe de páginas y la inspección de URLs de Search Console.</li>
+<li>Asegúrate de no haber limitado los fragmentos por accidente. Google cita nosnippet, data-nosnippet, max-snippet y noindex como los controles que limitan lo que se muestra. Un tema o un plugin que añada <code>nosnippet</code> a todo el sitio también te dejaría fuera de las respuestas de IA.</li>
+</ul>
+
+<h2 id="s3">¿Cómo se leen los efectos de las respuestas de IA en datos mezclados?</h2>
+
+<p>Como el tráfico de IA no aparece desglosado, se lee comparando grupos. Cuatro comparaciones hacen la mayor parte del trabajo.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Comparación</th><th>Cómo configurarla</th><th>Qué te puede decir</th></tr></thead>
+<tbody>
+<tr><td>Consultas en forma de pregunta frente a consultas cortas</td><td>Filtra la dimensión Consulta con una expresión regular personalizada como <code>^(what|how|which|why|best|can|does)\b</code></td><td>Si las consultas conversacionales, donde suelen aparecer respuestas de IA, están creciendo en impresiones y clics</td></tr>
+<tr><td>Antes frente a después</td><td>Compara intervalos de fechas en torno a un cambio conocido, como la publicación de contenido</td><td>Si un cambio coincide con un movimiento en las impresiones o el CTR</td></tr>
+<tr><td>Impresiones frente a clics</td><td>Muestra ambas métricas en el mismo grupo de consultas</td><td>Si las impresiones suben y los clics no, puede que seas visible pero que la respuesta se dé en la propia página de resultados</td></tr>
+<tr><td>Grupos de páginas</td><td>Filtra las páginas por carpeta, como /products/ o /blog/</td><td>Qué tipos de contenido están ganando visibilidad</td></tr>
+</tbody>
+</table></div>
+
+<p>Google también dice que AI Overviews y AI Mode pueden usar una técnica de «query fan-out», que lanza varias búsquedas relacionadas para elaborar una respuesta. Vigila en tu tabla de consultas las consultas nuevas, más largas y más concretas a las que nunca te dirigiste; son una pista útil sobre las subpreguntas que se están respondiendo con tus páginas.</p>
+
+<h2 id="s4">¿Cómo deberías combinar Search Console con GA4?</h2>
+
+<p>Search Console se queda en el clic. Para saber si ese clic valió algo, cruza las páginas que ganan visibilidad en Google con el informe de páginas de destino de GA4 filtrado por Organic Search, y mira la interacción y los eventos clave. La propia guía de Google sugiere seguir las conversiones y el tiempo en el sitio con herramientas como Google Analytics, y dice que los clics desde páginas de resultados con AI Overviews son de mayor calidad, es decir, que los usuarios tienden a pasar más tiempo en el sitio. Tómalo como una afirmación de Google que debes comprobar con tus propios datos, no como algo seguro.</p>
+
+<h2 id="s5">¿Qué deberías seguir cada mes?</h2>
+
+<ol>
+<li><strong>Una lista fija de 20 a 50 consultas prioritarias.</strong> Búscalas a mano y anota si aparece un AI Overview y si te citan.</li>
+<li><strong>Impresiones y clics del grupo de consultas en forma de pregunta</strong>, comparados con el mes anterior y con el mismo mes del año pasado si tienes datos.</li>
+<li><strong>Las diez páginas con mayor aumento de impresiones</strong>, con su interacción en GA4.</li>
+<li><strong>Estado de indexación y de fragmentos</strong> de tus páginas de producto, de capacidades y de preguntas frecuentes.</li>
+<li><strong>Impresiones de búsquedas de marca</strong>, una señal indirecta de que las respuestas de IA en otros sitios están llevando a la gente a buscarte.</li>
+</ol>
+
+<p>Nada de esto te da una única cifra de «tráfico de IA», y deberías desconfiar de cualquier herramienta que afirme separarla a la perfección de los datos mezclados de Google. Lo que te da es una forma coherente de ver si tu contenido se usa en las respuestas de IA de Google y si eso se traduce en visitas que importan.</p></div>
+      <aside class="insight" aria-label="La clave"><div class="eyebrow">La clave</div><blockquote>Cuando los datos están mezclados, compara grupos en lugar de buscar una sola cifra.</blockquote><p>El diseño de investigación lo llama enfoque de diferencias en diferencias: no puedes aislar el tratamiento directamente, así que comparas grupos y periodos que deberían reaccionar de forma distinta. Consultas en forma de pregunta frente a cortas, antes frente a después, es la versión práctica para AI Overviews.</p></aside>
+      <section class="prop" aria-label="Cómo ayuda ToucHigh">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Cómo ayuda ToucHigh</h2></div>
+        <div class="pb prose"><p>Search Console muestra Google; el GEO Autopilot de ToucHigh muestra el panorama más amplio de la IA:</p><ul><li>audita tu visibilidad en ChatGPT, Perplexity, Google AI Overviews, AI Mode y Gemini;</li><li>redacta y publica las correcciones y los artículos GEO para las preguntas en las que no apareces;</li><li>sigue tu cuota de citas en IA junto a tus datos de búsqueda, para que puedas demostrar la mejora.</li></ul><p>Reserva una llamada estratégica de 30 minutos y compararemos lo que muestra Search Console con una lectura en directo de la visibilidad de tu sitio en IA.</p><p class="uc">Fábricas y proveedores B2B: mira cómo ToucHigh gestiona la <a href="/es/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T65'})}catch(e){}">visibilidad de proveedores en la búsqueda con IA</a>. ¿Quieres convertir la visibilidad en pipeline? Descubre <a href="/es/pro/" onclick="try{gtag('event','pro_click',{location:'article_T65'})}catch(e){}">ToucHigh PRO</a>, nuestro servicio de prospección con la estrategia primero.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T65')">Reserva una llamada estratégica de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T65'})}catch(e){}">Inicia sesión en ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Preguntas frecuentes"><h2>Preguntas frecuentes</h2><details open><summary>¿Hay un filtro para AI Overviews en Search Console?</summary><p>La guía de Google dice que AI Overviews y AI Mode se incluyen en los datos de búsqueda Web totales del informe de rendimiento, en lugar de remitir a un informe aparte. Lee su efecto comparando grupos de consultas, páginas y periodos.</p></details><details><summary>¿Por qué suben nuestras impresiones mientras los clics siguen igual?</summary><p>Un motivo habitual es que tu página se muestra, también como enlace de apoyo en una respuesta de IA, mientras que quien busca obtiene suficiente de la propia respuesta. Comprueba qué consultas y páginas provocan el cambio antes de decidir que es un problema.</p></details><details><summary>¿Bloquear Google-Extended deja nuestras páginas fuera de AI Overviews?</summary><p>No. Google dice que Google-Extended no afecta a la inclusión en Google Search. Para limitar lo que aparece en las funciones de IA, Google remite a nosnippet, data-nosnippet, max-snippet o noindex.</p></details><details><summary>¿Necesitamos un marcado especial para aparecer en AI Overviews?</summary><p>Google dice que no hay requisitos adicionales ni hace falta un schema especial. Las páginas deben estar indexadas y poder mostrarse con fragmento, y se aplican las buenas prácticas de SEO habituales.</p></details></section>
+      <section class="srcs"><h2>Fuentes</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://support.google.com/webmasters/answer/7576553" rel="noopener" target="_blank">Performance report (Search results): Overview and basic setup</a> — Search Console Help</li><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li></ol></section>
+      <p class="note"><b>Por qué escribimos esto</b>Escribimos esto porque los exportadores no dejan de preguntar dónde están sus datos de AI Overviews. La respuesta honesta es que ya están en Search Console, mezclados, y que hay una forma disciplinada de leerlos.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="En esta página"><h4>En esta página</h4><a href="#s1">¿Dónde informa Search Console sobre AI Overviews y AI Mode?</a><a href="#s2">¿Qué páginas pueden aparecer en las respuestas de IA?</a><a href="#s3">¿Cómo se leen los efectos de las respuestas de IA en datos mezclados?</a><a href="#s4">¿Cómo deberías combinar Search Console con GA4?</a><a href="#s5">¿Qué deberías seguir cada mes?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Descubre dónde eres invisible en la búsqueda con IA de EE. UU.</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Reservar llamada</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Iniciar sesión</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Artículos relacionados</h2>
+  <div class="grid"><a class="card" href="/blog/es/ga4-ai-assistant-channel/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Unos paquetes salen de un túnel con forma de bocadillo de chat iluminado en violeta, pasan a una cinta transportadora y caen en un contenedor gris sin marcas, con sus etiquetas de seguimiento naranjas tiradas por el suelo, mientras una lupa, un gráfico circular, un gráfico de barras y una bolsa de la compra esperan para hacer la comprobación cruzada." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="es"><div class="eyebrow">Medición</div><h3>El canal AI Assistant de GA4: qué cuenta, qué se le escapa y cuándo crear el tuyo propio</h3><p>Google Analytics ya clasifica las visitas de ChatGPT, Gemini, Copilot y otros en un canal propio. Eso resuelve parte del problema del tráfico de IA. Esta es la parte que no resuelve, y una agrupación de canales personalizada que cubre el hueco.</p><div class="meta"><span class="lg">Español</span><span>6 min de lectura</span></div></div></a><a class="card" href="/blog/en/ai-overviews-branded-queries-seo-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="A search bar pours orange marbles into a violet-glowing AI answer funnel that lets only a few reach a small website storefront, while a tall wobbling stack of blank pages beside it yields just one marble." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">SEO</div><h3>Store SEO Traffic Dropping? AI Overviews Now Cover 80% of Branded Searches</h3><p>AI Overviews are taking over branded searches, and more blog posts and backlinks pay back less every month. What should independent store owners stop doing, and what should they start?</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/seo-best-practices-ai-overviews-ai-mode/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t30-768.webp"><img src="/assets/blog/hero/t30.jpg" alt="A gloved hand prunes thin grey page-leaves from a potted plant while a few large orange page cards bloom, one of them linked by a violet line to a floating AI answer panel." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO Best Practices for AI Overviews and AI Mode (October 2026)</h3><p>Google&#x27;s AI now answers most branded searches and carries more inline links. Here&#x27;s where SEO effort still pays, where returns have flattened, and a one-week checklist.</p><div class="meta"><span class="lg">English</span><span>7 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/es/">← Volver al blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Descubre dónde eres invisible en la búsqueda con IA de EE. UU.</h2>
+  <p>Reserva una llamada gratuita de 30 minutos y haremos en directo una lectura de la visibilidad en IA de tu tienda.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Reserva una llamada estratégica de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Inicia sesión en ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Visibilidad en búsqueda con IA, redes sociales y anuncios en piloto automático para pymes y vendedores transfronterizos.</p></div>
+      <div><h4>ToucHigh</h4><a href="/es/">Inicio</a><a href="/es/#geo">GEO Autopilot</a><a href="/es/#social">Social Autopilot</a><a href="/es/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/es/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Iniciar sesión</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Reservar llamada</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

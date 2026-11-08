@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>robots.txt para rastreadores de IA: OAI-SearchBot, GPTBot, Google-Extended | ToucHigh</title>
+<meta name="description" content="Qué rastreadores de IA debe permitir una web B2B o de fábrica: OAI-SearchBot frente a GPTBot, PerplexityBot, Google-Extended y los ajustes de firewall que los bloquean sin avisar.">
+<link rel="canonical" href="https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="robots.txt rastreadores de IA, OAI-SearchBot vs GPTBot, permitir rastreador de ChatGPT, Google-Extended robots.txt, PerplexityBot, bloquear entrenamiento de IA pero permitir búsqueda">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/">
+<meta property="og:title" content="¿Tu web bloquea a ChatGPT? robots.txt para rastreadores de IA en webs B2B">
+<meta property="og:description" content="Qué rastreadores de IA debe permitir una web B2B o de fábrica: OAI-SearchBot frente a GPTBot, PerplexityBot, Google-Extended y los ajustes de firewall que los bloquean sin avisar.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t63-es.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="¿Tu web bloquea a ChatGPT? robots.txt para rastreadores de IA en webs B2B">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="article:published_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:section" content="GEO y búsqueda con IA">
+<meta property="article:tag" content="robots.txt">
+<meta property="article:tag" content="Rastreadores de IA">
+<meta property="article:tag" content="OAI-SearchBot">
+<meta property="article:tag" content="GEO técnico">
+<meta property="article:tag" content="Webs B2B">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="¿Tu web bloquea a ChatGPT? robots.txt para rastreadores de IA en webs B2B">
+<meta name="twitter:description" content="Qué rastreadores de IA debe permitir una web B2B o de fábrica: OAI-SearchBot frente a GPTBot, PerplexityBot, Google-Extended y los ajustes de firewall que los bloquean sin avisar.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t63-es.jpg">
+<meta name="twitter:image:alt" content="¿Tu web bloquea a ChatGPT? robots.txt para rastreadores de IA en webs B2B">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/#article","url":"https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/","mainEntityOfPage":"https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/","headline":"¿Tu web bloquea a ChatGPT? robots.txt para rastreadores de IA en webs B2B","alternativeHeadline":"robots.txt para rastreadores de IA: OAI-SearchBot, GPTBot, Google-Extended","description":"Qué rastreadores de IA debe permitir una web B2B o de fábrica: OAI-SearchBot frente a GPTBot, PerplexityBot, Google-Extended y los ajustes de firewall que los bloquean sin avisar.","abstract":"Es bastante posible. Las empresas de IA usan bots distintos para la búsqueda y para el entrenamiento de modelos. OpenAI dice que los sitios que excluyen a OAI-SearchBot no se muestran en las respuestas de búsqueda de ChatGPT, mientras que GPTBot solo rige el entrenamiento. Permite los rastreadores de búsqueda (OAI-SearchBot, PerplexityBot, Googlebot, Bingbot), decide por separado sobre los bots de entrenamiento como GPTBot y Google-Extended, y comprueba que tu CDN o tu firewall no los bloquea, diga lo que diga robots.txt.","image":["https://touchigh.ai/assets/blog/og/t63-es.jpg","https://touchigh.ai/assets/blog/hero/t04.jpg"],"datePublished":"2026-11-08T09:40:00+08:00","dateModified":"2026-11-08T09:40:00+08:00","inLanguage":"es","author":{"@type":"Organization","name":"Equipo de investigación de ToucHigh","url":"https://touchigh.ai/blog/es/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"GEO y búsqueda con IA","keywords":"robots.txt rastreadores de IA, OAI-SearchBot vs GPTBot, permitir rastreador de ChatGPT, Google-Extended robots.txt, PerplexityBot, bloquear entrenamiento de IA pero permitir búsqueda","wordCount":1457,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/es/#blog","name":"Blog de ToucHigh"},"about":[{"@type":"Thing","name":"robots.txt"},{"@type":"Thing","name":"Rastreadores de IA"},{"@type":"Thing","name":"OAI-SearchBot"},{"@type":"Thing","name":"GEO técnico"},{"@type":"Thing","name":"Webs B2B"}],"citation":[{"@type":"CreativeWork","name":"Overview of OpenAI Crawlers","url":"https://platform.openai.com/docs/bots","publisher":{"@type":"Organization","name":"OpenAI"}},{"@type":"CreativeWork","name":"Perplexity Crawlers","url":"https://docs.perplexity.ai/guides/bots","publisher":{"@type":"Organization","name":"Perplexity"}},{"@type":"CreativeWork","name":"Google's common crawlers (Google-Extended)","url":"https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to robots.txt","url":"https://developers.google.com/search/docs/crawling-indexing/robots/intro","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"es","mainEntity":[{"@type":"Question","name":"Si bloqueamos GPTBot, ¿dejará ChatGPT de mostrar nuestra web?","acceptedAnswer":{"@type":"Answer","text":"No, según OpenAI. GPTBot determina si el contenido puede usarse para entrenar modelos; OAI-SearchBot determina la aparición en la búsqueda de ChatGPT. Los dos ajustes son independientes, así que puedes bloquear GPTBot y seguir permitiendo OAI-SearchBot."}},{"@type":"Question","name":"¿Bloquear Google-Extended nos saca de AI Overviews?","acceptedAnswer":{"@type":"Answer","text":"No. Google dice que Google-Extended no afecta a la inclusión en Google Search, y AI Overviews y AI Mode forman parte de la búsqueda, que se controla a través de Googlebot. Para limitar lo que aparece en los fragmentos y en las funciones de IA, Google remite a nosnippet, data-nosnippet, max-snippet o noindex."}},{"@type":"Question","name":"¿Necesitamos un archivo llms.txt para que la IA nos encuentre?","acceptedAnswer":{"@type":"Answer","text":"Google dice que no necesitas archivos nuevos legibles por máquina ni archivos de texto para IA para aparecer en sus funciones de IA. Algunos sitios publican llms.txt como resumen adicional para herramientas de IA, pero no sustituye a unas páginas rastreables."}},{"@type":"Question","name":"¿Cuánto tardaremos en ver un cambio después de arreglar robots.txt?","acceptedAnswer":{"@type":"Answer","text":"OpenAI dice que sus sistemas pueden tardar unas 24 horas en adaptarse a una actualización de robots.txt para la búsqueda. Que te citen sigue dependiendo de tu contenido, así que mide durante las semanas siguientes y no al día siguiente."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/es/"},{"@type":"ListItem","position":3,"name":"¿Tu web bloquea a ChatGPT? robots.txt para rastreadores de IA en webs B2B","item":"https://touchigh.ai/blog/es/ai-crawlers-robots-txt-b2b-website/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">En esta página</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/es/">Inicio</a>
+      <a href="/es/#products">Productos</a>
+      <a href="/es/#faq">Preguntas frecuentes</a>
+      <a href="/es/pro/">ToucHigh PRO</a>
+      <a href="/blog/es/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Idioma: Español"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">ES</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Idioma" hidden><li><a href="/blog/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/es/ai-crawlers-robots-txt-b2b-website/" hreflang="es" lang="es" data-short="ES" aria-current="page">Español</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Iniciar sesión</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Reservar llamada</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/es/">Inicio</a><span>/</span><a href="/blog/es/">Blog</a><span>/</span><span>GEO y búsqueda con IA</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">GEO y búsqueda con IA</div>
+    <h1>¿Tu web bloquea a ChatGPT? robots.txt para rastreadores de IA en webs B2B</h1>
+    <p class="dek">Antes que el contenido, revisa el acceso. Muchas webs de exportadores bloquean por accidente a los rastreadores de búsqueda con IA mediante robots.txt, una CDN o un plugin de seguridad. Así se distinguen los bots de búsqueda de los de entrenamiento y esto es lo que conviene permitir.</p>
+    <div class="a-meta"><b>Equipo de investigación de ToucHigh</b><span>Publicado el <time datetime="2026-11-08T09:40:00+08:00">8 de noviembre de 2026</time></span><span>6 min de lectura</span><span class="lang-badge">Español</span></div>
+    <div class="a-langs">También disponible en<a href="/blog/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp 768w, /assets/blog/hero/t04-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t04.jpg" alt="Un simpático bocadillo de chat de IA con ojos violetas baja un cubo naranja a un pozo de piedra limpio rodeado de un matraz de laboratorio, una regla, un frasco de producto y un portapapeles en blanco, mientras cerca, ignorado, yace un montón polvoriento de eslabones de cadena oscuros." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="La pregunta detrás de este artículo"><span class="qm">“</span><div><div class="eyebrow">La pregunta detrás de este artículo</div><p class="q">Nuestro equipo de TI bloqueó los «bots de IA» en la web el año pasado. ¿Puede ser esa la razón por la que ChatGPT nunca muestra nuestra fábrica? ¿Qué deberíamos permitir?</p><p class="ans"><b>Respuesta breve</b>Es bastante posible. Las empresas de IA usan bots distintos para la búsqueda y para el entrenamiento de modelos. OpenAI dice que los sitios que excluyen a OAI-SearchBot no se muestran en las respuestas de búsqueda de ChatGPT, mientras que GPTBot solo rige el entrenamiento. Permite los rastreadores de búsqueda (OAI-SearchBot, PerplexityBot, Googlebot, Bingbot), decide por separado sobre los bots de entrenamiento como GPTBot y Google-Extended, y comprueba que tu CDN o tu firewall no los bloquea, diga lo que diga robots.txt.</p></div></section>
+      <section class="kt takeaways"><h2>Ideas clave</h2><ul><li>OAI-SearchBot de OpenAI muestra sitios en la búsqueda de ChatGPT; GPTBot es para entrenamiento. Los ajustes son independientes, así que puedes permitir la búsqueda y rechazar el entrenamiento.</li><li>OpenAI dice que los cambios en robots.txt pueden tardar unas 24 horas en afectar a la búsqueda de ChatGPT.</li><li>PerplexityBot muestra y enlaza sitios en los resultados de Perplexity y, según Perplexity, no se usa para entrenar modelos fundacionales.</li><li>Google-Extended controla el uso de tu contenido para el entrenamiento y la fundamentación de Gemini; Google dice que no afecta a la inclusión ni al posicionamiento en Google Search.</li><li>Los firewalls y las CDN pueden bloquear a los rastreadores aunque robots.txt los permita; por eso Perplexity publica sus rangos de IP e instrucciones para WAF.</li></ul></section>
+      <div class="prose"><p>Un número sorprendente de webs de exportadores son invisibles para la búsqueda con IA por un motivo aburrido: los rastreadores no pueden entrar. En algún momento de los últimos dos años, alguien añadió una regla para «bloquear bots de IA», activó la protección contra bots de una CDN o instaló un plugin de seguridad. La web sigue funcionando para las personas, así que nadie se da cuenta. Después el equipo se pasa meses reescribiendo contenido que los buscadores de IA nunca tuvieron permiso para leer.</p>
+
+<p>Esta guía es una revisión técnica de 30 minutos para webs de fábricas y B2B. No te hará visible por sí sola, pero si el acceso está roto, nada de lo que hagas contará.</p>
+
+<h2 id="s1">¿Qué rastreadores de IA son para búsqueda y cuáles para entrenamiento?</h2>
+
+<p>La idea clave: las empresas de IA separan el bot que encuentra páginas para mostrarlas en las respuestas del bot que recoge contenido para entrenar modelos. Puedes tomar decisiones distintas para cada uno.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Empresa</th><th>User agent</th><th>Finalidad (según la documentación de cada empresa)</th></tr></thead>
+<tbody>
+<tr><td>OpenAI</td><td>OAI-SearchBot</td><td>Muestra webs en las funciones de búsqueda de ChatGPT. Los sitios excluidos no aparecen en las respuestas de búsqueda de ChatGPT, aunque pueden seguir apareciendo como enlaces de navegación.</td></tr>
+<tr><td>OpenAI</td><td>GPTBot</td><td>Rastrea contenido que puede usarse para entrenar los modelos fundacionales de OpenAI. Bloquearlo indica que el contenido no debe usarse para entrenamiento.</td></tr>
+<tr><td>OpenAI</td><td>ChatGPT-User</td><td>Visita páginas para determinadas acciones de los usuarios. OpenAI dice que las reglas de robots.txt pueden no aplicarse y que no se usa para decidir qué aparece en la búsqueda.</td></tr>
+<tr><td>Perplexity</td><td>PerplexityBot</td><td>Muestra y enlaza webs en los resultados de búsqueda de Perplexity; no se usa para rastrear contenido para modelos fundacionales de IA.</td></tr>
+<tr><td>Perplexity</td><td>Perplexity-User</td><td>Obtiene páginas cuando un usuario hace una pregunta; en general ignora robots.txt porque es un usuario quien ha pedido la página.</td></tr>
+<tr><td>Google</td><td>Google-Extended</td><td>Un token de robots.txt que controla si el contenido que rastrea Google puede usarse para el entrenamiento y la fundamentación de Gemini. No afecta a la inclusión ni al posicionamiento en Google Search.</td></tr>
+</tbody>
+</table></div>
+
+<p>Las funciones de IA propias de Google en la búsqueda funcionan de otra manera. La guía de Google dice que la IA está integrada en la búsqueda, así que las reglas de robots.txt para Googlebot son el control de cómo se rastrea un sitio para la búsqueda, incluidos AI Overviews y AI Mode. Bloquear Googlebot para «excluirse de la IA» también te quitaría de los resultados de búsqueda normales.</p>
+
+<h2 id="s2">¿Qué debería decir el robots.txt de la web de una fábrica?</h2>
+
+<p>Para la mayoría de los fabricantes exportadores el objetivo es que los encuentren, así que permite los rastreadores de búsqueda. Permitir o no los rastreadores de entrenamiento es una decisión de negocio; rechazarlos no te saca de la búsqueda con IA. Un punto de partida sencillo sería este:</p>
+
+<div class="tw"><table>
+<thead><tr><th>Línea de robots.txt</th><th>Efecto</th></tr></thead>
+<tbody>
+<tr><td><code>User-agent: OAI-SearchBot</code> / <code>Allow: /</code></td><td>Puede aparecer en las respuestas de búsqueda de ChatGPT</td></tr>
+<tr><td><code>User-agent: PerplexityBot</code> / <code>Allow: /</code></td><td>Puede aparecer en los resultados de Perplexity</td></tr>
+<tr><td><code>User-agent: Googlebot</code> / <code>Allow: /</code></td><td>Google Search, incluidos AI Overviews y AI Mode</td></tr>
+<tr><td><code>User-agent: Bingbot</code> / <code>Allow: /</code></td><td>Búsqueda de Bing</td></tr>
+<tr><td><code>User-agent: GPTBot</code> / <code>Allow</code> o <code>Disallow</code></td><td>Tu decisión sobre el entrenamiento de modelos de OpenAI</td></tr>
+<tr><td><code>User-agent: Google-Extended</code> / <code>Allow</code> o <code>Disallow</code></td><td>Tu decisión sobre el entrenamiento y la fundamentación de Gemini</td></tr>
+<tr><td><code>Sitemap: https://www.example.com/sitemap.xml</code></td><td>Ayuda a los rastreadores a encontrar todas las páginas</td></tr>
+</tbody>
+</table></div>
+
+<p>Mantén las zonas privadas, como un portal para distribuidores o las listas de precios, fuera del alcance de los rastreadores con protección por inicio de sesión, no solo con robots.txt. La documentación de Google sobre robots.txt deja claro que robots.txt no es un mecanismo para mantener una página fuera de Google; para eso usa noindex o protección con contraseña.</p>
+
+<h2 id="s3">¿Por qué un firewall puede bloquear a los rastreadores de IA aunque robots.txt los permita?</h2>
+
+<p>robots.txt es una petición; tu CDN, tu firewall o tu plugin de seguridad son una puerta. Muchas funciones de protección contra bots ponen a prueba o bloquean a los rastreadores desconocidos antes de que lleguen a leer robots.txt. Google incluye «asegurarse de que el rastreo está permitido en robots.txt y por cualquier CDN o infraestructura de alojamiento» entre sus aspectos básicos para las funciones de IA. Perplexity va más allá y publica listas de direcciones IP y reglas paso a paso para firewalls de aplicaciones web, para que los propietarios de sitios puedan permitir sus bots. OpenAI también publica los rangos de IP de sus rastreadores.</p>
+
+<p>Haz tres preguntas a quien gestione tu alojamiento: ¿está activada la protección contra bots?, ¿tiene una lista de permitidos? y ¿están en ella los rastreadores de búsqueda anteriores? Después revisa los registros del servidor buscando los user agents de la tabla. Si aparecen y reciben errores, o no aparecen nunca, has encontrado el problema.</p>
+
+<h2 id="s4">¿Cómo se comprueba el acceso en 30 minutos?</h2>
+
+<ol>
+<li><strong>Abre tusitio.com/robots.txt.</strong> Busca <code>Disallow: /</code> bajo <code>User-agent: *</code> o bajo cualquier user agent de IA.</li>
+<li><strong>Revisa la CDN o el firewall</strong> en busca de protección contra bots, bloqueo por países o interruptores de «scrapers de IA».</li>
+<li><strong>Busca en los registros del servidor</strong> OAI-SearchBot, PerplexityBot y Googlebot, y los códigos de estado que reciben.</li>
+<li><strong>Confirma la indexación en Google Search Console</strong> de tus páginas clave de producto y de capacidades.</li>
+<li><strong>Vuelve a probar en ChatGPT al cabo de un día.</strong> OpenAI dice que los cambios en robots.txt pueden tardar unas 24 horas en reflejarse en la búsqueda.</li>
+<li><strong>Pon la política por escrito</strong>, para que la próxima actualización de seguridad no la deshaga.</li>
+</ol>
+
+<h2 id="s5">¿Permitir los rastreadores significa que la IA te recomendará?</h2>
+
+<p>No. El acceso te hace elegible; no hace que te elijan. Cuando los rastreadores pueden leer tu web, las siguientes preguntas son si tus páginas responden a las preguntas de los compradores con datos concretos y si la información de tu empresa es coherente en toda la web. Pero el acceso va primero. Es la corrección más barata del GEO y la que más a menudo se pasa por alto.</p></div>
+      <aside class="insight" aria-label="La clave"><div class="eyebrow">La clave</div><blockquote>No puede citarte un motor al que le has cerrado la puerta.</blockquote><p>La teoría de los cuellos de botella de la investigación operativa dice que el rendimiento de un sistema lo marca su punto más estrecho. En la visibilidad en IA, ese punto suele ser el acceso de los rastreadores: ningún trabajo de contenido mejora el resultado hasta que se abre la puerta.</p></aside>
+      <section class="prop" aria-label="Cómo ayuda ToucHigh">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Cómo ayuda ToucHigh</h2></div>
+        <div class="pb prose"><p>El GEO Autopilot de ToucHigh empieza cada proyecto con este tipo de revisión:</p><ul><li>una auditoría de dónde es invisible tu web en ChatGPT, Perplexity, Google AI y Gemini;</li><li>correcciones redactadas y publicadas en tu nombre, incluidas páginas, respuestas y datos de entidad;</li><li>seguimiento posterior de la cuota de citas en IA, para que veas el efecto de abrir la puerta.</li></ul><p>Reserva una llamada estratégica de 30 minutos y revisaremos en directo la visibilidad de tu web en IA.</p><p class="uc">Fábricas y proveedores B2B: mira cómo ToucHigh gestiona la <a href="/es/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T63'})}catch(e){}">visibilidad de proveedores en la búsqueda con IA</a>. ¿Quieres convertir la visibilidad en pipeline? Descubre <a href="/es/pro/" onclick="try{gtag('event','pro_click',{location:'article_T63'})}catch(e){}">ToucHigh PRO</a>, nuestro servicio de prospección con la estrategia primero.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T63')">Reserva una llamada estratégica de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T63'})}catch(e){}">Inicia sesión en ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Preguntas frecuentes"><h2>Preguntas frecuentes</h2><details open><summary>Si bloqueamos GPTBot, ¿dejará ChatGPT de mostrar nuestra web?</summary><p>No, según OpenAI. GPTBot determina si el contenido puede usarse para entrenar modelos; OAI-SearchBot determina la aparición en la búsqueda de ChatGPT. Los dos ajustes son independientes, así que puedes bloquear GPTBot y seguir permitiendo OAI-SearchBot.</p></details><details><summary>¿Bloquear Google-Extended nos saca de AI Overviews?</summary><p>No. Google dice que Google-Extended no afecta a la inclusión en Google Search, y AI Overviews y AI Mode forman parte de la búsqueda, que se controla a través de Googlebot. Para limitar lo que aparece en los fragmentos y en las funciones de IA, Google remite a nosnippet, data-nosnippet, max-snippet o noindex.</p></details><details><summary>¿Necesitamos un archivo llms.txt para que la IA nos encuentre?</summary><p>Google dice que no necesitas archivos nuevos legibles por máquina ni archivos de texto para IA para aparecer en sus funciones de IA. Algunos sitios publican llms.txt como resumen adicional para herramientas de IA, pero no sustituye a unas páginas rastreables.</p></details><details><summary>¿Cuánto tardaremos en ver un cambio después de arreglar robots.txt?</summary><p>OpenAI dice que sus sistemas pueden tardar unas 24 horas en adaptarse a una actualización de robots.txt para la búsqueda. Que te citen sigue dependiendo de tu contenido, así que mide durante las semanas siguientes y no al día siguiente.</p></details></section>
+      <section class="srcs"><h2>Fuentes</h2><ol><li><a href="https://platform.openai.com/docs/bots" rel="noopener" target="_blank">Overview of OpenAI Crawlers</a> — OpenAI</li><li><a href="https://docs.perplexity.ai/guides/bots" rel="noopener" target="_blank">Perplexity Crawlers</a> — Perplexity</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers" rel="noopener" target="_blank">Google&#x27;s common crawlers (Google-Extended)</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro" rel="noopener" target="_blank">Introduction to robots.txt</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>Por qué escribimos esto</b>Escribimos esto porque lo primero que comprobamos en la web de una fábrica nueva es si los rastreadores de IA pueden entrar, y la respuesta es «no» con más frecuencia de lo que nadie espera.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="En esta página"><h4>En esta página</h4><a href="#s1">¿Qué rastreadores de IA son para búsqueda y cuáles para entrenamiento?</a><a href="#s2">¿Qué debería decir el robots.txt de la web de una fábrica?</a><a href="#s3">¿Por qué un firewall puede bloquear a los rastreadores de IA aunque robots.txt los permita?</a><a href="#s4">¿Cómo se comprueba el acceso en 30 minutos?</a><a href="#s5">¿Permitir los rastreadores significa que la IA te recomendará?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Descubre dónde eres invisible en la búsqueda con IA de EE. UU.</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Reservar llamada</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Iniciar sesión</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Artículos relacionados</h2>
+  <div class="grid"><a class="card" href="/blog/es/chatgpt-supplier-shortlist-audit/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t46-768.webp"><img src="/assets/blog/hero/t46.jpg" alt="Una lupa gigante examina cuatro bocadillos de chat de IA que flotan junto a una pequeña tienda con toldo naranja, y solo uno muestra el marcador de mapa naranja de la tienda, al lado de un portapapeles con marcas de verificación." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="es"><div class="eyebrow">GEO y búsqueda con IA</div><h3>¿Está tu fábrica en la lista de proveedores de ChatGPT? Una auditoría de 30 prompts</h3><p>Antes de reescribir una sola página, averigua en qué punto estás. Aquí tienes una auditoría de 30 prompts, una hoja de puntuación y una forma de interpretar los resultados que cualquier equipo de exportación puede hacer en una tarde.</p><div class="meta"><span class="lg">Español</span><span>6 min de lectura</span></div></div></a><a class="card" href="/blog/en/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Among a row of identical grey factories, one white and orange factory is lit by a spotlight from an AI chat bubble, above a panel of icons for machinery, certification, materials, lead time and FAQs." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites</h3><p>Overseas buyers are starting to use AI to find suppliers. A factory site with only a company profile and product photos rarely gets recommended by ChatGPT. Here&#x27;s a checklist of citable pages and first GEO steps.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/en/backlinks-vs-primary-sources-chatgpt-citations/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp"><img src="/assets/blog/hero/t04.jpg" alt="A friendly AI chat bubble with violet eyes lowers an orange bucket into a clean stone well surrounded by a lab flask, a ruler, a product bottle and a blank clipboard, while a dusty heap of dark chain links lies ignored nearby." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Do Backlinks Still Matter? ChatGPT Now Favors Primary Sources</h3><p>ChatGPT increasingly favors primary sources, and each new backlink pays back less. Small sellers should shift time from buying links to publishing original data.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/es/">← Volver al blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Descubre dónde eres invisible en la búsqueda con IA de EE. UU.</h2>
+  <p>Reserva una llamada gratuita de 30 minutos y haremos en directo una lectura de la visibilidad en IA de tu tienda.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Reserva una llamada estratégica de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Inicia sesión en ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Visibilidad en búsqueda con IA, redes sociales y anuncios en piloto automático para pymes y vendedores transfronterizos.</p></div>
+      <div><h4>ToucHigh</h4><a href="/es/">Inicio</a><a href="/es/#geo">GEO Autopilot</a><a href="/es/#social">Social Autopilot</a><a href="/es/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/es/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Iniciar sesión</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Reservar llamada</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marcado schema para webs de fábricas: qué añadir | ToucHigh</title>
+<meta name="description" content="Qué datos estructurados necesita la web B2B de una fábrica: Organization, fragmentos de producto y Breadcrumb, por qué FAQ casi nunca da resultados enriquecidos y qué dice Google de la IA.">
+<link rel="canonical" href="https://touchigh.ai/blog/es/factory-website-schema-markup/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="marcado schema para fabricantes, datos estructurados web de fábrica, schema Organization B2B, datos estructurados Product fábrica, schema FAQ 2026, JSON-LD para exportadores">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/factory-website-schema-markup/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/factory-website-schema-markup/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/es/factory-website-schema-markup/">
+<meta property="og:title" content="Marcado schema para webs de fábricas: Organization, Product y FAQ bien hechos">
+<meta property="og:description" content="Qué datos estructurados necesita la web B2B de una fábrica: Organization, fragmentos de producto y Breadcrumb, por qué FAQ casi nunca da resultados enriquecidos y qué dice Google de la IA.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t62-es.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Marcado schema para webs de fábricas: Organization, Product y FAQ bien hechos">
+<meta property="og:locale" content="es_ES">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="article:published_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:section" content="SEO">
+<meta property="article:tag" content="Datos estructurados">
+<meta property="article:tag" content="Schema.org">
+<meta property="article:tag" content="Webs de fábricas">
+<meta property="article:tag" content="SEO B2B">
+<meta property="article:tag" content="Datos de entidad">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Marcado schema para webs de fábricas: Organization, Product y FAQ bien hechos">
+<meta name="twitter:description" content="Qué datos estructurados necesita la web B2B de una fábrica: Organization, fragmentos de producto y Breadcrumb, por qué FAQ casi nunca da resultados enriquecidos y qué dice Google de la IA.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t62-es.jpg">
+<meta name="twitter:image:alt" content="Marcado schema para webs de fábricas: Organization, Product y FAQ bien hechos">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/es/factory-website-schema-markup/#article","url":"https://touchigh.ai/blog/es/factory-website-schema-markup/","mainEntityOfPage":"https://touchigh.ai/blog/es/factory-website-schema-markup/","headline":"Marcado schema para webs de fábricas: Organization, Product y FAQ bien hechos","alternativeHeadline":"Marcado schema para webs de fábricas: qué añadir","description":"Qué datos estructurados necesita la web B2B de una fábrica: Organization, fragmentos de producto y Breadcrumb, por qué FAQ casi nunca da resultados enriquecidos y qué dice Google de la IA.","abstract":"Añade tres tipos y mantenlos correctos: Organization en la página de inicio (nombre, logotipo, dirección, contacto y enlaces sameAs a tus perfiles oficiales), marcado Product en cada página de producto o de capacidades usando el formato de fragmento de producto de Google, y BreadcrumbList en todo el sitio. El marcado FAQ es opcional, porque desde 2023 Google solo muestra resultados enriquecidos de preguntas frecuentes para webs gubernamentales y de salud muy conocidas. Google dice que no hace falta ningún schema especial para aparecer en AI Overviews; el marcado simplemente tiene que coincidir con el texto visible.","image":["https://touchigh.ai/assets/blog/og/t62-es.jpg","https://touchigh.ai/assets/blog/hero/t57.jpg"],"datePublished":"2026-11-08T09:20:00+08:00","dateModified":"2026-11-08T09:20:00+08:00","inLanguage":"es","author":{"@type":"Organization","name":"Equipo de investigación de ToucHigh","url":"https://touchigh.ai/blog/es/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"SEO","keywords":"marcado schema para fabricantes, datos estructurados web de fábrica, schema Organization B2B, datos estructurados Product fábrica, schema FAQ 2026, JSON-LD para exportadores","wordCount":1481,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/es/#blog","name":"Blog de ToucHigh"},"about":[{"@type":"Thing","name":"Datos estructurados"},{"@type":"Thing","name":"Schema.org"},{"@type":"Thing","name":"Webs de fábricas"},{"@type":"Thing","name":"SEO B2B"},{"@type":"Thing","name":"Datos de entidad"}],"citation":[{"@type":"CreativeWork","name":"Organization (Organization) structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/organization","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to Product structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/product","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Changes to HowTo and FAQ rich results","url":"https://developers.google.com/search/blog/2023/08/howto-faq-changes","datePublished":"2023-08-08","publisher":{"@type":"Organization","name":"Google Search Central Blog"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Rich Results Test","url":"https://search.google.com/test/rich-results","publisher":{"@type":"Organization","name":"Google"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/factory-website-schema-markup/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"es","mainEntity":[{"@type":"Question","name":"¿Debemos usar JSON-LD o microdatos?","acceptedAnswer":{"@type":"Answer","text":"Google acepta varios formatos, y JSON-LD suele ser el más fácil de mantener porque va en un único bloque de script en lugar de estar entretejido en el HTML. Elijas lo que elijas, mantén una única fuente de referencia para que el marcado y el texto visible nunca se desalineen."}},{"@type":"Question","name":"¿Podemos marcar precios que solo damos en presupuestos?","acceptedAnswer":{"@type":"Answer","text":"No. Los datos estructurados deben describir lo que hay en la página. Si la página no muestra un precio, deja fuera el precio y usa el formato de fragmento de producto, que Google pensó para páginas en las que no se puede comprar directamente."}},{"@type":"Question","name":"¿Necesitamos marcado LocalBusiness?","acceptedAnswer":{"@type":"Answer","text":"Solo si los compradores te visitan en persona como negocio local, por ejemplo una sala de exposición con horario de apertura. Para un fabricante exportador, Organization con una dirección real suele ser el tipo adecuado."}},{"@type":"Question","name":"¿El marcado schema nos hará aparecer en las respuestas de ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"No por sí solo. Google dice que no hace falta ningún schema especial para sus funciones de IA, y los demás asistentes se basan en las páginas que pueden rastrear y en la información que encuentran por la web. El marcado ayuda al indicar con claridad los datos de tu entidad; el contenido sigue teniendo que responder a las preguntas de los compradores."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/es/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/es/"},{"@type":"ListItem","position":3,"name":"Marcado schema para webs de fábricas: Organization, Product y FAQ bien hechos","item":"https://touchigh.ai/blog/es/factory-website-schema-markup/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">En esta página</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/es/">Inicio</a>
+      <a href="/es/#products">Productos</a>
+      <a href="/es/#faq">Preguntas frecuentes</a>
+      <a href="/es/pro/">ToucHigh PRO</a>
+      <a href="/blog/es/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Idioma: Español"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">ES</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Idioma" hidden><li><a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/factory-website-schema-markup/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/es/factory-website-schema-markup/" hreflang="es" lang="es" data-short="ES" aria-current="page">Español</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Iniciar sesión</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Reservar llamada</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/es/">Inicio</a><span>/</span><a href="/blog/es/">Blog</a><span>/</span><span>SEO</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">SEO</div>
+    <h1>Marcado schema para webs de fábricas: Organization, Product y FAQ bien hechos</h1>
+    <p class="dek">Los datos estructurados no harán por sí solos que ChatGPT te recomiende, pero eliminan las dudas sobre quién eres y qué fabricas. Esta es la lista corta que necesita la web de una fábrica, y lo que puedes saltarte.</p>
+    <div class="a-meta"><b>Equipo de investigación de ToucHigh</b><span>Publicado el <time datetime="2026-11-08T09:20:00+08:00">8 de noviembre de 2026</time></span><span>6 min de lectura</span><span class="lang-badge">Español</span></div>
+    <div class="a-langs">También disponible en<a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/factory-website-schema-markup/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t57-768.webp 768w, /assets/blog/hero/t57-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t57.jpg" alt="Una pequeña grúa levanta una bandeja con seis fichas de contenido, una credencial, una tabla de especificaciones, bocadillos de chat, un certificado, una balanza y estrellas hacia una ventana de respuesta de IA donde una insignia naranja de fábrica ocupa el primer puesto." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="La pregunta detrás de este artículo"><span class="qm">“</span><div><div class="eyebrow">La pregunta detrás de este artículo</div><p class="q">Nuestro desarrollador nos preguntó qué marcado schema añadir a la web en inglés de la fábrica. ¿Lo necesitamos para Google y la IA, y qué tipos importan?</p><p class="ans"><b>Respuesta breve</b>Añade tres tipos y mantenlos correctos: Organization en la página de inicio (nombre, logotipo, dirección, contacto y enlaces sameAs a tus perfiles oficiales), marcado Product en cada página de producto o de capacidades usando el formato de fragmento de producto de Google, y BreadcrumbList en todo el sitio. El marcado FAQ es opcional, porque desde 2023 Google solo muestra resultados enriquecidos de preguntas frecuentes para webs gubernamentales y de salud muy conocidas. Google dice que no hace falta ningún schema especial para aparecer en AI Overviews; el marcado simplemente tiene que coincidir con el texto visible.</p></div></section>
+      <section class="kt takeaways"><h2>Ideas clave</h2><ul><li>La documentación de Google dice que no hace falta ningún marcado especial de schema.org para aparecer en AI Overviews o AI Mode; los datos estructurados deben coincidir con el texto visible de la página.</li><li>El marcado Organization no tiene propiedades obligatorias; Google recomienda name, una presencia física como address o telephone, y una presencia online como url o logo.</li><li>Las fábricas que no venden online deben usar el formato de fragmento de producto de Google, pensado para páginas de producto en las que no se puede comprar directamente.</li><li>Desde agosto de 2023, los resultados enriquecidos de preguntas frecuentes se limitan a webs gubernamentales y de salud muy conocidas y con autoridad, así que trata el marcado FAQ como opcional.</li><li>Valida cada plantilla con la prueba de resultados enriquecidos de Google y corrige los errores antes de extender el marcado a todas las páginas.</li></ul></section>
+      <div class="prose"><p>Pregunta a tres proveedores de SEO qué schema necesita la web de una fábrica y obtendrás tres listas largas. La mayoría se pasan. Un fabricante B2B que vende a compradores extranjeros necesita una pequeña cantidad de datos estructurados, bien mantenidos, en las páginas que de verdad leen los compradores. Esta guía explica qué añadir, qué saltarse y qué relación tiene con la búsqueda con IA.</p>
+
+<h2 id="s1">¿Los datos estructurados ayudan a que la IA cite a una fábrica?</h2>
+
+<p>Empieza por lo que dice Google. Su guía para propietarios de sitios sobre las funciones de IA afirma que no hay requisitos adicionales para aparecer en AI Overviews o AI Mode, que no necesitas archivos ni marcado nuevos legibles por máquina y que no hay ningún dato estructurado especial de schema.org que debas añadir. La misma página incluye, como buena práctica normal de SEO, «asegurarse de que los datos estructurados coinciden con el texto visible de la página».</p>
+
+<p>Así que los datos estructurados no son un interruptor que activa las citas en IA. Lo que hacen es eliminar ambigüedad. Indican de forma legible por máquina que esta página trata de esta empresa, en esta dirección, que fabrica estos productos y tiene estos perfiles oficiales. Para una fábrica china cuyo nombre en inglés, nombre chino y nombre de la empresa comercializadora suelen variar por la web, esa claridad vale una tarde de trabajo de un desarrollador.</p>
+
+<h2 id="s2">¿Qué debe incluir el marcado Organization en la página de inicio de una fábrica?</h2>
+
+<p>La documentación de Google sobre Organization dice que no hay propiedades obligatorias; recomienda añadir las propiedades relevantes para tu organización, centrándote en las útiles para los usuarios, como name o alternateName, una señal de presencia física como address o telephone, y presencia online como url o logo. Su ejemplo también usa sameAs para enumerar los perfiles oficiales.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Propiedad</th><th>Qué poner en el caso de una fábrica</th><th>Error habitual</th></tr></thead>
+<tbody>
+<tr><td>name</td><td>El nombre de tu empresa registrado en inglés, exactamente como figura en las facturas</td><td>Usar un eslogan de marketing o el nombre de una empresa comercializadora</td></tr>
+<tr><td>alternateName</td><td>Nombre de marca corto, nombre chino en pinyin o en caracteres</td><td>Omitirlo, de modo que la IA no puede relacionar las variantes</td></tr>
+<tr><td>url, logo</td><td>URL de la página de inicio y una URL estable de la imagen del logotipo</td><td>Una URL de logotipo que cambia con cada rediseño</td></tr>
+<tr><td>address, telephone, email</td><td>La dirección real de la fábrica y un contacto comercial atendido</td><td>Una dirección distinta de la de tu tienda en el marketplace</td></tr>
+<tr><td>sameAs</td><td>Página de empresa en LinkedIn, tienda en el marketplace, canal de YouTube</td><td>Enlazar perfiles inactivos o que pertenecen a agentes</td></tr>
+<tr><td>foundingDate, numberOfEmployees</td><td>Datos que también indicarías en la página «Sobre nosotros»</td><td>Cifras que no aparecen en ningún lugar visible</td></tr>
+</tbody>
+</table></div>
+
+<p>Pon Organization en la página de inicio (y, si quieres, en la página «Sobre nosotros»), no repetido con valores distintos en cada página. Los datos deben coincidir con lo que ven los visitantes.</p>
+
+<h2 id="s3">¿Qué marcado Product encaja con una fábrica que no vende online?</h2>
+
+<p>Google describe dos clases de datos estructurados de producto. Los fragmentos de producto son para páginas de producto en las que no se puede comprar el producto directamente. Las fichas de comerciante son para páginas en las que los clientes pueden comprarte, con más opciones de envío y devoluciones. La mayoría de las fábricas B2B cotizan bajo pedido, así que los fragmentos de producto son lo que encaja con honestidad.</p>
+
+<p>En cada página de producto o de capacidades, describe el producto con name, description, image, brand (tu marca u «OEM») y material o category cuando corresponda. No inventes precios ni valoraciones para desbloquear resultados enriquecidos; si un precio solo existe en los presupuestos, déjalo fuera. Una página de producto con especificaciones precisas y visibles sirve mejor a los compradores y a la IA que un marcado que promete más de lo que muestra la página.</p>
+
+<h2 id="s4">¿Sigue mereciendo la pena añadir el schema FAQ?</h2>
+
+<p>En agosto de 2023 Google anunció que reducía la visibilidad de los resultados enriquecidos de preguntas frecuentes: los resultados enriquecidos generados con datos estructurados FAQPage solo se mostrarían para webs gubernamentales y de salud muy conocidas y con autoridad. Para la web de una fábrica, eso significa que el marcado FAQ casi nunca producirá el resultado desplegable que algunas agencias siguen vendiendo.</p>
+
+<p>Las preguntas frecuentes en sí siguen siendo valiosas. Las preguntas y respuestas visibles («¿Cuál es su MOQ para colores personalizados?», «¿Qué pruebas de contacto alimentario superan?») son justo los pasajes que una respuesta de IA puede extraer. Mantén las preguntas frecuentes visibles, redacta cada respuesta para que su primera frase se sostenga sola y trata el marcado FAQPage como un mantenimiento opcional.</p>
+
+<h2 id="s5">¿Cómo debería implantar una fábrica los datos estructurados?</h2>
+
+<ol>
+<li><strong>Primero, arregla los datos.</strong> Decide el nombre único de la empresa en inglés, la dirección y las categorías de producto que usarás en todas partes.</li>
+<li><strong>Añade Organization a la página de inicio</strong> con name, alternateName, url, logo, address, contacto y sameAs.</li>
+<li><strong>Añade Product a una plantilla</strong> (una página de producto o de capacidades) y BreadcrumbList en todo el sitio.</li>
+<li><strong>Valida con la prueba de resultados enriquecidos</strong> y corrige los errores críticos antes de extender la plantilla.</li>
+<li><strong>Extiéndelo página a página</strong>, comprobando que cada valor marcado aparece en el texto visible.</li>
+<li><strong>Vuelve a revisarlo tras cada rediseño.</strong> Las plantillas a menudo pierden o duplican el JSON-LD cuando cambia el tema.</li>
+</ol>
+
+<h2 id="s6">¿Qué no arreglan los datos estructurados?</h2>
+
+<p>El marcado no puede hacer útiles las páginas pobres. Si tu página de capacidades dice «equipos avanzados y control de calidad estricto» sin ninguna cifra, añadir schema Product solo etiqueta una caja vacía. El orden de trabajo en GEO sigue siendo el mismo: primero, contenido concreto y verificable en la página; segundo, información de entidad coherente en toda la web; tercero, datos estructurados que describan ambas cosas con limpieza.</p></div>
+      <aside class="insight" aria-label="La clave"><div class="eyebrow">La clave</div><blockquote>El marcado etiqueta la caja. No puede llenarla.</blockquote><p>La teoría de señales dice que una señal solo es creíble cuando es costosa de falsificar. Un schema que refleja datos detallados y visibles —números de certificado, capacidad, una dirección real— refuerza la confianza; un schema que afirma más de lo que muestra la página es palabrería que buscadores y compradores aprenden a ignorar.</p></aside>
+      <section class="prop" aria-label="Cómo ayuda ToucHigh">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Cómo ayuda ToucHigh</h2></div>
+        <div class="pb prose"><p>El GEO Autopilot de ToucHigh trata los datos estructurados como parte de la corrección, no como un proyecto aparte:</p><ul><li>audita dónde es invisible tu fábrica en ChatGPT, Perplexity, Google AI y Gemini;</li><li>redacta y publica las correcciones, incluidas páginas, respuestas y datos de entidad, para que los datos y el marcado coincidan;</li><li>sigue tu cuota de citas en IA, para que veas qué páginas empiezan a ser citadas.</li></ul><p>Reserva una llamada estratégica de 30 minutos y trae una página de producto; revisaremos lo que dice la página, lo que dice el marcado y lo que dice la IA de ti.</p><p class="uc">Fábricas y proveedores B2B: mira cómo ToucHigh gestiona la <a href="/es/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T62'})}catch(e){}">visibilidad de proveedores en la búsqueda con IA</a>. ¿Quieres convertir la visibilidad en pipeline? Descubre <a href="/es/pro/" onclick="try{gtag('event','pro_click',{location:'article_T62'})}catch(e){}">ToucHigh PRO</a>, nuestro servicio de prospección con la estrategia primero.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T62')">Reserva una llamada estratégica de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T62'})}catch(e){}">Inicia sesión en ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Preguntas frecuentes"><h2>Preguntas frecuentes</h2><details open><summary>¿Debemos usar JSON-LD o microdatos?</summary><p>Google acepta varios formatos, y JSON-LD suele ser el más fácil de mantener porque va en un único bloque de script en lugar de estar entretejido en el HTML. Elijas lo que elijas, mantén una única fuente de referencia para que el marcado y el texto visible nunca se desalineen.</p></details><details><summary>¿Podemos marcar precios que solo damos en presupuestos?</summary><p>No. Los datos estructurados deben describir lo que hay en la página. Si la página no muestra un precio, deja fuera el precio y usa el formato de fragmento de producto, que Google pensó para páginas en las que no se puede comprar directamente.</p></details><details><summary>¿Necesitamos marcado LocalBusiness?</summary><p>Solo si los compradores te visitan en persona como negocio local, por ejemplo una sala de exposición con horario de apertura. Para un fabricante exportador, Organization con una dirección real suele ser el tipo adecuado.</p></details><details><summary>¿El marcado schema nos hará aparecer en las respuestas de ChatGPT?</summary><p>No por sí solo. Google dice que no hace falta ningún schema especial para sus funciones de IA, y los demás asistentes se basan en las páginas que pueden rastrear y en la información que encuentran por la web. El marcado ayuda al indicar con claridad los datos de tu entidad; el contenido sigue teniendo que responder a las preguntas de los compradores.</p></details></section>
+      <section class="srcs"><h2>Fuentes</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/structured-data/organization" rel="noopener" target="_blank">Organization (Organization) structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener" target="_blank">Introduction to Product structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/blog/2023/08/howto-faq-changes" rel="noopener" target="_blank">Changes to HowTo and FAQ rich results</a> — Google Search Central Blog, 2023-08-08</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://search.google.com/test/rich-results" rel="noopener" target="_blank">Rich Results Test</a> — Google</li></ol></section>
+      <p class="note"><b>Por qué escribimos esto</b>Escribimos esto porque las fábricas no dejan de recibir presupuestos de «paquetes de schema para IA». La documentación es lo bastante clara: una lista corta y precisa vale más que una larga e inflada.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="En esta página"><h4>En esta página</h4><a href="#s1">¿Los datos estructurados ayudan a que la IA cite a una fábrica?</a><a href="#s2">¿Qué debe incluir el marcado Organization en la página de inicio de una fábrica?</a><a href="#s3">¿Qué marcado Product encaja con una fábrica que no vende online?</a><a href="#s4">¿Sigue mereciendo la pena añadir el schema FAQ?</a><a href="#s5">¿Cómo debería implantar una fábrica los datos estructurados?</a><a href="#s6">¿Qué no arreglan los datos estructurados?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Descubre dónde eres invisible en la búsqueda con IA de EE. UU.</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Reservar llamada</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Iniciar sesión</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Artículos relacionados</h2>
+  <div class="grid"><a class="card" href="/blog/en/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Among a row of identical grey factories, one white and orange factory is lit by a spotlight from an AI chat bubble, above a panel of icons for machinery, certification, materials, lead time and FAQs." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites</h3><p>Overseas buyers are starting to use AI to find suppliers. A factory site with only a company profile and product photos rarely gets recommended by ChatGPT. Here&#x27;s a checklist of citable pages and first GEO steps.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/es/us-brand-entity-chinese-brands-google-ai/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t48-768.webp"><img src="/assets/blog/hero/t48.jpg" alt="Una pequeña tienda con un toldo naranja a rayas bajo un gran marcador de mapa está unida con líneas punteadas a una ficha de mapa, una ventana de web y un perfil en un móvil que muestran los mismos iconos de reloj, teléfono, globo y estrella, junto a un calendario con una casilla naranja." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="es"><div class="eyebrow">Comercio transfronterizo</div><h3>Construir una entidad de marca en EE. UU.: cómo las marcas chinas logran que Google y la IA las reconozcan</h3><p>Muchas marcas chinas existen en internet como tres medias marcas: un nombre en pinyin en el marketplace, un nombre en inglés en la web y un nombre de empresa en LinkedIn. Google y la IA no pueden recomendar lo que no pueden identificar. Así se convierte una marca en una sola entidad.</p><div class="meta"><span class="lg">Español</span><span>7 min de lectura</span></div></div></a><a class="card" href="/blog/en/seo-aeo-geo-explained-chinese-exporters/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t53-768.webp"><img src="/assets/blog/hero/t53.jpg" alt="An orange block works like a fountain, sending three pipes to a search results list, a speech-bubble answer card and an AI chat bubble with a violet spark." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO vs. AEO vs. GEO: What&#x27;s the Difference, and Do Exporters Need All Three?</h3><p>SEO gets you found, AEO gets your answer quoted by AI, and GEO gets you recommended by generative AI. They share one foundation, so exporters can run all three with one workflow.</p><div class="meta"><span class="lg">English</span><span>8 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/es/">← Volver al blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Descubre dónde eres invisible en la búsqueda con IA de EE. UU.</h2>
+  <p>Reserva una llamada gratuita de 30 minutos y haremos en directo una lectura de la visibilidad en IA de tu tienda.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Reserva una llamada estratégica de 30 min →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Inicia sesión en ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Visibilidad en búsqueda con IA, redes sociales y anuncios en piloto automático para pymes y vendedores transfronterizos.</p></div>
+      <div><h4>ToucHigh</h4><a href="/es/">Inicio</a><a href="/es/#geo">GEO Autopilot</a><a href="/es/#social">Social Autopilot</a><a href="/es/pro/">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/es/">Blog</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Iniciar sesión</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Reservar llamada</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
