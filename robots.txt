@@ -88,3 +88,4 @@ Sitemap: https://touchigh.ai/sitemap-zh-hant.xml
 Sitemap: https://touchigh.ai/sitemap-ja.xml
 Sitemap: https://touchigh.ai/sitemap-ko.xml
 Sitemap: https://touchigh.ai/sitemap-es.xml
+Sitemap: https://touchigh.ai/sitemap-fr.xml
