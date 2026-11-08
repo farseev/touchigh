@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>แคมเปญ Amazon Sponsored Products แรก: คู่มือการตั้งค่า | ToucHigh</title>
+<meta name="description" content="การตั้งค่า Sponsored Products ครั้งแรกทีละขั้นสำหรับผู้ขาย Amazon มือใหม่: การกำหนดเป้าหมายแบบ auto และ manual วิธีคำนวณราคาประมูลสูงสุดจากมาร์จิน และสิ่งที่ต้องตรวจในสัปดาห์ที่สอง">
+<link rel="canonical" href="https://touchigh.ai/blog/th/amazon-sponsored-products-first-campaign/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="แคมเปญ Amazon Sponsored Products แรก, Amazon auto vs manual targeting, วิธีตั้งราคาประมูล Amazon PPC, โฆษณา Amazon สำหรับผู้ขายมือใหม่, ตั้งค่า Sponsored Products, โครงสร้างแคมเปญ Amazon">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="th" href="https://touchigh.ai/blog/th/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="hi" href="https://touchigh.ai/blog/hi/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="fil" href="https://touchigh.ai/blog/fil/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="ar" href="https://touchigh.ai/blog/ar/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/amazon-sponsored-products-first-campaign/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/amazon-sponsored-products-first-campaign/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/th/amazon-sponsored-products-first-campaign/">
+<meta property="og:title" content="แคมเปญ Amazon Sponsored Products แรกของคุณ: Auto กับ Manual ราคาประมูล และงบประมาณ">
+<meta property="og:description" content="การตั้งค่า Sponsored Products ครั้งแรกทีละขั้นสำหรับผู้ขาย Amazon มือใหม่: การกำหนดเป้าหมายแบบ auto และ manual วิธีคำนวณราคาประมูลสูงสุดจากมาร์จิน และสิ่งที่ต้องตรวจในสัปดาห์ที่สอง">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t67-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="แคมเปญ Amazon Sponsored Products แรกของคุณ: Auto กับ Manual ราคาประมูล และงบประมาณ">
+<meta property="og:locale" content="th_TH">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="tl_PH">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T11:00:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T11:00:00+08:00">
+<meta property="article:section" content="โฆษณาสำหรับ SME">
+<meta property="article:tag" content="Amazon Sponsored Products">
+<meta property="article:tag" content="Amazon PPC">
+<meta property="article:tag" content="ผู้ขายข้ามพรมแดน">
+<meta property="article:tag" content="งบโฆษณา">
+<meta property="article:tag" content="การกำหนดเป้าหมายด้วยคีย์เวิร์ด">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="แคมเปญ Amazon Sponsored Products แรกของคุณ: Auto กับ Manual ราคาประมูล และงบประมาณ">
+<meta name="twitter:description" content="การตั้งค่า Sponsored Products ครั้งแรกทีละขั้นสำหรับผู้ขาย Amazon มือใหม่: การกำหนดเป้าหมายแบบ auto และ manual วิธีคำนวณราคาประมูลสูงสุดจากมาร์จิน และสิ่งที่ต้องตรวจในสัปดาห์ที่สอง">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t67-en.jpg">
+<meta name="twitter:image:alt" content="แคมเปญ Amazon Sponsored Products แรกของคุณ: Auto กับ Manual ราคาประมูล และงบประมาณ">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/th/amazon-sponsored-products-first-campaign/#article","url":"https://touchigh.ai/blog/th/amazon-sponsored-products-first-campaign/","mainEntityOfPage":"https://touchigh.ai/blog/th/amazon-sponsored-products-first-campaign/","headline":"แคมเปญ Amazon Sponsored Products แรกของคุณ: Auto กับ Manual ราคาประมูล และงบประมาณ","alternativeHeadline":"แคมเปญ Amazon Sponsored Products แรก: คู่มือการตั้งค่า","description":"การตั้งค่า Sponsored Products ครั้งแรกทีละขั้นสำหรับผู้ขาย Amazon มือใหม่: การกำหนดเป้าหมายแบบ auto และ manual วิธีคำนวณราคาประมูลสูงสุดจากมาร์จิน และสิ่งที่ต้องตรวจในสัปดาห์ที่สอง","abstract":"เริ่มด้วยสองแคมเปญสำหรับสินค้าเดียวกัน: แคมเปญกำหนดเป้าหมายอัตโนมัติหนึ่งแคมเปญเพื่อค้นหาคำค้น และแคมเปญ manual หนึ่งแคมเปญที่มีรายการคีย์เวิร์ดแบบ exact สั้น ๆ ที่คุณมั่นใจ คำนวณราคาประมูลสูงสุดจากตัวเลขของคุณ (ราคา × มาร์จินก่อนหักค่าโฆษณา × อัตราคอนเวอร์ชันที่คาดไว้) ตั้งงบรายวันที่คุณยอมเสียได้ระหว่างเรียนรู้ และรอประมาณสองสัปดาห์ก่อนประเมิน จากนั้นย้ายคำค้นที่พิสูจน์แล้วไปไว้ใน manual และเพิ่มคีย์เวิร์ดเชิงลบ","image":["https://touchigh.ai/assets/blog/og/t67-en.jpg","https://touchigh.ai/assets/blog/hero/t10.jpg"],"datePublished":"2026-11-08T11:00:00+08:00","dateModified":"2026-11-08T11:00:00+08:00","inLanguage":"th","author":{"@type":"Organization","name":"ทีมวิจัย ToucHigh","url":"https://touchigh.ai/blog/th/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"โฆษณาสำหรับ SME","keywords":"แคมเปญ Amazon Sponsored Products แรก, Amazon auto vs manual targeting, วิธีตั้งราคาประมูล Amazon PPC, โฆษณา Amazon สำหรับผู้ขายมือใหม่, ตั้งค่า Sponsored Products, โครงสร้างแคมเปญ Amazon","wordCount":1027,"timeRequired":"PT7M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/th/#blog","name":"บล็อก ToucHigh"},"about":[{"@type":"Thing","name":"Amazon Sponsored Products"},{"@type":"Thing","name":"Amazon PPC"},{"@type":"Thing","name":"ผู้ขายข้ามพรมแดน"},{"@type":"Thing","name":"งบโฆษณา"},{"@type":"Thing","name":"การกำหนดเป้าหมายด้วยคีย์เวิร์ด"}],"citation":[{"@type":"CreativeWork","name":"Sponsored Products","url":"https://advertising.amazon.com/solutions/products/sponsored-products","publisher":{"@type":"Organization","name":"Amazon Ads"}},{"@type":"CreativeWork","name":"What is keyword targeting?","url":"https://advertising.amazon.com/library/guides/keyword-targeting","publisher":{"@type":"Organization","name":"Amazon Ads"}},{"@type":"CreativeWork","name":"What is advertising cost of sales (ACOS)?","url":"https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales","publisher":{"@type":"Organization","name":"Amazon Ads"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/amazon-sponsored-products-first-campaign/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"th","mainEntity":[{"@type":"Question","name":"แคมเปญ Sponsored Products ใหม่ควรรันนานแค่ไหนก่อนประเมิน?","acceptedAnswer":{"@type":"Answer","text":"ให้เวลาประมาณสองสัปดาห์ของการใช้จ่ายสม่ำเสมอก่อนเปลี่ยนราคาประมูล เว้นแต่มีอะไรเสียอย่างชัดเจน ช่วงแรกมีสัญญาณรบกวนมาก และรายงานคำค้นหาต้องใช้เวลาเพื่อแสดงรูปแบบ"}},{"@type":"Question","name":"ควรใช้ broad, phrase หรือ exact match ในแคมเปญ manual?","acceptedAnswer":{"@type":"Answer","text":"สำหรับแคมเปญแรก exact match กับรายการคีย์เวิร์ดสั้น ๆ ที่คุณมั่นใจให้สัญญาณที่ชัดที่สุด ให้แคมเปญอัตโนมัติทำหน้าที่สำรวจ แล้วเพิ่มคำใหม่เป็น exact เมื่อสร้างออร์เดอร์แล้ว"}},{"@type":"Question","name":"ควรตั้งเป้า ACOS เท่าไร?","acceptedAnswer":{"@type":"Answer","text":"Amazon ระบุว่าไม่มี ACOS ที่ดีค่าเดียว ขึ้นอยู่กับหมวดสินค้า มาร์จิน และเป้าหมาย เริ่มจากจุดคุ้มทุน: ACOS เท่ากับมาร์จินก่อนหักค่าโฆษณา ตั้งเป้าต่ำกว่านั้นเพื่อกำไร หรือยอมรับระดับนั้นชั่วคราวหากตั้งใจซื้อยอดขายช่วงแรก"}},{"@type":"Question","name":"ข้ามงานรายการสินค้าแล้วลงโฆษณาเลยได้ไหม?","acceptedAnswer":{"@type":"Answer","text":"ได้ แต่โฆษณาส่งทุกคลิกไปยังหน้ารายละเอียดของคุณ หากหน้านั้นไม่เกิดคอนเวอร์ชัน โฆษณาก็แค่ทำให้เห็นปัญหาเร็วขึ้นและแพงขึ้น"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/th/"},{"@type":"ListItem","position":2,"name":"บล็อก","item":"https://touchigh.ai/blog/th/"},{"@type":"ListItem","position":3,"name":"แคมเปญ Amazon Sponsored Products แรกของคุณ: Auto กับ Manual ราคาประมูล และงบประมาณ","item":"https://touchigh.ai/blog/th/amazon-sponsored-products-first-campaign/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">ในหน้านี้</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/th/">หน้าแรก</a>
+      <a href="/th/#products">ผลิตภัณฑ์</a>
+      <a href="/th/#faq">คำถามที่พบบ่อย</a>
+      <a href="/th/pro/">ToucHigh PRO</a>
+      <a href="/blog/th/" class="on">บล็อก</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="ภาษา: ไทย"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">ไทย</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="ภาษา" hidden><li><a href="/blog/amazon-sponsored-products-first-campaign/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/amazon-sponsored-products-first-campaign/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/amazon-sponsored-products-first-campaign/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/amazon-sponsored-products-first-campaign/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/amazon-sponsored-products-first-campaign/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/th/amazon-sponsored-products-first-campaign/" hreflang="th" lang="th" data-short="ไทย" aria-current="page">ไทย</a></li><li><a href="/blog/vi/amazon-sponsored-products-first-campaign/" hreflang="vi" lang="vi" data-short="VI">Tiếng Việt</a></li><li><a href="/blog/id/amazon-sponsored-products-first-campaign/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/amazon-sponsored-products-first-campaign/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/hi/amazon-sponsored-products-first-campaign/" hreflang="hi" lang="hi" data-short="हिन्दी">हिन्दी</a></li><li><a href="/blog/fil/amazon-sponsored-products-first-campaign/" hreflang="fil" lang="fil" data-short="FIL">Filipino</a></li><li><a href="/blog/es/amazon-sponsored-products-first-campaign/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/amazon-sponsored-products-first-campaign/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/amazon-sponsored-products-first-campaign/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/amazon-sponsored-products-first-campaign/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ar/amazon-sponsored-products-first-campaign/" hreflang="ar" lang="ar" data-short="عربي" dir="rtl">العربية</a></li><li><a href="/blog/ru/amazon-sponsored-products-first-campaign/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">เข้าสู่ระบบ</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">นัดหมายโทรคุย</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/th/">หน้าแรก</a><span>/</span><a href="/blog/th/">บล็อก</a><span>/</span><span>โฆษณาสำหรับ SME</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">โฆษณาสำหรับ SME</div>
+    <h1>แคมเปญ Amazon Sponsored Products แรกของคุณ: Auto กับ Manual ราคาประมูล และงบประมาณ</h1>
+    <p class="dek">คุณไม่จำเป็นต้องมีเอเจนซีเพื่อเปิดโฆษณา Amazon ครั้งแรก แต่ต้องมีโครงสร้างที่บอกได้ว่าอะไรได้ผล นี่คือการตั้งค่าสองแคมเปญแบบง่าย คณิตศาสตร์ราคาประมูล และแผนสี่สัปดาห์</p>
+    <div class="a-meta"><b>ทีมวิจัย ToucHigh</b><span>เผยแพร่ <time datetime="2026-11-08T11:00:00+08:00">8/11/2026</time></span><span>อ่าน 7 นาที</span><span class="lang-badge">ไทย</span></div>
+    <div class="a-langs">มีในภาษา<a href="/blog/amazon-sponsored-products-first-campaign/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/amazon-sponsored-products-first-campaign/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/amazon-sponsored-products-first-campaign/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/amazon-sponsored-products-first-campaign/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/amazon-sponsored-products-first-campaign/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/vi/amazon-sponsored-products-first-campaign/" hreflang="vi" lang="vi" onclick="try{localStorage.setItem('tl','vi')}catch(e){}">Tiếng Việt</a><a href="/blog/id/amazon-sponsored-products-first-campaign/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/amazon-sponsored-products-first-campaign/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/hi/amazon-sponsored-products-first-campaign/" hreflang="hi" lang="hi" onclick="try{localStorage.setItem('tl','hi')}catch(e){}">हिन्दी</a><a href="/blog/fil/amazon-sponsored-products-first-campaign/" hreflang="fil" lang="fil" onclick="try{localStorage.setItem('tl','fil')}catch(e){}">Filipino</a><a href="/blog/es/amazon-sponsored-products-first-campaign/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/amazon-sponsored-products-first-campaign/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/amazon-sponsored-products-first-campaign/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/amazon-sponsored-products-first-campaign/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ar/amazon-sponsored-products-first-campaign/" hreflang="ar" lang="ar" dir="rtl" onclick="try{localStorage.setItem('tl','ar')}catch(e){}">العربية</a><a href="/blog/ru/amazon-sponsored-products-first-campaign/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t10-768.webp 768w, /assets/blog/hero/t10-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t10.jpg" alt="บนโต๊ะแล็บ ปิเปตหยดเหรียญสีส้มไม่กี่เหรียญจากงบทดสอบเล็ก ๆ ที่มีรั้วล้อม ลงในกรวยรูปฟองแชตขอบสีม่วงเหนือบีกเกอร์ ขณะที่โถใหญ่ที่เต็มไปด้วยเหรียญยังปิดสนิทอยู่ข้าง ๆ" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="คำถามเบื้องหลังบทความนี้"><span class="qm">“</span><div><div class="eyebrow">คำถามเบื้องหลังบทความนี้</div><p class="q">เราเพิ่งลงสินค้าแรกบน Amazon US ควรตั้งค่าแคมเปญ Sponsored Products แรกอย่างไร และควรประมูลเท่าไร?</p><p class="ans"><b>คำตอบสั้น</b>เริ่มด้วยสองแคมเปญสำหรับสินค้าเดียวกัน: แคมเปญกำหนดเป้าหมายอัตโนมัติหนึ่งแคมเปญเพื่อค้นหาคำค้น และแคมเปญ manual หนึ่งแคมเปญที่มีรายการคีย์เวิร์ดแบบ exact สั้น ๆ ที่คุณมั่นใจ คำนวณราคาประมูลสูงสุดจากตัวเลขของคุณ (ราคา × มาร์จินก่อนหักค่าโฆษณา × อัตราคอนเวอร์ชันที่คาดไว้) ตั้งงบรายวันที่คุณยอมเสียได้ระหว่างเรียนรู้ และรอประมาณสองสัปดาห์ก่อนประเมิน จากนั้นย้ายคำค้นที่พิสูจน์แล้วไปไว้ใน manual และเพิ่มคีย์เวิร์ดเชิงลบ</p></div></section>
+      <section class="kt takeaways"><h2>ประเด็นสำคัญ</h2><ul><li>Sponsored Products คือโฆษณาแบบจ่ายต่อคลิกสำหรับรายการสินค้าแต่ละรายการ คุณเลือกคีย์เวิร์ดเองหรือให้ Amazon กำหนดเป้าหมายอัตโนมัติ และคุณควบคุมราคาประมูลและงบประมาณ</li><li>Amazon ระบุว่าการกำหนดเป้าหมายอัตโนมัติวิเคราะห์รายละเอียดสินค้า รวมถึงชื่อและคำอธิบาย และเหมาะกับผู้ลงโฆษณาที่ยังใหม่กับการกำหนดเป้าหมายด้วยคีย์เวิร์ด</li><li>โฆษณาส่งผู้ซื้อไปยังหน้ารายละเอียดสินค้า และ Amazon ระบุว่าโฆษณาจะแสดงเฉพาะเมื่อสินค้าที่โฆษณามีสต็อก ดังนั้นแก้รายการสินค้าและสต็อกก่อน</li><li>ราคาประมูลจุดคุ้มทุนมาจากตัวเลขของคุณเอง: ราคา × มาร์จินก่อนหักค่าโฆษณา × อัตราคอนเวอร์ชัน</li><li>แนวทางของ Amazon: เพื่อให้มีกำไร ACOS ต้องอยู่ต่ำกว่ามาร์จินกำไรของคุณ</li></ul></section>
+      <div class="prose"><p>ผู้ขายข้ามพรมแดนมือใหม่มักเปิดโฆษณา Amazon แบบยากลำบาก: แคมเปญเดียว คีย์เวิร์ดหลายสิบคำที่เลือกจากเครื่องมือ ราคาประมูลที่ลอกจากบล็อก และงบประมาณที่หมดก่อนเที่ยง หลังสองสัปดาห์ พวกเขาเสียเงินไปแต่ไม่ได้เรียนรู้อะไร เพราะการตั้งค่าบอกไม่ได้ว่าส่วนไหนได้ผล</p>
+
+<p>แคมเปญแรกของคุณมีหน้าที่เดียว: สอนให้รู้ว่าคำค้นใดขายสินค้าของคุณได้ในต้นทุนที่รับได้ คู่มือนี้ตั้งค่าสองแคมเปญที่ทำหน้าที่นั้น โดยใช้เฉพาะตัวควบคุมที่ Amazon ระบุไว้สำหรับ Sponsored Products</p>
+
+<h2 id="s1">โฆษณา Sponsored Products คืออะไรกันแน่?</h2>
+
+<p>Amazon อธิบาย Sponsored Products ว่าเป็นโฆษณาแบบจ่ายต่อคลิกที่โปรโมตรายการสินค้าแต่ละรายการบน Amazon และแอปและเว็บไซต์พรีเมียมที่คัดเลือก คุณเลือกสินค้าที่จะโฆษณาและเลือกคีย์เวิร์ดเป้าหมาย หรือให้ระบบของ Amazon กำหนดเป้าหมายคีย์เวิร์ดที่เกี่ยวข้องโดยอัตโนมัติ คุณควบคุมการใช้จ่ายด้านราคาประมูลและงบประมาณ โฆษณาอาจแสดงด้านบน ด้านข้าง หรือภายในผลการค้นหาสินค้าและบนหน้าสินค้า และการคลิกจะพาผู้ซื้อไปยังหน้ารายละเอียดของสินค้าที่โฆษณา</p>
+
+<p>มีสองรายละเอียดจากหน้าของ Amazon ที่สำคัญก่อนใช้เงิน Sponsored Products จะแสดงเฉพาะเมื่อสินค้าที่โฆษณามีสต็อก และทุกคลิกจะไปยังหน้ารายละเอียดของคุณ หากรายการสินค้ามีรูปไม่ดี ชื่อสับสน หรือยังไม่มีรีวิว โฆษณาส่วนใหญ่จะซื้อการเข้าชมราคาแพงที่ไม่เกิดคอนเวอร์ชัน แก้รายการสินค้าก่อน</p>
+
+<h2 id="s2">แคมเปญแรกควรใช้การกำหนดเป้าหมายแบบอัตโนมัติหรือแบบ manual?</h2>
+
+<p>ใช้ทั้งสองแบบ สำหรับงานคนละอย่าง</p>
+
+<div class="tw"><table>
+<thead><tr><th>แคมเปญ</th><th>การกำหนดเป้าหมาย</th><th>หน้าที่</th><th>การตั้งค่าเริ่มต้น</th></tr></thead>
+<tbody>
+<tr><td>1. ค้นหา</td><td>อัตโนมัติ</td><td>หาคำค้นและสินค้าที่ Amazon จับคู่ให้คุณ</td><td>หนึ่งกลุ่มโฆษณา สินค้าของคุณ ราคาประมูลปานกลาง</td></tr>
+<tr><td>2. คำที่พิสูจน์แล้ว</td><td>Manual, exact match</td><td>ซื้อคำค้นที่คุณมั่นใจ ในราคาประมูลที่คุณเลือก</td><td>คีย์เวิร์ด 5 ถึง 15 คำที่อธิบายสิ่งที่คุณขายได้ตรงที่สุด</td></tr>
+<tr><td>3. ไม่บังคับ</td><td>Manual, กำหนดเป้าหมายสินค้า</td><td>แสดงบนหน้าสินค้าของคู่แข่งหรือสินค้าที่ใช้ร่วมกัน</td><td>เพิ่มภายหลัง เมื่อแคมเปญ 1 และ 2 มีข้อมูลแล้ว</td></tr>
+</tbody>
+</table></div>
+
+<p>คู่มือการกำหนดเป้าหมายคีย์เวิร์ดของ Amazon ระบุว่าการกำหนดเป้าหมายอัตโนมัติวิเคราะห์รายละเอียดสินค้า รวมถึงชื่อและคำอธิบาย เพื่อแสดงโฆษณาสำหรับคำค้นการช้อปปิ้งที่เกี่ยวข้อง และเหมาะกับผู้ลงโฆษณาที่ยังใหม่กับการกำหนดเป้าหมายด้วยคีย์เวิร์ดหรือต้องการค้นพบคำเพิ่มเติม นั่นคือสิ่งที่คุณต้องการจากแคมเปญ 1 พอดี แคมเปญ 2 ให้คุณควบคุมคำค้นไม่กี่คำที่รู้อยู่แล้วว่าสำคัญ เช่น ประเภทสินค้าบวกฟีเจอร์หลัก</p>
+
+<h2 id="s3">คำนวณราคาประมูลสูงสุดอย่างไร?</h2>
+
+<p>อย่าลอกราคาประมูลจากหมวดสินค้าของคนอื่น คำนวณจากตัวเลขของคุณเองสามตัว:</p>
+
+<ul>
+<li><strong>ราคา</strong>ของสินค้า</li>
+<li><strong>มาร์จินก่อนหักค่าโฆษณา:</strong> ส่วนที่เหลือหลังหักต้นทุนสินค้า ค่าธรรมเนียม Amazon ค่าขนส่ง และภาษีนำเข้า คิดเป็นเปอร์เซ็นต์ของราคา</li>
+<li><strong>อัตราคอนเวอร์ชัน:</strong> สัดส่วนของคลิกที่กลายเป็นออร์เดอร์ ก่อนมีข้อมูล ให้ใช้ค่าประมาณแบบระมัดระวัง แล้วแทนที่หลังสองสัปดาห์</li>
+</ul>
+
+<p>ต้นทุนต่อคลิกจุดคุ้มทุน = ราคา × มาร์จินก่อนหักค่าโฆษณา × อัตราคอนเวอร์ชัน เป็นเพียงตัวอย่างประกอบ: สินค้าราคา $30 ที่มีมาร์จินก่อนหักค่าโฆษณา 30% และอัตราคอนเวอร์ชัน 10% จะคุ้มทุนที่ $30 × 0.30 × 0.10 = $0.90 ต่อคลิก ประมูลต่ำกว่านั้นหากต้องการกำไรตั้งแต่วันแรก ประมูลใกล้ ๆ ค่านั้นหากตั้งใจซื้อยอดขายและรีวิวช่วงแรก ไม่ว่าแบบไหน ตอนนี้คุณรู้แล้วว่าหนึ่งคลิกมีค่าเท่าไรสำหรับคุณ</p>
+
+<p>สิ่งนี้เชื่อมโยงโดยตรงกับ ACOS Amazon นิยาม ACOS ว่าค่าโฆษณาหารด้วยรายได้จากโฆษณา และแนวทางของ Amazon คือ ACOS ต้องต่ำกว่ามาร์จินกำไรเพื่อรักษากำไร ราคาประมูลที่ CPC จุดคุ้มทุนจะให้ ACOS เท่ากับมาร์จินก่อนหักค่าโฆษณา</p>
+
+<h2 id="s4">ควรตั้งงบรายวันเท่าไร?</h2>
+
+<p>ตั้งงบจากจำนวนเงินที่คุณยอมใช้เพื่อเรียนรู้ ไม่ใช่จากเป้าหมาย กฎเชิงปฏิบัติ: งบต่อแคมเปญพอซื้อได้ราว 15 ถึง 30 คลิกต่อวันที่ราคาประมูลที่วางแผนไว้ เพื่อให้ได้ตัวอย่างที่ใช้ได้ภายในสองสัปดาห์ หากมากเกินกว่าที่จ่ายไหว ให้โฆษณาสินค้าเดียว ไม่ใช่ห้าตัว งบที่หมดทุกเช้าจะซ่อนผู้ซื้อช่วงบ่ายและเย็น ดังนั้นให้สังเกตว่าแคมเปญหยุดเร็วหรือไม่</p>
+
+<h2 id="s5">ควรทำอะไรในสี่สัปดาห์แรก?</h2>
+
+<ol>
+<li><strong>สัปดาห์ที่ 0:</strong> แก้รายการสินค้า ยืนยันสต็อก เปิดทั้งสองแคมเปญ</li>
+<li><strong>สัปดาห์ที่ 1:</strong> ตรวจหาเฉพาะข้อผิดพลาด เช่น สินค้าผิด การจับคู่ที่ไม่เกี่ยวข้องเลย หรืองบหมดก่อนเที่ยง ยังไม่ต้องเปลี่ยนราคาประมูล</li>
+<li><strong>สัปดาห์ที่ 2:</strong> เปิดรายงานคำค้นหา คู่มือของ Amazon แนะนำให้ตรวจรายงานคำค้นหาเป็นประจำเพื่อเข้าใจว่าคำค้นใดสร้างยอดขาย</li>
+<li><strong>สัปดาห์ที่ 3:</strong> ย้ายคำค้นที่สร้างออร์เดอร์จากแคมเปญ auto ไปยังแคมเปญ manual exact และเพิ่มคำที่ไม่เกี่ยวข้องชัดเจนเป็นคีย์เวิร์ดเชิงลบ</li>
+<li><strong>สัปดาห์ที่ 4:</strong> เปรียบเทียบ ACOS ของแต่ละแคมเปญกับมาร์จิน ปรับราคาประมูลเข้าหา CPC จุดคุ้มทุน และตัดสินใจว่าจะเพิ่มการกำหนดเป้าหมายสินค้าหรือไม่</li>
+</ol>
+
+<h2 id="s6">อะไรที่ยังไม่ควรทำ?</h2>
+
+<p>อย่าเปิดแคมเปญหลายสิบแคมเปญ เปลี่ยนราคาประมูลทุกวัน หรือตัดสินผลหลังสามวัน และอย่าวัดความสำเร็จจาก ACOS อย่างเดียว: แคมเปญช่วงแรกยังซื้อรีวิว อันดับ และข้อมูลด้วย เขียนไว้ว่าคุณต้องการบรรลุอะไร ไม่ว่าจะเป็นกำไร ยอดขายแรก หรือการเรียนรู้ แล้วประเมินแคมเปญเทียบกับสิ่งนั้น</p></div>
+      <aside class="insight" aria-label="อินไซต์"><div class="eyebrow">อินไซต์</div><blockquote>แคมเปญแรกไม่ได้มีไว้ทำกำไร แต่มีไว้ให้ได้ข้อมูลที่เชื่อถือได้</blockquote><p>การออกแบบการทดลองสอนว่าการทดสอบต้องมีกลุ่มควบคุมและคำถามที่ชัดเจน ไม่เช่นนั้นจะอ่านผลไม่ได้ การแยกการค้นหา (อัตโนมัติ) ออกจากการใช้ประโยชน์ (manual exact) ทำให้ผู้ขายมือใหม่ได้สัญญาณที่ชัดเจนสองตัวแทนสัญญาณขุ่นมัวตัวเดียว</p></aside>
+      <section class="prop" aria-label="ToucHigh ช่วยอย่างไร">
+        <div class="ph"><div class="eyebrow">Ads Autopilot · GEO Autopilot · Social Autopilot</div><h2>ToucHigh ช่วยอย่างไร</h2></div>
+        <div class="pb prose"><p>เมื่อพื้นฐานทำงานแล้ว Ads Autopilot ของ ToucHigh จะรับงานประจำวันต่อ:</p><ul><li>บริหารการใช้จ่ายของคุณบน Amazon, Meta และ Google จากกลยุทธ์เดียว ปรับอัตโนมัติตาม ROAS</li><li>ตัดสินใจเรื่องครีเอทีฟล้าและงบประมาณแทนคุณ</li><li>ให้คะแนนทุกคอนเซปต์ครีเอทีฟตามผลงานที่คาดการณ์ก่อนเผยแพร่</li></ul><p>นัดคุยกลยุทธ์ 30 นาที พร้อม URL ร้านค้าและคู่แข่งหนึ่งราย แล้วเราจะพาดูแผนที่เหมาะกับแคตตาล็อกของคุณ</p><p class="uc">ผู้ขาย Amazon: ดูว่า <a href="/th/amazon-ads-autopilot/" onclick="try{gtag('event','landing_click',{location:'article_T67'})}catch(e){}">Ads Autopilot</a> ของ ToucHigh ให้คะแนนครีเอทีฟก่อนใช้จ่ายอย่างไร อยากเปลี่ยนการมองเห็นเป็นไปป์ไลน์? ดู <a href="/th/pro/" onclick="try{gtag('event','pro_click',{location:'article_T67'})}catch(e){}">ToucHigh PRO</a> การเข้าถึงลูกค้าแบบกลยุทธ์มาก่อน</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T67')">นัดคุยกลยุทธ์ 30 นาที →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T67'})}catch(e){}">เข้าสู่ระบบ ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="คำถามที่พบบ่อย"><h2>คำถามที่พบบ่อย</h2><details open><summary>แคมเปญ Sponsored Products ใหม่ควรรันนานแค่ไหนก่อนประเมิน?</summary><p>ให้เวลาประมาณสองสัปดาห์ของการใช้จ่ายสม่ำเสมอก่อนเปลี่ยนราคาประมูล เว้นแต่มีอะไรเสียอย่างชัดเจน ช่วงแรกมีสัญญาณรบกวนมาก และรายงานคำค้นหาต้องใช้เวลาเพื่อแสดงรูปแบบ</p></details><details><summary>ควรใช้ broad, phrase หรือ exact match ในแคมเปญ manual?</summary><p>สำหรับแคมเปญแรก exact match กับรายการคีย์เวิร์ดสั้น ๆ ที่คุณมั่นใจให้สัญญาณที่ชัดที่สุด ให้แคมเปญอัตโนมัติทำหน้าที่สำรวจ แล้วเพิ่มคำใหม่เป็น exact เมื่อสร้างออร์เดอร์แล้ว</p></details><details><summary>ควรตั้งเป้า ACOS เท่าไร?</summary><p>Amazon ระบุว่าไม่มี ACOS ที่ดีค่าเดียว ขึ้นอยู่กับหมวดสินค้า มาร์จิน และเป้าหมาย เริ่มจากจุดคุ้มทุน: ACOS เท่ากับมาร์จินก่อนหักค่าโฆษณา ตั้งเป้าต่ำกว่านั้นเพื่อกำไร หรือยอมรับระดับนั้นชั่วคราวหากตั้งใจซื้อยอดขายช่วงแรก</p></details><details><summary>ข้ามงานรายการสินค้าแล้วลงโฆษณาเลยได้ไหม?</summary><p>ได้ แต่โฆษณาส่งทุกคลิกไปยังหน้ารายละเอียดของคุณ หากหน้านั้นไม่เกิดคอนเวอร์ชัน โฆษณาก็แค่ทำให้เห็นปัญหาเร็วขึ้นและแพงขึ้น</p></details></section>
+      <section class="srcs"><h2>แหล่งอ้างอิง</h2><ol><li><a href="https://advertising.amazon.com/solutions/products/sponsored-products" rel="noopener" target="_blank">Sponsored Products</a> — Amazon Ads</li><li><a href="https://advertising.amazon.com/library/guides/keyword-targeting" rel="noopener" target="_blank">What is keyword targeting?</a> — Amazon Ads</li><li><a href="https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales" rel="noopener" target="_blank">What is advertising cost of sales (ACOS)?</a> — Amazon Ads</li></ol></section>
+      <p class="note"><b>ทำไมเราเขียนบทความนี้</b>เราเขียนบทความนี้เพราะผู้ขายมือใหม่ถามอยู่เสมอว่าจะเริ่มโฆษณา Amazon โดยไม่ใช้เอเจนซีได้อย่างไร โครงสร้างที่เรียบง่ายและอ่านเข้าใจได้ช่วยประหยัดเงินในเดือนแรกได้มากกว่าเทคนิคราคาประมูลใด ๆ</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="ในหน้านี้"><h4>ในหน้านี้</h4><a href="#s1">โฆษณา Sponsored Products คืออะไรกันแน่?</a><a href="#s2">แคมเปญแรกควรใช้การกำหนดเป้าหมายแบบอัตโนมัติหรือแบบ manual?</a><a href="#s3">คำนวณราคาประมูลสูงสุดอย่างไร?</a><a href="#s4">ควรตั้งงบรายวันเท่าไร?</a><a href="#s5">ควรทำอะไรในสี่สัปดาห์แรก?</a><a href="#s6">อะไรที่ยังไม่ควรทำ?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>ดูว่าคุณมองไม่เห็นตรงไหนบน AI Search ของสหรัฐฯ</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">นัดหมายโทรคุย</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">เข้าสู่ระบบ</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>บทความที่เกี่ยวข้อง</h2>
+  <div class="grid"><a class="card" href="/blog/en/amazon-ads-agent-sellers/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t20-768.webp"><img src="/assets/blog/hero/t20.jpg" alt="A friendly robot copilot works the buttons and sliders of a rounded cockpit while a human hand in the foreground holds a compass, an orange padlocked coin box and a key in front of a dashboard of abstract charts." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Ads for SMEs</div><h3>Amazon&#x27;s AI Ad Agent Is Here: What Sellers New to Ads Should Hand Over</h3><p>Amazon Ads Agent hands search, display and full-funnel ads to agentic AI. If you don&#x27;t know how to run ads, skip the all-or-nothing choice and prove it out with a four-week controlled test.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/th/amazon-break-even-acos-tacos/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="มุมมองจากที่นั่งคนขับ มือของเจ้าของร้านวางบนพวงมาลัยหน้าแผงหน้าปัดที่มีมาตรวัดขอบสีส้มสามตัวพอดีและไฟเตือนเล็ก ๆ หนึ่งแถว" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="th"><div class="eyebrow">โฆษณาสำหรับ SME</div><h3>ACoS จุดคุ้มทุน, TACoS และ ROAS: คณิตศาสตร์โฆษณา Amazon ที่ผู้ขายทุกคนต้องรู้</h3><p>&quot;ACoS เท่าไรถึงดี?&quot; ไม่มีคำตอบที่ใช้ได้กับทุกคน และ Amazon ก็พูดเช่นนั้น แต่ ACoS จุดคุ้มทุนของคุณมีคำตอบที่แน่นอน และเป็นตัวเลขที่ทุกราคาประมูล งบประมาณ และเอเจนต์โฆษณา AI ควรถูกวัดเทียบ</p><div class="meta"><span class="lg">ไทย</span><span>อ่าน 6 นาที</span></div></div></a><a class="card" href="/blog/th/amazon-search-term-report-negative-keywords/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t16-768.webp"><img src="/assets/blog/hero/t16.jpg" alt="มือที่สวมถุงมือใช้กรรไกรสีส้มตัดแต่งต้นไม้เล็กในกระถางที่มีใบสีเทาฟ้า เหลือผลไม้สีส้มขนาดใหญ่สามผลและพัสดุเล็ก ๆ บนกิ่งที่เหลือ ขณะที่กิ่งที่ถูกตัดกระจายอยู่ด้านล่าง" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="th"><div class="eyebrow">โฆษณาสำหรับ SME</div><h3>Amazon Search Term Report: กิจวัตรรายสัปดาห์สำหรับ Negative Keywords และการเก็บเกี่ยวคีย์เวิร์ด</h3><p>รายงานคำค้นหา (search term report) คือที่ที่ Amazon แสดงว่าผู้ซื้อพิมพ์อะไรจริง ๆ ก่อนคลิกโฆษณาของคุณ อ่านทุกสัปดาห์ด้วยกฎง่าย ๆ สามข้อ แล้วค่าใช้จ่ายที่สูญเปล่าส่วนใหญ่จะหายไปโดยไม่ต้องแตะราคาประมูลเลย</p><div class="meta"><span class="lg">ไทย</span><span>อ่าน 6 นาที</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/th/">← กลับไปที่บล็อก</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>ดูว่าคุณมองไม่เห็นตรงไหนบน AI Search ของสหรัฐฯ</h2>
+  <p>นัดโทรคุยฟรี 30 นาที แล้วเราจะตรวจการมองเห็นบน AI ของร้านคุณแบบสด</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">นัดคุยกลยุทธ์ 30 นาที →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">เข้าสู่ระบบ ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">การมองเห็นบน AI Search โซเชียลมีเดีย และโฆษณาแบบอัตโนมัติสำหรับ SME และผู้ขายข้ามพรมแดน</p></div>
+      <div><h4>ToucHigh</h4><a href="/th/">หน้าแรก</a><a href="/th/#geo">GEO Autopilot</a><a href="/th/#social">Social Autopilot</a><a href="/th/pro/">ToucHigh PRO</a></div>
+      <div><h4>บล็อก</h4><a href="/blog/th/">บล็อก</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>เข้าสู่ระบบ</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">นัดหมายโทรคุย</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

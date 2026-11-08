@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ACoS จุดคุ้มทุน, TACoS และ ROAS สำหรับผู้ขาย Amazon | ToucHigh</title>
+<meta name="description" content="วิธีคำนวณ ACoS จุดคุ้มทุนจากมาร์จินจริง ACoS เกี่ยวข้องกับ ROAS อย่างไร TACoS เพิ่มอะไร และวิธีตั้ง ACoS เป้าหมายสำหรับกำไร การเปิดตัว หรือการระบายสต็อก">
+<link rel="canonical" href="https://touchigh.ai/blog/th/amazon-break-even-acos-tacos/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="ACoS จุดคุ้มทุน, break even ACoS, วิธีคำนวณ ACoS, ACoS กับ ROAS, TACoS Amazon, ACoS เป้าหมาย, มาร์จินกำไรโฆษณา Amazon">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="th" href="https://touchigh.ai/blog/th/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="hi" href="https://touchigh.ai/blog/hi/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="fil" href="https://touchigh.ai/blog/fil/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="ar" href="https://touchigh.ai/blog/ar/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/th/amazon-break-even-acos-tacos/">
+<meta property="og:title" content="ACoS จุดคุ้มทุน, TACoS และ ROAS: คณิตศาสตร์โฆษณา Amazon ที่ผู้ขายทุกคนต้องรู้">
+<meta property="og:description" content="วิธีคำนวณ ACoS จุดคุ้มทุนจากมาร์จินจริง ACoS เกี่ยวข้องกับ ROAS อย่างไร TACoS เพิ่มอะไร และวิธีตั้ง ACoS เป้าหมายสำหรับกำไร การเปิดตัว หรือการระบายสต็อก">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t68-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ACoS จุดคุ้มทุน, TACoS และ ROAS: คณิตศาสตร์โฆษณา Amazon ที่ผู้ขายทุกคนต้องรู้">
+<meta property="og:locale" content="th_TH">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="tl_PH">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:section" content="โฆษณาสำหรับ SME">
+<meta property="article:tag" content="ACoS">
+<meta property="article:tag" content="TACoS">
+<meta property="article:tag" content="ROAS">
+<meta property="article:tag" content="Amazon PPC">
+<meta property="article:tag" content="มาร์จินกำไร">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ACoS จุดคุ้มทุน, TACoS และ ROAS: คณิตศาสตร์โฆษณา Amazon ที่ผู้ขายทุกคนต้องรู้">
+<meta name="twitter:description" content="วิธีคำนวณ ACoS จุดคุ้มทุนจากมาร์จินจริง ACoS เกี่ยวข้องกับ ROAS อย่างไร TACoS เพิ่มอะไร และวิธีตั้ง ACoS เป้าหมายสำหรับกำไร การเปิดตัว หรือการระบายสต็อก">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t68-en.jpg">
+<meta name="twitter:image:alt" content="ACoS จุดคุ้มทุน, TACoS และ ROAS: คณิตศาสตร์โฆษณา Amazon ที่ผู้ขายทุกคนต้องรู้">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/th/amazon-break-even-acos-tacos/#article","url":"https://touchigh.ai/blog/th/amazon-break-even-acos-tacos/","mainEntityOfPage":"https://touchigh.ai/blog/th/amazon-break-even-acos-tacos/","headline":"ACoS จุดคุ้มทุน, TACoS และ ROAS: คณิตศาสตร์โฆษณา Amazon ที่ผู้ขายทุกคนต้องรู้","alternativeHeadline":"ACoS จุดคุ้มทุน, TACoS และ ROAS สำหรับผู้ขาย Amazon","description":"วิธีคำนวณ ACoS จุดคุ้มทุนจากมาร์จินจริง ACoS เกี่ยวข้องกับ ROAS อย่างไร TACoS เพิ่มอะไร และวิธีตั้ง ACoS เป้าหมายสำหรับกำไร การเปิดตัว หรือการระบายสต็อก","abstract":"ขึ้นอยู่กับมาร์จินของคุณทั้งหมด Amazon นิยาม ACoS ว่าค่าโฆษณาหารด้วยรายได้จากโฆษณา และระบุว่าเพื่อให้มีกำไร ACoS ต้องต่ำกว่ามาร์จินกำไรของคุณ คำนวณมาร์จินก่อนหักค่าโฆษณา (ราคาลบต้นทุนสินค้า ค่าธรรมเนียม Amazon ค่าขนส่ง ภาษีนำเข้า และการคืนสินค้าที่คาดไว้) เปอร์เซ็นต์นั้นคือ ACoS จุดคุ้มทุนของคุณ หากเป็น 35% ACoS 28% ก็มีกำไรจากยอดขายที่ระบุแหล่งที่มา หากเป็น 22% คุณขาดทุนในทุกยอดขายจากโฆษณา จากนั้นติดตาม TACoS คือค่าโฆษณาทั้งหมดหารด้วยยอดขายทั้งหมด เพื่อดูว่าโฆษณาช่วยสร้างยอดขายออร์แกนิกหรือไม่","image":["https://touchigh.ai/assets/blog/og/t68-en.jpg","https://touchigh.ai/assets/blog/hero/t40.jpg"],"datePublished":"2026-11-08T11:20:00+08:00","dateModified":"2026-11-08T11:20:00+08:00","inLanguage":"th","author":{"@type":"Organization","name":"ทีมวิจัย ToucHigh","url":"https://touchigh.ai/blog/th/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"โฆษณาสำหรับ SME","keywords":"ACoS จุดคุ้มทุน, break even ACoS, วิธีคำนวณ ACoS, ACoS กับ ROAS, TACoS Amazon, ACoS เป้าหมาย, มาร์จินกำไรโฆษณา Amazon","wordCount":923,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/th/#blog","name":"บล็อก ToucHigh"},"about":[{"@type":"Thing","name":"ACoS"},{"@type":"Thing","name":"TACoS"},{"@type":"Thing","name":"ROAS"},{"@type":"Thing","name":"Amazon PPC"},{"@type":"Thing","name":"มาร์จินกำไร"}],"citation":[{"@type":"CreativeWork","name":"What is advertising cost of sales (ACOS)?","url":"https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales","publisher":{"@type":"Organization","name":"Amazon Ads"}},{"@type":"CreativeWork","name":"Sponsored Products","url":"https://advertising.amazon.com/solutions/products/sponsored-products","publisher":{"@type":"Organization","name":"Amazon Ads"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/amazon-break-even-acos-tacos/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"th","mainEntity":[{"@type":"Question","name":"ACoS จุดคุ้มทุนเท่ากับมาร์จินกำไรไหม?","acceptedAnswer":{"@type":"Answer","text":"เท่ากับมาร์จินก่อนหักค่าโฆษณา คือเปอร์เซ็นต์ที่เหลือหลังหักต้นทุนสินค้า ค่าธรรมเนียม Amazon ค่าจัดการคำสั่งซื้อ ค่าขนส่ง ภาษีนำเข้า และการคืนสินค้า ที่ ACoS ระดับนั้น ยอดขายจากโฆษณาจะได้กำไรเป็นศูนย์"}},{"@type":"Question","name":"ทำไม ACoS ของเราดูดี แต่เงินในบัญชีไม่ดี?","acceptedAnswer":{"@type":"Answer","text":"ACoS นับแค่ยอดขายที่ระบุว่ามาจากโฆษณาและค่าโฆษณา ค่าธรรมเนียม ค่าขนส่ง หรือการคืนสินค้าที่เพิ่มขึ้นอาจกินมาร์จินที่ใช้คำนวณจุดคุ้มทุนไปหมด และ TACoS อาจแสดงว่าโฆษณากำลังแทนที่ยอดขายออร์แกนิก คำนวณมาร์จินใหม่และดู TACoS"}},{"@type":"Question","name":"จะหา TACoS ได้จากไหน?","acceptedAnswer":{"@type":"Answer","text":"คำนวณเอง: ค่าโฆษณาทั้งหมดในช่วงเวลาหนึ่งหารด้วยยอดขายทั้งหมดในช่วงเดียวกัน รวมออร์เดอร์ออร์แกนิก จากรายงานผู้ขายของคุณ ติดตามทุกเดือน"}},{"@type":"Question","name":"ควรให้เครื่องมือโฆษณา AI ตั้ง ACoS เป้าหมายให้ไหม?","acceptedAnswer":{"@type":"Answer","text":"ให้มันปรับแต่งไปสู่เป้าหมาย แต่ตั้งเป้าหมายเองจากมาร์จินและเป้าหมายของคุณ เครื่องมือเห็นข้อมูลโฆษณา คุณเห็นต้นทุนทั้งหมดของแต่ละหน่วย"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/th/"},{"@type":"ListItem","position":2,"name":"บล็อก","item":"https://touchigh.ai/blog/th/"},{"@type":"ListItem","position":3,"name":"ACoS จุดคุ้มทุน, TACoS และ ROAS: คณิตศาสตร์โฆษณา Amazon ที่ผู้ขายทุกคนต้องรู้","item":"https://touchigh.ai/blog/th/amazon-break-even-acos-tacos/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">ในหน้านี้</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/th/">หน้าแรก</a>
+      <a href="/th/#products">ผลิตภัณฑ์</a>
+      <a href="/th/#faq">คำถามที่พบบ่อย</a>
+      <a href="/th/pro/">ToucHigh PRO</a>
+      <a href="/blog/th/" class="on">บล็อก</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="ภาษา: ไทย"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">ไทย</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="ภาษา" hidden><li><a href="/blog/amazon-break-even-acos-tacos/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/amazon-break-even-acos-tacos/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/amazon-break-even-acos-tacos/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/amazon-break-even-acos-tacos/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/th/amazon-break-even-acos-tacos/" hreflang="th" lang="th" data-short="ไทย" aria-current="page">ไทย</a></li><li><a href="/blog/vi/amazon-break-even-acos-tacos/" hreflang="vi" lang="vi" data-short="VI">Tiếng Việt</a></li><li><a href="/blog/id/amazon-break-even-acos-tacos/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/amazon-break-even-acos-tacos/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/hi/amazon-break-even-acos-tacos/" hreflang="hi" lang="hi" data-short="हिन्दी">हिन्दी</a></li><li><a href="/blog/fil/amazon-break-even-acos-tacos/" hreflang="fil" lang="fil" data-short="FIL">Filipino</a></li><li><a href="/blog/es/amazon-break-even-acos-tacos/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/amazon-break-even-acos-tacos/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/amazon-break-even-acos-tacos/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/amazon-break-even-acos-tacos/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ar/amazon-break-even-acos-tacos/" hreflang="ar" lang="ar" data-short="عربي" dir="rtl">العربية</a></li><li><a href="/blog/ru/amazon-break-even-acos-tacos/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">เข้าสู่ระบบ</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">นัดหมายโทรคุย</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/th/">หน้าแรก</a><span>/</span><a href="/blog/th/">บล็อก</a><span>/</span><span>โฆษณาสำหรับ SME</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">โฆษณาสำหรับ SME</div>
+    <h1>ACoS จุดคุ้มทุน, TACoS และ ROAS: คณิตศาสตร์โฆษณา Amazon ที่ผู้ขายทุกคนต้องรู้</h1>
+    <p class="dek">&quot;ACoS เท่าไรถึงดี?&quot; ไม่มีคำตอบที่ใช้ได้กับทุกคน และ Amazon ก็พูดเช่นนั้น แต่ ACoS จุดคุ้มทุนของคุณมีคำตอบที่แน่นอน และเป็นตัวเลขที่ทุกราคาประมูล งบประมาณ และเอเจนต์โฆษณา AI ควรถูกวัดเทียบ</p>
+    <div class="a-meta"><b>ทีมวิจัย ToucHigh</b><span>เผยแพร่ <time datetime="2026-11-08T11:20:00+08:00">8/11/2026</time></span><span>อ่าน 6 นาที</span><span class="lang-badge">ไทย</span></div>
+    <div class="a-langs">มีในภาษา<a href="/blog/amazon-break-even-acos-tacos/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/amazon-break-even-acos-tacos/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/amazon-break-even-acos-tacos/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/amazon-break-even-acos-tacos/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/vi/amazon-break-even-acos-tacos/" hreflang="vi" lang="vi" onclick="try{localStorage.setItem('tl','vi')}catch(e){}">Tiếng Việt</a><a href="/blog/id/amazon-break-even-acos-tacos/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/amazon-break-even-acos-tacos/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/hi/amazon-break-even-acos-tacos/" hreflang="hi" lang="hi" onclick="try{localStorage.setItem('tl','hi')}catch(e){}">हिन्दी</a><a href="/blog/fil/amazon-break-even-acos-tacos/" hreflang="fil" lang="fil" onclick="try{localStorage.setItem('tl','fil')}catch(e){}">Filipino</a><a href="/blog/es/amazon-break-even-acos-tacos/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/amazon-break-even-acos-tacos/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/amazon-break-even-acos-tacos/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/amazon-break-even-acos-tacos/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ar/amazon-break-even-acos-tacos/" hreflang="ar" lang="ar" dir="rtl" onclick="try{localStorage.setItem('tl','ar')}catch(e){}">العربية</a><a href="/blog/ru/amazon-break-even-acos-tacos/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp 768w, /assets/blog/hero/t40-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t40.jpg" alt="มุมมองจากที่นั่งคนขับ มือของเจ้าของร้านวางบนพวงมาลัยหน้าแผงหน้าปัดที่มีมาตรวัดขอบสีส้มสามตัวพอดีและไฟเตือนเล็ก ๆ หนึ่งแถว" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="คำถามเบื้องหลังบทความนี้"><span class="qm">“</span><div><div class="eyebrow">คำถามเบื้องหลังบทความนี้</div><p class="q">โฆษณา Amazon ของเราแสดง ACoS 28% แบบนี้ดีหรือไม่ดี และเราจะรู้ได้อย่างไรว่าจ่าย ACoS ได้เท่าไรจริง ๆ?</p><p class="ans"><b>คำตอบสั้น</b>ขึ้นอยู่กับมาร์จินของคุณทั้งหมด Amazon นิยาม ACoS ว่าค่าโฆษณาหารด้วยรายได้จากโฆษณา และระบุว่าเพื่อให้มีกำไร ACoS ต้องต่ำกว่ามาร์จินกำไรของคุณ คำนวณมาร์จินก่อนหักค่าโฆษณา (ราคาลบต้นทุนสินค้า ค่าธรรมเนียม Amazon ค่าขนส่ง ภาษีนำเข้า และการคืนสินค้าที่คาดไว้) เปอร์เซ็นต์นั้นคือ ACoS จุดคุ้มทุนของคุณ หากเป็น 35% ACoS 28% ก็มีกำไรจากยอดขายที่ระบุแหล่งที่มา หากเป็น 22% คุณขาดทุนในทุกยอดขายจากโฆษณา จากนั้นติดตาม TACoS คือค่าโฆษณาทั้งหมดหารด้วยยอดขายทั้งหมด เพื่อดูว่าโฆษณาช่วยสร้างยอดขายออร์แกนิกหรือไม่</p></div></section>
+      <section class="kt takeaways"><h2>ประเด็นสำคัญ</h2><ul><li>สูตรของ Amazon: ACoS = ค่าโฆษณา ÷ รายได้จากโฆษณา × 100; ROAS = รายได้จากโฆษณา ÷ ค่าโฆษณา ทั้งสองเป็นส่วนกลับของกันและกัน</li><li>แนวทางของ Amazon: ACoS จุดคุ้มทุนผูกกับมาร์จินกำไรของคุณ ACoS ต้องอยู่ต่ำกว่านั้นเพื่อให้มีกำไร</li><li>ใช้มาร์จินก่อนหักค่าโฆษณา หลังหักต้นทุนอื่นทั้งหมด: สินค้า ค่าธรรมเนียม Amazon ค่าจัดการคำสั่งซื้อ ค่าขนส่ง ภาษีนำเข้า และการคืนสินค้า</li><li>TACoS (ค่าโฆษณาทั้งหมด ÷ ยอดขายทั้งหมด) ไม่อยู่ในคู่มือ ACoS ของ Amazon ผู้ขายคำนวณเองเพื่อดูว่าโฆษณาช่วยยกยอดขายออร์แกนิกหรือไม่</li><li>ตั้ง ACoS เป้าหมายต่างกันสำหรับแต่ละเป้าหมาย: กำไร การเปิดตัว หรือการระบายสต็อก Amazon เองก็เตือนไม่ให้โฟกัสที่ ACoS อย่างเดียวมากเกินไป</li></ul></section>
+      <div class="prose"><p>ACoS คือตัวเลขที่ผู้ขาย Amazon พูดถึงบ่อยที่สุดแต่เข้าใจน้อยที่สุด เอเจนซีรายงานมัน เครื่องมือโฆษณา AI ปรับแต่งเพื่อมัน และผู้ขายถกเถียงกันว่าเท่าไรถึงดี คู่มือของ Amazon เองตอบคำถามสุดท้ายอย่างตรงไปตรงมา: ไม่มีตัวเลขตายตัวสำหรับ ACoS ที่ดี ขึ้นอยู่กับอุตสาหกรรม ขนาด และเป้าหมายของคุณ สิ่งที่คุณคำนวณได้แน่นอนคือ ACoS ที่โฆษณาเริ่มไม่ทำเงิน การตัดสินใจอื่นทั้งหมดควรเริ่มจากตรงนั้น</p>
+
+<h2 id="s1">ACoS และ ROAS เกี่ยวข้องกันอย่างไร?</h2>
+
+<p>Amazon นิยาม advertising cost of sales ว่าค่าโฆษณาหารด้วยรายได้จากโฆษณา แสดงเป็นเปอร์เซ็นต์ ตัวอย่างของ Amazon: ใช้จ่าย $50 ได้ยอดขายที่มาจากโฆษณา $100 ACoS คือ 50% ผลตอบแทนจากค่าโฆษณา (ROAS) คือส่วนกลับ ได้แก่รายได้จากโฆษณาหารด้วยค่าโฆษณา ดังนั้นแคมเปญเดียวกันมี ROAS เท่ากับ 2</p>
+
+<div class="tw"><table>
+<thead><tr><th>ACoS</th><th>ROAS ที่เทียบเท่า</th><th>ความหมาย</th></tr></thead>
+<tbody>
+<tr><td>20%</td><td>5.0</td><td>โฆษณา $1 ได้ยอดขายที่ระบุแหล่งที่มากลับมา $5</td></tr>
+<tr><td>25%</td><td>4.0</td><td>โฆษณา $1 ได้กลับมา $4</td></tr>
+<tr><td>33%</td><td>3.0</td><td>โฆษณา $1 ได้กลับมา $3</td></tr>
+<tr><td>50%</td><td>2.0</td><td>โฆษณา $1 ได้กลับมา $2</td></tr>
+</tbody>
+</table></div>
+
+<p>รายงานของ Amazon และเครื่องมือข้ามช่องทางจำนวนมากรายงาน ROAS ส่วนสเปรดชีตของผู้ขายมักใช้ ACoS ทั้งสองมีข้อมูลเดียวกัน เลือกตัวหนึ่งไว้ตัดสินใจ และแปลงค่าเมื่อเปรียบเทียบ</p>
+
+<h2 id="s2">คำนวณ ACoS จุดคุ้มทุนอย่างไร?</h2>
+
+<p>คู่มือของ Amazon ชัดเจน: ACoS จุดคุ้มทุนเชื่อมโยงโดยตรงกับมาร์จินกำไร และ ACoS ต้องต่ำกว่ามาร์จินกำไรเพื่อรักษากำไรไว้ งานอยู่ที่การคำนวณมาร์จินนั้นอย่างซื่อตรง ก่อนหักค่าโฆษณาแต่หลังหักทุกอย่างอื่น</p>
+
+<div class="tw"><table>
+<thead><tr><th>รายการ (ตัวอย่างประกอบ ต่อหน่วย)</th><th>จำนวนเงิน</th></tr></thead>
+<tbody>
+<tr><td>ราคาขาย</td><td>$40.00</td></tr>
+<tr><td>ต้นทุนสินค้า (ถึงปลายทาง รวมภาษีนำเข้าและค่าขนส่ง)</td><td>−$12.00</td></tr>
+<tr><td>ค่าธรรมเนียมการขายของ Amazon (referral fee)</td><td>−$6.00</td></tr>
+<tr><td>ค่าจัดการคำสั่งซื้อ (fulfilment fee)</td><td>−$6.50</td></tr>
+<tr><td>การคืนสินค้าและค่าเผื่ออื่น ๆ</td><td>−$1.50</td></tr>
+<tr><td><strong>มาร์จินก่อนหักค่าโฆษณา</strong></td><td><strong>$14.00 = 35% ของราคา</strong></td></tr>
+</tbody>
+</table></div>
+
+<p>ในตัวอย่างนี้ ACoS จุดคุ้มทุนคือ 35% และ ROAS จุดคุ้มทุนคือ 1 ÷ 0.35 ประมาณ 2.9 ใช้ตัวเลขของคุณเอง: ค่าธรรมเนียมแตกต่างตามหมวดและขนาด และต้นทุนถึงปลายทางของผู้ขายข้ามพรมแดนเปลี่ยนตามค่าขนส่งและภาษีศุลกากร คำนวณใหม่ทุกครั้งที่ตัวใดตัวหนึ่งเปลี่ยน แคมเปญที่เคยมีกำไรก่อนภาษีศุลกากรเปลี่ยน อาจขาดทุนหลังจากนั้นทั้งที่ ACoS เท่าเดิม</p>
+
+<h2 id="s3">TACoS เพิ่มอะไร?</h2>
+
+<p>ACoS ดูเฉพาะยอดขายที่ Amazon ระบุว่ามาจากโฆษณา จึงบอกไม่ได้ว่าโฆษณาช่วยธุรกิจส่วนที่เหลือหรือไม่ นั่นคือหน้าที่ของ TACoS (total advertising cost of sales): ค่าโฆษณาทั้งหมดหารด้วยยอดขายทั้งหมด รวมออร์เดอร์ออร์แกนิก ตัวชี้วัดนี้ไม่อยู่ในคู่มือ ACoS ของ Amazon ผู้ขายคำนวณเองจากค่าโฆษณาและยอดขายรวมใน Seller Central</p>
+
+<ul>
+<li><strong>TACoS ลดลงขณะยอดขายเพิ่มขึ้น:</strong> ยอดขายออร์แกนิกโตเร็วกว่าค่าโฆษณา โฆษณาน่าจะช่วยอันดับและการซื้อซ้ำ</li>
+<li><strong>TACoS เพิ่มขึ้นขณะยอดขายรวมทรงตัว:</strong> คุณกำลังจ่ายเงินซื้อยอดขายที่อาจได้อยู่แล้ว หรือโฆษณากำลังแทนที่ยอดขายออร์แกนิกแทนที่จะเพิ่มขึ้น</li>
+<li><strong>TACoS คงที่ ACoS ดีขึ้น:</strong> ประสิทธิภาพภายในโฆษณาดีขึ้น ตรวจดูว่ายอดขายรวมไม่ได้หดตัว</li>
+</ul>
+
+<h2 id="s4">ควรตั้ง ACoS เป้าหมายอย่างไร?</h2>
+
+<p>Amazon แนะนำให้เริ่มจากจุดคุ้มทุน แล้วตัดสินว่าอะไรสำคัญที่สุดสำหรับแต่ละแบรนด์และแคมเปญ ในทางปฏิบัติ ให้ตั้งเป้าตามเป้าหมาย:</p>
+
+<div class="tw"><table>
+<thead><tr><th>เป้าหมาย</th><th>ACoS เป้าหมาย</th><th>ตรวจควบคู่กับ</th></tr></thead>
+<tbody>
+<tr><td>กำไรจากสินค้าที่อยู่ตัวแล้ว</td><td>ต่ำกว่าจุดคุ้มทุนอย่างชัดเจน</td><td>กำไรสุทธิต่อหน่วยหลังหักค่าโฆษณา</td></tr>
+<tr><td>เปิดตัวสินค้าใหม่</td><td>เท่ากับหรือสูงกว่าจุดคุ้มทุนชั่วคราว ในช่วงเวลาที่กำหนด</td><td>รีวิว อันดับออร์แกนิก แนวโน้ม TACoS</td></tr>
+<tr><td>ระบายสต็อกเก่า</td><td>ไม่เกินผลขาดทุนที่คุณยอมรับได้หากลดราคา</td><td>จำนวนที่ขายได้ ค่าคลังสินค้าที่ประหยัดได้</td></tr>
+</tbody>
+</table></div>
+
+<p>เขียนเป้าหมายและกรอบเวลาไว้ก่อนเริ่มแคมเปญ และให้ตัวเลขเดียวกันนี้กับใครหรืออะไรก็ตามที่บริหารราคาประมูลของคุณ เอเจนต์โฆษณา AI ที่ปรับแต่ง "เพื่อ ROAS" โดยไม่มีเส้นจุดคุ้มทุนของคุณ อาจขาดทุนได้อย่างมีประสิทธิภาพมาก</p>
+
+<h2 id="s5">ACoS ไม่ได้บอกอะไรคุณ?</h2>
+
+<p>คู่มือของ Amazon มีหัวข้อชื่อ "Why you shouldn't focus too much on ACOS" (ทำไมไม่ควรโฟกัสที่ ACOS มากเกินไป) และแนะนำให้ดูอิมเพรสชัน อัตราคอนเวอร์ชัน อัตราการคลิกผ่าน และผลตอบแทนจากการลงทุนด้วย ACoS ไม่นับมูลค่าระยะยาวของลูกค้าใหม่ ผลพลอยได้ต่ออันดับออร์แกนิก และต้นทุนของสต็อกที่ค้างในคลัง ใช้ ACoS จุดคุ้มทุนเป็นพื้นที่ช่วยให้ปลอดภัย TACoS เป็นแนวโน้มที่แสดงภาพรวม และกำไรจริงเป็นผู้ตัดสินสุดท้าย</p></div>
+      <aside class="insight" aria-label="อินไซต์"><div class="eyebrow">อินไซต์</div><blockquote>ACoS ที่ดีคือตัวเลขที่ต่ำกว่ามาร์จินของคุณ ที่เหลือคือความเห็น</blockquote><p>การบัญชีบริหารเรียกสิ่งนี้ว่ากำไรส่วนเกิน (contribution margin): สิ่งที่แต่ละยอดขายทำได้หลังหักต้นทุนผันแปร ACoS จุดคุ้มทุนก็คือกำไรส่วนเกินที่แสดงในรูปงบโฆษณา นี่คือเหตุผลที่มัน ไม่ใช่ค่าเฉลี่ยอุตสาหกรรม เป็นเส้นที่ถูกต้องในการบริหาร</p></aside>
+      <section class="prop" aria-label="ToucHigh ช่วยอย่างไร">
+        <div class="ph"><div class="eyebrow">Ads Autopilot · GEO Autopilot · Social Autopilot</div><h2>ToucHigh ช่วยอย่างไร</h2></div>
+        <div class="pb prose"><p>เมื่อรู้เส้นของคุณแล้ว Ads Autopilot ของ ToucHigh ทำงานตามเส้นนั้นได้:</p><ul><li>บริหารการใช้จ่ายบน Amazon, Meta และ Google จากกลยุทธ์เดียว ปรับอัตโนมัติตาม ROAS</li><li>ตัดสินใจเรื่องครีเอทีฟล้าและงบประมาณ โฆษณาที่ล้าแล้วจึงไม่แอบกินมาร์จิน</li><li>ให้คะแนนคอนเซปต์ครีเอทีฟตามผลงานที่คาดการณ์ก่อนเผยแพร่</li></ul><p>นัดคุยกลยุทธ์ 30 นาที และนำตารางมาร์จินมาด้วย เราจะพาดูแผนที่เหมาะกับแคตตาล็อกของคุณ</p><p class="uc">ผู้ขาย Amazon: ดูว่า <a href="/th/amazon-ads-autopilot/" onclick="try{gtag('event','landing_click',{location:'article_T68'})}catch(e){}">Ads Autopilot</a> ของ ToucHigh ให้คะแนนครีเอทีฟก่อนใช้จ่ายอย่างไร อยากเปลี่ยนการมองเห็นเป็นไปป์ไลน์? ดู <a href="/th/pro/" onclick="try{gtag('event','pro_click',{location:'article_T68'})}catch(e){}">ToucHigh PRO</a> การเข้าถึงลูกค้าแบบกลยุทธ์มาก่อน</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T68')">นัดคุยกลยุทธ์ 30 นาที →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T68'})}catch(e){}">เข้าสู่ระบบ ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="คำถามที่พบบ่อย"><h2>คำถามที่พบบ่อย</h2><details open><summary>ACoS จุดคุ้มทุนเท่ากับมาร์จินกำไรไหม?</summary><p>เท่ากับมาร์จินก่อนหักค่าโฆษณา คือเปอร์เซ็นต์ที่เหลือหลังหักต้นทุนสินค้า ค่าธรรมเนียม Amazon ค่าจัดการคำสั่งซื้อ ค่าขนส่ง ภาษีนำเข้า และการคืนสินค้า ที่ ACoS ระดับนั้น ยอดขายจากโฆษณาจะได้กำไรเป็นศูนย์</p></details><details><summary>ทำไม ACoS ของเราดูดี แต่เงินในบัญชีไม่ดี?</summary><p>ACoS นับแค่ยอดขายที่ระบุว่ามาจากโฆษณาและค่าโฆษณา ค่าธรรมเนียม ค่าขนส่ง หรือการคืนสินค้าที่เพิ่มขึ้นอาจกินมาร์จินที่ใช้คำนวณจุดคุ้มทุนไปหมด และ TACoS อาจแสดงว่าโฆษณากำลังแทนที่ยอดขายออร์แกนิก คำนวณมาร์จินใหม่และดู TACoS</p></details><details><summary>จะหา TACoS ได้จากไหน?</summary><p>คำนวณเอง: ค่าโฆษณาทั้งหมดในช่วงเวลาหนึ่งหารด้วยยอดขายทั้งหมดในช่วงเดียวกัน รวมออร์เดอร์ออร์แกนิก จากรายงานผู้ขายของคุณ ติดตามทุกเดือน</p></details><details><summary>ควรให้เครื่องมือโฆษณา AI ตั้ง ACoS เป้าหมายให้ไหม?</summary><p>ให้มันปรับแต่งไปสู่เป้าหมาย แต่ตั้งเป้าหมายเองจากมาร์จินและเป้าหมายของคุณ เครื่องมือเห็นข้อมูลโฆษณา คุณเห็นต้นทุนทั้งหมดของแต่ละหน่วย</p></details></section>
+      <section class="srcs"><h2>แหล่งอ้างอิง</h2><ol><li><a href="https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales" rel="noopener" target="_blank">What is advertising cost of sales (ACOS)?</a> — Amazon Ads</li><li><a href="https://advertising.amazon.com/solutions/products/sponsored-products" rel="noopener" target="_blank">Sponsored Products</a> — Amazon Ads</li></ol></section>
+      <p class="note"><b>ทำไมเราเขียนบทความนี้</b>เราเขียนบทความนี้เพราะผู้ขายมักตัดสิน ACoS เทียบกับค่าเฉลี่ยอุตสาหกรรมที่ไม่เกี่ยวกับต้นทุนของตนเลย คู่มือของ Amazon ชี้กลับไปที่มาร์จิน และเราก็เช่นกัน</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="ในหน้านี้"><h4>ในหน้านี้</h4><a href="#s1">ACoS และ ROAS เกี่ยวข้องกันอย่างไร?</a><a href="#s2">คำนวณ ACoS จุดคุ้มทุนอย่างไร?</a><a href="#s3">TACoS เพิ่มอะไร?</a><a href="#s4">ควรตั้ง ACoS เป้าหมายอย่างไร?</a><a href="#s5">ACoS ไม่ได้บอกอะไรคุณ?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>ดูว่าคุณมองไม่เห็นตรงไหนบน AI Search ของสหรัฐฯ</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">นัดหมายโทรคุย</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">เข้าสู่ระบบ</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>บทความที่เกี่ยวข้อง</h2>
+  <div class="grid"><a class="card" href="/blog/th/amazon-sponsored-products-first-campaign/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t10-768.webp"><img src="/assets/blog/hero/t10.jpg" alt="บนโต๊ะแล็บ ปิเปตหยดเหรียญสีส้มไม่กี่เหรียญจากงบทดสอบเล็ก ๆ ที่มีรั้วล้อม ลงในกรวยรูปฟองแชตขอบสีม่วงเหนือบีกเกอร์ ขณะที่โถใหญ่ที่เต็มไปด้วยเหรียญยังปิดสนิทอยู่ข้าง ๆ" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="th"><div class="eyebrow">โฆษณาสำหรับ SME</div><h3>แคมเปญ Amazon Sponsored Products แรกของคุณ: Auto กับ Manual ราคาประมูล และงบประมาณ</h3><p>คุณไม่จำเป็นต้องมีเอเจนซีเพื่อเปิดโฆษณา Amazon ครั้งแรก แต่ต้องมีโครงสร้างที่บอกได้ว่าอะไรได้ผล นี่คือการตั้งค่าสองแคมเปญแบบง่าย คณิตศาสตร์ราคาประมูล และแผนสี่สัปดาห์</p><div class="meta"><span class="lg">ไทย</span><span>อ่าน 7 นาที</span></div></div></a><a class="card" href="/blog/en/amazon-ads-agent-sellers/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t20-768.webp"><img src="/assets/blog/hero/t20.jpg" alt="A friendly robot copilot works the buttons and sliders of a rounded cockpit while a human hand in the foreground holds a compass, an orange padlocked coin box and a key in front of a dashboard of abstract charts." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Ads for SMEs</div><h3>Amazon&#x27;s AI Ad Agent Is Here: What Sellers New to Ads Should Hand Over</h3><p>Amazon Ads Agent hands search, display and full-funnel ads to agentic AI. If you don&#x27;t know how to run ads, skip the all-or-nothing choice and prove it out with a four-week controlled test.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="Seen from the driver&#x27;s seat, a shop owner&#x27;s hands rest on a steering wheel in front of a dashboard with exactly three orange-rimmed gauges and a row of small warning lights." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>Digital Advertising KPIs for Small Business: The 3 Numbers That Matter</h3><p>No media buyer? Focus on cost per acquisition, return on ad spend and repeat or lead quality. Here&#x27;s how to set break-even targets and review them once a week.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/th/">← กลับไปที่บล็อก</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>ดูว่าคุณมองไม่เห็นตรงไหนบน AI Search ของสหรัฐฯ</h2>
+  <p>นัดโทรคุยฟรี 30 นาที แล้วเราจะตรวจการมองเห็นบน AI ของร้านคุณแบบสด</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">นัดคุยกลยุทธ์ 30 นาที →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">เข้าสู่ระบบ ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">การมองเห็นบน AI Search โซเชียลมีเดีย และโฆษณาแบบอัตโนมัติสำหรับ SME และผู้ขายข้ามพรมแดน</p></div>
+      <div><h4>ToucHigh</h4><a href="/th/">หน้าแรก</a><a href="/th/#geo">GEO Autopilot</a><a href="/th/#social">Social Autopilot</a><a href="/th/pro/">ToucHigh PRO</a></div>
+      <div><h4>บล็อก</h4><a href="/blog/th/">บล็อก</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>เข้าสู่ระบบ</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">นัดหมายโทรคุย</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

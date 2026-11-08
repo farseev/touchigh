@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>กลุ่มช่องทาง AI Assistant ใน GA4: การตั้งค่าและช่องว่าง | ToucHigh</title>
+<meta name="description" content="กลุ่มช่องทางเริ่มต้นของ GA4 ตอนนี้มีช่องทาง AI Assistant นับอะไร ทำไม AI Overviews และการเข้าชมที่ไม่มี referrer จึงอยู่นอกช่องทางนี้ และวิธีสร้างกลุ่มแบบกำหนดเอง">
+<link rel="canonical" href="https://touchigh.ai/blog/th/ga4-ai-assistant-channel/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="ช่องทาง AI Assistant GA4, GA4 custom channel group AI, ติดตามทราฟฟิก ChatGPT ใน GA4, regex ทราฟฟิกอ้างอิงจาก AI GA4, กลุ่มช่องทางผู้ช่วย AI, วัดทราฟฟิก GEO">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="th" href="https://touchigh.ai/blog/th/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="vi" href="https://touchigh.ai/blog/vi/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="id" href="https://touchigh.ai/blog/id/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ms" href="https://touchigh.ai/blog/ms/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="hi" href="https://touchigh.ai/blog/hi/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="fil" href="https://touchigh.ai/blog/fil/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="fr" href="https://touchigh.ai/blog/fr/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="de" href="https://touchigh.ai/blog/de/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="pt" href="https://touchigh.ai/blog/pt/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ar" href="https://touchigh.ai/blog/ar/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/th/ga4-ai-assistant-channel/">
+<meta property="og:title" content="ช่องทาง AI Assistant ของ GA4: นับอะไร พลาดอะไร และเมื่อไรควรสร้างเอง">
+<meta property="og:description" content="กลุ่มช่องทางเริ่มต้นของ GA4 ตอนนี้มีช่องทาง AI Assistant นับอะไร ทำไม AI Overviews และการเข้าชมที่ไม่มี referrer จึงอยู่นอกช่องทางนี้ และวิธีสร้างกลุ่มแบบกำหนดเอง">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t64-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ช่องทาง AI Assistant ของ GA4: นับอะไร พลาดอะไร และเมื่อไรควรสร้างเอง">
+<meta property="og:locale" content="th_TH">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="ko_KR">
+<meta property="og:locale:alternate" content="vi_VN">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:locale:alternate" content="ms_MY">
+<meta property="og:locale:alternate" content="hi_IN">
+<meta property="og:locale:alternate" content="tl_PH">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="ar_AR">
+<meta property="og:locale:alternate" content="ru_RU">
+<meta property="article:published_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:section" content="การวัดผล">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="ทราฟฟิกจาก AI">
+<meta property="article:tag" content="กลุ่มช่องทาง">
+<meta property="article:tag" content="การระบุแหล่งที่มา">
+<meta property="article:tag" content="การวัดผล GEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ช่องทาง AI Assistant ของ GA4: นับอะไร พลาดอะไร และเมื่อไรควรสร้างเอง">
+<meta name="twitter:description" content="กลุ่มช่องทางเริ่มต้นของ GA4 ตอนนี้มีช่องทาง AI Assistant นับอะไร ทำไม AI Overviews และการเข้าชมที่ไม่มี referrer จึงอยู่นอกช่องทางนี้ และวิธีสร้างกลุ่มแบบกำหนดเอง">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t64-en.jpg">
+<meta name="twitter:image:alt" content="ช่องทาง AI Assistant ของ GA4: นับอะไร พลาดอะไร และเมื่อไรควรสร้างเอง">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+Thai:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/th/ga4-ai-assistant-channel/#article","url":"https://touchigh.ai/blog/th/ga4-ai-assistant-channel/","mainEntityOfPage":"https://touchigh.ai/blog/th/ga4-ai-assistant-channel/","headline":"ช่องทาง AI Assistant ของ GA4: นับอะไร พลาดอะไร และเมื่อไรควรสร้างเอง","alternativeHeadline":"กลุ่มช่องทาง AI Assistant ใน GA4: การตั้งค่าและช่องว่าง","description":"กลุ่มช่องทางเริ่มต้นของ GA4 ตอนนี้มีช่องทาง AI Assistant นับอะไร ทำไม AI Overviews และการเข้าชมที่ไม่มี referrer จึงอยู่นอกช่องทางนี้ และวิธีสร้างกลุ่มแบบกำหนดเอง","abstract":"ใช้ได้ แต่อย่าถือว่าเป็นภาพทั้งหมด เอกสารของ Google ระบุว่าช่องทาง AI Assistant ครอบคลุมการเข้าชมจากแหล่งอย่าง ChatGPT, Gemini, Deepseek, Copilot หรือ Grok และไม่รวม AI Overviews และ AI Mode ของ Google นอกจากนี้ยังมองไม่เห็นการเข้าชมที่มาโดยไม่มี referrer ซึ่งไปอยู่ใน Direct ตรวจว่าผู้ช่วย AI ตัวไหนปรากฏจริงใน property ของคุณ สร้างกลุ่มช่องทางแบบกำหนดเองหากบางตัวตกไปอยู่ใน Referral และใช้ GA4 คู่กับ Search Console และการติดตามการอ้างอิง","image":["https://touchigh.ai/assets/blog/og/t64-en.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-11-08T10:00:00+08:00","dateModified":"2026-11-08T10:00:00+08:00","inLanguage":"th","author":{"@type":"Organization","name":"ทีมวิจัย ToucHigh","url":"https://touchigh.ai/blog/th/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"การวัดผล","keywords":"ช่องทาง AI Assistant GA4, GA4 custom channel group AI, ติดตามทราฟฟิก ChatGPT ใน GA4, regex ทราฟฟิกอ้างอิงจาก AI GA4, กลุ่มช่องทางผู้ช่วย AI, วัดทราฟฟิก GEO","wordCount":1048,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/th/#blog","name":"บล็อก ToucHigh"},"about":[{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"ทราฟฟิกจาก AI"},{"@type":"Thing","name":"กลุ่มช่องทาง"},{"@type":"Thing","name":"การระบุแหล่งที่มา"},{"@type":"Thing","name":"การวัดผล GEO"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"About regular expressions (regex)","url":"https://support.google.com/analytics/answer/1034324","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ga4-ai-assistant-channel/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"th","mainEntity":[{"@type":"Question","name":"ช่องทาง AI Assistant รวม Google AI Overviews ไหม?","acceptedAnswer":{"@type":"Answer","text":"ไม่ นิยามของ Google ไม่รวม AI Overviews และ AI Mode ไว้ในช่องทาง AI Assistant Google รายงานสองส่วนนี้ในรายงาน Performance ของ Search Console ภายใต้ประเภทการค้นหา Web รวมกับ Search ส่วนอื่น"}},{"@type":"Question","name":"ทำไมทราฟฟิกจาก ChatGPT ยังแสดงเป็น Direct?","acceptedAnswer":{"@type":"Answer","text":"เมื่อการเข้าชมมาถึงโดยไม่มี referrer หรือพารามิเตอร์การติดตาม GA4 ไม่มีอะไรใช้จัดประเภทจึงบันทึกเป็น Direct สังเกตทราฟฟิก Direct ที่เข้าหน้าลึก และถามผู้ซื้อว่าพบคุณได้อย่างไร เพื่อประมาณสัดส่วนนี้"}},{"@type":"Question","name":"กลุ่มช่องทางแบบกำหนดเองจะเปลี่ยนข้อมูลย้อนหลังของเราไหม?","acceptedAnswer":{"@type":"Answer","text":"กลุ่มช่องทางแบบกำหนดเองมีผลกับรายงานย้อนหลัง คุณจึงดูข้อมูลในอดีตผ่านการจัดกลุ่มใหม่ได้ การเปลี่ยนกลุ่มช่องทางหลักของ property มีผลกับการรายงานตั้งแต่จุดนั้นเป็นต้นไปเท่านั้น"}},{"@type":"Question","name":"สร้างกลุ่มช่องทางแบบกำหนดเองได้กี่กลุ่ม?","acceptedAnswer":{"@type":"Answer","text":"Google ระบุว่า property มาตรฐานมีกลุ่มแบบกำหนดเองได้สองกลุ่ม และ property Analytics 360 ได้ห้ากลุ่ม นอกเหนือจากกลุ่มที่กำหนดไว้ล่วงหน้า แต่ละกลุ่มมีได้ไม่เกิน 50 ช่องทาง"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/th/"},{"@type":"ListItem","position":2,"name":"บล็อก","item":"https://touchigh.ai/blog/th/"},{"@type":"ListItem","position":3,"name":"ช่องทาง AI Assistant ของ GA4: นับอะไร พลาดอะไร และเมื่อไรควรสร้างเอง","item":"https://touchigh.ai/blog/th/ga4-ai-assistant-channel/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">ในหน้านี้</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/th/">หน้าแรก</a>
+      <a href="/th/#products">ผลิตภัณฑ์</a>
+      <a href="/th/#faq">คำถามที่พบบ่อย</a>
+      <a href="/th/pro/">ToucHigh PRO</a>
+      <a href="/blog/th/" class="on">บล็อก</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="ภาษา: ไทย"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">ไทย</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="ภาษา" hidden><li><a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/ga4-ai-assistant-channel/" hreflang="ko" lang="ko" data-short="한국어">한국어</a></li><li><a href="/blog/th/ga4-ai-assistant-channel/" hreflang="th" lang="th" data-short="ไทย" aria-current="page">ไทย</a></li><li><a href="/blog/vi/ga4-ai-assistant-channel/" hreflang="vi" lang="vi" data-short="VI">Tiếng Việt</a></li><li><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" data-short="ID">Bahasa Indonesia</a></li><li><a href="/blog/ms/ga4-ai-assistant-channel/" hreflang="ms" lang="ms" data-short="MS">Bahasa Melayu</a></li><li><a href="/blog/hi/ga4-ai-assistant-channel/" hreflang="hi" lang="hi" data-short="हिन्दी">हिन्दी</a></li><li><a href="/blog/fil/ga4-ai-assistant-channel/" hreflang="fil" lang="fil" data-short="FIL">Filipino</a></li><li><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" data-short="FR">Français</a></li><li><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" data-short="DE">Deutsch</a></li><li><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" data-short="PT">Português</a></li><li><a href="/blog/ar/ga4-ai-assistant-channel/" hreflang="ar" lang="ar" data-short="عربي" dir="rtl">العربية</a></li><li><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" data-short="RU">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">เข้าสู่ระบบ</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">นัดหมายโทรคุย</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/th/">หน้าแรก</a><span>/</span><a href="/blog/th/">บล็อก</a><span>/</span><span>การวัดผล</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">การวัดผล</div>
+    <h1>ช่องทาง AI Assistant ของ GA4: นับอะไร พลาดอะไร และเมื่อไรควรสร้างเอง</h1>
+    <p class="dek">ตอนนี้ Google Analytics จัดการเข้าชมจาก ChatGPT, Gemini, Copilot และอื่น ๆ ไว้ในช่องทางของตัวเอง ซึ่งแก้ปัญหาทราฟฟิก AI ได้ส่วนหนึ่ง นี่คือส่วนที่ยังแก้ไม่ได้ และกลุ่มช่องทางแบบกำหนดเองที่ช่วยปิดช่องว่าง</p>
+    <div class="a-meta"><b>ทีมวิจัย ToucHigh</b><span>เผยแพร่ <time datetime="2026-11-08T10:00:00+08:00">8/11/2026</time></span><span>อ่าน 6 นาที</span><span class="lang-badge">ไทย</span></div>
+    <div class="a-langs">มีในภาษา<a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ga4-ai-assistant-channel/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/ga4-ai-assistant-channel/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/ko/ga4-ai-assistant-channel/" hreflang="ko" lang="ko" onclick="try{localStorage.setItem('tl','ko')}catch(e){}">한국어</a><a href="/blog/vi/ga4-ai-assistant-channel/" hreflang="vi" lang="vi" onclick="try{localStorage.setItem('tl','vi')}catch(e){}">Tiếng Việt</a><a href="/blog/id/ga4-ai-assistant-channel/" hreflang="id" lang="id" onclick="try{localStorage.setItem('tl','id')}catch(e){}">Bahasa Indonesia</a><a href="/blog/ms/ga4-ai-assistant-channel/" hreflang="ms" lang="ms" onclick="try{localStorage.setItem('tl','ms')}catch(e){}">Bahasa Melayu</a><a href="/blog/hi/ga4-ai-assistant-channel/" hreflang="hi" lang="hi" onclick="try{localStorage.setItem('tl','hi')}catch(e){}">हिन्दी</a><a href="/blog/fil/ga4-ai-assistant-channel/" hreflang="fil" lang="fil" onclick="try{localStorage.setItem('tl','fil')}catch(e){}">Filipino</a><a href="/blog/es/ga4-ai-assistant-channel/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a><a href="/blog/fr/ga4-ai-assistant-channel/" hreflang="fr" lang="fr" onclick="try{localStorage.setItem('tl','fr')}catch(e){}">Français</a><a href="/blog/de/ga4-ai-assistant-channel/" hreflang="de" lang="de" onclick="try{localStorage.setItem('tl','de')}catch(e){}">Deutsch</a><a href="/blog/pt/ga4-ai-assistant-channel/" hreflang="pt" lang="pt" onclick="try{localStorage.setItem('tl','pt')}catch(e){}">Português</a><a href="/blog/ar/ga4-ai-assistant-channel/" hreflang="ar" lang="ar" dir="rtl" onclick="try{localStorage.setItem('tl','ar')}catch(e){}">العربية</a><a href="/blog/ru/ga4-ai-assistant-channel/" hreflang="ru" lang="ru" onclick="try{localStorage.setItem('tl','ru')}catch(e){}">Русский</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="พัสดุไหลออกจากอุโมงค์รูปฟองแชตที่เรืองแสงสีม่วงลงบนสายพาน แล้วตกลงในถังสีเทาธรรมดา ป้ายติดตามสีส้มของพัสดุหลุดกระจายอยู่บนพื้น ขณะที่แว่นขยาย แผนภูมิวงแหวน แผนภูมิแท่ง และถุงช้อปปิ้งรอตรวจสอบไขว้" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="คำถามเบื้องหลังบทความนี้"><span class="qm">“</span><div><div class="eyebrow">คำถามเบื้องหลังบทความนี้</div><p class="q">ตอนนี้ GA4 แสดงช่องทาง &quot;AI Assistant&quot; ในรายงานของเรา เชื่อถือได้ไหมในการวัดทราฟฟิกที่งาน GEO นำมา หรือยังต้องตั้งค่าเอง?</p><p class="ans"><b>คำตอบสั้น</b>ใช้ได้ แต่อย่าถือว่าเป็นภาพทั้งหมด เอกสารของ Google ระบุว่าช่องทาง AI Assistant ครอบคลุมการเข้าชมจากแหล่งอย่าง ChatGPT, Gemini, Deepseek, Copilot หรือ Grok และไม่รวม AI Overviews และ AI Mode ของ Google นอกจากนี้ยังมองไม่เห็นการเข้าชมที่มาโดยไม่มี referrer ซึ่งไปอยู่ใน Direct ตรวจว่าผู้ช่วย AI ตัวไหนปรากฏจริงใน property ของคุณ สร้างกลุ่มช่องทางแบบกำหนดเองหากบางตัวตกไปอยู่ใน Referral และใช้ GA4 คู่กับ Search Console และการติดตามการอ้างอิง</p></div></section>
+      <section class="kt takeaways"><h2>ประเด็นสำคัญ</h2><ul><li>กลุ่มช่องทางเริ่มต้นของ GA4 ตอนนี้มี AI Assistant: การเข้าชมจากแหล่งอย่าง ChatGPT, Gemini, Deepseek, Copilot หรือ Grok โดยตั้ง medium เป็น "ai-assistant" เมื่อ referrer ตรงกับรายชื่อของ Google</li><li>ช่องทางนี้ไม่รวม AI Overviews และ AI Mode ของ Google ซึ่ง Google นับไว้ในข้อมูลการค้นหา Web โดยรวมของ Search Console</li><li>การเข้าชมที่มาถึงคุณโดยไม่มี referrer หรือแท็กจะถูกบันทึกเป็น Direct จึงไม่มีกฎช่องทางใดกู้คืนได้</li><li>กลุ่มช่องทางเริ่มต้นแก้ไขไม่ได้ แต่กลุ่มช่องทางแบบกำหนดเองแก้ไขได้ และมีผลย้อนหลัง property มาตรฐานมีกลุ่มแบบกำหนดเองได้สองกลุ่ม กลุ่มละไม่เกิน 50 ช่องทาง</li><li>regex ตัวอย่างของ Google สำหรับผู้ช่วย AI กว้างมาก การระบุรายชื่อโดเมนให้ชัดเจนช่วยไม่ให้จับแหล่งที่ไม่เกี่ยวข้อง</li></ul></section>
+      <div class="prose"><p>ตลอดสองปี คำแนะนำมาตรฐานในการวัดทราฟฟิก AI ใน Google Analytics 4 เหมือนเดิม: สร้างกลุ่มช่องทางเอง เพราะการเข้าชมจาก ChatGPT และ Perplexity จมอยู่ใน Referral ตั้งแต่นั้น Google ได้เพิ่มช่องทาง <strong>AI Assistant</strong> ในกลุ่มช่องทางเริ่มต้นของ GA4 นี่เป็นข่าวดี แต่มันเปลี่ยนคำถามมากกว่าจะยุติคำถาม ตอนนี้คุณต้องรู้ว่าช่องทางใหม่นับอะไร ตกหล่นอะไร และเมื่อไรที่การจัดกลุ่มเองยังคุ้มค่า</p>
+
+<h2 id="s1">ช่องทาง AI Assistant ของ GA4 นับอะไร?</h2>
+
+<p>เอกสาร Default channel group ของ Google อธิบาย AI Assistant ว่าเป็นช่องทางที่ผู้ใช้มาจากแหล่งอย่าง ChatGPT, Gemini, Deepseek, Copilot หรือ Grok กฎเบื้องหลังคือ medium ถูกตั้งเป็น "ai-assistant" และ campaign เป็น "(ai-assistant)" เมื่อ referrer ตรงกับรายชื่อผู้ช่วย AI ที่ Google ดูแล เซสชันที่มี medium นี้จะไปอยู่ในแถว AI Assistant ของรายงาน Traffic acquisition</p>
+
+<p>ตามมาด้วยสองประเด็น หนึ่ง นี่คือรายชื่อของ Google ไม่ใช่ของคุณ: เอกสารระบุตัวอย่าง ไม่ใช่ผู้ช่วย AI ทุกตัว สอง กลุ่มช่องทางเริ่มต้นแก้ไขไม่ได้ใน GA4 ดังนั้นหากผู้ช่วย AI ที่ผู้ซื้อของคุณใช้ไม่ถูกจดจำ คุณก็เพิ่มเข้าช่องทางเริ่มต้นไม่ได้ คุณต้องใช้กลุ่มช่องทางแบบกำหนดเอง</p>
+
+<h2 id="s2">ช่องทาง AI Assistant พลาดอะไรบ้าง?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>ทราฟฟิก</th><th>ไปอยู่ที่ไหนใน GA4</th><th>วิธีดูแทน</th></tr></thead>
+<tbody>
+<tr><td>Google AI Overviews และ AI Mode</td><td>ไม่รวมอยู่ใน AI Assistant ตามนิยามของ Google</td><td>Search Console: Google ระบุว่าปรากฏในรายงาน Performance ภายใต้ประเภทการค้นหา Web</td></tr>
+<tr><td>การเข้าชมจากผู้ช่วย AI ที่ไม่มี referrer และไม่มีแท็ก</td><td>Direct</td><td>ทราฟฟิก Direct ที่เข้าหน้าลึก การค้นหาชื่อแบรนด์ แบบสำรวจหลังการซื้อ</td></tr>
+<tr><td>ผู้ช่วย AI ที่ไม่อยู่ในรายชื่อของ Google</td><td>มักอยู่ใน Referral</td><td>กลุ่มช่องทางแบบกำหนดเองด้วย regex ของคุณเอง</td></tr>
+<tr><td>คนที่เห็นชื่อคุณในคำตอบแล้วกลับมาทีหลัง</td><td>Direct, Organic Search หรือช่องทางใดก็ตามที่พวกเขากลับมา</td><td>การติดตามการอ้างอิงและแนวโน้มการค้นหาชื่อแบรนด์</td></tr>
+</tbody>
+</table></div>
+
+<p>แถวที่สองสำคัญที่สุด เครื่องมือวิเคราะห์ตัดสินว่าการเข้าชมมาจากไหนโดยดูพารามิเตอร์การติดตามและ URL ที่อ้างอิง เมื่อแอป AI เปิดลิงก์โดยไม่ส่งทั้งสองอย่าง การเข้าชมจะถูกบันทึกเป็น Direct บทความก่อนหน้าของเราเรื่อง <a href="/blog/en/chatgpt-utm-ai-referral-measurement/">ลิงก์จาก ChatGPT ที่แท็ก UTM หายไป</a> อธิบายว่าในทางปฏิบัติเป็นอย่างไร ไม่มีกฎช่องทางใดกู้คืนข้อมูลที่ไม่เคยไปถึง GA4 ได้</p>
+
+<h2 id="s3">จะตรวจได้อย่างไรว่า property ของคุณบันทึกอะไรจริง ๆ?</h2>
+
+<ol>
+<li><strong>เปิด Reports แล้วไปที่ Acquisition แล้ว Traffic acquisition</strong> และตั้งมิติหลักเป็น Session default channel group มองหาแถว AI Assistant และแนวโน้มของมัน</li>
+<li><strong>เปลี่ยนมิติเป็น Session source / medium</strong> และกรอง "ai-assistant" เพื่อดูว่า Google จัดประเภทผู้ช่วย AI ตัวไหนบ้าง</li>
+<li><strong>กรอง Referral ด้วยโดเมน AI ที่รู้จัก</strong> เช่น perplexity.ai หรือ claude.ai อะไรก็ตามที่เกี่ยวกับ AI ที่ยังอยู่ใน Referral คือช่องว่างของคุณ</li>
+<li><strong>เปรียบเทียบหน้า Landing</strong> การเข้าชมจาก AI มักเข้าหน้าลึก เช่น หน้าสินค้า หน้าความสามารถ และหน้าบล็อก มากกว่าหน้าแรก</li>
+</ol>
+
+<h2 id="s4">เมื่อไรควรสร้างกลุ่มช่องทาง AI แบบกำหนดเอง?</h2>
+
+<p>สร้างเมื่อผู้ช่วย AI ที่ผู้ซื้อของคุณใช้ไปอยู่ใน Referral เมื่อต้องการให้ผู้ช่วยแต่ละตัวเป็นแถวของตัวเอง หรือเมื่อต้องการนิยามเดียวที่คงที่ขณะ Google อัปเดตรายชื่อ เอกสารกลุ่มช่องทางแบบกำหนดเองของ Google อธิบายวิธีการ: ใน Admin ภายใต้ Data display ให้เปิด Channel groups (ต้องมีสิทธิ์ Editor ขึ้นไป) สร้างกลุ่ม เพิ่มช่องทาง และตั้งเงื่อนไข กลุ่มแบบกำหนดเองมีผลกับรายงานย้อนหลัง property มาตรฐานมีกลุ่มแบบกำหนดเองได้สองกลุ่มนอกเหนือจากกลุ่มที่กำหนดไว้ล่วงหน้า แต่ละกลุ่มมีได้ไม่เกิน 50 ช่องทาง</p>
+
+<p>Google ยังเผยแพร่ตัวอย่าง "AI assistants": ช่องทางที่มีเงื่อนไข "matches regex" วางไว้เหนือ Referral เพื่อให้แหล่ง AI ถูกจัดเข้าก่อน regex ตัวอย่างนั้นกว้างโดยเจตนา เริ่มด้วย <code>^.*ai</code> ซึ่งจับแหล่งใดก็ได้ที่มีตัวอักษร "ai" เช่น โดเมนของผู้ให้บริการอีเมล รูปแบบที่แคบกว่าจะระบุโดเมนที่คุณเห็นจริง ตัวอย่างเช่น:</p>
+
+<p><code>.*(chatgpt\.com|openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com).*</code></p>
+
+<p>ใช้กับ Source วางช่องทางไว้เหนือ Referral และหากต้องการรายละเอียด ให้เพิ่มหนึ่งช่องทางต่อผู้ช่วย AI หนึ่งตัวแทนกลุ่มเดียว อัปเดตรายชื่อเมื่อมีผู้ช่วย AI ตัวใหม่เริ่มส่งทราฟฟิก หมายเหตุของ Google เองก็บอกให้อัปเดต regex เมื่อรายชื่อผู้ช่วย AI เปลี่ยน</p>
+
+<h2 id="s5">ควรตั้งกลุ่มแบบกำหนดเองเป็นกลุ่มช่องทางหลักไหม?</h2>
+
+<p>GA4 ให้คุณเลือกกลุ่มช่องทางแบบกำหนดเองใดก็ได้เป็นกลุ่มช่องทางหลักของ property ซึ่งจะเติมข้อมูลมิติกลุ่มช่องทางหลักตั้งแต่จุดนั้นเป็นต้นไป สิ่งนี้มีประโยชน์เมื่อนิยามของคุณคงที่แล้ว แต่ไม่มีผลย้อนหลังแบบเดียวกับกลุ่มแบบกำหนดเองเอง ทีมเล็กส่วนใหญ่ปล่อยให้กลุ่มเริ่มต้นเป็นกลุ่มหลักและเพิ่มกลุ่มแบบกำหนดเองเป็นมุมมองรองได้</p>
+
+<h2 id="s6">GA4 ควรอยู่ตรงไหนในการวัดผลช่องทาง AI?</h2>
+
+<p>ให้ GA4 เป็นหนึ่งในสามเลนส์ GA4 บอกเรื่องคลิกที่ระบุแหล่งที่มาได้ Search Console บอกเรื่อง Google Search รวมถึง AI Overviews และ AI Mode การตรวจการอ้างอิงรายเดือนบอกว่าผู้ช่วย AI พูดถึงคุณบ้างหรือไม่ เมื่อทั้งสามเคลื่อนไปด้วยกัน คุณแสดงได้ว่า GEO ได้ผล เมื่อมีแค่ตัวเดียวเคลื่อน คุณรู้ว่าควรดูตรงไหน</p></div>
+      <aside class="insight" aria-label="อินไซต์"><div class="eyebrow">อินไซต์</div><blockquote>รายงานช่องทางแสดงคลิกที่ติดป้ายได้ ไม่ใช่อิทธิพลที่มองไม่เห็น</blockquote><p>กฎของ Goodhart เตือนว่าตัวชี้วัดที่ถูกทำให้เป็นเป้าหมายจะวัดได้ไม่ดีอีกต่อไป หากทีมไล่ตามแถว AI Assistant อย่างเดียว ก็จะประเมินค่าคำตอบ AI ที่ส่งผู้ซื้อผ่าน Direct หรือการค้นหาชื่อแบรนด์ต่ำเกินไป ให้ช่องทางนี้เป็นหนึ่งในสามสัญญาณ</p></aside>
+      <section class="prop" aria-label="ToucHigh ช่วยอย่างไร">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh ช่วยอย่างไร</h2></div>
+        <div class="pb prose"><p>GA4 แสดงคลิก ส่วน GEO Autopilot ของ ToucHigh ครอบคลุมภาพที่เหลือ:</p><ul><li>ตรวจว่าคุณมองไม่เห็นตรงไหนบน ChatGPT, Perplexity, Google AI และ Gemini</li><li>เขียนและเผยแพร่การแก้ไขและบทความ GEO ที่ตอบคำถามที่ผู้ซื้อถาม</li><li>ติดตามสัดส่วนการอ้างอิงบน AI ของคุณอย่างต่อเนื่อง ซึ่งเป็นสัญญาณที่พารามิเตอร์การติดตามบิดเบือนไม่ได้</li></ul><p>นัดคุยกลยุทธ์ 30 นาที และนำภาพหน้าจอรายงาน Traffic acquisition มาด้วย เราจะอ่านร่วมกันพร้อมตรวจการมองเห็นบน AI แบบสด</p><p class="uc">โรงงานและซัพพลายเออร์ B2B: ดูว่า ToucHigh ดูแล<a href="/th/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T64'})}catch(e){}">การมองเห็นซัพพลายเออร์บน AI Search</a>อย่างไร อยากเปลี่ยนการมองเห็นเป็นไปป์ไลน์? ดู <a href="/th/pro/" onclick="try{gtag('event','pro_click',{location:'article_T64'})}catch(e){}">ToucHigh PRO</a> การเข้าถึงลูกค้าแบบกลยุทธ์มาก่อน</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T64')">นัดคุยกลยุทธ์ 30 นาที →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T64'})}catch(e){}">เข้าสู่ระบบ ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="คำถามที่พบบ่อย"><h2>คำถามที่พบบ่อย</h2><details open><summary>ช่องทาง AI Assistant รวม Google AI Overviews ไหม?</summary><p>ไม่ นิยามของ Google ไม่รวม AI Overviews และ AI Mode ไว้ในช่องทาง AI Assistant Google รายงานสองส่วนนี้ในรายงาน Performance ของ Search Console ภายใต้ประเภทการค้นหา Web รวมกับ Search ส่วนอื่น</p></details><details><summary>ทำไมทราฟฟิกจาก ChatGPT ยังแสดงเป็น Direct?</summary><p>เมื่อการเข้าชมมาถึงโดยไม่มี referrer หรือพารามิเตอร์การติดตาม GA4 ไม่มีอะไรใช้จัดประเภทจึงบันทึกเป็น Direct สังเกตทราฟฟิก Direct ที่เข้าหน้าลึก และถามผู้ซื้อว่าพบคุณได้อย่างไร เพื่อประมาณสัดส่วนนี้</p></details><details><summary>กลุ่มช่องทางแบบกำหนดเองจะเปลี่ยนข้อมูลย้อนหลังของเราไหม?</summary><p>กลุ่มช่องทางแบบกำหนดเองมีผลกับรายงานย้อนหลัง คุณจึงดูข้อมูลในอดีตผ่านการจัดกลุ่มใหม่ได้ การเปลี่ยนกลุ่มช่องทางหลักของ property มีผลกับการรายงานตั้งแต่จุดนั้นเป็นต้นไปเท่านั้น</p></details><details><summary>สร้างกลุ่มช่องทางแบบกำหนดเองได้กี่กลุ่ม?</summary><p>Google ระบุว่า property มาตรฐานมีกลุ่มแบบกำหนดเองได้สองกลุ่ม และ property Analytics 360 ได้ห้ากลุ่ม นอกเหนือจากกลุ่มที่กำหนดไว้ล่วงหน้า แต่ละกลุ่มมีได้ไม่เกิน 50 ช่องทาง</p></details></section>
+      <section class="srcs"><h2>แหล่งอ้างอิง</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/1034324" rel="noopener" target="_blank">About regular expressions (regex)</a> — Google Analytics Help</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>ทำไมเราเขียนบทความนี้</b>เราเขียนบทความนี้เพราะทีมที่เคยสร้างกลุ่มช่องทาง AI ด้วยมือเห็นแถว AI Assistant ใหม่โผล่ขึ้นมาและไม่แน่ใจว่าควรเชื่อตัวเลขไหน คำตอบคือเชื่อทั้งสอง โดยอ่านคู่กับ Search Console และการติดตามการอ้างอิง</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="ในหน้านี้"><h4>ในหน้านี้</h4><a href="#s1">ช่องทาง AI Assistant ของ GA4 นับอะไร?</a><a href="#s2">ช่องทาง AI Assistant พลาดอะไรบ้าง?</a><a href="#s3">จะตรวจได้อย่างไรว่า property ของคุณบันทึกอะไรจริง ๆ?</a><a href="#s4">เมื่อไรควรสร้างกลุ่มช่องทาง AI แบบกำหนดเอง?</a><a href="#s5">ควรตั้งกลุ่มแบบกำหนดเองเป็นกลุ่มช่องทางหลักไหม?</a><a href="#s6">GA4 ควรอยู่ตรงไหนในการวัดผลช่องทาง AI?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>ดูว่าคุณมองไม่เห็นตรงไหนบน AI Search ของสหรัฐฯ</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">นัดหมายโทรคุย</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">เข้าสู่ระบบ</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>บทความที่เกี่ยวข้อง</h2>
+  <div class="grid"><a class="card" href="/blog/en/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now</h3><p>ChatGPT appears to have stopped adding UTM tags to its outbound links, so AI-driven visits are blending into direct traffic. It&#x27;s time for a new way to measure your SEO and GEO returns.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a><a class="card" href="/blog/th/search-console-ai-overviews-ai-mode-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="แถบค้นหาเทลูกแก้วสีส้มลงในกรวยคำตอบ AI ที่เรืองแสงสีม่วง ซึ่งปล่อยให้เพียงไม่กี่ลูกไปถึงหน้าร้านเว็บไซต์เล็ก ๆ ขณะที่กองหน้าว่างเปล่าสูงโยกเยกข้าง ๆ ให้ลูกแก้วเพียงลูกเดียว" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="th"><div class="eyebrow">การวัดผล</div><h3>วิธีอ่านทราฟฟิกจาก AI Overviews และ AI Mode ใน Google Search Console</h3><p>ไม่มีแท็บ &quot;AI Overviews&quot; แยกให้เปิด Google รวมฟีเจอร์ AI ไว้ในรายงาน Performance ที่คุณมีอยู่แล้ว นี่คือวิธีที่ผู้ส่งออกยังอ่านได้ว่าคำตอบ AI ส่งผลอะไรต่อทราฟฟิกการค้นหา</p><div class="meta"><span class="lg">ไทย</span><span>อ่าน 6 นาที</span></div></div></a><a class="card" href="/blog/th/ai-attribution-post-purchase-survey/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="โหลแก้วสามใบบนชั้นสีขาวเต็มไปด้วยลูกแก้วสีส้มในระดับต่างกัน มีสัญลักษณ์ตา หัวใจกับบุ๊กมาร์ก และเคอร์เซอร์กับรถเข็นช้อปปิ้ง แต่ละใบมีเส้นสีกรมท่าแสดงค่าเฉลี่ยในอดีตของตัวเอง" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="th"><div class="eyebrow">การวัดผล</div><h3>&quot;รู้จักเราจากที่ไหน?&quot; ใช้แบบสำรวจนับยอดขายจาก ChatGPT และผู้ช่วย AI</h3><p>ผู้ซื้อบางคนที่ AI ส่งมาหาคุณจะไม่ปรากฏเป็นคลิกจาก AI เลย แบบสำรวจคำถามเดียวตอนชำระเงินหรือบนฟอร์มสอบถามคือวิธีที่ถูกที่สุดในการมองเห็นพวกเขา นี่คือวิธีตั้งคำถาม วางตำแหน่ง และอ่านคำตอบ</p><div class="meta"><span class="lg">ไทย</span><span>อ่าน 6 นาที</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/th/">← กลับไปที่บล็อก</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>ดูว่าคุณมองไม่เห็นตรงไหนบน AI Search ของสหรัฐฯ</h2>
+  <p>นัดโทรคุยฟรี 30 นาที แล้วเราจะตรวจการมองเห็นบน AI ของร้านคุณแบบสด</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">นัดคุยกลยุทธ์ 30 นาที →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">เข้าสู่ระบบ ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">การมองเห็นบน AI Search โซเชียลมีเดีย และโฆษณาแบบอัตโนมัติสำหรับ SME และผู้ขายข้ามพรมแดน</p></div>
+      <div><h4>ToucHigh</h4><a href="/th/">หน้าแรก</a><a href="/th/#geo">GEO Autopilot</a><a href="/th/#social">Social Autopilot</a><a href="/th/pro/">ToucHigh PRO</a></div>
+      <div><h4>บล็อก</h4><a href="/blog/th/">บล็อก</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>เข้าสู่ระบบ</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">นัดหมายโทรคุย</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
