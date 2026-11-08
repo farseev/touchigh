@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UTM 태그가 사라진 뒤의 ChatGPT 트래픽 추적 | ToucHigh</title>
+<meta name="description" content="ChatGPT 링크에서 UTM 태그가 사라진 듯해 AI 방문이 Direct 트래픽처럼 보입니다. 인용 점유율, Direct 트래픽, 주문의 세 층으로 ChatGPT 트래픽을 추적하세요.">
+<link rel="canonical" href="https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="ChatGPT 트래픽 추적, GA4에서 ChatGPT 트래픽 추적하는 법, AI 유입 트래픽 측정법, ChatGPT UTM 파라미터, SEO ROI 계산법, AI 인용 점유율">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="ko" href="https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/">
+<meta property="og:title" content="ChatGPT가 UTM 태그를 없앤 듯: 이제 AI 트래픽을 측정하는 법">
+<meta property="og:description" content="ChatGPT 링크에서 UTM 태그가 사라진 듯해 AI 방문이 Direct 트래픽처럼 보입니다. 인용 점유율, Direct 트래픽, 주문의 세 층으로 ChatGPT 트래픽을 추적하세요.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t03-ko.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ChatGPT가 UTM 태그를 없앤 듯: 이제 AI 트래픽을 측정하는 법">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="article:published_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:section" content="성과 측정">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="AI 유입 트래픽">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="GEO 측정">
+<meta property="article:tag" content="SEO ROI">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChatGPT가 UTM 태그를 없앤 듯: 이제 AI 트래픽을 측정하는 법">
+<meta name="twitter:description" content="ChatGPT 링크에서 UTM 태그가 사라진 듯해 AI 방문이 Direct 트래픽처럼 보입니다. 인용 점유율, Direct 트래픽, 주문의 세 층으로 ChatGPT 트래픽을 추적하세요.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t03-ko.jpg">
+<meta name="twitter:image:alt" content="ChatGPT가 UTM 태그를 없앤 듯: 이제 AI 트래픽을 측정하는 법">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/#article","url":"https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/","mainEntityOfPage":"https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/","headline":"ChatGPT가 UTM 태그를 없앤 듯: 이제 AI 트래픽을 측정하는 법","alternativeHeadline":"UTM 태그가 사라진 뒤의 ChatGPT 트래픽 추적","description":"ChatGPT 링크에서 UTM 태그가 사라진 듯해 AI 방문이 Direct 트래픽처럼 보입니다. 인용 점유율, Direct 트래픽, 주문의 세 층으로 ChatGPT 트래픽을 추적하세요.","abstract":"GA4의 'chatgpt.com' 소스에만 의존하지 마세요. Search Engine Land에 따르면 ChatGPT 링크에 더 이상 UTM 파라미터가 붙지 않는 것으로 보여, 많은 AI 방문이 Direct 트래픽으로 기록됩니다. 대신 세 개 층으로 측정하세요. AI 인용 점유율(핵심 질문에 대한 AI 답변이 귀사를 얼마나 자주 언급하는지), 하위 페이지로의 Direct 트래픽과 브랜드 검색, 주문과 구매 후 설문입니다. 세 가지를 교차 확인하세요.","image":["https://touchigh.ai/assets/blog/og/t03-ko.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-10-16T07:21:00+08:00","dateModified":"2026-10-16T07:21:00+08:00","inLanguage":"ko","author":{"@type":"Organization","name":"ToucHigh 리서치 팀","url":"https://touchigh.ai/blog/ko/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"성과 측정","keywords":"ChatGPT 트래픽 추적, GA4에서 ChatGPT 트래픽 추적하는 법, AI 유입 트래픽 측정법, ChatGPT UTM 파라미터, SEO ROI 계산법, AI 인용 점유율","wordCount":1252,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ko/#blog","name":"ToucHigh 블로그"},"about":[{"@type":"Thing","name":"ChatGPT"},{"@type":"Thing","name":"AI 유입 트래픽"},{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"GEO 측정"},{"@type":"Thing","name":"SEO ROI"}],"citation":[{"@type":"CreativeWork","name":"ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure","url":"https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Search Engine Land"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ko","mainEntity":[{"@type":"Question","name":"Direct 트래픽이 갑자기 늘었다면 항상 ChatGPT에서 온 것인가요?","acceptedAnswer":{"@type":"Answer","text":"꼭 그렇지는 않습니다. Search Engine Land 보도도 Huesler의 분석이 사라진 리퍼러가 모두 같은 원인이라는 것을 증명하지 못한다고 주의를 줍니다. 세 가지를 확인하세요. 증가가 10월 중순에 시작되었는가? 제품 페이지와 아티클 같은 하위 페이지에 집중되어 있는가? 동시에 ChatGPT 유입이 줄었는가? 세 가지가 모두 맞아떨어질 때만 라벨이 바뀐 AI 트래픽일 가능성이 높습니다."}},{"@type":"Question","name":"ChatGPT 외 다른 AI 플랫폼의 트래픽은 어떻게 하나요?","acceptedAnswer":{"@type":"Answer","text":"먼저 GA4의 Referral 보고서에서 어떤 AI 제품 도메인이 실제로 나타나는지 확인하고, 하나의 'AI 어시스턴트' 채널 그룹으로 묶으세요. 하지만 이번 ChatGPT 변화는 플랫폼이 언제든 링크 작동 방식을 바꿀 수 있음을 보여 주므로, 리퍼러 데이터는 하나의 입력값으로만 보고 AI 인용 점유율, 주문 데이터와 함께 읽으세요."}},{"@type":"Question","name":"AI 인용 점유율은 어떻게 계산하나요?","acceptedAnswer":{"@type":"Answer","text":"핵심 질문 세트를 고정하세요. 예를 들어 미국 쇼핑객이 가장 많이 묻는 카테고리 질문 40개입니다. 매달 몇몇 주요 AI 플랫폼에서 모든 질문을 묻고, 귀사 브랜드를 언급하거나 링크한 답변의 수를 세어 전체 답변 수로 나누세요. 40개 질문 중 8개가 귀사를 인용하면 점유율은 20%입니다. 질문 목록을 바꾸지 않아야 추세가 의미를 가집니다."}},{"@type":"Question","name":"데이터 분석가가 없는 소규모 팀입니다. 최소한 무엇을 추적해야 하나요?","acceptedAnswer":{"@type":"Answer","text":"세 가지 숫자면 충분합니다. 월간 AI 인용 점유율, 하위 페이지로의 Direct 트래픽, 구매 후 설문에서 'AI 어시스턴트'를 고른 신규 고객 비중입니다. 첫 번째는 노출, 두 번째는 방문, 세 번째는 매출을 반영합니다. 매달 반나절을 들여 한 스프레드시트에 기록하면, 3개월 뒤 AI 채널이 성장을 이끌고 있는지 알 수 있습니다."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ko/"},{"@type":"ListItem","position":2,"name":"블로그","item":"https://touchigh.ai/blog/ko/"},{"@type":"ListItem","position":3,"name":"ChatGPT가 UTM 태그를 없앤 듯: 이제 AI 트래픽을 측정하는 법","item":"https://touchigh.ai/blog/ko/chatgpt-utm-ai-referral-measurement/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">본문으로 건너뛰기</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ko/">홈</a>
+      <a href="/ko/#products">제품</a>
+      <a href="/ko/#faq">자주 묻는 질문</a>
+      <a href="/ko/pro/">ToucHigh PRO</a>
+      <a href="/blog/ko/" class="on">블로그</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="언어: 한국어"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">한국어</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="언어" hidden><li><a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/ko/chatgpt-utm-ai-referral-measurement/" hreflang="ko" lang="ko" data-short="한국어" aria-current="page">한국어</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">로그인</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">상담 예약</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ko/">홈</a><span>/</span><a href="/blog/ko/">블로그</a><span>/</span><span>성과 측정</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">성과 측정</div>
+    <h1>ChatGPT가 UTM 태그를 없앤 듯: 이제 AI 트래픽을 측정하는 법</h1>
+    <p class="dek">ChatGPT가 외부 링크에 UTM 태그를 더 이상 붙이지 않는 것으로 보여, AI 유입 방문이 Direct 트래픽에 섞이고 있습니다. SEO와 GEO 성과를 측정하는 새로운 방법이 필요한 때입니다.</p>
+    <div class="a-meta"><b>ToucHigh 리서치 팀</b><span>게시일 <time datetime="2026-10-16T07:21:00+08:00">2026년 10월 16일</time></span><span>5분 분량</span><span class="lang-badge">한국어</span></div>
+    <div class="a-langs">다른 언어<a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/chatgpt-utm-ai-referral-measurement/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="보라색 빛이 나는 말풍선 터널에서 소포들이 컨베이어로 미끄러져 나와 평범한 회색 통에 떨어지고, 주황색 추적 태그는 바닥에 흩어져 있습니다. 옆에서는 돋보기, 링 차트, 막대 차트, 쇼핑백이 교차 확인을 위해 대기하고 있습니다." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="이 글이 답하는 질문"><span class="qm">“</span><div><div class="eyebrow">이 글이 답하는 질문</div><p class="q">ChatGPT에서 온 방문이 이제 분석 도구에서 &#x27;Direct&#x27; 트래픽으로 나옵니다. SEO와 GEO에 쓴 비용의 수익은 어떻게 계산해야 하나요?</p><p class="ans"><b>짧은 답</b>GA4의 &#x27;chatgpt.com&#x27; 소스에만 의존하지 마세요. Search Engine Land에 따르면 ChatGPT 링크에 더 이상 UTM 파라미터가 붙지 않는 것으로 보여, 많은 AI 방문이 Direct 트래픽으로 기록됩니다. 대신 세 개 층으로 측정하세요. AI 인용 점유율(핵심 질문에 대한 AI 답변이 귀사를 얼마나 자주 언급하는지), 하위 페이지로의 Direct 트래픽과 브랜드 검색, 주문과 구매 후 설문입니다. 세 가지를 교차 확인하세요.</p></div></section>
+      <section class="kt takeaways"><h2>핵심 요약</h2><ul><li>Search Engine Land에 따르면 ChatGPT 링크에 더 이상 UTM 파라미터가 붙지 않는 것으로 보여, 이제 많은 AI 방문이 분석 도구에서 'Direct' 트래픽으로 나타납니다.</li><li>Adobe의 Cedric Huesler는 약 500개 페이지에서 ChatGPT 유입 방문이 하루 약 31,000건 줄어든 반면 Direct 트래픽은 하루 약 26,000건 늘었다는 것을 발견했습니다.</li><li>AI 채널은 세 개 층으로 측정하세요. AI 인용 점유율, 하위 페이지로의 Direct 트래픽과 브랜드 검색, 주문과 구매 후 설문입니다.</li><li>1~2주간의 소스 데이터만 보고 GEO 예산을 줄이지 마세요. AI 답변에 얼마나 자주 나오는지가 추적 파라미터로 왜곡되지 않는 핵심 지표입니다.</li></ul></section>
+      <div class="prose"><p>ChatGPT에서 온 방문이 갑자기 분석 도구에서 'Direct' 트래픽으로 나옵니다. 그렇다면 SEO와 GEO의 수익은 어떻게 계산할까요? 결론부터 말하면, GA4(Google Analytics 4)의 'chatgpt.com' 소스를 유일한 근거로 삼지 말고, AI 인용 점유율, Direct 트래픽 변화, 주문 데이터의 세 층을 교차 확인하세요. 어느 한 숫자만 보면 잘못된 예산 결정을 내릴 수 있습니다.</p>
+
+<p>이번 주 소식에서 시작되었습니다. <a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">Search Engine Land</a>는 10월 15일 ChatGPT의 외부 링크에 OpenAI가 붙여 오던 'utm_source=chatgpt.com' 파라미터가 더 이상 붙지 않는 것으로 보이며, 링크가 열리는 방식도 리퍼러 정보를 숨긴다고 보도했습니다. Adobe의 Cedric Huesler는 ChatGPT가 방문의 5% 이상을 차지하는 약 500개 페이지를 분석해 10월 9~13일을 그 전주와 비교했습니다. ChatGPT 유입 방문은 하루 약 31,000건 줄었고, 같은 페이지로의 Direct 트래픽은 하루 약 26,000건 늘었습니다. OpenAI는 이 변화가 의도적인지 확인하지 않았습니다.</p>
+
+<h2 id="why-did-my-chatgpt-traffic-suddenly-disappear">ChatGPT 트래픽은 왜 갑자기 '사라졌을까요'?</h2>
+
+<p>트래픽이 사라진 것이 아니라 다른 라벨이 붙었을 뿐입니다. 분석 도구는 주로 두 가지로 방문의 출처를 판단합니다. UTM 파라미터(링크에 붙이는 추적 태그)와 브라우저가 전달하는 리퍼러 URL입니다. 둘 다 없으면 쇼핑객이 브라우저 주소창에 주소를 직접 입력한 것처럼 'Direct'로 기록됩니다.</p>
+
+<p>보도에 따르면 이 변화는 10월 GPT-6 출시 후에 발견되었습니다. Huesler의 데이터에서도 ChatGPT 유입이 줄어든 페이지의 3분의 2에서 동시에 Direct 트래픽이 늘었고, 새로 생긴 'Direct' 방문의 행동은 이전에 식별된 ChatGPT 방문과 매우 비슷했습니다. 다만 보도는 이 분석이 사라진 리퍼러가 모두 같은 원인이라는 것을 증명하지는 못한다고 주의를 줍니다.</p>
+
+<p>독립 스토어를 운영하는데 10월 중순 이후 스토어 대시보드나 GA4에서 ChatGPT 유입이 급감하고 Direct 트래픽이 급증했다면, 성급하게 결론 내리지 마세요. 바뀐 것은 AI가 귀사를 추천하려는 의지가 아니라 라벨일 가능성이 가장 큽니다.</p>
+
+<h2 id="why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">왜 클릭 데이터만으로는 GEO가 성과를 내는지 알 수 없을까요?</h2>
+
+<p>경영학 연구의 성과 측정 이론은 간단한 점을 짚습니다. 무엇을 측정하느냐가 곧 팀이 최적화하는 대상이며, 잘못된 지표는 잘못된 결정으로 이어집니다. 'ChatGPT에서 온 방문'만 본다면 이번 주 보고서는 GEO 성과가 무너졌다고 말할 것입니다. 실제로는 쇼핑객이 여전히 오고 있고 라벨만 다를 뿐인데, 예산을 줄일 수도 있습니다.</p>
+
+<p>한 단계 더 들어가면, AI 채널의 가치 상당 부분은 애초에 클릭으로 나타나지 않습니다. 쇼핑객이 ChatGPT가 귀사 브랜드를 추천하는 것을 보고 이름을 기억했다가, 사흘 뒤 URL을 입력하거나 Google에서 브랜드를 검색합니다. 어떤 기여 측정 모델도 그 주문을 AI의 공으로 돌리지 않습니다. 그래서 AI 채널을 측정한다는 것은 보고서의 소스 한 줄을 읽는 것이 아니라, 쇼핑객의 머릿속에 자리를 얻었는지 묻는 것입니다.</p>
+
+<h2 id="a-three-layer-framework-for-measuring-the-ai-channel">AI 채널 측정을 위한 3층 프레임워크</h2>
+
+<p>지표를 세 개 층으로 나누고, 각 층이 하나의 질문에 답하게 하세요. AI가 귀사를 언급했는가? 그 덕분에 쇼핑객이 방문했는가? 그 방문이 매출로 이어졌는가?</p>
+
+<div class="tw"><table>
+<thead><tr><th>층</th><th>추적할 것</th><th>확인할 곳</th><th>중요한 이유</th></tr></thead>
+<tbody>
+<tr><td>노출</td><td>AI 인용 점유율, AI가 브랜드를 정확히 설명하는지</td><td>고정된 질문 세트를 ChatGPT, Perplexity, Google AI에서 정기적으로 확인</td><td>UTM 태그에 의존하지 않으며, GEO 성과를 가장 직접적으로 보여 줌</td></tr>
+<tr><td>트래픽</td><td>하위 페이지로의 Direct 트래픽, 브랜드 검색량, 아직 식별 가능한 AI 유입</td><td>GA4 방문 페이지 보고서, Google Search Console</td><td>긴 제품 페이지 URL을 직접 입력하는 사람은 거의 없으므로, 이런 Direct 트래픽의 증가는 주목할 가치가 있음</td></tr>
+<tr><td>비즈니스</td><td>신규 고객 주문, 평균 주문 금액, 구매 후 설문에서 'AI 어시스턴트'를 고른 응답 비중</td><td>스토어 대시보드, 결제 후 설문</td><td>마지막 질문, 즉 할 가치가 있는가에 답함</td></tr>
+</tbody>
+</table></div>
+
+<p>세 층을 함께 읽으세요. 노출은 늘었는데 트래픽이 움직이지 않는다면, AI가 귀사를 언급하지만 쇼핑객에게 클릭할 이유를 주지 못하는 것이니 인용되는 페이지에 가격대와 사용 사례 같은 구매 정보를 더하세요. 트래픽은 늘었는데 매출이 늘지 않는다면, 문제는 GEO 자체가 아니라 랜딩 페이지와 결제일 가능성이 큽니다.</p>
+
+<h2 id="how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">AI 트래픽을 덜 잃으려면 GA4를 어떻게 설정해야 하나요?</h2>
+
+<ol>
+<li><strong>'AI 어시스턴트' 맞춤 채널 그룹을 만드세요.</strong> chatgpt.com, perplexity.ai 같은 AI 제품의 리퍼러 도메인을 실제로 계정에 나타나는 도메인 기준으로 묶어, 아무도 보지 않는 'Referral'에 흩어지지 않게 하세요.</li>
+<li><strong>Direct 트래픽을 방문 페이지별로 나눠 보세요.</strong> 제품 상세 페이지와 블로그 글 같은 하위 페이지로의 Direct 트래픽에 집중하고, 홈페이지 Direct 트래픽과 따로 분석하세요. 홈페이지로의 Direct 방문은 대부분 재방문 고객에게서 오며, 하위 페이지의 이례적인 증가는 AI일 가능성이 더 큽니다.</li>
+<li><strong>보고서에 날짜를 표시해 두세요.</strong> 10월 중순의 변화를 메모로 기록해, 나중에 전년 대비·전월 대비 비교에서 GEO가 효과를 잃었다고 착각하지 않게 하세요.</li>
+<li><strong>결제 후 설문을 추가하세요.</strong> "저희를 어떻게 알게 되셨나요?"라는 질문 하나만 묻고, 'ChatGPT 또는 다른 AI 어시스턴트'를 선택지로 넣으세요. 표본이 클 필요는 없으며, 추세만으로도 가치가 있습니다.</li>
+<li><strong>매달 같은 질문을 표본 점검하세요.</strong> 핵심 바이어 질문 30~50개를 골라 AI 답변이 귀사를 언급하고 링크하는지 기록하세요. 그것이 AI 인용 점유율의 원자료입니다.</li>
+</ol>
+
+<h2 id="when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">대표가 SEO와 GEO가 할 가치가 있느냐고 물으면 뭐라고 답해야 할까요?</h2>
+
+<p>정확한 기여 측정을 약속하지 마세요. 추세와 교차 확인으로 설득하세요. 가상의 예를 들어 보겠습니다. 아웃도어 용품을 파는 독립 스토어의 AI 인용 점유율이 3개월 동안 10분의 1에서 4분의 1로 올랐습니다. 같은 기간 하위 페이지로의 Direct 트래픽과 브랜드 검색이 모두 늘었고, 구매 후 설문에서 'AI 어시스턴트'를 고른 신규 고객도 늘었습니다. 같은 방향으로 움직이는 세 개의 선은 어떤 단일 소스 숫자보다 설득력이 있습니다.</p>
+
+<p>계산에는 단순화한 공식을 쓰세요. SEO와 GEO의 수익은 대략 오가닉 채널에서 추가로 얻은 매출총이익을 같은 기간 콘텐츠, 도구, 인력의 총비용으로 나눈 값입니다. 분자는 주문 데이터와 설문으로 보수적으로 추정하고, 분모에는 팀의 시간을 포함하세요.</p>
+
+<p>그다음 이 오가닉 주문을 같은 기간 광고의 고객 획득 비용과 비교하면, 대표가 이해할 수 있는 기준이 생깁니다. 소수점 둘째 자리까지 계산하지 못하더라도 방향과 규모는 분명하며, 예산 결정을 뒷받침하기에 충분합니다.</p>
+
+<h2 id="what-should-i-watch-for-next">다음으로 무엇을 지켜봐야 할까요?</h2>
+
+<p>OpenAI가 UTM 태그를 되살리거나 링크 작동 방식을 계속 바꿀 수 있고, 다른 AI 플랫폼도 예고 없이 바꿀 수 있습니다. 그러니 1~2주의 변동으로 예산을 결정하지 말고, 측정 체계 전체를 어느 한 플랫폼의 추적 파라미터에 걸지 마세요.</p>
+
+<p>단기적으로는 10월 중순 전후 4주씩의 데이터를 비교 세트로 보관하세요. 나중에 ChatGPT 유입이 돌아오면, 그동안 AI 트래픽이 얼마나 '숨어' 있었는지 대략 추정하는 데 쓸 수 있습니다.</p>
+
+<p>진짜로 안정적인 지표는 AI 답변에 얼마나 자주 나오는지입니다. 매달 직접 표본 점검을 하고 싶지 않다면, <a href="/ko/#geo">ToucHigh의 GEO Autopilot</a>이 UTM 태그 유무와 관계없이 AI 인용 점유율을 직접 추적합니다.</p></div>
+      <aside class="insight" aria-label="인사이트"><div class="eyebrow">인사이트</div><blockquote>숫자만이 아니라 사람들의 머릿속에 있는 것을 측정하세요.</blockquote><p>성과 측정 이론은 우리가 고른 지표가 우리가 내리는 결정을 좌우한다는 것을 일깨워 줍니다. AI 채널의 가치는 추적 가능한 클릭보다 쇼핑객이 귀사를 기억하는 형태로 나타나는 경우가 많아, 소스 데이터만으로는 크게 과소평가됩니다.</p></aside>
+      <section class="prop" aria-label="ToucHigh가 돕는 방법">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh가 돕는 방법</h2></div>
+        <div class="pb prose"><p>UTM 태그는 바뀌고 리퍼러 데이터는 사라지지만, AI 답변이 귀사를 포함하는지는 직접 측정할 수 있습니다. ToucHigh의 GEO Autopilot은 바로 그것을 중심으로 만들어졌습니다.</p><ul><li>ChatGPT, Perplexity, Google AI Overviews / AI Mode, Gemini 전반에서 귀사가 어떤 질문에서 보이지 않는지 진단합니다.</li><li>페이지, 답변, 브랜드 엔티티 데이터를 포함한 개선안을 작성·반영하고, 트렌드에 오른 검색 질문을 중심으로 GEO 아티클을 만듭니다.</li><li>AI 인용 점유율을 지속적으로 추적해, UTM 태그에 의존하지 않는 성과 곡선을 제공합니다.</li></ul><p>먼저 미국 AI 검색에서의 기준선을 확인하고 싶다면 30분 전략 상담을 예약하세요.</p><p class="uc">공장·B2B 공급업체라면: ToucHigh의 <a href="/ko/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T03'})}catch(e){}">AI 검색 공급업체 가시성</a>을 확인하세요. 가시성을 파이프라인으로 바꾸고 싶다면 전략 우선 아웃바운드 서비스 <a href="/ko/pro/" onclick="try{gtag('event','pro_click',{location:'article_T03'})}catch(e){}">ToucHigh PRO</a>를 확인하세요.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T03')">30분 전략 상담 예약 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T03'})}catch(e){}">ToucHigh 로그인</a></div>
+      </section>
+      <section class="faq" aria-label="자주 묻는 질문"><h2>자주 묻는 질문</h2><details open><summary>Direct 트래픽이 갑자기 늘었다면 항상 ChatGPT에서 온 것인가요?</summary><p>꼭 그렇지는 않습니다. Search Engine Land 보도도 Huesler의 분석이 사라진 리퍼러가 모두 같은 원인이라는 것을 증명하지 못한다고 주의를 줍니다. 세 가지를 확인하세요. 증가가 10월 중순에 시작되었는가? 제품 페이지와 아티클 같은 하위 페이지에 집중되어 있는가? 동시에 ChatGPT 유입이 줄었는가? 세 가지가 모두 맞아떨어질 때만 라벨이 바뀐 AI 트래픽일 가능성이 높습니다.</p></details><details><summary>ChatGPT 외 다른 AI 플랫폼의 트래픽은 어떻게 하나요?</summary><p>먼저 GA4의 Referral 보고서에서 어떤 AI 제품 도메인이 실제로 나타나는지 확인하고, 하나의 'AI 어시스턴트' 채널 그룹으로 묶으세요. 하지만 이번 ChatGPT 변화는 플랫폼이 언제든 링크 작동 방식을 바꿀 수 있음을 보여 주므로, 리퍼러 데이터는 하나의 입력값으로만 보고 AI 인용 점유율, 주문 데이터와 함께 읽으세요.</p></details><details><summary>AI 인용 점유율은 어떻게 계산하나요?</summary><p>핵심 질문 세트를 고정하세요. 예를 들어 미국 쇼핑객이 가장 많이 묻는 카테고리 질문 40개입니다. 매달 몇몇 주요 AI 플랫폼에서 모든 질문을 묻고, 귀사 브랜드를 언급하거나 링크한 답변의 수를 세어 전체 답변 수로 나누세요. 40개 질문 중 8개가 귀사를 인용하면 점유율은 20%입니다. 질문 목록을 바꾸지 않아야 추세가 의미를 가집니다.</p></details><details><summary>데이터 분석가가 없는 소규모 팀입니다. 최소한 무엇을 추적해야 하나요?</summary><p>세 가지 숫자면 충분합니다. 월간 AI 인용 점유율, 하위 페이지로의 Direct 트래픽, 구매 후 설문에서 'AI 어시스턴트'를 고른 신규 고객 비중입니다. 첫 번째는 노출, 두 번째는 방문, 세 번째는 매출을 반영합니다. 매달 반나절을 들여 한 스프레드시트에 기록하면, 3개월 뒤 AI 채널이 성장을 이끌고 있는지 알 수 있습니다.</p></details></section>
+      <section class="srcs"><h2>참고 자료</h2><ol><li><a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure</a> — Search Engine Land, 2026-10-15</li></ol></section>
+      <p class="note"><b>이 글을 쓴 이유</b>이 글은 &quot;SEO와 GEO의 수익은 어떻게 계산하나요?&quot;가 셀러가 예산을 정하기 전에 가장 자주 막히는 지점이고, 이번 주 ChatGPT가 UTM 태그를 없앴을 수 있다는 보도로 그 질문이 더 어려워졌기 때문에 작성했습니다.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="이 페이지 내용"><h4>이 페이지 내용</h4><a href="#why-did-my-chatgpt-traffic-suddenly-disappear">ChatGPT 트래픽은 왜 갑자기 '사라졌을까요'?</a><a href="#why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">왜 클릭 데이터만으로는 GEO가 성과를 내는지 알 수 없을까요?</a><a href="#a-three-layer-framework-for-measuring-the-ai-channel">AI 채널 측정을 위한 3층 프레임워크</a><a href="#how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">AI 트래픽을 덜 잃으려면 GA4를 어떻게 설정해야 하나요?</a><a href="#when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">대표가 SEO와 GEO가 할 가치가 있느냐고 물으면 뭐라고 답해야 할까요?</a><a href="#what-should-i-watch-for-next">다음으로 무엇을 지켜봐야 할까요?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>미국 AI 검색에서 어디가 보이지 않는지 확인하세요</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">상담 예약</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">로그인</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>관련 글</h2>
+  <div class="grid"><a class="card" href="/blog/ko/medir-campanas-redes-sociales-pymes/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="흰 선반 위 유리병 세 개에 주황색 구슬이 서로 다른 높이로 차 있습니다. 병에는 눈, 하트와 책갈피, 쇼핑 카트가 달린 커서가 표시되어 있고, 각각 남색 선이 자체 과거 평균을 보여 줍니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ko"><div class="eyebrow">성과 측정</div><h3>분석가 없이 소셜 미디어 캠페인을 측정하는 법: 지표 3가지</h3><p>캠페인이 효과가 있는지 알기 위해 차트로 가득한 대시보드가 필요하지는 않습니다. 지표 세 개, 기준선, 매주 월요일 15분이면 올바른 결정을 내리기에 충분합니다.</p><div class="meta"><span class="lg">한국어</span><span>4분 분량</span></div></div></a><a class="card" href="/blog/ko/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="운전석에서 본 모습입니다. 매장 주인의 두 손이 핸들 위에 놓여 있고, 그 앞 계기판에는 주황색 테두리 게이지가 정확히 세 개, 그리고 작은 경고등이 한 줄 있습니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ko"><div class="eyebrow">성과 측정</div><h3>소규모 비즈니스를 위한 디지털 광고 KPI: 중요한 숫자 3가지</h3><p>미디어 바이어가 없나요? 고객 획득 비용, 광고 지출 대비 수익, 재구매율 또는 리드 품질에 집중하세요. 손익분기 목표를 정하고 주 1회 점검하는 법을 정리했습니다.</p><div class="meta"><span class="lg">한국어</span><span>6분 분량</span></div></div></a><a class="card" href="/blog/ko/measure-influencer-roi-tiktok-shop/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t35-768.webp"><img src="/assets/blog/hero/t35.jpg" alt="링라이트가 달린 휴대폰 거치대 세 개가 나란히 있습니다. 영상 카드가 높이 쌓인 거치대 옆에는 주황색 동전과 쇼핑백이 쌓여 있고, 주판이 선물 상자와 택배를 비용으로 계산하고 있습니다." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ko"><div class="eyebrow">성과 측정</div><h3>소규모 브랜드의 TikTok Shop 인플루언서 마케팅 ROI 측정법</h3><p>무료 샘플을 받은 크리에이터 대부분은 게시하지 않고, 영상 한 편으로는 잘 팔리지 않습니다. 착각 없이 TikTok Shop 크리에이터 ROI를 측정하는 간단한 성과표를 소개합니다.</p><div class="meta"><span class="lg">한국어</span><span>6분 분량</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ko/">← 블로그로 돌아가기</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>미국 AI 검색에서 어디가 보이지 않는지 확인하세요</h2>
+  <p>30분 무료 상담을 예약하시면 스토어의 AI 가시성을 실시간으로 진단해 드립니다.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">30분 전략 상담 예약 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">ToucHigh 로그인</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">중소기업과 크로스보더 셀러를 위한 AI 검색 가시성, 소셜, 광고 오토파일럿.</p></div>
+      <div><h4>ToucHigh</h4><a href="/ko/">홈</a><a href="/ko/#geo">GEO Autopilot</a><a href="/ko/#social">Social Autopilot</a><a href="/ko/pro/">ToucHigh PRO</a></div>
+      <div><h4>블로그</h4><a href="/blog/ko/">블로그</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>로그인</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">상담 예약</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
