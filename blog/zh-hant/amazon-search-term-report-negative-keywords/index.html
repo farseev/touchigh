@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon 搜尋字詞報告：否定關鍵字例行流程 | ToucHigh</title>
+<meta name="description" content="Amazon Sponsored Products 搜尋字詞報告的每週 30 分鐘例行流程：哪些字詞要否定、哪些要移到精確比對，以及依自身數字設定的門檻。">
+<link rel="canonical" href="https://touchigh.ai/blog/zh-hant/amazon-search-term-report-negative-keywords/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="Amazon搜尋字詞報告, Amazon否定關鍵字, Amazon關鍵字收割, 減少Amazon廣告浪費, 否定精確比對 vs 詞組比對, Sponsored Products優化">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/amazon-search-term-report-negative-keywords/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/amazon-search-term-report-negative-keywords/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/zh-hant/amazon-search-term-report-negative-keywords/">
+<meta property="og:title" content="Amazon 搜尋字詞報告：否定關鍵字與關鍵字收割的每週例行流程">
+<meta property="og:description" content="Amazon Sponsored Products 搜尋字詞報告的每週 30 分鐘例行流程：哪些字詞要否定、哪些要移到精確比對，以及依自身數字設定的門檻。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t69-zh-hant.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Amazon 搜尋字詞報告：否定關鍵字與關鍵字收割的每週例行流程">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-11-08T11:40:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T11:40:00+08:00">
+<meta property="article:section" content="廣告投放">
+<meta property="article:tag" content="Amazon 搜尋字詞報告">
+<meta property="article:tag" content="否定關鍵字">
+<meta property="article:tag" content="Amazon PPC">
+<meta property="article:tag" content="關鍵字收割">
+<meta property="article:tag" content="ACoS">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Amazon 搜尋字詞報告：否定關鍵字與關鍵字收割的每週例行流程">
+<meta name="twitter:description" content="Amazon Sponsored Products 搜尋字詞報告的每週 30 分鐘例行流程：哪些字詞要否定、哪些要移到精確比對，以及依自身數字設定的門檻。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t69-zh-hant.jpg">
+<meta name="twitter:image:alt" content="Amazon 搜尋字詞報告：否定關鍵字與關鍵字收割的每週例行流程">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/zh-hant/amazon-search-term-report-negative-keywords/#article","url":"https://touchigh.ai/blog/zh-hant/amazon-search-term-report-negative-keywords/","mainEntityOfPage":"https://touchigh.ai/blog/zh-hant/amazon-search-term-report-negative-keywords/","headline":"Amazon 搜尋字詞報告：否定關鍵字與關鍵字收割的每週例行流程","alternativeHeadline":"Amazon 搜尋字詞報告：否定關鍵字例行流程","description":"Amazon Sponsored Products 搜尋字詞報告的每週 30 分鐘例行流程：哪些字詞要否定、哪些要移到精確比對，以及依自身數字設定的門檻。","abstract":"每週使用搜尋字詞報告。依花費排序，再根據自己的數字套用三條規則：不相關的字詞，或點擊次數已經多到應該有訂單卻一筆都沒有的字詞，加入否定；以低於損益平衡 ACoS 帶來重複訂單的字詞，收割到手動精確比對廣告活動；其餘的在累積資料前先不要動。Amazon 允許您在自動、關鍵字與商品投放的 Sponsored Products 廣告活動中，於廣告活動或廣告群組層級加入否定關鍵字。","image":["https://touchigh.ai/assets/blog/og/t69-zh-hant.jpg","https://touchigh.ai/assets/blog/hero/t16.jpg"],"datePublished":"2026-11-08T11:40:00+08:00","dateModified":"2026-11-08T11:40:00+08:00","inLanguage":"zh-Hant","author":{"@type":"Organization","name":"ToucHigh 研究團隊","url":"https://touchigh.ai/blog/zh-hant/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"廣告投放","keywords":"Amazon搜尋字詞報告, Amazon否定關鍵字, Amazon關鍵字收割, 減少Amazon廣告浪費, 否定精確比對 vs 詞組比對, Sponsored Products優化","wordCount":1856,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/zh-hant/#blog","name":"ToucHigh 部落格"},"about":[{"@type":"Thing","name":"Amazon 搜尋字詞報告"},{"@type":"Thing","name":"否定關鍵字"},{"@type":"Thing","name":"Amazon PPC"},{"@type":"Thing","name":"關鍵字收割"},{"@type":"Thing","name":"ACoS"}],"citation":[{"@type":"CreativeWork","name":"What is keyword targeting?","url":"https://advertising.amazon.com/library/guides/keyword-targeting","publisher":{"@type":"Organization","name":"Amazon Ads"}},{"@type":"CreativeWork","name":"What is advertising cost of sales (ACOS)?","url":"https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales","publisher":{"@type":"Organization","name":"Amazon Ads"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"我們該用否定精確比對還是否定詞組比對？","acceptedAnswer":{"@type":"Answer","text":"針對特定浪費的搜尋，先用否定精確比對。否定詞組比對只用在任何組合都不相關的詞上，例如您不賣的某種材質，因為詞組否定會擋掉所有包含該詞的搜尋。"}},{"@type":"Question","name":"搜尋字詞報告多久看一次？","acceptedAnswer":{"@type":"Answer","text":"對進行中的廣告活動來說，每週一次、使用過去 14 到 30 天的資料是不錯的節奏。每天看大多只會看到雜訊。"}},{"@type":"Question","name":"否定關鍵字會傷害自動廣告活動嗎？","acceptedAnswer":{"@type":"Answer","text":"它會縮小廣告活動的範圍，而這正是目的。Amazon 指出，否定關鍵字有助於避免在不符合目標的搜尋上超支。只要避免在資料很少時就否定即可。"}},{"@type":"Question","name":"我們該否定競爭對手的品牌字詞嗎？","acceptedAnswer":{"@type":"Answer","text":"這是商業決策。有些賣家會在另一個廣告活動中有計畫地測試競爭對手字詞；有些則直接否定。判斷依據是這些點擊能否以低於損益平衡點的 ACoS 轉換。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/zh-hant/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://touchigh.ai/blog/zh-hant/"},{"@type":"ListItem","position":3,"name":"Amazon 搜尋字詞報告：否定關鍵字與關鍵字收割的每週例行流程","item":"https://touchigh.ai/blog/zh-hant/amazon-search-term-report-negative-keywords/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本頁目錄</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/zh-hant/">首頁</a>
+      <a href="/zh-hant/#products">產品</a>
+      <a href="/zh-hant/#faq">常見問題</a>
+      <a href="/zh-hant/pro/">ToucHigh PRO</a>
+      <a href="/blog/zh-hant/" class="on">部落格</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="語言: 繁體中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">繁中</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="語言" hidden><li><a href="/blog/amazon-search-term-report-negative-keywords/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/amazon-search-term-report-negative-keywords/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/amazon-search-term-report-negative-keywords/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中" aria-current="page">繁體中文</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登入</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">預約溝通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/zh-hant/">首頁</a><span>/</span><a href="/blog/zh-hant/">部落格</a><span>/</span><span>廣告投放</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">廣告投放</div>
+    <h1>Amazon 搜尋字詞報告：否定關鍵字與關鍵字收割的每週例行流程</h1>
+    <p class="dek">搜尋字詞報告會顯示買家在點擊廣告前實際輸入了什麼。每週用三條簡單規則檢視一次，不必動任何出價，大部分浪費的花費就會消失。</p>
+    <div class="a-meta"><b>ToucHigh 研究團隊</b><span>發布於 <time datetime="2026-11-08T11:40:00+08:00">2026年11月8日</time></span><span>6 分鐘閱讀</span><span class="lang-badge">繁體中文</span></div>
+    <div class="a-langs">其他語言版本<a href="/blog/amazon-search-term-report-negative-keywords/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/amazon-search-term-report-negative-keywords/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t16-768.webp 768w, /assets/blog/hero/t16-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t16.jpg" alt="一隻戴手套的手拿著橘色剪刀修剪一棵藍灰色葉子的小盆栽，剩下的枝條上留著三顆大大的橘色果實和一個小包裹，剪下的細枝散落在下方。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="這篇文章回答的問題"><span class="qm">“</span><div><div class="eyebrow">這篇文章回答的問題</div><p class="q">我們的 Amazon 自動廣告活動把錢花在跟產品完全無關的搜尋上。要怎麼找出並止住這些浪費，又不把廣告活動搞垮？</p><p class="ans"><b>一句話回答</b>每週使用搜尋字詞報告。依花費排序，再根據自己的數字套用三條規則：不相關的字詞，或點擊次數已經多到應該有訂單卻一筆都沒有的字詞，加入否定；以低於損益平衡 ACoS 帶來重複訂單的字詞，收割到手動精確比對廣告活動；其餘的在累積資料前先不要動。Amazon 允許您在自動、關鍵字與商品投放的 Sponsored Products 廣告活動中，於廣告活動或廣告群組層級加入否定關鍵字。</p></div></section>
+      <section class="kt takeaways"><h2>要點速覽</h2><ul><li>Amazon 的關鍵字投放指南建議定期檢視搜尋字詞報告，了解哪些搜尋帶來銷售。</li><li>否定關鍵字能讓廣告不在特定搜尋中出現；Amazon 在自動、商品與關鍵字投放的 Sponsored Products 廣告活動中都支援，可設在廣告活動或廣告群組層級。</li><li>依轉換率設定「無訂單」門檻：轉換率 10% 時，大約每十次點擊會有一筆訂單，所以 20 次以上點擊卻沒有訂單就是一個訊號。</li><li>收割贏家：有重複訂單且 ACoS 低於損益平衡點的字詞，移到手動精確比對，由您掌控出價。</li><li>資料太少時不要否定。一兩次點擊什麼都證明不了。</li></ul></section>
+      <div class="prose"><p>自動廣告活動和廣泛比對關鍵字，是 Amazon 幫您找到意想不到的買家的方式；也是它把您的錢花在您絕對不想要的買家身上的方式。兩者的差別，就在大多數新賣家從沒打開過的一份報告裡：搜尋字詞報告。</p>
+
+<p>這是每週 30 分鐘的例行流程。不需要工具或代理商，只需要您的損益平衡 ACoS 和一點紀律。</p>
+
+<h2 id="s1">搜尋字詞報告顯示什麼？</h2>
+
+<p>針對 Sponsored Products 廣告活動中的每個投放目標，搜尋字詞報告會列出觸發廣告的顧客搜尋字詞，以及曝光、點擊、花費、訂單和銷售額。換句話說，它顯示的是買家實際輸入的內容，而不是您選的關鍵字。Amazon 的關鍵字投放指南說得很簡單：定期檢視搜尋字詞報告，了解哪些搜尋帶來銷售，找出高成效字詞的規律，並調整策略。</p>
+
+<p>下載過去 14 到 30 天的報告，而不只是上週的，讓搜尋量低的字詞也有機會顯現規律。</p>
+
+<h2 id="s2">哪些搜尋字詞應該加入否定？</h2>
+
+<p>Amazon 把否定關鍵字投放描述為讓廣告不在特定搜尋字詞中出現，避免在不符合目標的搜尋上超支。您可以在 Sponsored Products 的自動、商品與關鍵字投放廣告活動中，於廣告活動或廣告群組層級加入否定關鍵字。</p>
+
+<div class="tw"><table>
+<thead><tr><th>字詞類型</th><th>範例（以矽膠烘焙墊為例）</th><th>處理方式</th></tr></thead>
+<tbody>
+<tr><td>產品不對</td><td>「silicone phone case」（矽膠手機殼）</td><td>立即否定，不論點擊次數</td></tr>
+<tr><td>意圖不對</td><td>「how to clean baking mat」（烘焙墊怎麼清洗）、「free」（免費）、「used」（二手）</td><td>立即否定</td></tr>
+<tr><td>相關、點擊夠多、沒有訂單</td><td>「baking sheet liner」（烤盤墊紙）有 25 次點擊、0 筆訂單</td><td>先確認商品頁符合該搜尋，再否定或降低出價</td></tr>
+<tr><td>競爭對手品牌名稱</td><td>「[品牌] baking mat」</td><td>商業決策：在另一個廣告活動中有計畫地測試，或否定</td></tr>
+<tr><td>相關、點擊少</td><td>任何有 1 到 5 次點擊的字詞</td><td>先不要動</td></tr>
+</tbody>
+</table></div>
+
+<p>「點擊夠多」的界線應該來自您自己的轉換率，而不是別的品類的經驗法則。如果大約每十次點擊有一次成為訂單，那麼 20 次以上點擊卻沒有訂單，就是一個合理的訊號，說明這個字詞賣不動您的產品。如果您的轉換率是 5%，就等到 40 次左右。</p>
+
+<h2 id="s3">哪些搜尋字詞應該收割？</h2>
+
+<p>報告的另一半才是金礦：帶來訂單的字詞。當自動或廣泛比對廣告活動中的某個搜尋字詞，以低於損益平衡點的 ACoS 帶來重複訂單時，就把它作為精確比對關鍵字移到手動廣告活動中。在那裡您直接設定出價，並可以像 Amazon 指南建議的那樣，對賣得好的字詞提高出價，同時讓廣告投資報酬維持健康。</p>
+
+<p>許多賣家接著會把同一個字詞在原本的自動廣告活動中設為否定精確比對，讓兩個廣告活動不爭奪同一個搜尋，資料也保持乾淨。這是一種結構上的選擇，而不是規則；重點是清楚知道每個已驗證的字詞該由哪個廣告活動來買。</p>
+
+<h2 id="s4">每週 30 分鐘的例行流程長什麼樣子？</h2>
+
+<ol>
+<li><strong>下載</strong>過去 14 到 30 天的 Sponsored Products 搜尋字詞報告。</li>
+<li><strong>依花費排序</strong>，由高到低。前 20 列通常包含了大部分的浪費和大部分的贏家。</li>
+<li><strong>否定明顯的字詞：</strong>產品不對和意圖不對的。</li>
+<li>對沒有訂單的相關字詞<strong>套用點擊門檻</strong>：否定或降低出價。</li>
+<li><strong>收割贏家</strong>到手動精確比對，出價以您的損益平衡 CPC 為基準。</li>
+<li><strong>記錄您的調整</strong>和日期，下週就能看到效果。</li>
+</ol>
+
+<h2 id="s5">常見錯誤有哪些？</h2>
+
+<ul>
+<li><strong>否定範圍太廣。</strong>像「mat」這樣的詞組否定，擋掉的遠比您想的多。除非某個詞在任何組合中都確實不相關，否則優先使用精確否定。</li>
+<li><strong>只憑一兩次點擊就否定。</strong>那是雜訊，不是證據。</li>
+<li><strong>把商品頁的問題怪到關鍵字頭上。</strong>如果相關字詞有點擊卻沒有訂單，請對照該買家想要的東西，檢查價格、圖片和評價。</li>
+<li><strong>只做一次。</strong>搜尋行為會隨季節和競爭對手而變化。價值在於每週的習慣。</li>
+</ul></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>關鍵字是您的本意，搜尋字詞報告才是您實際付錢買到的東西。</blockquote><p>修剪之所以在果園有效，和在廣告帳戶有效是同一個道理：去掉消耗資源的部分，最強壯的枝條才能生長。每週報告就是修剪時程表；損益平衡 ACoS 告訴您該從哪裡剪。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能幫您做什麼">
+        <div class="ph"><div class="eyebrow">Ads Autopilot · GEO Autopilot · Social Autopilot</div><h2>ToucHigh 能幫您做什麼</h2></div>
+        <div class="pb prose"><p>如果每週例行流程總是被擱下，ToucHigh 的 Ads Autopilot 可以承擔日常工作：</p><ul><li>以同一套策略在 Amazon、Meta 和 Google 之間運行花費，依 ROAS 自動調整；</li><li>替您處理素材疲勞與預算決策；</li><li>創意概念上線前先做預測成效評分。</li></ul><p>預約 30 分鐘策略通話，帶上您的店鋪網址和一個競爭對手，我們會一起討論一份符合您商品目錄的計畫。</p><p class="uc">亞馬遜賣家：看看ToucHigh<a href="/zh-hant/amazon-ads-autopilot/" onclick="try{gtag('event','landing_click',{location:'article_T69'})}catch(e){}">廣告自動駕駛</a>如何先評分再投放。 需要把曝光變成商機？了解策略先行的外拓獲客服務<a href="/zh-hant/pro/" onclick="try{gtag('event','pro_click',{location:'article_T69'})}catch(e){}">ToucHigh PRO</a>。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T69')">預約30分鐘策略溝通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T69'})}catch(e){}">登入 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常見問題"><h2>常見問題</h2><details open><summary>我們該用否定精確比對還是否定詞組比對？</summary><p>針對特定浪費的搜尋，先用否定精確比對。否定詞組比對只用在任何組合都不相關的詞上，例如您不賣的某種材質，因為詞組否定會擋掉所有包含該詞的搜尋。</p></details><details><summary>搜尋字詞報告多久看一次？</summary><p>對進行中的廣告活動來說，每週一次、使用過去 14 到 30 天的資料是不錯的節奏。每天看大多只會看到雜訊。</p></details><details><summary>否定關鍵字會傷害自動廣告活動嗎？</summary><p>它會縮小廣告活動的範圍，而這正是目的。Amazon 指出，否定關鍵字有助於避免在不符合目標的搜尋上超支。只要避免在資料很少時就否定即可。</p></details><details><summary>我們該否定競爭對手的品牌字詞嗎？</summary><p>這是商業決策。有些賣家會在另一個廣告活動中有計畫地測試競爭對手字詞；有些則直接否定。判斷依據是這些點擊能否以低於損益平衡點的 ACoS 轉換。</p></details></section>
+      <section class="srcs"><h2>參考來源</h2><ol><li><a href="https://advertising.amazon.com/library/guides/keyword-targeting" rel="noopener" target="_blank">What is keyword targeting?</a> — Amazon Ads</li><li><a href="https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales" rel="noopener" target="_blank">What is advertising cost of sales (ACOS)?</a> — Amazon Ads</li></ol></section>
+      <p class="note"><b>我們為什麼寫這篇</b>我們寫這篇文章，是因為我們看到最常見的 Amazon 廣告問題不是出價或預算，而是花在從沒人看過的搜尋上的錢。一份報告、每週一讀，就能解決大部分問題。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本頁目錄"><h4>本頁目錄</h4><a href="#s1">搜尋字詞報告顯示什麼？</a><a href="#s2">哪些搜尋字詞應該加入否定？</a><a href="#s3">哪些搜尋字詞應該收割？</a><a href="#s4">每週 30 分鐘的例行流程長什麼樣子？</a><a href="#s5">常見錯誤有哪些？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美國 AI 搜尋中的曝光盲區</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">預約溝通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登入</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相關文章</h2>
+  <div class="grid"><a class="card" href="/blog/zh-hant/amazon-sponsored-products-first-campaign/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t10-768.webp"><img src="/assets/blog/hero/t10.jpg" alt="實驗台上，一支滴管從一個圍起來的小額測試預算中，把幾枚橘色硬幣滴進燒杯上方一個紫色輪廓的對話框漏斗，旁邊一大罐裝滿硬幣的罐子仍然密封著。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hant"><div class="eyebrow">廣告投放</div><h3>您的第一個 Amazon Sponsored Products 廣告活動：自動 vs 手動、出價與預算</h3><p>推出第一個 Amazon 廣告不需要代理商，但您需要一個能告訴您什麼有效的結構。以下是簡單的雙廣告活動設定、出價算法，以及四週計畫。</p><div class="meta"><span class="lg">繁體中文</span><span>7 分鐘閱讀</span></div></div></a><a class="card" href="/blog/zh-hant/amazon-break-even-acos-tacos/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="從駕駛座的視角看去，店主的雙手放在方向盤上，前方的儀表板上剛好有三個橘色外框的儀表和一排小小的警示燈。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hant"><div class="eyebrow">廣告投放</div><h3>損益平衡 ACoS、TACoS 與 ROAS：每個賣家都需要的 Amazon 廣告算術</h3><p>「多少 ACoS 才算好？」沒有放諸四海皆準的答案，Amazon 自己也這麼說。但您的損益平衡 ACoS 有確切的答案，而每一次出價、每一筆預算、每一個 AI 廣告代理，都應該以它為衡量標準。</p><div class="meta"><span class="lg">繁體中文</span><span>6 分鐘閱讀</span></div></div></a><a class="card" href="/blog/en/amazon-ads-agent-sellers/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t20-768.webp"><img src="/assets/blog/hero/t20.jpg" alt="A friendly robot copilot works the buttons and sliders of a rounded cockpit while a human hand in the foreground holds a compass, an orange padlocked coin box and a key in front of a dashboard of abstract charts." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Ads for SMEs</div><h3>Amazon&#x27;s AI Ad Agent Is Here: What Sellers New to Ads Should Hand Over</h3><p>Amazon Ads Agent hands search, display and full-funnel ads to agentic AI. If you don&#x27;t know how to run ads, skip the all-or-nothing choice and prove it out with a four-week controlled test.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/zh-hant/">← 返回部落格</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美國 AI 搜尋中的曝光盲區</h2>
+  <p>預約一次 30 分鐘免費通話，我們會即時為您的店鋪做一次 AI 能見度檢測。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">預約30分鐘策略溝通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登入 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">為中小企業與跨境賣家提供 AI 搜尋能見度、社群與廣告自動駕駛。</p></div>
+      <div><h4>ToucHigh</h4><a href="/zh-hant/">首頁</a><a href="/zh-hant/#geo">GEO Autopilot</a><a href="/zh-hant/#social">Social Autopilot</a><a href="/zh-hant/pro/">ToucHigh PRO</a></div>
+      <div><h4>部落格</h4><a href="/blog/zh-hant/">部落格</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登入</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">預約溝通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

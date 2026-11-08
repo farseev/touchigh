@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Amazon 賣家的損益平衡 ACoS、TACoS 與 ROAS | ToucHigh</title>
+<meta name="description" content="如何從真實利潤率算出損益平衡 ACoS、ACoS 與 ROAS 的關係、TACoS 的意義，以及如何為獲利、新品上市或清庫存設定目標 ACoS。">
+<link rel="canonical" href="https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="損益平衡ACoS, ACoS怎麼算, ACoS vs ROAS, Amazon TACoS, 目標ACoS, Amazon廣告利潤率">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/">
+<meta property="og:title" content="損益平衡 ACoS、TACoS 與 ROAS：每個賣家都需要的 Amazon 廣告算術">
+<meta property="og:description" content="如何從真實利潤率算出損益平衡 ACoS、ACoS 與 ROAS 的關係、TACoS 的意義，以及如何為獲利、新品上市或清庫存設定目標 ACoS。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t68-zh-hant.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="損益平衡 ACoS、TACoS 與 ROAS：每個賣家都需要的 Amazon 廣告算術">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:section" content="廣告投放">
+<meta property="article:tag" content="ACoS">
+<meta property="article:tag" content="TACoS">
+<meta property="article:tag" content="ROAS">
+<meta property="article:tag" content="Amazon PPC">
+<meta property="article:tag" content="利潤率">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="損益平衡 ACoS、TACoS 與 ROAS：每個賣家都需要的 Amazon 廣告算術">
+<meta name="twitter:description" content="如何從真實利潤率算出損益平衡 ACoS、ACoS 與 ROAS 的關係、TACoS 的意義，以及如何為獲利、新品上市或清庫存設定目標 ACoS。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t68-zh-hant.jpg">
+<meta name="twitter:image:alt" content="損益平衡 ACoS、TACoS 與 ROAS：每個賣家都需要的 Amazon 廣告算術">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/#article","url":"https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/","mainEntityOfPage":"https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/","headline":"損益平衡 ACoS、TACoS 與 ROAS：每個賣家都需要的 Amazon 廣告算術","alternativeHeadline":"Amazon 賣家的損益平衡 ACoS、TACoS 與 ROAS","description":"如何從真實利潤率算出損益平衡 ACoS、ACoS 與 ROAS 的關係、TACoS 的意義，以及如何為獲利、新品上市或清庫存設定目標 ACoS。","abstract":"這完全取決於您的利潤率。Amazon 把 ACoS 定義為廣告花費除以廣告收入，並表示要維持獲利，ACoS 必須低於利潤率。先算出未計廣告成本前的利潤率（售價減去產品成本、Amazon 費用、運費、關稅和預估退貨）；這個百分比就是您的損益平衡 ACoS。如果是 35%，28% 的 ACoS 在歸因銷售上是賺錢的；如果是 22%，每一筆廣告銷售您都在虧錢。接著追蹤 TACoS，也就是總廣告花費除以總銷售額，看看廣告是否在帶動自然銷售。","image":["https://touchigh.ai/assets/blog/og/t68-zh-hant.jpg","https://touchigh.ai/assets/blog/hero/t40.jpg"],"datePublished":"2026-11-08T11:20:00+08:00","dateModified":"2026-11-08T11:20:00+08:00","inLanguage":"zh-Hant","author":{"@type":"Organization","name":"ToucHigh 研究團隊","url":"https://touchigh.ai/blog/zh-hant/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"廣告投放","keywords":"損益平衡ACoS, ACoS怎麼算, ACoS vs ROAS, Amazon TACoS, 目標ACoS, Amazon廣告利潤率","wordCount":1774,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/zh-hant/#blog","name":"ToucHigh 部落格"},"about":[{"@type":"Thing","name":"ACoS"},{"@type":"Thing","name":"TACoS"},{"@type":"Thing","name":"ROAS"},{"@type":"Thing","name":"Amazon PPC"},{"@type":"Thing","name":"利潤率"}],"citation":[{"@type":"CreativeWork","name":"What is advertising cost of sales (ACOS)?","url":"https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales","publisher":{"@type":"Organization","name":"Amazon Ads"}},{"@type":"CreativeWork","name":"Sponsored Products","url":"https://advertising.amazon.com/solutions/products/sponsored-products","publisher":{"@type":"Organization","name":"Amazon Ads"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/amazon-break-even-acos-tacos/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"損益平衡 ACoS 等於利潤率嗎？","acceptedAnswer":{"@type":"Answer","text":"它等於未計廣告成本的利潤率，也就是扣除產品成本、Amazon 費用、物流配送、運費、關稅和退貨後剩下的百分比。在這個 ACoS 下，一筆廣告帶來的銷售利潤為零。"}},{"@type":"Question","name":"為什麼我們的 ACoS 看起來沒問題，銀行存款卻有問題？","acceptedAnswer":{"@type":"Answer","text":"ACoS 只計算歸因的廣告銷售額和廣告花費。費用、運費或退貨上升，可能吃掉您計算損益平衡時依據的利潤，而 TACoS 可能顯示廣告正在取代自然銷售。重新計算利潤率，並查看 TACoS。"}},{"@type":"Question","name":"TACoS 從哪裡取得？","acceptedAnswer":{"@type":"Answer","text":"自行計算：用賣家報表中某段期間的總廣告花費，除以同期間的總銷售額（包括自然訂單）。每月追蹤。"}},{"@type":"Question","name":"應該讓 AI 廣告工具來設定目標 ACoS 嗎？","acceptedAnswer":{"@type":"Answer","text":"讓它朝目標優化，但目標要由您根據利潤率和目的自己設定。工具看到的是廣告資料；您看到的是每件產品的完整成本。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/zh-hant/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://touchigh.ai/blog/zh-hant/"},{"@type":"ListItem","position":3,"name":"損益平衡 ACoS、TACoS 與 ROAS：每個賣家都需要的 Amazon 廣告算術","item":"https://touchigh.ai/blog/zh-hant/amazon-break-even-acos-tacos/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本頁目錄</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/zh-hant/">首頁</a>
+      <a href="/zh-hant/#products">產品</a>
+      <a href="/zh-hant/#faq">常見問題</a>
+      <a href="/zh-hant/pro/">ToucHigh PRO</a>
+      <a href="/blog/zh-hant/" class="on">部落格</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="語言: 繁體中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">繁中</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="語言" hidden><li><a href="/blog/amazon-break-even-acos-tacos/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/amazon-break-even-acos-tacos/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中" aria-current="page">繁體中文</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登入</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">預約溝通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/zh-hant/">首頁</a><span>/</span><a href="/blog/zh-hant/">部落格</a><span>/</span><span>廣告投放</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">廣告投放</div>
+    <h1>損益平衡 ACoS、TACoS 與 ROAS：每個賣家都需要的 Amazon 廣告算術</h1>
+    <p class="dek">「多少 ACoS 才算好？」沒有放諸四海皆準的答案，Amazon 自己也這麼說。但您的損益平衡 ACoS 有確切的答案，而每一次出價、每一筆預算、每一個 AI 廣告代理，都應該以它為衡量標準。</p>
+    <div class="a-meta"><b>ToucHigh 研究團隊</b><span>發布於 <time datetime="2026-11-08T11:20:00+08:00">2026年11月8日</time></span><span>6 分鐘閱讀</span><span class="lang-badge">繁體中文</span></div>
+    <div class="a-langs">其他語言版本<a href="/blog/amazon-break-even-acos-tacos/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp 768w, /assets/blog/hero/t40-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t40.jpg" alt="從駕駛座的視角看去，店主的雙手放在方向盤上，前方的儀表板上剛好有三個橘色外框的儀表和一排小小的警示燈。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="這篇文章回答的問題"><span class="qm">“</span><div><div class="eyebrow">這篇文章回答的問題</div><p class="q">我們的 Amazon 廣告 ACoS 是 28%。這樣算好還是壞？我們要怎麼知道自己實際能負擔多少 ACoS？</p><p class="ans"><b>一句話回答</b>這完全取決於您的利潤率。Amazon 把 ACoS 定義為廣告花費除以廣告收入，並表示要維持獲利，ACoS 必須低於利潤率。先算出未計廣告成本前的利潤率（售價減去產品成本、Amazon 費用、運費、關稅和預估退貨）；這個百分比就是您的損益平衡 ACoS。如果是 35%，28% 的 ACoS 在歸因銷售上是賺錢的；如果是 22%，每一筆廣告銷售您都在虧錢。接著追蹤 TACoS，也就是總廣告花費除以總銷售額，看看廣告是否在帶動自然銷售。</p></div></section>
+      <section class="kt takeaways"><h2>要點速覽</h2><ul><li>Amazon 的公式：ACoS = 廣告花費 ÷ 廣告收入 × 100；ROAS = 廣告收入 ÷ 廣告花費。兩者互為倒數。</li><li>Amazon 的指引：損益平衡 ACoS 與您的利潤率相關；ACoS 必須保持在其之下才能獲利。</li><li>使用未計廣告成本、但已扣除其他所有成本後的利潤率：產品、Amazon 費用、物流履約、運費、關稅和退貨。</li><li>TACoS（總廣告花費 ÷ 總銷售額）不在 Amazon 的 ACoS 指南中；賣家自行計算，以判斷廣告是否帶動自然銷售。</li><li>為每個目標設定不同的目標 ACoS：獲利、新品上市或清庫存。Amazon 自己也提醒不要只盯著 ACoS。</li></ul></section>
+      <div class="prose"><p>ACoS 是 Amazon 賣家最常掛在嘴邊、卻最不了解的數字。代理商回報它，AI 廣告工具朝它優化，賣家則為了什麼才算好的 ACoS 爭論不休。Amazon 自己的指南誠實回答了最後這個問題：好的 ACoS 沒有確定的數字，它取決於您的產業、規模和目標。您能精確算出的，是讓廣告開始不賺錢的那個 ACoS。其他所有決策都應該從那裡出發。</p>
+
+<h2 id="s1">ACoS 和 ROAS 有什麼關係？</h2>
+
+<p>Amazon 把廣告銷售成本（ACoS）定義為廣告花費除以廣告收入，以百分比表示。它的例子是：花費 $50，獲得 $100 廣告歸因銷售額，ACoS 就是 50%。廣告投資報酬率（ROAS）則是倒數，也就是廣告收入除以廣告花費，所以同一個廣告活動的 ROAS 是 2。</p>
+
+<div class="tw"><table>
+<thead><tr><th>ACoS</th><th>對應 ROAS</th><th>含義</th></tr></thead>
+<tbody>
+<tr><td>20%</td><td>5.0</td><td>$1 廣告帶來 $5 歸因銷售額</td></tr>
+<tr><td>25%</td><td>4.0</td><td>$1 廣告帶來 $4</td></tr>
+<tr><td>33%</td><td>3.0</td><td>$1 廣告帶來 $3</td></tr>
+<tr><td>50%</td><td>2.0</td><td>$1 廣告帶來 $2</td></tr>
+</tbody>
+</table></div>
+
+<p>Amazon 報表和許多跨管道工具都回報 ROAS；賣家的試算表則通常用 ACoS。兩者承載的資訊相同。決策時選定一個，比較時再換算。</p>
+
+<h2 id="s2">如何計算損益平衡 ACoS？</h2>
+
+<p>Amazon 的指南說得很清楚：損益平衡 ACoS 與您的利潤率直接相關，ACoS 必須低於利潤率才能維持獲利。真正的功夫在於誠實地算出這個利潤率：未計廣告成本，但扣除其他所有成本。</p>
+
+<div class="tw"><table>
+<thead><tr><th>項目（示意，每件）</th><th>金額</th></tr></thead>
+<tbody>
+<tr><td>售價</td><td>$40.00</td></tr>
+<tr><td>產品成本（到岸成本，含關稅與運費）</td><td>−$12.00</td></tr>
+<tr><td>Amazon 銷售佣金</td><td>−$6.00</td></tr>
+<tr><td>物流配送費</td><td>−$6.50</td></tr>
+<tr><td>退貨及其他折讓</td><td>−$1.50</td></tr>
+<tr><td><strong>未計廣告成本的利潤</strong></td><td><strong>$14.00 = 售價的 35%</strong></td></tr>
+</tbody>
+</table></div>
+
+<p>在這個示意中，損益平衡 ACoS 是 35%，損益平衡 ROAS 是 1 ÷ 0.35，約 2.9。請使用您自己的數字：費用因品類和尺寸而異，跨境賣家的到岸成本也會隨運費和關稅變動。只要其中一項改變，就重新計算。關稅調整前還賺錢的廣告活動，調整後即使 ACoS 不變，也可能開始虧錢。</p>
+
+<h2 id="s3">TACoS 補充了什麼？</h2>
+
+<p>ACoS 只看 Amazon 歸因於廣告的銷售額，無法告訴您廣告是否在幫助業務的其他部分。這就是 TACoS（總廣告銷售成本）的用途：總廣告花費除以總銷售額，包括自然訂單。它不在 Amazon 的 ACoS 指南所列的指標中；賣家根據 Seller Central 中的廣告花費和總銷售額自行計算。</p>
+
+<ul>
+<li><strong>TACoS 下降、銷售額上升：</strong>自然銷售的成長快於廣告花費。廣告很可能在幫助排名和回購。</li>
+<li><strong>TACoS 上升、總銷售額持平：</strong>您在為原本可能就會有的銷售付費，或者廣告正在取代自然銷售，而不是增加銷售。</li>
+<li><strong>TACoS 穩定、ACoS 改善：</strong>廣告內部的效率提升；請確認總銷售額沒有萎縮。</li>
+</ul>
+
+<h2 id="s4">該如何設定目標 ACoS？</h2>
+
+<p>Amazon 建議從損益平衡點出發，再決定每個品牌和廣告活動最重要的是什麼。實務上，依目標設定：</p>
+
+<div class="tw"><table>
+<thead><tr><th>目標</th><th>目標 ACoS</th><th>同時檢查</th></tr></thead>
+<tbody>
+<tr><td>成熟產品獲利</td><td>明顯低於損益平衡點</td><td>扣除廣告後的每件淨利</td></tr>
+<tr><td>新品上市</td><td>在固定期間內等於或暫時高於損益平衡點</td><td>評價、自然排名、TACoS 趨勢</td></tr>
+<tr><td>清理舊庫存</td><td>最高到您在折扣上願意接受的虧損</td><td>售出件數、省下的倉儲費用</td></tr>
+</tbody>
+</table></div>
+
+<p>在廣告活動開始前寫下目標和時限，並把同樣的數字交給任何管理您出價的人或工具。一個不知道您損益平衡線、只朝「ROAS」優化的 AI 廣告代理，可能非常有效率地幫您虧錢。</p>
+
+<h2 id="s5">ACoS 沒有告訴您什麼？</h2>
+
+<p>Amazon 的指南有一節標題是「為什麼不該過度關注 ACOS」，建議同時查看曝光、轉換率、點閱率和投資報酬率。ACoS 忽略了新顧客的長期價值、對自然排名的光環效應，以及庫存在倉庫中閒置的成本。把損益平衡 ACoS 當作保護您的底線，把 TACoS 當作呈現全貌的趨勢，最終由實際利潤來評判。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>好的 ACoS 就是低於您利潤率的數字。其他都只是意見。</blockquote><p>管理會計把這叫做邊際貢獻：每筆銷售在扣除變動成本後所貢獻的金額。損益平衡 ACoS 不過是以廣告預算形式表示的邊際貢獻，這也是為什麼該拿來管理的是它，而不是產業平均值。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能幫您做什麼">
+        <div class="ph"><div class="eyebrow">Ads Autopilot · GEO Autopilot · Social Autopilot</div><h2>ToucHigh 能幫您做什麼</h2></div>
+        <div class="pb prose"><p>一旦知道您的底線，ToucHigh 的 Ads Autopilot 就能依此運作：</p><ul><li>以同一套策略在 Amazon、Meta 和 Google 之間運行花費，依 ROAS 自動調整；</li><li>處理素材疲勞與預算決策，讓疲乏的廣告不會悄悄吃掉利潤；</li><li>創意概念上線前先做預測成效評分。</li></ul><p>預約 30 分鐘策略通話，帶上您的利潤試算表；我們會一起討論一份符合您商品目錄的計畫。</p><p class="uc">亞馬遜賣家：看看ToucHigh<a href="/zh-hant/amazon-ads-autopilot/" onclick="try{gtag('event','landing_click',{location:'article_T68'})}catch(e){}">廣告自動駕駛</a>如何先評分再投放。 需要把曝光變成商機？了解策略先行的外拓獲客服務<a href="/zh-hant/pro/" onclick="try{gtag('event','pro_click',{location:'article_T68'})}catch(e){}">ToucHigh PRO</a>。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T68')">預約30分鐘策略溝通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T68'})}catch(e){}">登入 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常見問題"><h2>常見問題</h2><details open><summary>損益平衡 ACoS 等於利潤率嗎？</summary><p>它等於未計廣告成本的利潤率，也就是扣除產品成本、Amazon 費用、物流配送、運費、關稅和退貨後剩下的百分比。在這個 ACoS 下，一筆廣告帶來的銷售利潤為零。</p></details><details><summary>為什麼我們的 ACoS 看起來沒問題，銀行存款卻有問題？</summary><p>ACoS 只計算歸因的廣告銷售額和廣告花費。費用、運費或退貨上升，可能吃掉您計算損益平衡時依據的利潤，而 TACoS 可能顯示廣告正在取代自然銷售。重新計算利潤率，並查看 TACoS。</p></details><details><summary>TACoS 從哪裡取得？</summary><p>自行計算：用賣家報表中某段期間的總廣告花費，除以同期間的總銷售額（包括自然訂單）。每月追蹤。</p></details><details><summary>應該讓 AI 廣告工具來設定目標 ACoS 嗎？</summary><p>讓它朝目標優化，但目標要由您根據利潤率和目的自己設定。工具看到的是廣告資料；您看到的是每件產品的完整成本。</p></details></section>
+      <section class="srcs"><h2>參考來源</h2><ol><li><a href="https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales" rel="noopener" target="_blank">What is advertising cost of sales (ACOS)?</a> — Amazon Ads</li><li><a href="https://advertising.amazon.com/solutions/products/sponsored-products" rel="noopener" target="_blank">Sponsored Products</a> — Amazon Ads</li></ol></section>
+      <p class="note"><b>我們為什麼寫這篇</b>我們寫這篇文章，是因為賣家常拿與自身成本毫無關係的產業平均值來評判 ACoS。Amazon 的指南回歸利潤率，我們也是。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本頁目錄"><h4>本頁目錄</h4><a href="#s1">ACoS 和 ROAS 有什麼關係？</a><a href="#s2">如何計算損益平衡 ACoS？</a><a href="#s3">TACoS 補充了什麼？</a><a href="#s4">該如何設定目標 ACoS？</a><a href="#s5">ACoS 沒有告訴您什麼？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美國 AI 搜尋中的曝光盲區</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">預約溝通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登入</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相關文章</h2>
+  <div class="grid"><a class="card" href="/blog/zh-hant/amazon-sponsored-products-first-campaign/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t10-768.webp"><img src="/assets/blog/hero/t10.jpg" alt="實驗台上，一支滴管從一個圍起來的小額測試預算中，把幾枚橘色硬幣滴進燒杯上方一個紫色輪廓的對話框漏斗，旁邊一大罐裝滿硬幣的罐子仍然密封著。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hant"><div class="eyebrow">廣告投放</div><h3>您的第一個 Amazon Sponsored Products 廣告活動：自動 vs 手動、出價與預算</h3><p>推出第一個 Amazon 廣告不需要代理商，但您需要一個能告訴您什麼有效的結構。以下是簡單的雙廣告活動設定、出價算法，以及四週計畫。</p><div class="meta"><span class="lg">繁體中文</span><span>7 分鐘閱讀</span></div></div></a><a class="card" href="/blog/en/amazon-ads-agent-sellers/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t20-768.webp"><img src="/assets/blog/hero/t20.jpg" alt="A friendly robot copilot works the buttons and sliders of a rounded cockpit while a human hand in the foreground holds a compass, an orange padlocked coin box and a key in front of a dashboard of abstract charts." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Ads for SMEs</div><h3>Amazon&#x27;s AI Ad Agent Is Here: What Sellers New to Ads Should Hand Over</h3><p>Amazon Ads Agent hands search, display and full-funnel ads to agentic AI. If you don&#x27;t know how to run ads, skip the all-or-nothing choice and prove it out with a four-week controlled test.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="Seen from the driver&#x27;s seat, a shop owner&#x27;s hands rest on a steering wheel in front of a dashboard with exactly three orange-rimmed gauges and a row of small warning lights." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>Digital Advertising KPIs for Small Business: The 3 Numbers That Matter</h3><p>No media buyer? Focus on cost per acquisition, return on ad spend and repeat or lead quality. Here&#x27;s how to set break-even targets and review them once a week.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/zh-hant/">← 返回部落格</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美國 AI 搜尋中的曝光盲區</h2>
+  <p>預約一次 30 分鐘免費通話，我們會即時為您的店鋪做一次 AI 能見度檢測。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">預約30分鐘策略溝通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登入 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">為中小企業與跨境賣家提供 AI 搜尋能見度、社群與廣告自動駕駛。</p></div>
+      <div><h4>ToucHigh</h4><a href="/zh-hant/">首頁</a><a href="/zh-hant/#geo">GEO Autopilot</a><a href="/zh-hant/#social">Social Autopilot</a><a href="/zh-hant/pro/">ToucHigh PRO</a></div>
+      <div><h4>部落格</h4><a href="/blog/zh-hant/">部落格</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登入</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">預約溝通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

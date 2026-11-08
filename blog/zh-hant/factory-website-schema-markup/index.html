@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>工廠網站結構化資料：該加什麼 | ToucHigh</title>
+<meta name="description" content="B2B 工廠網站需要哪些結構化資料：Organization、Product 摘要與 Breadcrumb，為何 FAQ 標記很少帶來複合式結果，以及 Google 對 AI 的說法。">
+<link rel="canonical" href="https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="製造商結構化資料標記, 工廠網站結構化資料, B2B Organization schema, 工廠Product結構化資料, FAQ schema 2026, 出口企業JSON-LD">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/factory-website-schema-markup/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/">
+<meta property="og:title" content="工廠網站的結構化資料標記：Organization、Product 與 FAQ 的正確做法">
+<meta property="og:description" content="B2B 工廠網站需要哪些結構化資料：Organization、Product 摘要與 Breadcrumb，為何 FAQ 標記很少帶來複合式結果，以及 Google 對 AI 的說法。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t62-zh-hant.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="工廠網站的結構化資料標記：Organization、Product 與 FAQ 的正確做法">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:section" content="SEO">
+<meta property="article:tag" content="結構化資料">
+<meta property="article:tag" content="Schema.org">
+<meta property="article:tag" content="工廠網站">
+<meta property="article:tag" content="B2B SEO">
+<meta property="article:tag" content="實體資料">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="工廠網站的結構化資料標記：Organization、Product 與 FAQ 的正確做法">
+<meta name="twitter:description" content="B2B 工廠網站需要哪些結構化資料：Organization、Product 摘要與 Breadcrumb，為何 FAQ 標記很少帶來複合式結果，以及 Google 對 AI 的說法。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t62-zh-hant.jpg">
+<meta name="twitter:image:alt" content="工廠網站的結構化資料標記：Organization、Product 與 FAQ 的正確做法">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/#article","url":"https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/","mainEntityOfPage":"https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/","headline":"工廠網站的結構化資料標記：Organization、Product 與 FAQ 的正確做法","alternativeHeadline":"工廠網站結構化資料：該加什麼","description":"B2B 工廠網站需要哪些結構化資料：Organization、Product 摘要與 Breadcrumb，為何 FAQ 標記很少帶來複合式結果，以及 Google 對 AI 的說法。","abstract":"加上三種類型，並保持準確：首頁的 Organization（名稱、標誌、地址、聯絡方式，以及連到官方帳號的 sameAs 連結）、每個產品或能力頁面上採用 Google 產品摘要格式的 Product 標記，以及全站的 BreadcrumbList。FAQ 標記是選用的，因為自 2023 年起，Google 只為知名的政府和健康網站顯示 FAQ 複合式搜尋結果。Google 表示，要出現在 AI Overviews 中不需要特殊的結構化資料；標記只需與頁面上可見的文字一致。","image":["https://touchigh.ai/assets/blog/og/t62-zh-hant.jpg","https://touchigh.ai/assets/blog/hero/t57.jpg"],"datePublished":"2026-11-08T09:20:00+08:00","dateModified":"2026-11-08T09:20:00+08:00","inLanguage":"zh-Hant","author":{"@type":"Organization","name":"ToucHigh 研究團隊","url":"https://touchigh.ai/blog/zh-hant/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"SEO","keywords":"製造商結構化資料標記, 工廠網站結構化資料, B2B Organization schema, 工廠Product結構化資料, FAQ schema 2026, 出口企業JSON-LD","wordCount":2123,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/zh-hant/#blog","name":"ToucHigh 部落格"},"about":[{"@type":"Thing","name":"結構化資料"},{"@type":"Thing","name":"Schema.org"},{"@type":"Thing","name":"工廠網站"},{"@type":"Thing","name":"B2B SEO"},{"@type":"Thing","name":"實體資料"}],"citation":[{"@type":"CreativeWork","name":"Organization (Organization) structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/organization","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to Product structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/product","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Changes to HowTo and FAQ rich results","url":"https://developers.google.com/search/blog/2023/08/howto-faq-changes","datePublished":"2023-08-08","publisher":{"@type":"Organization","name":"Google Search Central Blog"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Rich Results Test","url":"https://search.google.com/test/rich-results","publisher":{"@type":"Organization","name":"Google"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/factory-website-schema-markup/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"該用 JSON-LD 還是微資料（microdata）？","acceptedAnswer":{"@type":"Answer","text":"Google 接受多種格式，而 JSON-LD 通常最容易維護，因為它集中在一個 script 區塊中，而不是穿插在 HTML 裡。無論選哪種，都要保持單一事實來源，讓標記和可見文字永遠不會脫節。"}},{"@type":"Question","name":"只在報價單中提供的價格，可以加上標記嗎？","acceptedAnswer":{"@type":"Answer","text":"不行。結構化資料應該描述頁面上的內容。如果頁面沒有顯示價格，就省略價格，並使用產品摘要格式，這是 Google 為使用者無法直接購買的頁面設計的。"}},{"@type":"Question","name":"我們需要 LocalBusiness 標記嗎？","acceptedAnswer":{"@type":"Answer","text":"只有在買家會以在地商家的形式親自造訪您時才需要，例如有營業時間的展示間。對出口製造商來說，附有真實地址的 Organization 通常才是正確的類型。"}},{"@type":"Question","name":"結構化資料標記能讓我們出現在 ChatGPT 的答案中嗎？","acceptedAnswer":{"@type":"Answer","text":"單靠它不行。Google 表示其 AI 功能不需要特殊的結構化資料，而其他助理依靠的是它們能抓取的頁面，以及在整個網路上找到的資訊。標記的幫助在於清楚陳述您的實體事實；內容本身仍然必須回答買家的問題。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/zh-hant/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://touchigh.ai/blog/zh-hant/"},{"@type":"ListItem","position":3,"name":"工廠網站的結構化資料標記：Organization、Product 與 FAQ 的正確做法","item":"https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本頁目錄</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/zh-hant/">首頁</a>
+      <a href="/zh-hant/#products">產品</a>
+      <a href="/zh-hant/#faq">常見問題</a>
+      <a href="/zh-hant/pro/">ToucHigh PRO</a>
+      <a href="/blog/zh-hant/" class="on">部落格</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="語言: 繁體中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">繁中</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="語言" hidden><li><a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/factory-website-schema-markup/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中" aria-current="page">繁體中文</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登入</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">預約溝通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/zh-hant/">首頁</a><span>/</span><a href="/blog/zh-hant/">部落格</a><span>/</span><span>SEO</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">SEO</div>
+    <h1>工廠網站的結構化資料標記：Organization、Product 與 FAQ 的正確做法</h1>
+    <p class="dek">結構化資料本身不會讓 ChatGPT 推薦您，但它能消除關於「您是誰、生產什麼」的疑慮。以下是工廠網站需要的精簡清單，以及可以略過的部分。</p>
+    <div class="a-meta"><b>ToucHigh 研究團隊</b><span>發布於 <time datetime="2026-11-08T09:20:00+08:00">2026年11月8日</time></span><span>6 分鐘閱讀</span><span class="lang-badge">繁體中文</span></div>
+    <div class="a-langs">其他語言版本<a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t57-768.webp 768w, /assets/blog/hero/t57-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t57.jpg" alt="一台小型起重機吊起一個托盤，上面有六個內容方塊：識別證、規格表、對話框、證書、天平和星星，正朝一個 AI 答案視窗移動，視窗中一枚橘色工廠徽章占據了最頂端的位置。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="這篇文章回答的問題"><span class="qm">“</span><div><div class="eyebrow">這篇文章回答的問題</div><p class="q">我們的工程師問，工廠的英文網站該加哪些結構化資料標記。Google 和 AI 需要它嗎？哪些類型比較重要？</p><p class="ans"><b>一句話回答</b>加上三種類型，並保持準確：首頁的 Organization（名稱、標誌、地址、聯絡方式，以及連到官方帳號的 sameAs 連結）、每個產品或能力頁面上採用 Google 產品摘要格式的 Product 標記，以及全站的 BreadcrumbList。FAQ 標記是選用的，因為自 2023 年起，Google 只為知名的政府和健康網站顯示 FAQ 複合式搜尋結果。Google 表示，要出現在 AI Overviews 中不需要特殊的結構化資料；標記只需與頁面上可見的文字一致。</p></div></section>
+      <section class="kt takeaways"><h2>要點速覽</h2><ul><li>Google 的文件指出，要出現在 AI Overviews 或 AI Mode 中，不需要特殊的 schema.org 標記；結構化資料應與頁面上可見的文字一致。</li><li>Organization 標記沒有必填屬性；Google 建議提供名稱、address 或 telephone 等實體存在資訊，以及 url 或 logo 等線上存在資訊。</li><li>不在線上銷售的工廠，應使用 Google 的產品摘要格式，它是為使用者無法直接購買的產品頁面設計的。</li><li>自 2023 年 8 月起，FAQ 複合式搜尋結果僅限於知名、權威的政府和健康網站，所以請把 FAQ 標記視為選用。</li><li>用 Google 的複合式搜尋結果測試驗證每個範本，修正錯誤後再把標記推廣到所有頁面。</li></ul></section>
+      <div class="prose"><p>問三家 SEO 服務商工廠網站需要哪些結構化資料，您會得到三份長長的清單，而且大多數都做過頭了。向海外買家銷售的 B2B 製造商，只需要在買家實際會讀的頁面上加少量結構化資料，並保持準確。本指南說明該加什麼、該略過什麼，以及它與 AI 搜尋的關係。</p>
+
+<h2 id="s1">結構化資料能幫助工廠被 AI 引用嗎？</h2>
+
+<p>先看 Google 怎麼說。它給網站擁有者的 AI 功能指引指出：要出現在 AI Overviews 或 AI Mode 中沒有額外要求，不需要新的機器可讀檔案或標記，也沒有必須加入的特殊 schema.org 結構化資料。同一頁面把「確保結構化資料與頁面上可見的文字一致」列為一般的 SEO 最佳做法。</p>
+
+<p>所以結構化資料不是一個打開 AI 引用的開關。它的作用是消除模糊。它以機器可讀的方式說明：這個頁面是關於這家公司、在這個地址、生產這些產品、擁有這些官方帳號。對英文名、中文名和貿易公司名稱在網路上常常不一致的中國工廠來說，這份清晰值得工程師花一個下午。</p>
+
+<h2 id="s2">工廠首頁的 Organization 標記應包含什麼？</h2>
+
+<p>Google 的 Organization 文件指出沒有必填屬性；它建議加入與您組織相關的屬性，重點放在對使用者有用的屬性，例如 name 或 alternateName、address 或 telephone 等實體存在的跡象，以及 url 或 logo 等線上存在資訊。其範例也用 sameAs 列出官方帳號。</p>
+
+<div class="tw"><table>
+<thead><tr><th>屬性</th><th>工廠該填什麼</th><th>常見錯誤</th></tr></thead>
+<tbody>
+<tr><td>name</td><td>您登記的英文公司名稱，與發票上完全一致</td><td>使用行銷口號或貿易公司的名稱</td></tr>
+<tr><td>alternateName</td><td>簡短的品牌名、中文名的拼音或漢字</td><td>省略不填，導致 AI 無法把不同名稱串連起來</td></tr>
+<tr><td>url, logo</td><td>首頁網址和穩定的標誌圖片網址</td><td>每次改版都會變動的標誌網址</td></tr>
+<tr><td>address, telephone, email</td><td>工廠的真實地址和有人負責的業務聯絡方式</td><td>與電商平台店鋪不同的地址</td></tr>
+<tr><td>sameAs</td><td>LinkedIn 公司頁面、電商平台店鋪、YouTube 頻道</td><td>連到不活躍或屬於代理商的帳號</td></tr>
+<tr><td>foundingDate, numberOfEmployees</td><td>您在「關於我們」頁面上也會寫明的事實</td><td>任何可見位置都找不到的數字</td></tr>
+</tbody>
+</table></div>
+
+<p>把 Organization 放在首頁（如有需要，也可以放在「關於我們」頁面），不要在每個頁面上用不同的值重複出現。這些事實必須與訪客看到的一致。</p>
+
+<h2 id="s3">不在線上銷售的工廠，適合哪種 Product 標記？</h2>
+
+<p>Google 把產品結構化資料分為兩類。產品摘要用於使用者無法直接購買產品的產品頁面；商家資訊則用於顧客可以向您購買的頁面，提供更多運送和退貨選項。大多數 B2B 工廠採用詢價報價，所以產品摘要才是如實的選擇。</p>
+
+<p>在每個產品或能力頁面上，用 name、description、image、brand（您的品牌或「OEM」），以及適用的材質或類別來描述產品。不要為了爭取複合式搜尋結果而編造價格或評分；如果價格只存在於報價單中，就省略不填。一個規格準確且清楚可見的產品頁面，對買家和 AI 的幫助，都勝過承諾比頁面內容更多的標記。</p>
+
+<h2 id="s4">FAQ 結構化資料還值得加嗎？</h2>
+
+<p>2023 年 8 月，Google 宣布降低 FAQ 複合式搜尋結果的能見度：來自 FAQPage 結構化資料的 FAQ 複合式結果，只會在知名、權威的政府和健康網站上顯示。對工廠網站來說，這表示 FAQ 標記幾乎不可能產生某些代理商仍在兜售的那種可展開結果。</p>
+
+<p>FAQ 本身仍然很有價值。可見的問與答（「客製顏色的最低訂購量是多少？」「你們通過了哪些食品接觸檢測？」）正是 AI 答案可以直接引用的段落。保留可見的 FAQ，讓每個答案的第一句都能獨立成立，並把 FAQPage 標記當作選用的整理工作。</p>
+
+<h2 id="s5">工廠該如何推行結構化資料？</h2>
+
+<ol>
+<li><strong>先把事實定下來。</strong>決定您在所有地方都會使用的單一英文公司名稱、地址和產品類別。</li>
+<li><strong>在首頁加入 Organization</strong>，包含 name、alternateName、url、logo、address、聯絡方式和 sameAs。</li>
+<li><strong>在一個範本中加入 Product</strong>（一個產品或能力頁面），並在全站加入 BreadcrumbList。</li>
+<li><strong>用複合式搜尋結果測試驗證</strong>，修正重大錯誤後再推廣該範本。</li>
+<li><strong>逐頁推行</strong>，檢查每個被標記的值都出現在可見文字中。</li>
+<li><strong>每次改版後重新檢查。</strong>更換佈景主題時，範本常會遺失或重複 JSON-LD。</li>
+</ol>
+
+<h2 id="s6">結構化資料無法解決什麼？</h2>
+
+<p>標記無法讓內容單薄的頁面變得有用。如果您的能力頁面寫的是「先進設備、嚴格品管」卻沒有任何數字，加上 Product 結構化資料只是在一個空箱子上貼標籤。GEO 的工作順序不變：第一，頁面上要有具體、可驗證的內容；第二，整個網路上的實體資訊要一致；第三，用結構化資料清楚描述前兩者。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>標記是箱子上的標籤，填不滿箱子。</blockquote><p>訊號理論指出，只有偽造成本高的訊號才可信。反映詳細、可見事實（證書編號、產能、真實地址）的結構化資料能強化信任；宣稱內容多於頁面所示的結構化資料，則是搜尋引擎和買家都會學著忽略的空話。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能幫您做什麼">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh 能幫您做什麼</h2></div>
+        <div class="pb prose"><p>ToucHigh 的 GEO Autopilot 把結構化資料視為修正工作的一部分，而不是獨立的專案：</p><ul><li>檢查您的工廠在 ChatGPT、Perplexity、Google AI 和 Gemini 中隱形的地方；</li><li>撰寫並上線修正內容，包括頁面、問答與實體資料，讓事實與標記保持一致；</li><li>追蹤您的 AI 引用份額，讓您看到哪些頁面開始被引用。</li></ul><p>預約 30 分鐘策略通話，帶上一個產品頁面；我們會一起檢視頁面寫了什麼、標記寫了什麼，以及 AI 怎麼描述您。</p><p class="uc">工廠與B2B供應商：看看ToucHigh如何提升<a href="/zh-hant/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T62'})}catch(e){}">AI搜尋中的供應商能見度</a>。 需要把曝光變成商機？了解策略先行的外拓獲客服務<a href="/zh-hant/pro/" onclick="try{gtag('event','pro_click',{location:'article_T62'})}catch(e){}">ToucHigh PRO</a>。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T62')">預約30分鐘策略溝通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T62'})}catch(e){}">登入 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常見問題"><h2>常見問題</h2><details open><summary>該用 JSON-LD 還是微資料（microdata）？</summary><p>Google 接受多種格式，而 JSON-LD 通常最容易維護，因為它集中在一個 script 區塊中，而不是穿插在 HTML 裡。無論選哪種，都要保持單一事實來源，讓標記和可見文字永遠不會脫節。</p></details><details><summary>只在報價單中提供的價格，可以加上標記嗎？</summary><p>不行。結構化資料應該描述頁面上的內容。如果頁面沒有顯示價格，就省略價格，並使用產品摘要格式，這是 Google 為使用者無法直接購買的頁面設計的。</p></details><details><summary>我們需要 LocalBusiness 標記嗎？</summary><p>只有在買家會以在地商家的形式親自造訪您時才需要，例如有營業時間的展示間。對出口製造商來說，附有真實地址的 Organization 通常才是正確的類型。</p></details><details><summary>結構化資料標記能讓我們出現在 ChatGPT 的答案中嗎？</summary><p>單靠它不行。Google 表示其 AI 功能不需要特殊的結構化資料，而其他助理依靠的是它們能抓取的頁面，以及在整個網路上找到的資訊。標記的幫助在於清楚陳述您的實體事實；內容本身仍然必須回答買家的問題。</p></details></section>
+      <section class="srcs"><h2>參考來源</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/structured-data/organization" rel="noopener" target="_blank">Organization (Organization) structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener" target="_blank">Introduction to Product structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/blog/2023/08/howto-faq-changes" rel="noopener" target="_blank">Changes to HowTo and FAQ rich results</a> — Google Search Central Blog, 2023-08-08</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://search.google.com/test/rich-results" rel="noopener" target="_blank">Rich Results Test</a> — Google</li></ol></section>
+      <p class="note"><b>我們為什麼寫這篇</b>我們寫這篇文章，是因為工廠不斷收到「AI 結構化資料套餐」的報價。官方文件已經寫得夠清楚：一份簡短、準確的清單，勝過一份冗長、灌水的清單。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本頁目錄"><h4>本頁目錄</h4><a href="#s1">結構化資料能幫助工廠被 AI 引用嗎？</a><a href="#s2">工廠首頁的 Organization 標記應包含什麼？</a><a href="#s3">不在線上銷售的工廠，適合哪種 Product 標記？</a><a href="#s4">FAQ 結構化資料還值得加嗎？</a><a href="#s5">工廠該如何推行結構化資料？</a><a href="#s6">結構化資料無法解決什麼？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美國 AI 搜尋中的曝光盲區</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">預約溝通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登入</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相關文章</h2>
+  <div class="grid"><a class="card" href="/blog/en/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Among a row of identical grey factories, one white and orange factory is lit by a spotlight from an AI chat bubble, above a panel of icons for machinery, certification, materials, lead time and FAQs." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites</h3><p>Overseas buyers are starting to use AI to find suppliers. A factory site with only a company profile and product photos rarely gets recommended by ChatGPT. Here&#x27;s a checklist of citable pages and first GEO steps.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/zh-hant/us-brand-entity-chinese-brands-google-ai/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t48-768.webp"><img src="/assets/blog/hero/t48.jpg" alt="一家掛著橘色條紋遮陽篷的小店位於巨大的地圖標記下方，以虛線連到地圖資訊、網站視窗和手機上的商家檔案，三者都顯示相同的時鐘、電話、地球與星星圖示，旁邊是一本只有一格橘色的月曆。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hant"><div class="eyebrow">跨境出海</div><h3>建立美國品牌實體：中國品牌如何被 Google 與 AI 正確辨識</h3><p>許多中國品牌在網路上是三個「半個品牌」：電商平台上用拼音名，官網用英文名，LinkedIn 上用公司名。Google 和 AI 無法推薦它們認不出的品牌。本文說明如何整合成同一個實體。</p><div class="meta"><span class="lg">繁體中文</span><span>7 分鐘閱讀</span></div></div></a><a class="card" href="/blog/en/seo-aeo-geo-explained-chinese-exporters/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t53-768.webp"><img src="/assets/blog/hero/t53.jpg" alt="An orange block works like a fountain, sending three pipes to a search results list, a speech-bubble answer card and an AI chat bubble with a violet spark." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO vs. AEO vs. GEO: What&#x27;s the Difference, and Do Exporters Need All Three?</h3><p>SEO gets you found, AEO gets your answer quoted by AI, and GEO gets you recommended by generative AI. They share one foundation, so exporters can run all three with one workflow.</p><div class="meta"><span class="lg">English</span><span>8 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/zh-hant/">← 返回部落格</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美國 AI 搜尋中的曝光盲區</h2>
+  <p>預約一次 30 分鐘免費通話，我們會即時為您的店鋪做一次 AI 能見度檢測。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">預約30分鐘策略溝通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登入 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">為中小企業與跨境賣家提供 AI 搜尋能見度、社群與廣告自動駕駛。</p></div>
+      <div><h4>ToucHigh</h4><a href="/zh-hant/">首頁</a><a href="/zh-hant/#geo">GEO Autopilot</a><a href="/zh-hant/#social">Social Autopilot</a><a href="/zh-hant/pro/">ToucHigh PRO</a></div>
+      <div><h4>部落格</h4><a href="/blog/zh-hant/">部落格</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登入</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">預約溝通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
