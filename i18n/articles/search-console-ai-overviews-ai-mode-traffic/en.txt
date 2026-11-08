@@ -1,0 +1,100 @@
+== title ==
+How to Read AI Overviews and AI Mode Traffic in Google Search Console
+== seo_title ==
+AI Overviews and AI Mode in Search Console: How to Measure | ToucHigh
+== desc ==
+Google counts AI Overviews and AI Mode inside Search Console's Web search data. How to read impressions, clicks and pages when AI answers appear, and what to compare.
+== dek ==
+There is no separate "AI Overviews" tab to open. Google folds AI features into the Performance report you already have. Here is how exporters can still read what AI answers are doing to their search traffic.
+== section ==
+Measurement
+== tags ==
+Google Search Console | AI Overviews | AI Mode | SEO measurement | GEO
+== keywords ==
+AI Overviews Search Console, AI Mode traffic Search Console, measure AI Overviews clicks, Search Console Web search type AI, Google AI features traffic, GEO measurement Google
+== read ==
+6
+== q ==
+Where can we see how much traffic Google's AI Overviews and AI Mode bring us? Is there a report for it in Search Console?
+== a ==
+Not a separate one. Google says sites appearing in AI Overviews and AI Mode are included in the overall search traffic in Search Console, in the Performance report under the Web search type. So read it by comparison: question-style and long queries against short ones, before against after, impressions against clicks, and the pages that gain impressions. Pair it with GA4 landing pages and a manual check of which priority queries show an AI Overview.
+== takeaways ==
+- Google says AI Overviews and AI Mode traffic is counted in Search Console's Performance report under the Web search type, with the rest of Search.
+- GA4's AI Assistant channel excludes Google's AI Overviews and AI Mode, so Search Console is the main place to look for them.
+- To be eligible as a supporting link, a page must be indexed and eligible to show with a snippet; there are no extra technical requirements.
+- Google says AI Overviews and AI Mode may run a "query fan-out" of related searches, which is one reason new, longer queries can show up in your reports.
+- Read trends by query group and page, not sitewide totals: AI answers can lift impressions while clicks move differently.
+== body ==
+<p>Many teams open Search Console looking for an "AI Overviews" report and find nothing. That doesn't mean the data is missing; it means Google has put it in the report you already use. Once you know where it is, and what it can't separate, you can still answer the question your boss is asking: are Google's AI answers helping or hurting our traffic?</p>
+
+<h2>Where does Search Console report AI Overviews and AI Mode?</h2>
+
+<p>Google's guidance for site owners on AI features is direct: sites appearing in AI features such as AI Overviews and AI Mode are included in the overall search traffic in Search Console, reported in the Performance report within the "Web" search type. In other words, an impression or click from an AI Overview is counted together with your other Google Search impressions and clicks for that query and page.</p>
+
+<p>This also explains a gap people notice in Google Analytics 4. GA4's AI Assistant channel covers sources like ChatGPT, Gemini, Copilot and others, but Google's definition explicitly excludes AI Overviews and AI Mode. Visits from them arrive as Google organic search traffic. If you want to understand Google's AI answers, Search Console is your primary instrument.</p>
+
+<h2>Which pages are eligible to appear in AI answers?</h2>
+
+<p>The eligibility rule is the same as for normal results with a snippet. Google says a page must be indexed and eligible to be shown in Google Search with a snippet to be shown as a supporting link in AI Overviews or AI Mode, and that there are no additional technical requirements. Two practical checks follow:</p>
+
+<ul>
+<li>Make sure priority pages are indexed: use the Pages report and URL Inspection in Search Console.</li>
+<li>Make sure you haven't limited snippets by accident. Google lists nosnippet, data-nosnippet, max-snippet and noindex as the controls that limit what is shown. A theme or plugin that adds <code>nosnippet</code> sitewide would also keep you out of AI answers.</li>
+</ul>
+
+<h2>How do you read AI answer effects from blended data?</h2>
+
+<p>Because AI traffic isn't split out, you read it by comparing groups. Four comparisons do most of the work.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Comparison</th><th>How to set it up</th><th>What it can tell you</th></tr></thead>
+<tbody>
+<tr><td>Question-style vs short queries</td><td>Filter the Query dimension with a custom regex such as <code>^(what|how|which|why|best|can|does)\b</code></td><td>Whether conversational queries, where AI answers often appear, are growing in impressions and clicks</td></tr>
+<tr><td>Before vs after</td><td>Compare date ranges around a known change, such as a content release</td><td>Whether a change coincides with movement in impressions or CTR</td></tr>
+<tr><td>Impressions vs clicks</td><td>Show both metrics on the same query group</td><td>Rising impressions with flat clicks can mean you're visible but answered in place</td></tr>
+<tr><td>Page groups</td><td>Filter pages by folder, such as /products/ or /blog/</td><td>Which content types are gaining visibility</td></tr>
+</tbody>
+</table></div>
+
+<p>Google also says AI Overviews and AI Mode may use a "query fan-out" technique, issuing multiple related searches to develop a response. Watch your Queries table for new, longer and more specific queries that you never targeted; they are a useful clue about the sub-questions your pages are being used to answer.</p>
+
+<h2>How should you combine Search Console with GA4?</h2>
+
+<p>Search Console stops at the click. To know whether that click was worth anything, match the pages gaining Google visibility with GA4's landing page report filtered to Organic Search, and look at engagement and key events. Google's own guidance suggests tracking conversions and time on site in tools such as Google Analytics, and says that clicks from search results pages with AI Overviews are higher quality, meaning users are more likely to spend more time on the site. Treat that as Google's claim to check in your own data, not as a given.</p>
+
+<h2>What should you track every month?</h2>
+
+<ol>
+<li><strong>A fixed list of 20 to 50 priority queries.</strong> Search them manually and record whether an AI Overview appears and whether you're cited.</li>
+<li><strong>Impressions and clicks for the question-style query group</strong>, compared with the previous month and the same month last year where you have it.</li>
+<li><strong>The ten pages with the largest impression gains</strong>, with their GA4 engagement.</li>
+<li><strong>Indexing and snippet status</strong> for your product, capability and FAQ pages.</li>
+<li><strong>Branded search impressions</strong>, an indirect signal that AI answers elsewhere are sending people to look you up.</li>
+</ol>
+
+<p>None of this gives you a single "AI traffic" number, and you should be wary of any tool that claims to separate it perfectly from Google's blended data. What it gives you is a consistent way to see whether your content is being used in Google's AI answers, and whether that turns into visits that matter.</p>
+== insight_quote ==
+When the data is blended, compare groups instead of hunting for one number.
+== insight ==
+Research design calls this a difference-in-differences view: you can't isolate the treatment directly, so you compare groups and periods that should react differently. Question-style queries against short ones, before against after, is the practical version for AI Overviews.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+Search Console shows Google; ToucHigh's GEO Autopilot shows the wider AI picture:
+== prop_items ==
+- it audits your visibility across ChatGPT, Perplexity, Google AI Overviews and AI Mode, and Gemini;
+- it writes and ships the fixes and GEO articles for the questions you're missing;
+- it tracks your AI-citation share alongside your search data, so you can show the lift.
+== prop_outro ==
+Book a 30-minute strategy call and we'll compare what Search Console shows with a live AI-visibility read of your site.
+== faq ==
+Q: Is there a filter for AI Overviews in Search Console?
+A: Google's guidance says AI Overviews and AI Mode are included in the Performance report's overall Web search data, rather than pointing to a separate report. Read their effect through comparisons of query groups, pages and periods.
+Q: Why do our impressions rise while clicks stay flat?
+A: One common reason is that your page is shown, including as a supporting link in an AI answer, while the searcher gets enough from the answer itself. Check which queries and pages drive the change before deciding it's a problem.
+Q: Does blocking Google-Extended keep our pages out of AI Overviews?
+A: No. Google says Google-Extended doesn't affect inclusion in Google Search. To limit what appears in AI features, Google points to nosnippet, data-nosnippet, max-snippet or noindex.
+Q: Do we need special markup to appear in AI Overviews?
+A: Google says there are no additional requirements and no special schema needed. Pages must be indexed and eligible for a snippet, and normal SEO best practices apply.
+== note ==
+We wrote this because exporters keep asking where their AI Overview data is. The honest answer is that it's already in Search Console, mixed in, and there is a disciplined way to read it.

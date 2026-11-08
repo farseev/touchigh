@@ -1,0 +1,8 @@
+{"num": "t66", "original": "zh-Hans", "cat": "measurement", "hero": "t50",
+ "published": "2026-11-08T10:40:00+08:00",
+ "landing": "supplier",
+ "related": ["ga4-ai-assistant-channel", "chatgpt-utm-ai-referral-measurement", "digital-advertising-kpis-small-business"],
+ "sources": [
+  {"name": "[GA4] Default channel group", "url": "https://support.google.com/analytics/answer/9756891", "publisher": "Google Analytics Help"},
+  {"name": "Custom channel groups", "url": "https://support.google.com/analytics/answer/13051316", "publisher": "Google Analytics Help"}
+ ]}

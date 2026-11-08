@@ -1,0 +1,95 @@
+== title ==
+Instagram SEO in 2026: Make Your Posts Findable in Instagram Search and on Google
+== seo_title ==
+Instagram SEO: Get Posts Found on Instagram and Google | ToucHigh
+== desc ==
+Public posts from Instagram professional accounts can appear in Google results. How to write names, bios, captions and alt text so buyers find your brand's posts by search.
+== dek ==
+Since July 2025, public posts from Instagram professional accounts can show up in Google and other search engines. That turns captions into search copy. Here's how small brands should write them.
+== section ==
+Social media
+== tags ==
+Instagram SEO | Google search | Captions | Alt text | Social search
+== keywords ==
+Instagram SEO, Instagram posts in Google search, Instagram captions keywords, Instagram alt text SEO, Instagram search engine results setting, social SEO small business
+== read ==
+6
+== q ==
+We heard Instagram posts now show up on Google. Does that change how we should write captions, and is there a setting we need to turn on?
+== a ==
+Yes on both counts. According to PPC Land's report of Instagram's announcement, from 10 July 2025 public photos, videos, carousels and Reels from professional accounts of users over 18 can appear in Google and other search engines, controlled by the setting "Allow public photos and videos to appear in search engine results", on by default. So write for search: put what you sell in your name field and bio, open captions with a plain description of the product and use, add custom alt text, and keep brand facts consistent with your website.
+== takeaways ==
+- PPC Land reported that from 10 July 2025, public content from Instagram professional (business and creator) accounts of users over 18 can be shown by search engines; personal and private accounts aren't affected.
+- The control is a privacy setting, "Allow public photos and videos to appear in search engine results", enabled by default for eligible accounts.
+- Captions, alt text, your name field and bio are the text search engines can read; Google advises making important content available in textual form.
+- Lead each caption with a plain sentence on what the product is and who it's for, before the story or hashtags.
+- Keep product names, brand name and claims consistent across Instagram and your website so search engines and AI see one brand.
+== body ==
+<p>For years, an Instagram caption had one audience: people already scrolling Instagram. That changed in July 2025. Public posts from professional accounts can now appear in Google and other search engines, which means a shopper searching for "insulated lunch bag for kids" may land on your Reel, not just your website. The caption that used to be a mood line is now search copy.</p>
+
+<h2>What changed in how Instagram posts appear on Google?</h2>
+
+<p>According to PPC Land's report of Instagram's announcement, starting 10 July 2025, public content from professional accounts of users over 18, meaning business and creator accounts, can automatically become searchable through Google and other search engines. That includes photos, videos, carousels and Reels. Personal and private accounts are unaffected.</p>
+
+<p>The control sits in Instagram's settings: "Allow public photos and videos to appear in search engine results". It is enabled by default for eligible accounts, and you can switch it off if you prefer your content to stay inside Instagram. For most brands trying to be found, the right choice is to leave it on and check that it is.</p>
+
+<h2>Which parts of a profile and post can search engines read?</h2>
+
+<p>Search engines work best with text. Google's guidance for AI features lists "making sure that important content is available in textual form" among its SEO basics. On Instagram, that text lives in a few places:</p>
+
+<div class="tw"><table>
+<thead><tr><th>Element</th><th>What to write</th><th>Example for a lunch-bag brand</th></tr></thead>
+<tbody>
+<tr><td>Name field</td><td>Brand plus what you sell, in plain words</td><td>"Brightbox · Kids' Insulated Lunch Bags"</td></tr>
+<tr><td>Bio</td><td>Who it's for, what's different, one proof point you also state on your website</td><td>"Leak-proof lunch bags for school days. Machine-washable."</td></tr>
+<tr><td>First caption line</td><td>A plain description of the product and the use</td><td>"Our insulated lunch bag keeps food cold until lunch, sized for kids' lunch boxes."</td></tr>
+<tr><td>Rest of caption</td><td>Story, details, answer to a common question</td><td>Care instructions, sizes, what fits inside</td></tr>
+<tr><td>Alt text</td><td>What the image actually shows</td><td>"Child opening a blue insulated lunch bag with a sandwich and apple inside"</td></tr>
+<tr><td>Hashtags</td><td>A few specific ones, at the end</td><td>Product category and use, not dozens of generic tags</td></tr>
+</tbody>
+</table></div>
+
+<h2>How should you write captions for search without sounding robotic?</h2>
+
+<p>Put the searchable sentence first and the personality second. The first line should make sense to someone who has never heard of your brand and arrived from a search result: what the product is, who it's for and the situation it solves. Then tell the story, show the behind-the-scenes or answer a question your customers ask. Google's guidance on helpful, people-first content applies here too: write for the person searching, not for a keyword count. One natural mention of the product type beats a caption stuffed with variations.</p>
+
+<p>Turn frequent customer questions into posts. A carousel that answers "Is it dishwasher-safe?" or "Which size fits a 10-year-old?" is useful to followers and is exactly the kind of specific answer a searcher looks for.</p>
+
+<h2>Does Instagram SEO help with AI answers?</h2>
+
+<p>Indirectly. AI assistants and Google's AI features draw on content they can find and read, and consistency across sources makes a brand easier to describe correctly. If your Instagram, website and marketplace listings use the same brand name, product names and claims, every indexed post reinforces the same facts. If your Instagram calls a product something different from your website, you create two half-brands. The rule is the same one we give factories and stores: one set of facts, published everywhere.</p>
+
+<h2>What should a small brand do this week?</h2>
+
+<ol>
+<li><strong>Check the setting.</strong> Confirm your professional account allows public photos and videos to appear in search engine results.</li>
+<li><strong>Rewrite your name field and bio</strong> so they say what you sell in plain words.</li>
+<li><strong>Update your ten best posts:</strong> add a plain first line and custom alt text.</li>
+<li><strong>Match your website.</strong> Use the same product names and key claims on both.</li>
+<li><strong>Search for yourself</strong> on Google with your brand plus product type in a month, and see which posts appear.</li>
+</ol>
+== insight_quote ==
+The first line of a caption now has two readers: the scroller and the searcher.
+== insight ==
+Information foraging theory says people follow the strongest "scent" towards what they need. A caption that names the product and the problem gives searchers that scent; a caption of mood words gives them nothing to follow.
+== prop_eyebrow ==
+Social Autopilot · GEO Autopilot · Ads
+== prop_intro ==
+ToucHigh's Social Media Manager Autopilot writes posts that work for both readers:
+== prop_items ==
+- native US-English posts, articles and creatives, written to sound like a person and kept on brand;
+- a predicted-engagement score on every post before it's scheduled;
+- approval of each post, or publishing on autopilot, alongside GEO Autopilot for your website.
+== prop_outro ==
+Book a 30-minute strategy call and bring your Instagram handle; we'll look at how your posts and website read to search engines.
+== faq ==
+Q: Do I need a professional account for posts to appear on Google?
+A: According to PPC Land's report of Instagram's announcement, the change applies to public professional (business and creator) accounts of users over 18. Personal and private accounts aren't affected.
+Q: Where is the setting?
+A: It was reported as "Allow public photos and videos to appear in search engine results", found in Instagram's privacy settings and enabled by default for eligible accounts. Menu labels can change, so search your settings for "search engine" if you can't find it.
+Q: Are hashtags still useful for search?
+A: A few specific hashtags help categorise a post, but the caption text and alt text carry more meaning. Put the plain description first and keep hashtags short and relevant.
+Q: Will every post be shown on Google?
+A: No. The setting makes public posts eligible; search engines still decide what to show for each query. Posts with clear, specific text have the best chance.
+== note ==
+We wrote this because brands still write Instagram captions as if only followers will read them. Since 2025 that's no longer true, and a few small changes make posts findable.

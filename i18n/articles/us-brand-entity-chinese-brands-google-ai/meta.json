@@ -1,0 +1,10 @@
+{"num": "t72", "original": "zh-Hans", "cat": "cross-border", "hero": "t48",
+ "published": "2026-11-08T12:40:00+08:00",
+ "landing": "supplier",
+ "related": ["factory-to-brand-seo-aeo-geo-us", "factory-website-schema-markup", "localization-not-translation-brand-premium"],
+ "sources": [
+  {"name": "How Google's Knowledge Graph works", "url": "https://support.google.com/knowledgepanel/answer/9787176", "publisher": "Knowledge Panel Help"},
+  {"name": "Get verified on Google", "url": "https://support.google.com/knowledgepanel/answer/7534902", "publisher": "Knowledge Panel Help"},
+  {"name": "Organization (Organization) structured data", "url": "https://developers.google.com/search/docs/appearance/structured-data/organization", "publisher": "Google Search Central"},
+  {"name": "AI features and your website", "url": "https://developers.google.com/search/docs/appearance/ai-features", "publisher": "Google Search Central"}
+ ]}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GA4 AI Assistant Channel Group: Setup and Gaps Explained | ToucHigh</title>
+<meta name="description" content="GA4&#x27;s default channel group now has an AI Assistant channel. What it counts, why AI Overviews and referrer-less visits fall outside it, and how to build a custom group.">
+<link rel="canonical" href="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="GA4 AI assistant channel, GA4 custom channel group AI, track ChatGPT traffic GA4, AI referral traffic GA4 regex, AI assistants channel group, measure GEO traffic">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<meta property="og:title" content="GA4&#x27;s AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own">
+<meta property="og:description" content="GA4&#x27;s default channel group now has an AI Assistant channel. What it counts, why AI Overviews and referrer-less visits fall outside it, and how to build a custom group.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t64-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GA4&#x27;s AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="article:published_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:section" content="Measurement">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="AI traffic">
+<meta property="article:tag" content="Channel groups">
+<meta property="article:tag" content="Attribution">
+<meta property="article:tag" content="GEO measurement">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GA4&#x27;s AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own">
+<meta name="twitter:description" content="GA4&#x27;s default channel group now has an AI Assistant channel. What it counts, why AI Overviews and referrer-less visits fall outside it, and how to build a custom group.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t64-en.jpg">
+<meta name="twitter:image:alt" content="GA4&#x27;s AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="ToucHigh Blog" href="/blog/en/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/en/ga4-ai-assistant-channel/#article","url":"https://touchigh.ai/blog/en/ga4-ai-assistant-channel/","mainEntityOfPage":"https://touchigh.ai/blog/en/ga4-ai-assistant-channel/","headline":"GA4's AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own","alternativeHeadline":"GA4 AI Assistant Channel Group: Setup and Gaps Explained","description":"GA4's default channel group now has an AI Assistant channel. What it counts, why AI Overviews and referrer-less visits fall outside it, and how to build a custom group.","abstract":"Use it, but don't treat it as the whole story. Google's documentation says the AI Assistant channel covers visits from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok, and excludes Google's AI Overviews and AI Mode. It also can't see visits that arrive without a referrer, which land in Direct. Check which assistants actually appear in your property, build a custom channel group if some fall into Referral, and pair GA4 with Search Console and citation tracking.","image":["https://touchigh.ai/assets/blog/og/t64-en.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-11-08T10:00:00+08:00","dateModified":"2026-11-08T10:00:00+08:00","inLanguage":"en","author":{"@type":"Organization","name":"ToucHigh Research Team","url":"https://touchigh.ai/blog/en/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Measurement","keywords":"GA4 AI assistant channel, GA4 custom channel group AI, track ChatGPT traffic GA4, AI referral traffic GA4 regex, AI assistants channel group, measure GEO traffic","wordCount":1213,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/en/#blog","name":"ToucHigh Blog"},"about":[{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"AI traffic"},{"@type":"Thing","name":"Channel groups"},{"@type":"Thing","name":"Attribution"},{"@type":"Thing","name":"GEO measurement"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"About regular expressions (regex)","url":"https://support.google.com/analytics/answer/1034324","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ga4-ai-assistant-channel/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"Does the AI Assistant channel include Google AI Overviews?","acceptedAnswer":{"@type":"Answer","text":"No. Google's definition excludes AI Overviews and AI Mode from the AI Assistant channel. Google reports those within Search Console's Performance report under the Web search type, together with the rest of Search."}},{"@type":"Question","name":"Why does ChatGPT traffic still show up as Direct?","acceptedAnswer":{"@type":"Answer","text":"When a visit arrives without a referrer or tracking parameters, GA4 has nothing to classify it by and records it as Direct. Watch direct traffic to deep pages and ask buyers how they found you to estimate this share."}},{"@type":"Question","name":"Will a custom channel group change our historical data?","acceptedAnswer":{"@type":"Answer","text":"Custom channel groups apply to reports retroactively, so you can view past data through the new grouping. Changing the property's primary channel group only affects reporting from that point forward."}},{"@type":"Question","name":"How many custom channel groups can we create?","acceptedAnswer":{"@type":"Answer","text":"Google lists two custom groups for standard properties and five for Analytics 360 properties, in addition to the predefined group, with up to 50 channels each."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/?lang=en"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/en/"},{"@type":"ListItem","position":3,"name":"GA4's AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own","item":"https://touchigh.ai/blog/en/ga4-ai-assistant-channel/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">On this page</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/?lang=en">Home</a>
+      <a href="/?lang=en#products">Products</a>
+      <a href="/?lang=en#faq">FAQ</a>
+      <a href="/pro/?lang=en">ToucHigh PRO</a>
+      <a href="/blog/en/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language: English"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">EN</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Language" hidden><li><a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" data-short="EN" aria-current="page">English</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Log in</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Book a call</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/?lang=en">Home</a><span>/</span><a href="/blog/en/">Blog</a><span>/</span><span>Measurement</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Measurement</div>
+    <h1>GA4&#x27;s AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own</h1>
+    <p class="dek">Google Analytics now sorts visits from ChatGPT, Gemini, Copilot and others into their own channel. That fixes part of the AI-traffic problem. Here&#x27;s the part it doesn&#x27;t fix, and a custom channel group that fills the gap.</p>
+    <div class="a-meta"><b>ToucHigh Research Team</b><span>Published <time datetime="2026-11-08T10:00:00+08:00">November 8, 2026</time></span><span>6 min read</span><span class="lang-badge">English</span></div>
+    <div class="a-langs">Also available in<a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="The question behind this article"><span class="qm">“</span><div><div class="eyebrow">The question behind this article</div><p class="q">GA4 now shows an &quot;AI Assistant&quot; channel in our reports. Can we trust it to measure the traffic our GEO work brings in, or do we still need our own setup?</p><p class="ans"><b>Short answer</b>Use it, but don&#x27;t treat it as the whole story. Google&#x27;s documentation says the AI Assistant channel covers visits from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok, and excludes Google&#x27;s AI Overviews and AI Mode. It also can&#x27;t see visits that arrive without a referrer, which land in Direct. Check which assistants actually appear in your property, build a custom channel group if some fall into Referral, and pair GA4 with Search Console and citation tracking.</p></div></section>
+      <section class="kt takeaways"><h2>Key takeaways</h2><ul><li>GA4's default channel group now includes AI Assistant: visits from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok, with medium set to "ai-assistant" when the referrer matches Google's list.</li><li>The channel excludes Google's AI Overviews and AI Mode; Google counts those in Search Console's overall Web search data.</li><li>Visits that reach you without a referrer or tag are logged as Direct, so no channel rule can recover them.</li><li>Default channel groups can't be edited, but custom channel groups can, and they apply retroactively. Standard properties get two custom groups with up to 50 channels each.</li><li>Google's example regex for AI assistants is broad; an explicit list of domains avoids catching unrelated sources.</li></ul></section>
+      <div class="prose"><p>For two years, the standard advice for measuring AI traffic in Google Analytics 4 was the same: build your own channel group, because ChatGPT and Perplexity visits were buried in Referral. Google has since added an <strong>AI Assistant</strong> channel to GA4's default channel group. That is good news, but it changes the question rather than ending it. You now need to know what the new channel counts, what it leaves out and when your own grouping is still worth the effort.</p>
+
+<h2 id="s1">What does GA4's AI Assistant channel count?</h2>
+
+<p>Google's Default channel group documentation describes AI Assistant as the channel by which users arrive from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok. The rule behind it: the medium is set to "ai-assistant" and the campaign to "(ai-assistant)" when the referrer matches a list of AI assistants that Google maintains. Sessions with that medium land in the AI Assistant row of your Traffic acquisition report.</p>
+
+<p>Two points follow. First, it is Google's list, not yours: the documentation names examples, not every assistant. Second, default channel groups can't be edited in GA4, so if an assistant your buyers use isn't recognised, you can't add it to the default channel. You need a custom channel group.</p>
+
+<h2 id="s2">What does the AI Assistant channel miss?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>Traffic</th><th>Where it lands in GA4</th><th>How to see it instead</th></tr></thead>
+<tbody>
+<tr><td>Google AI Overviews and AI Mode</td><td>Excluded from AI Assistant by Google's definition</td><td>Search Console: Google says these appear in the Performance report under the Web search type</td></tr>
+<tr><td>Assistant visits with no referrer and no tag</td><td>Direct</td><td>Direct traffic to deep pages, branded search, post-purchase surveys</td></tr>
+<tr><td>Assistants not on Google's list</td><td>Usually Referral</td><td>A custom channel group with your own regex</td></tr>
+<tr><td>People who saw your name in an answer and came back later</td><td>Direct, Organic Search or wherever they return from</td><td>Citation tracking and branded-search trends</td></tr>
+</tbody>
+</table></div>
+
+<p>The second row matters most. Analytics tools decide where a visit came from by looking at tracking parameters and the referring URL. When an AI app opens a link without passing either, the visit is recorded as Direct. Our earlier piece on <a href="/blog/en/chatgpt-utm-ai-referral-measurement/">ChatGPT links losing UTM tags</a> covers what that looks like in practice. No channel rule can recover information that never reached GA4.</p>
+
+<h2 id="s3">How do you check what your property actually records?</h2>
+
+<ol>
+<li><strong>Open Reports, then Acquisition, then Traffic acquisition</strong> and set the primary dimension to Session default channel group. Look for the AI Assistant row and its trend.</li>
+<li><strong>Switch the dimension to Session source / medium</strong> and filter for "ai-assistant" to see which assistants Google is classifying.</li>
+<li><strong>Filter Referral for known AI domains</strong> such as perplexity.ai or claude.ai. Anything AI-related still sitting in Referral is your gap.</li>
+<li><strong>Compare landing pages.</strong> AI visits tend to land on deep pages, such as product, capability and blog pages, rather than the homepage.</li>
+</ol>
+
+<h2 id="s4">When should you build a custom AI channel group?</h2>
+
+<p>Build one if assistants your buyers use land in Referral, if you want each assistant as its own row, or if you want one definition that stays stable while Google updates its list. Google's custom channel group documentation explains the mechanics: in Admin, under Data display, open Channel groups (you need Editor access or above), create a group, add a channel and set its condition. Custom groups apply to your reports retroactively. Standard properties can have two custom groups in addition to the predefined one, each with up to 50 channels.</p>
+
+<p>Google even publishes an "AI assistants" example: a channel with a "matches regex" condition, placed above Referral so that AI sources are claimed first. Its sample regex is deliberately broad. It begins with <code>^.*ai</code>, which matches any source containing the letters "ai", such as an email provider's domain. A tighter pattern lists the domains you actually see, for example:</p>
+
+<p><code>.*(chatgpt\.com|openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com).*</code></p>
+
+<p>Apply it to Source, put the channel above Referral and, if you want detail, add one channel per assistant instead of a single group. Update the list when a new assistant starts sending traffic; Google's own note says to update the regex when the list of assistants changes.</p>
+
+<h2 id="s5">Should you make the custom group your primary channel group?</h2>
+
+<p>GA4 lets you choose any custom channel group as the property's primary channel group, which then populates the primary channel group dimension from that point forward. That is useful once your definition is stable, but it isn't retroactive in the same way the custom group itself is. Most small teams can leave the default as primary and add the custom group as a secondary view.</p>
+
+<h2 id="s6">How should GA4 fit into AI-channel measurement?</h2>
+
+<p>Treat GA4 as one of three lenses. GA4 tells you about clicks you can attribute. Search Console tells you about Google Search, including AI Overviews and AI Mode. A monthly citation check tells you whether assistants mention you at all. When all three move together, you can show GEO is working; when only one moves, you know where to look.</p></div>
+      <aside class="insight" aria-label="The insight"><div class="eyebrow">The insight</div><blockquote>A channel report shows the clicks it can label, not the influence it can&#x27;t see.</blockquote><p>Goodhart&#x27;s law warns that a measure turned into a target stops measuring well. If a team chases the AI Assistant row alone, it will undervalue AI answers that send buyers through Direct or branded search. Keep the channel as one signal among three.</p></aside>
+      <section class="prop" aria-label="How ToucHigh helps">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>How ToucHigh helps</h2></div>
+        <div class="pb prose"><p>GA4 shows the clicks; ToucHigh's GEO Autopilot covers the rest of the picture:</p><ul><li>it checks where you are invisible across ChatGPT, Perplexity, Google AI and Gemini;</li><li>it writes and ships fixes and GEO articles aimed at the questions buyers ask;</li><li>it tracks your AI-citation share continuously, the signal tracking parameters can't distort.</li></ul><p>Book a 30-minute strategy call and bring a screenshot of your Traffic acquisition report; we'll read it together with a live AI-visibility check.</p><p class="uc">Factories and B2B suppliers: see how ToucHigh handles <a href="/supplier-ai-visibility/?lang=en" onclick="try{gtag('event','landing_click',{location:'article_T64'})}catch(e){}">supplier visibility in AI search</a>. Need the visibility to turn into pipeline? See <a href="/pro/?lang=en" onclick="try{gtag('event','pro_click',{location:'article_T64'})}catch(e){}">ToucHigh PRO</a>, our strategy-first outbound service.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T64')">Book a 30-min strategy call →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T64'})}catch(e){}">Log in to ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><details open><summary>Does the AI Assistant channel include Google AI Overviews?</summary><p>No. Google's definition excludes AI Overviews and AI Mode from the AI Assistant channel. Google reports those within Search Console's Performance report under the Web search type, together with the rest of Search.</p></details><details><summary>Why does ChatGPT traffic still show up as Direct?</summary><p>When a visit arrives without a referrer or tracking parameters, GA4 has nothing to classify it by and records it as Direct. Watch direct traffic to deep pages and ask buyers how they found you to estimate this share.</p></details><details><summary>Will a custom channel group change our historical data?</summary><p>Custom channel groups apply to reports retroactively, so you can view past data through the new grouping. Changing the property's primary channel group only affects reporting from that point forward.</p></details><details><summary>How many custom channel groups can we create?</summary><p>Google lists two custom groups for standard properties and five for Analytics 360 properties, in addition to the predefined group, with up to 50 channels each.</p></details></section>
+      <section class="srcs"><h2>Sources</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/1034324" rel="noopener" target="_blank">About regular expressions (regex)</a> — Google Analytics Help</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>Why we wrote this</b>We wrote this because teams that had built AI channel groups by hand suddenly saw a new AI Assistant row and weren&#x27;t sure which number to trust. The answer is both, read alongside Search Console and citation tracking.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="On this page"><h4>On this page</h4><a href="#s1">What does GA4's AI Assistant channel count?</a><a href="#s2">What does the AI Assistant channel miss?</a><a href="#s3">How do you check what your property actually records?</a><a href="#s4">When should you build a custom AI channel group?</a><a href="#s5">Should you make the custom group your primary channel group?</a><a href="#s6">How should GA4 fit into AI-channel measurement?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>See where you&#x27;re invisible in US AI search</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Book a call</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Log in</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Related articles</h2>
+  <div class="grid"><a class="card" href="/blog/en/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now</h3><p>ChatGPT appears to have stopped adding UTM tags to its outbound links, so AI-driven visits are blending into direct traffic. It&#x27;s time for a new way to measure your SEO and GEO returns.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a><a class="card" href="/blog/en/search-console-ai-overviews-ai-mode-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="A search bar pours orange marbles into a violet-glowing AI answer funnel that lets only a few reach a small website storefront, while a tall wobbling stack of blank pages beside it yields just one marble." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>How to Read AI Overviews and AI Mode Traffic in Google Search Console</h3><p>There is no separate &quot;AI Overviews&quot; tab to open. Google folds AI features into the Performance report you already have. Here is how exporters can still read what AI answers are doing to their search traffic.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/en/ai-attribution-post-purchase-survey/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="Three glass jars on a white shelf fill with orange marbles to different levels, marked with an eye, a heart and bookmark, and a cursor with a shopping cart, each with a navy line showing its own past average." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>&quot;How Did You Hear About Us?&quot; Using Surveys to Count Sales from ChatGPT and AI Assistants</h3><p>Some of the buyers AI sends you will never show up as an AI click. A one-question survey at checkout or on the inquiry form is the cheapest way to see them. Here&#x27;s how to word it, where to place it and how to read the answers.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/en/">← Back to the blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>See where you&#x27;re invisible in US AI search</h2>
+  <p>Book a free 30-minute call and we&#x27;ll run a live AI-visibility read on your store.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Book a 30-min strategy call →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Log in to ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.</p></div>
+      <div><h4>ToucHigh</h4><a href="/?lang=en">Home</a><a href="/?lang=en#geo">GEO Autopilot</a><a href="/?lang=en#social">Social Autopilot</a><a href="/pro/?lang=en">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/en/">Blog</a><a href="/blog/en/feed.xml">RSS</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Log in</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Book a call</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

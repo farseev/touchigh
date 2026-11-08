@@ -1,0 +1,108 @@
+== title ==
+Your First Amazon Sponsored Products Campaign: Auto vs Manual, Bids and Budget
+== seo_title ==
+First Amazon Sponsored Products Campaign: Setup Guide | ToucHigh
+== desc ==
+A step-by-step first Sponsored Products setup for new Amazon sellers: auto and manual targeting, how to work out a maximum bid from your margin, and what to check in week two.
+== dek ==
+You don't need an agency to launch your first Amazon ads, but you do need a structure that tells you what's working. Here's a simple two-campaign setup, the bid math and a four-week plan.
+== section ==
+Ads for SMEs
+== tags ==
+Amazon Sponsored Products | Amazon PPC | Cross-border sellers | Ad budget | Keyword targeting
+== keywords ==
+first Amazon Sponsored Products campaign, Amazon auto vs manual targeting, how to set Amazon PPC bids, Amazon ads for new sellers, Sponsored Products setup, Amazon campaign structure
+== read ==
+7
+== q ==
+We just listed our first products on Amazon US. How should we set up our first Sponsored Products campaign, and how much should we bid?
+== a ==
+Start with two campaigns for the same product: one automatic-targeting campaign to discover search terms, and one manual campaign with a short list of exact keywords you're confident about. Work out a maximum bid from your numbers (price × margin before ads × expected conversion rate), set a daily budget you can afford to lose while learning, and wait about two weeks before judging. Then move proven search terms into manual and add negatives.
+== takeaways ==
+- Sponsored Products are cost-per-click ads for individual listings; you choose keywords or let Amazon target automatically, and you control bids and budgets.
+- Amazon says automatic targeting analyzes your product details, including titles and descriptions, and suits advertisers new to keyword targeting.
+- Ads send shoppers to your product detail page, and Amazon says they only appear when the advertised item is in stock, so fix the listing and inventory first.
+- A break-even bid comes from your own numbers: price × margin before ad costs × conversion rate.
+- Amazon's guidance: to keep a profit, ACOS needs to stay below your profit margin.
+== body ==
+<p>New cross-border sellers often launch Amazon ads the hard way: one campaign, dozens of keywords picked from a tool, a bid copied from a blog post and a budget that runs out by lunch. After two weeks they have spent money and learned nothing, because the setup can't tell them which part worked.</p>
+
+<p>Your first campaign has one job: to teach you which searches sell your product at a cost you can live with. This guide sets up two campaigns that do that, using only the controls Amazon documents for Sponsored Products.</p>
+
+<h2>What exactly are Sponsored Products ads?</h2>
+
+<p>Amazon describes Sponsored Products as cost-per-click ads that promote individual product listings on Amazon and select premium apps and websites. You select the products to advertise and choose keywords to target, or let Amazon's systems target relevant keywords automatically. You control how much you spend on bids and budgets. Ads can appear at the top of, alongside or within shopping results and on product pages, and a click takes the shopper to the advertised product's detail page.</p>
+
+<p>Two details from Amazon's page matter before you spend anything. Sponsored Products only appear when the advertised items are in stock, and every click lands on your detail page. If the listing has weak images, a confusing title or no reviews yet, ads will mostly buy you expensive visits that don't convert. Fix the listing first.</p>
+
+<h2>Should your first campaign use automatic or manual targeting?</h2>
+
+<p>Use both, for different jobs.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Campaign</th><th>Targeting</th><th>Job</th><th>Starting setup</th></tr></thead>
+<tbody>
+<tr><td>1. Discovery</td><td>Automatic</td><td>Find the search terms and products Amazon matches you to</td><td>One ad group, your product, moderate bid</td></tr>
+<tr><td>2. Proven terms</td><td>Manual, exact match</td><td>Buy the searches you're confident in, at a bid you choose</td><td>5 to 15 keywords that describe exactly what you sell</td></tr>
+<tr><td>3. Optional</td><td>Manual, product targeting</td><td>Appear on competitors' or complementary product pages</td><td>Add later, once 1 and 2 have data</td></tr>
+</tbody>
+</table></div>
+
+<p>Amazon's keyword targeting guide says automatic targeting analyzes your product details, including titles and descriptions, to display ads for relevant shopping queries, and that it works well for advertisers new to keyword targeting or looking to discover additional terms. That is exactly what you want from campaign 1. Campaign 2 gives you control over the handful of searches you already know matter, such as your product type plus its key feature.</p>
+
+<h2>How do you work out a maximum bid?</h2>
+
+<p>Don't copy a bid from someone else's category. Work it out from three of your own numbers:</p>
+
+<ul>
+<li><strong>Price</strong> of the product.</li>
+<li><strong>Margin before ad costs:</strong> what's left after product cost, Amazon fees, shipping and duties, as a percentage of price.</li>
+<li><strong>Conversion rate:</strong> the share of clicks that become orders. Before you have data, use a cautious estimate and replace it after two weeks.</li>
+</ul>
+
+<p>Break-even cost per click = price × margin before ads × conversion rate. As an illustration only: a $30 product with a 30% margin before ads and a 10% conversion rate breaks even at $30 × 0.30 × 0.10 = $0.90 per click. Bid below that if you need profit from day one; bid around it if you're deliberately buying early sales and reviews. Either way, you now know what a click is worth to you.</p>
+
+<p>This links directly to ACOS. Amazon defines ACOS as ad spend divided by ad revenue, and its guidance is that ACOS needs to be lower than your profit margin to keep a profit. A bid at your break-even CPC produces an ACOS equal to your margin before ads.</p>
+
+<h2>How much daily budget should you set?</h2>
+
+<p>Set the budget from what you're willing to spend to learn, not from a target. A practical rule: enough budget per campaign to buy roughly 15 to 30 clicks a day at your planned bid, so you get a usable sample in two weeks. If that's more than you can afford, advertise one product, not five. A budget that runs out every morning hides your afternoon and evening shoppers, so watch whether campaigns stop early.</p>
+
+<h2>What should you do in the first four weeks?</h2>
+
+<ol>
+<li><strong>Week 0:</strong> fix the listing, confirm stock, launch both campaigns.</li>
+<li><strong>Week 1:</strong> check only for mistakes, such as wrong products, wildly irrelevant matches or budget running out by noon. Don't change bids yet.</li>
+<li><strong>Week 2:</strong> open the search term report. Amazon's guide recommends reviewing search term reports regularly to understand which queries drive sales.</li>
+<li><strong>Week 3:</strong> move search terms that produced orders from the auto campaign into the manual exact campaign, and add clearly irrelevant terms as negatives.</li>
+<li><strong>Week 4:</strong> compare each campaign's ACOS with your margin, adjust bids towards your break-even CPC and decide whether to add product targeting.</li>
+</ol>
+
+<h2>What should you not do yet?</h2>
+
+<p>Don't launch dozens of campaigns, change bids daily or judge results after three days. Don't measure success only on ACOS either: early campaigns also buy reviews, ranking and data. Write down what you're trying to achieve, whether profit, first sales or learning, and judge the campaign against that.</p>
+== insight_quote ==
+Your first campaign isn't for profit. It's for information you can trust.
+== insight ==
+Experimental design teaches that a test needs a control and a clear question, or its results can't be read. Separating discovery (automatic) from exploitation (manual exact) gives a new seller two clean signals instead of one muddy one.
+== prop_eyebrow ==
+Ads Autopilot · GEO Autopilot · Social Autopilot
+== prop_intro ==
+Once the basics are running, ToucHigh's Ads Autopilot takes over the daily work:
+== prop_items ==
+- it runs your spend across Amazon, Meta and Google from one strategy, auto-adjusted to ROAS;
+- it handles creative-fatigue and budget calls for you;
+- it scores every creative concept for predicted performance before it goes live.
+== prop_outro ==
+Book a 30-minute strategy call with your store URL and one competitor, and we'll walk through a plan matched to your catalog.
+== faq ==
+Q: How long should a new Sponsored Products campaign run before we judge it?
+A: Give it about two weeks of steady spending before changing bids, unless something is clearly broken. Early days are noisy, and the search term report needs time to show patterns.
+Q: Should we use broad, phrase or exact match in the manual campaign?
+A: For a first campaign, exact match on a short list of keywords you're sure about gives the cleanest signal. Let the automatic campaign do the exploring, then add new terms as exact once they've produced orders.
+Q: What ACOS should we aim for?
+A: Amazon says there is no single good ACOS; it depends on your category, margins and goals. Start from break-even: ACOS equal to your margin before ad costs. Aim below it for profit, or accept it for a while if you're deliberately buying early sales.
+Q: Can we skip the listing work and just advertise?
+A: You can, but ads send every click to your detail page. If the page doesn't convert, the ads only make that visible more quickly and more expensively.
+== note ==
+We wrote this because new sellers keep asking how to start Amazon ads without an agency. A simple, readable structure saves more money in the first month than any bid trick.

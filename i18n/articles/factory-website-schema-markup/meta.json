@@ -1,0 +1,11 @@
+{"num": "t62", "original": "zh-Hans", "cat": "seo", "hero": "t57",
+ "published": "2026-11-08T09:20:00+08:00",
+ "landing": "supplier",
+ "related": ["factory-website-geo-chatgpt-supplier", "us-brand-entity-chinese-brands-google-ai", "seo-aeo-geo-explained-chinese-exporters"],
+ "sources": [
+  {"name": "Organization (Organization) structured data", "url": "https://developers.google.com/search/docs/appearance/structured-data/organization", "publisher": "Google Search Central"},
+  {"name": "Introduction to Product structured data", "url": "https://developers.google.com/search/docs/appearance/structured-data/product", "publisher": "Google Search Central"},
+  {"name": "Changes to HowTo and FAQ rich results", "url": "https://developers.google.com/search/blog/2023/08/howto-faq-changes", "publisher": "Google Search Central Blog", "date": "2023-08-08"},
+  {"name": "AI features and your website", "url": "https://developers.google.com/search/docs/appearance/ai-features", "publisher": "Google Search Central"},
+  {"name": "Rich Results Test", "url": "https://search.google.com/test/rich-results", "publisher": "Google"}
+ ]}

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI爬虫robots.txt设置：OAI-SearchBot、GPTBot、Google-Extended | ToucHigh</title>
+<meta name="description" content="B2B和工厂官网该放行哪些AI爬虫：OAI-SearchBot与GPTBot的区别、PerplexityBot、Google-Extended，以及会悄悄拦截它们的防火墙设置。">
+<link rel="canonical" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="AI爬虫robots.txt, OAI-SearchBot和GPTBot区别, 允许ChatGPT抓取, Google-Extended, PerplexityBot, 禁止AI训练但允许搜索">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ai-crawlers-robots-txt-b2b-website/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/">
+<meta property="og:title" content="你的官网屏蔽了ChatGPT吗？B2B网站的AI爬虫robots.txt设置">
+<meta property="og:description" content="B2B和工厂官网该放行哪些AI爬虫：OAI-SearchBot与GPTBot的区别、PerplexityBot、Google-Extended，以及会悄悄拦截它们的防火墙设置。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t63-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="你的官网屏蔽了ChatGPT吗？B2B网站的AI爬虫robots.txt设置">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:40:00+08:00">
+<meta property="article:section" content="GEO / AI 搜索">
+<meta property="article:tag" content="robots.txt">
+<meta property="article:tag" content="AI爬虫">
+<meta property="article:tag" content="OAI-SearchBot">
+<meta property="article:tag" content="技术GEO">
+<meta property="article:tag" content="B2B官网">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="你的官网屏蔽了ChatGPT吗？B2B网站的AI爬虫robots.txt设置">
+<meta name="twitter:description" content="B2B和工厂官网该放行哪些AI爬虫：OAI-SearchBot与GPTBot的区别、PerplexityBot、Google-Extended，以及会悄悄拦截它们的防火墙设置。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t63-en.jpg">
+<meta name="twitter:image:alt" content="你的官网屏蔽了ChatGPT吗？B2B网站的AI爬虫robots.txt设置">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="ToucHigh 博客" href="/blog/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/#article","url":"https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/","mainEntityOfPage":"https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/","headline":"你的官网屏蔽了ChatGPT吗？B2B网站的AI爬虫robots.txt设置","alternativeHeadline":"AI爬虫robots.txt设置：OAI-SearchBot、GPTBot、Google-Extended","description":"B2B和工厂官网该放行哪些AI爬虫：OAI-SearchBot与GPTBot的区别、PerplexityBot、Google-Extended，以及会悄悄拦截它们的防火墙设置。","abstract":"很有可能。AI公司把搜索用的爬虫和模型训练用的爬虫分开运行。OpenAI说明，屏蔽OAI-SearchBot的网站不会出现在ChatGPT搜索答案里，而GPTBot只管训练。应放行搜索爬虫（OAI-SearchBot、PerplexityBot、Googlebot、Bingbot），对GPTBot、Google-Extended等训练相关的爬虫单独做决定，并检查CDN或防火墙有没有绕过robots.txt直接拦截它们。","image":["https://touchigh.ai/assets/blog/og/t63-en.jpg","https://touchigh.ai/assets/blog/hero/t04.jpg"],"datePublished":"2026-11-08T09:40:00+08:00","dateModified":"2026-11-08T09:40:00+08:00","inLanguage":"zh-Hans","author":{"@type":"Organization","name":"ToucHigh 研究团队","url":"https://touchigh.ai/blog/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"GEO / AI 搜索","keywords":"AI爬虫robots.txt, OAI-SearchBot和GPTBot区别, 允许ChatGPT抓取, Google-Extended, PerplexityBot, 禁止AI训练但允许搜索","wordCount":1876,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/#blog","name":"ToucHigh 博客"},"about":[{"@type":"Thing","name":"robots.txt"},{"@type":"Thing","name":"AI爬虫"},{"@type":"Thing","name":"OAI-SearchBot"},{"@type":"Thing","name":"技术GEO"},{"@type":"Thing","name":"B2B官网"}],"citation":[{"@type":"CreativeWork","name":"Overview of OpenAI Crawlers","url":"https://platform.openai.com/docs/bots","publisher":{"@type":"Organization","name":"OpenAI"}},{"@type":"CreativeWork","name":"Perplexity Crawlers","url":"https://docs.perplexity.ai/guides/bots","publisher":{"@type":"Organization","name":"Perplexity"}},{"@type":"CreativeWork","name":"Google's common crawlers (Google-Extended)","url":"https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to robots.txt","url":"https://developers.google.com/search/docs/crawling-indexing/robots/intro","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"workTranslation":[{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/en/ai-crawlers-robots-txt-b2b-website/#article","inLanguage":"en"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"屏蔽GPTBot，ChatGPT就不显示我们的网站了吗？","acceptedAnswer":{"@type":"Answer","text":"按OpenAI的说法不会。GPTBot决定内容能否用于模型训练，OAI-SearchBot决定能否出现在ChatGPT搜索中。两项设置相互独立，你可以屏蔽GPTBot、同时放行OAI-SearchBot。"}},{"@type":"Question","name":"屏蔽Google-Extended会让我们从AI概览中消失吗？","acceptedAnswer":{"@type":"Answer","text":"不会。Google表示Google-Extended不影响Google搜索的收录，而AI概览和AI模式属于搜索的一部分，由Googlebot控制。如果想限制摘要和AI功能中显示的内容，Google建议使用nosnippet、data-nosnippet、max-snippet或noindex。"}},{"@type":"Question","name":"被AI找到需要llms.txt文件吗？","acceptedAnswer":{"@type":"Answer","text":"Google表示，出现在其AI功能中不需要新的机器可读文件或AI文本文件。一些网站会发布llms.txt，作为给AI工具的额外摘要，但它不能替代可抓取的页面。"}},{"@type":"Question","name":"修改robots.txt后多久能看到变化？","acceptedAnswer":{"@type":"Answer","text":"OpenAI表示，其系统大约需要24小时来适应搜索相关的robots.txt更新。能否被引用仍取决于内容，所以要在之后几周持续测量，而不是第二天就下结论。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://touchigh.ai/blog/"},{"@type":"ListItem","position":3,"name":"你的官网屏蔽了ChatGPT吗？B2B网站的AI爬虫robots.txt设置","item":"https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本页目录</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">首页</a>
+      <a href="/#products">产品</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/pro/">ToucHigh PRO</a>
+      <a href="/blog/" class="on">博客</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="语言: 简体中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">中文</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="语言" hidden><li><a href="/blog/ai-crawlers-robots-txt-b2b-website/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文" aria-current="page">简体中文</a></li><li><a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" data-short="EN">English</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登录</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">预约沟通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">首页</a><span>/</span><a href="/blog/">博客</a><span>/</span><span>GEO / AI 搜索</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">GEO / AI 搜索</div>
+    <h1>你的官网屏蔽了ChatGPT吗？B2B网站的AI爬虫robots.txt设置</h1>
+    <p class="dek">先查访问，再谈内容。很多外贸网站通过robots.txt、CDN或安全插件，无意中挡住了AI搜索爬虫。本文讲清搜索爬虫和训练爬虫的区别，以及该放行什么。</p>
+    <div class="a-meta"><b>ToucHigh 研究团队</b><span>发布于 <time datetime="2026-11-08T09:40:00+08:00">2026年11月8日</time></span><span>6 分钟阅读</span><span class="lang-badge">简体中文</span></div>
+    <div class="a-langs">其他语言版本<a href="/blog/en/ai-crawlers-robots-txt-b2b-website/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp 768w, /assets/blog/hero/t04-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t04.jpg" alt="一个紫色眼睛的AI对话气泡把橙色水桶放进清澈的石砌水井，井边放着烧瓶、直尺、产品瓶和空白写字板，旁边一堆落灰的深色链条无人理会。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="这篇文章回答的问题"><span class="qm">“</span><div><div class="eyebrow">这篇文章回答的问题</div><p class="q">去年IT同事在官网上屏蔽了“AI机器人”。ChatGPT一直不出现我们的工厂，会不会就是这个原因？到底该放行哪些？</p><p class="ans"><b>一句话回答</b>很有可能。AI公司把搜索用的爬虫和模型训练用的爬虫分开运行。OpenAI说明，屏蔽OAI-SearchBot的网站不会出现在ChatGPT搜索答案里，而GPTBot只管训练。应放行搜索爬虫（OAI-SearchBot、PerplexityBot、Googlebot、Bingbot），对GPTBot、Google-Extended等训练相关的爬虫单独做决定，并检查CDN或防火墙有没有绕过robots.txt直接拦截它们。</p></div></section>
+      <section class="kt takeaways"><h2>要点速览</h2><ul><li>OpenAI的OAI-SearchBot用于在ChatGPT搜索中展示网站，GPTBot用于训练。两者设置相互独立，可以允许搜索、拒绝训练。</li><li>OpenAI表示，robots.txt的修改大约需要24小时才会在ChatGPT搜索中生效。</li><li>PerplexityBot用于在Perplexity结果中展示并链接网站；Perplexity表示它不用于训练基础模型。</li><li>Google-Extended控制内容是否用于Gemini的训练和grounding；Google表示它不影响网站在Google搜索中的收录和排名。</li><li>即使robots.txt允许，防火墙和CDN也可能拦截爬虫；Perplexity为此公开了IP段和WAF配置说明。</li></ul></section>
+      <div class="prose"><p>相当多的外贸网站在AI搜索里“隐身”，原因很平淡：爬虫进不来。过去两年里，有人加了一条“屏蔽AI机器人”的规则，打开了CDN的机器人防护，或者装了一个安全插件。网站对人照常可用，所以没人发现。结果团队花几个月重写内容，而AI搜索引擎根本没被允许读取这些页面。</p>
+
+<p>这篇文章是一份针对工厂和B2B网站的30分钟技术检查。它本身不会让你被看见，但如果访问是断的，你做的其他工作都不会算数。</p>
+
+<h2 id="s1">哪些AI爬虫用于搜索，哪些用于训练？</h2>
+
+<p>关键在于：AI公司把“为答案寻找页面”的爬虫和“为模型训练收集内容”的爬虫分开了。你可以对两者做不同选择。</p>
+
+<div class="tw"><table>
+<thead><tr><th>公司</th><th>User agent</th><th>用途（依据各公司官方文档）</th></tr></thead>
+<tbody>
+<tr><td>OpenAI</td><td>OAI-SearchBot</td><td>在ChatGPT搜索功能中展示网站。被屏蔽的网站不会出现在ChatGPT搜索答案里，但仍可能以导航链接出现。</td></tr>
+<tr><td>OpenAI</td><td>GPTBot</td><td>抓取可能用于训练OpenAI基础模型的内容。屏蔽它表示内容不应用于训练。</td></tr>
+<tr><td>OpenAI</td><td>ChatGPT-User</td><td>在某些用户操作中访问网页。OpenAI表示robots.txt规则可能不适用，它也不用于决定搜索中出现什么。</td></tr>
+<tr><td>Perplexity</td><td>PerplexityBot</td><td>在Perplexity搜索结果中展示并链接网站；不用于为AI基础模型抓取内容。</td></tr>
+<tr><td>Perplexity</td><td>Perplexity-User</td><td>用户提问时抓取网页；因为是用户发起的请求，通常不遵守robots.txt。</td></tr>
+<tr><td>Google</td><td>Google-Extended</td><td>robots.txt中的一个标识，控制Google抓取的内容能否用于Gemini训练和grounding；不影响Google搜索的收录和排名。</td></tr>
+</tbody>
+</table></div>
+
+<p>Google搜索自己的AI功能是另一回事。Google的指南说明，AI已内置于搜索之中，所以针对Googlebot的robots.txt规则，就是控制网站如何被搜索（包括AI概览和AI模式）抓取的方式。为了“退出AI”而屏蔽Googlebot，也会让你从普通搜索结果中消失。</p>
+
+<h2 id="s2">工厂官网的robots.txt该怎么写？</h2>
+
+<p>对大多数出口制造商来说，目标是被找到，所以要放行搜索爬虫。是否放行训练爬虫是商业决定，拒绝它们并不会让你从AI搜索中消失。一个简单的起点如下：</p>
+
+<div class="tw"><table>
+<thead><tr><th>robots.txt写法</th><th>效果</th></tr></thead>
+<tbody>
+<tr><td><code>User-agent: OAI-SearchBot</code> / <code>Allow: /</code></td><td>有资格出现在ChatGPT搜索答案中</td></tr>
+<tr><td><code>User-agent: PerplexityBot</code> / <code>Allow: /</code></td><td>有资格出现在Perplexity结果中</td></tr>
+<tr><td><code>User-agent: Googlebot</code> / <code>Allow: /</code></td><td>Google搜索，包括AI概览和AI模式</td></tr>
+<tr><td><code>User-agent: Bingbot</code> / <code>Allow: /</code></td><td>Bing搜索</td></tr>
+<tr><td><code>User-agent: GPTBot</code> / <code>Allow</code>或<code>Disallow</code></td><td>你对OpenAI模型训练的选择</td></tr>
+<tr><td><code>User-agent: Google-Extended</code> / <code>Allow</code>或<code>Disallow</code></td><td>你对Gemini训练和grounding的选择</td></tr>
+<tr><td><code>Sitemap: https://www.example.com/sitemap.xml</code></td><td>帮助爬虫找到所有页面</td></tr>
+</tbody>
+</table></div>
+
+<p>经销商后台、价格表等私密区域，要用登录保护，而不是只靠robots.txt。Google的robots.txt文档写得很明确：robots.txt不是让页面不出现在Google中的机制，要做到这一点应使用noindex或密码保护。</p>
+
+<h2 id="s3">为什么robots.txt允许了，防火墙仍可能拦截AI爬虫？</h2>
+
+<p>robots.txt只是“请求”，CDN、防火墙或安全插件才是“大门”。很多机器人防护功能会在爬虫读取robots.txt之前，就对陌生爬虫发起验证或直接拦截。Google在AI功能的基础要求中列出“确保robots.txt以及任何CDN或托管基础设施都允许抓取”。Perplexity更进一步，公开了IP地址列表和逐步的WAF规则，方便网站放行它的爬虫；OpenAI也公开了其爬虫的IP段。</p>
+
+<p>问负责网站托管的人三个问题：机器人防护开了吗？有没有白名单？上表中的搜索爬虫在不在白名单里？然后在服务器日志里搜索表中的user agent。如果它们出现了但收到错误，或者根本没有出现，问题就找到了。</p>
+
+<h2 id="s4">30分钟怎么检查访问？</h2>
+
+<ol>
+<li><strong>打开 你的网站/robots.txt。</strong>看<code>User-agent: *</code>或任何AI爬虫下面有没有<code>Disallow: /</code>。</li>
+<li><strong>检查CDN或防火墙</strong>的机器人防护、地区封锁或“AI爬虫”开关。</li>
+<li><strong>搜索服务器日志</strong>中的OAI-SearchBot、PerplexityBot和Googlebot，看它们收到的状态码。</li>
+<li><strong>在Google Search Console确认</strong>核心产品页和能力页已被收录。</li>
+<li><strong>一天后在ChatGPT里复测。</strong>OpenAI表示robots.txt的修改大约24小时后才会在搜索中生效。</li>
+<li><strong>把规则写成文档</strong>，避免下次安全更新又把它改回去。</li>
+</ol>
+
+<h2 id="s5">放行爬虫，AI就会推荐你吗？</h2>
+
+<p>不会。访问只让你“有资格”，不代表“被选中”。爬虫能读取网站之后，接下来要看页面是否用具体事实回答了买家的问题，公司信息在全网是否一致。但访问永远是第一步：它是GEO里成本最低、也最常被忽略的修复。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>你把引擎挡在门外，它就不可能引用你。</blockquote><p>运营研究中的“瓶颈”思维认为，系统的产出取决于最窄的那一环。对AI可见度来说，爬虫访问往往就是这一环：大门没打开，内容做得再多也提不高结果。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能帮您做什么">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh 能帮您做什么</h2></div>
+        <div class="pb prose"><p>ToucHigh的GEO Autopilot在每次服务开始时都会做这类检查：</p><ul><li>审计你的网站在ChatGPT、Perplexity、Google AI和Gemini中的曝光盲区；</li><li>为你撰写并上线修复内容，包括页面、问答和实体数据；</li><li>之后持续追踪AI引用份额，看清打开大门带来的变化。</li></ul><p>可以预约30分钟策略沟通，我们在线一起看看你网站的AI可见度。</p><p class="uc">工厂与B2B供应商：看看ToucHigh如何提升<a href="/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T63'})}catch(e){}">AI搜索中的供应商可见度</a>。 需要把曝光变成商机？了解策略先行的外拓获客服务<a href="/pro/" onclick="try{gtag('event','pro_click',{location:'article_T63'})}catch(e){}">ToucHigh PRO</a>。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T63')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T63'})}catch(e){}">登录 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常见问题"><h2>常见问题</h2><details open><summary>屏蔽GPTBot，ChatGPT就不显示我们的网站了吗？</summary><p>按OpenAI的说法不会。GPTBot决定内容能否用于模型训练，OAI-SearchBot决定能否出现在ChatGPT搜索中。两项设置相互独立，你可以屏蔽GPTBot、同时放行OAI-SearchBot。</p></details><details><summary>屏蔽Google-Extended会让我们从AI概览中消失吗？</summary><p>不会。Google表示Google-Extended不影响Google搜索的收录，而AI概览和AI模式属于搜索的一部分，由Googlebot控制。如果想限制摘要和AI功能中显示的内容，Google建议使用nosnippet、data-nosnippet、max-snippet或noindex。</p></details><details><summary>被AI找到需要llms.txt文件吗？</summary><p>Google表示，出现在其AI功能中不需要新的机器可读文件或AI文本文件。一些网站会发布llms.txt，作为给AI工具的额外摘要，但它不能替代可抓取的页面。</p></details><details><summary>修改robots.txt后多久能看到变化？</summary><p>OpenAI表示，其系统大约需要24小时来适应搜索相关的robots.txt更新。能否被引用仍取决于内容，所以要在之后几周持续测量，而不是第二天就下结论。</p></details></section>
+      <section class="srcs"><h2>参考来源</h2><ol><li><a href="https://platform.openai.com/docs/bots" rel="noopener" target="_blank">Overview of OpenAI Crawlers</a> — OpenAI</li><li><a href="https://docs.perplexity.ai/guides/bots" rel="noopener" target="_blank">Perplexity Crawlers</a> — Perplexity</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/google-common-crawlers" rel="noopener" target="_blank">Google&#x27;s common crawlers (Google-Extended)</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/crawling-indexing/robots/intro" rel="noopener" target="_blank">Introduction to robots.txt</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>我们为什么写这篇</b>我们写这篇，是因为接手一个新的工厂官网时，我们第一件事就是检查AI爬虫能不能进来，而答案是“不能”的情况比大家想象的多。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本页目录"><h4>本页目录</h4><a href="#s1">哪些AI爬虫用于搜索，哪些用于训练？</a><a href="#s2">工厂官网的robots.txt该怎么写？</a><a href="#s3">为什么robots.txt允许了，防火墙仍可能拦截AI爬虫？</a><a href="#s4">30分钟怎么检查访问？</a><a href="#s5">放行爬虫，AI就会推荐你吗？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美国 AI 搜索中的曝光盲区</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">预约沟通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登录</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相关文章</h2>
+  <div class="grid"><a class="card" href="/blog/chatgpt-supplier-shortlist-audit/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t46-768.webp"><img src="/assets/blog/hero/t46.jpg" alt="一个巨大的放大镜检视着橙色遮阳篷小店旁漂浮的四个AI对话气泡，只有一个气泡里出现了这家店的橙色定位标记，旁边放着打勾记录的写字板。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">GEO / AI 搜索</div><h3>ChatGPT的供应商短名单里有你吗？30个问题的自查法</h3><p>动手改官网之前，先弄清自己现在的位置。本文给出30个买家式问题、一张评分表和解读结果的方法，外贸团队一个下午就能做完。</p><div class="meta"><span class="lg">简体中文</span><span>6 分钟阅读</span></div></div></a><a class="card" href="/blog/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="在一排相同的灰色工厂中，一座橙白相间的工厂被AI对话气泡投下的聚光灯照亮，下方面板展示了设备、认证、材料、交期和问答图标。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">GEO / AI 搜索</div><h3>让ChatGPT推荐你的工厂：工厂官网GEO入门</h3><p>海外买家开始用AI找供应商。工厂官网如果只有公司简介和产品图，就很难被ChatGPT推荐。本文给出可被引用的页面清单和GEO起步步骤。</p><div class="meta"><span class="lg">简体中文</span><span>6 分钟阅读</span></div></div></a><a class="card" href="/blog/backlinks-vs-primary-sources-chatgpt-citations/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t04-768.webp"><img src="/assets/blog/hero/t04.jpg" alt="一个紫色眼睛的AI对话气泡把橙色水桶放进清澈的石砌水井，井边放着烧瓶、直尺、产品瓶和空白写字板，旁边一堆落灰的深色链条无人理会。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">GEO / AI 搜索</div><h3>外链还有用吗？ChatGPT正在偏爱一手信息源</h3><p>ChatGPT越来越偏爱一手信息源，外链的边际回报在下降。中小卖家该把时间从买外链转向做原创数据。</p><div class="meta"><span class="lg">简体中文</span><span>5 分钟阅读</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/">← 返回博客</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美国 AI 搜索中的曝光盲区</h2>
+  <p>预约一次 30 分钟免费通话，我们在线为您的店铺做一次 AI 曝光检测。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登录 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.</p></div>
+      <div><h4>ToucHigh</h4><a href="/">首页</a><a href="/#geo">GEO Autopilot</a><a href="/#social">Social Autopilot</a><a href="/pro/">ToucHigh PRO</a></div>
+      <div><h4>博客</h4><a href="/blog/">博客</a><a href="/blog/feed.xml">RSS</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登录</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">预约沟通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

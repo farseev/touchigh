@@ -30,16 +30,25 @@ def font(lang, weight, size):
     return ImageFont.truetype(INTER % weight, size)
 
 
+NO_START = set("，。：；、！？）」』”’,.:;!?)%")
+
+
 def wrap(draw, text, f, width, cjk):
-    words = list(text) if cjk else text.split(" ")
+    import re as _re
+    if cjk:
+        words = _re.findall(r"[A-Za-z0-9\-\+\.&'/]+|\s|.", text)
+    else:
+        words = text.split(" ")
     lines, cur = [], ""
     for w in words:
+        if cjk and w == " " and not cur:
+            continue
         trial = (cur + w) if cjk else (cur + " " + w).strip()
-        if draw.textlength(trial, font=f) <= width or not cur:
+        if draw.textlength(trial, font=f) <= width or not cur or (cjk and w in NO_START):
             cur = trial
         else:
-            lines.append(cur)
-            cur = w
+            lines.append(cur.rstrip())
+            cur = w.lstrip()
     if cur:
         lines.append(cur)
     return lines
@@ -103,7 +112,36 @@ def card(out, title, eyebrow, art, lang="en", footer="touchigh.ai/blog"):
     im.save(out, "JPEG", quality=86, optimize=True, progressive=True)
 
 
+def articles(force=False, only_langs=None):
+    """OG cards for every article language file under i18n/articles/."""
+    import json
+    import sys
+    sys.path.insert(0, os.path.dirname(__file__))
+    from site_config import L
+    from articles import parse, ART
+    n = 0
+    for slug in sorted(os.listdir(ART)):
+        meta = json.load(open(os.path.join(ART, slug, "meta.json"), encoding="utf-8"))
+        for f in sorted(os.listdir(os.path.join(ART, slug))):
+            if not f.endswith(".txt"):
+                continue
+            hl = f[:-4]
+            if only_langs and hl not in only_langs:
+                continue
+            out = os.path.join(ROOT, "assets/blog/og/%s%s.jpg" % (meta["num"], "" if hl == "zh-Hans" else "-" + L[hl]["code"]))
+            if os.path.exists(out) and not force:
+                continue
+            d = parse(os.path.join(ART, slug, f))
+            card(out, d["title"], d["section"], os.path.join(ROOT, "assets/blog/hero/%s.jpg" % meta["hero"]), hl)
+            n += 1
+    return n
+
+
 if __name__ == "__main__":
+    import sys as _s
+    if len(_s.argv) > 1 and _s.argv[1] == "articles":
+        print(articles("--force" in _s.argv, [a for a in _s.argv[2:] if not a.startswith("--")] or None), "article cards")
+        raise SystemExit
     card(os.path.join(ROOT, "assets/og/supplier-ai-visibility.jpg"), "让AI把您的工厂列进供应商短名单",
          "中国工厂 · B2B供应商 · GEO", os.path.join(ROOT, "assets/blog/hero/t52.jpg"), "zh-Hans", "touchigh.ai")
     card(os.path.join(ROOT, "assets/og/supplier-ai-visibility-en.jpg"), "Buyers ask AI for a supplier shortlist. Make sure your factory is on it.",

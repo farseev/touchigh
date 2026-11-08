@@ -1,0 +1,104 @@
+== title ==
+Schema Markup for Factory Websites: Organization, Product and FAQ Done Right
+== seo_title ==
+Schema Markup for Factory Websites: What to Add | ToucHigh
+== desc ==
+Which structured data a B2B factory site needs: Organization, Product snippets and Breadcrumb, why FAQ markup rarely earns rich results, and what Google says about AI.
+== dek ==
+Structured data won't make ChatGPT recommend you on its own, but it removes doubt about who you are and what you make. Here is the short list a factory website needs, and what to skip.
+== section ==
+SEO
+== tags ==
+Structured data | Schema.org | Factory websites | B2B SEO | Entity data
+== keywords ==
+schema markup for manufacturers, factory website structured data, Organization schema B2B, Product structured data factory, FAQ schema 2026, JSON-LD for exporters
+== read ==
+6
+== q ==
+Our developer asked which schema markup to add to the factory's English website. Do we need it for Google and AI, and which types matter?
+== a ==
+Add three types and keep them accurate: Organization on the homepage (name, logo, address, contact and sameAs links to your official profiles), Product markup on each product or capability page using Google's product snippet format, and BreadcrumbList across the site. FAQ markup is optional, because since 2023 Google shows FAQ rich results only for well-known government and health sites. Google says no special schema is needed to appear in AI Overviews; the markup must simply match the visible text.
+== takeaways ==
+- Google's documentation says there is no special schema.org markup needed to appear in AI Overviews or AI Mode; structured data should match the visible text on the page.
+- Organization markup has no required properties; Google recommends name, a real-world presence such as address or telephone, and an online presence such as url or logo.
+- Factories that don't sell online should use Google's product snippet format, which is meant for product pages where people can't buy directly.
+- FAQ rich results have been limited to well-known, authoritative government and health websites since August 2023, so treat FAQ markup as optional.
+- Validate every template with Google's Rich Results Test and fix errors before rolling markup out to all pages.
+== body ==
+<p>Ask three SEO vendors which schema a factory website needs and you'll get three long lists. Most of them overshoot. A B2B manufacturer selling to overseas buyers needs a small amount of structured data, kept accurate, on the pages buyers actually read. This guide covers what to add, what to skip and how it relates to AI search.</p>
+
+<h2>Does structured data help a factory get cited by AI?</h2>
+
+<p>Start with what Google says. Its guidance for site owners on AI features states that there are no additional requirements to appear in AI Overviews or AI Mode, that you don't need new machine-readable files or markup, and that there is no special schema.org structured data you must add. The same page lists, as an ordinary SEO best practice, "making sure your structured data matches the visible text on the page."</p>
+
+<p>So structured data is not a switch that turns on AI citations. What it does is remove ambiguity. It states in a machine-readable way that this page is about this company, at this address, making these products, with these official profiles. For a Chinese factory whose English name, Chinese name and trading-company name often differ across the web, that clarity is worth an afternoon of developer time.</p>
+
+<h2>What should Organization markup on a factory homepage include?</h2>
+
+<p>Google's Organization documentation says there are no required properties; it recommends adding the properties relevant to your organization, focusing on those useful to users, such as name or alternateName, a sign of real-world presence like address or telephone, and online presence like url or logo. Its example also uses sameAs to list official profiles.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Property</th><th>What to put for a factory</th><th>Common mistake</th></tr></thead>
+<tbody>
+<tr><td>name</td><td>Your registered English company name, exactly as on invoices</td><td>Using a marketing slogan or a trading company's name</td></tr>
+<tr><td>alternateName</td><td>Short brand name, Chinese name in pinyin or characters</td><td>Leaving it out, so AI can't connect the variants</td></tr>
+<tr><td>url, logo</td><td>Homepage URL and a stable logo image URL</td><td>A logo URL that changes with every redesign</td></tr>
+<tr><td>address, telephone, email</td><td>The factory's real address and a monitored sales contact</td><td>An address that differs from your marketplace store</td></tr>
+<tr><td>sameAs</td><td>LinkedIn company page, marketplace store, YouTube channel</td><td>Linking profiles that are inactive or belong to agents</td></tr>
+<tr><td>foundingDate, numberOfEmployees</td><td>Facts you would also state on the About page</td><td>Numbers that don't appear anywhere visible</td></tr>
+</tbody>
+</table></div>
+
+<p>Put Organization on the homepage (and, if you like, the About page), not repeated with different values on every page. The facts must match what visitors see.</p>
+
+<h2>Which Product markup fits a factory that doesn't sell online?</h2>
+
+<p>Google describes two classes of product structured data. Product snippets are for product pages where people can't directly purchase the product. Merchant listings are for pages where customers can buy from you, with more options for shipping and returns. Most B2B factories quote on request, so product snippets are the honest fit.</p>
+
+<p>On each product or capability page, describe the product with name, description, image, brand (your brand or "OEM"), and material or category where it applies. Don't invent prices or review ratings to unlock rich results; if a price only exists in quotes, leave it out. A product page with accurate, visible specifications serves buyers and AI better than markup that promises more than the page shows.</p>
+
+<h2>Is FAQ schema still worth adding?</h2>
+
+<p>In August 2023 Google announced it was reducing the visibility of FAQ rich results: FAQ rich results from FAQPage structured data would only be shown for well-known, authoritative government and health websites. For a factory site that means FAQ markup will almost never produce the expandable result some agencies still sell.</p>
+
+<p>The FAQ itself is still valuable. Visible questions and answers ("What is your MOQ for custom colors?", "Which food-contact tests do you pass?") are exactly the passages an AI answer can lift. Keep the visible FAQ, write each answer so its first sentence stands alone, and treat FAQPage markup as optional housekeeping.</p>
+
+<h2>How should a factory roll out structured data?</h2>
+
+<ol>
+<li><strong>Fix the facts first.</strong> Decide the single English company name, address and product categories you will use everywhere.</li>
+<li><strong>Add Organization to the homepage</strong> with name, alternateName, url, logo, address, contact and sameAs.</li>
+<li><strong>Add Product to one template</strong> (one product or capability page) and BreadcrumbList across the site.</li>
+<li><strong>Validate with the Rich Results Test</strong> and fix critical errors before rolling the template out.</li>
+<li><strong>Roll out page by page</strong>, checking that every marked-up value appears in the visible text.</li>
+<li><strong>Re-check after every redesign.</strong> Templates often drop or duplicate JSON-LD when themes change.</li>
+</ol>
+
+<h2>What does structured data not fix?</h2>
+
+<p>Markup can't make thin pages useful. If your capability page says "advanced equipment and strict quality control" with no numbers, adding Product schema just labels an empty box. The order of work for GEO stays the same: specific, verifiable content on the page first; consistent entity information across the web second; structured data third, to describe both cleanly.</p>
+== insight_quote ==
+Markup labels the box. It can't fill it.
+== insight ==
+Signalling theory says a signal is only credible when it is costly to fake. Schema that mirrors detailed, visible facts — certificate numbers, capacity, a real address — reinforces trust; schema that claims more than the page shows is cheap talk that search engines and buyers learn to ignore.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+ToucHigh's GEO Autopilot treats structured data as part of the fix, not a separate project:
+== prop_items ==
+- it audits where your factory is invisible across ChatGPT, Perplexity, Google AI and Gemini;
+- it writes and ships the fixes, including pages, answers and entity data, so the facts and the markup agree;
+- it tracks your AI-citation share, so you can see which pages start to be cited.
+== prop_outro ==
+Book a 30-minute strategy call and bring one product page; we'll review what the page says, what the markup says and what AI says about you.
+== faq ==
+Q: Should we use JSON-LD or microdata?
+A: Google accepts several formats, and JSON-LD is usually the easiest to maintain because it sits in one script block rather than being woven into the HTML. Whatever you choose, keep one source of truth so the markup and the visible text never drift apart.
+Q: Can we mark up prices that we only give in quotations?
+A: No. Structured data should describe what is on the page. If the page doesn't show a price, leave price out and use the product snippet format, which Google intends for pages where people can't buy directly.
+Q: Do we need LocalBusiness markup?
+A: Only if buyers visit you in person as a local business, such as a showroom with opening hours. For an export manufacturer, Organization with a real address is usually the right type.
+Q: Will schema markup get us into ChatGPT answers?
+A: Not by itself. Google says no special schema is needed for its AI features, and other assistants rely on the pages they can crawl and the information they find across the web. Markup helps by stating your entity facts clearly; the content still has to answer buyers' questions.
+== note ==
+We wrote this because factories keep receiving quotes for "AI schema packages". The documentation is clear enough that a short, accurate list beats a long, inflated one.

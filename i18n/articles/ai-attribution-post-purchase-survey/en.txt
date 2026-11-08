@@ -1,0 +1,106 @@
+== title ==
+"How Did You Hear About Us?" Using Surveys to Count Sales from ChatGPT and AI Assistants
+== seo_title ==
+Post-Purchase Survey for AI Attribution: Count ChatGPT Sales | ToucHigh
+== desc ==
+Analytics misses buyers who saw you in an AI answer and came back later. How to design a one-question survey and inquiry-form field that measure ChatGPT's real influence.
+== dek ==
+Some of the buyers AI sends you will never show up as an AI click. A one-question survey at checkout or on the inquiry form is the cheapest way to see them. Here's how to word it, where to place it and how to read the answers.
+== section ==
+Measurement
+== tags ==
+Attribution | Post-purchase survey | AI traffic | GA4 | B2B inquiries
+== keywords ==
+post purchase survey AI attribution, how did you hear about us ChatGPT, self-reported attribution, measure ChatGPT sales, AI assistant attribution survey, inquiry form source field
+== read ==
+6
+== q ==
+Our analytics shows very little traffic from ChatGPT, but customers keep saying they "found us through AI". How do we measure that properly?
+== a ==
+Ask them, consistently. Add one required question, "How did you first hear about us?", after checkout or on the B2B inquiry form, with "ChatGPT or another AI assistant" as a named option, randomised answer order and an "Other" box. Compare the share choosing AI with the share GA4 attributes to AI channels. The gap estimates AI influence that never arrived as a labelled click, because visits without a referrer are recorded as Direct.
+== takeaways ==
+- GA4 can only label a visit by its tracking parameters or referrer; visits with neither are recorded as Direct, including some that started in an AI answer.
+- A buyer who sees your name in an AI answer and searches for you days later is invisible to click-based attribution.
+- A single "How did you first hear about us?" question with "ChatGPT or another AI assistant" as an explicit option captures that influence directly.
+- Randomise the order of answers and keep the wording fixed, or the results drift for reasons that have nothing to do with AI.
+- Read the survey next to GA4's AI Assistant channel and Direct traffic to deep pages; the gap between them is the useful number.
+== body ==
+<p>Every analytics setup has the same blind spot: it can only describe the last step it saw. A buyer asks ChatGPT for suppliers of custom packaging, sees your company named, closes the app, and two days later types your brand into Google. Your reports say Organic Search, or Direct. The AI answer that started it all gets no credit.</p>
+
+<p>You can't fix that blind spot with more tags. You can measure around it by asking customers directly. Self-reported attribution is old, cheap and, done carefully, one of the better tools for the AI channel.</p>
+
+<h2>Why can't analytics alone measure AI influence?</h2>
+
+<p>Google Analytics 4 classifies a session by its tracking parameters and the referring URL. GA4's default channel group now includes an AI Assistant channel for visits from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok, assigned when the referrer matches Google's list of AI assistants. That helps, but only for visits that arrive with a referrer. Google's own definitions route visits without any source information to Direct, and Google's AI Overviews and AI Mode are excluded from the AI Assistant channel altogether.</p>
+
+<p>Then there's the delay. Many buyers, especially B2B buyers, read an answer, note a name and come back later through a different door. No click-based model connects the two. A survey asks the person who knows: the buyer.</p>
+
+<h2>How should you word the question?</h2>
+
+<p>Keep it to one required question with a short, fixed list of answers. Wording matters more than people expect.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Choice</th><th>Recommended</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Question</td><td>"How did you first hear about us?"</td><td>"First" separates discovery from the last click</td></tr>
+<tr><td>AI option</td><td>"ChatGPT or another AI assistant (e.g. Perplexity, Gemini, Copilot)"</td><td>Buyers rarely type "AI" into a blank box; name it</td></tr>
+<tr><td>Search option</td><td>"Google or another search engine"</td><td>Keeps AI separate from classic search</td></tr>
+<tr><td>Other options</td><td>Social media, marketplace, trade show, referral from a colleague, existing customer</td><td>Five to eight options in total is enough</td></tr>
+<tr><td>Escape hatch</td><td>"Other (please tell us)" with a text box</td><td>Catches new channels and wording you didn't expect</td></tr>
+<tr><td>Order</td><td>Randomise, except "Other" last</td><td>People favour the first options they read</td></tr>
+</tbody>
+</table></div>
+
+<h2>Where should the question go for DTC stores and for B2B?</h2>
+
+<p><strong>For an online store,</strong> put it on the order confirmation page or in the first post-purchase email, not before payment, where any extra field can cost you orders. Most store platforms offer survey apps or a custom field for this.</p>
+
+<p><strong>For a factory or B2B supplier,</strong> add a required "How did you find us?" dropdown to the inquiry form, and give the sales team the same list for the first call. Log the answer in the CRM against the lead, so you can later see not only how many inquiries came from AI but how many became orders.</p>
+
+<h2>How do you read the results?</h2>
+
+<p>Put three numbers side by side every month:</p>
+
+<ol>
+<li><strong>Survey share:</strong> the percentage of buyers or inquiries choosing the AI option.</li>
+<li><strong>GA4 share:</strong> the percentage of sessions or key events in the AI Assistant channel, plus any custom AI channel you built.</li>
+<li><strong>Direct to deep pages:</strong> direct sessions landing on product, capability or article pages, which few people type by hand.</li>
+</ol>
+
+<p>If the survey share is well above the GA4 share, AI is influencing more buyers than your click data shows. That gap is the number to bring to a budget meeting. If both are low, the AI channel isn't working for you yet, and the fix is visibility, not measurement.</p>
+
+<h2>What mistakes make survey data useless?</h2>
+
+<ul>
+<li><strong>Changing the wording or the option list every few weeks.</strong> Fix it for at least a quarter so trends mean something.</li>
+<li><strong>Reading single weeks.</strong> Small stores and B2B pipelines have small samples. Look at monthly or quarterly totals.</li>
+<li><strong>Treating it as exact.</strong> People misremember. The survey is a direction-finder, not an invoice, and it works best next to GA4 and citation tracking.</li>
+<li><strong>Making it optional and buried.</strong> A required one-click question gets far more answers than a link to a form.</li>
+</ul>
+
+<p>A survey can't tell you which AI answer mentioned you or why. Pair it with a monthly check of what assistants actually say about your brand. Together they tell you both how much AI matters to your buyers and what to improve.</p>
+== insight_quote ==
+When the trail goes cold, ask the person who walked it.
+== insight ==
+Psychologists call it recall bias: people misremember sources, so self-reported attribution is imperfect. But its errors are different from analytics' errors, which is exactly why the two together beat either one alone.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+Surveys tell you AI matters; ToucHigh's GEO Autopilot helps you act on it:
+== prop_items ==
+- it audits what ChatGPT, Perplexity, Google AI and Gemini say about your brand and where you're missing;
+- it writes and ships fixes and GEO articles aimed at the questions buyers ask;
+- it tracks your AI-citation share, the exposure side that surveys and analytics both miss.
+== prop_outro ==
+Book a 30-minute strategy call and bring your last quarter's survey or inquiry-source data; we'll read it against a live AI-visibility check.
+== faq ==
+Q: How many responses do we need before the data is useful?
+A: There is no magic number, but small samples swing a lot week to week. Read monthly or quarterly totals and look at direction rather than exact percentages, especially in B2B where inquiries are few.
+Q: Should the question allow multiple answers?
+A: A single answer to "How did you first hear about us?" is easier to read and compare over time. If you want the full journey, add an optional second question, but keep the first one single-choice.
+Q: Won't buyers just pick Google because they searched for us?
+A: Some will, which is why the question asks where they first heard of you and names AI assistants explicitly. The free-text "Other" answers also show how buyers describe AI in their own words.
+Q: Can we connect survey answers to GA4?
+A: Yes, if your store or form sends the answer as an event parameter or user property. Even without that, comparing monthly totals from the survey with GA4's channel report is enough to see the gap.
+== note ==
+We wrote this because sellers and factories keep hearing "I found you through ChatGPT" from customers while their dashboards show almost nothing. A one-question survey is the simplest way to put a number on that.

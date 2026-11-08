@@ -1,0 +1,113 @@
+== title ==
+Is Your Website Blocking ChatGPT? robots.txt for AI Crawlers on B2B Sites
+== seo_title ==
+robots.txt for AI Crawlers: OAI-SearchBot, GPTBot, Google-Extended | ToucHigh
+== desc ==
+Which AI crawlers a B2B or factory website should allow: OAI-SearchBot vs GPTBot, PerplexityBot, Google-Extended, and the firewall settings that silently block them.
+== dek ==
+Before content, check access. Many export websites block AI search crawlers by accident through robots.txt, a CDN or a security plugin. Here's how to tell search bots from training bots and what to allow.
+== section ==
+GEO & AI search
+== tags ==
+robots.txt | AI crawlers | OAI-SearchBot | Technical GEO | B2B websites
+== keywords ==
+robots.txt AI crawlers, OAI-SearchBot vs GPTBot, allow ChatGPT crawler, Google-Extended robots.txt, PerplexityBot, block AI training but allow search
+== read ==
+6
+== q ==
+Our IT team blocked "AI bots" on the website last year. Could that be why ChatGPT never shows our factory, and what should we allow?
+== a ==
+Quite possibly. AI companies run separate bots for search and for model training. OpenAI says sites that opt out of OAI-SearchBot are not shown in ChatGPT search answers, while GPTBot only governs training. Allow the search crawlers (OAI-SearchBot, PerplexityBot, Googlebot, Bingbot), decide separately about training bots such as GPTBot and Google-Extended, and check that your CDN or firewall isn't blocking them regardless of robots.txt.
+== takeaways ==
+- OpenAI's OAI-SearchBot surfaces sites in ChatGPT search; GPTBot is for training. The settings are independent, so you can allow search and refuse training.
+- OpenAI says robots.txt changes can take about 24 hours to affect ChatGPT search.
+- PerplexityBot surfaces and links sites in Perplexity's results and, according to Perplexity, isn't used to train foundation models.
+- Google-Extended controls use of your content for Gemini training and grounding; Google says it does not affect inclusion or ranking in Google Search.
+- Firewalls and CDNs can block crawlers even when robots.txt allows them; Perplexity publishes IP ranges and WAF instructions for this reason.
+== body ==
+<p>A surprising number of export websites are invisible to AI search for a dull reason: the crawlers can't get in. Sometime in the last two years someone added a "block AI bots" rule, switched on a CDN's bot protection or installed a security plugin. The site still works for people, so nobody notices. Then the team spends months rewriting content that AI search engines were never allowed to read.</p>
+
+<p>This guide is a 30-minute technical check for factory and B2B websites. It won't make you visible on its own, but if access is broken, nothing else you do will count.</p>
+
+<h2>Which AI crawlers are for search, and which are for training?</h2>
+
+<p>The key idea: AI companies separate the bot that finds pages to show in answers from the bot that collects content for model training. You can make different choices for each.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Company</th><th>User agent</th><th>Purpose (per the company's documentation)</th></tr></thead>
+<tbody>
+<tr><td>OpenAI</td><td>OAI-SearchBot</td><td>Surfaces websites in ChatGPT's search features. Sites opted out are not shown in ChatGPT search answers, though they can still appear as navigational links.</td></tr>
+<tr><td>OpenAI</td><td>GPTBot</td><td>Crawls content that may be used to train OpenAI's foundation models. Disallowing it signals that content shouldn't be used for training.</td></tr>
+<tr><td>OpenAI</td><td>ChatGPT-User</td><td>Visits pages for certain user actions. OpenAI says robots.txt rules may not apply and it isn't used to decide what appears in search.</td></tr>
+<tr><td>Perplexity</td><td>PerplexityBot</td><td>Surfaces and links websites in Perplexity's search results; not used to crawl content for AI foundation models.</td></tr>
+<tr><td>Perplexity</td><td>Perplexity-User</td><td>Fetches pages when a user asks a question; generally ignores robots.txt because a user requested the fetch.</td></tr>
+<tr><td>Google</td><td>Google-Extended</td><td>A robots.txt token that controls whether content Google crawls may be used for Gemini training and grounding. It does not affect Google Search inclusion or ranking.</td></tr>
+</tbody>
+</table></div>
+
+<p>Google's own AI features in Search work differently. Google's guidance says AI is built into Search, so robots.txt rules for Googlebot are the control for how a site is crawled for Search, including AI Overviews and AI Mode. Blocking Googlebot to "opt out of AI" would also remove you from ordinary search results.</p>
+
+<h2>What should a factory website's robots.txt say?</h2>
+
+<p>For most export manufacturers the goal is to be found, so allow the search crawlers. Whether to allow training crawlers is a business decision; refusing them doesn't remove you from AI search. A simple starting point looks like this:</p>
+
+<div class="tw"><table>
+<thead><tr><th>robots.txt line</th><th>Effect</th></tr></thead>
+<tbody>
+<tr><td><code>User-agent: OAI-SearchBot</code> / <code>Allow: /</code></td><td>Eligible for ChatGPT search answers</td></tr>
+<tr><td><code>User-agent: PerplexityBot</code> / <code>Allow: /</code></td><td>Eligible for Perplexity results</td></tr>
+<tr><td><code>User-agent: Googlebot</code> / <code>Allow: /</code></td><td>Google Search, including AI Overviews and AI Mode</td></tr>
+<tr><td><code>User-agent: Bingbot</code> / <code>Allow: /</code></td><td>Bing search</td></tr>
+<tr><td><code>User-agent: GPTBot</code> / <code>Allow</code> or <code>Disallow</code></td><td>Your choice about OpenAI model training</td></tr>
+<tr><td><code>User-agent: Google-Extended</code> / <code>Allow</code> or <code>Disallow</code></td><td>Your choice about Gemini training and grounding</td></tr>
+<tr><td><code>Sitemap: https://www.example.com/sitemap.xml</code></td><td>Helps crawlers find every page</td></tr>
+</tbody>
+</table></div>
+
+<p>Keep private areas, such as a dealer portal or price lists, out of crawlers' way with login protection, not just robots.txt. Google's robots.txt documentation is explicit that robots.txt is not a mechanism for keeping a page out of Google; use noindex or password protection for that.</p>
+
+<h2>Why can a firewall block AI crawlers even when robots.txt allows them?</h2>
+
+<p>robots.txt is a request; your CDN, firewall or security plugin is a gate. Many bot-protection features challenge or block unfamiliar crawlers before they ever read robots.txt. Google lists "ensuring that crawling is allowed in robots.txt, and by any CDN or hosting infrastructure" among its basics for AI features. Perplexity goes further and publishes IP address lists and step-by-step web application firewall rules so site owners can allow its bots. OpenAI also publishes IP ranges for its crawlers.</p>
+
+<p>Ask whoever manages your hosting three questions: is bot protection on, does it have an allow list, and are the search crawlers above on it? Then check your server logs for the user agents in the table. If they appear and get errors, or never appear at all, you have found the problem.</p>
+
+<h2>How do you check access in 30 minutes?</h2>
+
+<ol>
+<li><strong>Open yoursite.com/robots.txt.</strong> Look for <code>Disallow: /</code> under <code>User-agent: *</code> or under any AI user agent.</li>
+<li><strong>Check the CDN or firewall</strong> for bot protection, country blocking or "AI scraper" toggles.</li>
+<li><strong>Search your server logs</strong> for OAI-SearchBot, PerplexityBot and Googlebot, and the status codes they receive.</li>
+<li><strong>Confirm indexing in Google Search Console</strong> for your key product and capability pages.</li>
+<li><strong>Retest in ChatGPT after a day.</strong> OpenAI says robots.txt changes can take about 24 hours to reflect in search.</li>
+<li><strong>Write the policy down</strong>, so the next security update doesn't undo it.</li>
+</ol>
+
+<h2>Does allowing crawlers mean AI will recommend you?</h2>
+
+<p>No. Access makes you eligible; it doesn't make you chosen. Once crawlers can read your site, the next questions are whether your pages answer buyers' questions with specific facts, and whether your company information is consistent across the web. But access comes first. It's the cheapest fix in GEO and the most often missed.</p>
+== insight_quote ==
+You can't be cited by an engine you've locked out.
+== insight ==
+Bottleneck thinking from operations research says a system's output is set by its narrowest point. For AI visibility, crawler access is often that point: no amount of content work raises the result until the gate is open.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+ToucHigh's GEO Autopilot starts every engagement with this kind of check:
+== prop_items ==
+- an audit of where your site is invisible across ChatGPT, Perplexity, Google AI and Gemini;
+- fixes written and shipped for you, including pages, answers and entity data;
+- AI-citation share tracked afterwards, so you can see the effect of opening the gate.
+== prop_outro ==
+Book a 30-minute strategy call and we'll look at your site's AI visibility live.
+== faq ==
+Q: If we block GPTBot, will ChatGPT stop showing our site?
+A: Not according to OpenAI. GPTBot governs whether content may be used for model training; OAI-SearchBot governs appearance in ChatGPT search. The two settings are independent, so you can disallow GPTBot and still allow OAI-SearchBot.
+Q: Does blocking Google-Extended remove us from AI Overviews?
+A: No. Google says Google-Extended does not affect inclusion in Google Search, and AI Overviews and AI Mode are part of Search, controlled through Googlebot. To limit what appears in snippets and AI features, Google points to nosnippet, data-nosnippet, max-snippet or noindex.
+Q: Do we need an llms.txt file to be found by AI?
+A: Google says you don't need new machine-readable files or AI text files to appear in its AI features. Some sites publish llms.txt as an extra summary for AI tools, but it is not a substitute for crawlable pages.
+Q: How long after fixing robots.txt will we see a change?
+A: OpenAI says its systems can take about 24 hours to adjust to a robots.txt update for search. Being cited still depends on your content, so measure over the following weeks rather than the next day.
+== note ==
+We wrote this because the first thing we check on a new factory website is whether AI crawlers can get in, and the answer is "no" more often than anyone expects.

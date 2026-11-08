@@ -1,0 +1,9 @@
+{"num": "t65", "original": "zh-Hans", "cat": "measurement", "hero": "t01",
+ "published": "2026-11-08T10:20:00+08:00",
+ "landing": "supplier",
+ "related": ["ga4-ai-assistant-channel", "ai-overviews-branded-queries-seo-traffic", "seo-best-practices-ai-overviews-ai-mode"],
+ "sources": [
+  {"name": "AI features and your website", "url": "https://developers.google.com/search/docs/appearance/ai-features", "publisher": "Google Search Central"},
+  {"name": "Performance report (Search results): Overview and basic setup", "url": "https://support.google.com/webmasters/answer/7576553", "publisher": "Search Console Help"},
+  {"name": "[GA4] Default channel group", "url": "https://support.google.com/analytics/answer/9756891", "publisher": "Google Analytics Help"}
+ ]}

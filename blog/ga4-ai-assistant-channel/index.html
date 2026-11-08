@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GA4 AI助手渠道分组：设置方法与统计盲区 | ToucHigh</title>
+<meta name="description" content="GA4默认渠道分组新增了AI Assistant渠道。它统计哪些访问，为什么AI概览和无来源访问不在其中，以及如何自建自定义渠道组。">
+<link rel="canonical" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="GA4 AI助手渠道, GA4自定义渠道组, GA4统计ChatGPT流量, AI引荐流量正则, AI assistants channel group, GEO流量衡量">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ga4-ai-assistant-channel/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ga4-ai-assistant-channel/">
+<meta property="og:title" content="GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组">
+<meta property="og:description" content="GA4默认渠道分组新增了AI Assistant渠道。它统计哪些访问，为什么AI概览和无来源访问不在其中，以及如何自建自定义渠道组。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t64-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:00:00+08:00">
+<meta property="article:section" content="效果衡量">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="AI流量">
+<meta property="article:tag" content="渠道分组">
+<meta property="article:tag" content="归因">
+<meta property="article:tag" content="GEO效果衡量">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组">
+<meta name="twitter:description" content="GA4默认渠道分组新增了AI Assistant渠道。它统计哪些访问，为什么AI概览和无来源访问不在其中，以及如何自建自定义渠道组。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t64-en.jpg">
+<meta name="twitter:image:alt" content="GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="ToucHigh 博客" href="/blog/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ga4-ai-assistant-channel/#article","url":"https://touchigh.ai/blog/ga4-ai-assistant-channel/","mainEntityOfPage":"https://touchigh.ai/blog/ga4-ai-assistant-channel/","headline":"GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组","alternativeHeadline":"GA4 AI助手渠道分组：设置方法与统计盲区","description":"GA4默认渠道分组新增了AI Assistant渠道。它统计哪些访问，为什么AI概览和无来源访问不在其中，以及如何自建自定义渠道组。","abstract":"可以用，但别把它当成全部。Google文档说明，AI Assistant渠道统计来自ChatGPT、Gemini、Deepseek、Copilot、Grok等来源的访问，并且不包括Google的AI概览和AI模式。它也看不到没有来源信息的访问，这些会落进“直接访问”。先确认你的媒体资源里实际出现了哪些AI助手；如果有的落在“引荐”里，就建一个自定义渠道组；再结合Search Console和引用追踪一起看。","image":["https://touchigh.ai/assets/blog/og/t64-en.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-11-08T10:00:00+08:00","dateModified":"2026-11-08T10:00:00+08:00","inLanguage":"zh-Hans","author":{"@type":"Organization","name":"ToucHigh 研究团队","url":"https://touchigh.ai/blog/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"效果衡量","keywords":"GA4 AI助手渠道, GA4自定义渠道组, GA4统计ChatGPT流量, AI引荐流量正则, AI assistants channel group, GEO流量衡量","wordCount":1971,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/#blog","name":"ToucHigh 博客"},"about":[{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"AI流量"},{"@type":"Thing","name":"渠道分组"},{"@type":"Thing","name":"归因"},{"@type":"Thing","name":"GEO效果衡量"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"About regular expressions (regex)","url":"https://support.google.com/analytics/answer/1034324","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"workTranslation":[{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/en/ga4-ai-assistant-channel/#article","inLanguage":"en"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"AI Assistant渠道包括Google AI概览吗？","acceptedAnswer":{"@type":"Answer","text":"不包括。Google的定义把AI概览和AI模式排除在AI Assistant渠道之外。Google在Search Console效果报告的“网页”搜索类型中，把它们与其他搜索数据一起报告。"}},{"@type":"Question","name":"为什么ChatGPT的流量还是显示为直接访问？","acceptedAnswer":{"@type":"Answer","text":"访问到达时如果没有引荐网址或跟踪参数，GA4没有依据可以分类，只能记为直接访问。可以关注深层页面的直接访问，并询问买家是怎么找到你的，来估算这部分比例。"}},{"@type":"Question","name":"自定义渠道组会改变历史数据吗？","acceptedAnswer":{"@type":"Answer","text":"自定义渠道组可追溯应用到报告中，你可以用新分组查看过去的数据。更改媒体资源的主要渠道组，只影响此后的报告。"}},{"@type":"Question","name":"最多能建几个自定义渠道组？","acceptedAnswer":{"@type":"Answer","text":"Google列出的限制是：标准媒体资源2个、Analytics 360媒体资源5个（不含预定义分组），每组最多50个渠道。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://touchigh.ai/blog/"},{"@type":"ListItem","position":3,"name":"GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组","item":"https://touchigh.ai/blog/ga4-ai-assistant-channel/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本页目录</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">首页</a>
+      <a href="/#products">产品</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/pro/">ToucHigh PRO</a>
+      <a href="/blog/" class="on">博客</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="语言: 简体中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">中文</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="语言" hidden><li><a href="/blog/ga4-ai-assistant-channel/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文" aria-current="page">简体中文</a></li><li><a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" data-short="EN">English</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登录</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">预约沟通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">首页</a><span>/</span><a href="/blog/">博客</a><span>/</span><span>效果衡量</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">效果衡量</div>
+    <h1>GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组</h1>
+    <p class="dek">Google Analytics现在会把来自ChatGPT、Gemini、Copilot等的访问归入单独渠道。这解决了AI流量统计的一部分问题。本文讲清它没解决的部分，以及用自定义渠道组补上缺口的方法。</p>
+    <div class="a-meta"><b>ToucHigh 研究团队</b><span>发布于 <time datetime="2026-11-08T10:00:00+08:00">2026年11月8日</time></span><span>6 分钟阅读</span><span class="lang-badge">简体中文</span></div>
+    <div class="a-langs">其他语言版本<a href="/blog/en/ga4-ai-assistant-channel/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="包裹从带紫色光晕的对话气泡隧道滑上传送带，落进一个没有标记的灰色箱子，橙色追踪标签散落在地上，旁边的放大镜、环形图、柱状图和购物袋准备交叉核对来源。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="这篇文章回答的问题"><span class="qm">“</span><div><div class="eyebrow">这篇文章回答的问题</div><p class="q">GA4报表里出现了“AI Assistant”渠道。我们能靠它衡量GEO带来的流量吗？还需要自己再设置吗？</p><p class="ans"><b>一句话回答</b>可以用，但别把它当成全部。Google文档说明，AI Assistant渠道统计来自ChatGPT、Gemini、Deepseek、Copilot、Grok等来源的访问，并且不包括Google的AI概览和AI模式。它也看不到没有来源信息的访问，这些会落进“直接访问”。先确认你的媒体资源里实际出现了哪些AI助手；如果有的落在“引荐”里，就建一个自定义渠道组；再结合Search Console和引用追踪一起看。</p></div></section>
+      <section class="kt takeaways"><h2>要点速览</h2><ul><li>GA4默认渠道分组现已包含AI Assistant：来自ChatGPT、Gemini、Deepseek、Copilot、Grok等来源的访问；当引荐网址匹配Google维护的列表时，媒介被设为“ai-assistant”。</li><li>该渠道不包括Google的AI概览和AI模式；Google把它们计入Search Console的整体“网页”搜索数据。</li><li>没有引荐网址、也没有跟踪参数的访问会被记为“直接访问”，任何渠道规则都无法找回。</li><li>默认渠道分组不能编辑，但自定义渠道组可以，而且可追溯应用到历史数据。标准媒体资源可建2个自定义组，每组最多50个渠道。</li><li>Google给出的AI助手示例正则范围很宽；明确列出域名可以避免误抓无关来源。</li></ul></section>
+      <div class="prose"><p>过去两年，在Google Analytics 4里衡量AI流量的标准建议都一样：自己建渠道组，因为ChatGPT和Perplexity的访问都埋在“引荐”里。现在Google在GA4默认渠道分组中加入了<strong>AI Assistant</strong>渠道。这是好消息，但它改变了问题，而不是终结了问题：你需要知道新渠道统计什么、漏掉什么，以及什么时候仍值得自己分组。</p>
+
+<h2 id="s1">GA4的AI Assistant渠道统计什么？</h2>
+
+<p>Google的“默认渠道分组”文档把AI Assistant描述为：用户来自ChatGPT、Gemini、Deepseek、Copilot或Grok等来源的渠道。背后的规则是：当引荐网址匹配Google维护的AI助手列表时，媒介被设为“ai-assistant”，广告系列被设为“(ai-assistant)”。带有这个媒介的会话，会出现在流量获取报告的AI Assistant这一行。</p>
+
+<p>由此有两点。第一，这是Google的列表，不是你的：文档列举的是示例，并非所有AI助手。第二，GA4的默认渠道分组不能编辑，如果你的买家常用的某个AI助手没被识别，你无法把它加进默认渠道，只能建自定义渠道组。</p>
+
+<h2 id="s2">AI Assistant渠道漏掉了什么？</h2>
+
+<div class="tw"><table>
+<thead><tr><th>流量</th><th>在GA4中落在哪里</th><th>该从哪里看</th></tr></thead>
+<tbody>
+<tr><td>Google AI概览和AI模式</td><td>按Google定义不计入AI Assistant</td><td>Search Console：Google表示它们出现在效果报告的“网页”搜索类型中</td></tr>
+<tr><td>没有引荐网址、没有跟踪参数的AI访问</td><td>直接访问</td><td>深层页面的直接访问、品牌词搜索、购后问卷</td></tr>
+<tr><td>不在Google列表中的AI助手</td><td>通常是“引荐”</td><td>用自己的正则建自定义渠道组</td></tr>
+<tr><td>在答案里看到你的名字、过几天再回来的人</td><td>直接访问、自然搜索或其他回访入口</td><td>引用追踪和品牌词搜索趋势</td></tr>
+</tbody>
+</table></div>
+
+<p>第二行最关键。分析工具判断访问来源，主要看跟踪参数和浏览器传来的引荐网址。如果AI应用打开链接时两者都没有传，访问就会被记为“直接访问”。我们之前那篇<a href="/blog/chatgpt-utm-ai-referral-measurement/">ChatGPT链接不再带UTM</a>的文章，讲了实际表现是什么样子。没有到达GA4的信息，任何渠道规则都找不回来。</p>
+
+<h2 id="s3">怎么查看你的媒体资源实际记录了什么？</h2>
+
+<ol>
+<li><strong>打开“报告 → 获客 → 流量获取”</strong>，把主维度设为“会话默认渠道组”，找到AI Assistant这一行，看它的趋势。</li>
+<li><strong>把维度切换为“会话来源/媒介”</strong>，筛选“ai-assistant”，看Google识别了哪些AI助手。</li>
+<li><strong>在“引荐”中筛选已知的AI域名</strong>，例如perplexity.ai或claude.ai。仍然停留在“引荐”里的AI流量，就是你的缺口。</li>
+<li><strong>对比着陆页。</strong>AI带来的访问往往落在产品页、能力页、博客文章等深层页面，而不是首页。</li>
+</ol>
+
+<h2 id="s4">什么时候要自建AI自定义渠道组？</h2>
+
+<p>如果买家常用的AI助手落在“引荐”里，或者你想让每个AI助手单独成行，又或者希望有一个不随Google列表变化而变化的稳定定义，就值得自建。Google的自定义渠道组文档说明了操作：在“管理 → 数据显示 → 渠道组”中（需要编辑者或以上权限）新建渠道组，添加渠道并设置条件。自定义渠道组可追溯应用到报告中。标准媒体资源除预定义分组外，可建2个自定义组，每组最多50个渠道。</p>
+
+<p>Google甚至给出了一个“AI assistants”示例：一个使用“匹配正则表达式”条件的渠道，并排在“引荐”之前，让AI来源先被归类。它的示例正则故意写得很宽：开头的<code>^.*ai</code>会匹配任何包含字母“ai”的来源，比如某个邮箱服务商的域名。更严谨的写法是列出你实际看到的域名，例如：</p>
+
+<p><code>.*(chatgpt\.com|openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com).*</code></p>
+
+<p>把它用在“来源”上，渠道放在“引荐”之前；如果想看细分，就为每个AI助手单独建一个渠道。出现新的AI助手带来流量时更新列表；Google自己的说明也提醒，助手列表变化时要更新正则。</p>
+
+<h2 id="s5">要把自定义渠道组设为主要渠道组吗？</h2>
+
+<p>GA4允许把任意自定义渠道组设为媒体资源的主要渠道组，此后的“主要渠道组”维度会按它填充。定义稳定之后这很有用，但它不像自定义渠道组本身那样可追溯。大多数小团队可以保留默认分组作为主要分组，把自定义渠道组当作辅助视图。</p>
+
+<h2 id="s6">GA4在AI渠道衡量中该扮演什么角色？</h2>
+
+<p>把GA4当作三面镜子之一。GA4告诉你能被归因的点击；Search Console告诉你Google搜索（包括AI概览和AI模式）的情况；每月一次的引用检查告诉你AI助手到底有没有提到你。三者一起上升，就能证明GEO在起作用；只有一项在动，你就知道该往哪里查。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>渠道报表只显示它能贴标签的点击，看不到它贴不上标签的影响。</blockquote><p>古德哈特定律提醒我们：一个指标一旦变成目标，就不再是好指标。如果团队只盯AI Assistant这一行，就会低估那些让买家通过直接访问或品牌词搜索进来的AI答案。把它当作三个信号之一。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能帮您做什么">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh 能帮您做什么</h2></div>
+        <div class="pb prose"><p>GA4负责点击，ToucHigh的GEO Autopilot负责补全其余部分：</p><ul><li>检查你在ChatGPT、Perplexity、Google AI和Gemini中的曝光盲区；</li><li>针对买家的问题撰写并上线修复内容和GEO文章；</li><li>持续追踪AI引用份额，这是跟踪参数无法扭曲的信号。</li></ul><p>可以预约30分钟策略沟通，带上流量获取报告的截图，我们结合在线AI可见度检测一起解读。</p><p class="uc">工厂与B2B供应商：看看ToucHigh如何提升<a href="/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T64'})}catch(e){}">AI搜索中的供应商可见度</a>。 需要把曝光变成商机？了解策略先行的外拓获客服务<a href="/pro/" onclick="try{gtag('event','pro_click',{location:'article_T64'})}catch(e){}">ToucHigh PRO</a>。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T64')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T64'})}catch(e){}">登录 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常见问题"><h2>常见问题</h2><details open><summary>AI Assistant渠道包括Google AI概览吗？</summary><p>不包括。Google的定义把AI概览和AI模式排除在AI Assistant渠道之外。Google在Search Console效果报告的“网页”搜索类型中，把它们与其他搜索数据一起报告。</p></details><details><summary>为什么ChatGPT的流量还是显示为直接访问？</summary><p>访问到达时如果没有引荐网址或跟踪参数，GA4没有依据可以分类，只能记为直接访问。可以关注深层页面的直接访问，并询问买家是怎么找到你的，来估算这部分比例。</p></details><details><summary>自定义渠道组会改变历史数据吗？</summary><p>自定义渠道组可追溯应用到报告中，你可以用新分组查看过去的数据。更改媒体资源的主要渠道组，只影响此后的报告。</p></details><details><summary>最多能建几个自定义渠道组？</summary><p>Google列出的限制是：标准媒体资源2个、Analytics 360媒体资源5个（不含预定义分组），每组最多50个渠道。</p></details></section>
+      <section class="srcs"><h2>参考来源</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/1034324" rel="noopener" target="_blank">About regular expressions (regex)</a> — Google Analytics Help</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li></ol></section>
+      <p class="note"><b>我们为什么写这篇</b>我们写这篇，是因为之前手动建过AI渠道组的团队，突然看到新的AI Assistant一行，不知道该信哪个数字。答案是两个都看，并结合Search Console和引用追踪一起解读。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本页目录"><h4>本页目录</h4><a href="#s1">GA4的AI Assistant渠道统计什么？</a><a href="#s2">AI Assistant渠道漏掉了什么？</a><a href="#s3">怎么查看你的媒体资源实际记录了什么？</a><a href="#s4">什么时候要自建AI自定义渠道组？</a><a href="#s5">要把自定义渠道组设为主要渠道组吗？</a><a href="#s6">GA4在AI渠道衡量中该扮演什么角色？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美国 AI 搜索中的曝光盲区</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">预约沟通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登录</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相关文章</h2>
+  <div class="grid"><a class="card" href="/blog/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="包裹从带紫色光晕的对话气泡隧道滑上传送带，落进一个没有标记的灰色箱子，橙色追踪标签散落在地上，旁边的放大镜、环形图、柱状图和购物袋准备交叉核对来源。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">效果衡量</div><h3>ChatGPT不再带UTM：AI带来的流量还怎么统计？</h3><p>ChatGPT疑似不再给外链加UTM，AI带来的访问混进了直接流量。SEO和GEO的回报，该换一套方法来算了。</p><div class="meta"><span class="lg">简体中文</span><span>5 分钟阅读</span></div></div></a><a class="card" href="/blog/search-console-ai-overviews-ai-mode-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="搜索框倾泻出橙色小球，大部分被带紫色光晕的AI答案漏斗截住，只有少数落到小小的网站店铺上，旁边一摞摇摇欲坠的空白页面只换来一颗小球。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">效果衡量</div><h3>在Google Search Console里怎么看AI概览和AI模式带来的流量</h3><p>Search Console里没有单独的“AI概览”标签页，Google把AI功能并进了你已经在用的效果报告。本文讲清出海企业如何从中读出AI答案对搜索流量的影响。</p><div class="meta"><span class="lg">简体中文</span><span>6 分钟阅读</span></div></div></a><a class="card" href="/blog/ai-attribution-post-purchase-survey/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="白色架子上的三个玻璃罐装着不同高度的橙色弹珠，分别标有眼睛、爱心加书签、鼠标指针加购物车图标，每个罐子上的深蓝色线条标示各自的历史平均水平。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">效果衡量</div><h3>“您是怎么知道我们的？”用问卷统计ChatGPT和AI助手带来的成交</h3><p>AI带来的一部分买家，永远不会以“AI点击”的形式出现在报表里。在结账后或询盘表单上加一道题，是看见他们成本最低的办法。本文讲清怎么问、放在哪、怎么读结果。</p><div class="meta"><span class="lg">简体中文</span><span>6 分钟阅读</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/">← 返回博客</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美国 AI 搜索中的曝光盲区</h2>
+  <p>预约一次 30 分钟免费通话，我们在线为您的店铺做一次 AI 曝光检测。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登录 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.</p></div>
+      <div><h4>ToucHigh</h4><a href="/">首页</a><a href="/#geo">GEO Autopilot</a><a href="/#social">Social Autopilot</a><a href="/pro/">ToucHigh PRO</a></div>
+      <div><h4>博客</h4><a href="/blog/">博客</a><a href="/blog/feed.xml">RSS</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登录</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">预约沟通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

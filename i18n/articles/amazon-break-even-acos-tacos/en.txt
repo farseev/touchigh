@@ -1,0 +1,116 @@
+== title ==
+Break-Even ACoS, TACoS and ROAS: The Amazon Ads Math Every Seller Needs
+== seo_title ==
+Break-Even ACoS, TACoS and ROAS for Amazon Sellers | ToucHigh
+== desc ==
+How to calculate break-even ACoS from your real margin, how ACoS relates to ROAS, what TACoS adds, and how to set a target ACoS for profit, launch or clearance.
+== dek ==
+"What's a good ACoS?" has no universal answer, and Amazon says so. But your break-even ACoS has an exact answer, and it's the number every bid, budget and AI ad agent should be measured against.
+== section ==
+Ads for SMEs
+== tags ==
+ACoS | TACoS | ROAS | Amazon PPC | Profit margin
+== keywords ==
+break even ACoS, how to calculate ACoS, ACoS vs ROAS, TACoS Amazon, target ACoS, Amazon ads profit margin
+== read ==
+6
+== q ==
+Our Amazon ads show an ACoS of 28%. Is that good or bad, and how do we know what ACoS we can actually afford?
+== a ==
+It depends entirely on your margin. Amazon defines ACoS as ad spend divided by ad revenue and says that to keep a profit, ACoS must be lower than your profit margin. Calculate your margin before ad costs (price minus product cost, Amazon fees, shipping, duties and expected returns); that percentage is your break-even ACoS. If it's 35%, a 28% ACoS is profitable on attributed sales; if it's 22%, you're losing money on each ad sale. Then track TACoS, total ad spend over total sales, to see whether ads are building organic sales.
+== takeaways ==
+- Amazon's formula: ACoS = ad spend ÷ ad revenue × 100; ROAS = ad revenue ÷ ad spend. One is the inverse of the other.
+- Amazon's guidance: break-even ACoS is tied to your profit margin; ACoS must stay below it to keep a profit.
+- Use margin before ad costs, after every other cost: product, Amazon fees, fulfilment, shipping, duties and returns.
+- TACoS (total ad spend ÷ total sales) isn't in Amazon's ACoS guide; sellers calculate it to see whether ads lift organic sales.
+- Set a different target ACoS for each goal: profit, launch or clearance. Amazon itself warns against focusing too much on ACoS alone.
+== body ==
+<p>ACoS is the number Amazon sellers quote most and understand least. Agencies report it, AI ad tools optimise towards it, and sellers argue about what a good one is. Amazon's own guide answers that last question honestly: there isn't a definitive number for a good ACoS. It depends on your industry, size and goals. What you can calculate exactly is the ACoS at which your ads stop making money. Every other decision should start there.</p>
+
+<h2>How do ACoS and ROAS relate?</h2>
+
+<p>Amazon defines advertising cost of sales as ad spend divided by ad revenue, expressed as a percentage. Its example: spend $50, earn $100 in ad-attributed sales, and ACoS is 50%. Return on ad spend is the inverse, ad revenue divided by ad spend, so the same campaign has a ROAS of 2.</p>
+
+<div class="tw"><table>
+<thead><tr><th>ACoS</th><th>Equivalent ROAS</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td>20%</td><td>5.0</td><td>$1 of ads returns $5 of attributed sales</td></tr>
+<tr><td>25%</td><td>4.0</td><td>$1 of ads returns $4</td></tr>
+<tr><td>33%</td><td>3.0</td><td>$1 of ads returns $3</td></tr>
+<tr><td>50%</td><td>2.0</td><td>$1 of ads returns $2</td></tr>
+</tbody>
+</table></div>
+
+<p>Amazon reports and many cross-channel tools report ROAS; sellers' spreadsheets usually use ACoS. They carry the same information. Pick one for decisions and convert when you compare.</p>
+
+<h2>How do you calculate break-even ACoS?</h2>
+
+<p>Amazon's guide is clear: break-even ACoS is directly linked to your profit margin, and your ACoS needs to be lower than your profit margin to maintain a profit. The work is in calculating that margin honestly, before ad costs but after everything else.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Line (illustration, per unit)</th><th>Amount</th></tr></thead>
+<tbody>
+<tr><td>Selling price</td><td>$40.00</td></tr>
+<tr><td>Product cost (landed, including duties and freight)</td><td>−$12.00</td></tr>
+<tr><td>Amazon referral fee</td><td>−$6.00</td></tr>
+<tr><td>Fulfilment fee</td><td>−$6.50</td></tr>
+<tr><td>Returns and other allowances</td><td>−$1.50</td></tr>
+<tr><td><strong>Margin before ad costs</strong></td><td><strong>$14.00 = 35% of price</strong></td></tr>
+</tbody>
+</table></div>
+
+<p>In this illustration, break-even ACoS is 35% and break-even ROAS is 1 ÷ 0.35, about 2.9. Use your own numbers: fees vary by category and size, and landed costs for cross-border sellers move with freight and tariffs. Recalculate whenever one of them changes. A campaign that was profitable before a tariff change can be losing money after it with an unchanged ACoS.</p>
+
+<h2>What does TACoS add?</h2>
+
+<p>ACoS only looks at sales Amazon attributes to ads. It can't tell you whether advertising is helping the rest of your business. That's what TACoS, total advertising cost of sales, is for: total ad spend divided by total sales, including organic orders. It isn't one of the metrics in Amazon's ACoS guide; sellers calculate it themselves from ad spend and total sales in Seller Central.</p>
+
+<ul>
+<li><strong>TACoS falling while sales rise:</strong> organic sales are growing faster than ad spend. Ads are likely helping ranking and repeat purchase.</li>
+<li><strong>TACoS rising with flat total sales:</strong> you're paying for sales you might have had anyway, or ads are replacing organic sales rather than adding to them.</li>
+<li><strong>TACoS stable, ACoS improving:</strong> efficiency gains inside ads; check that total sales aren't shrinking.</li>
+</ul>
+
+<h2>How should you set a target ACoS?</h2>
+
+<p>Amazon suggests starting from break-even and then deciding what matters most for each brand and campaign. In practice, set the target by goal:</p>
+
+<div class="tw"><table>
+<thead><tr><th>Goal</th><th>Target ACoS</th><th>Check alongside</th></tr></thead>
+<tbody>
+<tr><td>Profit on a mature product</td><td>Clearly below break-even</td><td>Net profit per unit after ads</td></tr>
+<tr><td>Launch a new product</td><td>At or temporarily above break-even, for a fixed period</td><td>Reviews, organic rank, TACoS trend</td></tr>
+<tr><td>Clear old stock</td><td>Up to the loss you'd accept on a discount</td><td>Units sold, storage costs avoided</td></tr>
+</tbody>
+</table></div>
+
+<p>Write the target and its time limit down before the campaign starts, and give the same numbers to anyone, or anything, that manages your bids. An AI ad agent optimising "towards ROAS" without your break-even line can be very efficient at losing money.</p>
+
+<h2>What does ACoS not tell you?</h2>
+
+<p>Amazon's guide has a section titled "Why you shouldn't focus too much on ACOS", and it recommends looking at impressions, conversion rate, click-through rate and return on investment as well. ACoS ignores the long-term value of a new customer, the halo on organic rank and the cost of stock sitting in a warehouse. Use break-even ACoS as the floor that keeps you safe, TACoS as the trend that shows the bigger picture, and your actual profit as the final judge.</p>
+== insight_quote ==
+A good ACoS is a number below your margin. Everything else is opinion.
+== insight ==
+Management accounting calls this contribution margin: what each sale contributes after variable costs. Break-even ACoS is simply contribution margin expressed as an ad budget, which is why it, not an industry average, is the right line to manage against.
+== prop_eyebrow ==
+Ads Autopilot · GEO Autopilot · Social Autopilot
+== prop_intro ==
+Once you know your line, ToucHigh's Ads Autopilot can work to it:
+== prop_items ==
+- it runs spend across Amazon, Meta and Google from one strategy, auto-adjusted to ROAS;
+- it handles creative-fatigue and budget calls, so tired ads don't quietly eat the margin;
+- it scores creative concepts for predicted performance before they go live.
+== prop_outro ==
+Book a 30-minute strategy call and bring your margin sheet; we'll walk through a plan matched to your catalog.
+== faq ==
+Q: Is break-even ACoS the same as profit margin?
+A: It equals your margin before ad costs, the percentage left after product cost, Amazon fees, fulfilment, shipping, duties and returns. At that ACoS an ad-driven sale makes zero profit.
+Q: Why is our ACoS fine but our bank balance isn't?
+A: ACoS only counts attributed ad sales and ad spend. Rising fees, freight or returns can wipe out the margin your break-even was based on, and TACoS may show ads replacing organic sales. Recalculate margin and look at TACoS.
+Q: Where do we get TACoS?
+A: Calculate it yourself: total ad spend for a period divided by total sales for the same period, including organic orders, from your seller reports. Track it monthly.
+Q: Should we let an AI ad tool set our target ACoS?
+A: Let it optimise towards a target, but set the target yourself from your margin and goal. The tool sees ad data; you see the full cost of each unit.
+== note ==
+We wrote this because sellers often judge ACoS against industry averages that have nothing to do with their own costs. Amazon's guide points back to margin, and so do we.

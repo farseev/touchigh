@@ -71,6 +71,20 @@ A longer, self-contained brief written for citation is at https://touchigh.ai/ll
 ## Blog (https://touchigh.ai/blog/ · English: https://touchigh.ai/blog/en/)
 Practical articles on SEO, GEO/AEO, social media and ads for SMEs, Chinese factories and cross-border sellers. Every article exists in 简体中文 and English; some also in 繁體中文 and Español.
 
+New (8 Nov 2026):
+- [Is Your Factory on ChatGPT's Supplier Shortlist? A 30-Prompt Audit](https://touchigh.ai/blog/en/chatgpt-supplier-shortlist-audit/) · 中文：[ChatGPT的供应商短名单里有你吗？30个问题的自查法](https://touchigh.ai/blog/chatgpt-supplier-shortlist-audit/)
+- [Schema Markup for Factory Websites: Organization, Product and FAQ Done Right](https://touchigh.ai/blog/en/factory-website-schema-markup/) · 中文：[工厂官网结构化数据怎么加：Organization、Product和FAQ的正确做法](https://touchigh.ai/blog/factory-website-schema-markup/)
+- [Is Your Website Blocking ChatGPT? robots.txt for AI Crawlers on B2B Sites](https://touchigh.ai/blog/en/ai-crawlers-robots-txt-b2b-website/) · 中文：[你的官网屏蔽了ChatGPT吗？B2B网站的AI爬虫robots.txt设置](https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/)
+- [GA4's AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own](https://touchigh.ai/blog/en/ga4-ai-assistant-channel/) · 中文：[GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组](https://touchigh.ai/blog/ga4-ai-assistant-channel/)
+- [How to Read AI Overviews and AI Mode Traffic in Google Search Console](https://touchigh.ai/blog/en/search-console-ai-overviews-ai-mode-traffic/) · 中文：[在Google Search Console里怎么看AI概览和AI模式带来的流量](https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/)
+- ["How Did You Hear About Us?" Using Surveys to Count Sales from ChatGPT and AI Assistants](https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/) · 中文：[“您是怎么知道我们的？”用问卷统计ChatGPT和AI助手带来的成交](https://touchigh.ai/blog/ai-attribution-post-purchase-survey/)
+- [Your First Amazon Sponsored Products Campaign: Auto vs Manual, Bids and Budget](https://touchigh.ai/blog/en/amazon-sponsored-products-first-campaign/) · 中文：[第一个亚马逊商品推广广告怎么开：自动与手动投放、出价和预算](https://touchigh.ai/blog/amazon-sponsored-products-first-campaign/)
+- [Break-Even ACoS, TACoS and ROAS: The Amazon Ads Math Every Seller Needs](https://touchigh.ai/blog/en/amazon-break-even-acos-tacos/) · 中文：[盈亏平衡ACoS、TACoS和ROAS：亚马逊卖家必须会算的广告账](https://touchigh.ai/blog/amazon-break-even-acos-tacos/)
+- [Amazon Search Term Report: A Weekly Routine for Negative Keywords and Harvesting](https://touchigh.ai/blog/en/amazon-search-term-report-negative-keywords/) · 中文：[亚马逊搜索词报告：每周一次的否定词与关键词收割流程](https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/)
+- [Instagram Trial Reels for Small Brands: Test New Ideas Without Breaking Your Posting Rhythm](https://touchigh.ai/blog/en/instagram-trial-reels-small-brands/) · 中文：[Instagram试播Reels：小品牌如何在不打乱发帖节奏的前提下测试新内容](https://touchigh.ai/blog/instagram-trial-reels-small-brands/)
+- [Instagram SEO in 2026: Make Your Posts Findable in Instagram Search and on Google](https://touchigh.ai/blog/en/instagram-seo-google-search-posts/) · 中文：[Instagram SEO：让你的帖子在Instagram搜索和Google上都能被找到](https://touchigh.ai/blog/instagram-seo-google-search-posts/)
+- [Building a US Brand Entity: How Chinese Brands Get Recognised by Google and AI](https://touchigh.ai/blog/en/us-brand-entity-chinese-brands-google-ai/) · 中文：[建立美国品牌实体：中国品牌如何被Google和AI正确识别](https://touchigh.ai/blog/us-brand-entity-chinese-brands-google-ai/)
+
 - [Store SEO Traffic Dropping? AI Overviews Now Cover 80% of Branded Searches](https://touchigh.ai/blog/en/ai-overviews-branded-queries-seo-traffic/) · 中文：[独立站SEO流量下降怎么办？AI概览已覆盖八成品牌词](https://touchigh.ai/blog/ai-overviews-branded-queries-seo-traffic/)
 - [SEO + GEO for Your DTC Store: One Table to Set Your Traffic Strategy](https://touchigh.ai/blog/en/seo-geo-dual-engine-independent-site/) · 中文：[独立站SEO+GEO怎么做？一张表理清出海流量策略](https://touchigh.ai/blog/seo-geo-dual-engine-independent-site/)
 - [ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now](https://touchigh.ai/blog/en/chatgpt-utm-ai-referral-measurement/) · 中文：[ChatGPT不再带UTM：AI带来的流量还怎么统计？](https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/)

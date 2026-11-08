@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Search Console中的AI概览与AI模式流量：怎么衡量 | ToucHigh</title>
+<meta name="description" content="Google把AI概览和AI模式计入Search Console的“网页”搜索数据。AI答案出现后，怎么看展示、点击和页面变化，又该做哪些对比。">
+<link rel="canonical" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="Search Console AI概览, AI模式流量, AI概览点击统计, Search Console网页搜索类型, Google AI功能流量, GEO效果衡量">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/search-console-ai-overviews-ai-mode-traffic/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/">
+<meta property="og:title" content="在Google Search Console里怎么看AI概览和AI模式带来的流量">
+<meta property="og:description" content="Google把AI概览和AI模式计入Search Console的“网页”搜索数据。AI答案出现后，怎么看展示、点击和页面变化，又该做哪些对比。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t65-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="在Google Search Console里怎么看AI概览和AI模式带来的流量">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:20:00+08:00">
+<meta property="article:section" content="效果衡量">
+<meta property="article:tag" content="Google Search Console">
+<meta property="article:tag" content="AI概览">
+<meta property="article:tag" content="AI模式">
+<meta property="article:tag" content="SEO衡量">
+<meta property="article:tag" content="GEO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="在Google Search Console里怎么看AI概览和AI模式带来的流量">
+<meta name="twitter:description" content="Google把AI概览和AI模式计入Search Console的“网页”搜索数据。AI答案出现后，怎么看展示、点击和页面变化，又该做哪些对比。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t65-en.jpg">
+<meta name="twitter:image:alt" content="在Google Search Console里怎么看AI概览和AI模式带来的流量">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="ToucHigh 博客" href="/blog/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/#article","url":"https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/","mainEntityOfPage":"https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/","headline":"在Google Search Console里怎么看AI概览和AI模式带来的流量","alternativeHeadline":"Search Console中的AI概览与AI模式流量：怎么衡量","description":"Google把AI概览和AI模式计入Search Console的“网页”搜索数据。AI答案出现后，怎么看展示、点击和页面变化，又该做哪些对比。","abstract":"没有单独的报告。Google表示，出现在AI概览和AI模式中的网站，计入Search Console的整体搜索流量，在效果报告的“网页”搜索类型中报告。所以要靠对比来读：问句式长查询对比短查询，变化前对比变化后，展示对比点击，以及哪些页面的展示在增长。再结合GA4的着陆页数据，并手动检查重点查询是否出现AI概览。","image":["https://touchigh.ai/assets/blog/og/t65-en.jpg","https://touchigh.ai/assets/blog/hero/t01.jpg"],"datePublished":"2026-11-08T10:20:00+08:00","dateModified":"2026-11-08T10:20:00+08:00","inLanguage":"zh-Hans","author":{"@type":"Organization","name":"ToucHigh 研究团队","url":"https://touchigh.ai/blog/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"效果衡量","keywords":"Search Console AI概览, AI模式流量, AI概览点击统计, Search Console网页搜索类型, Google AI功能流量, GEO效果衡量","wordCount":1841,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/#blog","name":"ToucHigh 博客"},"about":[{"@type":"Thing","name":"Google Search Console"},{"@type":"Thing","name":"AI概览"},{"@type":"Thing","name":"AI模式"},{"@type":"Thing","name":"SEO衡量"},{"@type":"Thing","name":"GEO"}],"citation":[{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Performance report (Search results): Overview and basic setup","url":"https://support.google.com/webmasters/answer/7576553","publisher":{"@type":"Organization","name":"Search Console Help"}},{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"workTranslation":[{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/en/search-console-ai-overviews-ai-mode-traffic/#article","inLanguage":"en"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"Search Console里有AI概览的筛选器吗？","acceptedAnswer":{"@type":"Answer","text":"Google的指南说明，AI概览和AI模式计入效果报告整体的“网页”搜索数据，而不是指向一个单独的报告。要通过查询分组、页面和时间段的对比来解读它们的影响。"}},{"@type":"Question","name":"为什么展示在涨，点击却没动？","acceptedAnswer":{"@type":"Answer","text":"常见原因之一是你的页面被展示了（包括作为AI答案中的辅助链接），而搜索者从答案本身就得到了足够的信息。先看清是哪些查询和页面带来的变化，再判断这是不是问题。"}},{"@type":"Question","name":"屏蔽Google-Extended能让页面不出现在AI概览中吗？","acceptedAnswer":{"@type":"Answer","text":"不能。Google表示Google-Extended不影响Google搜索的收录。要限制AI功能中显示的内容，Google建议使用nosnippet、data-nosnippet、max-snippet或noindex。"}},{"@type":"Question","name":"出现在AI概览中需要特殊标记吗？","acceptedAnswer":{"@type":"Answer","text":"Google表示没有额外要求，也不需要特殊的Schema。页面需要被收录并有资格展示摘要，普通的SEO最佳实践依然适用。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://touchigh.ai/blog/"},{"@type":"ListItem","position":3,"name":"在Google Search Console里怎么看AI概览和AI模式带来的流量","item":"https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本页目录</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">首页</a>
+      <a href="/#products">产品</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/pro/">ToucHigh PRO</a>
+      <a href="/blog/" class="on">博客</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="语言: 简体中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">中文</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="语言" hidden><li><a href="/blog/search-console-ai-overviews-ai-mode-traffic/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文" aria-current="page">简体中文</a></li><li><a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" data-short="EN">English</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登录</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">预约沟通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">首页</a><span>/</span><a href="/blog/">博客</a><span>/</span><span>效果衡量</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">效果衡量</div>
+    <h1>在Google Search Console里怎么看AI概览和AI模式带来的流量</h1>
+    <p class="dek">Search Console里没有单独的“AI概览”标签页，Google把AI功能并进了你已经在用的效果报告。本文讲清出海企业如何从中读出AI答案对搜索流量的影响。</p>
+    <div class="a-meta"><b>ToucHigh 研究团队</b><span>发布于 <time datetime="2026-11-08T10:20:00+08:00">2026年11月8日</time></span><span>6 分钟阅读</span><span class="lang-badge">简体中文</span></div>
+    <div class="a-langs">其他语言版本<a href="/blog/en/search-console-ai-overviews-ai-mode-traffic/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp 768w, /assets/blog/hero/t01-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t01.jpg" alt="搜索框倾泻出橙色小球，大部分被带紫色光晕的AI答案漏斗截住，只有少数落到小小的网站店铺上，旁边一摞摇摇欲坠的空白页面只换来一颗小球。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="这篇文章回答的问题"><span class="qm">“</span><div><div class="eyebrow">这篇文章回答的问题</div><p class="q">Google的AI概览和AI模式给我们带来了多少流量，在哪里能看到？Search Console里有专门的报告吗？</p><p class="ans"><b>一句话回答</b>没有单独的报告。Google表示，出现在AI概览和AI模式中的网站，计入Search Console的整体搜索流量，在效果报告的“网页”搜索类型中报告。所以要靠对比来读：问句式长查询对比短查询，变化前对比变化后，展示对比点击，以及哪些页面的展示在增长。再结合GA4的着陆页数据，并手动检查重点查询是否出现AI概览。</p></div></section>
+      <section class="kt takeaways"><h2>要点速览</h2><ul><li>Google表示，AI概览和AI模式的流量计入Search Console效果报告的“网页”搜索类型，与其他搜索数据合在一起。</li><li>GA4的AI Assistant渠道不包括Google的AI概览和AI模式，所以Search Console是查看它们的主要工具。</li><li>页面要成为AI答案中的辅助链接，必须已被收录并有资格以摘要形式展示；没有额外的技术要求。</li><li>Google表示AI概览和AI模式可能会做“查询扇出”，同时检索多个相关问题，这也是报告里会冒出新的长查询的原因之一。</li><li>按查询分组和页面看趋势，不要只看全站总数：AI答案可能拉高展示，而点击的变化方向不同。</li></ul></section>
+      <div class="prose"><p>很多团队打开Search Console想找“AI概览”报告，结果什么也没找到。这不代表数据缺失，而是Google把它放进了你已经在用的报告里。知道数据在哪、又有哪些是分不开的，你仍然能回答老板的问题：Google的AI答案到底是在帮我们，还是在抢我们的流量？</p>
+
+<h2 id="s1">Search Console在哪里报告AI概览和AI模式？</h2>
+
+<p>Google面向网站所有者的AI功能指南说得很直接：出现在AI概览、AI模式等AI功能中的网站，计入Search Console的整体搜索流量，在效果报告的“网页”搜索类型中报告。换句话说，来自AI概览的一次展示或点击，会和该查询、该页面的其他Google搜索展示和点击计在一起。</p>
+
+<p>这也解释了大家在Google Analytics 4里注意到的缺口。GA4的AI Assistant渠道统计ChatGPT、Gemini、Copilot等来源，但Google的定义明确排除了AI概览和AI模式，来自它们的访问会作为Google自然搜索流量进来。想了解Google的AI答案，Search Console是你的主要工具。</p>
+
+<h2 id="s2">哪些页面有资格出现在AI答案中？</h2>
+
+<p>资格规则与带摘要的普通结果相同。Google表示，页面必须已被收录、并有资格在Google搜索中以摘要形式展示，才可能作为辅助链接出现在AI概览或AI模式中，没有额外的技术要求。由此有两项实际检查：</p>
+
+<ul>
+<li>确认重点页面已被收录：使用Search Console的“网页”报告和网址检查工具。</li>
+<li>确认没有误限制摘要。Google列出的限制显示内容的控制方式包括nosnippet、data-nosnippet、max-snippet和noindex。如果主题或插件在全站加了<code>nosnippet</code>，你也会被挡在AI答案之外。</li>
+</ul>
+
+<h2 id="s3">数据混在一起，怎么读出AI答案的影响？</h2>
+
+<p>因为AI流量没有单独拆分，只能通过对比分组来读。下面四种对比能解决大部分问题。</p>
+
+<div class="tw"><table>
+<thead><tr><th>对比</th><th>怎么设置</th><th>能告诉你什么</th></tr></thead>
+<tbody>
+<tr><td>问句式查询 vs 短查询</td><td>在“查询”维度用自定义正则筛选，例如<code>^(what|how|which|why|best|can|does)\b</code></td><td>AI答案常出现的对话式查询，展示和点击是否在增长</td></tr>
+<tr><td>变化前 vs 变化后</td><td>围绕已知变化（如内容上线）对比日期范围</td><td>某个改动是否与展示或点击率的变化同时发生</td></tr>
+<tr><td>展示 vs 点击</td><td>在同一查询分组上同时显示两个指标</td><td>展示上升、点击持平，可能说明你被看见了，但问题在页面上就被回答了</td></tr>
+<tr><td>页面分组</td><td>按目录筛选页面，如/products/或/blog/</td><td>哪类内容的可见度在增长</td></tr>
+</tbody>
+</table></div>
+
+<p>Google还表示，AI概览和AI模式可能使用“查询扇出”技术，发起多个相关搜索来生成回答。留意“查询”表里出现的、你从未针对过的更长更具体的新查询，它们是很好的线索，说明你的页面正在被用来回答哪些子问题。</p>
+
+<h2 id="s4">Search Console该怎么和GA4配合？</h2>
+
+<p>Search Console的数据止于点击。想知道这次点击值不值，就把Google可见度在增长的页面，和GA4中筛选为“自然搜索”的着陆页报告对上，看互动和关键事件。Google自己的指南建议用Google Analytics等工具追踪转化和停留时间，并表示从带AI概览的搜索结果页点进来的访问质量更高，即用户更可能在网站上停留更久。这是Google的说法，要用你自己的数据去验证，而不是直接当作结论。</p>
+
+<h2 id="s5">每个月该追踪什么？</h2>
+
+<ol>
+<li><strong>固定20到50个重点查询。</strong>手动搜索，记录是否出现AI概览、你有没有被引用。</li>
+<li><strong>问句式查询分组的展示和点击</strong>，与上月对比，有条件的话再与去年同月对比。</li>
+<li><strong>展示增长最多的十个页面</strong>，以及它们在GA4中的互动情况。</li>
+<li><strong>产品页、能力页和FAQ页的收录与摘要状态。</strong></li>
+<li><strong>品牌词搜索的展示</strong>，这是其他AI答案正在让人来搜你的间接信号。</li>
+</ol>
+
+<p>这些都不会给你一个单独的“AI流量”数字，任何声称能从Google混合数据中完美拆分AI流量的工具都要谨慎对待。它们给你的是一套一致的方法，用来判断你的内容是否被Google的AI答案使用，以及这是否转化成了有价值的访问。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>数据混在一起时，与其找一个数字，不如比较分组。</blockquote><p>研究设计里把这叫做“双重差分”思路：无法直接分离处理效应时，就比较那些理应反应不同的分组和时间段。问句式查询对比短查询、变化前对比变化后，就是AI概览场景下的实用版本。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能帮您做什么">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh 能帮您做什么</h2></div>
+        <div class="pb prose"><p>Search Console看的是Google，ToucHigh的GEO Autopilot看的是更完整的AI全景：</p><ul><li>审计你在ChatGPT、Perplexity、Google AI概览/AI模式和Gemini中的可见度；</li><li>针对你缺席的问题，撰写并上线修复内容和GEO文章；</li><li>在搜索数据之外持续追踪AI引用份额，让提升有据可查。</li></ul><p>可以预约30分钟策略沟通，我们把Search Console的数据和你网站的在线AI可见度检测放在一起对照。</p><p class="uc">工厂与B2B供应商：看看ToucHigh如何提升<a href="/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T65'})}catch(e){}">AI搜索中的供应商可见度</a>。 需要把曝光变成商机？了解策略先行的外拓获客服务<a href="/pro/" onclick="try{gtag('event','pro_click',{location:'article_T65'})}catch(e){}">ToucHigh PRO</a>。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T65')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T65'})}catch(e){}">登录 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常见问题"><h2>常见问题</h2><details open><summary>Search Console里有AI概览的筛选器吗？</summary><p>Google的指南说明，AI概览和AI模式计入效果报告整体的“网页”搜索数据，而不是指向一个单独的报告。要通过查询分组、页面和时间段的对比来解读它们的影响。</p></details><details><summary>为什么展示在涨，点击却没动？</summary><p>常见原因之一是你的页面被展示了（包括作为AI答案中的辅助链接），而搜索者从答案本身就得到了足够的信息。先看清是哪些查询和页面带来的变化，再判断这是不是问题。</p></details><details><summary>屏蔽Google-Extended能让页面不出现在AI概览中吗？</summary><p>不能。Google表示Google-Extended不影响Google搜索的收录。要限制AI功能中显示的内容，Google建议使用nosnippet、data-nosnippet、max-snippet或noindex。</p></details><details><summary>出现在AI概览中需要特殊标记吗？</summary><p>Google表示没有额外要求，也不需要特殊的Schema。页面需要被收录并有资格展示摘要，普通的SEO最佳实践依然适用。</p></details></section>
+      <section class="srcs"><h2>参考来源</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://support.google.com/webmasters/answer/7576553" rel="noopener" target="_blank">Performance report (Search results): Overview and basic setup</a> — Search Console Help</li><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li></ol></section>
+      <p class="note"><b>我们为什么写这篇</b>我们写这篇，是因为出海企业一直在问AI概览的数据在哪里。坦白的答案是：它早就在Search Console里，只是混在一起，而且有一套有章法的读法。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本页目录"><h4>本页目录</h4><a href="#s1">Search Console在哪里报告AI概览和AI模式？</a><a href="#s2">哪些页面有资格出现在AI答案中？</a><a href="#s3">数据混在一起，怎么读出AI答案的影响？</a><a href="#s4">Search Console该怎么和GA4配合？</a><a href="#s5">每个月该追踪什么？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美国 AI 搜索中的曝光盲区</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">预约沟通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登录</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相关文章</h2>
+  <div class="grid"><a class="card" href="/blog/ga4-ai-assistant-channel/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="包裹从带紫色光晕的对话气泡隧道滑上传送带，落进一个没有标记的灰色箱子，橙色追踪标签散落在地上，旁边的放大镜、环形图、柱状图和购物袋准备交叉核对来源。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">效果衡量</div><h3>GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组</h3><p>Google Analytics现在会把来自ChatGPT、Gemini、Copilot等的访问归入单独渠道。这解决了AI流量统计的一部分问题。本文讲清它没解决的部分，以及用自定义渠道组补上缺口的方法。</p><div class="meta"><span class="lg">简体中文</span><span>6 分钟阅读</span></div></div></a><a class="card" href="/blog/ai-overviews-branded-queries-seo-traffic/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t01-768.webp"><img src="/assets/blog/hero/t01.jpg" alt="搜索框倾泻出橙色小球，大部分被带紫色光晕的AI答案漏斗截住，只有少数落到小小的网站店铺上，旁边一摞摇摇欲坠的空白页面只换来一颗小球。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">SEO</div><h3>独立站SEO流量下降怎么办？AI概览已覆盖八成品牌词</h3><p>AI概览开始接管品牌词，多写博客、多买外链的回报越来越小。独立站卖家该停下哪些动作、补上哪些动作？</p><div class="meta"><span class="lg">简体中文</span><span>5 分钟阅读</span></div></div></a><a class="card" href="/blog/zh/seo-best-practices-ai-overviews-ai-mode/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t30-768.webp"><img src="/assets/blog/hero/t30.jpg" alt="一只戴手套的手正在修剪盆栽上单薄的灰色页面叶片，几张大大的橙色页面卡片正在盛开，其中一张通过紫色细线连接到上方悬浮的AI回答面板。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">GEO / AI 搜索</div><h3>AI 概览与 AI 模式下的 SEO 最佳实践（2026年10月）</h3><p>Google 的 AI 现在回答了大多数品牌词搜索，并带有更多内嵌链接。本文讲清哪些 SEO 投入仍有回报、哪些已经见顶，并附一周行动清单。</p><div class="meta"><span class="lg">简体中文</span><span>7 分钟阅读</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/">← 返回博客</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美国 AI 搜索中的曝光盲区</h2>
+  <p>预约一次 30 分钟免费通话，我们在线为您的店铺做一次 AI 曝光检测。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登录 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.</p></div>
+      <div><h4>ToucHigh</h4><a href="/">首页</a><a href="/#geo">GEO Autopilot</a><a href="/#social">Social Autopilot</a><a href="/pro/">ToucHigh PRO</a></div>
+      <div><h4>博客</h4><a href="/blog/">博客</a><a href="/blog/feed.xml">RSS</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登录</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">预约沟通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

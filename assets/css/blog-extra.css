@@ -1,0 +1,19 @@
+/* Additions to touchigh-blog.css: use-case links and right-to-left (Arabic) layout */
+.prop .uc{font-size:15px!important;color:var(--g600)!important;border-top:1px solid var(--g100);padding-top:14px;margin-top:4px}
+.prop .uc a{color:var(--o-d);font-weight:600;text-decoration:none}
+.prop .uc a:hover{text-decoration:underline}
+html[dir="rtl"] body{font-family:'Inter','Noto Sans Arabic',system-ui,sans-serif;line-height:1.8}
+html[dir="rtl"] .nav-links{margin-left:0;margin-right:24px}
+html[dir="rtl"] .nav-right{margin-left:0;margin-right:auto}
+html[dir="rtl"] .eyebrow{letter-spacing:0}
+html[dir="rtl"] .answer-lead{border-left:1px solid var(--g100);border-right:4px solid var(--o)}
+html[dir="rtl"] .prose ul li{padding-left:0;padding-right:22px}
+html[dir="rtl"] .prose ul li::before{left:auto;right:4px}
+html[dir="rtl"] .prose ol li{padding-left:0;padding-right:44px}
+html[dir="rtl"] .prose ol li::before{left:auto;right:0}
+html[dir="rtl"] .prose blockquote{border-left:none;border-right:4px solid var(--o);border-radius:12px 0 0 12px}
+html[dir="rtl"] .prose th{text-align:right}
+html[dir="rtl"] .srcs ol{padding-left:0;padding-right:20px}
+html[dir="rtl"] .skip{left:auto;right:-999px}html[dir="rtl"] .skip:focus{right:0}
+html[lang="th"] body,html[lang="hi"] body{line-height:1.8}
+html[lang="th"] .eyebrow,html[lang="hi"] .eyebrow,html[lang="ja"] .eyebrow,html[lang="ko"] .eyebrow{letter-spacing:.04em}

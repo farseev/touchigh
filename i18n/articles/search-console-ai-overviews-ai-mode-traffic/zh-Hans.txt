@@ -1,0 +1,100 @@
+== title ==
+在Google Search Console里怎么看AI概览和AI模式带来的流量
+== seo_title ==
+Search Console中的AI概览与AI模式流量：怎么衡量 | ToucHigh
+== desc ==
+Google把AI概览和AI模式计入Search Console的“网页”搜索数据。AI答案出现后，怎么看展示、点击和页面变化，又该做哪些对比。
+== dek ==
+Search Console里没有单独的“AI概览”标签页，Google把AI功能并进了你已经在用的效果报告。本文讲清出海企业如何从中读出AI答案对搜索流量的影响。
+== section ==
+效果衡量
+== tags ==
+Google Search Console | AI概览 | AI模式 | SEO衡量 | GEO
+== keywords ==
+Search Console AI概览, AI模式流量, AI概览点击统计, Search Console网页搜索类型, Google AI功能流量, GEO效果衡量
+== read ==
+6
+== q ==
+Google的AI概览和AI模式给我们带来了多少流量，在哪里能看到？Search Console里有专门的报告吗？
+== a ==
+没有单独的报告。Google表示，出现在AI概览和AI模式中的网站，计入Search Console的整体搜索流量，在效果报告的“网页”搜索类型中报告。所以要靠对比来读：问句式长查询对比短查询，变化前对比变化后，展示对比点击，以及哪些页面的展示在增长。再结合GA4的着陆页数据，并手动检查重点查询是否出现AI概览。
+== takeaways ==
+- Google表示，AI概览和AI模式的流量计入Search Console效果报告的“网页”搜索类型，与其他搜索数据合在一起。
+- GA4的AI Assistant渠道不包括Google的AI概览和AI模式，所以Search Console是查看它们的主要工具。
+- 页面要成为AI答案中的辅助链接，必须已被收录并有资格以摘要形式展示；没有额外的技术要求。
+- Google表示AI概览和AI模式可能会做“查询扇出”，同时检索多个相关问题，这也是报告里会冒出新的长查询的原因之一。
+- 按查询分组和页面看趋势，不要只看全站总数：AI答案可能拉高展示，而点击的变化方向不同。
+== body ==
+<p>很多团队打开Search Console想找“AI概览”报告，结果什么也没找到。这不代表数据缺失，而是Google把它放进了你已经在用的报告里。知道数据在哪、又有哪些是分不开的，你仍然能回答老板的问题：Google的AI答案到底是在帮我们，还是在抢我们的流量？</p>
+
+<h2>Search Console在哪里报告AI概览和AI模式？</h2>
+
+<p>Google面向网站所有者的AI功能指南说得很直接：出现在AI概览、AI模式等AI功能中的网站，计入Search Console的整体搜索流量，在效果报告的“网页”搜索类型中报告。换句话说，来自AI概览的一次展示或点击，会和该查询、该页面的其他Google搜索展示和点击计在一起。</p>
+
+<p>这也解释了大家在Google Analytics 4里注意到的缺口。GA4的AI Assistant渠道统计ChatGPT、Gemini、Copilot等来源，但Google的定义明确排除了AI概览和AI模式，来自它们的访问会作为Google自然搜索流量进来。想了解Google的AI答案，Search Console是你的主要工具。</p>
+
+<h2>哪些页面有资格出现在AI答案中？</h2>
+
+<p>资格规则与带摘要的普通结果相同。Google表示，页面必须已被收录、并有资格在Google搜索中以摘要形式展示，才可能作为辅助链接出现在AI概览或AI模式中，没有额外的技术要求。由此有两项实际检查：</p>
+
+<ul>
+<li>确认重点页面已被收录：使用Search Console的“网页”报告和网址检查工具。</li>
+<li>确认没有误限制摘要。Google列出的限制显示内容的控制方式包括nosnippet、data-nosnippet、max-snippet和noindex。如果主题或插件在全站加了<code>nosnippet</code>，你也会被挡在AI答案之外。</li>
+</ul>
+
+<h2>数据混在一起，怎么读出AI答案的影响？</h2>
+
+<p>因为AI流量没有单独拆分，只能通过对比分组来读。下面四种对比能解决大部分问题。</p>
+
+<div class="tw"><table>
+<thead><tr><th>对比</th><th>怎么设置</th><th>能告诉你什么</th></tr></thead>
+<tbody>
+<tr><td>问句式查询 vs 短查询</td><td>在“查询”维度用自定义正则筛选，例如<code>^(what|how|which|why|best|can|does)\b</code></td><td>AI答案常出现的对话式查询，展示和点击是否在增长</td></tr>
+<tr><td>变化前 vs 变化后</td><td>围绕已知变化（如内容上线）对比日期范围</td><td>某个改动是否与展示或点击率的变化同时发生</td></tr>
+<tr><td>展示 vs 点击</td><td>在同一查询分组上同时显示两个指标</td><td>展示上升、点击持平，可能说明你被看见了，但问题在页面上就被回答了</td></tr>
+<tr><td>页面分组</td><td>按目录筛选页面，如/products/或/blog/</td><td>哪类内容的可见度在增长</td></tr>
+</tbody>
+</table></div>
+
+<p>Google还表示，AI概览和AI模式可能使用“查询扇出”技术，发起多个相关搜索来生成回答。留意“查询”表里出现的、你从未针对过的更长更具体的新查询，它们是很好的线索，说明你的页面正在被用来回答哪些子问题。</p>
+
+<h2>Search Console该怎么和GA4配合？</h2>
+
+<p>Search Console的数据止于点击。想知道这次点击值不值，就把Google可见度在增长的页面，和GA4中筛选为“自然搜索”的着陆页报告对上，看互动和关键事件。Google自己的指南建议用Google Analytics等工具追踪转化和停留时间，并表示从带AI概览的搜索结果页点进来的访问质量更高，即用户更可能在网站上停留更久。这是Google的说法，要用你自己的数据去验证，而不是直接当作结论。</p>
+
+<h2>每个月该追踪什么？</h2>
+
+<ol>
+<li><strong>固定20到50个重点查询。</strong>手动搜索，记录是否出现AI概览、你有没有被引用。</li>
+<li><strong>问句式查询分组的展示和点击</strong>，与上月对比，有条件的话再与去年同月对比。</li>
+<li><strong>展示增长最多的十个页面</strong>，以及它们在GA4中的互动情况。</li>
+<li><strong>产品页、能力页和FAQ页的收录与摘要状态。</strong></li>
+<li><strong>品牌词搜索的展示</strong>，这是其他AI答案正在让人来搜你的间接信号。</li>
+</ol>
+
+<p>这些都不会给你一个单独的“AI流量”数字，任何声称能从Google混合数据中完美拆分AI流量的工具都要谨慎对待。它们给你的是一套一致的方法，用来判断你的内容是否被Google的AI答案使用，以及这是否转化成了有价值的访问。</p>
+== insight_quote ==
+数据混在一起时，与其找一个数字，不如比较分组。
+== insight ==
+研究设计里把这叫做“双重差分”思路：无法直接分离处理效应时，就比较那些理应反应不同的分组和时间段。问句式查询对比短查询、变化前对比变化后，就是AI概览场景下的实用版本。
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+Search Console看的是Google，ToucHigh的GEO Autopilot看的是更完整的AI全景：
+== prop_items ==
+- 审计你在ChatGPT、Perplexity、Google AI概览/AI模式和Gemini中的可见度；
+- 针对你缺席的问题，撰写并上线修复内容和GEO文章；
+- 在搜索数据之外持续追踪AI引用份额，让提升有据可查。
+== prop_outro ==
+可以预约30分钟策略沟通，我们把Search Console的数据和你网站的在线AI可见度检测放在一起对照。
+== faq ==
+Q: Search Console里有AI概览的筛选器吗？
+A: Google的指南说明，AI概览和AI模式计入效果报告整体的“网页”搜索数据，而不是指向一个单独的报告。要通过查询分组、页面和时间段的对比来解读它们的影响。
+Q: 为什么展示在涨，点击却没动？
+A: 常见原因之一是你的页面被展示了（包括作为AI答案中的辅助链接），而搜索者从答案本身就得到了足够的信息。先看清是哪些查询和页面带来的变化，再判断这是不是问题。
+Q: 屏蔽Google-Extended能让页面不出现在AI概览中吗？
+A: 不能。Google表示Google-Extended不影响Google搜索的收录。要限制AI功能中显示的内容，Google建议使用nosnippet、data-nosnippet、max-snippet或noindex。
+Q: 出现在AI概览中需要特殊标记吗？
+A: Google表示没有额外要求，也不需要特殊的Schema。页面需要被收录并有资格展示摘要，普通的SEO最佳实践依然适用。
+== note ==
+我们写这篇，是因为出海企业一直在问AI概览的数据在哪里。坦白的答案是：它早就在Search Console里，只是混在一起，而且有一套有章法的读法。

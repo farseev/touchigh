@@ -1,0 +1,10 @@
+{"num": "t64", "original": "zh-Hans", "cat": "measurement", "hero": "t03",
+ "published": "2026-11-08T10:00:00+08:00",
+ "landing": "supplier",
+ "related": ["chatgpt-utm-ai-referral-measurement", "search-console-ai-overviews-ai-mode-traffic", "ai-attribution-post-purchase-survey"],
+ "sources": [
+  {"name": "[GA4] Default channel group", "url": "https://support.google.com/analytics/answer/9756891", "publisher": "Google Analytics Help"},
+  {"name": "Custom channel groups", "url": "https://support.google.com/analytics/answer/13051316", "publisher": "Google Analytics Help"},
+  {"name": "About regular expressions (regex)", "url": "https://support.google.com/analytics/answer/1034324", "publisher": "Google Analytics Help"},
+  {"name": "AI features and your website", "url": "https://developers.google.com/search/docs/appearance/ai-features", "publisher": "Google Search Central"}
+ ]}

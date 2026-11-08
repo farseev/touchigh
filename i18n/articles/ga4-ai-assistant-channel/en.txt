@@ -1,0 +1,100 @@
+== title ==
+GA4's AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own
+== seo_title ==
+GA4 AI Assistant Channel Group: Setup and Gaps Explained | ToucHigh
+== desc ==
+GA4's default channel group now has an AI Assistant channel. What it counts, why AI Overviews and referrer-less visits fall outside it, and how to build a custom group.
+== dek ==
+Google Analytics now sorts visits from ChatGPT, Gemini, Copilot and others into their own channel. That fixes part of the AI-traffic problem. Here's the part it doesn't fix, and a custom channel group that fills the gap.
+== section ==
+Measurement
+== tags ==
+GA4 | AI traffic | Channel groups | Attribution | GEO measurement
+== keywords ==
+GA4 AI assistant channel, GA4 custom channel group AI, track ChatGPT traffic GA4, AI referral traffic GA4 regex, AI assistants channel group, measure GEO traffic
+== read ==
+6
+== q ==
+GA4 now shows an "AI Assistant" channel in our reports. Can we trust it to measure the traffic our GEO work brings in, or do we still need our own setup?
+== a ==
+Use it, but don't treat it as the whole story. Google's documentation says the AI Assistant channel covers visits from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok, and excludes Google's AI Overviews and AI Mode. It also can't see visits that arrive without a referrer, which land in Direct. Check which assistants actually appear in your property, build a custom channel group if some fall into Referral, and pair GA4 with Search Console and citation tracking.
+== takeaways ==
+- GA4's default channel group now includes AI Assistant: visits from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok, with medium set to "ai-assistant" when the referrer matches Google's list.
+- The channel excludes Google's AI Overviews and AI Mode; Google counts those in Search Console's overall Web search data.
+- Visits that reach you without a referrer or tag are logged as Direct, so no channel rule can recover them.
+- Default channel groups can't be edited, but custom channel groups can, and they apply retroactively. Standard properties get two custom groups with up to 50 channels each.
+- Google's example regex for AI assistants is broad; an explicit list of domains avoids catching unrelated sources.
+== body ==
+<p>For two years, the standard advice for measuring AI traffic in Google Analytics 4 was the same: build your own channel group, because ChatGPT and Perplexity visits were buried in Referral. Google has since added an <strong>AI Assistant</strong> channel to GA4's default channel group. That is good news, but it changes the question rather than ending it. You now need to know what the new channel counts, what it leaves out and when your own grouping is still worth the effort.</p>
+
+<h2>What does GA4's AI Assistant channel count?</h2>
+
+<p>Google's Default channel group documentation describes AI Assistant as the channel by which users arrive from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok. The rule behind it: the medium is set to "ai-assistant" and the campaign to "(ai-assistant)" when the referrer matches a list of AI assistants that Google maintains. Sessions with that medium land in the AI Assistant row of your Traffic acquisition report.</p>
+
+<p>Two points follow. First, it is Google's list, not yours: the documentation names examples, not every assistant. Second, default channel groups can't be edited in GA4, so if an assistant your buyers use isn't recognised, you can't add it to the default channel. You need a custom channel group.</p>
+
+<h2>What does the AI Assistant channel miss?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>Traffic</th><th>Where it lands in GA4</th><th>How to see it instead</th></tr></thead>
+<tbody>
+<tr><td>Google AI Overviews and AI Mode</td><td>Excluded from AI Assistant by Google's definition</td><td>Search Console: Google says these appear in the Performance report under the Web search type</td></tr>
+<tr><td>Assistant visits with no referrer and no tag</td><td>Direct</td><td>Direct traffic to deep pages, branded search, post-purchase surveys</td></tr>
+<tr><td>Assistants not on Google's list</td><td>Usually Referral</td><td>A custom channel group with your own regex</td></tr>
+<tr><td>People who saw your name in an answer and came back later</td><td>Direct, Organic Search or wherever they return from</td><td>Citation tracking and branded-search trends</td></tr>
+</tbody>
+</table></div>
+
+<p>The second row matters most. Analytics tools decide where a visit came from by looking at tracking parameters and the referring URL. When an AI app opens a link without passing either, the visit is recorded as Direct. Our earlier piece on <a href="/blog/en/chatgpt-utm-ai-referral-measurement/">ChatGPT links losing UTM tags</a> covers what that looks like in practice. No channel rule can recover information that never reached GA4.</p>
+
+<h2>How do you check what your property actually records?</h2>
+
+<ol>
+<li><strong>Open Reports, then Acquisition, then Traffic acquisition</strong> and set the primary dimension to Session default channel group. Look for the AI Assistant row and its trend.</li>
+<li><strong>Switch the dimension to Session source / medium</strong> and filter for "ai-assistant" to see which assistants Google is classifying.</li>
+<li><strong>Filter Referral for known AI domains</strong> such as perplexity.ai or claude.ai. Anything AI-related still sitting in Referral is your gap.</li>
+<li><strong>Compare landing pages.</strong> AI visits tend to land on deep pages, such as product, capability and blog pages, rather than the homepage.</li>
+</ol>
+
+<h2>When should you build a custom AI channel group?</h2>
+
+<p>Build one if assistants your buyers use land in Referral, if you want each assistant as its own row, or if you want one definition that stays stable while Google updates its list. Google's custom channel group documentation explains the mechanics: in Admin, under Data display, open Channel groups (you need Editor access or above), create a group, add a channel and set its condition. Custom groups apply to your reports retroactively. Standard properties can have two custom groups in addition to the predefined one, each with up to 50 channels.</p>
+
+<p>Google even publishes an "AI assistants" example: a channel with a "matches regex" condition, placed above Referral so that AI sources are claimed first. Its sample regex is deliberately broad. It begins with <code>^.*ai</code>, which matches any source containing the letters "ai", such as an email provider's domain. A tighter pattern lists the domains you actually see, for example:</p>
+
+<p><code>.*(chatgpt\.com|openai\.com|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com|claude\.ai|deepseek\.com|grok\.com).*</code></p>
+
+<p>Apply it to Source, put the channel above Referral and, if you want detail, add one channel per assistant instead of a single group. Update the list when a new assistant starts sending traffic; Google's own note says to update the regex when the list of assistants changes.</p>
+
+<h2>Should you make the custom group your primary channel group?</h2>
+
+<p>GA4 lets you choose any custom channel group as the property's primary channel group, which then populates the primary channel group dimension from that point forward. That is useful once your definition is stable, but it isn't retroactive in the same way the custom group itself is. Most small teams can leave the default as primary and add the custom group as a secondary view.</p>
+
+<h2>How should GA4 fit into AI-channel measurement?</h2>
+
+<p>Treat GA4 as one of three lenses. GA4 tells you about clicks you can attribute. Search Console tells you about Google Search, including AI Overviews and AI Mode. A monthly citation check tells you whether assistants mention you at all. When all three move together, you can show GEO is working; when only one moves, you know where to look.</p>
+== insight_quote ==
+A channel report shows the clicks it can label, not the influence it can't see.
+== insight ==
+Goodhart's law warns that a measure turned into a target stops measuring well. If a team chases the AI Assistant row alone, it will undervalue AI answers that send buyers through Direct or branded search. Keep the channel as one signal among three.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+GA4 shows the clicks; ToucHigh's GEO Autopilot covers the rest of the picture:
+== prop_items ==
+- it checks where you are invisible across ChatGPT, Perplexity, Google AI and Gemini;
+- it writes and ships fixes and GEO articles aimed at the questions buyers ask;
+- it tracks your AI-citation share continuously, the signal tracking parameters can't distort.
+== prop_outro ==
+Book a 30-minute strategy call and bring a screenshot of your Traffic acquisition report; we'll read it together with a live AI-visibility check.
+== faq ==
+Q: Does the AI Assistant channel include Google AI Overviews?
+A: No. Google's definition excludes AI Overviews and AI Mode from the AI Assistant channel. Google reports those within Search Console's Performance report under the Web search type, together with the rest of Search.
+Q: Why does ChatGPT traffic still show up as Direct?
+A: When a visit arrives without a referrer or tracking parameters, GA4 has nothing to classify it by and records it as Direct. Watch direct traffic to deep pages and ask buyers how they found you to estimate this share.
+Q: Will a custom channel group change our historical data?
+A: Custom channel groups apply to reports retroactively, so you can view past data through the new grouping. Changing the property's primary channel group only affects reporting from that point forward.
+Q: How many custom channel groups can we create?
+A: Google lists two custom groups for standard properties and five for Analytics 360 properties, in addition to the predefined group, with up to 50 channels each.
+== note ==
+We wrote this because teams that had built AI channel groups by hand suddenly saw a new AI Assistant row and weren't sure which number to trust. The answer is both, read alongside Search Console and citation tracking.

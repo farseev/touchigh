@@ -1,0 +1,9 @@
+{"num": "t61", "original": "zh-Hans", "cat": "geo-ai-search", "hero": "t46",
+ "published": "2026-11-08T09:00:00+08:00",
+ "landing": "supplier",
+ "related": ["factory-website-geo-chatgpt-supplier", "us-buyers-ai-research-citable-content", "ai-crawlers-robots-txt-b2b-website"],
+ "sources": [
+  {"name": "AI features and your website", "url": "https://developers.google.com/search/docs/appearance/ai-features", "publisher": "Google Search Central"},
+  {"name": "Overview of OpenAI Crawlers", "url": "https://platform.openai.com/docs/bots", "publisher": "OpenAI"},
+  {"name": "Perplexity Crawlers", "url": "https://docs.perplexity.ai/guides/bots", "publisher": "Perplexity"}
+ ]}

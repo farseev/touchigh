@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Post-Purchase Survey for AI Attribution: Count ChatGPT Sales | ToucHigh</title>
+<meta name="description" content="Analytics misses buyers who saw you in an AI answer and came back later. How to design a one-question survey and inquiry-form field that measure ChatGPT&#x27;s real influence.">
+<link rel="canonical" href="https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="post purchase survey AI attribution, how did you hear about us ChatGPT, self-reported attribution, measure ChatGPT sales, AI assistant attribution survey, inquiry form source field">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-attribution-post-purchase-survey/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ai-attribution-post-purchase-survey/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/">
+<meta property="og:title" content="&quot;How Did You Hear About Us?&quot; Using Surveys to Count Sales from ChatGPT and AI Assistants">
+<meta property="og:description" content="Analytics misses buyers who saw you in an AI answer and came back later. How to design a one-question survey and inquiry-form field that measure ChatGPT&#x27;s real influence.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t66-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="&quot;How Did You Hear About Us?&quot; Using Surveys to Count Sales from ChatGPT and AI Assistants">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="article:published_time" content="2026-11-08T10:40:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:40:00+08:00">
+<meta property="article:section" content="Measurement">
+<meta property="article:tag" content="Attribution">
+<meta property="article:tag" content="Post-purchase survey">
+<meta property="article:tag" content="AI traffic">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="B2B inquiries">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="&quot;How Did You Hear About Us?&quot; Using Surveys to Count Sales from ChatGPT and AI Assistants">
+<meta name="twitter:description" content="Analytics misses buyers who saw you in an AI answer and came back later. How to design a one-question survey and inquiry-form field that measure ChatGPT&#x27;s real influence.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t66-en.jpg">
+<meta name="twitter:image:alt" content="&quot;How Did You Hear About Us?&quot; Using Surveys to Count Sales from ChatGPT and AI Assistants">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="ToucHigh Blog" href="/blog/en/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/#article","url":"https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/","mainEntityOfPage":"https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/","headline":"\"How Did You Hear About Us?\" Using Surveys to Count Sales from ChatGPT and AI Assistants","alternativeHeadline":"Post-Purchase Survey for AI Attribution: Count ChatGPT Sales","description":"Analytics misses buyers who saw you in an AI answer and came back later. How to design a one-question survey and inquiry-form field that measure ChatGPT's real influence.","abstract":"Ask them, consistently. Add one required question, \"How did you first hear about us?\", after checkout or on the B2B inquiry form, with \"ChatGPT or another AI assistant\" as a named option, randomised answer order and an \"Other\" box. Compare the share choosing AI with the share GA4 attributes to AI channels. The gap estimates AI influence that never arrived as a labelled click, because visits without a referrer are recorded as Direct.","image":["https://touchigh.ai/assets/blog/og/t66-en.jpg","https://touchigh.ai/assets/blog/hero/t50.jpg"],"datePublished":"2026-11-08T10:40:00+08:00","dateModified":"2026-11-08T10:40:00+08:00","inLanguage":"en","author":{"@type":"Organization","name":"ToucHigh Research Team","url":"https://touchigh.ai/blog/en/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Measurement","keywords":"post purchase survey AI attribution, how did you hear about us ChatGPT, self-reported attribution, measure ChatGPT sales, AI assistant attribution survey, inquiry form source field","wordCount":1098,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/en/#blog","name":"ToucHigh Blog"},"about":[{"@type":"Thing","name":"Attribution"},{"@type":"Thing","name":"Post-purchase survey"},{"@type":"Thing","name":"AI traffic"},{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"B2B inquiries"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ai-attribution-post-purchase-survey/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"en","mainEntity":[{"@type":"Question","name":"How many responses do we need before the data is useful?","acceptedAnswer":{"@type":"Answer","text":"There is no magic number, but small samples swing a lot week to week. Read monthly or quarterly totals and look at direction rather than exact percentages, especially in B2B where inquiries are few."}},{"@type":"Question","name":"Should the question allow multiple answers?","acceptedAnswer":{"@type":"Answer","text":"A single answer to \"How did you first hear about us?\" is easier to read and compare over time. If you want the full journey, add an optional second question, but keep the first one single-choice."}},{"@type":"Question","name":"Won't buyers just pick Google because they searched for us?","acceptedAnswer":{"@type":"Answer","text":"Some will, which is why the question asks where they first heard of you and names AI assistants explicitly. The free-text \"Other\" answers also show how buyers describe AI in their own words."}},{"@type":"Question","name":"Can we connect survey answers to GA4?","acceptedAnswer":{"@type":"Answer","text":"Yes, if your store or form sends the answer as an event parameter or user property. Even without that, comparing monthly totals from the survey with GA4's channel report is enough to see the gap."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/?lang=en"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://touchigh.ai/blog/en/"},{"@type":"ListItem","position":3,"name":"\"How Did You Hear About Us?\" Using Surveys to Count Sales from ChatGPT and AI Assistants","item":"https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">On this page</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/?lang=en">Home</a>
+      <a href="/?lang=en#products">Products</a>
+      <a href="/?lang=en#faq">FAQ</a>
+      <a href="/pro/?lang=en">ToucHigh PRO</a>
+      <a href="/blog/en/" class="on">Blog</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Language: English"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">EN</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Language" hidden><li><a href="/blog/ai-attribution-post-purchase-survey/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ai-attribution-post-purchase-survey/" hreflang="en" lang="en" data-short="EN" aria-current="page">English</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Log in</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Book a call</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/?lang=en">Home</a><span>/</span><a href="/blog/en/">Blog</a><span>/</span><span>Measurement</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Measurement</div>
+    <h1>&quot;How Did You Hear About Us?&quot; Using Surveys to Count Sales from ChatGPT and AI Assistants</h1>
+    <p class="dek">Some of the buyers AI sends you will never show up as an AI click. A one-question survey at checkout or on the inquiry form is the cheapest way to see them. Here&#x27;s how to word it, where to place it and how to read the answers.</p>
+    <div class="a-meta"><b>ToucHigh Research Team</b><span>Published <time datetime="2026-11-08T10:40:00+08:00">November 8, 2026</time></span><span>6 min read</span><span class="lang-badge">English</span></div>
+    <div class="a-langs">Also available in<a href="/blog/ai-attribution-post-purchase-survey/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp 768w, /assets/blog/hero/t50-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t50.jpg" alt="Three glass jars on a white shelf fill with orange marbles to different levels, marked with an eye, a heart and bookmark, and a cursor with a shopping cart, each with a navy line showing its own past average." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="The question behind this article"><span class="qm">“</span><div><div class="eyebrow">The question behind this article</div><p class="q">Our analytics shows very little traffic from ChatGPT, but customers keep saying they &quot;found us through AI&quot;. How do we measure that properly?</p><p class="ans"><b>Short answer</b>Ask them, consistently. Add one required question, &quot;How did you first hear about us?&quot;, after checkout or on the B2B inquiry form, with &quot;ChatGPT or another AI assistant&quot; as a named option, randomised answer order and an &quot;Other&quot; box. Compare the share choosing AI with the share GA4 attributes to AI channels. The gap estimates AI influence that never arrived as a labelled click, because visits without a referrer are recorded as Direct.</p></div></section>
+      <section class="kt takeaways"><h2>Key takeaways</h2><ul><li>GA4 can only label a visit by its tracking parameters or referrer; visits with neither are recorded as Direct, including some that started in an AI answer.</li><li>A buyer who sees your name in an AI answer and searches for you days later is invisible to click-based attribution.</li><li>A single "How did you first hear about us?" question with "ChatGPT or another AI assistant" as an explicit option captures that influence directly.</li><li>Randomise the order of answers and keep the wording fixed, or the results drift for reasons that have nothing to do with AI.</li><li>Read the survey next to GA4's AI Assistant channel and Direct traffic to deep pages; the gap between them is the useful number.</li></ul></section>
+      <div class="prose"><p>Every analytics setup has the same blind spot: it can only describe the last step it saw. A buyer asks ChatGPT for suppliers of custom packaging, sees your company named, closes the app, and two days later types your brand into Google. Your reports say Organic Search, or Direct. The AI answer that started it all gets no credit.</p>
+
+<p>You can't fix that blind spot with more tags. You can measure around it by asking customers directly. Self-reported attribution is old, cheap and, done carefully, one of the better tools for the AI channel.</p>
+
+<h2 id="s1">Why can't analytics alone measure AI influence?</h2>
+
+<p>Google Analytics 4 classifies a session by its tracking parameters and the referring URL. GA4's default channel group now includes an AI Assistant channel for visits from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok, assigned when the referrer matches Google's list of AI assistants. That helps, but only for visits that arrive with a referrer. Google's own definitions route visits without any source information to Direct, and Google's AI Overviews and AI Mode are excluded from the AI Assistant channel altogether.</p>
+
+<p>Then there's the delay. Many buyers, especially B2B buyers, read an answer, note a name and come back later through a different door. No click-based model connects the two. A survey asks the person who knows: the buyer.</p>
+
+<h2 id="s2">How should you word the question?</h2>
+
+<p>Keep it to one required question with a short, fixed list of answers. Wording matters more than people expect.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Choice</th><th>Recommended</th><th>Why</th></tr></thead>
+<tbody>
+<tr><td>Question</td><td>"How did you first hear about us?"</td><td>"First" separates discovery from the last click</td></tr>
+<tr><td>AI option</td><td>"ChatGPT or another AI assistant (e.g. Perplexity, Gemini, Copilot)"</td><td>Buyers rarely type "AI" into a blank box; name it</td></tr>
+<tr><td>Search option</td><td>"Google or another search engine"</td><td>Keeps AI separate from classic search</td></tr>
+<tr><td>Other options</td><td>Social media, marketplace, trade show, referral from a colleague, existing customer</td><td>Five to eight options in total is enough</td></tr>
+<tr><td>Escape hatch</td><td>"Other (please tell us)" with a text box</td><td>Catches new channels and wording you didn't expect</td></tr>
+<tr><td>Order</td><td>Randomise, except "Other" last</td><td>People favour the first options they read</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="s3">Where should the question go for DTC stores and for B2B?</h2>
+
+<p><strong>For an online store,</strong> put it on the order confirmation page or in the first post-purchase email, not before payment, where any extra field can cost you orders. Most store platforms offer survey apps or a custom field for this.</p>
+
+<p><strong>For a factory or B2B supplier,</strong> add a required "How did you find us?" dropdown to the inquiry form, and give the sales team the same list for the first call. Log the answer in the CRM against the lead, so you can later see not only how many inquiries came from AI but how many became orders.</p>
+
+<h2 id="s4">How do you read the results?</h2>
+
+<p>Put three numbers side by side every month:</p>
+
+<ol>
+<li><strong>Survey share:</strong> the percentage of buyers or inquiries choosing the AI option.</li>
+<li><strong>GA4 share:</strong> the percentage of sessions or key events in the AI Assistant channel, plus any custom AI channel you built.</li>
+<li><strong>Direct to deep pages:</strong> direct sessions landing on product, capability or article pages, which few people type by hand.</li>
+</ol>
+
+<p>If the survey share is well above the GA4 share, AI is influencing more buyers than your click data shows. That gap is the number to bring to a budget meeting. If both are low, the AI channel isn't working for you yet, and the fix is visibility, not measurement.</p>
+
+<h2 id="s5">What mistakes make survey data useless?</h2>
+
+<ul>
+<li><strong>Changing the wording or the option list every few weeks.</strong> Fix it for at least a quarter so trends mean something.</li>
+<li><strong>Reading single weeks.</strong> Small stores and B2B pipelines have small samples. Look at monthly or quarterly totals.</li>
+<li><strong>Treating it as exact.</strong> People misremember. The survey is a direction-finder, not an invoice, and it works best next to GA4 and citation tracking.</li>
+<li><strong>Making it optional and buried.</strong> A required one-click question gets far more answers than a link to a form.</li>
+</ul>
+
+<p>A survey can't tell you which AI answer mentioned you or why. Pair it with a monthly check of what assistants actually say about your brand. Together they tell you both how much AI matters to your buyers and what to improve.</p></div>
+      <aside class="insight" aria-label="The insight"><div class="eyebrow">The insight</div><blockquote>When the trail goes cold, ask the person who walked it.</blockquote><p>Psychologists call it recall bias: people misremember sources, so self-reported attribution is imperfect. But its errors are different from analytics&#x27; errors, which is exactly why the two together beat either one alone.</p></aside>
+      <section class="prop" aria-label="How ToucHigh helps">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>How ToucHigh helps</h2></div>
+        <div class="pb prose"><p>Surveys tell you AI matters; ToucHigh's GEO Autopilot helps you act on it:</p><ul><li>it audits what ChatGPT, Perplexity, Google AI and Gemini say about your brand and where you're missing;</li><li>it writes and ships fixes and GEO articles aimed at the questions buyers ask;</li><li>it tracks your AI-citation share, the exposure side that surveys and analytics both miss.</li></ul><p>Book a 30-minute strategy call and bring your last quarter's survey or inquiry-source data; we'll read it against a live AI-visibility check.</p><p class="uc">Factories and B2B suppliers: see how ToucHigh handles <a href="/supplier-ai-visibility/?lang=en" onclick="try{gtag('event','landing_click',{location:'article_T66'})}catch(e){}">supplier visibility in AI search</a>. Need the visibility to turn into pipeline? See <a href="/pro/?lang=en" onclick="try{gtag('event','pro_click',{location:'article_T66'})}catch(e){}">ToucHigh PRO</a>, our strategy-first outbound service.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T66')">Book a 30-min strategy call →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T66'})}catch(e){}">Log in to ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Frequently asked questions"><h2>Frequently asked questions</h2><details open><summary>How many responses do we need before the data is useful?</summary><p>There is no magic number, but small samples swing a lot week to week. Read monthly or quarterly totals and look at direction rather than exact percentages, especially in B2B where inquiries are few.</p></details><details><summary>Should the question allow multiple answers?</summary><p>A single answer to "How did you first hear about us?" is easier to read and compare over time. If you want the full journey, add an optional second question, but keep the first one single-choice.</p></details><details><summary>Won't buyers just pick Google because they searched for us?</summary><p>Some will, which is why the question asks where they first heard of you and names AI assistants explicitly. The free-text "Other" answers also show how buyers describe AI in their own words.</p></details><details><summary>Can we connect survey answers to GA4?</summary><p>Yes, if your store or form sends the answer as an event parameter or user property. Even without that, comparing monthly totals from the survey with GA4's channel report is enough to see the gap.</p></details></section>
+      <section class="srcs"><h2>Sources</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li></ol></section>
+      <p class="note"><b>Why we wrote this</b>We wrote this because sellers and factories keep hearing &quot;I found you through ChatGPT&quot; from customers while their dashboards show almost nothing. A one-question survey is the simplest way to put a number on that.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="On this page"><h4>On this page</h4><a href="#s1">Why can't analytics alone measure AI influence?</a><a href="#s2">How should you word the question?</a><a href="#s3">Where should the question go for DTC stores and for B2B?</a><a href="#s4">How do you read the results?</a><a href="#s5">What mistakes make survey data useless?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>See where you&#x27;re invisible in US AI search</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Book a call</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Log in</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Related articles</h2>
+  <div class="grid"><a class="card" href="/blog/en/ga4-ai-assistant-channel/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>GA4&#x27;s AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own</h3><p>Google Analytics now sorts visits from ChatGPT, Gemini, Copilot and others into their own channel. That fixes part of the AI-traffic problem. Here&#x27;s the part it doesn&#x27;t fix, and a custom channel group that fills the gap.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/en/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now</h3><p>ChatGPT appears to have stopped adding UTM tags to its outbound links, so AI-driven visits are blending into direct traffic. It&#x27;s time for a new way to measure your SEO and GEO returns.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a><a class="card" href="/blog/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="Seen from the driver&#x27;s seat, a shop owner&#x27;s hands rest on a steering wheel in front of a dashboard with exactly three orange-rimmed gauges and a row of small warning lights." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>Digital Advertising KPIs for Small Business: The 3 Numbers That Matter</h3><p>No media buyer? Focus on cost per acquisition, return on ad spend and repeat or lead quality. Here&#x27;s how to set break-even targets and review them once a week.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/en/">← Back to the blog</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>See where you&#x27;re invisible in US AI search</h2>
+  <p>Book a free 30-minute call and we&#x27;ll run a live AI-visibility read on your store.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Book a 30-min strategy call →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Log in to ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.</p></div>
+      <div><h4>ToucHigh</h4><a href="/?lang=en">Home</a><a href="/?lang=en#geo">GEO Autopilot</a><a href="/?lang=en#social">Social Autopilot</a><a href="/pro/?lang=en">ToucHigh PRO</a></div>
+      <div><h4>Blog</h4><a href="/blog/en/">Blog</a><a href="/blog/en/feed.xml">RSS</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Log in</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Book a call</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

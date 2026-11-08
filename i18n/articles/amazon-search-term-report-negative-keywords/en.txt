@@ -1,0 +1,104 @@
+== title ==
+Amazon Search Term Report: A Weekly Routine for Negative Keywords and Harvesting
+== seo_title ==
+Amazon Search Term Report: Negative Keywords Routine | ToucHigh
+== desc ==
+A 30-minute weekly routine for the Amazon Sponsored Products search term report: which terms to negate, which to move into exact match, and thresholds from your own numbers.
+== dek ==
+The search term report is where Amazon shows what shoppers actually typed before clicking your ad. Read it weekly with three simple rules and most wasted spend disappears without touching a single bid.
+== section ==
+Ads for SMEs
+== tags ==
+Amazon search term report | Negative keywords | Amazon PPC | Keyword harvesting | ACoS
+== keywords ==
+Amazon search term report, Amazon negative keywords, keyword harvesting Amazon, reduce Amazon ad waste, negative exact vs phrase, Sponsored Products optimization
+== read ==
+6
+== q ==
+Our automatic Amazon campaign spends money on searches that have nothing to do with our product. How do we find and stop that waste without killing the campaign?
+== a ==
+Use the search term report every week. Sort by spend, then apply three rules from your own numbers: negate terms that are irrelevant or have had enough clicks to expect an order but produced none; harvest terms with repeat orders below your break-even ACoS into a manual exact-match campaign; and leave everything else alone until it has data. Amazon lets you add negative keywords to automatic, keyword and product-targeting Sponsored Products campaigns, at campaign or ad-group level.
+== takeaways ==
+- Amazon's keyword targeting guide recommends reviewing search term reports regularly to understand which queries drive sales.
+- Negative keywords stop ads from showing for specific searches; Amazon supports them in automatic, product and keyword-targeting Sponsored Products campaigns, at campaign or ad-group level.
+- Set the "no order" threshold from your conversion rate: at 10%, you'd expect about one order per ten clicks, so 20 or more clicks with none is a signal.
+- Harvest winners: terms with repeated orders and ACoS below break-even move into manual exact match, where you control the bid.
+- Don't negate on thin data. One or two clicks prove nothing either way.
+== body ==
+<p>Automatic campaigns and broad keywords are how Amazon finds shoppers you didn't think of. They are also how it spends your money on shoppers you'd never want. The difference between the two is in one report most new sellers never open: the search term report.</p>
+
+<p>This is a 30-minute weekly routine. It doesn't need a tool or an agency, only your break-even ACoS and a bit of discipline.</p>
+
+<h2>What does the search term report show?</h2>
+
+<p>For each targeting in your Sponsored Products campaigns, the search term report lists the customer search terms that triggered your ads, with impressions, clicks, spend, orders and sales. In other words, it shows what shoppers actually typed, as opposed to the keywords you chose. Amazon's keyword targeting guide puts it simply: review your search term reports regularly to understand which queries drive sales, look for patterns in high-performing terms and adjust your strategy.</p>
+
+<p>Download the report for the last 14 to 30 days, not just the last week, so low-volume terms have a chance to show a pattern.</p>
+
+<h2>Which search terms should you add as negatives?</h2>
+
+<p>Amazon describes negative keyword targeting as preventing ads from appearing for specific search terms, to stop overspending on queries that don't fit your goals. You can add negatives to Sponsored Products automatic, product and keyword-targeting campaigns, at the campaign or ad-group level.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Type of term</th><th>Example (for a silicone baking mat)</th><th>Action</th></tr></thead>
+<tbody>
+<tr><td>Wrong product</td><td>"silicone phone case"</td><td>Negate now, regardless of clicks</td></tr>
+<tr><td>Wrong intent</td><td>"how to clean baking mat", "free", "used"</td><td>Negate now</td></tr>
+<tr><td>Relevant, enough clicks, no orders</td><td>"baking sheet liner" with 25 clicks, 0 orders</td><td>Negate or lower bid, after checking the listing fits the query</td></tr>
+<tr><td>Competitor brand names</td><td>"[brand] baking mat"</td><td>Business decision: test deliberately in a separate campaign or negate</td></tr>
+<tr><td>Relevant, few clicks</td><td>Any term with 1 to 5 clicks</td><td>Leave alone</td></tr>
+</tbody>
+</table></div>
+
+<p>The "enough clicks" line should come from your own conversion rate, not a rule of thumb from someone else's category. If about one in ten clicks becomes an order, then 20 or more clicks with no order is a reasonable signal that a term doesn't sell your product. If your conversion rate is 5%, wait for around 40.</p>
+
+<h2>Which search terms should you harvest?</h2>
+
+<p>The other half of the report is the gold: terms that bring orders. When a search term from an automatic or broad campaign has produced repeat orders at an ACoS below your break-even, move it into a manual campaign as an exact-match keyword. There you set its bid directly, and you can raise it on terms that sell, as Amazon's guide suggests, while keeping return on ad spend healthy.</p>
+
+<p>Many sellers then add the same term as a negative exact in the original automatic campaign, so the two campaigns don't compete for the same search and the data stays clean. It's a structural choice rather than a rule; what matters is knowing which campaign is meant to buy each proven term.</p>
+
+<h2>What does the weekly 30-minute routine look like?</h2>
+
+<ol>
+<li><strong>Download</strong> the Sponsored Products search term report for the last 14 to 30 days.</li>
+<li><strong>Sort by spend</strong>, highest first. The top 20 rows usually hold most of the waste and most of the winners.</li>
+<li><strong>Negate the obvious:</strong> wrong product and wrong intent.</li>
+<li><strong>Apply your click threshold</strong> to relevant terms with no orders: negate or lower the bid.</li>
+<li><strong>Harvest winners</strong> into manual exact match, at a bid based on your break-even CPC.</li>
+<li><strong>Log what you changed</strong> with the date, so next week you can see the effect.</li>
+</ol>
+
+<h2>What are the common mistakes?</h2>
+
+<ul>
+<li><strong>Negating too broadly.</strong> A phrase negative such as "mat" blocks far more than you intend. Prefer exact negatives unless a whole word is truly irrelevant.</li>
+<li><strong>Negating on one or two clicks.</strong> That's noise, not evidence.</li>
+<li><strong>Blaming the keyword for a listing problem.</strong> If a relevant term gets clicks but no orders, check price, images and reviews against what that shopper wanted.</li>
+<li><strong>Doing it once.</strong> Search behaviour shifts with seasons and competitors. The value is in the weekly habit.</li>
+</ul>
+== insight_quote ==
+Your keywords are what you meant. The search term report is what you paid for.
+== insight ==
+Pruning works in orchards for the same reason it works in ad accounts: removing what drains resources lets the strongest branches grow. The weekly report is the pruning schedule; your break-even ACoS tells you where to cut.
+== prop_eyebrow ==
+Ads Autopilot · GEO Autopilot · Social Autopilot
+== prop_intro ==
+If the weekly routine keeps slipping, ToucHigh's Ads Autopilot can carry the daily work:
+== prop_items ==
+- it runs spend across Amazon, Meta and Google from one strategy, auto-adjusted to ROAS;
+- it makes the creative-fatigue and budget calls for you;
+- it scores creative concepts for predicted performance before they go live.
+== prop_outro ==
+Book a 30-minute strategy call with your store URL and one competitor, and we'll walk through a plan matched to your catalog.
+== faq ==
+Q: Should we use negative exact or negative phrase?
+A: Start with negative exact for specific wasteful searches. Use negative phrase only for words that are irrelevant in every combination, such as a material you don't sell, because a phrase negative blocks every search containing it.
+Q: How often should we check the search term report?
+A: Weekly for active campaigns is a good rhythm, using the last 14 to 30 days of data. Checking daily mostly shows noise.
+Q: Will negative keywords hurt our automatic campaign?
+A: They narrow it, which is the point. Amazon notes negatives help prevent overspending on queries that don't align with your goals. Just avoid negating on very little data.
+Q: Should we negate competitor brand terms?
+A: It's a business decision. Some sellers test competitor terms deliberately in a separate campaign; others negate them. Decide based on whether those clicks convert at an ACoS below your break-even.
+== note ==
+We wrote this because the most common Amazon ads problem we see isn't bids or budgets. It's spend on searches nobody ever looked at. One report, read weekly, fixes most of it.

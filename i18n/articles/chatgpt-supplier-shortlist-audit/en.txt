@@ -1,0 +1,115 @@
+== title ==
+Is Your Factory on ChatGPT's Supplier Shortlist? A 30-Prompt Audit
+== seo_title ==
+ChatGPT Supplier Audit: Does AI Recommend Your Factory? | ToucHigh
+== desc ==
+A repeatable 30-prompt audit to check whether ChatGPT, Perplexity, Gemini and Google's AI answers name your factory, describe it correctly and cite your own site.
+== dek ==
+Before you rewrite a single page, find out where you stand. Here is a 30-prompt audit, a scoring sheet and a way to read the results that any export team can run in an afternoon.
+== section ==
+GEO & AI search
+== tags ==
+GEO audit | ChatGPT supplier search | AI visibility | Factory websites | B2B export
+== keywords ==
+ChatGPT supplier audit, does ChatGPT recommend my factory, AI visibility audit for manufacturers, GEO audit B2B, test AI search visibility, supplier shortlist AI
+== read ==
+6
+== q ==
+How do we find out whether ChatGPT and other AI assistants actually recommend our factory when buyers look for suppliers?
+== a ==
+Run a fixed audit: write 30 English prompts the way buyers ask, across discovery, comparison, specification, verification and alternatives. Put them to ChatGPT, Perplexity, Gemini, Copilot and Google's AI Overviews or AI Mode, and log whether you are named, where, whether the facts are right and whether your own site is cited. Repeat the same set monthly; the trend, not one answer, tells you what to fix.
+== takeaways ==
+- One question proves nothing: Google says AI Overviews and AI Mode may run a "query fan-out" of related searches, so answers shift with wording. A fixed set of 30 prompts gives you a baseline.
+- Cover five buyer intents: discovery, comparison, specification, verification of your name, and alternatives to a competitor.
+- Score four things per answer: mentioned or not, position, factual accuracy and whether your own website is cited.
+- If you are missing everywhere, check crawler access first: OpenAI says sites that opt out of OAI-SearchBot are not shown in ChatGPT search answers.
+- Rerun the same prompts every month and compare rates, not single answers.
+== body ==
+<p>Overseas buyers increasingly ask an AI assistant for a shortlist of suppliers before they open a marketplace or book a trade show. The first question for any export team is simple: when they ask, does your factory come up? Most teams answer with a single test ("I asked ChatGPT once and we weren't there") and then start rewriting pages. That skips the most useful step. Measure first, with a fixed set of prompts you can repeat, and you will know which fix matters.</p>
+
+<h2>Why should a factory audit AI answers before fixing anything?</h2>
+
+<p>AI answers are not a ranking you can check once. Google's own documentation for site owners explains that AI Overviews and AI Mode may use a "query fan-out" technique, issuing multiple related searches across subtopics and data sources to build one response, and that AI Overviews only appear when Google's systems judge them helpful, so they often don't trigger. Change the wording slightly and the sources change too.</p>
+
+<p>That is why one question is an anecdote. Thirty questions, asked the same way every month, become data. A baseline also protects your budget: if you later rebuild your capability pages and the mention rate rises from 3 in 30 to 9 in 30, you can show the change instead of arguing about one screenshot.</p>
+
+<h2>How do you write 30 prompts the way buyers ask?</h2>
+
+<p>Write the prompts in English, in the buyer's voice, with the details buyers actually include: product, material, certification, market and order size. Spread them across five intents, six prompts each.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Intent</th><th>Example prompt</th><th>What you are checking</th></tr></thead>
+<tbody>
+<tr><td>Discovery</td><td>"Which factories in China make LFGB-certified silicone kitchenware for private label?"</td><td>Are you on the shortlist at all?</td></tr>
+<tr><td>Comparison</td><td>"Compare silicone kitchenware manufacturers in Guangdong for small custom orders."</td><td>Where are you placed, and on what criteria?</td></tr>
+<tr><td>Specification</td><td>"What MOQ and lead time should I expect for custom silicone spatulas from China?"</td><td>Does AI quote facts from your pages?</td></tr>
+<tr><td>Verification</td><td>"Is [your English company name] a reliable supplier? What certifications do they hold?"</td><td>Are your own facts described correctly?</td></tr>
+<tr><td>Alternatives</td><td>"Alternatives to [competitor] for silicone baking mats."</td><td>Do you appear next to the rivals buyers already know?</td></tr>
+</tbody>
+</table></div>
+
+<p>Use your sales inbox as the source. The questions that arrive in inquiries every week are the questions buyers now ask AI first. Keep the list in a spreadsheet and never edit a prompt once the audit has started; changing the wording resets the baseline.</p>
+
+<h2>Which AI engines should you test, and how?</h2>
+
+<p>Test where your buyers are likely to ask: ChatGPT, Perplexity, Gemini, Microsoft Copilot, and Google Search with AI Overviews or AI Mode. Record the date, the engine, the mode (for example, whether ChatGPT used search) and whether you were logged in. Use a clean browser profile so your own history doesn't color the results, and keep screenshots or exported text for each answer.</p>
+
+<p>Two technical notes make the audit fair. First, different engines fetch the web with different crawlers. OpenAI's documentation says OAI-SearchBot is used to surface websites in ChatGPT's search features, and that sites opted out of it are not shown in ChatGPT search answers, though they can still appear as navigational links. Perplexity says PerplexityBot is used to surface and link websites in its search results. Second, a model can answer from what it already knows without searching at all, so an answer that names you without a link is still worth recording.</p>
+
+<h2>How do you score the answers?</h2>
+
+<p>Score every answer on the same four fields, then roll them up into rates you can track.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Field</th><th>How to score</th><th>Rate to track</th></tr></thead>
+<tbody>
+<tr><td>Mentioned</td><td>1 if your factory is named, 0 if not</td><td>Mention rate = mentions ÷ answers</td></tr>
+<tr><td>Position</td><td>Rank in the list, or "body text" if not listed</td><td>Share of top-three placements</td></tr>
+<tr><td>Accuracy</td><td>Are location, products, certifications and capacity right?</td><td>Accuracy rate among mentions</td></tr>
+<tr><td>Own-site citation</td><td>1 if the answer links to your website</td><td>Citation rate</td></tr>
+</tbody>
+</table></div>
+
+<p>Add one more column: which competitors were named. After 30 prompts across five engines you have 150 answers, enough to see whether one rival keeps taking the slot you want and which of their pages the engines cite.</p>
+
+<h2>What do the results tell you to fix?</h2>
+
+<p>The pattern in the sheet points to the fix, which is the point of measuring first.</p>
+
+<ul>
+<li><strong>Missing almost everywhere.</strong> Check access before content. Make sure your robots.txt, CDN and firewall don't block the search crawlers of the engines you care about, and that key pages are indexed in Google.</li>
+<li><strong>Named in verification prompts, absent in discovery prompts.</strong> AI knows you exist but doesn't connect you to the category. Build one capability page per core product line, with the material, certification and capacity facts buyers ask about.</li>
+<li><strong>Mentioned, but with wrong facts.</strong> Your information is inconsistent across the web. Align your English name, address and product categories on your website, marketplace stores and LinkedIn.</li>
+<li><strong>Competitors cited with their own pages.</strong> Open the cited pages. They usually answer one question directly with specific numbers. That is the format to match.</li>
+</ul>
+
+<h2>How often should you rerun the audit?</h2>
+
+<p>Monthly is enough for most factories. Keep the prompt set fixed, rerun it in the same week of each month and compare the rates, not individual answers. When you publish a new capability page or fix your entity data, note the date in the sheet so you can connect changes to the work. Add new prompts in a separate tab rather than mixing them into the baseline.</p>
+
+<p>Thirty prompts take a person half a day each month. If that time is hard to find, this is the part of GEO that is easiest to automate, because the method never changes.</p>
+== insight_quote ==
+One answer is an anecdote. Thirty answers, every month, is data.
+== insight ==
+Measurement theory warns that a single noisy observation leads to the wrong decision. AI answers vary with wording and engine, so only a fixed, repeated prompt set separates real movement from noise and tells a factory which fix to fund.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+Want this audit to run without anyone keeping a spreadsheet? ToucHigh's GEO Autopilot can:
+== prop_items ==
+- check your visibility across ChatGPT, Perplexity, Google AI and Gemini and show where your factory is invisible;
+- write and ship the fixes, including capability pages, Q&amp;A and entity data, plus GEO articles around sourcing questions as they trend;
+- track your AI-citation share over time, so each month's change is visible.
+== prop_outro ==
+Book a 30-minute strategy call with your English website and two competitors, and we'll run a live AI-visibility read together.
+== faq ==
+Q: Should the audit prompts be in English or in Chinese?
+A: Use the language your buyers use. For US and European buyers that is English, written the way a purchasing manager would type it, with product, material, certification and order size. If you also sell to buyers who ask in Spanish or German, add a separate prompt set in that language rather than mixing languages in one baseline.
+Q: Should we test logged in or logged out?
+A: Pick one and keep it fixed, and record it in the sheet. Logged-out, clean-profile tests are closer to a first-time buyer. If you also want to see personalised answers, run them as a separate column.
+Q: How many competitors should we track?
+A: Three to five is enough: the rivals your sales team loses deals to and the names that keep appearing in AI answers. Log every competitor an answer names, then focus on the ones that recur.
+Q: Can this audit be automated?
+A: Yes. The prompt set, the engines and the scoring fields don't change, so the audit can run on a schedule and report mention rate, accuracy and citation share. Tools like ToucHigh's GEO Autopilot do this and also write the fixes.
+== note ==
+We wrote this because export teams keep asking us whether AI recommends their factory, and most have only tested once. A repeatable audit turns that worry into a number you can improve.

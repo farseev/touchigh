@@ -5,8 +5,104 @@
 <link>https://touchigh.ai/blog/</link>
 <description>出海卖家、工厂与中小企业的 SEO、GEO/AEO、海外社媒与广告投放实战。</description>
 <language>zh-Hans</language>
-<lastBuildDate>Fri, 16 Oct 2026 12:00:00 +0800</lastBuildDate>
+<lastBuildDate>Sun, 08 Nov 2026 12:40:00 +0800</lastBuildDate>
 <atom:link href="https://touchigh.ai/blog/feed.xml" rel="self" type="application/rss+xml"/>
+<item>
+<title>建立美国品牌实体：中国品牌如何被Google和AI正确识别</title>
+<link>https://touchigh.ai/blog/us-brand-entity-chinese-brands-google-ai/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/us-brand-entity-chinese-brands-google-ai/</guid>
+<description>为什么Google和AI助手常把中国品牌搞混，以及如何建立统一的美国品牌实体：唯一的英文名、“关于我们”页、sameAs链接和知识面板。</description>
+<category>跨境出海</category>
+<pubDate>Sun, 08 Nov 2026 12:40:00 +0800</pubDate>
+</item>
+<item>
+<title>Instagram SEO：让你的帖子在Instagram搜索和Google上都能被找到</title>
+<link>https://touchigh.ai/blog/instagram-seo-google-search-posts/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/instagram-seo-google-search-posts/</guid>
+<description>Instagram专业账号的公开帖子可以出现在Google搜索结果中。如何写好名称、简介、文案和替代文本，让买家通过搜索找到你的品牌帖子。</description>
+<category>海外社媒</category>
+<pubDate>Sun, 08 Nov 2026 12:20:00 +0800</pubDate>
+</item>
+<item>
+<title>Instagram试播Reels：小品牌如何在不打乱发帖节奏的前提下测试新内容</title>
+<link>https://touchigh.ai/blog/instagram-trial-reels-small-brands/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/instagram-trial-reels-small-brands/</guid>
+<description>Instagram试播Reels怎么用，24小时和72小时这两个时间窗口意味着什么，以及一套让小品牌先在非粉丝中测试开头和形式的每周计划。</description>
+<category>海外社媒</category>
+<pubDate>Sun, 08 Nov 2026 12:00:00 +0800</pubDate>
+</item>
+<item>
+<title>亚马逊搜索词报告：每周一次的否定词与关键词收割流程</title>
+<link>https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/</guid>
+<description>每周30分钟的亚马逊商品推广搜索词报告流程：哪些词该否定、哪些词该移入精准匹配，以及如何用自己的数据设定判断门槛。</description>
+<category>广告投放</category>
+<pubDate>Sun, 08 Nov 2026 11:40:00 +0800</pubDate>
+</item>
+<item>
+<title>盈亏平衡ACoS、TACoS和ROAS：亚马逊卖家必须会算的广告账</title>
+<link>https://touchigh.ai/blog/amazon-break-even-acos-tacos/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/amazon-break-even-acos-tacos/</guid>
+<description>如何用真实利润率算出盈亏平衡ACoS，ACoS和ROAS的关系，TACoS补充了什么，以及按盈利、新品和清仓分别设定目标ACoS。</description>
+<category>广告投放</category>
+<pubDate>Sun, 08 Nov 2026 11:20:00 +0800</pubDate>
+</item>
+<item>
+<title>第一个亚马逊商品推广广告怎么开：自动与手动投放、出价和预算</title>
+<link>https://touchigh.ai/blog/amazon-sponsored-products-first-campaign/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/amazon-sponsored-products-first-campaign/</guid>
+<description>亚马逊新卖家第一个商品推广广告的分步设置：自动投放和手动投放怎么配合、如何用利润率算出最高出价、第二周该看什么。</description>
+<category>广告投放</category>
+<pubDate>Sun, 08 Nov 2026 11:00:00 +0800</pubDate>
+</item>
+<item>
+<title>“您是怎么知道我们的？”用问卷统计ChatGPT和AI助手带来的成交</title>
+<link>https://touchigh.ai/blog/ai-attribution-post-purchase-survey/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/ai-attribution-post-purchase-survey/</guid>
+<description>分析工具看不到那些在AI答案里看到你、过几天才回来的买家。如何设计一道题的购后问卷和询盘表单字段，衡量ChatGPT的真实影响。</description>
+<category>效果衡量</category>
+<pubDate>Sun, 08 Nov 2026 10:40:00 +0800</pubDate>
+</item>
+<item>
+<title>在Google Search Console里怎么看AI概览和AI模式带来的流量</title>
+<link>https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/</guid>
+<description>Google把AI概览和AI模式计入Search Console的“网页”搜索数据。AI答案出现后，怎么看展示、点击和页面变化，又该做哪些对比。</description>
+<category>效果衡量</category>
+<pubDate>Sun, 08 Nov 2026 10:20:00 +0800</pubDate>
+</item>
+<item>
+<title>GA4的“AI助手”渠道：统计了什么、漏了什么、什么时候要自建渠道组</title>
+<link>https://touchigh.ai/blog/ga4-ai-assistant-channel/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/ga4-ai-assistant-channel/</guid>
+<description>GA4默认渠道分组新增了AI Assistant渠道。它统计哪些访问，为什么AI概览和无来源访问不在其中，以及如何自建自定义渠道组。</description>
+<category>效果衡量</category>
+<pubDate>Sun, 08 Nov 2026 10:00:00 +0800</pubDate>
+</item>
+<item>
+<title>你的官网屏蔽了ChatGPT吗？B2B网站的AI爬虫robots.txt设置</title>
+<link>https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/</guid>
+<description>B2B和工厂官网该放行哪些AI爬虫：OAI-SearchBot与GPTBot的区别、PerplexityBot、Google-Extended，以及会悄悄拦截它们的防火墙设置。</description>
+<category>GEO / AI 搜索</category>
+<pubDate>Sun, 08 Nov 2026 09:40:00 +0800</pubDate>
+</item>
+<item>
+<title>工厂官网结构化数据怎么加：Organization、Product和FAQ的正确做法</title>
+<link>https://touchigh.ai/blog/factory-website-schema-markup/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/factory-website-schema-markup/</guid>
+<description>B2B工厂官网需要哪些结构化数据：Organization、Product摘要和面包屑；为什么FAQ标记几乎拿不到富媒体结果；以及Google对AI功能的官方说法。</description>
+<category>SEO</category>
+<pubDate>Sun, 08 Nov 2026 09:20:00 +0800</pubDate>
+</item>
+<item>
+<title>ChatGPT的供应商短名单里有你吗？30个问题的自查法</title>
+<link>https://touchigh.ai/blog/chatgpt-supplier-shortlist-audit/</link>
+<guid isPermaLink="true">https://touchigh.ai/blog/chatgpt-supplier-shortlist-audit/</guid>
+<description>一套可重复的30个问题自查法：检查ChatGPT、Perplexity、Gemini和Google AI答案有没有提到你的工厂、描述是否准确、是否引用你的官网。</description>
+<category>GEO / AI 搜索</category>
+<pubDate>Sun, 08 Nov 2026 09:00:00 +0800</pubDate>
+</item>
 <item>
 <title>从工厂到品牌：中国卖家在美国做 SEO、AEO 和 GEO</title>
 <link>https://touchigh.ai/blog/zh/factory-to-brand-seo-aeo-geo-us/</link>

@@ -113,6 +113,67 @@ ToucHigh (touchigh.ai) is an AI-search visibility and social autopilot for Chine
 
 ## Blog — questions answered (English)
 
+### Is Your Factory on ChatGPT's Supplier Shortlist? A 30-Prompt Audit
+URL: https://touchigh.ai/blog/en/chatgpt-supplier-shortlist-audit/ · 中文版: https://touchigh.ai/blog/chatgpt-supplier-shortlist-audit/
+Q: How do we find out whether ChatGPT and other AI assistants actually recommend our factory when buyers look for suppliers?
+A: Run a fixed audit: write 30 English prompts the way buyers ask, across discovery, comparison, specification, verification and alternatives. Put them to ChatGPT, Perplexity, Gemini, Copilot and Google's AI Overviews or AI Mode, and log whether you are named, where, whether the facts are right and whether your own site is cited. Repeat the same set monthly; the trend, not one answer, tells you what to fix.
+
+### Schema Markup for Factory Websites: Organization, Product and FAQ Done Right
+URL: https://touchigh.ai/blog/en/factory-website-schema-markup/ · 中文版: https://touchigh.ai/blog/factory-website-schema-markup/
+Q: Our developer asked which schema markup to add to the factory's English website. Do we need it for Google and AI, and which types matter?
+A: Add three types and keep them accurate: Organization on the homepage (name, logo, address, contact and sameAs links to your official profiles), Product markup on each product or capability page using Google's product snippet format, and BreadcrumbList across the site. FAQ markup is optional, because since 2023 Google shows FAQ rich results only for well-known government and health sites. Google says no special schema is needed to appear in AI Overviews; the markup must simply match the visible text.
+
+### Is Your Website Blocking ChatGPT? robots.txt for AI Crawlers on B2B Sites
+URL: https://touchigh.ai/blog/en/ai-crawlers-robots-txt-b2b-website/ · 中文版: https://touchigh.ai/blog/ai-crawlers-robots-txt-b2b-website/
+Q: Our IT team blocked "AI bots" on the website last year. Could that be why ChatGPT never shows our factory, and what should we allow?
+A: Quite possibly. AI companies run separate bots for search and for model training. OpenAI says sites that opt out of OAI-SearchBot are not shown in ChatGPT search answers, while GPTBot only governs training. Allow the search crawlers (OAI-SearchBot, PerplexityBot, Googlebot, Bingbot), decide separately about training bots such as GPTBot and Google-Extended, and check that your CDN or firewall isn't blocking them regardless of robots.txt.
+
+### GA4's AI Assistant Channel: What It Counts, What It Misses, and When to Build Your Own
+URL: https://touchigh.ai/blog/en/ga4-ai-assistant-channel/ · 中文版: https://touchigh.ai/blog/ga4-ai-assistant-channel/
+Q: GA4 now shows an "AI Assistant" channel in our reports. Can we trust it to measure the traffic our GEO work brings in, or do we still need our own setup?
+A: Use it, but don't treat it as the whole story. Google's documentation says the AI Assistant channel covers visits from sources like ChatGPT, Gemini, Deepseek, Copilot or Grok, and excludes Google's AI Overviews and AI Mode. It also can't see visits that arrive without a referrer, which land in Direct. Check which assistants actually appear in your property, build a custom channel group if some fall into Referral, and pair GA4 with Search Console and citation tracking.
+
+### How to Read AI Overviews and AI Mode Traffic in Google Search Console
+URL: https://touchigh.ai/blog/en/search-console-ai-overviews-ai-mode-traffic/ · 中文版: https://touchigh.ai/blog/search-console-ai-overviews-ai-mode-traffic/
+Q: Where can we see how much traffic Google's AI Overviews and AI Mode bring us? Is there a report for it in Search Console?
+A: Not a separate one. Google says sites appearing in AI Overviews and AI Mode are included in the overall search traffic in Search Console, in the Performance report under the Web search type. So read it by comparison: question-style and long queries against short ones, before against after, impressions against clicks, and the pages that gain impressions. Pair it with GA4 landing pages and a manual check of which priority queries show an AI Overview.
+
+### "How Did You Hear About Us?" Using Surveys to Count Sales from ChatGPT and AI Assistants
+URL: https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/ · 中文版: https://touchigh.ai/blog/ai-attribution-post-purchase-survey/
+Q: Our analytics shows very little traffic from ChatGPT, but customers keep saying they "found us through AI". How do we measure that properly?
+A: Ask them, consistently. Add one required question, "How did you first hear about us?", after checkout or on the B2B inquiry form, with "ChatGPT or another AI assistant" as a named option, randomised answer order and an "Other" box. Compare the share choosing AI with the share GA4 attributes to AI channels. The gap estimates AI influence that never arrived as a labelled click, because visits without a referrer are recorded as Direct.
+
+### Your First Amazon Sponsored Products Campaign: Auto vs Manual, Bids and Budget
+URL: https://touchigh.ai/blog/en/amazon-sponsored-products-first-campaign/ · 中文版: https://touchigh.ai/blog/amazon-sponsored-products-first-campaign/
+Q: We just listed our first products on Amazon US. How should we set up our first Sponsored Products campaign, and how much should we bid?
+A: Start with two campaigns for the same product: one automatic-targeting campaign to discover search terms, and one manual campaign with a short list of exact keywords you're confident about. Work out a maximum bid from your numbers (price × margin before ads × expected conversion rate), set a daily budget you can afford to lose while learning, and wait about two weeks before judging. Then move proven search terms into manual and add negatives.
+
+### Break-Even ACoS, TACoS and ROAS: The Amazon Ads Math Every Seller Needs
+URL: https://touchigh.ai/blog/en/amazon-break-even-acos-tacos/ · 中文版: https://touchigh.ai/blog/amazon-break-even-acos-tacos/
+Q: Our Amazon ads show an ACoS of 28%. Is that good or bad, and how do we know what ACoS we can actually afford?
+A: It depends entirely on your margin. Amazon defines ACoS as ad spend divided by ad revenue and says that to keep a profit, ACoS must be lower than your profit margin. Calculate your margin before ad costs (price minus product cost, Amazon fees, shipping, duties and expected returns); that percentage is your break-even ACoS. If it's 35%, a 28% ACoS is profitable on attributed sales; if it's 22%, you're losing money on each ad sale. Then track TACoS, total ad spend over total sales, to see whether ads are building organic sales.
+
+### Amazon Search Term Report: A Weekly Routine for Negative Keywords and Harvesting
+URL: https://touchigh.ai/blog/en/amazon-search-term-report-negative-keywords/ · 中文版: https://touchigh.ai/blog/amazon-search-term-report-negative-keywords/
+Q: Our automatic Amazon campaign spends money on searches that have nothing to do with our product. How do we find and stop that waste without killing the campaign?
+A: Use the search term report every week. Sort by spend, then apply three rules from your own numbers: negate terms that are irrelevant or have had enough clicks to expect an order but produced none; harvest terms with repeat orders below your break-even ACoS into a manual exact-match campaign; and leave everything else alone until it has data. Amazon lets you add negative keywords to automatic, keyword and product-targeting Sponsored Products campaigns, at campaign or ad-group level.
+
+### Instagram Trial Reels for Small Brands: Test New Ideas Without Breaking Your Posting Rhythm
+URL: https://touchigh.ai/blog/en/instagram-trial-reels-small-brands/ · 中文版: https://touchigh.ai/blog/instagram-trial-reels-small-brands/
+Q: We post on Instagram on a steady schedule, but we're afraid to try new formats because a flop shows up in front of all our followers. Is there a safer way to test?
+A: Yes: trial reels. Instagram introduced them in December 2024 to show a reel to people who don't follow you first. Your followers won't see it in Feed or the Reels tab, and it stays off your profile grid unless you share it with everyone. About 24 hours after posting you can see views, likes, comments and shares, and you can choose to have Instagram share it with followers automatically if it performs well in the first 72 hours. Keep your regular posts for followers and run one or two trials a week.
+
+### Instagram SEO in 2026: Make Your Posts Findable in Instagram Search and on Google
+URL: https://touchigh.ai/blog/en/instagram-seo-google-search-posts/ · 中文版: https://touchigh.ai/blog/instagram-seo-google-search-posts/
+Q: We heard Instagram posts now show up on Google. Does that change how we should write captions, and is there a setting we need to turn on?
+A: Yes on both counts. According to PPC Land's report of Instagram's announcement, from 10 July 2025 public photos, videos, carousels and Reels from professional accounts of users over 18 can appear in Google and other search engines, controlled by the setting "Allow public photos and videos to appear in search engine results", on by default. So write for search: put what you sell in your name field and bio, open captions with a plain description of the product and use, add custom alt text, and keep brand facts consistent with your website.
+
+### Building a US Brand Entity: How Chinese Brands Get Recognised by Google and AI
+URL: https://touchigh.ai/blog/en/us-brand-entity-chinese-brands-google-ai/ · 中文版: https://touchigh.ai/blog/us-brand-entity-chinese-brands-google-ai/
+Q: When US shoppers ask ChatGPT or Google about our brand, the answers mix us up with other companies or describe the wrong products. How do we fix how AI understands who we are?
+A: Build one consistent brand entity. Choose a single English brand name and use it everywhere, make your About page the source of truth for founding year, location, products and contact, describe it with Organization structured data including sameAs links to your official profiles, align your marketplace, social and LinkedIn pages to the same facts, and earn mentions on independent sites. Google says knowledge panels are created automatically when there is enough information on the open web, and verified owners can then suggest changes.
+
+
 ### Store SEO Traffic Dropping? AI Overviews Now Cover 80% of Branded Searches
 URL: https://touchigh.ai/blog/en/ai-overviews-branded-queries-seo-traffic/ · 中文版: https://touchigh.ai/blog/ai-overviews-branded-queries-seo-traffic/
 Q: My store's SEO traffic keeps falling even though I'm still publishing. How do I get my organic traffic back?

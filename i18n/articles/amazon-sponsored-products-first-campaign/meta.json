@@ -1,0 +1,9 @@
+{"num": "t67", "original": "zh-Hans", "cat": "ads-for-smes", "hero": "t10",
+ "published": "2026-11-08T11:00:00+08:00",
+ "landing": "amazon",
+ "related": ["amazon-ads-agent-sellers", "amazon-break-even-acos-tacos", "amazon-search-term-report-negative-keywords"],
+ "sources": [
+  {"name": "Sponsored Products", "url": "https://advertising.amazon.com/solutions/products/sponsored-products", "publisher": "Amazon Ads"},
+  {"name": "What is keyword targeting?", "url": "https://advertising.amazon.com/library/guides/keyword-targeting", "publisher": "Amazon Ads"},
+  {"name": "What is advertising cost of sales (ACOS)?", "url": "https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales", "publisher": "Amazon Ads"}
+ ]}

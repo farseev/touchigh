@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>亚马逊盈亏平衡ACoS、TACoS和ROAS怎么算 | ToucHigh</title>
+<meta name="description" content="如何用真实利润率算出盈亏平衡ACoS，ACoS和ROAS的关系，TACoS补充了什么，以及按盈利、新品和清仓分别设定目标ACoS。">
+<link rel="canonical" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="盈亏平衡ACoS, ACoS怎么算, ACoS和ROAS, 亚马逊TACoS, 目标ACoS, 亚马逊广告利润率">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/amazon-break-even-acos-tacos/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/amazon-break-even-acos-tacos/">
+<meta property="og:title" content="盈亏平衡ACoS、TACoS和ROAS：亚马逊卖家必须会算的广告账">
+<meta property="og:description" content="如何用真实利润率算出盈亏平衡ACoS，ACoS和ROAS的关系，TACoS补充了什么，以及按盈利、新品和清仓分别设定目标ACoS。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t68-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="盈亏平衡ACoS、TACoS和ROAS：亚马逊卖家必须会算的广告账">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T11:20:00+08:00">
+<meta property="article:section" content="广告投放">
+<meta property="article:tag" content="ACoS">
+<meta property="article:tag" content="TACoS">
+<meta property="article:tag" content="ROAS">
+<meta property="article:tag" content="亚马逊PPC">
+<meta property="article:tag" content="利润率">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="盈亏平衡ACoS、TACoS和ROAS：亚马逊卖家必须会算的广告账">
+<meta name="twitter:description" content="如何用真实利润率算出盈亏平衡ACoS，ACoS和ROAS的关系，TACoS补充了什么，以及按盈利、新品和清仓分别设定目标ACoS。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t68-en.jpg">
+<meta name="twitter:image:alt" content="盈亏平衡ACoS、TACoS和ROAS：亚马逊卖家必须会算的广告账">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="ToucHigh 博客" href="/blog/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/amazon-break-even-acos-tacos/#article","url":"https://touchigh.ai/blog/amazon-break-even-acos-tacos/","mainEntityOfPage":"https://touchigh.ai/blog/amazon-break-even-acos-tacos/","headline":"盈亏平衡ACoS、TACoS和ROAS：亚马逊卖家必须会算的广告账","alternativeHeadline":"亚马逊盈亏平衡ACoS、TACoS和ROAS怎么算","description":"如何用真实利润率算出盈亏平衡ACoS，ACoS和ROAS的关系，TACoS补充了什么，以及按盈利、新品和清仓分别设定目标ACoS。","abstract":"完全取决于你的利润率。亚马逊把ACoS定义为广告花费除以广告销售额，并指出要保持盈利，ACoS必须低于利润率。先算出广告前利润率（售价减去产品成本、亚马逊费用、运费、关税和预计退货），这个百分比就是你的盈亏平衡ACoS。如果是35%，28%的ACoS在广告归因销售上是赚钱的；如果是22%，每一单广告销售都在亏钱。再追踪TACoS（广告总花费除以总销售额），看广告有没有带动自然销售。","image":["https://touchigh.ai/assets/blog/og/t68-en.jpg","https://touchigh.ai/assets/blog/hero/t40.jpg"],"datePublished":"2026-11-08T11:20:00+08:00","dateModified":"2026-11-08T11:20:00+08:00","inLanguage":"zh-Hans","author":{"@type":"Organization","name":"ToucHigh 研究团队","url":"https://touchigh.ai/blog/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"广告投放","keywords":"盈亏平衡ACoS, ACoS怎么算, ACoS和ROAS, 亚马逊TACoS, 目标ACoS, 亚马逊广告利润率","wordCount":1782,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/#blog","name":"ToucHigh 博客"},"about":[{"@type":"Thing","name":"ACoS"},{"@type":"Thing","name":"TACoS"},{"@type":"Thing","name":"ROAS"},{"@type":"Thing","name":"亚马逊PPC"},{"@type":"Thing","name":"利润率"}],"citation":[{"@type":"CreativeWork","name":"What is advertising cost of sales (ACOS)?","url":"https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales","publisher":{"@type":"Organization","name":"Amazon Ads"}},{"@type":"CreativeWork","name":"Sponsored Products","url":"https://advertising.amazon.com/solutions/products/sponsored-products","publisher":{"@type":"Organization","name":"Amazon Ads"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"workTranslation":[{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/en/amazon-break-even-acos-tacos/#article","inLanguage":"en"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"盈亏平衡ACoS就是利润率吗？","acceptedAnswer":{"@type":"Answer","text":"它等于你的广告前利润率，即扣除产品成本、亚马逊费用、配送、运费、关税和退货之后剩下的百分比。在这个ACoS下，一笔广告带来的销售利润为零。"}},{"@type":"Question","name":"为什么ACoS看着不错，账上的钱却不对？","acceptedAnswer":{"@type":"Answer","text":"ACoS只计算广告归因销售和广告花费。费用、运费或退货上涨，会吃掉你计算盈亏平衡时的利润率；TACoS也可能显示广告在替代自然销售。重新算利润率，再看TACoS。"}},{"@type":"Question","name":"TACoS从哪里看？","acceptedAnswer":{"@type":"Answer","text":"自己算：某一时期的广告总花费，除以同期的总销售额（包括自然订单），数据来自卖家报告。按月追踪。"}},{"@type":"Question","name":"可以让AI广告工具来定目标ACoS吗？","acceptedAnswer":{"@type":"Answer","text":"可以让它朝目标优化，但目标要由你根据利润率和经营目标来定。工具看到的是广告数据，你看到的是每件货的全部成本。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://touchigh.ai/blog/"},{"@type":"ListItem","position":3,"name":"盈亏平衡ACoS、TACoS和ROAS：亚马逊卖家必须会算的广告账","item":"https://touchigh.ai/blog/amazon-break-even-acos-tacos/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本页目录</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">首页</a>
+      <a href="/#products">产品</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/pro/">ToucHigh PRO</a>
+      <a href="/blog/" class="on">博客</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="语言: 简体中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">中文</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="语言" hidden><li><a href="/blog/amazon-break-even-acos-tacos/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文" aria-current="page">简体中文</a></li><li><a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" data-short="EN">English</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登录</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">预约沟通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">首页</a><span>/</span><a href="/blog/">博客</a><span>/</span><span>广告投放</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">广告投放</div>
+    <h1>盈亏平衡ACoS、TACoS和ROAS：亚马逊卖家必须会算的广告账</h1>
+    <p class="dek">“ACoS多少算好？”没有统一答案，亚马逊自己也这么说。但你的盈亏平衡ACoS有精确答案，每一次出价、每一笔预算、每一个AI广告智能体，都应该拿它来衡量。</p>
+    <div class="a-meta"><b>ToucHigh 研究团队</b><span>发布于 <time datetime="2026-11-08T11:20:00+08:00">2026年11月8日</time></span><span>6 分钟阅读</span><span class="lang-badge">简体中文</span></div>
+    <div class="a-langs">其他语言版本<a href="/blog/en/amazon-break-even-acos-tacos/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp 768w, /assets/blog/hero/t40-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t40.jpg" alt="从驾驶座看去，店主双手握着方向盘，前方仪表盘上只有三个橙色边框的表盘和一排小小的指示灯。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="这篇文章回答的问题"><span class="qm">“</span><div><div class="eyebrow">这篇文章回答的问题</div><p class="q">我们的亚马逊广告ACoS是28%，这算好还是不好？怎么知道我们到底承受得起多高的ACoS？</p><p class="ans"><b>一句话回答</b>完全取决于你的利润率。亚马逊把ACoS定义为广告花费除以广告销售额，并指出要保持盈利，ACoS必须低于利润率。先算出广告前利润率（售价减去产品成本、亚马逊费用、运费、关税和预计退货），这个百分比就是你的盈亏平衡ACoS。如果是35%，28%的ACoS在广告归因销售上是赚钱的；如果是22%，每一单广告销售都在亏钱。再追踪TACoS（广告总花费除以总销售额），看广告有没有带动自然销售。</p></div></section>
+      <section class="kt takeaways"><h2>要点速览</h2><ul><li>亚马逊的公式：ACoS = 广告花费 ÷ 广告销售额 × 100；ROAS = 广告销售额 ÷ 广告花费，两者互为倒数。</li><li>亚马逊的指引：盈亏平衡ACoS与利润率直接相关，ACoS必须低于利润率才能盈利。</li><li>要用“广告前利润率”，即扣除其他所有成本之后的利润率：产品、亚马逊费用、配送、运费、关税和退货。</li><li>TACoS（广告总花费 ÷ 总销售额）不在亚马逊的ACoS指南里，是卖家自己计算的指标，用来看广告是否带动了自然销售。</li><li>按目标分别设定目标ACoS：盈利、新品推广或清仓。亚马逊自己也提醒不要只盯着ACoS。</li></ul></section>
+      <div class="prose"><p>ACoS是亚马逊卖家最常挂在嘴边、却最少真正弄懂的数字。代运营拿它汇报，AI广告工具朝它优化，卖家之间争论多少才算好。亚马逊自己的指南诚实地回答了最后这个问题：好的ACoS没有确定的数字，它取决于行业、规模和目标。但你可以精确算出一件事：广告从哪个ACoS开始不再赚钱。其他所有决策都应该从这里出发。</p>
+
+<h2 id="s1">ACoS和ROAS是什么关系？</h2>
+
+<p>亚马逊把广告销售成本（ACoS）定义为广告花费除以广告销售额，用百分比表示。它的例子是：花50美元、带来100美元广告归因销售，ACoS就是50%。广告支出回报率（ROAS）是它的倒数，广告销售额除以广告花费，同一个广告活动的ROAS就是2。</p>
+
+<div class="tw"><table>
+<thead><tr><th>ACoS</th><th>对应ROAS</th><th>含义</th></tr></thead>
+<tbody>
+<tr><td>20%</td><td>5.0</td><td>每1美元广告带来5美元归因销售</td></tr>
+<tr><td>25%</td><td>4.0</td><td>每1美元广告带来4美元</td></tr>
+<tr><td>33%</td><td>3.0</td><td>每1美元广告带来3美元</td></tr>
+<tr><td>50%</td><td>2.0</td><td>每1美元广告带来2美元</td></tr>
+</tbody>
+</table></div>
+
+<p>亚马逊报表和很多跨渠道工具会显示ROAS，卖家的表格通常用ACoS。两者承载的信息相同。决策时选一个用，比较时换算一下即可。</p>
+
+<h2 id="s2">盈亏平衡ACoS怎么算？</h2>
+
+<p>亚马逊的指南写得很清楚：盈亏平衡ACoS与利润率直接相关，ACoS必须低于利润率才能保持盈利。真正的工作在于诚实地算出这个利润率：扣除广告以外的所有成本。</p>
+
+<div class="tw"><table>
+<thead><tr><th>项目（示例，每件）</th><th>金额</th></tr></thead>
+<tbody>
+<tr><td>售价</td><td>40.00美元</td></tr>
+<tr><td>产品成本（到岸价，含关税和头程运费）</td><td>−12.00美元</td></tr>
+<tr><td>亚马逊销售佣金</td><td>−6.00美元</td></tr>
+<tr><td>配送费</td><td>−6.50美元</td></tr>
+<tr><td>退货及其他损耗</td><td>−1.50美元</td></tr>
+<tr><td><strong>广告前利润</strong></td><td><strong>14.00美元 = 售价的35%</strong></td></tr>
+</tbody>
+</table></div>
+
+<p>在这个示例里，盈亏平衡ACoS是35%，盈亏平衡ROAS是1 ÷ 0.35，约2.9。请用你自己的数字：费用随类目和尺寸而不同，跨境卖家的到岸成本也会随运费和关税变化。任何一项变了，都要重新计算。关税调整之前赚钱的广告活动，调整之后即使ACoS不变，也可能在亏钱。</p>
+
+<h2 id="s3">TACoS补充了什么？</h2>
+
+<p>ACoS只看亚马逊归因给广告的销售，无法告诉你广告是否在帮助整体生意。这就是TACoS（总广告销售成本）的用途：广告总花费除以总销售额（包括自然订单）。它不在亚马逊的ACoS指南里，需要卖家用卖家后台的广告花费和总销售额自己计算。</p>
+
+<ul>
+<li><strong>TACoS下降、销售上升：</strong>自然销售增长快于广告花费，广告很可能在帮助排名和复购。</li>
+<li><strong>TACoS上升、总销售持平：</strong>你可能在为本来就会发生的销售付费，或者广告在替代而不是增加自然销售。</li>
+<li><strong>TACoS稳定、ACoS改善：</strong>广告内部效率在提升，但要确认总销售没有萎缩。</li>
+</ul>
+
+<h2 id="s4">目标ACoS该怎么定？</h2>
+
+<p>亚马逊建议先达到盈亏平衡，再根据品牌和广告活动最重要的目标来定。实际操作中，按目标来定：</p>
+
+<div class="tw"><table>
+<thead><tr><th>目标</th><th>目标ACoS</th><th>同时要看</th></tr></thead>
+<tbody>
+<tr><td>成熟产品赚取利润</td><td>明显低于盈亏平衡</td><td>扣除广告后的每件净利润</td></tr>
+<tr><td>新品推广</td><td>等于或在限定期内暂时高于盈亏平衡</td><td>评论数、自然排名、TACoS趋势</td></tr>
+<tr><td>清理旧库存</td><td>不超过你愿意为打折承担的亏损</td><td>售出件数、省下的仓储费</td></tr>
+</tbody>
+</table></div>
+
+<p>在广告活动开始前，把目标和期限写下来，并把同样的数字交给负责出价的人或工具。一个只会“朝ROAS优化”、却不知道你盈亏平衡线的AI广告智能体，可能会非常高效地亏钱。</p>
+
+<h2 id="s5">ACoS告诉不了你什么？</h2>
+
+<p>亚马逊的指南专门有一节叫“为什么不应过度关注ACOS”，建议同时看展示量、转化率、点击率和投资回报。ACoS忽略了新客户的长期价值、对自然排名的带动，以及库存压在仓库里的成本。把盈亏平衡ACoS当作保护你的底线，把TACoS当作看清全局的趋势，把实际利润当作最终裁判。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>好的ACoS，就是低于你利润率的那个数字。其他都是观点。</blockquote><p>管理会计里把它叫做边际贡献：每笔销售扣除变动成本后贡献了多少。盈亏平衡ACoS不过是把边际贡献换算成广告预算，所以应该拿它、而不是行业平均值，作为管理的基准线。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能帮您做什么">
+        <div class="ph"><div class="eyebrow">Ads Autopilot · GEO Autopilot · Social Autopilot</div><h2>ToucHigh 能帮您做什么</h2></div>
+        <div class="pb prose"><p>知道自己的基准线之后，ToucHigh的广告自动驾驶可以按它来执行：</p><ul><li>基于同一套策略，在Amazon、Meta和Google之间运行预算，以ROAS为目标自动调整；</li><li>处理素材疲劳和预算决策，避免疲劳的广告悄悄吃掉利润；</li><li>创意概念上线前先做效果预测评分。</li></ul><p>可以预约30分钟策略沟通，带上你的利润核算表，我们按你的产品线一起过一遍方案。</p><p class="uc">亚马逊卖家：看看ToucHigh<a href="/amazon-ads-autopilot/" onclick="try{gtag('event','landing_click',{location:'article_T68'})}catch(e){}">广告自动驾驶</a>如何先评分再投放。 需要把曝光变成商机？了解策略先行的外拓获客服务<a href="/pro/" onclick="try{gtag('event','pro_click',{location:'article_T68'})}catch(e){}">ToucHigh PRO</a>。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T68')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T68'})}catch(e){}">登录 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常见问题"><h2>常见问题</h2><details open><summary>盈亏平衡ACoS就是利润率吗？</summary><p>它等于你的广告前利润率，即扣除产品成本、亚马逊费用、配送、运费、关税和退货之后剩下的百分比。在这个ACoS下，一笔广告带来的销售利润为零。</p></details><details><summary>为什么ACoS看着不错，账上的钱却不对？</summary><p>ACoS只计算广告归因销售和广告花费。费用、运费或退货上涨，会吃掉你计算盈亏平衡时的利润率；TACoS也可能显示广告在替代自然销售。重新算利润率，再看TACoS。</p></details><details><summary>TACoS从哪里看？</summary><p>自己算：某一时期的广告总花费，除以同期的总销售额（包括自然订单），数据来自卖家报告。按月追踪。</p></details><details><summary>可以让AI广告工具来定目标ACoS吗？</summary><p>可以让它朝目标优化，但目标要由你根据利润率和经营目标来定。工具看到的是广告数据，你看到的是每件货的全部成本。</p></details></section>
+      <section class="srcs"><h2>参考来源</h2><ol><li><a href="https://advertising.amazon.com/library/guides/acos-advertising-cost-of-sales" rel="noopener" target="_blank">What is advertising cost of sales (ACOS)?</a> — Amazon Ads</li><li><a href="https://advertising.amazon.com/solutions/products/sponsored-products" rel="noopener" target="_blank">Sponsored Products</a> — Amazon Ads</li></ol></section>
+      <p class="note"><b>我们为什么写这篇</b>我们写这篇，是因为卖家常拿与自己成本无关的行业平均值来评判ACoS。亚马逊的指南把答案指回了利润率，我们也一样。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本页目录"><h4>本页目录</h4><a href="#s1">ACoS和ROAS是什么关系？</a><a href="#s2">盈亏平衡ACoS怎么算？</a><a href="#s3">TACoS补充了什么？</a><a href="#s4">目标ACoS该怎么定？</a><a href="#s5">ACoS告诉不了你什么？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美国 AI 搜索中的曝光盲区</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">预约沟通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登录</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相关文章</h2>
+  <div class="grid"><a class="card" href="/blog/amazon-sponsored-products-first-campaign/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t10-768.webp"><img src="/assets/blog/hero/t10.jpg" alt="实验台上，移液器把围栏托盘里有限的橙色硬币一枚枚滴进紫色描边的对话气泡漏斗和烧杯，旁边装满硬币的大罐子仍然密封着。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">广告投放</div><h3>第一个亚马逊商品推广广告怎么开：自动与手动投放、出价和预算</h3><p>开第一组亚马逊广告不需要代运营，但需要一个能告诉你“什么有效”的结构。本文给出简单的双广告活动设置、出价算法和四周计划。</p><div class="meta"><span class="lg">简体中文</span><span>7 分钟阅读</span></div></div></a><a class="card" href="/blog/amazon-ads-agent-sellers/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t20-768.webp"><img src="/assets/blog/hero/t20.jpg" alt="友好的机器人副驾驶在圆润的驾驶舱里操作按钮和推杆，前景中一只人手牢牢握着指南针、上锁的橙色存钱盒和一把钥匙，前方仪表盘显示抽象图表。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">广告投放</div><h3>亚马逊AI广告智能体来了：不会投广告的卖家该交出什么</h3><p>Amazon Ads Agent 把搜索、展示和全漏斗广告交给智能体AI。不会投广告的卖家，与其全交或不碰，不如先用四周对照测试验证它。</p><div class="meta"><span class="lg">简体中文</span><span>4 分钟阅读</span></div></div></a><a class="card" href="/blog/zh/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="从驾驶座看去，店主双手握着方向盘，前方仪表盘上只有三个橙色边框的表盘和一排小小的指示灯。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">效果衡量</div><h3>小企业广告 KPI 怎么看？真正重要的只有 3 个数字</h3><p>没有专职投手？专注于获客成本、广告支出回报率，以及回购率或线索质量。本文教你设定盈亏平衡目标，并每周复盘一次。</p><div class="meta"><span class="lg">简体中文</span><span>4 分钟阅读</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/">← 返回博客</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美国 AI 搜索中的曝光盲区</h2>
+  <p>预约一次 30 分钟免费通话，我们在线为您的店铺做一次 AI 曝光检测。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登录 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.</p></div>
+      <div><h4>ToucHigh</h4><a href="/">首页</a><a href="/#geo">GEO Autopilot</a><a href="/#social">Social Autopilot</a><a href="/pro/">ToucHigh PRO</a></div>
+      <div><h4>博客</h4><a href="/blog/">博客</a><a href="/blog/feed.xml">RSS</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登录</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">预约沟通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

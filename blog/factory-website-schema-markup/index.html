@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>工厂官网Schema结构化数据：该加什么、不该加什么 | ToucHigh</title>
+<meta name="description" content="B2B工厂官网需要哪些结构化数据：Organization、Product摘要和面包屑；为什么FAQ标记几乎拿不到富媒体结果；以及Google对AI功能的官方说法。">
+<link rel="canonical" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="工厂官网结构化数据, Schema标记, Organization结构化数据, Product结构化数据, FAQ schema, 外贸独立站JSON-LD">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/factory-website-schema-markup/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/factory-website-schema-markup/">
+<meta property="og:title" content="工厂官网结构化数据怎么加：Organization、Product和FAQ的正确做法">
+<meta property="og:description" content="B2B工厂官网需要哪些结构化数据：Organization、Product摘要和面包屑；为什么FAQ标记几乎拿不到富媒体结果；以及Google对AI功能的官方说法。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t62-en.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="工厂官网结构化数据怎么加：Organization、Product和FAQ的正确做法">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:section" content="SEO">
+<meta property="article:tag" content="结构化数据">
+<meta property="article:tag" content="Schema.org">
+<meta property="article:tag" content="工厂官网">
+<meta property="article:tag" content="B2B SEO">
+<meta property="article:tag" content="实体信息">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="工厂官网结构化数据怎么加：Organization、Product和FAQ的正确做法">
+<meta name="twitter:description" content="B2B工厂官网需要哪些结构化数据：Organization、Product摘要和面包屑；为什么FAQ标记几乎拿不到富媒体结果；以及Google对AI功能的官方说法。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t62-en.jpg">
+<meta name="twitter:image:alt" content="工厂官网结构化数据怎么加：Organization、Product和FAQ的正确做法">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="ToucHigh 博客" href="/blog/feed.xml">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+SC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/factory-website-schema-markup/#article","url":"https://touchigh.ai/blog/factory-website-schema-markup/","mainEntityOfPage":"https://touchigh.ai/blog/factory-website-schema-markup/","headline":"工厂官网结构化数据怎么加：Organization、Product和FAQ的正确做法","alternativeHeadline":"工厂官网Schema结构化数据：该加什么、不该加什么","description":"B2B工厂官网需要哪些结构化数据：Organization、Product摘要和面包屑；为什么FAQ标记几乎拿不到富媒体结果；以及Google对AI功能的官方说法。","abstract":"加三类并保持准确：首页加Organization（名称、Logo、地址、联系方式，以及指向官方账号的sameAs），每个产品或能力页按Google的“产品摘要”格式加Product，全站加BreadcrumbList。FAQ标记可选，因为自2023年起，Google只为知名的政府和健康类网站展示FAQ富媒体结果。Google表示，出现在AI概览中不需要特殊的Schema，标记内容只要与页面可见文字一致即可。","image":["https://touchigh.ai/assets/blog/og/t62-en.jpg","https://touchigh.ai/assets/blog/hero/t57.jpg"],"datePublished":"2026-11-08T09:20:00+08:00","dateModified":"2026-11-08T09:20:00+08:00","inLanguage":"zh-Hans","author":{"@type":"Organization","name":"ToucHigh 研究团队","url":"https://touchigh.ai/blog/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"SEO","keywords":"工厂官网结构化数据, Schema标记, Organization结构化数据, Product结构化数据, FAQ schema, 外贸独立站JSON-LD","wordCount":1957,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/#blog","name":"ToucHigh 博客"},"about":[{"@type":"Thing","name":"结构化数据"},{"@type":"Thing","name":"Schema.org"},{"@type":"Thing","name":"工厂官网"},{"@type":"Thing","name":"B2B SEO"},{"@type":"Thing","name":"实体信息"}],"citation":[{"@type":"CreativeWork","name":"Organization (Organization) structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/organization","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to Product structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/product","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Changes to HowTo and FAQ rich results","url":"https://developers.google.com/search/blog/2023/08/howto-faq-changes","datePublished":"2023-08-08","publisher":{"@type":"Organization","name":"Google Search Central Blog"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Rich Results Test","url":"https://search.google.com/test/rich-results","publisher":{"@type":"Organization","name":"Google"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"workTranslation":[{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/en/factory-website-schema-markup/#article","inLanguage":"en"}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hans","mainEntity":[{"@type":"Question","name":"用JSON-LD还是Microdata？","acceptedAnswer":{"@type":"Answer","text":"Google支持多种格式，JSON-LD通常最容易维护，因为它集中在一个脚本块里，不用嵌进HTML各处。不管选哪种，都要保持唯一的信息来源，避免标记和可见文字逐渐不一致。"}},{"@type":"Question","name":"只在报价单里给的价格，可以写进标记吗？","acceptedAnswer":{"@type":"Answer","text":"不可以。结构化数据应该描述页面上的内容。页面不显示价格，就不要写price，使用Google为“无法直接购买的页面”设计的产品摘要格式。"}},{"@type":"Question","name":"需要加LocalBusiness标记吗？","acceptedAnswer":{"@type":"Answer","text":"只有当买家会像拜访本地商家一样上门（例如有营业时间的展厅）时才需要。对出口制造商来说，带真实地址的Organization通常就是合适的类型。"}},{"@type":"Question","name":"加了Schema就能进入ChatGPT的答案吗？","acceptedAnswer":{"@type":"Answer","text":"不能单靠它。Google表示其AI功能不需要特殊Schema，其他AI助手依赖的是能抓取到的页面和全网信息。标记的作用是清楚地说明你的实体信息，内容本身仍然要回答买家的问题。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/"},{"@type":"ListItem","position":2,"name":"博客","item":"https://touchigh.ai/blog/"},{"@type":"ListItem","position":3,"name":"工厂官网结构化数据怎么加：Organization、Product和FAQ的正确做法","item":"https://touchigh.ai/blog/factory-website-schema-markup/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本页目录</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/">首页</a>
+      <a href="/#products">产品</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/pro/">ToucHigh PRO</a>
+      <a href="/blog/" class="on">博客</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="语言: 简体中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">中文</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="语言" hidden><li><a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文" aria-current="page">简体中文</a></li><li><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" data-short="EN">English</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登录</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">预约沟通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/">首页</a><span>/</span><a href="/blog/">博客</a><span>/</span><span>SEO</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">SEO</div>
+    <h1>工厂官网结构化数据怎么加：Organization、Product和FAQ的正确做法</h1>
+    <p class="dek">结构化数据不会单独让ChatGPT推荐你，但能消除“你是谁、做什么”的歧义。本文给出工厂官网真正需要的短清单，以及哪些可以不做。</p>
+    <div class="a-meta"><b>ToucHigh 研究团队</b><span>发布于 <time datetime="2026-11-08T09:20:00+08:00">2026年11月8日</time></span><span>6 分钟阅读</span><span class="lang-badge">简体中文</span></div>
+    <div class="a-langs">其他语言版本<a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t57-768.webp 768w, /assets/blog/hero/t57-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t57.jpg" alt="一台小吊车把一排六块内容图块（身份卡、规格表、对话气泡、证书、天平和星星）吊向AI答案窗口，窗口里排在第一位的是橙色工厂徽章。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="这篇文章回答的问题"><span class="qm">“</span><div><div class="eyebrow">这篇文章回答的问题</div><p class="q">开发问我们工厂英文官网要加哪些Schema结构化数据。为了Google和AI，真的需要吗？哪些类型最重要？</p><p class="ans"><b>一句话回答</b>加三类并保持准确：首页加Organization（名称、Logo、地址、联系方式，以及指向官方账号的sameAs），每个产品或能力页按Google的“产品摘要”格式加Product，全站加BreadcrumbList。FAQ标记可选，因为自2023年起，Google只为知名的政府和健康类网站展示FAQ富媒体结果。Google表示，出现在AI概览中不需要特殊的Schema，标记内容只要与页面可见文字一致即可。</p></div></section>
+      <section class="kt takeaways"><h2>要点速览</h2><ul><li>Google文档说明：出现在AI概览或AI模式中，不需要添加任何特殊的schema.org标记；结构化数据应与页面可见文字一致。</li><li>Organization标记没有必填属性；Google建议填写名称、能体现实体存在的地址或电话，以及网址或Logo等线上信息。</li><li>不在线销售的工厂，应使用Google的“产品摘要”（product snippets）格式，它本来就是为用户无法直接购买的产品页设计的。</li><li>自2023年8月起，FAQ富媒体结果只对知名、权威的政府和健康网站展示，FAQ标记可以当作可选项。</li><li>每个页面模板都先用Google富媒体搜索结果测试验证，修正错误后再全站上线。</li></ul></section>
+      <div class="prose"><p>问三家SEO服务商工厂官网要加哪些Schema，你会拿到三份很长的清单，其中大部分都做过头了。面向海外买家的B2B制造商，只需要少量、准确的结构化数据，加在买家真正会看的页面上。本文讲清该加什么、可以不加什么，以及它和AI搜索的关系。</p>
+
+<h2 id="s1">结构化数据能帮工厂被AI引用吗？</h2>
+
+<p>先看Google怎么说。它面向网站所有者的AI功能指南写明：出现在AI概览或AI模式中没有额外要求，不需要新建机器可读文件或标记，也没有必须添加的特殊schema.org结构化数据。同一页面把“确保结构化数据与页面可见文字一致”列为普通的SEO最佳实践。</p>
+
+<p>所以，结构化数据不是打开AI引用的开关。它的作用是消除歧义：用机器能读懂的方式说明，这个页面讲的是哪家公司、在哪个地址、做什么产品、有哪些官方账号。很多中国工厂的英文名、中文名和贸易公司名在网上并不统一，对它们来说，这份清晰值得开发花一个下午。</p>
+
+<h2 id="s2">工厂首页的Organization标记应该写什么？</h2>
+
+<p>Google的Organization文档说明没有必填属性，建议添加与你的组织相关的属性，重点写对用户有用的信息：name或alternateName，能体现实体存在的address或telephone，以及url或logo等线上信息。文档示例里还用sameAs列出了官方账号。</p>
+
+<div class="tw"><table>
+<thead><tr><th>属性</th><th>工厂该填什么</th><th>常见错误</th></tr></thead>
+<tbody>
+<tr><td>name</td><td>注册的英文公司名，与发票上完全一致</td><td>填口号，或填贸易公司的名字</td></tr>
+<tr><td>alternateName</td><td>简短品牌名、中文名（拼音或汉字）</td><td>不填，导致AI无法关联不同写法</td></tr>
+<tr><td>url、logo</td><td>首页网址和稳定的Logo图片地址</td><td>每次改版Logo地址都会变</td></tr>
+<tr><td>address、telephone、email</td><td>工厂真实地址和有人值守的销售联系方式</td><td>地址和平台店铺上的不一致</td></tr>
+<tr><td>sameAs</td><td>LinkedIn公司页、平台店铺、YouTube频道</td><td>链接到不活跃或属于代理的账号</td></tr>
+<tr><td>foundingDate、numberOfEmployees</td><td>你在“关于我们”页面也会写的事实</td><td>写了页面上根本看不到的数字</td></tr>
+</tbody>
+</table></div>
+
+<p>Organization放在首页（也可以放在“关于我们”页），不要在每个页面重复写、而且写得不一样。标记里的事实必须和访客看到的内容一致。</p>
+
+<h2 id="s3">不在线销售的工厂，该用哪种Product标记？</h2>
+
+<p>Google把产品结构化数据分为两类：产品摘要（product snippets）用于用户无法直接购买的产品页；商家信息（merchant listings）用于可以直接购买的页面，可以写更多运费和退货信息。大多数B2B工厂按询价报价，产品摘要才是如实的选择。</p>
+
+<p>每个产品页或能力页，用name、description、image、brand（自有品牌或OEM）描述产品，适用时再写材料或品类。不要为了拿到富媒体结果而编造价格或评分；如果价格只出现在报价单里，就不要写。规格写得准确、可见的产品页，对买家和AI都比“承诺多于页面内容”的标记更有用。</p>
+
+<h2 id="s4">FAQ结构化数据还值得加吗？</h2>
+
+<p>2023年8月，Google宣布降低FAQ富媒体结果的展示：来自FAQPage结构化数据的FAQ富媒体结果，只对知名、权威的政府和健康网站展示。对工厂官网来说，FAQ标记几乎不会再带来一些服务商仍在推销的“可展开结果”。</p>
+
+<p>但FAQ本身依然有价值。“定制颜色起订量是多少？”“通过了哪些食品接触检测？”这类可见的问答，正是AI答案最容易摘取的段落。保留可见的FAQ，让每个答案的第一句话能单独成立；FAQPage标记当作可选的整理工作即可。</p>
+
+<h2 id="s5">工厂该按什么顺序上线结构化数据？</h2>
+
+<ol>
+<li><strong>先统一事实。</strong>确定全网统一使用的英文公司名、地址和产品品类。</li>
+<li><strong>首页加Organization</strong>，包括name、alternateName、url、logo、地址、联系方式和sameAs。</li>
+<li><strong>先在一个模板上加Product</strong>（一个产品页或能力页），全站加BreadcrumbList。</li>
+<li><strong>用富媒体搜索结果测试验证</strong>，修正关键错误后再推广模板。</li>
+<li><strong>逐页上线</strong>，检查每个标记值都出现在可见文字中。</li>
+<li><strong>每次改版后复查。</strong>更换主题时，模板常常会丢失或重复JSON-LD。</li>
+</ol>
+
+<h2 id="s6">结构化数据解决不了什么？</h2>
+
+<p>标记没法让单薄的页面变得有用。如果能力页只写“设备先进、品控严格”，没有任何数字，加上Product标记也只是给空盒子贴了标签。做GEO的顺序不变：先在页面上写出具体、可核实的内容；再统一全网的实体信息；最后用结构化数据把两者清楚地描述出来。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>标记只是给盒子贴标签，填不满盒子。</blockquote><p>信号理论认为，只有难以伪造的信号才可信。与页面上详细可见的事实（认证编号、产能、真实地址）一致的Schema能增强信任；声称多于页面内容的Schema只是空话，搜索引擎和买家都会学会忽略。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能帮您做什么">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh 能帮您做什么</h2></div>
+        <div class="pb prose"><p>ToucHigh的GEO Autopilot把结构化数据当作修复工作的一部分，而不是单独的项目：</p><ul><li>审计你的工厂在ChatGPT、Perplexity、Google AI和Gemini中的曝光盲区；</li><li>撰写并上线修复内容，包括页面、问答和实体数据，让事实和标记保持一致；</li><li>追踪AI引用份额，看清哪些页面开始被引用。</li></ul><p>可以预约30分钟策略沟通，带上一个产品页，我们一起看看页面怎么写、标记怎么写、AI又是怎么描述你的。</p><p class="uc">工厂与B2B供应商：看看ToucHigh如何提升<a href="/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T62'})}catch(e){}">AI搜索中的供应商可见度</a>。 需要把曝光变成商机？了解策略先行的外拓获客服务<a href="/pro/" onclick="try{gtag('event','pro_click',{location:'article_T62'})}catch(e){}">ToucHigh PRO</a>。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T62')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T62'})}catch(e){}">登录 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常见问题"><h2>常见问题</h2><details open><summary>用JSON-LD还是Microdata？</summary><p>Google支持多种格式，JSON-LD通常最容易维护，因为它集中在一个脚本块里，不用嵌进HTML各处。不管选哪种，都要保持唯一的信息来源，避免标记和可见文字逐渐不一致。</p></details><details><summary>只在报价单里给的价格，可以写进标记吗？</summary><p>不可以。结构化数据应该描述页面上的内容。页面不显示价格，就不要写price，使用Google为“无法直接购买的页面”设计的产品摘要格式。</p></details><details><summary>需要加LocalBusiness标记吗？</summary><p>只有当买家会像拜访本地商家一样上门（例如有营业时间的展厅）时才需要。对出口制造商来说，带真实地址的Organization通常就是合适的类型。</p></details><details><summary>加了Schema就能进入ChatGPT的答案吗？</summary><p>不能单靠它。Google表示其AI功能不需要特殊Schema，其他AI助手依赖的是能抓取到的页面和全网信息。标记的作用是清楚地说明你的实体信息，内容本身仍然要回答买家的问题。</p></details></section>
+      <section class="srcs"><h2>参考来源</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/structured-data/organization" rel="noopener" target="_blank">Organization (Organization) structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener" target="_blank">Introduction to Product structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/blog/2023/08/howto-faq-changes" rel="noopener" target="_blank">Changes to HowTo and FAQ rich results</a> — Google Search Central Blog, 2023-08-08</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://search.google.com/test/rich-results" rel="noopener" target="_blank">Rich Results Test</a> — Google</li></ol></section>
+      <p class="note"><b>我们为什么写这篇</b>我们写这篇，是因为工厂不断收到“AI Schema套餐”的报价。官方文档已经说得足够清楚：一份简短、准确的清单，胜过一份冗长、注水的清单。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本页目录"><h4>本页目录</h4><a href="#s1">结构化数据能帮工厂被AI引用吗？</a><a href="#s2">工厂首页的Organization标记应该写什么？</a><a href="#s3">不在线销售的工厂，该用哪种Product标记？</a><a href="#s4">FAQ结构化数据还值得加吗？</a><a href="#s5">工厂该按什么顺序上线结构化数据？</a><a href="#s6">结构化数据解决不了什么？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美国 AI 搜索中的曝光盲区</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">预约沟通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登录</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相关文章</h2>
+  <div class="grid"><a class="card" href="/blog/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="在一排相同的灰色工厂中，一座橙白相间的工厂被AI对话气泡投下的聚光灯照亮，下方面板展示了设备、认证、材料、交期和问答图标。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">GEO / AI 搜索</div><h3>让ChatGPT推荐你的工厂：工厂官网GEO入门</h3><p>海外买家开始用AI找供应商。工厂官网如果只有公司简介和产品图，就很难被ChatGPT推荐。本文给出可被引用的页面清单和GEO起步步骤。</p><div class="meta"><span class="lg">简体中文</span><span>6 分钟阅读</span></div></div></a><a class="card" href="/blog/us-brand-entity-chinese-brands-google-ai/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t48-768.webp"><img src="/assets/blog/hero/t48.jpg" alt="一家橙白条纹遮阳篷的小店上方悬着大定位标记，虚线把它连到地图商家卡、网站窗口和手机主页，三者都显示相同的时钟、电话、地球和星星图标，旁边的台历有一格标成橙色。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">跨境出海</div><h3>建立美国品牌实体：中国品牌如何被Google和AI正确识别</h3><p>很多中国品牌在网上是三个“半个品牌”：平台上用拼音名，官网用英文名，LinkedIn上用公司名。Google和AI无法推荐它们认不出来的品牌。本文讲清如何变成同一个实体。</p><div class="meta"><span class="lg">简体中文</span><span>7 分钟阅读</span></div></div></a><a class="card" href="/blog/seo-aeo-geo-explained-chinese-exporters/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t53-768.webp"><img src="/assets/blog/hero/t53.jpg" alt="一个橙色方块像喷泉一样，通过三根管道分别连到搜索结果列表、对话气泡答案卡和带紫色星光的AI聊天气泡。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hans"><div class="eyebrow">GEO / AI 搜索</div><h3>SEO、AEO、GEO有什么区别？出海企业要三位一体</h3><p>SEO让你被搜到，AEO让你被AI直接引用作答，GEO让你被生成式AI推荐。三者底子相同，出海企业最省力的做法是用一套流程同时做。</p><div class="meta"><span class="lg">简体中文</span><span>7 分钟阅读</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/">← 返回博客</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美国 AI 搜索中的曝光盲区</h2>
+  <p>预约一次 30 分钟免费通话，我们在线为您的店铺做一次 AI 曝光检测。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">预约30分钟策略沟通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登录 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">AI search visibility, social and ads on autopilot — for SMEs and cross-border sellers.</p></div>
+      <div><h4>ToucHigh</h4><a href="/">首页</a><a href="/#geo">GEO Autopilot</a><a href="/#social">Social Autopilot</a><a href="/pro/">ToucHigh PRO</a></div>
+      <div><h4>博客</h4><a href="/blog/">博客</a><a href="/blog/feed.xml">RSS</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登录</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">预约沟通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

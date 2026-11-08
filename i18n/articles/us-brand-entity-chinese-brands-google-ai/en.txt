@@ -1,0 +1,95 @@
+== title ==
+Building a US Brand Entity: How Chinese Brands Get Recognised by Google and AI
+== seo_title ==
+Brand Entity SEO for Chinese Brands in the US: A Guide | ToucHigh
+== desc ==
+Why Google and AI assistants mix up Chinese brands, and how to build one consistent US brand entity: a single English name, an About page, sameAs links and a knowledge panel.
+== dek ==
+Many Chinese brands exist online as three half-brands: a pinyin name on the marketplace, an English name on the website and a company name on LinkedIn. Google and AI can't recommend what they can't identify. Here's how to become one entity.
+== section ==
+Cross-border
+== tags ==
+Brand entity | Knowledge panel | Chinese brands in the US | Entity SEO | GEO
+== keywords ==
+brand entity SEO, Google knowledge panel for brands, Chinese brand US SEO, entity consistency AI search, sameAs Organization schema, claim knowledge panel company
+== read ==
+7
+== q ==
+When US shoppers ask ChatGPT or Google about our brand, the answers mix us up with other companies or describe the wrong products. How do we fix how AI understands who we are?
+== a ==
+Build one consistent brand entity. Choose a single English brand name and use it everywhere, make your About page the source of truth for founding year, location, products and contact, describe it with Organization structured data including sameAs links to your official profiles, align your marketplace, social and LinkedIn pages to the same facts, and earn mentions on independent sites. Google says knowledge panels are created automatically when there is enough information on the open web, and verified owners can then suggest changes.
+== takeaways ==
+- Google's Knowledge Graph draws facts from a variety of sources, including public sources, licensed data and content owners who have claimed their knowledge panels.
+- Google says knowledge panels are created automatically when there is enough information on the open web; you can't simply request one.
+- To claim a panel, Google asks you to sign in to an official site or profile listed, such as YouTube or Search Console. Not all panels are claimable.
+- Organization structured data has no required properties; Google recommends name or alternateName, address or telephone, and url or logo, and its example uses sameAs for official profiles.
+- Consistency is the strategy: the same English name, products and facts on your website, marketplace stores and social profiles.
+== body ==
+<p>Ask an AI assistant about many Chinese consumer brands selling in the US and you'll often get a muddle: two companies merged into one, the wrong founding year, a product line the brand stopped selling. The cause is rarely the AI alone. It's that the brand exists online as several half-identities: a pinyin name on one marketplace, a different English name on the website, the legal company name on LinkedIn, and a distributor's name on trade sites. Search engines and AI models can only recommend what they can identify with confidence.</p>
+
+<p>In SEO this is called entity building: making sure there is one clear, consistent "thing" behind your brand name. For a Chinese brand entering the US, it is often the highest-leverage GEO work there is.</p>
+
+<h2>What is a brand entity, and why do AI answers depend on it?</h2>
+
+<p>An entity is a person, place, organisation or thing that search systems recognise as distinct, with facts attached. Google explains that its Knowledge Graph is a database of facts about people, places and things, and that those facts come from a variety of sources: public sources, licensed data and information received directly from content owners, including those who suggest changes to knowledge panels they've claimed.</p>
+
+<p>AI answers work in a similar spirit. When an assistant describes your brand, it relies on what it can find and reconcile. If every source agrees, the description is accurate and confident. If sources disagree, the assistant hedges, mixes you up with another company or leaves you out.</p>
+
+<h2>Why do Chinese brands get confused in US search?</h2>
+
+<div class="tw"><table>
+<thead><tr><th>Source of confusion</th><th>Typical example</th><th>Fix</th></tr></thead>
+<tbody>
+<tr><td>Several English names</td><td>Brand name, pinyin of the Chinese name and legal company name used interchangeably</td><td>Choose one brand name; list the others once, as alternate names</td></tr>
+<tr><td>Brand vs manufacturer</td><td>The factory and the consumer brand share a page, or never mention each other</td><td>Say clearly who owns the brand and who makes it, once, on the About page</td></tr>
+<tr><td>Inconsistent facts</td><td>Different founding years, addresses or product categories on different sites</td><td>Make the About page the source of truth and align every profile to it</td></tr>
+<tr><td>Thin independent coverage</td><td>Only the brand's own pages and its marketplace store exist</td><td>Earn mentions in reviews, trade media, retailer and distributor pages</td></tr>
+<tr><td>Similar names</td><td>Another company abroad shares or nearly shares the name</td><td>Add distinguishing facts: category, location, founding year, official profiles</td></tr>
+</tbody>
+</table></div>
+
+<h2>How do you build one consistent entity?</h2>
+
+<ol>
+<li><strong>Decide the name.</strong> One English brand name for the US market, spelled the same way everywhere. Record the Chinese name and legal company name as alternates, not substitutes.</li>
+<li><strong>Write the About page as the source of truth.</strong> Founding year, who owns the brand, where products are designed and made, product categories, US contact and official profiles, in plain sentences.</li>
+<li><strong>Describe it with Organization markup.</strong> Google's Organization documentation says there are no required properties; it recommends name or alternateName, real-world presence such as address or telephone, and online presence such as url or logo. Use sameAs to list the official profiles you control.</li>
+<li><strong>Align every profile.</strong> Marketplace brand store, Instagram, TikTok, YouTube, LinkedIn and any retailer pages should use the same name, description and website link.</li>
+<li><strong>Earn independent mentions.</strong> Product reviews, trade press, retailer and distributor listings and podcasts give search systems sources that aren't you. Make sure they spell your name the same way.</li>
+<li><strong>Keep Merchant Center and Business Profile current</strong> if you use them. Google lists both among the basics for its AI features.</li>
+</ol>
+
+<h2>How do you get and claim a knowledge panel?</h2>
+
+<p>You can't simply apply for one. Google says knowledge panels are created automatically by its algorithms when there is enough information available on the open web. That's another reason the consistency work above comes first.</p>
+
+<p>If a panel appears when you search your brand, you can try to claim it. Google's instructions: search for the entity, select "Claim this knowledge panel", review the information and sign in to one of the official sites or profiles listed, such as YouTube or Search Console. Google notes that not all knowledge panels are claimable yet, and that local businesses serving customers at a location should use a Business Profile instead. Once verified, you can suggest changes when facts are wrong.</p>
+
+<h2>How do you check whether it's working?</h2>
+
+<p>Each month, search your brand name on Google and note whether a knowledge panel appears and what it says. Then ask ChatGPT, Perplexity and Gemini simple questions: "What is [brand]?", "Who makes [brand] products?", "Is [brand] a Chinese company?" Record whether the answers are accurate and which sources they cite. When an answer is wrong, trace it to the source that disagrees with your About page and fix that source first. Entity work is slow, but every correction compounds.</p>
+== insight_quote ==
+AI can't recommend a brand it can't identify.
+== insight ==
+Philosophers call it the identity problem: to say anything true about a thing, you first have to know which thing you mean. A brand that tells the web one consistent story about who it is solves that problem for every search engine and assistant at once.
+== prop_eyebrow ==
+GEO Autopilot · Social Autopilot · Ads
+== prop_intro ==
+ToucHigh's GEO Autopilot treats your brand entity as the foundation:
+== prop_items ==
+- it audits how ChatGPT, Perplexity, Google AI and Gemini describe your brand and where you're invisible;
+- it writes and ships the fixes, including pages, answers and entity data;
+- it tracks your AI-citation share, so you can see the description improve.
+== prop_outro ==
+Book a 30-minute strategy call and bring your brand's three most-used names; we'll check how AI reads them live.
+== faq ==
+Q: Should our US brand use the pinyin of our Chinese name?
+A: Use whichever name you will commit to everywhere in the US. The problem isn't pinyin; it's switching between several names. List the others once as alternate names so search systems can connect them.
+Q: Can we pay or apply for a Google knowledge panel?
+A: No. Google says knowledge panels are created automatically when there is enough information on the open web. You can claim an existing panel and suggest changes once verified.
+Q: Does Organization structured data create a knowledge panel?
+A: Not on its own. It describes your entity clearly, and Google uses it alongside many other sources. Consistent facts across the web matter more than any single page.
+Q: How long does entity building take?
+A: It's gradual. Aligning your own profiles can be done in weeks; independent mentions and recognition build over months. Check monthly and fix the inconsistent sources first.
+== note ==
+We wrote this because the most common problem we see when Chinese brands test AI answers isn't being ignored. It's being described as someone else.
