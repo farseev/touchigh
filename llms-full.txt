@@ -20,6 +20,17 @@ American shoppers increasingly ask an AI assistant what to buy instead of typing
 
 All three run off a single auto-generated market-entry strategy built from the store's competitors' ads and organic content.
 
+
+## Use-case pages (added 2026-11-08)
+
+### Supplier visibility in ChatGPT and AI search (for Chinese factories and B2B suppliers)
+URL: https://touchigh.ai/supplier-ai-visibility/ · English: https://touchigh.ai/supplier-ai-visibility/?lang=en
+Overseas buyers increasingly start sourcing by asking AI assistants which factories to contact. ToucHigh's GEO Autopilot audits where a factory is invisible across ChatGPT, Perplexity, Google AI Overviews, Gemini and Copilot; writes and ships the fixes (pages, answers, entity data) and programmatic GEO articles around sourcing questions as they trend; scores every concept for predicted clickability before publishing; and tracks AI-citation share. Social Autopilot adds native US-English founder and brand content. ToucHigh PRO, the managed outbound service, turns the visibility into conversations (email, cold calls, LinkedIn, business messengers; 21-day cadence; humans approve 100% of sends). No one can guarantee what an AI assistant says; ToucHigh measures and reports the change.
+
+### Amazon ads autopilot (for Amazon sellers selling into the US)
+URL: https://touchigh.ai/amazon-ads-autopilot/ · English: https://touchigh.ai/amazon-ads-autopilot/?lang=en
+ToucHigh's Ads Autopilot runs ad spend across Amazon, Meta and Google from one strategy, auto-adjusted to ROAS, and handles creative-fatigue and budget calls. It reads competitors' ads and organic content first and scores creative concepts for predicted performance before they go live. Predicted scores are a pre-launch corpus-pattern proxy, not a guarantee. It does not replace Amazon's own ad tools, which optimise inside Amazon.
+
 ## How it works, in three steps
 
 - Audit: on day one, ToucHigh shows exactly where the store is invisible in US AI search and where its social falls short.

@@ -1401,4 +1401,30 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/zh/factory-to-brand-seo-aeo-geo-us/"/>
     <image:image><image:loc>https://touchigh.ai/assets/blog/hero/t60.jpg</image:loc><image:title>From Factory to Brand: SEO, AEO and GEO for Chinese Sellers in the US</image:title></image:image>
   </url>
+  <url>
+    <loc>https://touchigh.ai/supplier-ai-visibility/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/supplier-ai-visibility/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/supplier-ai-visibility/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/supplier-ai-visibility/"/>
+    <image:image>
+      <image:loc>https://touchigh.ai/assets/og/supplier-ai-visibility.jpg</image:loc>
+      <image:title>ToucHigh — supplier visibility in ChatGPT and AI search</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://touchigh.ai/amazon-ads-autopilot/</loc>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/amazon-ads-autopilot/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://touchigh.ai/amazon-ads-autopilot/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://touchigh.ai/amazon-ads-autopilot/"/>
+    <image:image>
+      <image:loc>https://touchigh.ai/assets/og/amazon-ads-autopilot.jpg</image:loc>
+      <image:title>ToucHigh — Amazon ads autopilot for sellers</image:title>
+    </image:image>
+  </url>
 </urlset>
