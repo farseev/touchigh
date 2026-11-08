@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UTM 標記消失後如何追蹤 ChatGPT 流量 | ToucHigh</title>
+<meta name="description" content="ChatGPT 連結似乎不再帶 UTM 標記，AI 造訪看起來像直接流量。用三層追蹤 ChatGPT 流量：引用份額、直接流量、訂單。">
+<link rel="canonical" href="https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="ChatGPT 流量追蹤, 如何在 GA4 追蹤 ChatGPT 流量, 如何衡量 AI 推薦流量, ChatGPT UTM 參數, 如何計算 SEO ROI, AI 引用份額">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/">
+<meta property="og:title" content="ChatGPT 似乎不再加上 UTM 標記：現在該如何衡量 AI 流量">
+<meta property="og:description" content="ChatGPT 連結似乎不再帶 UTM 標記，AI 造訪看起來像直接流量。用三層追蹤 ChatGPT 流量：引用份額、直接流量、訂單。">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t03-zh-hant.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ChatGPT 似乎不再加上 UTM 標記：現在該如何衡量 AI 流量">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="article:published_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:modified_time" content="2026-10-16T07:21:00+08:00">
+<meta property="article:section" content="成效衡量">
+<meta property="article:tag" content="ChatGPT">
+<meta property="article:tag" content="AI 推薦流量">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="GEO 成效衡量">
+<meta property="article:tag" content="SEO ROI">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ChatGPT 似乎不再加上 UTM 標記：現在該如何衡量 AI 流量">
+<meta name="twitter:description" content="ChatGPT 連結似乎不再帶 UTM 標記，AI 造訪看起來像直接流量。用三層追蹤 ChatGPT 流量：引用份額、直接流量、訂單。">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t03-zh-hant.jpg">
+<meta name="twitter:image:alt" content="ChatGPT 似乎不再加上 UTM 標記：現在該如何衡量 AI 流量">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Noto+Sans+TC:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/#article","url":"https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/","mainEntityOfPage":"https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/","headline":"ChatGPT 似乎不再加上 UTM 標記：現在該如何衡量 AI 流量","alternativeHeadline":"UTM 標記消失後如何追蹤 ChatGPT 流量","description":"ChatGPT 連結似乎不再帶 UTM 標記，AI 造訪看起來像直接流量。用三層追蹤 ChatGPT 流量：引用份額、直接流量、訂單。","abstract":"別再只依賴 GA4 中的「chatgpt.com」來源。Search Engine Land 報導，ChatGPT 的連結似乎不再帶有 UTM 參數，所以許多 AI 造訪被記錄為直接流量。改用三層衡量：AI 引用份額（AI 回答您的核心問題時提到您的頻率）、深層頁面的直接流量加上品牌搜尋，以及訂單加上購後問卷。三者交叉比對。","image":["https://touchigh.ai/assets/blog/og/t03-zh-hant.jpg","https://touchigh.ai/assets/blog/hero/t03.jpg"],"datePublished":"2026-10-16T07:21:00+08:00","dateModified":"2026-10-16T07:21:00+08:00","inLanguage":"zh-Hant","author":{"@type":"Organization","name":"ToucHigh 研究團隊","url":"https://touchigh.ai/blog/zh-hant/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"成效衡量","keywords":"ChatGPT 流量追蹤, 如何在 GA4 追蹤 ChatGPT 流量, 如何衡量 AI 推薦流量, ChatGPT UTM 參數, 如何計算 SEO ROI, AI 引用份額","wordCount":2633,"timeRequired":"PT5M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/zh-hant/#blog","name":"ToucHigh 部落格"},"about":[{"@type":"Thing","name":"ChatGPT"},{"@type":"Thing","name":"AI 推薦流量"},{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"GEO 成效衡量"},{"@type":"Thing","name":"SEO ROI"}],"citation":[{"@type":"CreativeWork","name":"ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure","url":"https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552","datePublished":"2026-10-15","publisher":{"@type":"Organization","name":"Search Engine Land"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/chatgpt-utm-ai-referral-measurement/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"zh-Hant","mainEntity":[{"@type":"Question","name":"直接流量突然跳升，一定是來自 ChatGPT 嗎？","acceptedAnswer":{"@type":"Answer","text":"不一定。Search Engine Land 的報導也提醒，Huesler 的分析無法證明每一筆缺失的來源網址都出於同一原因。檢查三件事：上升是否從 10 月中開始？是否集中在產品頁和文章等深層頁面？ChatGPT 來源是否同時下降？只有三者都吻合時，才可能是被重新標記的 AI 流量。"}},{"@type":"Question","name":"ChatGPT 以外的 AI 平台流量怎麼辦？","acceptedAnswer":{"@type":"Answer","text":"先查看 GA4 中的參照連結網址報表，看看實際出現了哪些 AI 產品網域，再把它們放進同一個「AI 助理」管道群組。但這次 ChatGPT 的變化顯示，平台隨時可能改變連結的運作方式，所以把來源數據當作輸入之一，並搭配 AI 引用份額和訂單數據一起解讀。"}},{"@type":"Question","name":"AI 引用份額怎麼計算？","acceptedAnswer":{"@type":"Answer","text":"固定一組核心問題，例如美國消費者最常問的 40 個品類問題。每個月在幾個主要 AI 平台上逐一提問，計算提到或連結到您品牌的答案數量，再除以答案總數。如果 40 個問題中有 8 個引用您，您的份額就是 20%。保持問題清單不變，趨勢才真實。"}},{"@type":"Question","name":"我們是沒有數據分析師的小團隊。最少該追蹤什麼？","acceptedAnswer":{"@type":"Answer","text":"三個數字就夠了：每月 AI 引用份額、深層頁面的直接流量，以及購後問卷中選擇「AI 助理」的新顧客比例。第一個反映曝光，第二個反映造訪，第三個反映銷售。每月花半天把它們記在同一張試算表中，三個月後您就能看出 AI 通路是否在帶動成長。"}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/zh-hant/"},{"@type":"ListItem","position":2,"name":"部落格","item":"https://touchigh.ai/blog/zh-hant/"},{"@type":"ListItem","position":3,"name":"ChatGPT 似乎不再加上 UTM 標記：現在該如何衡量 AI 流量","item":"https://touchigh.ai/blog/zh-hant/chatgpt-utm-ai-referral-measurement/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">本頁目錄</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/zh-hant/">首頁</a>
+      <a href="/zh-hant/#products">產品</a>
+      <a href="/zh-hant/#faq">常見問題</a>
+      <a href="/zh-hant/pro/">ToucHigh PRO</a>
+      <a href="/blog/zh-hant/" class="on">部落格</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="語言: 繁體中文"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">繁中</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="語言" hidden><li><a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中" aria-current="page">繁體中文</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">登入</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">預約溝通</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/zh-hant/">首頁</a><span>/</span><a href="/blog/zh-hant/">部落格</a><span>/</span><span>成效衡量</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">成效衡量</div>
+    <h1>ChatGPT 似乎不再加上 UTM 標記：現在該如何衡量 AI 流量</h1>
+    <p class="dek">ChatGPT 似乎已停止在外部連結中加上 UTM 標記，AI 帶來的造訪正混進直接流量。是時候用新方法衡量您的 SEO 和 GEO 回報了。</p>
+    <div class="a-meta"><b>ToucHigh 研究團隊</b><span>發布於 <time datetime="2026-10-16T07:21:00+08:00">2026年10月16日</time></span><span>5 分鐘閱讀</span><span class="lang-badge">繁體中文</span></div>
+    <div class="a-langs">其他語言版本<a href="/blog/chatgpt-utm-ai-referral-measurement/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/chatgpt-utm-ai-referral-measurement/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp 768w, /assets/blog/hero/t03-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t03.jpg" alt="包裹從一條紫光照亮的對話框隧道滑上輸送帶，掉進一個普通的灰色箱子，它們的橘色追蹤標籤散落在地上；一旁的放大鏡、環形圖、長條圖和購物袋隨時準備交叉核對。" width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="這篇文章回答的問題"><span class="qm">“</span><div><div class="eyebrow">這篇文章回答的問題</div><p class="q">來自 ChatGPT 的造訪現在在我的分析工具中顯示為「直接」流量。我該如何計算花在 SEO 和 GEO 上的回報？</p><p class="ans"><b>一句話回答</b>別再只依賴 GA4 中的「chatgpt.com」來源。Search Engine Land 報導，ChatGPT 的連結似乎不再帶有 UTM 參數，所以許多 AI 造訪被記錄為直接流量。改用三層衡量：AI 引用份額（AI 回答您的核心問題時提到您的頻率）、深層頁面的直接流量加上品牌搜尋，以及訂單加上購後問卷。三者交叉比對。</p></div></section>
+      <section class="kt takeaways"><h2>要點速覽</h2><ul><li>根據 Search Engine Land，ChatGPT 的連結似乎不再帶有 UTM 參數，所以許多 AI 造訪現在在分析工具中顯示為「直接」流量。</li><li>Adobe 的 Cedric Huesler 發現，在約 500 個頁面中，ChatGPT 帶來的造訪每天減少約 31,000 次，而直接流量每天增加約 26,000 次。</li><li>用三層衡量 AI 通路：AI 引用份額；深層頁面的直接流量和品牌搜尋；以及訂單加上購後問卷。</li><li>不要根據一兩週的來源數據就削減 GEO 預算；您在 AI 答案中出現的頻率，才是追蹤參數無法扭曲的核心指標。</li></ul></section>
+      <div class="prose"><p>來自 ChatGPT 的造訪突然在您的分析工具中顯示為「直接」流量。那麼該如何計算 SEO 和 GEO 的回報？結論是：別再把 GA4（Google Analytics 4）中的「chatgpt.com」來源當作唯一的證據，而是交叉比對三層：AI 引用份額、直接流量的變化，以及訂單數據。單看任何一個數字，都可能讓您做出錯誤的預算決策。</p>
+
+<p>這起因於本週的一則新聞。<a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">Search Engine Land</a> 在 10 月 15 日報導，ChatGPT 的外部連結似乎不再帶有 OpenAI 之前加上的「utm_source=chatgpt.com」參數，而且連結的開啟方式也會隱藏來源網址資訊。Adobe 的 Cedric Huesler 分析了約 500 個 ChatGPT 佔造訪量至少 5% 的頁面，比較 10 月 9–13 日與前一週。ChatGPT 帶來的造訪每天減少約 31,000 次，而同樣頁面的直接流量每天增加約 26,000 次。OpenAI 尚未確認這項變更是否為刻意之舉。</p>
+
+<h2 id="why-did-my-chatgpt-traffic-suddenly-disappear">為什麼我的 ChatGPT 流量突然「消失」了？</h2>
+
+<p>流量並沒有消失，只是換了標籤。分析工具判斷造訪來源主要看兩件事：UTM 參數（加在連結上的追蹤標記），以及瀏覽器傳遞的來源網址。兩者都缺少時，造訪就會被記錄為「直接」，就好像購物者是在瀏覽器網址列輸入您的網址一樣。</p>
+
+<p>根據報導，這項變化是在 10 月 GPT-6 推出後被發現的。Huesler 的數據也顯示，失去 ChatGPT 來源的頁面中，有三分之二同時出現直接流量上升，而這些新的「直接」造訪，行為與先前已辨識出的 ChatGPT 造訪非常相似。不過報導也提醒，這項分析無法證明每一筆缺失的來源網址都出於同一原因。</p>
+
+<p>如果您經營獨立站，而您的店鋪後台或 GA4 在 10 月中之後顯示 ChatGPT 來源暴跌、直接流量跳升，先別急著下結論。最可能的是標籤變了，而不是 AI 不再願意推薦您。</p>
+
+<h2 id="why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">為什麼光看點擊數據，無法判斷 GEO 是否有回報？</h2>
+
+<p>管理學研究的績效衡量理論提出一個簡單的觀點：您衡量什麼，團隊就會優化什麼，錯誤的指標會導致錯誤的決策。如果您只看「來自 ChatGPT 的造訪」，本週的報表會告訴您 GEO 成效崩盤了。您可能會削減預算，但實際上，消費者仍在上門，只是換了標籤。</p>
+
+<p>再深入一層，AI 通路的許多價值本來就不會以點擊的形式出現。一位消費者看到 ChatGPT 推薦您的品牌，記住了名字，三天後輸入您的網址，或在 Google 上搜尋您的品牌。沒有任何歸因模型會把這筆訂單算給 AI。所以衡量 AI 通路，要問的是您是否在消費者心中佔有一席之地，而不只是看報表中的一行來源。</p>
+
+<h2 id="a-three-layer-framework-for-measuring-the-ai-channel">衡量 AI 通路的三層框架</h2>
+
+<p>把指標分成三層，每層回答一個問題：AI 有沒有提到您？消費者有沒有因此造訪？這些造訪有沒有轉化為銷售？</p>
+
+<div class="tw"><table>
+<thead><tr><th>層次</th><th>追蹤什麼</th><th>去哪裡看</th><th>為什麼重要</th></tr></thead>
+<tbody>
+<tr><td>曝光</td><td>AI 引用份額；AI 是否準確描述您的品牌</td><td>一組固定的問題，定期在 ChatGPT、Perplexity 和 Google AI 中檢查</td><td>不依賴 UTM 標記；最直接反映 GEO 成效</td></tr>
+<tr><td>流量</td><td>深層頁面的直接流量；品牌搜尋量；仍可辨識的 AI 來源</td><td>GA4 到達網頁報表、Google Search Console</td><td>很少人會手動輸入一長串產品頁網址，所以這類直接流量上升值得關注</td></tr>
+<tr><td>業務</td><td>新顧客訂單、平均訂單金額、購後問卷中選擇「AI 助理」的比例</td><td>店鋪後台、結帳後問卷</td><td>回答最終問題：值不值得？</td></tr>
+</tbody>
+</table></div>
+
+<p>把三層放在一起解讀。如果曝光上升但流量沒動，代表 AI 提到了您，卻沒給消費者點擊的理由，所以要在被引用的頁面加入價格區間和使用情境等購買資訊。如果流量上升但銷售沒有，問題最可能出在到達頁面和結帳，而不是 GEO 本身。</p>
+
+<h2 id="how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">GA4 該怎麼設定，才能少流失一些 AI 流量？</h2>
+
+<ol>
+<li><strong>建立「AI 助理」自訂管道群組。</strong>依照帳戶中實際出現的網域，把 chatgpt.com 和 perplexity.ai 等 AI 產品的來源網域歸在一起，避免它們散落在沒人看的「參照連結網址」中。</li>
+<li><strong>依到達頁面拆解直接流量。</strong>聚焦產品詳情頁和部落格文章等深層頁面的直接流量，與首頁直接流量分開分析。首頁的直接造訪大多來自回頭客；深層頁面的異常上升則更可能是 AI。</li>
+<li><strong>在報表中標註日期。</strong>把 10 月中的變化記錄為註解，避免日後的年比和月比讓您誤以為 GEO 失效了。</li>
+<li><strong>加入結帳後問卷。</strong>只問一個問題：「您是如何得知我們的？」並把「ChatGPT 或其他 AI 助理」列為選項。不需要大樣本，光是趨勢就很有價值。</li>
+<li><strong>每月抽查同樣的問題。</strong>挑選 30 到 50 個核心買家問題，記錄 AI 答案是否提到您、是否連結到您。這就是您 AI 引用份額背後的原始數據。</li>
+</ol>
+
+<h2 id="when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">老闆問 SEO 和 GEO 值不值得時，我該怎麼回答？</h2>
+
+<p>不要承諾精確歸因，而是用趨勢和交叉比對來說明。舉個假設的例子：一家銷售戶外用品的獨立站，三個月內 AI 引用份額從十分之一攀升到四分之一。同期，深層頁面的直接流量和品牌搜尋都在成長，購後問卷中選擇「AI 助理」的新顧客也增加了。三條線朝同一方向移動，比任何單一來源數字都更有說服力。</p>
+
+<p>計算時可以用簡化公式：SEO 和 GEO 的回報，大約等於自然通路新增的毛利，除以同期內容、工具和人力的總成本。分子根據訂單數據和問卷保守估計，分母則要計入團隊的時間。</p>
+
+<p>再把這些自然訂單和同期廣告的獲客成本做比較，您就有了一個老闆看得懂的基準。即使算不到小數點後兩位，方向和規模都很清楚，這就足以支持預算決策。</p>
+
+<h2 id="what-should-i-watch-for-next">接下來該注意什麼？</h2>
+
+<p>OpenAI 可能會恢復 UTM 標記，或持續改變連結的運作方式，其他 AI 平台也可能在沒有預告的情況下做出改變。所以不要根據一兩週的波動做預算決策，也不要把整套衡量系統押在任何單一平台的追蹤參數上。</p>
+
+<p>短期內，把 10 月中前後各四週的數據存檔作為對照組。如果之後 ChatGPT 來源恢復，您可以用它粗估這段期間大約有多少 AI 流量被「隱藏」了。</p>
+
+<p>真正穩定的指標，是您在 AI 答案中出現的頻率。如果您不想每月手動抽查，<a href="/zh-hant/#geo">ToucHigh 的 GEO Autopilot</a> 會直接追蹤 AI 引用份額，不論 UTM 標記是否存在。</p></div>
+      <aside class="insight" aria-label="核心洞察"><div class="eyebrow">核心洞察</div><blockquote>衡量的是人心，而不只是數字。</blockquote><p>績效衡量理論提醒我們，選擇的指標會左右我們的決策。AI 通路的價值往往表現為消費者記住了您，而不是一次可追蹤的點擊，所以光看來源數據會嚴重低估它。</p></aside>
+      <section class="prop" aria-label="ToucHigh 能幫您做什麼">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>ToucHigh 能幫您做什麼</h2></div>
+        <div class="pb prose"><p>UTM 標記會變，來源網址資料會遺失，但 AI 答案是否包含您，是可以直接衡量的。ToucHigh 的 GEO Autopilot 正是圍繞這一點打造：</p><ul><li>它稽核您在 ChatGPT、Perplexity、Google AI Overviews / AI Mode 和 Gemini 中，在哪些問題上缺席。</li><li>它撰寫並上線修正內容，包括頁面、答案和品牌實體資料，並圍繞趨勢中的搜尋問題撰寫 GEO 文章。</li><li>它持續追蹤您的 AI 引用份額，給您一條不依賴 UTM 標記的成效曲線。</li></ul><p>如果您想先看看自己在美國 AI 搜尋中的基準，歡迎預約 30 分鐘策略通話。</p><p class="uc">工廠與B2B供應商：看看ToucHigh如何提升<a href="/zh-hant/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T03'})}catch(e){}">AI搜尋中的供應商能見度</a>。 需要把曝光變成商機？了解策略先行的外拓獲客服務<a href="/zh-hant/pro/" onclick="try{gtag('event','pro_click',{location:'article_T03'})}catch(e){}">ToucHigh PRO</a>。</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T03')">預約30分鐘策略溝通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T03'})}catch(e){}">登入 ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="常見問題"><h2>常見問題</h2><details open><summary>直接流量突然跳升，一定是來自 ChatGPT 嗎？</summary><p>不一定。Search Engine Land 的報導也提醒，Huesler 的分析無法證明每一筆缺失的來源網址都出於同一原因。檢查三件事：上升是否從 10 月中開始？是否集中在產品頁和文章等深層頁面？ChatGPT 來源是否同時下降？只有三者都吻合時，才可能是被重新標記的 AI 流量。</p></details><details><summary>ChatGPT 以外的 AI 平台流量怎麼辦？</summary><p>先查看 GA4 中的參照連結網址報表，看看實際出現了哪些 AI 產品網域，再把它們放進同一個「AI 助理」管道群組。但這次 ChatGPT 的變化顯示，平台隨時可能改變連結的運作方式，所以把來源數據當作輸入之一，並搭配 AI 引用份額和訂單數據一起解讀。</p></details><details><summary>AI 引用份額怎麼計算？</summary><p>固定一組核心問題，例如美國消費者最常問的 40 個品類問題。每個月在幾個主要 AI 平台上逐一提問，計算提到或連結到您品牌的答案數量，再除以答案總數。如果 40 個問題中有 8 個引用您，您的份額就是 20%。保持問題清單不變，趨勢才真實。</p></details><details><summary>我們是沒有數據分析師的小團隊。最少該追蹤什麼？</summary><p>三個數字就夠了：每月 AI 引用份額、深層頁面的直接流量，以及購後問卷中選擇「AI 助理」的新顧客比例。第一個反映曝光，第二個反映造訪，第三個反映銷售。每月花半天把它們記在同一張試算表中，三個月後您就能看出 AI 通路是否在帶動成長。</p></details></section>
+      <section class="srcs"><h2>參考來源</h2><ol><li><a href="https://searchengineland.com/chatgpt-appears-to-drop-utm-tracking-making-ai-referral-traffic-harder-to-measure-496552" rel="noopener" target="_blank">ChatGPT appears to drop UTM tracking, making AI referral traffic harder to measure</a> — Search Engine Land, 2026-10-15</li></ol></section>
+      <p class="note"><b>我們為什麼寫這篇</b>我們寫這篇文章，是因為「如何計算 SEO 和 GEO 的回報？」是賣家在編列預算前最常卡住的地方，而本週關於 ChatGPT 可能不再加上 UTM 標記的報導，讓這個問題更加棘手。</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="本頁目錄"><h4>本頁目錄</h4><a href="#why-did-my-chatgpt-traffic-suddenly-disappear">為什麼我的 ChatGPT 流量突然「消失」了？</a><a href="#why-can-t-click-data-alone-tell-you-whether-geo-is-paying-of">為什麼光看點擊數據，無法判斷 GEO 是否有回報？</a><a href="#a-three-layer-framework-for-measuring-the-ai-channel">衡量 AI 通路的三層框架</a><a href="#how-should-i-set-up-ga4-so-i-lose-less-ai-traffic">GA4 該怎麼設定，才能少流失一些 AI 流量？</a><a href="#when-my-boss-asks-whether-seo-and-geo-are-worth-it-what-do-i">老闆問 SEO 和 GEO 值不值得時，我該怎麼回答？</a><a href="#what-should-i-watch-for-next">接下來該注意什麼？</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>看看您在美國 AI 搜尋中的曝光盲區</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">預約溝通</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">登入</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>相關文章</h2>
+  <div class="grid"><a class="card" href="/blog/zh-hant/medir-campanas-redes-sociales-pymes/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp"><img src="/assets/blog/hero/t50.jpg" alt="白色架子上的三個玻璃罐裝著高度不一的橘色彈珠，分別標示著眼睛、愛心和書籤，以及帶購物車的游標，每個罐子上都有一條深藍色線標出自己的歷史平均值。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hant"><div class="eyebrow">成效衡量</div><h3>不是分析師也能衡量社群活動成效：3 個指標</h3><p>想知道活動有沒有效，不需要一整面圖表。三個指標、一個基準值，加上每週一的十五分鐘，就足以做出合理的決策。</p><div class="meta"><span class="lg">繁體中文</span><span>4 分鐘閱讀</span></div></div></a><a class="card" href="/blog/zh-hant/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="從駕駛座的視角看去，店主的雙手放在方向盤上，前方的儀表板上剛好有三個橘色外框的儀表和一排小小的警示燈。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hant"><div class="eyebrow">成效衡量</div><h3>小企業數位廣告 KPI：真正重要的 3 個數字</h3><p>沒有媒體採購人員？專注於單次取得成本、廣告支出回報，以及回購率或潛在客戶品質。教您設定損益平衡目標，並每週檢討一次。</p><div class="meta"><span class="lg">繁體中文</span><span>6 分鐘閱讀</span></div></div></a><a class="card" href="/blog/zh-hant/measure-influencer-roi-tiktok-shop/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t35-768.webp"><img src="/assets/blog/hero/t35.jpg" alt="三個裝著環形補光燈的手機架並排；疊著一大疊影片卡的那個旁邊有一堆橘色硬幣和購物袋，另有一把算盤把一個禮物盒和一個包裹計為成本。" width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="zh-Hant"><div class="eyebrow">成效衡量</div><h3>小品牌如何衡量 TikTok Shop 網紅行銷 ROI</h3><p>大多數收到免費樣品的創作者從不發文，單支影片也很少能帶來銷售。這裡有一張簡單的計分表，讓您衡量 TikTok Shop 創作者 ROI 而不自欺欺人。</p><div class="meta"><span class="lg">繁體中文</span><span>6 分鐘閱讀</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/zh-hant/">← 返回部落格</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>看看您在美國 AI 搜尋中的曝光盲區</h2>
+  <p>預約一次 30 分鐘免費通話，我們會即時為您的店鋪做一次 AI 能見度檢測。</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">預約30分鐘策略溝通 →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">登入 ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">為中小企業與跨境賣家提供 AI 搜尋能見度、社群與廣告自動駕駛。</p></div>
+      <div><h4>ToucHigh</h4><a href="/zh-hant/">首頁</a><a href="/zh-hant/#geo">GEO Autopilot</a><a href="/zh-hant/#social">Social Autopilot</a><a href="/zh-hant/pro/">ToucHigh PRO</a></div>
+      <div><h4>部落格</h4><a href="/blog/zh-hant/">部落格</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>登入</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">預約溝通</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
