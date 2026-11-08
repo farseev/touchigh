@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Опрос после покупки для атрибуции ИИ: считаем продажи из ChatGPT | ToucHigh</title>
+<meta name="description" content="Аналитика упускает покупателей, которые увидели вас в ИИ-ответе и вернулись позже. Как составить опрос из одного вопроса и поле в форме запроса, чтобы измерить реальное влияние ChatGPT.">
+<link rel="canonical" href="https://touchigh.ai/blog/ru/ai-attribution-post-purchase-survey/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="опрос после покупки атрибуция ИИ, как вы о нас узнали ChatGPT, атрибуция по самоотчёту, измерить продажи из ChatGPT, опрос атрибуции ИИ-ассистентов, поле источника в форме запроса">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/ai-attribution-post-purchase-survey/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/ai-attribution-post-purchase-survey/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/ai-attribution-post-purchase-survey/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/ai-attribution-post-purchase-survey/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/ai-attribution-post-purchase-survey/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/ai-attribution-post-purchase-survey/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/ai-attribution-post-purchase-survey/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ru/ai-attribution-post-purchase-survey/">
+<meta property="og:title" content="«Как вы о нас узнали?»: опросы, чтобы считать продажи из ChatGPT и ИИ-ассистентов">
+<meta property="og:description" content="Аналитика упускает покупателей, которые увидели вас в ИИ-ответе и вернулись позже. Как составить опрос из одного вопроса и поле в форме запроса, чтобы измерить реальное влияние ChatGPT.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t66-ru.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="«Как вы о нас узнали?»: опросы, чтобы считать продажи из ChatGPT и ИИ-ассистентов">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="article:published_time" content="2026-11-08T10:40:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T10:40:00+08:00">
+<meta property="article:section" content="Измерение">
+<meta property="article:tag" content="Атрибуция">
+<meta property="article:tag" content="Опрос после покупки">
+<meta property="article:tag" content="ИИ-трафик">
+<meta property="article:tag" content="GA4">
+<meta property="article:tag" content="B2B-запросы">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="«Как вы о нас узнали?»: опросы, чтобы считать продажи из ChatGPT и ИИ-ассистентов">
+<meta name="twitter:description" content="Аналитика упускает покупателей, которые увидели вас в ИИ-ответе и вернулись позже. Как составить опрос из одного вопроса и поле в форме запроса, чтобы измерить реальное влияние ChatGPT.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t66-ru.jpg">
+<meta name="twitter:image:alt" content="«Как вы о нас узнали?»: опросы, чтобы считать продажи из ChatGPT и ИИ-ассистентов">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ru/ai-attribution-post-purchase-survey/#article","url":"https://touchigh.ai/blog/ru/ai-attribution-post-purchase-survey/","mainEntityOfPage":"https://touchigh.ai/blog/ru/ai-attribution-post-purchase-survey/","headline":"«Как вы о нас узнали?»: опросы, чтобы считать продажи из ChatGPT и ИИ-ассистентов","alternativeHeadline":"Опрос после покупки для атрибуции ИИ: считаем продажи из ChatGPT","description":"Аналитика упускает покупателей, которые увидели вас в ИИ-ответе и вернулись позже. Как составить опрос из одного вопроса и поле в форме запроса, чтобы измерить реальное влияние ChatGPT.","abstract":"Спрашивайте их — последовательно. Добавьте один обязательный вопрос «Как вы впервые о нас узнали?» после оформления заказа или в форме B2B-запроса, с отдельным вариантом «ChatGPT или другой ИИ-ассистент», случайным порядком ответов и полем «Другое». Сравните долю выбравших ИИ с долей, которую GA4 относит к ИИ-каналам. Разрыв показывает влияние ИИ, которое так и не пришло размеченным кликом, ведь визиты без реферера записываются как Direct.","image":["https://touchigh.ai/assets/blog/og/t66-ru.jpg","https://touchigh.ai/assets/blog/hero/t50.jpg"],"datePublished":"2026-11-08T10:40:00+08:00","dateModified":"2026-11-08T10:40:00+08:00","inLanguage":"ru","author":{"@type":"Organization","name":"Исследовательская команда ToucHigh","url":"https://touchigh.ai/blog/ru/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"Измерение","keywords":"опрос после покупки атрибуция ИИ, как вы о нас узнали ChatGPT, атрибуция по самоотчёту, измерить продажи из ChatGPT, опрос атрибуции ИИ-ассистентов, поле источника в форме запроса","wordCount":981,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ru/#blog","name":"Блог ToucHigh"},"about":[{"@type":"Thing","name":"Атрибуция"},{"@type":"Thing","name":"Опрос после покупки"},{"@type":"Thing","name":"ИИ-трафик"},{"@type":"Thing","name":"GA4"},{"@type":"Thing","name":"B2B-запросы"}],"citation":[{"@type":"CreativeWork","name":"[GA4] Default channel group","url":"https://support.google.com/analytics/answer/9756891","publisher":{"@type":"Organization","name":"Google Analytics Help"}},{"@type":"CreativeWork","name":"Custom channel groups","url":"https://support.google.com/analytics/answer/13051316","publisher":{"@type":"Organization","name":"Google Analytics Help"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/ai-attribution-post-purchase-survey/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Сколько ответов нужно, чтобы данные стали полезными?","acceptedAnswer":{"@type":"Answer","text":"Волшебного числа нет, но маленькие выборки сильно скачут от недели к неделе. Читайте итоги за месяц или квартал и смотрите на направление, а не на точные проценты, особенно в B2B, где запросов немного."}},{"@type":"Question","name":"Разрешать ли несколько ответов на вопрос?","acceptedAnswer":{"@type":"Answer","text":"Один ответ на вопрос «Как вы впервые о нас узнали?» проще читать и сравнивать во времени. Если нужен полный путь, добавьте необязательный второй вопрос, но первый оставьте с одним вариантом."}},{"@type":"Question","name":"Не выберут ли покупатели просто Google, раз они нас искали?","acceptedAnswer":{"@type":"Answer","text":"Некоторые выберут — поэтому вопрос спрашивает, где о вас впервые услышали, и явно называет ИИ-ассистентов. Свободные ответы в поле «Другое» к тому же показывают, как покупатели описывают ИИ своими словами."}},{"@type":"Question","name":"Можно ли связать ответы опроса с GA4?","acceptedAnswer":{"@type":"Answer","text":"Да, если магазин или форма передают ответ как параметр события или свойство пользователя. Но даже без этого сравнения месячных итогов опроса с отчётом по каналам GA4 достаточно, чтобы увидеть разрыв."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ru/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://touchigh.ai/blog/ru/"},{"@type":"ListItem","position":3,"name":"«Как вы о нас узнали?»: опросы, чтобы считать продажи из ChatGPT и ИИ-ассистентов","item":"https://touchigh.ai/blog/ru/ai-attribution-post-purchase-survey/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">На этой странице</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ru/">Главная</a>
+      <a href="/ru/#products">Продукты</a>
+      <a href="/ru/#faq">Вопросы и ответы</a>
+      <a href="/ru/pro/">ToucHigh PRO</a>
+      <a href="/blog/ru/" class="on">Блог</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Язык: Русский"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">RU</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Язык" hidden><li><a href="/blog/ai-attribution-post-purchase-survey/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/ai-attribution-post-purchase-survey/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/ai-attribution-post-purchase-survey/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/ai-attribution-post-purchase-survey/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/es/ai-attribution-post-purchase-survey/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/ru/ai-attribution-post-purchase-survey/" hreflang="ru" lang="ru" data-short="RU" aria-current="page">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Войти</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Записаться на звонок</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ru/">Главная</a><span>/</span><a href="/blog/ru/">Блог</a><span>/</span><span>Измерение</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">Измерение</div>
+    <h1>«Как вы о нас узнали?»: опросы, чтобы считать продажи из ChatGPT и ИИ-ассистентов</h1>
+    <p class="dek">Часть покупателей, которых приводит ИИ, никогда не появится как клик из ИИ. Один вопрос при оформлении заказа или в форме запроса — самый дешёвый способ их увидеть. Вот как его сформулировать, где разместить и как читать ответы.</p>
+    <div class="a-meta"><b>Исследовательская команда ToucHigh</b><span>Опубликовано <time datetime="2026-11-08T10:40:00+08:00">8.11.2026</time></span><span>6 мин чтения</span><span class="lang-badge">Русский</span></div>
+    <div class="a-langs">Также на<a href="/blog/ai-attribution-post-purchase-survey/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/ai-attribution-post-purchase-survey/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/ai-attribution-post-purchase-survey/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/ai-attribution-post-purchase-survey/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/es/ai-attribution-post-purchase-survey/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t50-768.webp 768w, /assets/blog/hero/t50-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t50.jpg" alt="Три стеклянные банки на белой полке заполнены оранжевыми шариками до разного уровня и помечены глазом, сердцем с закладкой и курсором с корзиной; на каждой тёмно-синяя линия показывает её прошлое среднее." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Вопрос, на который отвечает статья"><span class="qm">“</span><div><div class="eyebrow">Вопрос, на который отвечает статья</div><p class="q">Аналитика показывает совсем мало трафика из ChatGPT, но клиенты всё время говорят, что «нашли нас через ИИ». Как это правильно измерить?</p><p class="ans"><b>Коротко</b>Спрашивайте их — последовательно. Добавьте один обязательный вопрос «Как вы впервые о нас узнали?» после оформления заказа или в форме B2B-запроса, с отдельным вариантом «ChatGPT или другой ИИ-ассистент», случайным порядком ответов и полем «Другое». Сравните долю выбравших ИИ с долей, которую GA4 относит к ИИ-каналам. Разрыв показывает влияние ИИ, которое так и не пришло размеченным кликом, ведь визиты без реферера записываются как Direct.</p></div></section>
+      <section class="kt takeaways"><h2>Главное</h2><ul><li>GA4 может пометить визит только по параметрам отслеживания или рефереру; визиты без того и другого записываются как Direct, включая часть тех, что начались с ИИ-ответа.</li><li>Покупатель, увидевший ваше название в ИИ-ответе и нашедший вас через несколько дней, невидим для атрибуции по кликам.</li><li>Один вопрос «Как вы впервые о нас узнали?» с отдельным вариантом «ChatGPT или другой ИИ-ассистент» фиксирует это влияние напрямую.</li><li>Перемешивайте порядок ответов и не меняйте формулировку, иначе результаты будут дрейфовать по причинам, не связанным с ИИ.</li><li>Читайте опрос рядом с каналом AI Assistant в GA4 и прямым трафиком на глубокие страницы; разрыв между ними и есть полезное число.</li></ul></section>
+      <div class="prose"><p>У любой системы аналитики одно и то же слепое пятно: она может описать только последний шаг, который увидела. Покупатель спрашивает ChatGPT о поставщиках упаковки на заказ, видит вашу компанию, закрывает приложение и через два дня вводит ваш бренд в Google. Отчёты говорят Organic Search или Direct. ИИ-ответ, с которого всё началось, не получает никакой заслуги.</p>
+
+<p>Это слепое пятно не исправить большим числом тегов. Но его можно обойти, спрашивая клиентов напрямую. Атрибуция по самоотчёту — старый и дешёвый метод, и при аккуратном применении один из лучших инструментов для ИИ-канала.</p>
+
+<h2 id="s1">Почему одной аналитикой не измерить влияние ИИ?</h2>
+
+<p>Google Analytics 4 классифицирует сеанс по параметрам отслеживания и ссылающемуся URL. В группу каналов по умолчанию в GA4 теперь входит канал AI Assistant для визитов из таких источников, как ChatGPT, Gemini, Deepseek, Copilot или Grok; он присваивается, когда реферер совпадает со списком ИИ-ассистентов Google. Это помогает, но только для визитов с реферером. По определениям самого Google, визиты без информации об источнике попадают в Direct, а Google AI Overviews и AI Mode вообще исключены из канала AI Assistant.</p>
+
+<p>Есть ещё и задержка. Многие покупатели, особенно B2B, читают ответ, запоминают название и возвращаются позже другим путём. Ни одна модель на основе кликов не связывает эти два события. Опрос спрашивает того, кто знает: покупателя.</p>
+
+<h2 id="s2">Как сформулировать вопрос?</h2>
+
+<p>Ограничьтесь одним обязательным вопросом с коротким фиксированным списком ответов. Формулировка важнее, чем многие думают.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Выбор</th><th>Рекомендация</th><th>Почему</th></tr></thead>
+<tbody>
+<tr><td>Вопрос</td><td>«Как вы впервые о нас узнали?»</td><td>«Впервые» отделяет знакомство от последнего клика</td></tr>
+<tr><td>Вариант про ИИ</td><td>«ChatGPT или другой ИИ-ассистент (например, Perplexity, Gemini, Copilot)»</td><td>Покупатели редко сами пишут «ИИ» в пустом поле — назовите вариант явно</td></tr>
+<tr><td>Вариант про поиск</td><td>«Google или другой поисковик»</td><td>Отделяет ИИ от классического поиска</td></tr>
+<tr><td>Другие варианты</td><td>Соцсети, маркетплейс, выставка, рекомендация коллеги, существующий клиент</td><td>Всего пяти–восьми вариантов достаточно</td></tr>
+<tr><td>Запасной выход</td><td>«Другое (укажите)» с текстовым полем</td><td>Ловит новые каналы и формулировки, которых вы не ожидали</td></tr>
+<tr><td>Порядок</td><td>Случайный, кроме «Другое» в конце</td><td>Люди чаще выбирают первые прочитанные варианты</td></tr>
+</tbody>
+</table></div>
+
+<h2 id="s3">Где разместить вопрос в DTC-магазине и в B2B?</h2>
+
+<p><strong>Для интернет-магазина</strong> разместите его на странице подтверждения заказа или в первом письме после покупки, а не до оплаты, где любое лишнее поле может стоить вам заказов. Большинство платформ магазинов предлагают для этого приложения-опросы или пользовательское поле.</p>
+
+<p><strong>Для фабрики или B2B-поставщика</strong> добавьте в форму запроса обязательный выпадающий список «Как вы нас нашли?» и дайте отделу продаж тот же список для первого звонка. Записывайте ответ в CRM у лида, чтобы потом видеть не только сколько запросов пришло из ИИ, но и сколько из них стали заказами.</p>
+
+<h2 id="s4">Как читать результаты?</h2>
+
+<p>Каждый месяц ставьте рядом три числа:</p>
+
+<ol>
+<li><strong>Доля в опросе:</strong> процент покупателей или запросов, выбравших вариант про ИИ.</li>
+<li><strong>Доля в GA4:</strong> процент сеансов или ключевых событий в канале AI Assistant плюс любой собственный ИИ-канал, который вы настроили.</li>
+<li><strong>Прямые заходы на глубокие страницы:</strong> прямые сеансы, начинающиеся на страницах товаров, возможностей или статей, адреса которых мало кто вводит вручную.</li>
+</ol>
+
+<p>Если доля в опросе заметно выше доли в GA4, ИИ влияет на большее число покупателей, чем показывают данные о кликах. Этот разрыв и есть число, с которым стоит идти на обсуждение бюджета. Если обе доли низкие, ИИ-канал пока на вас не работает, и решать нужно видимость, а не измерение.</p>
+
+<h2 id="s5">Какие ошибки делают данные опроса бесполезными?</h2>
+
+<ul>
+<li><strong>Менять формулировку или список вариантов каждые несколько недель.</strong> Зафиксируйте их хотя бы на квартал, чтобы тренды что-то значили.</li>
+<li><strong>Читать отдельные недели.</strong> У небольших магазинов и B2B-воронок маленькие выборки. Смотрите итоги за месяц или квартал.</li>
+<li><strong>Считать данные точными.</strong> Люди ошибаются в воспоминаниях. Опрос — это компас, а не счёт-фактура, и лучше всего он работает вместе с GA4 и отслеживанием цитирований.</li>
+<li><strong>Делать вопрос необязательным и прятать его.</strong> Обязательный вопрос в один клик собирает гораздо больше ответов, чем ссылка на форму.</li>
+</ul>
+
+<p>Опрос не скажет, какой ИИ-ответ упомянул вас и почему. Дополните его ежемесячной проверкой того, что ассистенты на самом деле говорят о вашем бренде. Вместе они показывают и насколько ИИ важен для ваших покупателей, и что улучшать.</p></div>
+      <aside class="insight" aria-label="Инсайт"><div class="eyebrow">Инсайт</div><blockquote>Когда след теряется, спросите того, кто по нему прошёл.</blockquote><p>Психологи называют это ошибкой припоминания: люди путают источники, поэтому атрибуция по самоотчёту несовершенна. Но её ошибки отличаются от ошибок аналитики — именно поэтому вместе они лучше, чем каждая по отдельности.</p></aside>
+      <section class="prop" aria-label="Как помогает ToucHigh">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Как помогает ToucHigh</h2></div>
+        <div class="pb prose"><p>Опросы показывают, что ИИ важен; GEO Autopilot от ToucHigh помогает действовать:</p><ul><li>он проверяет, что ChatGPT, Perplexity, Google AI и Gemini говорят о вашем бренде и где вас нет;</li><li>он пишет и публикует исправления и GEO-статьи под вопросы, которые задают покупатели;</li><li>он отслеживает вашу долю цитирований в ИИ — ту сторону охвата, которую упускают и опросы, и аналитика.</li></ul><p>Запишитесь на 30-минутный стратегический звонок и возьмите данные опроса или источников запросов за последний квартал — мы сопоставим их с живой проверкой видимости в ИИ.</p><p class="uc">Фабрики и B2B-поставщики: посмотрите, как ToucHigh работает с <a href="/ru/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T66'})}catch(e){}">видимостью поставщиков в ИИ-поиске</a>. Хотите превратить видимость в воронку? Узнайте о <a href="/ru/pro/" onclick="try{gtag('event','pro_click',{location:'article_T66'})}catch(e){}">ToucHigh PRO</a> — аутриче со стратегией прежде всего.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T66')">Записаться на 30-минутную стратегическую сессию →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T66'})}catch(e){}">Войти в ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Вопросы и ответы"><h2>Вопросы и ответы</h2><details open><summary>Сколько ответов нужно, чтобы данные стали полезными?</summary><p>Волшебного числа нет, но маленькие выборки сильно скачут от недели к неделе. Читайте итоги за месяц или квартал и смотрите на направление, а не на точные проценты, особенно в B2B, где запросов немного.</p></details><details><summary>Разрешать ли несколько ответов на вопрос?</summary><p>Один ответ на вопрос «Как вы впервые о нас узнали?» проще читать и сравнивать во времени. Если нужен полный путь, добавьте необязательный второй вопрос, но первый оставьте с одним вариантом.</p></details><details><summary>Не выберут ли покупатели просто Google, раз они нас искали?</summary><p>Некоторые выберут — поэтому вопрос спрашивает, где о вас впервые услышали, и явно называет ИИ-ассистентов. Свободные ответы в поле «Другое» к тому же показывают, как покупатели описывают ИИ своими словами.</p></details><details><summary>Можно ли связать ответы опроса с GA4?</summary><p>Да, если магазин или форма передают ответ как параметр события или свойство пользователя. Но даже без этого сравнения месячных итогов опроса с отчётом по каналам GA4 достаточно, чтобы увидеть разрыв.</p></details></section>
+      <section class="srcs"><h2>Источники</h2><ol><li><a href="https://support.google.com/analytics/answer/9756891" rel="noopener" target="_blank">[GA4] Default channel group</a> — Google Analytics Help</li><li><a href="https://support.google.com/analytics/answer/13051316" rel="noopener" target="_blank">Custom channel groups</a> — Google Analytics Help</li></ol></section>
+      <p class="note"><b>Зачем мы это написали</b>Мы написали это, потому что продавцы и фабрики постоянно слышат от клиентов «я нашёл вас через ChatGPT», а их дашборды почти ничего не показывают. Опрос из одного вопроса — самый простой способ выразить это в цифрах.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="На этой странице"><h4>На этой странице</h4><a href="#s1">Почему одной аналитикой не измерить влияние ИИ?</a><a href="#s2">Как сформулировать вопрос?</a><a href="#s3">Где разместить вопрос в DTC-магазине и в B2B?</a><a href="#s4">Как читать результаты?</a><a href="#s5">Какие ошибки делают данные опроса бесполезными?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Узнайте, где вас не видно в ИИ-поиске США</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Записаться на звонок</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Войти</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Похожие статьи</h2>
+  <div class="grid"><a class="card" href="/blog/ru/ga4-ai-assistant-channel/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Посылки выезжают из подсвеченного фиолетовым туннеля в форме облачка чата на конвейер и падают в простой серый ящик, а их оранжевые бирки отслеживания валяются на полу; рядом наготове лупа, кольцевая диаграмма, столбчатая диаграмма и сумка для покупок, чтобы всё перепроверить." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ru"><div class="eyebrow">Измерение</div><h3>Канал AI Assistant в GA4: что он учитывает, что упускает и когда строить свой</h3><p>Google Analytics теперь выделяет визиты из ChatGPT, Gemini, Copilot и других в отдельный канал. Это решает часть проблемы ИИ-трафика. Вот какую часть не решает и собственная группа каналов, которая закрывает пробел.</p><div class="meta"><span class="lg">Русский</span><span>6 мин чтения</span></div></div></a><a class="card" href="/blog/en/chatgpt-utm-ai-referral-measurement/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t03-768.webp"><img src="/assets/blog/hero/t03.jpg" alt="Parcels slide out of a violet-lit chat-bubble tunnel onto a conveyor and drop into a plain grey bin, their orange tracking tags lying loose on the floor, while a magnifying glass, ring chart, bar chart and shopping bag stand by to cross-check." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>ChatGPT Seems to Have Dropped UTM Tags: How to Measure AI Traffic Now</h3><p>ChatGPT appears to have stopped adding UTM tags to its outbound links, so AI-driven visits are blending into direct traffic. It&#x27;s time for a new way to measure your SEO and GEO returns.</p><div class="meta"><span class="lg">English</span><span>5 min read</span></div></div></a><a class="card" href="/blog/digital-advertising-kpis-small-business/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t40-768.webp"><img src="/assets/blog/hero/t40.jpg" alt="Seen from the driver&#x27;s seat, a shop owner&#x27;s hands rest on a steering wheel in front of a dashboard with exactly three orange-rimmed gauges and a row of small warning lights." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">Measurement</div><h3>Digital Advertising KPIs for Small Business: The 3 Numbers That Matter</h3><p>No media buyer? Focus on cost per acquisition, return on ad spend and repeat or lead quality. Here&#x27;s how to set break-even targets and review them once a week.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ru/">← Назад в блог</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Узнайте, где вас не видно в ИИ-поиске США</h2>
+  <p>Запишитесь на бесплатный 30-минутный звонок, и мы вживую проведём аудит видимости вашего магазина в ИИ.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Записаться на 30-минутную стратегическую сессию →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Войти в ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Видимость в ИИ-поиске, соцсети и реклама на автопилоте для МСБ и кросс-бордер продавцов.</p></div>
+      <div><h4>ToucHigh</h4><a href="/ru/">Главная</a><a href="/ru/#geo">GEO Autopilot</a><a href="/ru/#social">Social Autopilot</a><a href="/ru/pro/">ToucHigh PRO</a></div>
+      <div><h4>Блог</h4><a href="/blog/ru/">Блог</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Войти</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Записаться на звонок</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>

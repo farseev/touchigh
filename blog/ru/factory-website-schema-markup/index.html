@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Разметка schema для сайтов фабрик: что добавить | ToucHigh</title>
+<meta name="description" content="Какие структурированные данные нужны B2B-сайту фабрики: Organization, товарные сниппеты и Breadcrumb, почему FAQ редко даёт расширенные результаты и что Google говорит об ИИ.">
+<link rel="canonical" href="https://touchigh.ai/blog/ru/factory-website-schema-markup/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="author" content="ToucHigh">
+<meta name="theme-color" content="#FF642D">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="разметка schema для производителей, структурированные данные сайта фабрики, Organization schema B2B, структурированные данные Product для фабрики, FAQ schema 2026, JSON-LD для экспортёров">
+<!--hreflang-->
+<link rel="alternate" hreflang="zh-Hans" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<link rel="alternate" hreflang="en" href="https://touchigh.ai/blog/en/factory-website-schema-markup/">
+<link rel="alternate" hreflang="zh-Hant" href="https://touchigh.ai/blog/zh-hant/factory-website-schema-markup/">
+<link rel="alternate" hreflang="ja" href="https://touchigh.ai/blog/ja/factory-website-schema-markup/">
+<link rel="alternate" hreflang="es" href="https://touchigh.ai/blog/es/factory-website-schema-markup/">
+<link rel="alternate" hreflang="ru" href="https://touchigh.ai/blog/ru/factory-website-schema-markup/">
+<link rel="alternate" hreflang="x-default" href="https://touchigh.ai/blog/factory-website-schema-markup/">
+<!--/hreflang-->
+
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="ToucHigh">
+<meta property="og:url" content="https://touchigh.ai/blog/ru/factory-website-schema-markup/">
+<meta property="og:title" content="Разметка schema для сайтов фабрик: Organization, Product и FAQ без ошибок">
+<meta property="og:description" content="Какие структурированные данные нужны B2B-сайту фабрики: Organization, товарные сниппеты и Breadcrumb, почему FAQ редко даёт расширенные результаты и что Google говорит об ИИ.">
+<meta property="og:image" content="https://touchigh.ai/assets/blog/og/t62-ru.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Разметка schema для сайтов фабрик: Organization, Product и FAQ без ошибок">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="zh_TW">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="es_ES">
+<meta property="article:published_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:modified_time" content="2026-11-08T09:20:00+08:00">
+<meta property="article:section" content="SEO">
+<meta property="article:tag" content="Структурированные данные">
+<meta property="article:tag" content="Schema.org">
+<meta property="article:tag" content="Сайты фабрик">
+<meta property="article:tag" content="B2B SEO">
+<meta property="article:tag" content="Данные о сущности">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Разметка schema для сайтов фабрик: Organization, Product и FAQ без ошибок">
+<meta name="twitter:description" content="Какие структурированные данные нужны B2B-сайту фабрики: Organization, товарные сниппеты и Breadcrumb, почему FAQ редко даёт расширенные результаты и что Google говорит об ИИ.">
+<meta name="twitter:image" content="https://touchigh.ai/assets/blog/og/t62-ru.jpg">
+<meta name="twitter:image:alt" content="Разметка schema для сайтов фабрик: Organization, Product и FAQ без ошибок">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/css/touchigh-blog.css">
+<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XCXZPEFP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XCXZPEFP94');
+</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","@id":"https://touchigh.ai/blog/ru/factory-website-schema-markup/#article","url":"https://touchigh.ai/blog/ru/factory-website-schema-markup/","mainEntityOfPage":"https://touchigh.ai/blog/ru/factory-website-schema-markup/","headline":"Разметка schema для сайтов фабрик: Organization, Product и FAQ без ошибок","alternativeHeadline":"Разметка schema для сайтов фабрик: что добавить","description":"Какие структурированные данные нужны B2B-сайту фабрики: Organization, товарные сниппеты и Breadcrumb, почему FAQ редко даёт расширенные результаты и что Google говорит об ИИ.","abstract":"Добавьте три типа и держите их точными: Organization на главной (название, логотип, адрес, контакты и ссылки sameAs на официальные профили), разметку Product на каждой странице товара или возможностей в формате товарных сниппетов Google и BreadcrumbList по всему сайту. Разметка FAQ необязательна, поскольку с 2023 года Google показывает расширенные результаты FAQ только для известных государственных и медицинских сайтов. Google говорит, что для появления в AI Overviews специальная разметка не нужна; она просто должна соответствовать видимому тексту.","image":["https://touchigh.ai/assets/blog/og/t62-ru.jpg","https://touchigh.ai/assets/blog/hero/t57.jpg"],"datePublished":"2026-11-08T09:20:00+08:00","dateModified":"2026-11-08T09:20:00+08:00","inLanguage":"ru","author":{"@type":"Organization","name":"Исследовательская команда ToucHigh","url":"https://touchigh.ai/blog/ru/"},"publisher":{"@type":"Organization","@id":"https://touchigh.ai/#org","name":"ToucHigh","url":"https://touchigh.ai/","logo":{"@type":"ImageObject","url":"https://touchigh.ai/apple-touch-icon.png","width":180,"height":180}},"articleSection":"SEO","keywords":"разметка schema для производителей, структурированные данные сайта фабрики, Organization schema B2B, структурированные данные Product для фабрики, FAQ schema 2026, JSON-LD для экспортёров","wordCount":1171,"timeRequired":"PT6M","isPartOf":{"@type":"Blog","@id":"https://touchigh.ai/blog/ru/#blog","name":"Блог ToucHigh"},"about":[{"@type":"Thing","name":"Структурированные данные"},{"@type":"Thing","name":"Schema.org"},{"@type":"Thing","name":"Сайты фабрик"},{"@type":"Thing","name":"B2B SEO"},{"@type":"Thing","name":"Данные о сущности"}],"citation":[{"@type":"CreativeWork","name":"Organization (Organization) structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/organization","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Introduction to Product structured data","url":"https://developers.google.com/search/docs/appearance/structured-data/product","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Changes to HowTo and FAQ rich results","url":"https://developers.google.com/search/blog/2023/08/howto-faq-changes","datePublished":"2023-08-08","publisher":{"@type":"Organization","name":"Google Search Central Blog"}},{"@type":"CreativeWork","name":"AI features and your website","url":"https://developers.google.com/search/docs/appearance/ai-features","publisher":{"@type":"Organization","name":"Google Search Central"}},{"@type":"CreativeWork","name":"Rich Results Test","url":"https://search.google.com/test/rich-results","publisher":{"@type":"Organization","name":"Google"}}],"speakable":{"@type":"SpeakableSpecification","cssSelector":[".answer-box",".takeaways"]},"translationOfWork":{"@type":"BlogPosting","@id":"https://touchigh.ai/blog/factory-website-schema-markup/#article","inLanguage":"zh-Hans"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","inLanguage":"ru","mainEntity":[{"@type":"Question","name":"Использовать JSON-LD или микроданные?","acceptedAnswer":{"@type":"Answer","text":"Google принимает несколько форматов, и JSON-LD обычно проще всего поддерживать, потому что он находится в одном блоке скрипта, а не вплетён в HTML. Что бы вы ни выбрали, держите один источник истины, чтобы разметка и видимый текст не расходились."}},{"@type":"Question","name":"Можно ли размечать цены, которые мы даём только в коммерческих предложениях?","acceptedAnswer":{"@type":"Answer","text":"Нет. Структурированные данные должны описывать то, что есть на странице. Если страница не показывает цену, не указывайте price и используйте формат товарных сниппетов, который Google предназначает для страниц, где нельзя купить напрямую."}},{"@type":"Question","name":"Нужна ли нам разметка LocalBusiness?","acceptedAnswer":{"@type":"Answer","text":"Только если покупатели приходят к вам лично как в местный бизнес, например в шоурум с часами работы. Для производителя-экспортёра правильный тип обычно Organization с реальным адресом."}},{"@type":"Question","name":"Поможет ли разметка schema попасть в ответы ChatGPT?","acceptedAnswer":{"@type":"Answer","text":"Сама по себе — нет. Google говорит, что для его ИИ-функций специальная разметка не нужна, а другие ассистенты опираются на страницы, которые могут просканировать, и на информацию, найденную в интернете. Разметка помогает, чётко сообщая факты о вашей сущности, но контент всё равно должен отвечать на вопросы покупателей."}}]}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ToucHigh","item":"https://touchigh.ai/ru/"},{"@type":"ListItem","position":2,"name":"Блог","item":"https://touchigh.ai/blog/ru/"},{"@type":"ListItem","position":3,"name":"Разметка schema для сайтов фабрик: Organization, Product и FAQ без ошибок","item":"https://touchigh.ai/blog/ru/factory-website-schema-markup/"}]}</script>
+
+<link rel="stylesheet" href="/assets/css/lang-menu.css">
+<script src="/assets/js/lang-menu.js" defer></script>
+<link rel="stylesheet" href="/assets/css/blog-extra.css">
+</head>
+<body>
+<a class="skip" href="#main">На этой странице</a>
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="/ru/">Главная</a>
+      <a href="/ru/#products">Продукты</a>
+      <a href="/ru/#faq">Вопросы и ответы</a>
+      <a href="/ru/pro/">ToucHigh PRO</a>
+      <a href="/blog/ru/" class="on">Блог</a>
+    </nav>
+    <div class="nav-right">
+      <!--lmenu--><div class="lmenu" data-lmenu><button type="button" class="lm-btn" aria-haspopup="true" aria-expanded="false" aria-label="Язык: Русский"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg><span class="lm-txt">RU</span><span class="lm-car" aria-hidden="true">▾</span></button><ul class="lm-list" role="list" aria-label="Язык" hidden><li><a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" data-short="中文">简体中文</a></li><li><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" data-short="EN">English</a></li><li><a href="/blog/zh-hant/factory-website-schema-markup/" hreflang="zh-Hant" lang="zh-Hant" data-short="繁中">繁體中文</a></li><li><a href="/blog/ja/factory-website-schema-markup/" hreflang="ja" lang="ja" data-short="日本語">日本語</a></li><li><a href="/blog/es/factory-website-schema-markup/" hreflang="es" lang="es" data-short="ES">Español</a></li><li><a href="/blog/ru/factory-website-schema-markup/" hreflang="ru" lang="ru" data-short="RU" aria-current="page">Русский</a></li></ul></div><!--/lmenu-->
+      <a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_nav'})}catch(e){}">Войти</a>
+      <a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_nav')">Записаться на звонок</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false" onclick="var n=document.querySelector('.nav-links');var o=n.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')">☰</button>
+    </div>
+  </div>
+</header>
+<main id="main">
+<article class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb"><a href="/ru/">Главная</a><span>/</span><a href="/blog/ru/">Блог</a><span>/</span><span>SEO</span></nav>
+  <header class="a-head">
+    <div class="eyebrow">SEO</div>
+    <h1>Разметка schema для сайтов фабрик: Organization, Product и FAQ без ошибок</h1>
+    <p class="dek">Сами по себе структурированные данные не заставят ChatGPT рекомендовать вас, но снимают сомнения в том, кто вы и что производите. Вот короткий список того, что нужно сайту фабрики, и что пропустить.</p>
+    <div class="a-meta"><b>Исследовательская команда ToucHigh</b><span>Опубликовано <time datetime="2026-11-08T09:20:00+08:00">8.11.2026</time></span><span>6 мин чтения</span><span class="lang-badge">Русский</span></div>
+    <div class="a-langs">Также на<a href="/blog/factory-website-schema-markup/" hreflang="zh-Hans" lang="zh-Hans" onclick="try{localStorage.setItem('tl','zh')}catch(e){}">简体中文</a><a href="/blog/en/factory-website-schema-markup/" hreflang="en" lang="en" onclick="try{localStorage.setItem('tl','en')}catch(e){}">English</a><a href="/blog/zh-hant/factory-website-schema-markup/" hreflang="zh-Hant" lang="zh-Hant" onclick="try{localStorage.setItem('tl','zh-hant')}catch(e){}">繁體中文</a><a href="/blog/ja/factory-website-schema-markup/" hreflang="ja" lang="ja" onclick="try{localStorage.setItem('tl','ja')}catch(e){}">日本語</a><a href="/blog/es/factory-website-schema-markup/" hreflang="es" lang="es" onclick="try{localStorage.setItem('tl','es')}catch(e){}">Español</a></div>
+  </header>
+  <figure class="hero-fig"><picture><source type="image/webp" srcset="/assets/blog/hero/t57-768.webp 768w, /assets/blog/hero/t57-1536.webp 1536w" sizes="(max-width:1250px) 100vw, 1152px"><img src="/assets/blog/hero/t57.jpg" alt="Небольшой кран поднимает поднос с шестью плитками контента — бейджем, таблицей характеристик, облачками чата, сертификатом, весами и звёздами — к окну ИИ-ответа, где верхнюю позицию занимает оранжевый значок фабрики." width="1536" height="1024" fetchpriority="high"></picture></figure>
+  <div class="layout">
+    <div class="col">
+      <section class="answer-lead answer-box" aria-label="Вопрос, на который отвечает статья"><span class="qm">“</span><div><div class="eyebrow">Вопрос, на который отвечает статья</div><p class="q">Наш разработчик спросил, какую разметку schema добавить на англоязычный сайт фабрики. Нужна ли она для Google и ИИ и какие типы важны?</p><p class="ans"><b>Коротко</b>Добавьте три типа и держите их точными: Organization на главной (название, логотип, адрес, контакты и ссылки sameAs на официальные профили), разметку Product на каждой странице товара или возможностей в формате товарных сниппетов Google и BreadcrumbList по всему сайту. Разметка FAQ необязательна, поскольку с 2023 года Google показывает расширенные результаты FAQ только для известных государственных и медицинских сайтов. Google говорит, что для появления в AI Overviews специальная разметка не нужна; она просто должна соответствовать видимому тексту.</p></div></section>
+      <section class="kt takeaways"><h2>Главное</h2><ul><li>В документации Google сказано, что для появления в AI Overviews или AI Mode специальная разметка schema.org не нужна; структурированные данные должны соответствовать видимому тексту страницы.</li><li>У разметки Organization нет обязательных свойств; Google рекомендует name, признак физического присутствия, например address или telephone, и онлайн-присутствие, например url или logo.</li><li>Фабрикам, которые не продают онлайн, стоит использовать формат товарных сниппетов Google, предназначенный для страниц товаров, где нельзя купить напрямую.</li><li>С августа 2023 года расширенные результаты FAQ ограничены известными авторитетными государственными и медицинскими сайтами, поэтому считайте разметку FAQ необязательной.</li><li>Проверяйте каждый шаблон в инструменте Google для проверки расширенных результатов (Rich Results Test) и исправляйте ошибки до распространения разметки на все страницы.</li></ul></section>
+      <div class="prose"><p>Спросите трёх SEO-подрядчиков, какая разметка schema нужна сайту фабрики, и получите три длинных списка. Большинство из них избыточны. B2B-производителю, продающему зарубежным покупателям, нужно немного структурированных данных, поддерживаемых в точности, на тех страницах, которые покупатели реально читают. В этом руководстве — что добавить, что пропустить и как это связано с ИИ-поиском.</p>
+
+<h2 id="s1">Помогают ли структурированные данные фабрике получить цитирование в ИИ?</h2>
+
+<p>Начнём с того, что говорит Google. В его рекомендациях для владельцев сайтов об ИИ-функциях сказано, что дополнительных требований для появления в AI Overviews или AI Mode нет, новые машиночитаемые файлы или разметка не нужны и никакие специальные структурированные данные schema.org добавлять не обязательно. На той же странице как обычная лучшая практика SEO указано «making sure your structured data matches the visible text on the page» (следить, чтобы структурированные данные соответствовали видимому тексту страницы).</p>
+
+<p>Значит, структурированные данные — не выключатель, включающий цитирование в ИИ. Они устраняют двусмысленность. Они в машиночитаемом виде сообщают, что эта страница — об этой компании, по этому адресу, производящей эти товары, с этими официальными профилями. Для китайской фабрики, у которой английское название, китайское название и название торговой компании часто различаются в разных местах интернета, такая ясность стоит полдня работы разработчика.</p>
+
+<h2 id="s2">Что должно быть в разметке Organization на главной странице фабрики?</h2>
+
+<p>В документации Google по Organization сказано, что обязательных свойств нет; рекомендуется добавлять свойства, относящиеся к вашей организации, уделяя внимание полезным для пользователей: name или alternateName, признак физического присутствия вроде address или telephone и онлайн-присутствие вроде url или logo. В его примере также используется sameAs для перечисления официальных профилей.</p>
+
+<div class="tw"><table>
+<thead><tr><th>Свойство</th><th>Что указать для фабрики</th><th>Типичная ошибка</th></tr></thead>
+<tbody>
+<tr><td>name</td><td>Зарегистрированное английское название компании — точно как в счетах</td><td>Использовать маркетинговый слоган или название торговой компании</td></tr>
+<tr><td>alternateName</td><td>Короткое название бренда, китайское название пиньинем или иероглифами</td><td>Не указывать его, из-за чего ИИ не может связать варианты</td></tr>
+<tr><td>url, logo</td><td>URL главной страницы и постоянный URL изображения логотипа</td><td>URL логотипа, меняющийся при каждом редизайне</td></tr>
+<tr><td>address, telephone, email</td><td>Реальный адрес фабрики и контакт отдела продаж, который кто-то читает</td><td>Адрес, отличающийся от указанного в магазине на маркетплейсе</td></tr>
+<tr><td>sameAs</td><td>Страница компании в LinkedIn, магазин на маркетплейсе, канал YouTube</td><td>Ссылки на неактивные профили или профили агентов</td></tr>
+<tr><td>foundingDate, numberOfEmployees</td><td>Факты, которые вы также приводите на странице «О компании»</td><td>Цифры, которых нигде не видно на странице</td></tr>
+</tbody>
+</table></div>
+
+<p>Размещайте Organization на главной (и, если хотите, на странице «О компании»), а не повторяйте с разными значениями на каждой странице. Факты должны совпадать с тем, что видят посетители.</p>
+
+<h2 id="s3">Какая разметка Product подходит фабрике, которая не продаёт онлайн?</h2>
+
+<p>Google описывает два класса структурированных данных о товарах. Товарные сниппеты — для страниц товаров, где люди не могут купить товар напрямую. Товарные объявления продавцов (merchant listings) — для страниц, где клиенты могут у вас купить, с дополнительными параметрами доставки и возврата. Большинство B2B-фабрик выставляют цену по запросу, так что честный выбор — товарные сниппеты.</p>
+
+<p>На каждой странице товара или возможностей опишите товар через name, description, image, brand (ваш бренд или «OEM») и, где применимо, материал или категорию. Не выдумывайте цены или рейтинги отзывов ради расширенных результатов; если цена существует только в коммерческих предложениях, не указывайте её. Страница товара с точными видимыми характеристиками служит покупателям и ИИ лучше, чем разметка, обещающая больше, чем показывает страница.</p>
+
+<h2 id="s4">Стоит ли ещё добавлять разметку FAQ?</h2>
+
+<p>В августе 2023 года Google объявил о снижении видимости расширенных результатов FAQ: расширенные результаты из структурированных данных FAQPage будут показываться только для известных авторитетных государственных и медицинских сайтов. Для сайта фабрики это значит, что разметка FAQ почти никогда не даст того раскрывающегося результата, который некоторые агентства до сих пор продают.</p>
+
+<p>Сам FAQ по-прежнему ценен. Видимые вопросы и ответы («Какой у вас MOQ для нестандартных цветов?», «Какие тесты на контакт с пищевыми продуктами вы проходите?») — именно те фрагменты, которые может взять ИИ-ответ. Сохраните видимый FAQ, пишите каждый ответ так, чтобы его первое предложение было самостоятельным, а разметку FAQPage считайте необязательной формальностью.</p>
+
+<h2 id="s5">Как фабрике внедрять структурированные данные?</h2>
+
+<ol>
+<li><strong>Сначала приведите в порядок факты.</strong> Определите одно английское название компании, адрес и категории товаров, которые будете использовать везде.</li>
+<li><strong>Добавьте Organization на главную</strong> с name, alternateName, url, logo, address, контактами и sameAs.</li>
+<li><strong>Добавьте Product в один шаблон</strong> (одна страница товара или возможностей) и BreadcrumbList по всему сайту.</li>
+<li><strong>Проверьте в Rich Results Test</strong> и исправьте критические ошибки до распространения шаблона.</li>
+<li><strong>Внедряйте постранично</strong>, проверяя, что каждое размеченное значение есть в видимом тексте.</li>
+<li><strong>Перепроверяйте после каждого редизайна.</strong> При смене темы шаблоны часто теряют или дублируют JSON-LD.</li>
+</ol>
+
+<h2 id="s6">Чего структурированные данные не исправят?</h2>
+
+<p>Разметка не сделает полезными пустые страницы. Если на странице возможностей написано «передовое оборудование и строгий контроль качества» без единой цифры, разметка Product просто наклеит ярлык на пустую коробку. Порядок работы для GEO не меняется: сначала конкретный проверяемый контент на странице, затем согласованная информация о сущности по всему интернету, и только потом структурированные данные, чтобы чисто описать и то, и другое.</p></div>
+      <aside class="insight" aria-label="Инсайт"><div class="eyebrow">Инсайт</div><blockquote>Разметка подписывает коробку. Наполнить её она не может.</blockquote><p>Теория сигналов гласит, что сигнал заслуживает доверия, только если его дорого подделать. Разметка, отражающая подробные видимые факты — номера сертификатов, мощности, реальный адрес, — укрепляет доверие; разметка, заявляющая больше, чем показывает страница, — пустые слова, которые поисковики и покупатели учатся игнорировать.</p></aside>
+      <section class="prop" aria-label="Как помогает ToucHigh">
+        <div class="ph"><div class="eyebrow">GEO Autopilot · Social Autopilot · Ads</div><h2>Как помогает ToucHigh</h2></div>
+        <div class="pb prose"><p>GEO Autopilot от ToucHigh считает структурированные данные частью исправления, а не отдельным проектом:</p><ul><li>он проверяет, где ваша фабрика невидима в ChatGPT, Perplexity, Google AI и Gemini;</li><li>он пишет и публикует исправления, включая страницы, ответы и данные о сущности, чтобы факты и разметка совпадали;</li><li>он отслеживает вашу долю цитирований в ИИ, чтобы вы видели, какие страницы начинают цитировать.</li></ul><p>Запишитесь на 30-минутный стратегический звонок и возьмите одну страницу товара — мы разберём, что говорит страница, что говорит разметка и что говорит о вас ИИ.</p><p class="uc">Фабрики и B2B-поставщики: посмотрите, как ToucHigh работает с <a href="/ru/supplier-ai-visibility/" onclick="try{gtag('event','landing_click',{location:'article_T62'})}catch(e){}">видимостью поставщиков в ИИ-поиске</a>. Хотите превратить видимость в воронку? Узнайте о <a href="/ru/pro/" onclick="try{gtag('event','pro_click',{location:'article_T62'})}catch(e){}">ToucHigh PRO</a> — аутриче со стратегией прежде всего.</p></div>
+        <div class="pa"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_T62')">Записаться на 30-минутную стратегическую сессию →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'article_T62'})}catch(e){}">Войти в ToucHigh</a></div>
+      </section>
+      <section class="faq" aria-label="Вопросы и ответы"><h2>Вопросы и ответы</h2><details open><summary>Использовать JSON-LD или микроданные?</summary><p>Google принимает несколько форматов, и JSON-LD обычно проще всего поддерживать, потому что он находится в одном блоке скрипта, а не вплетён в HTML. Что бы вы ни выбрали, держите один источник истины, чтобы разметка и видимый текст не расходились.</p></details><details><summary>Можно ли размечать цены, которые мы даём только в коммерческих предложениях?</summary><p>Нет. Структурированные данные должны описывать то, что есть на странице. Если страница не показывает цену, не указывайте price и используйте формат товарных сниппетов, который Google предназначает для страниц, где нельзя купить напрямую.</p></details><details><summary>Нужна ли нам разметка LocalBusiness?</summary><p>Только если покупатели приходят к вам лично как в местный бизнес, например в шоурум с часами работы. Для производителя-экспортёра правильный тип обычно Organization с реальным адресом.</p></details><details><summary>Поможет ли разметка schema попасть в ответы ChatGPT?</summary><p>Сама по себе — нет. Google говорит, что для его ИИ-функций специальная разметка не нужна, а другие ассистенты опираются на страницы, которые могут просканировать, и на информацию, найденную в интернете. Разметка помогает, чётко сообщая факты о вашей сущности, но контент всё равно должен отвечать на вопросы покупателей.</p></details></section>
+      <section class="srcs"><h2>Источники</h2><ol><li><a href="https://developers.google.com/search/docs/appearance/structured-data/organization" rel="noopener" target="_blank">Organization (Organization) structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/docs/appearance/structured-data/product" rel="noopener" target="_blank">Introduction to Product structured data</a> — Google Search Central</li><li><a href="https://developers.google.com/search/blog/2023/08/howto-faq-changes" rel="noopener" target="_blank">Changes to HowTo and FAQ rich results</a> — Google Search Central Blog, 2023-08-08</li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" rel="noopener" target="_blank">AI features and your website</a> — Google Search Central</li><li><a href="https://search.google.com/test/rich-results" rel="noopener" target="_blank">Rich Results Test</a> — Google</li></ol></section>
+      <p class="note"><b>Зачем мы это написали</b>Мы написали это, потому что фабрикам постоянно предлагают «пакеты ИИ-разметки». Документация достаточно ясна: короткий точный список лучше длинного раздутого.</p>
+    </div>
+    <aside class="side"><div class="side-in">
+      <nav class="toc" aria-label="На этой странице"><h4>На этой странице</h4><a href="#s1">Помогают ли структурированные данные фабрике получить цитирование в ИИ?</a><a href="#s2">Что должно быть в разметке Organization на главной странице фабрики?</a><a href="#s3">Какая разметка Product подходит фабрике, которая не продаёт онлайн?</a><a href="#s4">Стоит ли ещё добавлять разметку FAQ?</a><a href="#s5">Как фабрике внедрять структурированные данные?</a><a href="#s6">Чего структурированные данные не исправят?</a></nav>
+      <div class="side-cta"><h4>ToucHigh</h4><p>Узнайте, где вас не видно в ИИ-поиске США</p><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'article_side')">Записаться на звонок</a><a class="btn btn-ghost on-dark" href="https://pro.touchigh.ai" rel="noopener">Войти</a></div>
+    </div></aside>
+  </div>
+</article>
+<section class="related"><div class="wrap"><h2>Похожие статьи</h2>
+  <div class="grid"><a class="card" href="/blog/en/factory-website-geo-chatgpt-supplier/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t52-768.webp"><img src="/assets/blog/hero/t52.jpg" alt="Among a row of identical grey factories, one white and orange factory is lit by a spotlight from an AI chat bubble, above a panel of icons for machinery, certification, materials, lead time and FAQs." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>Get ChatGPT to Recommend Your Factory: A GEO Primer for Factory Websites</h3><p>Overseas buyers are starting to use AI to find suppliers. A factory site with only a company profile and product photos rarely gets recommended by ChatGPT. Here&#x27;s a checklist of citable pages and first GEO steps.</p><div class="meta"><span class="lg">English</span><span>6 min read</span></div></div></a><a class="card" href="/blog/ru/us-brand-entity-chinese-brands-google-ai/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t48-768.webp"><img src="/assets/blog/hero/t48.jpg" alt="Небольшой магазин с оранжевым полосатым навесом под большой меткой карты соединён пунктирными линиями с карточкой на карте, окном сайта и профилем в телефоне, где показаны одинаковые значки часов, телефона, глобуса и звезды; рядом календарь с одной оранжевой клеткой." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="ru"><div class="eyebrow">Кросс-бордер</div><h3>Сущность бренда в США: как Google и ИИ начинают узнавать китайские бренды</h3><p>Многие китайские бренды существуют в сети как три полубренда: название пиньинем на маркетплейсе, английское название на сайте и название компании в LinkedIn. Google и ИИ не могут рекомендовать то, что не могут опознать. Вот как стать одной сущностью.</p><div class="meta"><span class="lg">Русский</span><span>7 мин чтения</span></div></div></a><a class="card" href="/blog/en/seo-aeo-geo-explained-chinese-exporters/"><div class="im"><picture><source type="image/webp" srcset="/assets/blog/hero/t53-768.webp"><img src="/assets/blog/hero/t53.jpg" alt="An orange block works like a fountain, sending three pipes to a search results list, a speech-bubble answer card and an AI chat bubble with a violet spark." width="1536" height="1024" loading="lazy"></picture></div><div class="tx" lang="en"><div class="eyebrow">GEO &amp; AI search</div><h3>SEO vs. AEO vs. GEO: What&#x27;s the Difference, and Do Exporters Need All Three?</h3><p>SEO gets you found, AEO gets your answer quoted by AI, and GEO gets you recommended by generative AI. They share one foundation, so exporters can run all three with one workflow.</p><div class="meta"><span class="lg">English</span><span>8 min read</span></div></div></a></div>
+  <a class="btn btn-ghost" href="/blog/ru/">← Назад в блог</a><div style="height:50px"></div>
+</div></section>
+</main>
+<section class="final" aria-label="Get started">
+  <div class="eyebrow">ToucHigh</div>
+  <h2>Узнайте, где вас не видно в ИИ-поиске США</h2>
+  <p>Запишитесь на бесплатный 30-минутный звонок, и мы вживую проведём аудит видимости вашего магазина в ИИ.</p>
+  <div class="row"><a class="btn btn-primary" href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_final')">Записаться на 30-минутную стратегическую сессию →</a><a class="btn btn-ghost" href="https://pro.touchigh.ai" rel="noopener" onclick="try{gtag('event','login_click',{location:'blog_final'})}catch(e){}">Войти в ToucHigh</a></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">Видимость в ИИ-поиске, соцсети и реклама на автопилоте для МСБ и кросс-бордер продавцов.</p></div>
+      <div><h4>ToucHigh</h4><a href="/ru/">Главная</a><a href="/ru/#geo">GEO Autopilot</a><a href="/ru/#social">Social Autopilot</a><a href="/ru/pro/">ToucHigh PRO</a></div>
+      <div><h4>Блог</h4><a href="/blog/ru/">Блог</a><a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
+      <div><h4>Войти</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="https://calendly.com/a-touchigh/30min" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">Записаться на звонок</a></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 ToucHigh</span><span>touchigh.ai</span></div>
+  </div>
+</footer>
+<script>
+window.book=function(e,loc){try{gtag('event','book_call_click',{location:loc})}catch(_){}if(window.Calendly&&Calendly.initPopupWidget){if(e&&e.preventDefault)e.preventDefault();Calendly.initPopupWidget({url:'https://calendly.com/a-touchigh/30min'});return false;}return true;};
+</script>
+</body>
+</html>
