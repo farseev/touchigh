@@ -14,7 +14,7 @@ INTER = "/usr/share/fonts/opentype/inter/Inter-%s.otf"
 CJK = "/usr/share/fonts/opentype/noto/NotoSansCJK-%s.ttc"
 CJK_INDEX = {"zh-Hans": 2, "zh-Hant": 3, "ja": 0, "ko": 1}   # SC, TC, JP, KR inside the .ttc
 EXTRA = {"th": "NotoSansThai", "hi": "NotoSansDevanagari", "ar": "NotoSansArabic"}
-ORANGE, INK, GREY = (255, 100, 45), (25, 27, 35), (108, 110, 121)
+ORANGE, INK, GREY = (255, 147, 77), (29, 29, 29), (106, 106, 106)
 
 
 def font(lang, weight, size):

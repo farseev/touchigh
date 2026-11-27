@@ -293,7 +293,7 @@ def render(slug, hl, meta, reg, versions):
             '<meta name="description" content="%s">' % a(d["desc"]),
             '<link rel="canonical" href="%s">' % url,
             '<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">',
-            '<meta name="author" content="ToucHigh">', '<meta name="theme-color" content="#FF642D">', '<meta name="format-detection" content="telephone=no">',
+            '<meta name="author" content="ToucHigh">', '<meta name="theme-color" content="#FF934D">', '<meta name="format-detection" content="telephone=no">',
             '<meta name="keywords" content="%s">' % a(d["keywords"]),
             langmenu.hreflang_html(versions), "",
             '<meta property="og:type" content="article">', '<meta property="og:site_name" content="ToucHigh">',
@@ -339,7 +339,7 @@ def render(slug, hl, meta, reg, versions):
 <a class="skip" href="#main">{skip}</a>
 <header class="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh-lockup.svg" alt="ToucHigh" width="143" height="28"></a>
     <nav class="nav-links" aria-label="Primary">
       <a href="{home}">{t_home}</a>
       <a href="{homeh}#products">{products}</a>
@@ -401,7 +401,7 @@ def render(slug, hl, meta, reg, versions):
 <footer>
   <div class="wrap">
     <div class="foot-grid">
-      <div><a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a><p style="margin-top:12px;max-width:38ch;font-size:14px">{tagline}</p></div>
+      <div><a class="brand" href="/"><img src="/touchigh-lockup-on-dark.svg" alt="" width="143" height="28"></a><p style="margin-top:12px;max-width:38ch;font-size:14px">{tagline}</p></div>
       <div><h4>ToucHigh</h4><a href="{home}">{t_home}</a><a href="{homeh}#geo">GEO Autopilot</a><a href="{homeh}#social">Social Autopilot</a><a href="{pro}">ToucHigh PRO</a></div>
       <div><h4>{blog}</h4><a href="{hub}">{blog}</a>{rssl}<a href="/llms.txt">llms.txt</a><a href="https://dl.acm.org/doi/10.1145/3805712.3808371" target="_blank" rel="noopener">ACM SIGIR ↗</a></div>
       <div><h4>{login}</h4><a href="https://pro.touchigh.ai" rel="noopener">pro.touchigh.ai</a><a href="{cal}" target="_blank" rel="noopener" onclick="return book(event,'blog_footer')">{book}</a></div>

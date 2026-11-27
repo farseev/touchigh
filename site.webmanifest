@@ -4,8 +4,8 @@
   "description": "Get found in US AI search and run US social on autopilot. Built for Chinese cross-border sellers.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#191B23",
-  "theme_color": "#FF642D",
+  "background_color": "#1D1D1D",
+  "theme_color": "#FF934D",
   "lang": "en",
   "icons": [
     {

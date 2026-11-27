@@ -137,7 +137,7 @@ def build(P):
 <link rel="canonical" href="{url}">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 <meta name="author" content="ToucHigh">
-<meta name="theme-color" content="#FF642D">
+<meta name="theme-color" content="#FF934D">
 <meta name="format-detection" content="telephone=no">
 
 <!-- hreflang -->
@@ -194,7 +194,7 @@ def build(P):
 <a class="skip" href="#main" data-en="Skip to content" data-zh="跳到正文">跳到正文</a>
 <header class="nav">
   <div class="wrap nav-in">
-    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh_spark.svg" alt="ToucHigh" width="25" height="25"><span>ToucHigh</span></a>
+    <a class="brand" href="/" aria-label="ToucHigh"><img src="/touchigh-lockup.svg" alt="ToucHigh" width="143" height="28"></a>
     <nav class="nav-links" aria-label="Primary">
       %s
       <a href="/pro/" data-href-zh="/pro/" data-href-en="/pro/?lang=en" onclick="try{gtag('event','pro_click',{location:'%s_nav'})}catch(e){}" data-en="ToucHigh PRO" data-zh="ToucHigh PRO">ToucHigh PRO</a>
@@ -215,7 +215,7 @@ def build(P):
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="brand" href="/"><img src="/touchigh_spark.svg" alt="" width="24" height="24"><span>ToucHigh</span></a>
+        <a class="brand" href="/"><img src="/touchigh-lockup-on-dark.svg" alt="" width="143" height="28"></a>
         %s
       </div>
       <div>
