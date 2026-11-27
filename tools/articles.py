@@ -308,9 +308,9 @@ def render(slug, hl, meta, reg, versions):
     head += ['<meta name="twitter:card" content="summary_large_image">', '<meta name="twitter:title" content="%s">' % a(d["title"]),
              '<meta name="twitter:description" content="%s">' % a(d["desc"]), '<meta name="twitter:image" content="%s%s">' % (SITE, og),
              '<meta name="twitter:image:alt" content="%s">' % a(d["title"]),
-             '<link rel="icon" href="/favicon.ico" sizes="any">', '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">',
-             '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">', '<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg">',
-             '<link rel="apple-touch-icon" href="/apple-touch-icon.png">', '<link rel="manifest" href="/site.webmanifest">']
+             '<link rel="icon" href="/favicon.ico?v=2" sizes="any">', '<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png?v=2">',
+             '<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png?v=2">', '<link rel="icon" type="image/svg+xml" href="/touchigh_spark.svg?v=2">',
+             '<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">', '<link rel="manifest" href="/site.webmanifest">']
     if rss:
         head.append('<link rel="alternate" type="application/rss+xml" title="%s" href="%s">' % (a(u["blog_name"]), rss))
     head += ['<link rel="alternate" type="text/plain" title="LLM index" href="/llms.txt">',
